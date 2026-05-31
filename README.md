@@ -10,6 +10,7 @@
 - `assets/solar-boiler-tiberias-hero.jpg` — оптимизированный баннер для первого экрана.
 - `assets/solar-boiler-tiberias-hero.png` — исходная сгенерированная версия баннера.
 - `robots.txt` — разрешение индексации.
+- `sitemap.xml` — карта сайта для Google Search Console.
 
 ## Бесплатная публикация
 
@@ -21,7 +22,7 @@
 2. Подтвердить владение сайтом.
 3. Создать Google Business Profile для услуги в Тверии и указать телефон `053 307 0261`.
 4. Добавить финальный адрес сайта в Search Console и отправить страницу на индексацию.
-5. Если появится постоянный URL, добавить в `index.html` тег canonical и указать абсолютный URL картинки в `og:image`.
+5. Постоянный URL GitHub Pages уже добавлен в `canonical`, `og:url`, `og:image`, JSON-LD и `sitemap.xml`.
 
 Официальные материалы Google:
 
