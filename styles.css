@@ -28,6 +28,14 @@ body {
   line-height: 1.55;
 }
 
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="ltr"] body {
+  text-align: left;
+}
+
 body::selection {
   color: var(--ink);
   background: #ffe2a6;
@@ -127,7 +135,8 @@ svg {
 .header-phone,
 .button,
 .mobile-callbar a,
-.copy-button {
+.copy-button,
+.language-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -136,6 +145,27 @@ svg {
   border-radius: 8px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.header-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-toggle {
+  padding: 10px 12px;
+  color: var(--teal-dark);
+  background: var(--white);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  color: var(--ink);
+  background: var(--sky);
+  outline: none;
 }
 
 .header-phone {
@@ -175,6 +205,12 @@ svg {
 .hero__shade {
   position: absolute;
   inset: 0;
+  background:
+    linear-gradient(270deg, rgba(8, 20, 24, 0.82) 0%, rgba(8, 20, 24, 0.63) 42%, rgba(8, 20, 24, 0.18) 100%),
+    linear-gradient(0deg, rgba(8, 20, 24, 0.46), rgba(8, 20, 24, 0.08) 48%);
+}
+
+html[dir="ltr"] .hero__shade {
   background:
     linear-gradient(90deg, rgba(8, 20, 24, 0.82) 0%, rgba(8, 20, 24, 0.63) 42%, rgba(8, 20, 24, 0.18) 100%),
     linear-gradient(0deg, rgba(8, 20, 24, 0.46), rgba(8, 20, 24, 0.08) 48%);
@@ -563,6 +599,12 @@ h1 {
     padding: 0;
   }
 
+  .language-toggle {
+    min-height: 40px;
+    padding: 8px 10px;
+    font-size: 0.88rem;
+  }
+
   .header-phone span {
     position: absolute;
     width: 1px;
@@ -573,6 +615,12 @@ h1 {
   }
 
   .hero__shade {
+    background:
+      linear-gradient(270deg, rgba(8, 20, 24, 0.9), rgba(8, 20, 24, 0.42)),
+      linear-gradient(0deg, rgba(8, 20, 24, 0.5), rgba(8, 20, 24, 0.05));
+  }
+
+  html[dir="ltr"] .hero__shade {
     background:
       linear-gradient(90deg, rgba(8, 20, 24, 0.9), rgba(8, 20, 24, 0.42)),
       linear-gradient(0deg, rgba(8, 20, 24, 0.5), rgba(8, 20, 24, 0.05));
