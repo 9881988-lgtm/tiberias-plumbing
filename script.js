@@ -126,11 +126,32 @@ const whatsappMessages = {
   ru: "Здравствуйте, нужна сантехническая работа в Тверии"
 };
 
+const phoneDisplay = "053 361 3100";
+
 let currentLanguage = "he";
 
 const setText = (selector, value) => {
   const element = document.querySelector(selector);
   if (element) element.setAttribute("content", value);
+};
+
+const setLocalizedText = (element, value) => {
+  if (!value.includes(phoneDisplay)) {
+    element.textContent = value;
+    return;
+  }
+
+  element.textContent = "";
+  value.split(phoneDisplay).forEach((part, index, parts) => {
+    if (part) element.append(document.createTextNode(part));
+    if (index < parts.length - 1) {
+      const phone = document.createElement("bdi");
+      phone.className = "phone-number";
+      phone.dir = "ltr";
+      phone.textContent = phoneDisplay;
+      element.append(phone);
+    }
+  });
 };
 
 const applyLanguage = (language) => {
@@ -148,7 +169,7 @@ const applyLanguage = (language) => {
 
   document.querySelectorAll("[data-key]").forEach((element) => {
     const value = dictionary[element.dataset.key];
-    if (value) element.textContent = value;
+    if (value) setLocalizedText(element, value);
   });
 
   document.querySelectorAll("[data-whatsapp-link]").forEach((link) => {

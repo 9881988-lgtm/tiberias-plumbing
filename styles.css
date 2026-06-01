@@ -168,6 +168,12 @@ svg {
   outline: none;
 }
 
+.phone-number {
+  direction: ltr;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+}
+
 .header-phone {
   padding: 10px 14px;
   color: var(--white);
