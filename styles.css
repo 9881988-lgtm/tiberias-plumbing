@@ -415,6 +415,41 @@ h1 {
   color: var(--muted);
 }
 
+.section--local-jobs {
+  background: #fffaf0;
+  border-top: 1px solid #f1dfba;
+  border-bottom: 1px solid #f1dfba;
+}
+
+.local-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.local-jobs-grid article {
+  min-height: 210px;
+  padding: 22px;
+  background: var(--white);
+  border: 1px solid #ead7ad;
+  border-top: 4px solid var(--sun);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(196, 95, 58, 0.08);
+}
+
+.local-jobs-grid h3 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.local-jobs-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .section--area {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 360px;
@@ -563,12 +598,19 @@ h1 {
 
   .trust-bar,
   .services-grid,
+  .local-jobs-grid,
   .section--area {
     grid-template-columns: 1fr;
   }
 
   .contact-panel {
     position: static;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1080px) {
+  .local-jobs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -658,6 +700,10 @@ h1 {
   .service-card {
     min-height: auto;
     padding: 20px;
+  }
+
+  .local-jobs-grid article {
+    min-height: auto;
   }
 
   .section--area {

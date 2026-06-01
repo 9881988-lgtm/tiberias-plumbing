@@ -4,11 +4,11 @@
 
 ## Файлы
 
-- `index.html` — страница лендинга с SEO meta-тегами и JSON-LD разметкой `Plumber` + `FAQPage`.
+- `index.html` — страница лендинга с SEO meta-тегами и JSON-LD разметкой `Plumber`, `WebSite`, `WebPage`, `BreadcrumbList` и `FAQPage`.
 - `styles.css` — адаптивный дизайн для телефона и компьютера.
 - `script.js` — переключение иврит/русский и кнопка копирования телефона.
 - `assets/solar-boiler-tiberias-hero.jpg` — оптимизированный баннер для первого экрана.
-- `assets/solar-boiler-tiberias-hero.png` — исходная сгенерированная версия баннера.
+- `assets/solar-boiler-tiberias-4x3.jpg` и `assets/solar-boiler-tiberias-square.jpg` — дополнительные пропорции изображения для schema.org и sitemap.
 - `robots.txt` — разрешение индексации.
 - `sitemap.xml` — карта сайта для Google Search Console.
 
@@ -23,6 +23,15 @@
 3. Создать Google Business Profile для услуги в Тверии и указать телефон `053 361 3100`.
 4. Добавить финальный адрес сайта в Search Console и отправить страницу на индексацию.
 5. Постоянный URL GitHub Pages уже добавлен в `canonical`, `og:url`, `og:image`, JSON-LD и `sitemap.xml`.
+6. После подтверждения Search Console отправить sitemap: `https://9881988-lgtm.github.io/tiberias-plumbing/sitemap.xml`.
+
+Что уже сделано на сайте:
+
+- основной язык — иврит, город и регион — טבריה / Tiberias / Тверия;
+- title, description, Open Graph и Twitter-сниппеты;
+- schema.org для локального сантехника и каталога услуг;
+- блоки под локальные запросы: דוד שמש בטבריה, אינסטלטור בטבריה, חיבור מכונת כביסה בטבריה, Tiberias plumber;
+- `robots.txt`, `sitemap.xml`, canonical URL и LTR-отображение телефона в RTL-странице.
 
 Официальные материалы Google:
 
