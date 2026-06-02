@@ -5,9 +5,9 @@ const CONFIG = {
   TIME_ZONE: "Asia/Jerusalem",
   SHEET_ID: "",
   SHEET_NAME: "AC cleaning leads",
-  SERVICE_NAME_HE: "ניקוי וחיטוי יחידה פנימית של מזגן",
-  SERVICE_NAME_RU: "Мойка и дезинфекция внутреннего блока кондиционера",
-  PRICE_LABEL: "450-500 ₪",
+  SERVICE_NAME_HE: "ניקוי יחידה פנימית של מזגן",
+  SERVICE_NAME_RU: "Мойка внутреннего блока кондиционера",
+  PRICE_LABEL: "Wash without disassembly: 250-350 ₪; deep wash with disassembly and disinfection: 400-500 ₪",
   BOOKING_HOURS: 3,
   WORKING_HOURS_BY_DAY: {
     0: { opens: "08:00", closes: "20:00" },
@@ -36,7 +36,7 @@ function doPost(e) {
       eventId: event.getId(),
       start: start.toISOString(),
       end: end.toISOString(),
-      priceLabel: CONFIG.PRICE_LABEL
+      priceLabel: priceForPackage_(lead)
     });
   } catch (error) {
     notifyError_(error, e);
@@ -75,6 +75,8 @@ function parseLead_(e) {
     address: clean_(data.address),
     area: clean_(data.area),
     units: clean_(data.units || "1"),
+    servicePackage: clean_(data.servicePackage),
+    servicePackageLabel: clean_(data.servicePackageLabel),
     bookingDate: clean_(data.bookingDate),
     bookingSlot: clean_(data.bookingSlot),
     bookingSlotLabel: clean_(data.bookingSlotLabel),
@@ -102,7 +104,9 @@ function createCalendarEvent_(calendar, lead, start, end) {
   const title = `AC cleaning ${lead.name} ${lead.phone}`;
   const description = [
     serviceName_(lead),
-    `Price: ${CONFIG.PRICE_LABEL} per indoor unit with disinfection`,
+    `Price options: ${CONFIG.PRICE_LABEL}`,
+    lead.servicePackageLabel ? `Selected service: ${lead.servicePackageLabel}` : "",
+    `Selected price range: ${priceForPackage_(lead)}`,
     `Booking window: ${CONFIG.BOOKING_HOURS} hours`,
     `Name: ${lead.name}`,
     `Phone: ${lead.phone}`,
@@ -252,7 +256,7 @@ function appendLead_(lead, start, end, event) {
   const sheet = SpreadsheetApp.openById(CONFIG.SHEET_ID).getSheetByName(CONFIG.SHEET_NAME)
     || SpreadsheetApp.openById(CONFIG.SHEET_ID).insertSheet(CONFIG.SHEET_NAME);
   if (sheet.getLastRow() === 0) {
-    sheet.appendRow(["Submitted", "Start", "End", "Selected Slot", "Name", "Phone", "Email", "Address", "Area", "Units", "Contact", "Price", "Event ID", "Notes", "Source"]);
+    sheet.appendRow(["Submitted", "Start", "End", "Selected Slot", "Name", "Phone", "Email", "Address", "Area", "Units", "Service Package", "Contact", "Price", "Event ID", "Notes", "Source"]);
   }
   sheet.appendRow([
     new Date(),
@@ -265,8 +269,9 @@ function appendLead_(lead, start, end, event) {
     lead.address,
     lead.area,
     lead.units,
+    lead.servicePackageLabel || lead.servicePackage,
     lead.contactPreference,
-    CONFIG.PRICE_LABEL,
+    priceForPackage_(lead),
     event.getId(),
     lead.notes,
     lead.sourceUrl
@@ -278,7 +283,9 @@ function sendOwnerEmail_(lead, start, end, event) {
   const body = [
     "New lead for indoor AC unit cleaning and disinfection.",
     "",
-    `Price confirmation: ${CONFIG.PRICE_LABEL} per indoor unit with disinfection`,
+    `Price options: ${CONFIG.PRICE_LABEL}`,
+    lead.servicePackageLabel ? `Selected service: ${lead.servicePackageLabel}` : "",
+    `Selected price range: ${priceForPackage_(lead)}`,
     `Calendar slot: ${formatDate_(start)} - ${formatDate_(end)}`,
     `Client selected: ${lead.bookingDate || toLocalDate_(start)} ${lead.bookingSlotLabel || lead.preferredDateTime}`,
     `Event ID: ${event.getId()}`,
@@ -308,7 +315,8 @@ function sendClientEmail_(lead, start, end) {
         `${lead.name}, здравствуйте.`,
         "",
         `Получили заявку на ${CONFIG.SERVICE_NAME_RU}.`,
-        `Цена: ${CONFIG.PRICE_LABEL} за один внутренний блок с дезинфекцией.`,
+        lead.servicePackageLabel ? `Выбранный тип мойки: ${lead.servicePackageLabel}.` : "",
+        `Диапазон цены выбранного варианта: ${priceForPackage_(lead)}.`,
         `Выбранный рабочий слот зарезервирован: ${formatDate_(start)} - ${formatDate_(end)}.`,
         "Доступ к кондиционеру и детали выезда будут подтверждены отдельно.",
         "",
@@ -318,7 +326,8 @@ function sendClientEmail_(lead, start, end) {
         `שלום ${lead.name},`,
         "",
         `קיבלנו את הבקשה עבור ${CONFIG.SERVICE_NAME_HE}.`,
-        `מחיר: ${CONFIG.PRICE_LABEL} ליחידה פנימית אחת עם חיטוי.`,
+        lead.servicePackageLabel ? `סוג הניקוי שנבחר: ${lead.servicePackageLabel}.` : "",
+        `טווח המחיר למסלול שנבחר: ${priceForPackage_(lead)}.`,
         `המועד שנבחר נשמר ביומן: ${formatDate_(start)} - ${formatDate_(end)}.`,
         "הגישה למזגן ופרטי ההגעה יאושרו בנפרד.",
         "",
@@ -339,6 +348,12 @@ function notifyError_(error, e) {
 
 function serviceName_(lead) {
   return lead.language === "ru" ? CONFIG.SERVICE_NAME_RU : CONFIG.SERVICE_NAME_HE;
+}
+
+function priceForPackage_(lead) {
+  if (lead.servicePackage === "basic") return "250-350 ₪";
+  if (lead.servicePackage === "deep") return "400-500 ₪";
+  return CONFIG.PRICE_LABEL;
 }
 
 function formatDate_(date) {

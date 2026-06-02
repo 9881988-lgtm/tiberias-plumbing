@@ -3,7 +3,14 @@ const SETTINGS = {
   ownerEmail: "",
   whatsappNumber: "972533613100",
   phoneDisplay: "053 361 3100",
-  priceLabel: "450-500 ₪",
+  priceLabels: {
+    he: "ניקוי ללא פירוק: 250-350 ₪; ניקוי עמוק עם פירוק וחיטוי: 400-500 ₪",
+    ru: "мойка без разборки: 250-350 ₪; глубокая мойка с разборкой и дезинфекцией: 400-500 ₪"
+  },
+  packagePrices: {
+    basic: { he: "250-350 ₪", ru: "250-350 ₪" },
+    deep: { he: "400-500 ₪", ru: "400-500 ₪" }
+  },
   bookingHours: 3,
   slotDaysAhead: 21,
   workingDays: [0, 1, 2, 3, 4, 5],
@@ -16,47 +23,47 @@ const SETTINGS = {
     5: ["08:00"]
   },
   serviceName: {
-    he: "ניקוי וחיטוי יחידה פנימית של מזגן",
-    ru: "Мойка и дезинфекция внутреннего блока кондиционера"
+    he: "ניקוי יחידה פנימית של מזגן",
+    ru: "Мойка внутреннего блока кондиционера"
   }
 };
 
 const translations = {
   he: {
     title: "ניקוי מזגן בטבריה | שטיפת יחידה פנימית וחיטוי | 053 361 3100",
-    description: "ניקוי יחידה פנימית של מזגן בטבריה והסביבה: שטיפה עמוקה, ניקוי פילטרים וחיטוי. מחיר 450-500 ₪, תיאום מהיר ב-WhatsApp או במייל.",
+    description: "ניקוי יחידה פנימית של מזגן בטבריה והסביבה: ניקוי ללא פירוק 250-350 ₪ או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪. תיאום מהיר ב-WhatsApp או במייל.",
     brandTitle: "מים ושמש",
     brandSubtitle: "ניקוי מזגנים",
     navService: "השירות",
     navBooking: "הזמנה",
     navFaq: "שאלות",
     languageButton: "Русский",
-    heroEyebrow: "טבריה והסביבה · חיטוי כלול",
+    heroEyebrow: "טבריה והסביבה · שתי אפשרויות ניקוי",
     heroTitle: "ניקוי עמוק ליחידה הפנימית של המזגן",
-    heroLead: "שטיפה מקצועית, ניקוי פילטרים וחיטוי להפחתת ריחות ולכלוך. מתאים לדירות, עסקים קטנים ובתים באזור טבריה.",
+    heroLead: "בחרו ניקוי ללא פירוק או ניקוי עמוק עם פירוק וחיטוי להפחתת ריחות ולכלוך. מתאים לדירות, עסקים קטנים ובתים באזור טבריה.",
     bookButton: "לתיאום ניקוי",
     bookButtonShort: "לתיאום",
-    priceNote: "450-500 ₪ ליחידה עם חיטוי",
+    priceNote: "ללא פירוק 250-350 ₪ · עמוק עם פירוק וחיטוי 400-500 ₪",
     timeNote: "חלון עבודה 3 שעות",
     areaNote: "טבריה וסובב כנרת",
     trustCleanTitle: "שטיפה פנימית",
     trustCleanText: "מאייד, פילטרים וניקוז",
-    trustDisinfectionTitle: "חיטוי כלול",
-    trustDisinfectionText: "להפחתת ריחות ולכלוך",
+    trustDisinfectionTitle: "חיטוי במסלול העמוק",
+    trustDisinfectionText: "עם פירוק וניקוי יסודי",
     trustHoursTitle: "א-ה 08:00-20:00 · ו 08:00-12:00",
     trustHoursText: "לפי זמינות ביומן",
     serviceEyebrow: "מה מקבלים",
     serviceTitle: "ניקוי שמטפל בלכלוך בתוך היחידה, לא רק בפילטר",
     serviceLead: "הצטברות אבק ולחות בתוך המזגן יכולה לגרום לריח לא נעים, ירידה בעוצמת הקירור וטפטוף. ניקוי מסודר עוזר להחזיר זרימת אוויר נקייה יותר.",
     featureUnitTitle: "פתיחת היחידה",
-    featureUnitText: "פתיחה זהירה של הכיסוי, בדיקת מצב הפילטרים והכנה לשטיפה עם הגנה על הקיר והסביבה.",
+    featureUnitText: "בדיקת מצב הפילטרים והכנה לשטיפה. במסלול העמוק מתבצע פירוק זהיר עם הגנה על הקיר והסביבה.",
     featureWashTitle: "שטיפה עמוקה",
     featureWashText: "ניקוי אזור המאייד, מסילות האוויר והחלקים הנגישים שבהם מצטברים אבק, לחות וריחות.",
     featureDisinfectTitle: "חיטוי וסיום נקי",
-    featureDisinfectText: "חיטוי לאחר השטיפה, ניקוי אזור העבודה והפעלה קצרה לבדיקת זרימת אוויר תקינה.",
+    featureDisinfectText: "במסלול העמוק מתבצע חיטוי לאחר השטיפה, ניקוי אזור העבודה והפעלה קצרה לבדיקת זרימת אוויר תקינה.",
     leadEyebrow: "תיאום מהיר",
     leadTitle: "בחרו תאריך ושעה, ונשריין חלון עבודה של 3 שעות",
-    leadText: "המחיר ליחידה פנימית אחת עם חיטוי הוא 450-500 ₪. לאחר שליחת הפרטים נפתחת הודעת WhatsApp מוכנה, הבקשה מגיעה למאסטר ונשמר חלון עבודה ביומן.",
+    leadText: "בחרו במסלול ניקוי: ללא פירוק 250-350 ₪, או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪. לאחר שליחת הפרטים נפתחת הודעת WhatsApp מוכנה, הבקשה מגיעה למאסטר ונשמר חלון עבודה ביומן.",
     leadHighlight1: "חלון עבודה 3 שעות",
     leadHighlight2: "WhatsApp או email",
     leadHighlight3: "א-ה 08:00-20:00 · ו 08:00-12:00",
@@ -65,6 +72,9 @@ const translations = {
     fieldAddress: "כתובת מלאה",
     fieldArea: "אזור",
     fieldUnits: "מספר יחידות",
+    fieldServicePackage: "סוג ניקוי",
+    serviceBasic: "ניקוי ללא פירוק - 250-350 ₪",
+    serviceDeep: "ניקוי עמוק עם פירוק וחיטוי - 400-500 ₪",
     fieldBookingDate: "בחרו תאריך",
     fieldBookingTime: "בחרו שעה",
     fieldEmail: "email לאישור מחיר",
@@ -80,8 +90,8 @@ const translations = {
     slotRequired: "בחרו תאריך ושעה פנויים.",
     submitButton: "שליחת בקשה",
     submitWorking: "שולח...",
-    successWithGoogle: "הבקשה נשלחה והמועד נשלח לשמירה ביומן. המחיר המאושר: 450-500 ₪ ליחידה עם חיטוי.",
-    successFallback: "הפרטים מוכנים לשליחה. המחיר המאושר: 450-500 ₪ ליחידה עם חיטוי.",
+    successWithGoogle: "הבקשה נשלחה והמועד נשלח לשמירה ביומן. טווח המחיר יאושר לפי סוג הניקוי שנבחר.",
+    successFallback: "הפרטים מוכנים לשליחה. טווח המחיר יאושר לפי סוג הניקוי שנבחר.",
     errorMessage: "לא הצלחנו לשלוח לשרת Google. אפשר לשלוח את הפרטים ב-WhatsApp.",
     emailRequired: "בחרת email, לכן צריך למלא כתובת email.",
     areaTiberias: "טבריה",
@@ -102,11 +112,11 @@ const translations = {
     faqEyebrow: "שאלות",
     faqTitle: "מה כדאי לדעת לפני התיאום",
     faq1Question: "מה כולל ניקוי יחידה פנימית?",
-    faq1Answer: "פתיחת היחידה, ניקוי פילטרים, שטיפה של החלק הפנימי הנגיש, חיטוי וסיום נקי של אזור העבודה.",
+    faq1Answer: "במסלול ללא פירוק מקבלים ניקוי ושטיפה של החלקים הנגישים. במסלול העמוק מקבלים פירוק זהיר, שטיפה יסודית וחיטוי.",
     faq2Question: "כמה זמן מוקצה להזמנה?",
     faq2Answer: "לכל בקשה מוקצות 3 שעות עבודה ביומן, כולל זמן עבודה מסודר ומרווח נסיעה באזור.",
-    faq3Question: "האם המחיר כולל חיטוי?",
-    faq3Answer: "כן. מחיר 450-500 ₪ מתייחס לניקוי יחידה פנימית אחת עם חיטוי. המחיר הסופי מאושר לפי מספר היחידות, גישה ומיקום.",
+    faq3Question: "מה המחיר ואיזה מסלול לבחור?",
+    faq3Answer: "ניקוי ללא פירוק עולה 250-350 ₪. ניקוי עמוק עם פירוק וחיטוי עולה 400-500 ₪. המחיר הסופי מאושר לפי מספר היחידות, גישה ומיקום.",
     faq4Question: "אפשר לשלוח תמונה ב-WhatsApp?",
     faq4Answer: "כן. אחרי שליחת הטופס נפתחת הודעת WhatsApp מוכנה עם הפרטים, ואפשר לצרף אליה תמונה של המזגן.",
     footerTitle: "מים ושמש - ניקוי מזגנים",
@@ -114,39 +124,39 @@ const translations = {
   },
   ru: {
     title: "Мойка кондиционера в Тверии | Чистка внутреннего блока | 053 361 3100",
-    description: "Мойка внутреннего блока кондиционера в Тверии и окрестностях: глубокая промывка, фильтры и дезинфекция. Цена 450-500 ₪, заявка через WhatsApp или email.",
+    description: "Мойка внутреннего блока кондиционера в Тверии и окрестностях: без разборки 250-350 ₪ или глубокая мойка с разборкой и дезинфекцией 400-500 ₪. Заявка через WhatsApp или email.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Мойка кондиционеров",
     navService: "Услуга",
     navBooking: "Заявка",
     navFaq: "Вопросы",
     languageButton: "עברית",
-    heroEyebrow: "Тверия и окрестности · дезинфекция включена",
+    heroEyebrow: "Тверия и окрестности · 2 варианта мойки",
     heroTitle: "Глубокая мойка внутреннего блока кондиционера",
-    heroLead: "Профессиональная промывка, чистка фильтров и дезинфекция от запахов и грязи. Для квартир, домов и небольшого бизнеса в районе Тверии.",
+    heroLead: "Выберите мойку без разборки или глубокую мойку с разборкой и дезинфекцией от запахов и грязи. Для квартир, домов и небольшого бизнеса в районе Тверии.",
     bookButton: "Заказать чистку",
     bookButtonShort: "Заявка",
-    priceNote: "450-500 ₪ за блок с дезинфекцией",
+    priceNote: "Без разборки 250-350 ₪ · глубокая с разборкой 400-500 ₪",
     timeNote: "3 часа рабочего времени",
     areaNote: "Тверия и Кинерет",
     trustCleanTitle: "Внутренняя мойка",
     trustCleanText: "испаритель, фильтры и дренаж",
-    trustDisinfectionTitle: "Дезинфекция включена",
-    trustDisinfectionText: "против запахов и грязи",
+    trustDisinfectionTitle: "Дезинфекция в глубокой мойке",
+    trustDisinfectionText: "с разборкой и тщательной промывкой",
     trustHoursTitle: "Вс-Чт 08:00-20:00 · Пт 08:00-12:00",
     trustHoursText: "по свободным слотам календаря",
     serviceEyebrow: "Что входит",
     serviceTitle: "Чистка внутри блока, а не только фильтра",
     serviceLead: "Пыль и влажность внутри кондиционера могут давать запах, слабое охлаждение и протечки. Аккуратная мойка помогает вернуть более чистый поток воздуха.",
     featureUnitTitle: "Открытие блока",
-    featureUnitText: "Аккуратное открытие крышки, проверка фильтров и подготовка к промывке с защитой стены и зоны работы.",
+    featureUnitText: "Проверка фильтров и подготовка к промывке. В глубоком варианте выполняется аккуратная разборка с защитой стены и зоны работы.",
     featureWashTitle: "Глубокая промывка",
     featureWashText: "Очистка зоны испарителя, воздушных каналов и доступных частей, где скапливаются пыль, влага и запахи.",
     featureDisinfectTitle: "Дезинфекция и чистый финал",
-    featureDisinfectText: "Дезинфекция после мойки, уборка зоны работы и короткий запуск для проверки потока воздуха.",
+    featureDisinfectText: "В глубокой мойке выполняется дезинфекция после промывки, уборка зоны работы и короткий запуск для проверки потока воздуха.",
     leadEyebrow: "Быстрая заявка",
     leadTitle: "Выберите дату и время, а мы зарезервируем 3-часовой рабочий слот",
-    leadText: "Цена за один внутренний блок с дезинфекцией: 450-500 ₪. После отправки откроется готовое сообщение WhatsApp, заявка придет мастеру и будет зарезервирован рабочий слот.",
+    leadText: "Выберите вариант: мойка без разборки 250-350 ₪ или глубокая мойка с разборкой и дезинфекцией 400-500 ₪. После отправки откроется готовое сообщение WhatsApp, заявка придет мастеру и будет зарезервирован рабочий слот.",
     leadHighlight1: "3-часовой слот",
     leadHighlight2: "WhatsApp или email",
     leadHighlight3: "Вс-Чт 08:00-20:00 · Пт 08:00-12:00",
@@ -155,6 +165,9 @@ const translations = {
     fieldAddress: "Полный адрес",
     fieldArea: "Район",
     fieldUnits: "Количество блоков",
+    fieldServicePackage: "Тип мойки",
+    serviceBasic: "Мойка без разборки - 250-350 ₪",
+    serviceDeep: "Глубокая мойка с разборкой и дезинфекцией - 400-500 ₪",
     fieldBookingDate: "Выберите дату",
     fieldBookingTime: "Выберите время",
     fieldEmail: "email для подтверждения цены",
@@ -170,8 +183,8 @@ const translations = {
     slotRequired: "Выберите свободную дату и время.",
     submitButton: "Отправить заявку",
     submitWorking: "Отправляю...",
-    successWithGoogle: "Заявка отправлена, выбранный слот передан на бронирование в календарь. Подтвержденная цена: 450-500 ₪ за блок с дезинфекцией.",
-    successFallback: "Данные готовы к отправке. Подтвержденная цена: 450-500 ₪ за блок с дезинфекцией.",
+    successWithGoogle: "Заявка отправлена, выбранный слот передан на бронирование в календарь. Диапазон цены будет подтвержден по выбранному типу мойки.",
+    successFallback: "Данные готовы к отправке. Диапазон цены будет подтвержден по выбранному типу мойки.",
     errorMessage: "Не удалось отправить на сервер Google. Можно отправить данные в WhatsApp.",
     emailRequired: "Вы выбрали email, поэтому нужно заполнить адрес email.",
     areaTiberias: "Тверия",
@@ -192,11 +205,11 @@ const translations = {
     faqEyebrow: "Вопросы",
     faqTitle: "Что знать перед заявкой",
     faq1Question: "Что входит в чистку внутреннего блока?",
-    faq1Answer: "Открытие блока, чистка фильтров, промывка доступной внутренней части, дезинфекция и аккуратное завершение работы.",
+    faq1Answer: "В варианте без разборки очищаются и промываются доступные части. В глубоком варианте добавляется аккуратная разборка, тщательная промывка и дезинфекция.",
     faq2Question: "Сколько времени резервируется?",
     faq2Answer: "На каждую заявку в календаре выделяется 3 часа, включая рабочее время и запас на дорогу по району.",
-    faq3Question: "Дезинфекция входит в цену?",
-    faq3Answer: "Да. Цена 450-500 ₪ относится к чистке одного внутреннего блока с дезинфекцией. Итог подтверждается по количеству блоков, доступу и адресу.",
+    faq3Question: "Какая цена и какой вариант выбрать?",
+    faq3Answer: "Мойка без разборки стоит 250-350 ₪. Глубокая мойка с разборкой и дезинфекцией стоит 400-500 ₪. Итог подтверждается по количеству блоков, доступу и адресу.",
     faq4Question: "Можно отправить фото в WhatsApp?",
     faq4Answer: "Да. После формы откроется готовое сообщение WhatsApp, к нему можно прикрепить фото кондиционера.",
     footerTitle: "Маим ве-Шемеш - мойка кондиционеров",
@@ -205,8 +218,8 @@ const translations = {
 };
 
 const whatsappMessages = {
-  he: "שלום, אני רוצה לתאם ניקוי וחיטוי יחידה פנימית של מזגן בטבריה. המחיר 450-500 ₪ ליחידה.",
-  ru: "Здравствуйте, хочу заказать мойку и дезинфекцию внутреннего блока кондиционера в Тверии. Цена 450-500 ₪ за блок."
+  he: "שלום, אני רוצה לתאם ניקוי יחידה פנימית של מזגן בטבריה. ראיתי מחיר: ללא פירוק 250-350 ₪, ניקוי עמוק עם פירוק וחיטוי 400-500 ₪.",
+  ru: "Здравствуйте, хочу заказать мойку внутреннего блока кондиционера в Тверии. Видел цены: без разборки 250-350 ₪, глубокая мойка с разборкой и дезинфекцией 400-500 ₪."
 };
 
 let currentLanguage = new URLSearchParams(window.location.search).get("lang") === "ru" ? "ru" : "he";
@@ -230,10 +243,10 @@ const applyLanguage = (language) => {
   document.title = dictionary.title;
   setMeta('meta[name="description"]', dictionary.description);
   setMeta('meta[property="og:title"]', isHebrew ? "ניקוי מזגן בטבריה | שטיפת יחידה פנימית וחיטוי" : "Мойка кондиционера в Тверии | Чистка внутреннего блока");
-  setMeta('meta[property="og:description"]', isHebrew ? "שטיפה עמוקה וחיטוי ליחידה הפנימית של המזגן בטבריה והסביבה. מחיר 450-500 ₪." : "Глубокая мойка и дезинфекция внутреннего блока кондиционера в Тверии. Цена 450-500 ₪.");
+  setMeta('meta[property="og:description"]', isHebrew ? "ניקוי מזגן בטבריה: ללא פירוק 250-350 ₪ או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪." : "Мойка кондиционера в Тверии: без разборки 250-350 ₪ или глубокая с разборкой и дезинфекцией 400-500 ₪.");
   setMeta('meta[property="og:locale"]', isHebrew ? "he_IL" : "ru_RU");
   setMeta('meta[name="twitter:title"]', isHebrew ? "ניקוי מזגן בטבריה | שטיפת יחידה פנימית וחיטוי" : "Мойка кондиционера в Тверии | Чистка внутреннего блока");
-  setMeta('meta[name="twitter:description"]', isHebrew ? "ניקוי וחיטוי יחידה פנימית של מזגן בטבריה והסביבה. מחיר 450-500 ₪." : "Чистка и дезинфекция внутреннего блока кондиционера в Тверии. Цена 450-500 ₪.");
+  setMeta('meta[name="twitter:description"]', isHebrew ? "ניקוי מזגן בטבריה: ללא פירוק 250-350 ₪ או עמוק עם פירוק וחיטוי 400-500 ₪." : "Мойка кондиционера в Тверии: без разборки 250-350 ₪ или глубокая с разборкой и дезинфекцией 400-500 ₪.");
 
   document.querySelectorAll("[data-key]").forEach((element) => {
     const value = dictionary[element.dataset.key];
@@ -316,6 +329,14 @@ const setStatus = (message, type = "") => {
 };
 
 const pad2 = (value) => String(value).padStart(2, "0");
+
+const getPriceLabel = (language = currentLanguage) => {
+  return SETTINGS.priceLabels[language] || SETTINGS.priceLabels.he;
+};
+
+const getPackagePrice = (servicePackage, language = currentLanguage) => {
+  return SETTINGS.packagePrices[servicePackage]?.[language] || "";
+};
 
 const formatLocalDate = (date) => {
   return `${date.getFullYear()}-${pad2(date.getMonth() + 1)}-${pad2(date.getDate())}`;
@@ -502,6 +523,7 @@ const initializeSlotPicker = async () => {
 const collectLead = () => {
   const data = new FormData(leadForm);
   const selectedSlot = slotSelect?.selectedOptions[0];
+  const selectedService = leadForm?.querySelector('select[name="servicePackage"]')?.selectedOptions[0];
   return {
     name: String(data.get("name") || "").trim(),
     phone: String(data.get("phone") || "").trim(),
@@ -509,6 +531,8 @@ const collectLead = () => {
     address: String(data.get("address") || "").trim(),
     area: String(data.get("area") || "").trim(),
     units: String(data.get("units") || "").trim(),
+    servicePackage: String(data.get("servicePackage") || "").trim(),
+    servicePackageLabel: selectedService ? selectedService.textContent.trim() : "",
     bookingDate: String(data.get("bookingDate") || "").trim(),
     bookingSlot: String(data.get("bookingSlot") || "").trim(),
     preferredDateTime: String(data.get("preferredDateTime") || data.get("bookingSlot") || "").trim(),
@@ -516,7 +540,7 @@ const collectLead = () => {
     contactPreference: String(data.get("contactPreference") || "whatsapp").trim(),
     notes: String(data.get("notes") || "").trim(),
     language: currentLanguage,
-    priceLabel: SETTINGS.priceLabel,
+    priceLabel: getPriceLabel(),
     bookingHours: SETTINGS.bookingHours,
     serviceName: SETTINGS.serviceName[currentLanguage],
     sourceUrl: window.location.href,
@@ -527,14 +551,16 @@ const collectLead = () => {
 const formatLeadMessage = (lead) => {
   if (currentLanguage === "he") {
     return [
-      "בקשה לניקוי וחיטוי יחידה פנימית של מזגן",
-      `מחיר מאושר: ${SETTINGS.priceLabel} ליחידה עם חיטוי`,
+      "בקשה לניקוי יחידה פנימית של מזגן",
+      `אפשרויות מחיר: ${getPriceLabel()}`,
       `שם: ${lead.name}`,
       `טלפון: ${lead.phone}`,
       lead.email ? `email: ${lead.email}` : "",
       `כתובת: ${lead.address}`,
       `אזור: ${lead.area}`,
       `מספר יחידות: ${lead.units}`,
+      lead.servicePackageLabel ? `סוג ניקוי: ${lead.servicePackageLabel}` : "",
+      lead.servicePackage ? `טווח מחיר למסלול: ${getPackagePrice(lead.servicePackage)}` : "",
       lead.preferredDateTime ? `מועד שנבחר: ${lead.bookingDate} ${lead.bookingSlotLabel || lead.preferredDateTime}` : "מועד שנבחר: לא נבחר",
       `חלון עבודה: ${SETTINGS.bookingHours} שעות`,
       lead.notes ? `הערות: ${lead.notes}` : ""
@@ -542,14 +568,16 @@ const formatLeadMessage = (lead) => {
   }
 
   return [
-    "Заявка на мойку и дезинфекцию внутреннего блока кондиционера",
-    `Подтвержденная цена: ${SETTINGS.priceLabel} за блок с дезинфекцией`,
+    "Заявка на мойку внутреннего блока кондиционера",
+    `Варианты цены: ${getPriceLabel()}`,
     `Имя: ${lead.name}`,
     `Телефон: ${lead.phone}`,
     lead.email ? `email: ${lead.email}` : "",
     `Адрес: ${lead.address}`,
     `Район: ${lead.area}`,
     `Количество блоков: ${lead.units}`,
+    lead.servicePackageLabel ? `Тип мойки: ${lead.servicePackageLabel}` : "",
+    lead.servicePackage ? `Диапазон цены выбранного варианта: ${getPackagePrice(lead.servicePackage)}` : "",
     lead.preferredDateTime ? `Выбранный слот: ${lead.bookingDate} ${lead.bookingSlotLabel || lead.preferredDateTime}` : "Выбранный слот: не выбран",
     `Рабочий слот: ${SETTINGS.bookingHours} часа`,
     lead.notes ? `Комментарий: ${lead.notes}` : ""
