@@ -9,9 +9,14 @@ const CONFIG = {
   SERVICE_NAME_RU: "Мойка и дезинфекция внутреннего блока кондиционера",
   PRICE_LABEL: "450-500 ₪",
   BOOKING_HOURS: 3,
-  WORKING_DAYS: [0, 1, 2, 3, 4],
-  OPENS: "09:00",
-  CLOSES: "18:00"
+  WORKING_HOURS_BY_DAY: {
+    0: { opens: "08:00", closes: "20:00" },
+    1: { opens: "08:00", closes: "20:00" },
+    2: { opens: "08:00", closes: "20:00" },
+    3: { opens: "08:00", closes: "20:00" },
+    4: { opens: "08:00", closes: "20:00" },
+    5: { opens: "08:00", closes: "12:00" }
+  }
 };
 
 function doPost(e) {
@@ -145,8 +150,9 @@ function getAvailableSlots_(calendar, daysAhead) {
     day.setHours(0, 0, 0, 0);
     if (!isWorkingDay_(day)) continue;
 
-    const dayOpen = atTime_(day, CONFIG.OPENS);
-    const dayClose = atTime_(day, CONFIG.CLOSES);
+    const hours = workingHoursFor_(day);
+    const dayOpen = atTime_(day, hours.opens);
+    const dayClose = atTime_(day, hours.closes);
     let cursor = dayOpen;
 
     while (cursor.getTime() + durationMs <= dayClose.getTime()) {
@@ -182,8 +188,9 @@ function findBookingStart_(calendar, preferredDateTime) {
     day.setDate(searchStart.getDate() + dayOffset);
     if (!isWorkingDay_(day)) continue;
 
-    const dayOpen = atTime_(day, CONFIG.OPENS);
-    const dayClose = atTime_(day, CONFIG.CLOSES);
+    const hours = workingHoursFor_(day);
+    const dayOpen = atTime_(day, hours.opens);
+    const dayClose = atTime_(day, hours.closes);
     let cursor = dayOffset === 0
       ? new Date(Math.max(dayOpen.getTime(), roundUpToHalfHour_(searchStart).getTime()))
       : dayOpen;
@@ -206,12 +213,17 @@ function parsePreferredDate_(value) {
 
 function isWorkingSlot_(start) {
   if (!isWorkingDay_(start)) return false;
+  const hours = workingHoursFor_(start);
   const end = new Date(start.getTime() + CONFIG.BOOKING_HOURS * 60 * 60 * 1000);
-  return start >= atTime_(start, CONFIG.OPENS) && end <= atTime_(start, CONFIG.CLOSES);
+  return start >= atTime_(start, hours.opens) && end <= atTime_(start, hours.closes);
 }
 
 function isWorkingDay_(date) {
-  return CONFIG.WORKING_DAYS.indexOf(date.getDay()) !== -1;
+  return Boolean(workingHoursFor_(date));
+}
+
+function workingHoursFor_(date) {
+  return CONFIG.WORKING_HOURS_BY_DAY[date.getDay()] || null;
 }
 
 function isFree_(calendar, start) {

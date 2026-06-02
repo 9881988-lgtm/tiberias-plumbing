@@ -6,8 +6,15 @@ const SETTINGS = {
   priceLabel: "450-500 ₪",
   bookingHours: 3,
   slotDaysAhead: 21,
-  workingDays: [0, 1, 2, 3, 4],
-  dailySlotStarts: ["09:00", "12:00", "15:00"],
+  workingDays: [0, 1, 2, 3, 4, 5],
+  slotStartsByDay: {
+    0: ["08:00", "11:00", "14:00", "17:00"],
+    1: ["08:00", "11:00", "14:00", "17:00"],
+    2: ["08:00", "11:00", "14:00", "17:00"],
+    3: ["08:00", "11:00", "14:00", "17:00"],
+    4: ["08:00", "11:00", "14:00", "17:00"],
+    5: ["08:00"]
+  },
   serviceName: {
     he: "ניקוי וחיטוי יחידה פנימית של מזגן",
     ru: "Мойка и дезинфекция внутреннего блока кондиционера"
@@ -36,7 +43,7 @@ const translations = {
     trustCleanText: "מאייד, פילטרים וניקוז",
     trustDisinfectionTitle: "חיטוי כלול",
     trustDisinfectionText: "להפחתת ריחות ולכלוך",
-    trustHoursTitle: "א-ה 09:00-18:00",
+    trustHoursTitle: "א-ה 08:00-20:00 · ו 08:00-12:00",
     trustHoursText: "לפי זמינות ביומן",
     serviceEyebrow: "מה מקבלים",
     serviceTitle: "ניקוי שמטפל בלכלוך בתוך היחידה, לא רק בפילטר",
@@ -52,7 +59,7 @@ const translations = {
     leadText: "המחיר ליחידה פנימית אחת עם חיטוי הוא 450-500 ₪. לאחר שליחת הפרטים נפתחת הודעת WhatsApp מוכנה, הבקשה מגיעה למאסטר ונשמר חלון עבודה ביומן.",
     leadHighlight1: "חלון עבודה 3 שעות",
     leadHighlight2: "WhatsApp או email",
-    leadHighlight3: "א-ה 09:00-18:00",
+    leadHighlight3: "א-ה 08:00-20:00 · ו 08:00-12:00",
     fieldName: "שם",
     fieldPhone: "טלפון",
     fieldAddress: "כתובת מלאה",
@@ -126,7 +133,7 @@ const translations = {
     trustCleanText: "испаритель, фильтры и дренаж",
     trustDisinfectionTitle: "Дезинфекция включена",
     trustDisinfectionText: "против запахов и грязи",
-    trustHoursTitle: "Вс-Чт 09:00-18:00",
+    trustHoursTitle: "Вс-Чт 08:00-20:00 · Пт 08:00-12:00",
     trustHoursText: "по свободным слотам календаря",
     serviceEyebrow: "Что входит",
     serviceTitle: "Чистка внутри блока, а не только фильтра",
@@ -142,7 +149,7 @@ const translations = {
     leadText: "Цена за один внутренний блок с дезинфекцией: 450-500 ₪. После отправки откроется готовое сообщение WhatsApp, заявка придет мастеру и будет зарезервирован рабочий слот.",
     leadHighlight1: "3-часовой слот",
     leadHighlight2: "WhatsApp или email",
-    leadHighlight3: "Вс-Чт 09:00-18:00",
+    leadHighlight3: "Вс-Чт 08:00-20:00 · Пт 08:00-12:00",
     fieldName: "Имя",
     fieldPhone: "Телефон",
     fieldAddress: "Полный адрес",
@@ -349,7 +356,8 @@ const generateFallbackSlots = () => {
     day.setHours(0, 0, 0, 0);
     if (!SETTINGS.workingDays.includes(day.getDay())) continue;
 
-    SETTINGS.dailySlotStarts.forEach((time) => {
+    const starts = SETTINGS.slotStartsByDay[day.getDay()] || [];
+    starts.forEach((time) => {
       const [hours, minutes] = time.split(":").map(Number);
       const start = new Date(day);
       start.setHours(hours, minutes, 0, 0);
