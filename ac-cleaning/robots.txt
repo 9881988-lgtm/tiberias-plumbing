@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://9881988-lgtm.github.io/tiberias-plumbing/ac-cleaning/sitemap.xml
