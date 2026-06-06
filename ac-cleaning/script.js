@@ -1,14 +1,14 @@
 const SETTINGS = {
   googleScriptUrl: "",
-  ownerEmail: "",
+  ownerEmail: "tib778877@gmail.com",
   whatsappNumber: "972533613100",
   phoneDisplay: "053 361 3100",
   priceLabels: {
-    he: "ניקוי ללא פירוק: 250-350 ₪; ניקוי עמוק עם פירוק וחיטוי: 400-500 ₪",
-    ru: "мойка без разборки: 250-350 ₪; глубокая мойка с разборкой и дезинфекцией: 400-500 ₪"
+    he: "ניקוי ללא פירוק: מ-200 ₪, בדרך כלל 200-350 ₪; ניקוי עמוק עם פירוק וחיטוי: 400-500 ₪",
+    ru: "мойка без разборки: от 200 ₪, обычно 200-350 ₪; глубокая мойка с разборкой и дезинфекцией: 400-500 ₪"
   },
   packagePrices: {
-    basic: { he: "250-350 ₪", ru: "250-350 ₪" },
+    basic: { he: "מ-200 ₪, בדרך כלל 200-350 ₪", ru: "от 200 ₪, обычно 200-350 ₪" },
     deep: { he: "400-500 ₪", ru: "400-500 ₪" }
   },
   bookingHours: 3,
@@ -30,24 +30,27 @@ const SETTINGS = {
 
 const translations = {
   he: {
-    title: "ניקוי מזגן בטבריה | שטיפת יחידה פנימית וחיטוי | 053 361 3100",
-    description: "ניקוי יחידה פנימית של מזגן בטבריה והסביבה: ניקוי ללא פירוק 250-350 ₪ או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪. תיאום מהיר ב-WhatsApp או במייל.",
+    title: "ניקוי מזגן בטבריה מ-200 ₪ | שטיפת יחידה פנימית וחיטוי | 053 361 3100",
+    description: "ניקוי יחידה פנימית של מזגן בטבריה והסביבה: ניקוי ללא פירוק מ-200 ₪, בדרך כלל 200-350 ₪, או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪. שלחו תמונה ב-WhatsApp לקבלת מחיר מהיר.",
     brandTitle: "מים ושמש",
     brandSubtitle: "ניקוי מזגנים",
     navService: "השירות",
     navBooking: "הזמנה",
     navFaq: "שאלות",
     languageButton: "Русский",
-    heroEyebrow: "טבריה והסביבה · שתי אפשרויות ניקוי",
-    heroTitle: "ניקוי עמוק ליחידה הפנימית של המזגן",
-    heroLead: "בחרו ניקוי ללא פירוק או ניקוי עמוק עם פירוק וחיטוי להפחתת ריחות ולכלוך. מתאים לדירות, עסקים קטנים ובתים באזור טבריה.",
-    bookButton: "לתיאום ניקוי",
+    heroEyebrow: "טבריה והסביבה · מחיר פתיחה מ-200 ₪",
+    heroTitle: "ריח מהמזגן? ניקוי מזגן מ-200 ₪ בטבריה",
+    heroLead: "שלחו תמונה ב-WhatsApp וקבלו הערכת מחיר מהירה. ניקוי ללא פירוק או ניקוי עמוק עם פירוק וחיטוי לדירות, יחידות אירוח ועסקים באזור טבריה.",
+    whatsappButton: "מחיר ב-WhatsApp",
+    bookButton: "בחירת מועד באתר",
     bookButtonShort: "לתיאום",
-    priceNote: "ללא פירוק 250-350 ₪ · עמוק עם פירוק וחיטוי 400-500 ₪",
+    callButtonShort: "שיחה",
+    priceNote: "ללא פירוק מ-200 ₪ · עמוק עם פירוק וחיטוי 400-500 ₪",
+    photoNote: "שלחו תמונה וקבלו מחיר",
     timeNote: "חלון עבודה 3 שעות",
     areaNote: "טבריה וסובב כנרת",
-    trustCleanTitle: "שטיפה פנימית",
-    trustCleanText: "מאייד, פילטרים וניקוז",
+    trustCleanTitle: "מחיר פתיחה מ-200 ₪",
+    trustCleanText: "לניקוי פשוט ללא פירוק",
     trustDisinfectionTitle: "חיטוי במסלול העמוק",
     trustDisinfectionText: "עם פירוק וניקוי יסודי",
     trustHoursTitle: "א-ה 08:00-20:00 · ו 08:00-12:00",
@@ -62,21 +65,22 @@ const translations = {
     featureDisinfectTitle: "חיטוי וסיום נקי",
     featureDisinfectText: "במסלול העמוק מתבצע חיטוי לאחר השטיפה, ניקוי אזור העבודה והפעלה קצרה לבדיקת זרימת אוויר תקינה.",
     leadEyebrow: "תיאום מהיר",
-    leadTitle: "בחרו תאריך ושעה, ונשריין חלון עבודה של 3 שעות",
-    leadText: "בחרו במסלול ניקוי: ללא פירוק 250-350 ₪, או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪. לאחר שליחת הפרטים נפתחת הודעת WhatsApp מוכנה, הבקשה מגיעה למאסטר ונשמר חלון עבודה ביומן.",
+    leadTitle: "השאירו פרטים או שלחו WhatsApp, ונחזור עם מחיר וזמן פנוי",
+    leadText: "ניקוי ללא פירוק מתחיל מ-200 ₪ ובדרך כלל 200-350 ₪. ניקוי עמוק עם פירוק וחיטוי 400-500 ₪. אפשר לבחור מועד באתר, או פשוט לשלוח תמונה ב-WhatsApp לקבלת מחיר מהיר.",
     leadHighlight1: "חלון עבודה 3 שעות",
     leadHighlight2: "WhatsApp או email",
     leadHighlight3: "א-ה 08:00-20:00 · ו 08:00-12:00",
+    quickWhatsapp: "שלחו תמונה וקבלו מחיר",
     fieldName: "שם",
     fieldPhone: "טלפון",
     fieldAddress: "כתובת מלאה",
     fieldArea: "אזור",
     fieldUnits: "מספר יחידות",
     fieldServicePackage: "סוג ניקוי",
-    serviceBasic: "ניקוי ללא פירוק - 250-350 ₪",
+    serviceBasic: "ניקוי ללא פירוק - מ-200 ₪",
     serviceDeep: "ניקוי עמוק עם פירוק וחיטוי - 400-500 ₪",
-    fieldBookingDate: "בחרו תאריך",
-    fieldBookingTime: "בחרו שעה",
+    fieldBookingDate: "תאריך מועדף",
+    fieldBookingTime: "שעה מועדפת",
     fieldEmail: "email לאישור מחיר",
     fieldContact: "איך נוח לקבל תשובה?",
     contactEither: "מה שיותר מהיר",
@@ -84,14 +88,14 @@ const translations = {
     notesPlaceholder: "קומה, גישה למזגן, ריח, טפטוף או תמונה ב-WhatsApp",
     slotLoading: "טוען שעות פנויות...",
     slotUnavailable: "אין שעות פנויות בתאריך הזה",
-    slotHelper: "כל מועד שומר 3 שעות עבודה. לאחר שליחת הטופס המועד נבדק ונשמר ביומן.",
+    slotHelper: "אפשר להשאיר ריק ולתאם זמן ב-WhatsApp. כל מועד שומר 3 שעות עבודה.",
     slotLive: "השעות מוצגות לפי היומן.",
     slotFallback: "השעות זמינות לתצוגה. לאחר חיבור השרת הן ייבדקו מול היומן.",
-    slotRequired: "בחרו תאריך ושעה פנויים.",
-    submitButton: "שליחת בקשה",
+    slotRequired: "אפשר לשלוח גם בלי מועד, או לבחור תאריך ושעה פנויים.",
+    submitButton: "שליחה ופתיחת WhatsApp",
     submitWorking: "שולח...",
     successWithGoogle: "הבקשה נשלחה והמועד נשלח לשמירה ביומן. טווח המחיר יאושר לפי סוג הניקוי שנבחר.",
-    successFallback: "הפרטים מוכנים לשליחה. טווח המחיר יאושר לפי סוג הניקוי שנבחר.",
+    successFallback: "הפרטים מוכנים לשליחה. WhatsApp נפתח כדי לסיים את הפנייה ולקבל מחיר.",
     errorMessage: "לא הצלחנו לשלוח לשרת Google. אפשר לשלוח את הפרטים ב-WhatsApp.",
     emailRequired: "בחרת email, לכן צריך למלא כתובת email.",
     areaTiberias: "טבריה",
@@ -116,31 +120,34 @@ const translations = {
     faq2Question: "כמה זמן מוקצה להזמנה?",
     faq2Answer: "לכל בקשה מוקצות 3 שעות עבודה ביומן, כולל זמן עבודה מסודר ומרווח נסיעה באזור.",
     faq3Question: "מה המחיר ואיזה מסלול לבחור?",
-    faq3Answer: "ניקוי ללא פירוק עולה 250-350 ₪. ניקוי עמוק עם פירוק וחיטוי עולה 400-500 ₪. המחיר הסופי מאושר לפי מספר היחידות, גישה ומיקום.",
+    faq3Answer: "ניקוי ללא פירוק מתחיל מ-200 ₪ ובדרך כלל עולה 200-350 ₪. ניקוי עמוק עם פירוק וחיטוי עולה 400-500 ₪. המחיר הסופי מאושר לפי מספר היחידות, גישה ומיקום.",
     faq4Question: "אפשר לשלוח תמונה ב-WhatsApp?",
     faq4Answer: "כן. אחרי שליחת הטופס נפתחת הודעת WhatsApp מוכנה עם הפרטים, ואפשר לצרף אליה תמונה של המזגן.",
     footerTitle: "מים ושמש - ניקוי מזגנים",
     footerText: "ניקוי יחידה פנימית, שטיפה וחיטוי באזור טבריה."
   },
   ru: {
-    title: "Мойка кондиционера в Тверии | Чистка внутреннего блока | 053 361 3100",
-    description: "Мойка внутреннего блока кондиционера в Тверии и окрестностях: без разборки 250-350 ₪ или глубокая мойка с разборкой и дезинфекцией 400-500 ₪. Заявка через WhatsApp или email.",
+    title: "Мойка кондиционера в Тверии от 200 ₪ | Чистка внутреннего блока | 053 361 3100",
+    description: "Мойка внутреннего блока кондиционера в Тверии и окрестностях: без разборки от 200 ₪, обычно 200-350 ₪, или глубокая мойка с разборкой и дезинфекцией 400-500 ₪. Отправьте фото в WhatsApp для быстрой цены.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Мойка кондиционеров",
     navService: "Услуга",
     navBooking: "Заявка",
     navFaq: "Вопросы",
     languageButton: "עברית",
-    heroEyebrow: "Тверия и окрестности · 2 варианта мойки",
-    heroTitle: "Глубокая мойка внутреннего блока кондиционера",
-    heroLead: "Выберите мойку без разборки или глубокую мойку с разборкой и дезинфекцией от запахов и грязи. Для квартир, домов и небольшого бизнеса в районе Тверии.",
-    bookButton: "Заказать чистку",
+    heroEyebrow: "Тверия и окрестности · старт от 200 ₪",
+    heroTitle: "Запах из кондиционера? Мойка от 200 ₪ в Тверии",
+    heroLead: "Отправьте фото в WhatsApp и получите быструю оценку цены. Мойка без разборки или глубокая мойка с разборкой и дезинфекцией для квартир, гостевых юнитов и бизнеса.",
+    whatsappButton: "Цена в WhatsApp",
+    bookButton: "Выбрать время на сайте",
     bookButtonShort: "Заявка",
-    priceNote: "Без разборки 250-350 ₪ · глубокая с разборкой 400-500 ₪",
+    callButtonShort: "Позвонить",
+    priceNote: "Без разборки от 200 ₪ · глубокая с разборкой 400-500 ₪",
+    photoNote: "Отправьте фото и получите цену",
     timeNote: "3 часа рабочего времени",
     areaNote: "Тверия и Кинерет",
-    trustCleanTitle: "Внутренняя мойка",
-    trustCleanText: "испаритель, фильтры и дренаж",
+    trustCleanTitle: "Старт от 200 ₪",
+    trustCleanText: "простая мойка без разборки",
     trustDisinfectionTitle: "Дезинфекция в глубокой мойке",
     trustDisinfectionText: "с разборкой и тщательной промывкой",
     trustHoursTitle: "Вс-Чт 08:00-20:00 · Пт 08:00-12:00",
@@ -155,21 +162,22 @@ const translations = {
     featureDisinfectTitle: "Дезинфекция и чистый финал",
     featureDisinfectText: "В глубокой мойке выполняется дезинфекция после промывки, уборка зоны работы и короткий запуск для проверки потока воздуха.",
     leadEyebrow: "Быстрая заявка",
-    leadTitle: "Выберите дату и время, а мы зарезервируем 3-часовой рабочий слот",
-    leadText: "Выберите вариант: мойка без разборки 250-350 ₪ или глубокая мойка с разборкой и дезинфекцией 400-500 ₪. После отправки откроется готовое сообщение WhatsApp, заявка придет мастеру и будет зарезервирован рабочий слот.",
+    leadTitle: "Оставьте данные или напишите в WhatsApp, и мы вернемся с ценой и временем",
+    leadText: "Мойка без разборки начинается от 200 ₪ и обычно стоит 200-350 ₪. Глубокая мойка с разборкой и дезинфекцией 400-500 ₪. Можно выбрать время на сайте или просто отправить фото в WhatsApp.",
     leadHighlight1: "3-часовой слот",
     leadHighlight2: "WhatsApp или email",
     leadHighlight3: "Вс-Чт 08:00-20:00 · Пт 08:00-12:00",
+    quickWhatsapp: "Отправить фото и получить цену",
     fieldName: "Имя",
     fieldPhone: "Телефон",
     fieldAddress: "Полный адрес",
     fieldArea: "Район",
     fieldUnits: "Количество блоков",
     fieldServicePackage: "Тип мойки",
-    serviceBasic: "Мойка без разборки - 250-350 ₪",
+    serviceBasic: "Мойка без разборки - от 200 ₪",
     serviceDeep: "Глубокая мойка с разборкой и дезинфекцией - 400-500 ₪",
-    fieldBookingDate: "Выберите дату",
-    fieldBookingTime: "Выберите время",
+    fieldBookingDate: "Желаемая дата",
+    fieldBookingTime: "Желаемое время",
     fieldEmail: "email для подтверждения цены",
     fieldContact: "Как удобнее получить ответ?",
     contactEither: "как быстрее",
@@ -177,14 +185,14 @@ const translations = {
     notesPlaceholder: "этаж, доступ к кондиционеру, запах, протечка или фото в WhatsApp",
     slotLoading: "Загружаю свободное время...",
     slotUnavailable: "На эту дату свободных слотов нет",
-    slotHelper: "Каждый слот резервирует 3 часа работы. После отправки форма проверит время и передаст бронь в календарь.",
+    slotHelper: "Можно оставить пустым и согласовать время в WhatsApp. Каждый слот резервирует 3 часа работы.",
     slotLive: "Время показано по календарю.",
     slotFallback: "Слоты показаны для предпросмотра. После подключения backend они будут проверяться по календарю.",
-    slotRequired: "Выберите свободную дату и время.",
-    submitButton: "Отправить заявку",
+    slotRequired: "Можно отправить без времени или выбрать свободный слот.",
+    submitButton: "Отправить и открыть WhatsApp",
     submitWorking: "Отправляю...",
     successWithGoogle: "Заявка отправлена, выбранный слот передан на бронирование в календарь. Диапазон цены будет подтвержден по выбранному типу мойки.",
-    successFallback: "Данные готовы к отправке. Диапазон цены будет подтвержден по выбранному типу мойки.",
+    successFallback: "Данные готовы к отправке. WhatsApp открыт, чтобы завершить обращение и получить цену.",
     errorMessage: "Не удалось отправить на сервер Google. Можно отправить данные в WhatsApp.",
     emailRequired: "Вы выбрали email, поэтому нужно заполнить адрес email.",
     areaTiberias: "Тверия",
@@ -209,7 +217,7 @@ const translations = {
     faq2Question: "Сколько времени резервируется?",
     faq2Answer: "На каждую заявку в календаре выделяется 3 часа, включая рабочее время и запас на дорогу по району.",
     faq3Question: "Какая цена и какой вариант выбрать?",
-    faq3Answer: "Мойка без разборки стоит 250-350 ₪. Глубокая мойка с разборкой и дезинфекцией стоит 400-500 ₪. Итог подтверждается по количеству блоков, доступу и адресу.",
+    faq3Answer: "Мойка без разборки начинается от 200 ₪ и обычно стоит 200-350 ₪. Глубокая мойка с разборкой и дезинфекцией стоит 400-500 ₪. Итог подтверждается по количеству блоков, доступу и адресу.",
     faq4Question: "Можно отправить фото в WhatsApp?",
     faq4Answer: "Да. После формы откроется готовое сообщение WhatsApp, к нему можно прикрепить фото кондиционера.",
     footerTitle: "Маим ве-Шемеш - мойка кондиционеров",
@@ -218,8 +226,8 @@ const translations = {
 };
 
 const whatsappMessages = {
-  he: "שלום, אני רוצה לתאם ניקוי יחידה פנימית של מזגן בטבריה. ראיתי מחיר: ללא פירוק 250-350 ₪, ניקוי עמוק עם פירוק וחיטוי 400-500 ₪.",
-  ru: "Здравствуйте, хочу заказать мойку внутреннего блока кондиционера в Тверии. Видел цены: без разборки 250-350 ₪, глубокая мойка с разборкой и дезинфекцией 400-500 ₪."
+  he: "שלום, אני רוצה מחיר לניקוי מזגן בטבריה. ראיתי מחיר: ניקוי ללא פירוק מ-200 ₪, בדרך כלל 200-350 ₪; ניקוי עמוק עם פירוק וחיטוי 400-500 ₪. אפשר לשלוח תמונה?",
+  ru: "Здравствуйте, хочу узнать цену на мойку кондиционера в Тверии. Видел цену: без разборки от 200 ₪, обычно 200-350 ₪; глубокая мойка с разборкой и дезинфекцией 400-500 ₪. Можно отправить фото?"
 };
 
 let currentLanguage = new URLSearchParams(window.location.search).get("lang") === "ru" ? "ru" : "he";
@@ -233,6 +241,19 @@ const setLocalizedText = (element, value) => {
   element.textContent = value;
 };
 
+const trackMarketingEvent = (eventName, parameters = {}) => {
+  if (typeof window.fbq === "function") {
+    window.fbq("track", eventName === "LeadFormSubmit" ? "Lead" : "Contact", {
+      service: "ac_cleaning_tiberias",
+      ...parameters
+    });
+    window.fbq("trackCustom", eventName, {
+      service: "ac_cleaning_tiberias",
+      ...parameters
+    });
+  }
+};
+
 const applyLanguage = (language) => {
   currentLanguage = language;
   const dictionary = translations[language];
@@ -243,10 +264,10 @@ const applyLanguage = (language) => {
   document.title = dictionary.title;
   setMeta('meta[name="description"]', dictionary.description);
   setMeta('meta[property="og:title"]', isHebrew ? "ניקוי מזגן בטבריה | שטיפת יחידה פנימית וחיטוי" : "Мойка кондиционера в Тверии | Чистка внутреннего блока");
-  setMeta('meta[property="og:description"]', isHebrew ? "ניקוי מזגן בטבריה: ללא פירוק 250-350 ₪ או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪." : "Мойка кондиционера в Тверии: без разборки 250-350 ₪ или глубокая с разборкой и дезинфекцией 400-500 ₪.");
+  setMeta('meta[property="og:description"]', isHebrew ? "ניקוי מזגן בטבריה: ללא פירוק מ-200 ₪, בדרך כלל 200-350 ₪, או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪." : "Мойка кондиционера в Тверии: без разборки от 200 ₪, обычно 200-350 ₪, или глубокая с разборкой и дезинфекцией 400-500 ₪.");
   setMeta('meta[property="og:locale"]', isHebrew ? "he_IL" : "ru_RU");
   setMeta('meta[name="twitter:title"]', isHebrew ? "ניקוי מזגן בטבריה | שטיפת יחידה פנימית וחיטוי" : "Мойка кондиционера в Тверии | Чистка внутреннего блока");
-  setMeta('meta[name="twitter:description"]', isHebrew ? "ניקוי מזגן בטבריה: ללא פירוק 250-350 ₪ או עמוק עם פירוק וחיטוי 400-500 ₪." : "Мойка кондиционера в Тверии: без разборки 250-350 ₪ или глубокая с разборкой и дезинфекцией 400-500 ₪.");
+  setMeta('meta[name="twitter:description"]', isHebrew ? "ניקוי מזגן בטבריה: ללא פירוק מ-200 ₪, בדרך כלל 200-350 ₪, או עמוק עם פירוק וחיטוי 400-500 ₪." : "Мойка кондиционера в Тверии: без разборки от 200 ₪, обычно 200-350 ₪, или глубокая с разборкой и дезинфекцией 400-500 ₪.");
 
   document.querySelectorAll("[data-key]").forEach((element) => {
     const value = dictionary[element.dataset.key];
@@ -274,6 +295,24 @@ const applyLanguage = (language) => {
 
 document.querySelector("[data-language-toggle]")?.addEventListener("click", () => {
   applyLanguage(currentLanguage === "he" ? "ru" : "he");
+});
+
+document.querySelectorAll("[data-whatsapp-link]").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackMarketingEvent("LeadIntent", { channel: "whatsapp" });
+  });
+});
+
+document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackMarketingEvent("LeadIntent", { channel: "phone" });
+  });
+});
+
+document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    trackMarketingEvent("LeadIntent", { channel: "email" });
+  });
 });
 
 const copyButton = document.querySelector("[data-copy]");
@@ -606,12 +645,6 @@ leadForm?.addEventListener("submit", async (event) => {
   const lead = collectLead();
   const dictionary = translations[currentLanguage];
 
-  if (!lead.preferredDateTime) {
-    setStatus(dictionary.slotRequired, "error");
-    bookingDateInput?.focus();
-    return;
-  }
-
   if (lead.contactPreference === "email" && !lead.email) {
     setStatus(dictionary.emailRequired, "error");
     emailInput?.focus();
@@ -623,6 +656,7 @@ leadForm?.addEventListener("submit", async (event) => {
   const message = formatLeadMessage(lead);
   const shouldOpenWhatsapp = lead.contactPreference !== "email";
   let sentToGoogle = false;
+  trackMarketingEvent("LeadFormSubmit", { channel: lead.contactPreference || "whatsapp" });
 
   if (submitButton) {
     submitButton.disabled = true;
