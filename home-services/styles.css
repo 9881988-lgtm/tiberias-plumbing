@@ -327,7 +327,7 @@ html[dir="ltr"] .hero__shade {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -367,7 +367,7 @@ html[dir="ltr"] .hero__shade {
   border-radius: 999px;
   background: var(--mint);
   color: var(--teal-dark);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 800;
 }
 
@@ -381,22 +381,21 @@ html[dir="ltr"] .hero__shade {
   color: #184f82;
 }
 
-.repair-card .service-pill,
-.handyman-card .service-pill {
+.repair-card .service-pill {
   background: #ffe4dc;
   color: #8b2f18;
 }
 
 .service-card h3 {
   margin: 0;
-  font-size: 1.28rem;
+  font-size: 1.38rem;
   line-height: 1.18;
 }
 
 .service-card p {
   margin: 12px 0 0;
   color: var(--muted);
-  font-size: 0.98rem;
+  font-size: 1.02rem;
 }
 
 .illustration {
