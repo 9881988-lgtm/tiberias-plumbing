@@ -45,7 +45,7 @@
       fieldNotes: "תיאור קצר",
       notesPlaceholder: "לדוגמה: דוד 150 ליטר, מזגן עם ריח, תליית מדף, תיקון קטן",
       submitButton: "שליחת בקשה ב-WhatsApp",
-      formNote: "הטופס פותח הודעת WhatsApp מוכנה. לא מתבצע חיוב באתר.",
+      formNote: "אפשר לשלוח גם רק בחירת שירות. הטופס פותח הודעת WhatsApp מוכנה, ללא חיוב באתר.",
       termsEyebrow: "מתאים לחיפושים",
       termsTitle: "אם חיפשתם אחד מהשירותים האלה, הגעתם למקום הנכון",
       faqEyebrow: "שאלות",
@@ -99,7 +99,7 @@
       fieldNotes: "Короткое описание",
       notesPlaceholder: "Например: бойлер 150 литров, запах из кондиционера, повесить полку, мелкий ремонт",
       submitButton: "Отправить заявку в WhatsApp",
-      formNote: "Форма открывает готовое сообщение WhatsApp. Оплата на сайте не выполняется.",
+      formNote: "Можно отправить только выбранную услугу. Форма открывает готовое сообщение WhatsApp, оплата на сайте не выполняется.",
       termsEyebrow: "Подходит под поиски",
       termsTitle: "Если вы искали одну из этих услуг, вы попали по адресу",
       faqEyebrow: "Вопросы",
@@ -189,15 +189,29 @@
   const formatLeadMessage = (form) => {
     const formData = new FormData(form);
     const selectedService = form.querySelector("select[name='service']")?.selectedOptions[0]?.textContent.trim() || "";
+    const optionalFields = currentLanguage === "ru"
+      ? [
+          ["Имя", formData.get("name")],
+          ["Телефон", formData.get("phone")],
+          ["Адрес / район", formData.get("address")],
+          ["Описание", formData.get("notes")]
+        ]
+      : [
+          ["שם", formData.get("name")],
+          ["טלפון", formData.get("phone")],
+          ["כתובת / שכונה", formData.get("address")],
+          ["תיאור", formData.get("notes")]
+        ];
+    const optionalLines = optionalFields
+      .map(([label, value]) => [label, String(value || "").trim()])
+      .filter(([, value]) => value)
+      .map(([label, value]) => `${label}: ${value}`);
 
     if (currentLanguage === "ru") {
       return [
         "Здравствуйте! Хочу получить цену на услугу.",
         `Услуга: ${selectedService}`,
-        `Имя: ${formData.get("name") || ""}`,
-        `Телефон: ${formData.get("phone") || ""}`,
-        `Адрес / район: ${formData.get("address") || ""}`,
-        `Описание: ${formData.get("notes") || ""}`,
+        ...optionalLines,
         "Лендинг: https://9881988-lgtm.github.io/tiberias-plumbing/home-services/"
       ].join("\n");
     }
@@ -205,10 +219,7 @@
     return [
       "שלום, אשמח לקבל הצעת מחיר לשירות.",
       `שירות: ${selectedService}`,
-      `שם: ${formData.get("name") || ""}`,
-      `טלפון: ${formData.get("phone") || ""}`,
-      `כתובת / שכונה: ${formData.get("address") || ""}`,
-      `תיאור: ${formData.get("notes") || ""}`,
+      ...optionalLines,
       "קישור: https://9881988-lgtm.github.io/tiberias-plumbing/home-services/"
     ].join("\n");
   };
