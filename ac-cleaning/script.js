@@ -25,16 +25,16 @@ const SETTINGS = {
 
 const translations = {
   he: {
-    title: "ניקוי מזגן בטבריה וקיסריה | שטיפת יחידה פנימית וחיטוי | 053 361 3100",
-    description: "ניקוי מזגנים בטבריה, קיסריה והיישובים עד 15 ק״מ מקיסריה: ניקוי ללא פירוק מ-200 ₪ וניקוי עמוק עם פירוק וחיטוי 400-500 ₪. תיאום מהיר ב-WhatsApp.",
+    title: "ניקוי מזגן בקיסריה וטבריה | שטיפת יחידה פנימית וחיטוי | 053 361 3100",
+    description: "ניקוי מזגנים בקיסריה והיישובים סביב עד 15 ק״מ, וגם בטבריה: ניקוי ללא פירוק מ-200 ₪ וניקוי עמוק עם פירוק וחיטוי 400-500 ₪. WhatsApp מהיר.",
     brandTitle: "מים ושמש",
     brandSubtitle: "ניקוי מזגנים",
     navService: "השירות",
     navBooking: "הזמנה",
     navFaq: "שאלות",
     languageButton: "Русский",
-    heroEyebrow: "טבריה · קיסריה +15 ק״מ · זמינות מהירה היום",
-    heroTitle: "ניקוי מזגנים היום בטבריה, בקיסריה והסביבה",
+    heroEyebrow: "קיסריה +15 ק״מ · טבריה · זמינות מהירה היום",
+    heroTitle: "ניקוי מזגנים היום בקיסריה, בטבריה והסביבה",
     heroLead: "יש ריח מהמזגן או זרימת אוויר חלשה? ניקוי ללא פירוק מ-200 ₪, או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪. שלחו WhatsApp ונבדוק זמינות מיידית.",
     todayOfferTitle: "מבצע מהיר להיום: ניקוי ללא פירוק מ-200 ₪",
     todayOfferText: "מתאים למזגן עם ריח, אבק או קירור חלש. מענה מהיר ב-WhatsApp.",
@@ -42,7 +42,7 @@ const translations = {
     bookButtonShort: "זמינות עכשיו",
     priceNote: "ללא פירוק 200-350 ₪",
     timeNote: "חלון עבודה 3 שעות",
-    areaNote: "טבריה · קיסריה +15 ק״מ",
+    areaNote: "קיסריה +15 ק״מ · טבריה",
     trustCleanTitle: "שטיפה פנימית",
     trustCleanText: "מאייד, פילטרים וניקוז",
     trustDisinfectionTitle: "עמוק + חיטוי",
@@ -106,8 +106,8 @@ const translations = {
     units2: "2 יחידות",
     units3: "3+ יחידות",
     areaEyebrow: "אזור השירות",
-    areaTitle: "ניקוי מזגנים בטבריה, בקיסריה וביישובים עד 15 ק״מ",
-    areaText: "העבודה מתאימה למזגנים עיליים בדירות, יחידות אירוח, קליניקות ועסקים קטנים. שירות גם בקיסריה וביישובים עד 15 ק״מ: קיסריה, אור עקיבא, חדרה, בנימינה-גבעת עדה, זכרון יעקב, פרדס חנה-כרכור, ג׳סר א-זרקא, פוריידיס, בית חנניה, מעגן מיכאל ושדות ים, לפי זמינות.",
+    areaTitle: "ניקוי מזגנים בקיסריה וביישובים סביב עד 15 ק״מ",
+    areaText: "העבודה מתאימה למזגנים עיליים בדירות, יחידות אירוח, קליניקות ועסקים קטנים. אזור קיסריה: קיסריה, אור עקיבא, חדרה, בנימינה-גבעת עדה, זכרון יעקב, פרדס חנה-כרכור, ג׳סר א-זרקא, פוריידיס, בית חנניה, מעגן מיכאל ושדות ים. בנוסף אפשר לתאם גם בטבריה, לפי זמינות.",
     contactTitle: "פרטי קשר",
     copyButton: "העתקת המספר",
     copiedButton: "המספר הועתק",
@@ -122,19 +122,19 @@ const translations = {
     faq4Question: "אפשר לשלוח תמונה ב-WhatsApp?",
     faq4Answer: "כן. אחרי שליחת הטופס נפתחת הודעת WhatsApp מוכנה עם הפרטים, ואפשר לצרף אליה תמונה של המזגן.",
     footerTitle: "מים ושמש - ניקוי מזגנים",
-    footerText: "ניקוי יחידה פנימית, שטיפה וחיטוי באזור טבריה, קיסריה והיישובים הקרובים."
+    footerText: "ניקוי יחידה פנימית, שטיפה וחיטוי באזור קיסריה, היישובים הקרובים וטבריה."
   },
   ru: {
-    title: "Мойка кондиционера в Тверии и Кейсарии | Чистка внутреннего блока | 053 361 3100",
-    description: "Мойка кондиционеров в Тверии, Кейсарии и городах до 15 км от Кейсарии: без разборки от 200 ₪, глубокая мойка с разборкой и дезинфекцией 400-500 ₪. Быстрая заявка в WhatsApp.",
+    title: "Мойка кондиционера в Кейсарии и Тверии | Чистка внутреннего блока | 053 361 3100",
+    description: "Мойка кондиционеров в Кейсарии, городах до 15 км от Кейсарии и в Тверии: без разборки от 200 ₪, глубокая мойка с разборкой и дезинфекцией 400-500 ₪. WhatsApp.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Мойка кондиционеров",
     navService: "Услуга",
     navBooking: "Заявка",
     navFaq: "Вопросы",
     languageButton: "עברית",
-    heroEyebrow: "Тверия · Кейсария +15 км · быстрая доступность сегодня",
-    heroTitle: "Мойка кондиционеров сегодня в Тверии, Кейсарии и рядом",
+    heroEyebrow: "г. Кейсария +15 км · Тверия · быстрая доступность сегодня",
+    heroTitle: "Мойка кондиционеров сегодня в Кейсарии, Тверии и рядом",
     heroLead: "Есть запах из кондиционера или слабый поток воздуха? Простая мойка без разборки от 200 ₪, глубокая мойка с разборкой и дезинфекцией 400-500 ₪. Напишите в WhatsApp, проверим ближайшее время.",
     todayOfferTitle: "Быстрое предложение на сегодня: мойка без разборки от 200 ₪",
     todayOfferText: "Подходит, если есть запах, пыль или слабое охлаждение. Быстрый ответ в WhatsApp.",
@@ -142,7 +142,7 @@ const translations = {
     bookButtonShort: "Проверить время",
     priceNote: "без разборки 200-350 ₪",
     timeNote: "3 часа рабочего времени",
-    areaNote: "Тверия · Кейсария +15 км",
+    areaNote: "г. Кейсария +15 км · Тверия",
     trustCleanTitle: "Внутренняя мойка",
     trustCleanText: "испаритель, фильтры и дренаж",
     trustDisinfectionTitle: "Глубокая + дезинфекция",
@@ -206,8 +206,8 @@ const translations = {
     units2: "2 блока",
     units3: "3+ блока",
     areaEyebrow: "Зона обслуживания",
-    areaTitle: "Мойка кондиционеров в Тверии, Кейсарии и городах до 15 км",
-    areaText: "Услуга подходит для настенных кондиционеров в квартирах, гостевых юнитах, кабинетах и небольших бизнесах. Выезд также в Кейсарии, Ор-Акиве, Хадере, Биньямине-Гиват-Ада, Зихрон-Яакове, Пардес-Хане-Каркур, Джиср-аз-Зарке, Фурейдисе, Бейт-Ханании, Мааган-Михаэле и Сдот-Яме, в пределах примерно 15 км от Кейсарии, по доступности.",
+    areaTitle: "Мойка кондиционеров в г. Кейсария и городах вокруг до 15 км",
+    areaText: "Услуга подходит для настенных кондиционеров в квартирах, гостевых юнитах, кабинетах и небольших бизнесах. Зона выезда вокруг г. Кейсария: Ор-Акива, Хадера, Биньямина-Гиват-Ада, Зихрон-Яаков, Пардес-Хана-Каркур, Джиср-аз-Зарка, Фурейдис, Бейт-Ханания, Мааган-Михаэль и Сдот-Ям. Также можно согласовать выезд в Тверии.",
     contactTitle: "Контакты",
     copyButton: "Скопировать номер",
     copiedButton: "Номер скопирован",
@@ -222,13 +222,13 @@ const translations = {
     faq4Question: "Можно отправить фото в WhatsApp?",
     faq4Answer: "Да. После формы откроется готовое сообщение WhatsApp, к нему можно прикрепить фото кондиционера.",
     footerTitle: "Маим ве-Шемеш - мойка кондиционеров",
-    footerText: "Чистка внутреннего блока, промывка и дезинфекция в районе Тверии, Кейсарии и ближайших городов."
+    footerText: "Чистка внутреннего блока, промывка и дезинфекция в районе Кейсарии, ближайших городов и Тверии."
   }
 };
 
 const whatsappMessages = {
-  he: "שלום, ראיתי את המבצע לניקוי מזגנים בטבריה או בקיסריה. אני רוצה לבדוק זמינות להיום/מחר. ניקוי ללא פירוק 200-350 ₪ או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪.",
-  ru: "Здравствуйте, увидел рекламу мойки кондиционеров в Тверии или Кейсарии. Хочу проверить доступность на сегодня/завтра. Без разборки 200-350 ₪ или глубокая с разборкой и дезинфекцией 400-500 ₪."
+  he: "שלום, ראיתי את המבצע לניקוי מזגנים בקיסריה או בטבריה. אני רוצה לבדוק זמינות להיום/מחר. ניקוי ללא פירוק 200-350 ₪ או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪.",
+  ru: "Здравствуйте, увидел рекламу мойки кондиционеров в Кейсарии или Тверии. Хочу проверить доступность на сегодня/завтра. Без разборки 200-350 ₪ или глубокая с разборкой и дезинфекцией 400-500 ₪."
 };
 
 let currentLanguage = new URLSearchParams(window.location.search).get("lang") === "ru" ? "ru" : "he";
@@ -251,11 +251,11 @@ const applyLanguage = (language) => {
   document.documentElement.dir = isHebrew ? "rtl" : "ltr";
   document.title = dictionary.title;
   setMeta('meta[name="description"]', dictionary.description);
-  setMeta('meta[property="og:title"]', isHebrew ? "ניקוי מזגן בטבריה וקיסריה | שטיפת יחידה פנימית וחיטוי" : "Мойка кондиционера в Тверии и Кейсарии | Чистка внутреннего блока");
-  setMeta('meta[property="og:description"]', isHebrew ? "ניקוי מזגנים בטבריה, קיסריה והיישובים עד 15 ק״מ מקיסריה: ללא פירוק מ-200 ₪ או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪." : "Мойка кондиционеров в Тверии, Кейсарии и городах до 15 км: без разборки от 200 ₪ или глубокая с дезинфекцией 400-500 ₪.");
+  setMeta('meta[property="og:title"]', isHebrew ? "ניקוי מזגן בקיסריה וטבריה | שטיפת יחידה פנימית וחיטוי" : "Мойка кондиционера в Кейсарии и Тверии | Чистка внутреннего блока");
+  setMeta('meta[property="og:description"]', isHebrew ? "ניקוי מזגנים בקיסריה והיישובים סביב עד 15 ק״מ, וגם בטבריה: ללא פירוק מ-200 ₪ או ניקוי עמוק עם חיטוי 400-500 ₪." : "Мойка кондиционеров в Кейсарии, городах до 15 км и Тверии: без разборки от 200 ₪ или глубокая с дезинфекцией 400-500 ₪.");
   setMeta('meta[property="og:locale"]', isHebrew ? "he_IL" : "ru_RU");
-  setMeta('meta[name="twitter:title"]', isHebrew ? "ניקוי מזגן בטבריה וקיסריה | שטיפת יחידה פנימית וחיטוי" : "Мойка кондиционера в Тверии и Кейсарии | Чистка внутреннего блока");
-  setMeta('meta[name="twitter:description"]', isHebrew ? "ניקוי מזגנים בטבריה, קיסריה והיישובים עד 15 ק״מ מקיסריה: ללא פירוק מ-200 ₪ או ניקוי עמוק עם פירוק וחיטוי 400-500 ₪." : "Мойка кондиционеров в Тверии, Кейсарии и городах до 15 км: без разборки от 200 ₪ или глубокая чистка 400-500 ₪.");
+  setMeta('meta[name="twitter:title"]', isHebrew ? "ניקוי מזגן בקיסריה וטבריה | שטיפת יחידה פנימית וחיטוי" : "Мойка кондиционера в Кейсарии и Тверии | Чистка внутреннего блока");
+  setMeta('meta[name="twitter:description"]', isHebrew ? "ניקוי מזגנים בקיסריה והיישובים סביב עד 15 ק״מ, וגם בטבריה: ללא פירוק מ-200 ₪ או ניקוי עמוק עם חיטוי 400-500 ₪." : "Мойка кондиционеров в Кейсарии, городах до 15 км и Тверии: без разборки от 200 ₪ или глубокая чистка 400-500 ₪.");
 
   document.querySelectorAll("[data-key]").forEach((element) => {
     const value = dictionary[element.dataset.key];
@@ -307,6 +307,7 @@ if (copyButton) {
 }
 
 const leadForm = document.querySelector("#lead-form");
+leadForm?.setAttribute("novalidate", "novalidate");
 const formStatus = document.querySelector("#form-status");
 const emailInput = leadForm?.querySelector('input[name="email"]');
 const bookingDateInput = leadForm?.querySelector("[data-booking-date]");
@@ -322,9 +323,7 @@ const hasGoogleEndpoint = () => {
 
 const updateEmailRequirement = () => {
   if (!leadForm || !emailInput) return;
-  const checkedPreference = leadForm.querySelector('input[name="contactPreference"]:checked');
-  const preference = checkedPreference ? checkedPreference.value : "whatsapp";
-  emailInput.required = preference === "email";
+  emailInput.required = false;
 };
 
 leadForm?.querySelectorAll('input[name="contactPreference"]').forEach((input) => {
@@ -564,12 +563,12 @@ const formatLeadMessage = (lead) => {
     return [
       "בקשה לניקוי וחיטוי יחידה פנימית של מזגן",
       `מחיר: ${SETTINGS.priceLabel.he}`,
-      `שם: ${lead.name}`,
-      `טלפון: ${lead.phone}`,
+      lead.name ? `שם: ${lead.name}` : "",
+      lead.phone ? `טלפון: ${lead.phone}` : "",
       lead.email ? `email: ${lead.email}` : "",
-      `כתובת: ${lead.address}`,
-      `אזור: ${lead.area}`,
-      `מספר יחידות: ${lead.units}`,
+      lead.address ? `כתובת: ${lead.address}` : "",
+      lead.area ? `אזור: ${lead.area}` : "",
+      lead.units ? `מספר יחידות: ${lead.units}` : "",
       lead.preferredDateTime ? `מועד שנבחר: ${lead.bookingDate} ${lead.bookingSlotLabel || lead.preferredDateTime}` : "מועד שנבחר: לא נבחר",
       `חלון עבודה: ${SETTINGS.bookingHours} שעות`,
       lead.notes ? `הערות: ${lead.notes}` : ""
@@ -579,12 +578,12 @@ const formatLeadMessage = (lead) => {
   return [
     "Заявка на мойку и дезинфекцию внутреннего блока кондиционера",
     `Цена: ${SETTINGS.priceLabel.ru}`,
-    `Имя: ${lead.name}`,
-    `Телефон: ${lead.phone}`,
+    lead.name ? `Имя: ${lead.name}` : "",
+    lead.phone ? `Телефон: ${lead.phone}` : "",
     lead.email ? `email: ${lead.email}` : "",
-    `Адрес: ${lead.address}`,
-    `Район: ${lead.area}`,
-    `Количество блоков: ${lead.units}`,
+    lead.address ? `Адрес: ${lead.address}` : "",
+    lead.area ? `Район: ${lead.area}` : "",
+    lead.units ? `Количество блоков: ${lead.units}` : "",
     lead.preferredDateTime ? `Выбранный слот: ${lead.bookingDate} ${lead.bookingSlotLabel || lead.preferredDateTime}` : "Выбранный слот: не выбран",
     `Рабочий слот: ${SETTINGS.bookingHours} часа`,
     lead.notes ? `Комментарий: ${lead.notes}` : ""
@@ -592,8 +591,8 @@ const formatLeadMessage = (lead) => {
 };
 
 const openFallbackChannel = (lead, message) => {
-  if (lead.contactPreference === "email" && SETTINGS.ownerEmail) {
-    const subject = encodeURIComponent(currentLanguage === "he" ? "בקשה לניקוי מזגן בטבריה או קיסריה" : "Заявка на мойку кондиционера в Тверии или Кейсарии");
+  if (lead.contactPreference === "email" && lead.email && SETTINGS.ownerEmail) {
+    const subject = encodeURIComponent(currentLanguage === "he" ? "בקשה לניקוי מזגן בקיסריה או טבריה" : "Заявка на мойку кондиционера в Кейсарии или Тверии");
     window.location.href = `mailto:${SETTINGS.ownerEmail}?subject=${subject}&body=${encodeURIComponent(message)}`;
     return;
   }
@@ -605,30 +604,12 @@ leadForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
   updateEmailRequirement();
 
-  if (!leadForm.checkValidity()) {
-    leadForm.reportValidity();
-    return;
-  }
-
   const lead = collectLead();
   const dictionary = translations[currentLanguage];
-
-  if (!lead.preferredDateTime) {
-    setStatus(dictionary.slotRequired, "error");
-    bookingDateInput?.focus();
-    return;
-  }
-
-  if (lead.contactPreference === "email" && !lead.email) {
-    setStatus(dictionary.emailRequired, "error");
-    emailInput?.focus();
-    return;
-  }
-
   const submitButton = leadForm.querySelector('button[type="submit"]');
   const originalButtonText = submitButton?.textContent || "";
   const message = formatLeadMessage(lead);
-  const shouldOpenWhatsapp = lead.contactPreference !== "email";
+  const shouldOpenWhatsapp = lead.contactPreference !== "email" || !lead.email;
   let sentToGoogle = false;
 
   if (submitButton) {
