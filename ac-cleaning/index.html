@@ -14,6 +14,8 @@
     <link rel="canonical" href="https://9881988-lgtm.github.io/tiberias-plumbing/ac-cleaning/">
     <link rel="alternate" hreflang="he-IL" href="https://9881988-lgtm.github.io/tiberias-plumbing/ac-cleaning/">
     <link rel="alternate" hreflang="ru-IL" href="https://9881988-lgtm.github.io/tiberias-plumbing/ac-cleaning/?lang=ru">
+    <link rel="alternate" hreflang="en-IL" href="https://9881988-lgtm.github.io/tiberias-plumbing/ac-cleaning/?lang=en">
+    <link rel="alternate" hreflang="fr-IL" href="https://9881988-lgtm.github.io/tiberias-plumbing/ac-cleaning/?lang=fr">
     <link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/ac-cleaning/">
 
     <meta property="og:type" content="website">
@@ -25,6 +27,8 @@
     <meta property="og:image:alt" content="טכנאי מנקה יחידה פנימית של מזגן בחדרה וקיסריה">
     <meta property="og:locale" content="he_IL">
     <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="ניקוי מזגנים בחדרה וקיסריה | שטיפת יחידה פנימית וחיטוי">
     <meta name="twitter:description" content="ניקוי בסיסי מ-250 ₪, ניקוי עמוק + חיטוי מ-450 ₪. שירות מקומי בחדרה, קיסריה והסביבה.">
@@ -99,7 +103,7 @@
               { "@type": "City", "name": "Sdot Yam" },
               { "@type": "Place", "name": "יישובים עד 15 ק״מ מחדרה וקיסריה" }
             ],
-            "availableLanguage": ["he", "ru"],
+            "availableLanguage": ["he", "ru", "en", "fr"],
             "openingHoursSpecification": [
               {
                 "@type": "OpeningHoursSpecification",
@@ -118,7 +122,7 @@
               "@type": "ContactPoint",
               "telephone": "+972533613100",
               "contactType": "customer service",
-              "availableLanguage": ["Hebrew", "Russian"]
+              "availableLanguage": ["Hebrew", "Russian", "English", "French"]
             },
             "makesOffer": {
               "@type": "Offer",
@@ -214,9 +218,12 @@
         <a href="#faq" data-key="navFaq">שאלות</a>
       </nav>
       <div class="header-actions">
-        <button class="language-toggle" type="button" data-language-toggle aria-label="לעבור לרוסית">
-          <span data-key="languageButton">Русский</span>
-        </button>
+        <div class="language-tabs" role="group" aria-label="Language">
+          <button class="language-tab" type="button" data-language-option="he" aria-pressed="true">HE</button>
+          <button class="language-tab" type="button" data-language-option="ru" aria-pressed="false">RU</button>
+          <button class="language-tab" type="button" data-language-option="en" aria-pressed="false">EN</button>
+          <button class="language-tab" type="button" data-language-option="fr" aria-pressed="false">FR</button>
+        </div>
         <a class="header-phone" href="tel:+972533613100" aria-label="להתקשר 053 361 3100">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2a1.5 1.5 0 0 1 1.54-.36c1.02.34 2.12.52 3.25.52a1.5 1.5 0 0 1 1.5 1.5v3.48a1.5 1.5 0 0 1-1.5 1.5C10.12 22.32 1.68 13.88 1.68 3.8a1.5 1.5 0 0 1 1.5-1.5h3.49a1.5 1.5 0 0 1 1.5 1.5c0 1.13.18 2.23.52 3.25a1.5 1.5 0 0 1-.37 1.54l-2.2 2.2Z"/>
@@ -335,16 +342,12 @@
         </div>
         <div class="proof-grid">
           <article>
-            <div class="proof-visual proof-visual--before" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
+            <img src="assets/ac-cleaning-before-mold.jpg" alt="יחידה פנימית של מזגן לפני ניקוי עם אבק, לכלוך ועובש" loading="lazy" width="1200" height="900">
             <h3 data-key="proofBeforeTitle">לפני: ריח, אבק ועובש</h3>
             <p data-key="proofBeforeText">סימנים נפוצים: ריח רע, זרימת אוויר חלשה, אבק שחור או עובש ליד פתחי האוויר.</p>
           </article>
           <article>
-            <div class="proof-visual proof-visual--water" aria-hidden="true">
-              <span></span>
-            </div>
+            <img src="assets/ac-cleaning-during-wash.jpg" alt="שטיפת מזגן בזמן העבודה עם שקית הגנה ומים מלוכלכים" loading="lazy" width="1200" height="900">
             <h3 data-key="proofWaterTitle">בזמן ניקוי: לכלוך יוצא החוצה</h3>
             <p data-key="proofWaterText">בשטיפה עמוקה רואים לעיתים מים כהים ולכלוך שיוצאים מתוך היחידה.</p>
           </article>
@@ -530,6 +533,6 @@
       <a data-whatsapp-link href="https://wa.me/972533613100" target="_blank" rel="noopener">WhatsApp</a>
     </div>
 
-    <script src="script.js?v=ac-cleaning-20260615-hadera"></script>
+    <script src="script.js?v=ac-cleaning-20260615-proof-languages"></script>
   </body>
 </html>

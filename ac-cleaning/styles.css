@@ -150,7 +150,7 @@ p {
 .button,
 .mobile-callbar a,
 .copy-button,
-.language-toggle {
+.language-tab {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -161,19 +161,38 @@ p {
   text-decoration: none;
 }
 
-.language-toggle {
-  padding: 10px 12px;
-  color: var(--teal-dark);
+.language-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
   background: var(--white);
   border: 1px solid var(--line);
-  cursor: pointer;
+  border-radius: 8px;
 }
 
-.language-toggle:hover,
-.language-toggle:focus-visible {
+.language-tab {
+  min-width: 38px;
+  min-height: 36px;
+  padding: 7px 9px;
+  color: var(--teal-dark);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+
+.language-tab:hover,
+.language-tab:focus-visible {
   color: var(--ink);
   background: var(--blue);
   outline: none;
+}
+
+.language-tab.is-active,
+.language-tab[aria-pressed="true"] {
+  color: var(--white);
+  background: var(--teal);
 }
 
 .phone-number {
@@ -507,6 +526,7 @@ h1 {
 .proof-grid img,
 .proof-visual {
   width: 100%;
+  height: clamp(220px, 24vw, 300px);
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
@@ -902,9 +922,18 @@ details p {
   }
 
   .header-phone,
-  .language-toggle {
+  .language-tab {
     min-height: 40px;
-    padding: 9px 10px;
+  }
+
+  .language-tabs {
+    gap: 1px;
+    padding: 2px;
+  }
+
+  .language-tab {
+    min-width: 34px;
+    padding: 7px 6px;
   }
 
   .hero {
