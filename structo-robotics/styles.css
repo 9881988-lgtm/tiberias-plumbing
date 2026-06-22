@@ -552,6 +552,34 @@ h2 {
   font-weight: 900;
 }
 
+.contact-link {
+  display: grid;
+  gap: 3px;
+  padding: 14px 16px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soft);
+}
+
+.contact-link span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.contact-link strong {
+  direction: ltr;
+  color: var(--blue);
+  font-size: 1.02rem;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  border-color: var(--blue);
+  background: #eef5ff;
+}
+
 .primary-action.wide {
   width: 100%;
 }

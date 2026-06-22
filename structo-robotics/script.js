@@ -76,6 +76,7 @@ const translations = {
     contactTitle: "מחפשים משקיע או שותף אסטרטגי לפיילוט ראשון.",
     contactText: "נשמח לדבר עם קבלנים, יצרני אלמנטים טרומיים, בעלי ציוד כבד, משקיעים ושותפי פיתוח.",
     contactLocation: "טבריה, ישראל",
+    contactEmailLabel: "אימייל",
     footerText: "מערכות רובוטיות להרכבת בנייה טרומית"
   },
   en: {
@@ -155,6 +156,7 @@ const translations = {
     contactTitle: "We are looking for an investor or strategic partner for the first pilot.",
     contactText: "We welcome conversations with contractors, precast manufacturers, heavy-equipment owners, investors, and development partners.",
     contactLocation: "Tiberias, Israel",
+    contactEmailLabel: "Email",
     footerText: "Robotic systems for precast construction assembly"
   },
   ru: {
@@ -234,6 +236,7 @@ const translations = {
     contactTitle: "Мы ищем инвестора или стратегического партнёра для первого пилота.",
     contactText: "Будем рады разговору с подрядчиками, производителями ЖБИ, владельцами тяжёлой техники, инвесторами и партнёрами по разработке.",
     contactLocation: "Тверия, Израиль",
+    contactEmailLabel: "Эл. почта",
     footerText: "Роботизированные системы для монтажа сборного строительства"
   }
 };
