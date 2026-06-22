@@ -7,7 +7,7 @@ const CONFIG = {
   SHEET_NAME: "Solar boiler leads",
   SERVICE_NAME_HE: "מכירה והתקנה של דוד שמש",
   SERVICE_NAME_RU: "Продажа и установка солнечного бойлера",
-  PRICE_LABEL: "החל מ-3500 ₪",
+  PRICE_LABEL: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
   BOOKING_HOURS: 3,
   WORKING_DAYS: [0, 1, 2, 3, 4],
   OPENS: "09:00",
