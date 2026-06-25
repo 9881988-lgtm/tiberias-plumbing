@@ -1,5 +1,7 @@
 const translations = {
   he: {
+    navConstruction: "רובוט בנייה",
+    navSolarDrone: "רחפן סולארי",
     navSolution: "הפתרון",
     navTechnology: "טכנולוגיה",
     navProof: "POC",
@@ -80,6 +82,8 @@ const translations = {
     footerText: "מערכות רובוטיות להרכבת בנייה טרומית"
   },
   en: {
+    navConstruction: "Construction robot",
+    navSolarDrone: "Solar drone",
     navSolution: "Solution",
     navTechnology: "Technology",
     navProof: "POC",
@@ -160,6 +164,8 @@ const translations = {
     footerText: "Robotic systems for precast construction assembly"
   },
   ru: {
+    navConstruction: "Робот для строительства",
+    navSolarDrone: "Солнечный дрон",
     navSolution: "Решение",
     navTechnology: "Технология",
     navProof: "POC",
