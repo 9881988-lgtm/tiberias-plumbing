@@ -54,4 +54,22 @@
       <image:title>ניקוי מזגנים ושירותי בית בטבריה</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/kosher-guard/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/kosher-guard/support.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/kosher-guard/privacy-policy.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
 </urlset>
