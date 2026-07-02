@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReceiptIL - קבלות לעצמאים בישראל | אפליקציה לאייפון</title>
+  <meta name="description" content="ReceiptIL היא אפליקציה פשוטה וזולה להפקת קבלות, PDF, שיתוף ב-WhatsApp ומעקב שנתי לעצמאים ולעוסקים פטורים בישראל. התחלה בחינם ורכישה חד-פעמית לשימוש מלא.">
+  <link rel="canonical" href="https://9881988-lgtm.github.io/tiberias-plumbing/receiptil/">
+  <meta property="og:title" content="ReceiptIL - קבלות לעצמאים בישראל">
+  <meta property="og:description" content="אפליקציית iPhone פשוטה להפקת קבלות, PDF ושיתוף ב-WhatsApp. התחלה בחינם, שימוש מלא ברכישה חד-פעמית.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://9881988-lgtm.github.io/tiberias-plumbing/receiptil/">
+  <meta property="og:image" content="https://9881988-lgtm.github.io/tiberias-plumbing/receiptil/assets/social/facebook-receiptil-4x5.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ReceiptIL - קבלות לעצמאים בישראל">
+  <meta name="twitter:description" content="קבלות, PDF, WhatsApp ומעקב שנתי באפליקציה פשוטה לאייפון.">
+  <meta name="twitter:image" content="https://9881988-lgtm.github.io/tiberias-plumbing/receiptil/assets/social/facebook-receiptil-4x5.png">
+  <style>
+    :root {
+      --ink: #111827;
+      --muted: #5f6f85;
+      --blue: #0866ff;
+      --blue-dark: #0547b0;
+      --green: #10a37f;
+      --gold: #f4b63f;
+      --paper: #fbfcff;
+      --card: #ffffff;
+      --line: rgba(17, 24, 39, .12);
+      --shadow: 0 22px 54px rgba(17, 24, 39, .14);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(8, 102, 255, .16), transparent 34%),
+        radial-gradient(circle at 85% 12%, rgba(16, 163, 127, .18), transparent 30%),
+        var(--paper);
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .shell { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      padding: 12px max(16px, calc((100vw - 1160px) / 2));
+      border-bottom: 1px solid var(--line);
+      background: rgba(251, 252, 255, .9);
+      backdrop-filter: blur(14px);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+    }
+    .brand img { width: 42px; height: 42px; border-radius: 10px; box-shadow: 0 8px 18px rgba(8, 102, 255, .22); }
+    .nav { display: flex; gap: 18px; color: #344256; font-weight: 800; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 56px;
+      align-items: center;
+      padding: 86px 0 64px;
+    }
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 20px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin-bottom: 18px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    h3 { margin-bottom: 8px; font-size: 22px; line-height: 1.2; }
+    .lead {
+      max-width: 710px;
+      margin-bottom: 26px;
+      color: #38485e;
+      font-size: 22px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 22px;
+      border-radius: 10px;
+      font-weight: 900;
+    }
+    .button.primary { color: white; background: var(--blue); box-shadow: 0 16px 34px rgba(8, 102, 255, .24); }
+    .button.secondary { color: var(--blue-dark); background: white; border: 1px solid rgba(8, 102, 255, .22); }
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 680px;
+    }
+    .fact {
+      min-height: 104px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .78);
+      box-shadow: 0 14px 32px rgba(17, 24, 39, .08);
+    }
+    .fact strong { display: block; font-size: 24px; line-height: 1.1; }
+    .fact span { display: block; margin-top: 8px; color: var(--muted); font-weight: 700; }
+    .phone-stage {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: end;
+      min-height: 560px;
+      padding: 28px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #0b1732, #0b4e8a);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .phone-stage::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 70% 20%, rgba(255,255,255,.25), transparent 28%);
+      pointer-events: none;
+    }
+    .phone {
+      position: relative;
+      z-index: 1;
+      border-radius: 34px;
+      box-shadow: 0 18px 42px rgba(0, 0, 0, .34);
+      transform: rotate(-4deg);
+    }
+    .phone + .phone { transform: rotate(5deg) translateY(34px); }
+    .section { padding: 68px 0; }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 26px;
+    }
+    .section-head p { max-width: 540px; color: var(--muted); font-size: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      min-height: 220px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--card);
+      box-shadow: 0 16px 36px rgba(17, 24, 39, .08);
+    }
+    .card .num {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 22px;
+      color: white;
+      border-radius: 10px;
+      background: var(--green);
+      font-weight: 900;
+    }
+    .card p, .warning p, .cta p { color: var(--muted); }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+    .price-box {
+      padding: 34px;
+      color: white;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #071f42, #0866ff);
+      box-shadow: var(--shadow);
+    }
+    .price {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 16px 0 10px;
+    }
+    .price strong { font-size: 60px; line-height: 1; }
+    .price span { font-size: 22px; color: rgba(255,255,255,.78); }
+    .warning {
+      padding: 34px;
+      border: 1px solid rgba(244, 182, 63, .5);
+      border-radius: 18px;
+      background: #fff9eb;
+    }
+    .cta {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+      margin: 68px 0;
+      padding: 34px;
+      color: white;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #102033, #0b4e8a);
+      box-shadow: var(--shadow);
+    }
+    .cta p { margin-bottom: 0; color: rgba(255,255,255,.72); }
+    .app-link {
+      min-width: 230px;
+      color: #071f42;
+      background: white;
+    }
+    .ru-block {
+      direction: ltr;
+      text-align: left;
+      border-top: 1px solid var(--line);
+      margin-top: 64px;
+      padding-top: 52px;
+    }
+    .footer {
+      padding: 38px max(16px, calc((100vw - 1160px) / 2));
+      color: rgba(255,255,255,.75);
+      background: #111827;
+    }
+    .footer a { color: white; text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 900px) {
+      .nav { display: none; }
+      .hero, .split, .cta { grid-template-columns: 1fr; }
+      .phone-stage { min-height: auto; }
+      .grid, .facts { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+    }
+    @media (max-width: 620px) {
+      .hero { padding-top: 48px; }
+      .phone-stage { grid-template-columns: 1fr; }
+      .phone + .phone { display: none; }
+      .price strong { font-size: 48px; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ReceiptIL",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "iOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "ILS"
+      },
+      "url": "https://9881988-lgtm.github.io/tiberias-plumbing/receiptil/",
+      "downloadUrl": "https://apps.apple.com/il/app/receiptil/id6784747059",
+      "description": "ReceiptIL helps Israeli freelancers and VAT-exempt small businesses create receipts, PDF documents, share through WhatsApp/email, and track yearly totals."
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ReceiptIL">
+      <img src="./assets/icon.png" alt="">
+      <span>ReceiptIL</span>
+    </a>
+    <nav class="nav" aria-label="ניווט">
+      <a href="#features">יכולות</a>
+      <a href="#price">מחיר</a>
+      <a href="#ru">Русский</a>
+      <a href="./support.html">תמיכה</a>
+    </nav>
+  </header>
+
+  <main id="top" class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">אפליקציה לעצמאים בישראל</p>
+        <h1>קבלות פשוטות וזולות באייפון</h1>
+        <p class="lead">ReceiptIL עוזרת לעצמאים, פרילנסרים ולעוסקים פטורים ליצור קבלות, להפיק PDF, לשתף ב-WhatsApp או במייל ולעקוב אחרי הסיכום השנתי.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">להורדה ב-App Store</a>
+          <a class="button secondary" href="#price">לראות מחיר</a>
+        </div>
+        <div class="facts" aria-label="יתרונות">
+          <div class="fact"><strong>7 ימי ניסיון</strong><span>אפשר לבדוק לפני רכישה מלאה</span></div>
+          <div class="fact"><strong>PDF + WhatsApp</strong><span>שתפו קבלה דרך iOS share sheet</span></div>
+          <div class="fact"><strong>ללא חשבון</strong><span>המידע נשמר מקומית במכשיר</span></div>
+        </div>
+      </div>
+      <div class="phone-stage" aria-label="צילומי מסך">
+        <img class="phone" src="./assets/setup.png" alt="ReceiptIL setup screen">
+        <img class="phone" src="./assets/dashboard.png" alt="ReceiptIL dashboard screen">
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">מה יש בפנים</p>
+          <h2>כלים בסיסיים לקבלות בלי מערכת כבדה</h2>
+        </div>
+        <p>האפליקציה נועדה למי שרוצה פתרון קטן, ברור וזול להפקת מסמכים יומיומית מהאייפון.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="num">1</span>
+          <h3>הגדרת עסק פעם אחת</h3>
+          <p>מכניסים שם עסק, מספר עוסק/תעודה, כתובת ופרטי קשר, והפרטים נכנסים לקבלות.</p>
+        </article>
+        <article class="card">
+          <span class="num">2</span>
+          <h3>מספור שנתי מסודר</h3>
+          <p>הקבלות מקבלות מספור לפי שנה, כדי שיהיה קל לעקוב ולשמור סדר.</p>
+        </article>
+        <article class="card">
+          <span class="num">3</span>
+          <h3>PDF ושיתוף מהיר</h3>
+          <p>יוצרים PDF ומשתפים דרך WhatsApp, אימייל, Files, AirDrop או כל אפליקציה נתמכת.</p>
+        </article>
+        <article class="card">
+          <span class="num">4</span>
+          <h3>סיכום שנתי</h3>
+          <p>מסך Dashboard מציג סך קבלות שנתי ומעקב מול תקרה שהוגדרה באפליקציה.</p>
+        </article>
+        <article class="card">
+          <span class="num">5</span>
+          <h3>עברית, רוסית, אנגלית וצרפתית</h3>
+          <p>הממשק מתאים לעצמאים בישראל שמעדיפים לעבוד בשפה נוחה להם.</p>
+        </article>
+        <article class="card">
+          <span class="num">6</span>
+          <h3>פרטי כברירת מחדל</h3>
+          <p>אין חשבון משתמש ואין איסוף נתונים מצד האפליקציה. הנתונים נשמרים במכשיר.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="price" class="section split">
+      <div class="price-box">
+        <p class="eyebrow" style="color:#d8ecff">הצעה פשוטה</p>
+        <h2>7 ימי ניסיון, ואז רכישה חד-פעמית</h2>
+        <div class="price"><strong>₪18</strong><span>לשימוש מלא</span></div>
+        <p>ב-App Store האפליקציה מופיעה חינם להורדה. לאחר תקופת הניסיון, השימוש המלא נפתח מתוך האפליקציה ברכישה חד-פעמית, ללא מנוי חודשי.</p>
+        <a class="button app-link" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">פתחו ב-App Store</a>
+      </div>
+      <div class="warning">
+        <p class="eyebrow">חשוב</p>
+        <h2>כלי עזר, לא ייעוץ מס</h2>
+        <p>ReceiptIL מיועדת לעזור בארגון והפקת מסמכים. לפני שימוש רשמי במסמכים בעסק, מומלץ לוודא התאמה לדרישות החוק בישראל עם רואה חשבון או יועץ מס.</p>
+        <p>האפליקציה אינה מחליפה מערכת הנהלת חשבונות מאושרת, אם נדרשת כזו לעסק שלכם.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div>
+        <h2>עצמאים? נסו את ReceiptIL</h2>
+        <p>פתרון קטן וזול למי שרוצה להוציא קבלות מהאייפון בלי להיכנס למערכת מורכבת.</p>
+      </div>
+      <a class="button app-link" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">Download on App Store</a>
+    </section>
+
+    <section id="ru" class="section ru-block">
+      <p class="eyebrow">Русская версия</p>
+      <h2>ReceiptIL - недорогое приложение для квитанций в Израиле</h2>
+      <p class="lead">Приложение для предпринимателей, фрилансеров и עוסק פטור: настройте данные бизнеса, создавайте квитанции, сохраняйте PDF, отправляйте через WhatsApp или email и смотрите годовой итог.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Для малого бизнеса</h3>
+          <p>Подходит тем, кому нужен простой инструмент для квитанций без тяжёлой системы.</p>
+        </article>
+        <article class="card">
+          <h3>Пробный старт</h3>
+          <p>Есть 7-дневный пробный период: можно проверить логику, а затем открыть полный доступ разовой покупкой.</p>
+        </article>
+        <article class="card">
+          <h3>Данные на телефоне</h3>
+          <p>Без аккаунта и без сбора персональных данных приложением. Документы создаются локально.</p>
+        </article>
+      </div>
+      <p style="margin-top:24px"><a class="button primary" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">Скачать ReceiptIL в App Store</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>ReceiptIL</strong>
+    <span> · </span>
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <span> · </span>
+    <a href="./support.html">Support</a>
+    <span> · </span>
+    <a href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">App Store</a>
+  </footer>
+</body>
+</html>
