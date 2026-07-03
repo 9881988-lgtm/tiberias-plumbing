@@ -4,7 +4,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://9881988-lgtm.github.io/tiberias-plumbing/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -85,6 +85,30 @@
     <lastmod>2026-07-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/assets/structo-white-excavator-30m-boom.png</image:loc>
+      <image:title>Structo Robotics - construction robotics and App Store apps</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/assets/solar-drone-panel-cleaning-hero.png</image:loc>
+      <image:title>Solar panel cleaning robot project</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/solar-drone-investors.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/assets/solar-drone-panel-cleaning-hero.png</image:loc>
+      <image:title>Structo Robotics solar panel cleaning drone investor deck</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://9881988-lgtm.github.io/tiberias-plumbing/kosher-guard/</loc>
