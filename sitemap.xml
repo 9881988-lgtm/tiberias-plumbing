@@ -101,6 +101,36 @@
     </image:image>
   </url>
   <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/apps.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.82</priority>
+    <image:image>
+      <image:loc>https://9881988-lgtm.github.io/tiberias-plumbing/receiptil/assets/icon.png</image:loc>
+      <image:title>Structor Robotics App Store apps</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/innovations.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/assets/structor-robotics-logo.svg</image:loc>
+      <image:title>Structor Robotics innovation projects</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/construction-robot-investors.html</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/assets/structo-white-excavator-30m-boom.png</image:loc>
+      <image:title>Structor Robotics construction robot investor presentation</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://9881988-lgtm.github.io/tiberias-plumbing/structo-robotics/solar-drone-investors.html</loc>
     <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>

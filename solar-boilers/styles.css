@@ -150,7 +150,8 @@ p {
 .button,
 .mobile-callbar a,
 .copy-button,
-.language-toggle {
+.language-toggle,
+.language-tab {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -171,6 +172,38 @@ p {
 
 .language-toggle:hover,
 .language-toggle:focus-visible {
+  color: var(--ink);
+  background: var(--blue);
+  outline: none;
+}
+
+.language-tabs {
+  direction: ltr;
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.language-tab {
+  min-width: 38px;
+  min-height: 36px;
+  border: 0;
+  padding: 0 10px;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.language-tab[aria-pressed="true"] {
+  color: var(--white);
+  background: var(--teal);
+}
+
+.language-tab:hover,
+.language-tab:focus-visible {
   color: var(--ink);
   background: var(--blue);
   outline: none;
@@ -726,7 +759,8 @@ details p {
   }
 
   .header-phone,
-  .language-toggle {
+  .language-toggle,
+  .language-tab {
     min-height: 40px;
     padding: 9px 10px;
   }

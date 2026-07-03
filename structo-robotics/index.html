@@ -3,306 +3,96 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Structo Robotics | Robotic construction assembly</title>
+    <title>Structor Robotics | Business, apps and innovation hub</title>
     <meta
       name="description"
-      content="Structo Robotics develops robotic systems for construction, solar panel cleaning, and practical iPhone apps for business, translation, education, drawing, and photo cleanup."
+      content="Structor Robotics hub: air conditioner cleaning, Mayim VeShemesh solar boiler installation, App Store apps, and innovation projects in construction and solar robotics."
     />
     <meta name="theme-color" content="#0f1720" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="hub-page">
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Structo Robotics home">
-        <span class="brand-mark" aria-hidden="true">S</span>
-        <span>Structo Robotics</span>
+      <a class="brand" href="index.html" aria-label="Structor Robotics home">
+        <img class="brand-logo" src="assets/structor-robotics-logo.svg" alt="" width="34" height="34" />
+        <span>Structor Robotics</span>
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-tab is-current" data-i18n="navConstruction">רובוט בנייה</a>
-        <a href="solar-drone-investors.html" class="nav-tab" data-i18n="navSolarDrone">רחפן סולארי</a>
-        <a href="#apps" data-i18n="navApps">אפליקציות</a>
-        <a href="#solution" data-i18n="navSolution">הפתרון</a>
-        <a href="#technology" data-i18n="navTechnology">טכנולוגיה</a>
-        <a href="#proof" data-i18n="navProof">POC</a>
-        <a href="#contact" data-i18n="navContact">קשר</a>
+        <a href="index.html" class="nav-tab is-current" data-hub-i18n="navHome">תחומי פעילות</a>
+        <a href="apps.html" class="nav-tab" data-hub-i18n="navApps">אפליקציות</a>
+        <a href="innovations.html" class="nav-tab" data-hub-i18n="navInnovation">חדשנות</a>
+        <a href="#contact" data-hub-i18n="navContact">קשר</a>
       </nav>
 
       <div class="language-switcher" aria-label="Language selector">
-        <button type="button" class="language-button is-active" data-set-lang="he">עברית</button>
-        <button type="button" class="language-button" data-set-lang="en">English</button>
-        <button type="button" class="language-button" data-set-lang="ru">Русский</button>
+        <button type="button" class="language-button is-active" data-set-hub-lang="he">עברית</button>
+        <button type="button" class="language-button" data-set-hub-lang="en">English</button>
+        <button type="button" class="language-button" data-set-hub-lang="ru">Русский</button>
       </div>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <img
-          src="assets/structo-white-excavator-30m-boom.png"
-          alt="White high-reach construction excavator placing precast concrete blocks"
-          class="hero-image"
-        />
-        <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow" data-i18n="heroEyebrow">Construction robotics from Israel</p>
-          <h1 data-i18n="heroTitle">הרכבה רובוטית של אלמנטים טרומיים מבטון</h1>
-          <p class="hero-lead" data-i18n="heroLead">
-            Structo Robotics מפתחת מערכת רובוטית להרכבת אלמנטים טרומיים באמצעות
-            פלטפורמת high-reach כבדה, אחיזה בארבע נקודות, ראייה ממוחשבת וחיבור ברגים אוטומטי.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-action" href="https://wa.me/972503027014" target="_blank" rel="noopener">
-              <span class="button-icon" aria-hidden="true">W</span>
-              <span data-i18n="whatsapp">WhatsApp: +972 50 302 7014</span>
+      <section class="hub-hero">
+        <div class="hub-hero__bg" aria-hidden="true"></div>
+        <div class="section-inner hub-hero__layout">
+          <div class="hub-identity">
+            <img class="hub-logo" src="assets/structor-robotics-logo.svg" alt="Structor Robotics logo" />
+            <p class="eyebrow" data-hub-i18n="heroKicker">Business, software and robotics from Israel</p>
+            <h1>Structor Robotics</h1>
+            <p class="hero-lead" data-hub-i18n="heroLead">
+              ארבעה כיוונים במקום אחד: שירותים לבית, דודי שמש, אפליקציות iPhone ופרויקטי רובוטיקה.
+            </p>
+          </div>
+          <div class="hub-summary">
+            <strong data-hub-i18n="summaryTitle">בחרו את הכיוון שמתאים לכם</strong>
+            <p data-hub-i18n="summaryText">
+              מהאתר הזה אפשר להגיע ישירות ללידינגים המסחריים, לאפליקציות App Store ולמצגות החדשנות.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="direction-section" aria-labelledby="directions-title">
+        <div class="section-inner">
+          <p class="section-kicker" data-hub-i18n="directionsKicker">Directions</p>
+          <h2 id="directions-title" data-hub-i18n="directionsTitle">מה תרצו לפתוח?</h2>
+          <div class="direction-grid">
+            <a class="direction-card direction-card--ac" href="../ac-cleaning/" data-localized-url="../ac-cleaning/">
+              <img src="../ac-cleaning/assets/ac-cleaning-tiberias-hero.jpg" alt="" loading="lazy" />
+              <span class="direction-number">01</span>
+              <h3 data-hub-i18n="acTitle">ניקוי מזגנים</h3>
+              <p data-hub-i18n="acText">לידינג להזמנת ניקוי, שטיפה וחיטוי מזגנים עם מעבר מהיר ל-WhatsApp.</p>
+              <strong data-hub-i18n="openDirection">פתחו כיוון</strong>
             </a>
-            <a class="secondary-action" href="#solution" data-i18n="seeSolution">ראה את הפתרון</a>
-          </div>
-        </div>
-      </section>
 
-      <section class="intro-band" aria-label="Company summary">
-        <div class="section-inner intro-grid">
-          <div>
-            <p class="section-kicker" data-i18n="introKicker">The company</p>
-            <h2 data-i18n="introTitle">אנחנו מחברים מכניקה כבדה קיימת עם שכבת רובוטיקה חכמה.</h2>
-          </div>
-          <p class="intro-copy" data-i18n="introCopy">
-            במקום לפתח מכונת בנייה כבדה מאפס, Structo Robotics משתמשת בפלטפורמת
-            demolition/high-reach קיימת כגון Volvo EC950 High Reach ומוסיפה תוכנה, חיישנים,
-            בקרת תנועה, מנגנון אחיזה ומניפולטור לחיבורי ברגים.
-          </p>
-        </div>
-      </section>
+            <a class="direction-card direction-card--solar" href="../solar-boilers/" data-localized-url="../solar-boilers/">
+              <img src="../solar-boilers/assets/solar-boiler-tiberias-hero.png" alt="" loading="lazy" />
+              <span class="direction-number">02</span>
+              <h3>Mayim VeShemesh</h3>
+              <p data-hub-i18n="solarText">מכירה, התקנה וחיבור של דודי שמש, קולטים ותשתיות מים.</p>
+              <strong data-hub-i18n="openDirection">פתחו כיוון</strong>
+            </a>
 
-      <section id="solar-cleaning" class="featured-project-section">
-        <div class="section-inner featured-project-layout">
-          <div class="featured-project-media">
-            <img src="assets/solar-drone-panel-cleaning-hero.png" alt="רחפן רובוטי לניקוי פאנלים סולאריים" loading="lazy" />
-          </div>
-          <div class="featured-project-copy">
-            <p class="section-kicker" data-i18n="solarProjectKicker">Solar energy robotics</p>
-            <h2 data-i18n="solarProjectTitle">רובוט לניקוי תחנות סולאריות ופאנלים פוטו-וולטאיים.</h2>
-            <p data-i18n="solarProjectText">
-              פרויקט נוסף של Structo Robotics: מערכת רובוטית שמזהה לכלוך על פאנלים סולאריים,
-              מודדת ירידת תפוקה ומבצעת ניקוי מקומי עדין אחרי אבק, חול ובוץ.
-            </p>
-            <div class="feature-actions">
-              <a class="primary-action" href="solar-drone-investors.html" data-i18n="solarProjectButton">פתח מצגת משקיעים</a>
-              <a class="light-action" href="#contact" data-i18n="solarProjectContact">דברו איתנו על פיילוט</a>
-            </div>
-          </div>
-        </div>
-      </section>
+            <a class="direction-card direction-card--apps" href="apps.html">
+              <div class="direction-icons" aria-hidden="true">
+                <img src="../receiptil/assets/icon.png" alt="" />
+                <img src="assets/apps/tavora-ai-translator.png" alt="" />
+                <img src="assets/apps/traceluma.png" alt="" />
+              </div>
+              <span class="direction-number">03</span>
+              <h3 data-hub-i18n="appsTitle">IT והאפליקציות שלנו</h3>
+              <p data-hub-i18n="appsText">כל האפליקציות שכבר פורסמו ב-App Store, עם תיאור מלא וקישורי הורדה.</p>
+              <strong data-hub-i18n="openDirection">פתחו כיוון</strong>
+            </a>
 
-      <section class="problem-section">
-        <div class="section-inner">
-          <p class="section-kicker" data-i18n="problemKicker">Market problem</p>
-          <h2 data-i18n="problemTitle">הרכבת אלמנטים כבדים באתר בנייה עדיין מסוכנת, איטית וקשה למדידה.</h2>
-          <div class="cards three">
-            <article class="info-card accent-red">
-              <h3 data-i18n="problemCard1Title">בטיחות</h3>
-              <p data-i18n="problemCard1Text">
-                אלמנטים כבדים, עבודה בגובה ותיאום ידני יוצרים סיכון גבוה לעובדים ולציוד.
-              </p>
-            </article>
-            <article class="info-card accent-amber">
-              <h3 data-i18n="problemCard2Title">מחסור בכוח אדם</h3>
-              <p data-i18n="problemCard2Text">
-                קבלנים מתקשים למצוא צוותי הרכבה מיומנים, והעיכוב מתגלגל לכל לוח הזמנים.
-              </p>
-            </article>
-            <article class="info-card accent-blue">
-              <h3 data-i18n="problemCard3Title">עלות טעויות</h3>
-              <p data-i18n="problemCard3Text">
-                סטייה קטנה במיקום יכולה ליצור תיקונים, המתנה למנוף ועלויות נוספות.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="solution" class="solution-section">
-        <div class="section-inner solution-layout">
-          <div class="solution-copy">
-            <p class="section-kicker" data-i18n="solutionKicker">Solution</p>
-            <h2 data-i18n="solutionTitle">מערכת להרמה, מיקום וחיבור ראשוני של אלמנטים טרומיים.</h2>
-            <p data-i18n="solutionText">
-              המערכת מיועדת לקחת אלמנט בטון טרומי, לייצב אותו בארבע נקודות, למדוד עומסים
-              ותנודות, לתקן סטיות בזמן אמת, ולהשלים חיבור ברגים בנקודות חיבור שהוכנו מראש.
-            </p>
-          </div>
-          <div class="system-list" aria-label="System components">
-            <div class="system-row">
-              <span>01</span>
-              <strong data-i18n="system1Title">Volvo EC950 High Reach או פלטפורמה מקבילה</strong>
-              <p data-i18n="system1Text">בסיס מכני כבד עם זרוע כמעט 50 מטר ויכולת עבודה סביב 3 טון ב-POC.</p>
-            </div>
-            <div class="system-row">
-              <span>02</span>
-              <strong data-i18n="system2Title">אחיזה בארבע נקודות</strong>
-              <p data-i18n="system2Text">חלוקת עומסים, יציבות והפחתת תנודות באלמנט.</p>
-            </div>
-            <div class="system-row">
-              <span>03</span>
-              <strong data-i18n="system3Title">מניפולטור לחיבורי ברגים</strong>
-              <p data-i18n="system3Text">יישור נקודת החיבור, הזנת בורג, הידוק מבוקר ותיעוד מומנט.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="technology" class="technology-section">
-        <div class="section-inner">
-          <p class="section-kicker" data-i18n="techKicker">Technology</p>
-          <h2 data-i18n="techTitle">שכבת אוטומציה שמתחברת לציוד כבד קיים.</h2>
-          <div class="tech-grid">
-            <article class="tech-item">
-              <h3 data-i18n="tech1Title">Perception</h3>
-              <p data-i18n="tech1Text">ראייה ממוחשבת לזיהוי אלמנט, נקודת הצבה ונקודות חיבור.</p>
-            </article>
-            <article class="tech-item">
-              <h3 data-i18n="tech2Title">Control</h3>
-              <p data-i18n="tech2Text">בקרה בזמן אמת לפיצוי תנודות, סטיות ועומסים בקצה הזרוע.</p>
-            </article>
-            <article class="tech-item">
-              <h3 data-i18n="tech3Title">Bolting</h3>
-              <p data-i18n="tech3Text">מניפולטור עזר לחיבורי ברגים מבוקרים בין בלוקים מוכנים מראש.</p>
-            </article>
-            <article class="tech-item">
-              <h3 data-i18n="tech4Title">Data</h3>
-              <p data-i18n="tech4Text">תיעוד דיוק, זמן מחזור, עומס ומומנט לצורך בקרת איכות ושיפור.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="proof" class="proof-section">
-        <div class="section-inner">
-          <p class="section-kicker" data-i18n="proofKicker">Proof of concept</p>
-          <h2 data-i18n="proofTitle">השלב הראשון נועד להוכיח יכולת מדידה, לא מוצר מסחרי מלא.</h2>
-          <div class="metrics">
-            <div class="metric">
-              <strong data-i18n="metric1Value">≤2 cm</strong>
-              <span data-i18n="metric1Label">דיוק מיקום יעד</span>
-            </div>
-            <div class="metric">
-              <strong data-i18n="metric2Value">95%+</strong>
-              <span data-i18n="metric2Label">חזרתיות</span>
-            </div>
-            <div class="metric">
-              <strong data-i18n="metric3Value">10+</strong>
-              <span data-i18n="metric3Label">מחזורי הצבה</span>
-            </div>
-            <div class="metric">
-              <strong data-i18n="metric4Value">עד 3 טון</strong>
-              <span data-i18n="metric4Label">עומס עבודה מדגים</span>
-            </div>
-          </div>
-          <div class="proof-note">
-            <strong data-i18n="proofNoteTitle">תוצאה נדרשת:</strong>
-            <span data-i18n="proofNoteText">
-              הצבת אלמנט טרומי מדגים, ייצובו, זיהוי נקודות חיבור וביצוע חיבור ברגים מבוקר.
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section class="market-section">
-        <div class="section-inner market-layout">
-          <div>
-            <p class="section-kicker" data-i18n="marketKicker">Market</p>
-            <h2 data-i18n="marketTitle">לקוחות ראשונים: קבלנים, יצרני אלמנטים טרומיים ושותפי ציוד כבד.</h2>
-          </div>
-          <div class="cards three compact">
-            <article class="info-card accent-blue">
-              <h3 data-i18n="market1Title">קבלנים</h3>
-              <p data-i18n="market1Text">בטיחות, זמני ביצוע ואיכות התקנה.</p>
-            </article>
-            <article class="info-card accent-green">
-              <h3 data-i18n="market2Title">יצרני טרומיים</h3>
-              <p data-i18n="market2Text">סטנדרטיזציה של בלוקים ונקודות חיבור.</p>
-            </article>
-            <article class="info-card accent-amber">
-              <h3 data-i18n="market3Title">שותפי ציוד</h3>
-              <p data-i18n="market3Text">שכבת רובוטיקה חדשה לפלטפורמות heavy-duty.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="roadmap-section">
-        <div class="section-inner">
-          <p class="section-kicker" data-i18n="roadmapKicker">Roadmap</p>
-          <h2 data-i18n="roadmapTitle">דרך קצרה לנתוני פיילוט שאפשר להציג למשקיעים ולשותפים.</h2>
-          <div class="timeline">
-            <article>
-              <span>0-6M</span>
-              <h3 data-i18n="road1Title">הנדסה</h3>
-              <p data-i18n="road1Text">תכנון POC, חיישנים, אחיזה, מניפולטור ובטיחות.</p>
-            </article>
-            <article>
-              <span>6-12M</span>
-              <h3 data-i18n="road2Title">אב-טיפוס</h3>
-              <p data-i18n="road2Text">כיול, ניסויים, מדדי דיוק וחיבור ברגים.</p>
-            </article>
-            <article>
-              <span>12-18M</span>
-              <h3 data-i18n="road3Title">פיילוט</h3>
-              <p data-i18n="road3Text">אתר הדגמה עם שותף תעשייתי.</p>
-            </article>
-            <article>
-              <span>18M+</span>
-              <h3 data-i18n="road4Title">מסחור</h3>
-              <p data-i18n="road4Text">לקוח ראשון, שותפויות וסבב המשך.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="apps" class="apps-section">
-        <div class="section-inner">
-          <p class="section-kicker" data-i18n="appsKicker">Published App Store apps</p>
-          <h2 data-i18n="appsTitle">אפליקציות iPhone שכבר זמינות להורדה.</h2>
-          <p class="apps-intro" data-i18n="appsIntro">
-            לצד פרויקטי הרובוטיקה, Structo מציגה מוצרים דיגיטליים שפורסמו ב-App Store:
-            קבלות לעסקים, תרגום, לימודים, ציור וניקוי תמונות.
-          </p>
-          <div class="app-grid">
-            <article class="app-card">
-              <img class="app-icon" src="../receiptil/assets/icon.png" alt="ReceiptIL icon" loading="lazy" />
-              <span class="app-badge" data-i18n="appBadgeStore">App Store</span>
-              <h3>ReceiptIL</h3>
-              <p data-i18n="appReceiptText">אפליקציה פשוטה להפקת קבלות, PDF ושיתוף מהיר לעצמאים ולעסקים קטנים בישראל.</p>
-              <a class="app-link" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener" data-i18n="appStoreButton">פתח ב-App Store</a>
-            </article>
-            <article class="app-card">
-              <img class="app-icon" src="assets/apps/tavora-ai-translator.png" alt="Tavora AI Translator icon" loading="lazy" />
-              <span class="app-badge" data-i18n="appBadgeStore">App Store</span>
-              <h3>Tavora AI Translator</h3>
-              <p data-i18n="appTavoraText">מתרגם טקסט וקול עם גישה offline-first, חבילות שפה וממשק נקי לנסיעות, עבודה ועלייה.</p>
-              <a class="app-link" href="https://apps.apple.com/il/app/tavora-ai-translator/id6783366966" target="_blank" rel="noopener" data-i18n="appStoreButton">פתח ב-App Store</a>
-            </article>
-            <article class="app-card">
-              <img class="app-icon" src="assets/apps/ballonavt.png" alt="Баллонавт icon" loading="lazy" />
-              <span class="app-badge" data-i18n="appBadgeStore">App Store</span>
-              <h3>Баллонавт</h3>
-              <p data-i18n="appBallonavtText">AI-עוזר לימודי לתלמידים שמתכוננים ל-ЕГЭ ו-ОГЭ עם תרגול, הסברים ומעקב התקדמות.</p>
-              <a class="app-link" href="https://apps.apple.com/il/app/%D0%B1%D0%B0%D0%BB%D0%BB%D0%BE%D0%BD%D0%B0%D0%B2%D1%82/id6783925115" target="_blank" rel="noopener" data-i18n="appStoreButton">פתח ב-App Store</a>
-            </article>
-            <article class="app-card">
-              <img class="app-icon" src="assets/apps/traceluma.png" alt="TraceLuma icon" loading="lazy" />
-              <span class="app-badge" data-i18n="appBadgeStore">App Store</span>
-              <h3>TraceLuma</h3>
-              <p data-i18n="appTraceText">סטודיו לציור עם מצלמה ושכבת tracing שקופה לתרגול על נייר, סקיצות, אותיות ויצירה.</p>
-              <a class="app-link" href="https://apps.apple.com/il/app/traceluma/id6783609165" target="_blank" rel="noopener" data-i18n="appStoreButton">פתח ב-App Store</a>
-            </article>
-            <article class="app-card">
-              <img class="app-icon" src="assets/apps/lumaclean.png" alt="LumaClean icon" loading="lazy" />
-              <span class="app-badge" data-i18n="appBadgeStore">App Store</span>
-              <h3>LumaClean Photo Cleaner</h3>
-              <p data-i18n="appLumaCleanText">כלי פרטי לניקוי ספריית התמונות: תמונות דומות, צילומי מסך, וידאו גדול ובחירה לפני מחיקה.</p>
-              <a class="app-link" href="https://apps.apple.com/il/app/lumaclean-photo-cleaner/id6783388167" target="_blank" rel="noopener" data-i18n="appStoreButton">פתח ב-App Store</a>
-            </article>
+            <a class="direction-card direction-card--innovation" href="innovations.html">
+              <img src="assets/structo-white-excavator-30m-boom.png" alt="" loading="lazy" />
+              <span class="direction-number">04</span>
+              <h3 data-hub-i18n="innovationTitle">חדשנות</h3>
+              <p data-hub-i18n="innovationText">רובוט לבניית בית ורובוט לניקוי תחנות סולאריות, כולל מצגות משקיעים.</p>
+              <strong data-hub-i18n="openDirection">פתחו כיוון</strong>
+            </a>
           </div>
         </div>
       </section>
@@ -310,17 +100,17 @@
       <section id="contact" class="contact-section">
         <div class="section-inner contact-layout">
           <div>
-            <p class="section-kicker" data-i18n="contactKicker">Contact</p>
-            <h2 data-i18n="contactTitle">מחפשים משקיע או שותף אסטרטגי לפיילוט ראשון.</h2>
-            <p data-i18n="contactText">
-              נשמח לדבר עם קבלנים, יצרני אלמנטים טרומיים, בעלי ציוד כבד, משקיעים ושותפי פיתוח.
+            <p class="section-kicker" data-hub-i18n="contactKicker">Contact</p>
+            <h2 data-hub-i18n="contactTitle">Structor Robotics מחברת שירותים, תוכנה ורובוטיקה.</h2>
+            <p data-hub-i18n="contactText">
+              לשיחה על שירות, אפליקציה, פיילוט או שיתוף פעולה אפשר לפנות ישירות ב-WhatsApp או במייל.
             </p>
           </div>
           <div class="contact-panel">
-            <p class="contact-name">Structo Robotics</p>
-            <p data-i18n="contactLocation">Tiberias, Israel</p>
+            <p class="contact-name">Structor Robotics</p>
+            <p data-hub-i18n="contactLocation">Tiberias, Israel</p>
             <a class="contact-link" href="mailto:9881988@gmail.com">
-              <span data-i18n="contactEmailLabel">Email</span>
+              <span data-hub-i18n="contactEmailLabel">Email</span>
               <strong>9881988@gmail.com</strong>
             </a>
             <a class="primary-action wide" href="https://wa.me/972503027014" target="_blank" rel="noopener">
@@ -333,10 +123,10 @@
     </main>
 
     <footer class="site-footer">
-      <span>Structo Robotics</span>
-      <span data-i18n="footerText">Robotic systems for precast construction assembly</span>
+      <span>Structor Robotics</span>
+      <span data-hub-i18n="footerText">Business services, App Store products and robotics projects</span>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="hub.js"></script>
   </body>
 </html>

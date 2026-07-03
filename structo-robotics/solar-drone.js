@@ -1,5 +1,6 @@
 const solarTranslations = {
   he: {
+    navHome: "תחומי פעילות",
     navConstruction: "רובוט בנייה",
     navSolarDrone: "רחפן סולארי",
     navProblem: "בעיה",
@@ -15,7 +16,7 @@ const solarTranslations = {
     summaryKicker: "The opportunity",
     summaryTitle: "אבק על פאנלים הוא בעיית תפוקה, תחזוקה ובטיחות.",
     summaryCopy:
-      "Structo Robotics מפתחת שכבת רובוטיקה ותוכנה שמחברת רחפן, חיישנים, ראייה ממוחשבת ומנגנון ניקוי קל. המטרה היא להוכיח POC תוך 12 חודשים ולפתוח שוק שירותים לבעלי מערכות סולאריות, חברות תחזוקה ושותפי אנרגיה.",
+      "Structor Robotics מפתחת שכבת רובוטיקה ותוכנה שמחברת רחפן, חיישנים, ראייה ממוחשבת ומנגנון ניקוי קל. המטרה היא להוכיח POC תוך 12 חודשים ולפתוח שוק שירותים לבעלי מערכות סולאריות, חברות תחזוקה ושותפי אנרגיה.",
     metric1Value: "250K ₪",
     metric1Label: "תקציב POC",
     metric2Value: "12M",
@@ -94,6 +95,7 @@ const solarTranslations = {
     footerText: "רובוטיקה סולארית לתחזוקה בטוחה יותר של מערכות פוטו-וולטאיות"
   },
   en: {
+    navHome: "Directions",
     navConstruction: "Construction robot",
     navSolarDrone: "Solar drone",
     navProblem: "Problem",
@@ -109,7 +111,7 @@ const solarTranslations = {
     summaryKicker: "The opportunity",
     summaryTitle: "Dust on solar panels is an energy-yield, maintenance, and safety problem.",
     summaryCopy:
-      "Structo Robotics is developing a robotics and software layer that connects a drone, sensors, computer vision, and a lightweight cleaning module. The goal is to prove a POC within 12 months and open a service market for solar owners, maintenance companies, and energy partners.",
+      "Structor Robotics is developing a robotics and software layer that connects a drone, sensors, computer vision, and a lightweight cleaning module. The goal is to prove a POC within 12 months and open a service market for solar owners, maintenance companies, and energy partners.",
     metric1Value: "250K ₪",
     metric1Label: "POC budget",
     metric2Value: "12M",
@@ -188,6 +190,7 @@ const solarTranslations = {
     footerText: "Solar robotics for safer photovoltaic maintenance"
   },
   ru: {
+    navHome: "Направления",
     navConstruction: "Робот для строительства",
     navSolarDrone: "Солнечный дрон",
     navProblem: "Проблема",
@@ -203,7 +206,7 @@ const solarTranslations = {
     summaryKicker: "Возможность",
     summaryTitle: "Пыль на солнечных панелях — это проблема выработки, обслуживания и безопасности.",
     summaryCopy:
-      "Structo Robotics разрабатывает робототехнический и программный слой, который соединяет дрон, сенсоры, компьютерное зрение и лёгкий чистящий модуль. Цель — доказать POC за 12 месяцев и открыть рынок услуг для владельцев солнечных систем, сервисных компаний и энергетических партнёров.",
+      "Structor Robotics разрабатывает робототехнический и программный слой, который соединяет дрон, сенсоры, компьютерное зрение и лёгкий чистящий модуль. Цель — доказать POC за 12 месяцев и открыть рынок услуг для владельцев солнечных систем, сервисных компаний и энергетических партнёров.",
     metric1Value: "250K ₪",
     metric1Label: "Бюджет POC",
     metric2Value: "12M",

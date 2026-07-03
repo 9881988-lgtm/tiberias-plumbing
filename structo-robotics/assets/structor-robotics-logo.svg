@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Structor Robotics logo</title>
+  <desc id="desc">A geometric robotics mark combining a structural frame, circuit nodes, and solar rays.</desc>
+  <rect width="320" height="320" rx="56" fill="#0f1720"/>
+  <path d="M160 36 268 98v124l-108 62L52 222V98L160 36Z" fill="#12202f" stroke="#48d5cf" stroke-width="10"/>
+  <path d="M94 206V114l66-38 66 38v92l-66 38-66-38Z" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M118 128h78c19 0 34 15 34 34s-15 34-34 34h-78" fill="none" stroke="#1f6feb" stroke-width="18" stroke-linecap="round"/>
+  <path d="M118 162h82" fill="none" stroke="#48d5cf" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="94" cy="114" r="13" fill="#48d5cf"/>
+  <circle cx="226" cy="114" r="13" fill="#48d5cf"/>
+  <circle cx="94" cy="206" r="13" fill="#48d5cf"/>
+  <circle cx="226" cy="206" r="13" fill="#48d5cf"/>
+  <path d="M160 20v34M160 266v34M20 160h34M266 160h34" stroke="#f4b63f" stroke-width="10" stroke-linecap="round"/>
+  <path d="m61 61 24 24M235 235l24 24M259 61l-24 24M85 235l-24 24" stroke="#f4b63f" stroke-width="8" stroke-linecap="round"/>
+</svg>

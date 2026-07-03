@@ -3,14 +3,19 @@ const SETTINGS = {
   ownerEmail: "",
   whatsappNumber: "972533613100",
   phoneDisplay: "053 361 3100",
-  priceLabel: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
+  priceLabel: {
+    he: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
+    ru: "от 2,200 ₪ · код שמש2200: скидка 100 ₪",
+    en: "from 2,200 ₪ · code שמש2200: 100 ₪ discount"
+  },
   bookingHours: 3,
   slotDaysAhead: 21,
   workingDays: [0, 1, 2, 3, 4],
   dailySlotStarts: ["09:00", "12:00", "15:00"],
   serviceName: {
     he: "מכירה והתקנה של דוד שמש",
-    ru: "Продажа и установка солнечного бойлера"
+    ru: "Продажа и установка солнечного бойлера",
+    en: "Solar boiler sale and installation"
   }
 };
 
@@ -184,15 +189,103 @@ const translations = {
     faq4Answer: "Да. После формы откроется готовое сообщение WhatsApp, к нему можно прикрепить фото крыши или старого бойлера.",
     footerTitle: "Маим ве-Шемеш - солнечные бойлеры",
     footerText: "Продажа и установка солнечных бойлеров в Тверии."
+  },
+  en: {
+    title: "Solar boilers in Tiberias | Sale and installation from 2,200 ₪ | 053 361 3100",
+    description: "Solar boiler sale and installation in Tiberias: boiler, collectors, water connections and system check. Price from 2,200 ₪. Code שמש2200 gives 100 ₪ off.",
+    brandTitle: "Mayim VeShemesh",
+    brandSubtitle: "Solar boilers",
+    navService: "Service",
+    navBooking: "Booking",
+    navFaq: "FAQ",
+    languageButton: "עברית",
+    heroEyebrow: "Tiberias · sale and installation",
+    heroTitle: "A new solar boiler for your home, installed properly",
+    heroLead: "Supply and installation of solar boilers and collectors, water connections and system check. Suitable for apartments, private homes and guest units in Tiberias.",
+    bookButton: "Get a quote",
+    bookButtonShort: "Quote",
+    priceNote: "from 2,200 ₪ · code שמש2200: 100 ₪ discount",
+    timeNote: "3-hour work window",
+    areaNote: "Tiberias only",
+    trustCleanTitle: "Boiler and collectors",
+    trustCleanText: "sized for the roof and household",
+    trustDisinfectionTitle: "Installation and connections",
+    trustDisinfectionText: "water, collectors and system check",
+    trustHoursTitle: "Sun-Thu 09:00-18:00",
+    trustHoursText: "by available calendar slots",
+    serviceEyebrow: "What is included",
+    serviceTitle: "A complete solution for a new solar boiler, from inspection to hot water",
+    serviceLead: "Before the final quote, we check the required boiler volume, roof condition, access to collectors and the water infrastructure. This keeps the price clear and the installation coordinated without unnecessary surprises.",
+    featureUnitTitle: "Boiler sizing",
+    featureUnitText: "Choosing the right volume based on household size, daily use and roof conditions, including a collector recommendation.",
+    featureWashTitle: "Collector installation",
+    featureWashText: "Positioning collectors in the best practical direction, connecting them to the system and checking proper flow.",
+    featureDisinfectTitle: "Check and finish",
+    featureDisinfectText: "Checking connections, leaks, valves and cleaning the work area before handing the system to the customer.",
+    leadEyebrow: "Fast booking",
+    leadTitle: "Leave your address and phone number, and we will reserve a 3-hour work window",
+    leadText: "Solar boiler pricing starts from 2,200 ₪. Code שמש2200 gives 100 ₪ off. After sending the details, a prepared WhatsApp message opens for quick coordination.",
+    leadHighlight1: "3-hour work window",
+    leadHighlight2: "WhatsApp or email",
+    leadHighlight3: "Sun-Thu 09:00-18:00",
+    fieldName: "Name",
+    fieldPhone: "Phone",
+    fieldAddress: "Full address",
+    fieldArea: "Area",
+    fieldUnits: "Request type",
+    fieldBookingDate: "Choose date",
+    fieldBookingTime: "Choose time",
+    fieldEmail: "email for quote confirmation",
+    fieldContact: "How should we reply?",
+    contactEither: "whichever is faster",
+    fieldNotes: "Notes",
+    notesPlaceholder: "desired boiler size, floor, roof access, existing boiler or WhatsApp photo",
+    slotLoading: "Loading available times...",
+    slotUnavailable: "No available times for this date",
+    slotHelper: "Each slot reserves 3 hours of work. After sending the form, the time is checked and reserved in the calendar.",
+    slotLive: "Times are shown from the calendar.",
+    slotFallback: "Times are shown for preview. After backend connection they will be checked against the calendar.",
+    slotRequired: "Choose an available date and time.",
+    submitButton: "Send request",
+    submitWorking: "Sending...",
+    successWithGoogle: "Request sent and the selected slot was sent for calendar booking. Starting price confirmed: from 2,200 ₪ for a solar boiler. Code שמש2200 gives 100 ₪ off.",
+    successFallback: "The details are ready to send. Starting price confirmed: from 2,200 ₪ for a solar boiler. Code שמש2200 gives 100 ₪ off.",
+    errorMessage: "Could not send to the Google server. You can send the details through WhatsApp.",
+    emailRequired: "You chose email, so an email address is required.",
+    areaTiberias: "Tiberias",
+    units1: "new solar boiler",
+    units2: "boiler and collectors",
+    units3: "inspection and quote",
+    areaEyebrow: "Service area",
+    areaTitle: "Solar boilers in Tiberias",
+    areaText: "The service is suitable for private homes, apartments, guest units and small businesses in Tiberias.",
+    contactTitle: "Contact",
+    copyButton: "Copy number",
+    copiedButton: "Number copied",
+    faqEyebrow: "FAQ",
+    faqTitle: "What to know before booking",
+    faq1Question: "What is included in solar boiler installation?",
+    faq1Answer: "Supplying a suitable boiler, placement and connection, collector check, leak check and system startup according to the existing infrastructure.",
+    faq2Question: "How much time is reserved?",
+    faq2Answer: "Each request receives a 3-hour calendar slot, including inspection, arrival and further coordination according to roof conditions.",
+    faq3Question: "Is the price fixed?",
+    faq3Answer: "The price starts from 2,200 ₪ for a solar boiler. Code שמש2200 gives 100 ₪ off. The final price depends on volume, collectors, roof access and the state of the water connections.",
+    faq4Question: "Can I send a photo on WhatsApp?",
+    faq4Answer: "Yes. After the form, a prepared WhatsApp message opens, and you can attach a photo of the roof or existing boiler.",
+    footerTitle: "Mayim VeShemesh - solar boilers",
+    footerText: "Solar boiler sale and installation in Tiberias."
   }
 };
 
 const whatsappMessages = {
   he: "שלום, אני רוצה לקבל הצעת מחיר לדוד שמש בטבריה. המחיר מתחיל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
-  ru: "Здравствуйте, хочу получить цену на солнечный бойлер в Тверии. Цена начинается от 2,200 ₪. Код שמש2200 дает скидку 100 ₪."
+  ru: "Здравствуйте, хочу получить цену на солнечный бойлер в Тверии. Цена начинается от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
+  en: "Hello, I would like to get a quote for a solar boiler in Tiberias. The price starts from 2,200 ₪. Code שמש2200 gives 100 ₪ off."
 };
 
-let currentLanguage = new URLSearchParams(window.location.search).get("lang") === "ru" ? "ru" : "he";
+const supportedLanguages = ["he", "ru", "en"];
+const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+let currentLanguage = supportedLanguages.includes(requestedLanguage) ? requestedLanguage : "he";
 
 const setMeta = (selector, value) => {
   const element = document.querySelector(selector);
@@ -212,11 +305,11 @@ const applyLanguage = (language) => {
   document.documentElement.dir = isHebrew ? "rtl" : "ltr";
   document.title = dictionary.title;
   setMeta('meta[name="description"]', dictionary.description);
-  setMeta('meta[property="og:title"]', isHebrew ? "דודי שמש בטבריה | מכירה והתקנה מ-2,200 ₪" : "Солнечные бойлеры в Тверии | Продажа и установка от 2,200 ₪");
-  setMeta('meta[property="og:description"]', isHebrew ? "מכירה, התקנה וחיבור דודי שמש בטבריה. מחיר החל מ-2,200 ₪. קוד שמש2200: 100 ₪ הנחה." : "Продажа и установка солнечных бойлеров в Тверии. Цена от 2,200 ₪. Код שמש2200: скидка 100 ₪.");
-  setMeta('meta[property="og:locale"]', isHebrew ? "he_IL" : "ru_RU");
-  setMeta('meta[name="twitter:title"]', isHebrew ? "דודי שמש בטבריה | מכירה והתקנה מ-2,200 ₪" : "Солнечные бойлеры в Тверии | Продажа и установка от 2,200 ₪");
-  setMeta('meta[name="twitter:description"]', isHebrew ? "מכירה והתקנה של דודי שמש בטבריה. מחיר החל מ-2,200 ₪. קוד שמש2200: 100 ₪ הנחה." : "Продажа и установка солнечных бойлеров в Тверии. Цена от 2,200 ₪. Код שמש2200: скидка 100 ₪.");
+  setMeta('meta[property="og:title"]', dictionary.title.replace(" | 053 361 3100", ""));
+  setMeta('meta[property="og:description"]', dictionary.description);
+  setMeta('meta[property="og:locale"]', { he: "he_IL", ru: "ru_RU", en: "en_US" }[language]);
+  setMeta('meta[name="twitter:title"]', dictionary.title.replace(" | 053 361 3100", ""));
+  setMeta('meta[name="twitter:description"]', dictionary.description);
 
   document.querySelectorAll("[data-key]").forEach((element) => {
     const value = dictionary[element.dataset.key];
@@ -240,10 +333,31 @@ const applyLanguage = (language) => {
   if (toggle) {
     toggle.setAttribute("aria-label", isHebrew ? "לעבור לרוסית" : "Переключить на иврит");
   }
+
+  document.querySelectorAll("[data-language-option]").forEach((button) => {
+    const isActive = button.dataset.languageOption === language;
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  if (language === "he") {
+    params.delete("lang");
+  } else {
+    params.set("lang", language);
+  }
+  const nextUrl = `${window.location.pathname}${params.toString() ? `?${params}` : ""}${window.location.hash}`;
+  window.history.replaceState({}, "", nextUrl);
 };
 
 document.querySelector("[data-language-toggle]")?.addEventListener("click", () => {
-  applyLanguage(currentLanguage === "he" ? "ru" : "he");
+  const next = currentLanguage === "he" ? "ru" : currentLanguage === "ru" ? "en" : "he";
+  applyLanguage(next);
+});
+
+document.querySelectorAll("[data-language-option]").forEach((button) => {
+  button.addEventListener("click", () => {
+    applyLanguage(button.dataset.languageOption);
+  });
 });
 
 const copyButton = document.querySelector("[data-copy]");
@@ -498,7 +612,7 @@ const collectLead = () => {
     contactPreference: String(data.get("contactPreference") || "whatsapp").trim(),
     notes: String(data.get("notes") || "").trim(),
     language: currentLanguage,
-    priceLabel: SETTINGS.priceLabel,
+    priceLabel: SETTINGS.priceLabel[currentLanguage] || SETTINGS.priceLabel.he,
     bookingHours: SETTINGS.bookingHours,
     serviceName: SETTINGS.serviceName[currentLanguage],
     sourceUrl: window.location.href,
@@ -510,7 +624,7 @@ const formatLeadMessage = (lead) => {
   if (currentLanguage === "he") {
     return [
       "בקשה להצעת מחיר לדוד שמש",
-      `מחיר התחלתי: ${SETTINGS.priceLabel}`,
+      `מחיר התחלתי: ${lead.priceLabel}`,
       `שם: ${lead.name}`,
       `טלפון: ${lead.phone}`,
       lead.email ? `email: ${lead.email}` : "",
@@ -523,9 +637,25 @@ const formatLeadMessage = (lead) => {
     ].filter(Boolean).join("\n");
   }
 
+  if (currentLanguage === "en") {
+    return [
+      "Solar boiler quote request",
+      `Starting price: ${lead.priceLabel}`,
+      `Name: ${lead.name}`,
+      `Phone: ${lead.phone}`,
+      lead.email ? `email: ${lead.email}` : "",
+      `Address: ${lead.address}`,
+      `Area: ${lead.area}`,
+      `Request type: ${lead.units}`,
+      lead.preferredDateTime ? `Selected slot: ${lead.bookingDate} ${lead.bookingSlotLabel || lead.preferredDateTime}` : "Selected slot: not selected",
+      `Work window: ${SETTINGS.bookingHours} hours`,
+      lead.notes ? `Notes: ${lead.notes}` : ""
+    ].filter(Boolean).join("\n");
+  }
+
   return [
     "Заявка на расчет солнечного бойлера",
-    `Стартовая цена: ${SETTINGS.priceLabel}`,
+    `Стартовая цена: ${lead.priceLabel}`,
     `Имя: ${lead.name}`,
     `Телефон: ${lead.phone}`,
     lead.email ? `email: ${lead.email}` : "",
@@ -540,7 +670,11 @@ const formatLeadMessage = (lead) => {
 
 const openFallbackChannel = (lead, message) => {
   if (lead.contactPreference === "email" && SETTINGS.ownerEmail) {
-    const subject = encodeURIComponent(currentLanguage === "he" ? "בקשה לדוד שמש בטבריה" : "Заявка на солнечный бойлер в Тверии");
+    const subject = encodeURIComponent(
+      currentLanguage === "he" ? "בקשה לדוד שמש בטבריה" :
+      currentLanguage === "en" ? "Solar boiler request in Tiberias" :
+      "Заявка на солнечный бойлер в Тверии"
+    );
     window.location.href = `mailto:${SETTINGS.ownerEmail}?subject=${subject}&body=${encodeURIComponent(message)}`;
     return;
   }

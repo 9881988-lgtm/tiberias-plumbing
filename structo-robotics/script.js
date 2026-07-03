@@ -1,5 +1,6 @@
 const translations = {
   he: {
+    navHome: "תחומי פעילות",
     navConstruction: "רובוט בנייה",
     navSolarDrone: "רחפן סולארי",
     navApps: "אפליקציות",
@@ -10,17 +11,17 @@ const translations = {
     heroEyebrow: "Construction robotics from Israel",
     heroTitle: "הרכבה רובוטית של אלמנטים טרומיים מבטון",
     heroLead:
-      "Structo Robotics מפתחת מערכת רובוטית להרכבת אלמנטים טרומיים באמצעות פלטפורמת high-reach כבדה, אחיזה בארבע נקודות, ראייה ממוחשבת וחיבור ברגים אוטומטי.",
+      "Structor Robotics מפתחת מערכת רובוטית להרכבת אלמנטים טרומיים באמצעות פלטפורמת high-reach כבדה, אחיזה בארבע נקודות, ראייה ממוחשבת וחיבור ברגים אוטומטי.",
     whatsapp: "WhatsApp: +972 50 302 7014",
     seeSolution: "ראה את הפתרון",
     introKicker: "The company",
     introTitle: "אנחנו מחברים מכניקה כבדה קיימת עם שכבת רובוטיקה חכמה.",
     introCopy:
-      "במקום לפתח מכונת בנייה כבדה מאפס, Structo Robotics משתמשת בפלטפורמת demolition/high-reach קיימת כגון Volvo EC950 High Reach ומוסיפה תוכנה, חיישנים, בקרת תנועה, מנגנון אחיזה ומניפולטור לחיבורי ברגים.",
+      "במקום לפתח מכונת בנייה כבדה מאפס, Structor Robotics משתמשת בפלטפורמת demolition/high-reach קיימת כגון Volvo EC950 High Reach ומוסיפה תוכנה, חיישנים, בקרת תנועה, מנגנון אחיזה ומניפולטור לחיבורי ברגים.",
     solarProjectKicker: "Solar energy robotics",
     solarProjectTitle: "רובוט לניקוי תחנות סולאריות ופאנלים פוטו-וולטאיים.",
     solarProjectText:
-      "פרויקט נוסף של Structo Robotics: מערכת רובוטית שמזהה לכלוך על פאנלים סולאריים, מודדת ירידת תפוקה ומבצעת ניקוי מקומי עדין אחרי אבק, חול ובוץ.",
+      "פרויקט נוסף של Structor Robotics: מערכת רובוטית שמזהה לכלוך על פאנלים סולאריים, מודדת ירידת תפוקה ומבצעת ניקוי מקומי עדין אחרי אבק, חול ובוץ.",
     solarProjectButton: "פתח מצגת משקיעים",
     solarProjectContact: "דברו איתנו על פיילוט",
     problemKicker: "Market problem",
@@ -84,7 +85,7 @@ const translations = {
     appsKicker: "Published App Store apps",
     appsTitle: "אפליקציות iPhone שכבר זמינות להורדה.",
     appsIntro:
-      "לצד פרויקטי הרובוטיקה, Structo מציגה מוצרים דיגיטליים שפורסמו ב-App Store: קבלות לעסקים, תרגום, לימודים, ציור וניקוי תמונות.",
+      "לצד פרויקטי הרובוטיקה, Structor מציגה מוצרים דיגיטליים שפורסמו ב-App Store: קבלות לעסקים, תרגום, לימודים, ציור וניקוי תמונות.",
     appBadgeStore: "App Store",
     appReceiptText: "אפליקציה פשוטה להפקת קבלות, PDF ושיתוף מהיר לעצמאים ולעסקים קטנים בישראל.",
     appTavoraText: "מתרגם טקסט וקול עם גישה offline-first, חבילות שפה וממשק נקי לנסיעות, עבודה ועלייה.",
@@ -100,6 +101,7 @@ const translations = {
     footerText: "מערכות רובוטיות להרכבת בנייה טרומית"
   },
   en: {
+    navHome: "Directions",
     navConstruction: "Construction robot",
     navSolarDrone: "Solar drone",
     navApps: "Apps",
@@ -110,17 +112,17 @@ const translations = {
     heroEyebrow: "Construction robotics from Israel",
     heroTitle: "Robotic assembly for precast concrete construction",
     heroLead:
-      "Structo Robotics develops a robotic system for assembling precast concrete elements using a heavy high-reach platform, four-point gripping, computer vision, and automated bolted connections.",
+      "Structor Robotics develops a robotic system for assembling precast concrete elements using a heavy high-reach platform, four-point gripping, computer vision, and automated bolted connections.",
     whatsapp: "WhatsApp: +972 50 302 7014",
     seeSolution: "See the solution",
     introKicker: "The company",
     introTitle: "We connect existing heavy machinery with an intelligent robotics layer.",
     introCopy:
-      "Instead of developing a heavy construction machine from scratch, Structo Robotics uses an existing demolition/high-reach platform such as the Volvo EC950 High Reach and adds software, sensors, motion control, a gripping mechanism, and a bolting manipulator.",
+      "Instead of developing a heavy construction machine from scratch, Structor Robotics uses an existing demolition/high-reach platform such as the Volvo EC950 High Reach and adds software, sensors, motion control, a gripping mechanism, and a bolting manipulator.",
     solarProjectKicker: "Solar energy robotics",
     solarProjectTitle: "Robot for cleaning solar power stations and photovoltaic panels.",
     solarProjectText:
-      "Another Structo Robotics project: a robotic system that detects dirt on solar panels, measures production loss, and performs gentle local cleaning after dust, sand, and mud events.",
+      "Another Structor Robotics project: a robotic system that detects dirt on solar panels, measures production loss, and performs gentle local cleaning after dust, sand, and mud events.",
     solarProjectButton: "Open investor deck",
     solarProjectContact: "Talk to us about a pilot",
     problemKicker: "Market problem",
@@ -184,7 +186,7 @@ const translations = {
     appsKicker: "Published App Store apps",
     appsTitle: "iPhone apps already available for download.",
     appsIntro:
-      "Alongside robotics projects, Structo presents digital products published on the App Store: receipts, translation, exam learning, drawing, and photo cleanup.",
+      "Alongside robotics projects, Structor presents digital products published on the App Store: receipts, translation, exam learning, drawing, and photo cleanup.",
     appBadgeStore: "App Store",
     appReceiptText: "A simple app for receipts, PDF export, and fast sharing for freelancers and small businesses in Israel.",
     appTavoraText: "An offline-first text and voice translator with language packs and a clean interface for travel, work, and relocation.",
@@ -200,6 +202,7 @@ const translations = {
     footerText: "Robotic systems for precast construction assembly"
   },
   ru: {
+    navHome: "Направления",
     navConstruction: "Робот для строительства",
     navSolarDrone: "Солнечный дрон",
     navApps: "Приложения",
@@ -210,17 +213,17 @@ const translations = {
     heroEyebrow: "Construction robotics from Israel",
     heroTitle: "Роботизированный монтаж сборных железобетонных элементов",
     heroLead:
-      "Structo Robotics разрабатывает роботизированную систему для монтажа сборных ЖБ элементов на базе тяжёлой high-reach платформы, четырёхточечного захвата, компьютерного зрения и автоматического болтового соединения.",
+      "Structor Robotics разрабатывает роботизированную систему для монтажа сборных ЖБ элементов на базе тяжёлой high-reach платформы, четырёхточечного захвата, компьютерного зрения и автоматического болтового соединения.",
     whatsapp: "WhatsApp: +972 50 302 7014",
     seeSolution: "Смотреть решение",
     introKicker: "Компания",
     introTitle: "Мы соединяем существующую тяжёлую механику с интеллектуальной роботикой.",
     introCopy:
-      "Вместо разработки тяжёлой строительной машины с нуля Structo Robotics использует существующую demolition/high-reach платформу, например Volvo EC950 High Reach, и добавляет программное обеспечение, датчики, управление движением, механизм захвата и манипулятор для закручивания болтов.",
+      "Вместо разработки тяжёлой строительной машины с нуля Structor Robotics использует существующую demolition/high-reach платформу, например Volvo EC950 High Reach, и добавляет программное обеспечение, датчики, управление движением, механизм захвата и манипулятор для закручивания болтов.",
     solarProjectKicker: "Solar energy robotics",
     solarProjectTitle: "Робот для очистки солнечных электростанций и фотоэлектрических панелей.",
     solarProjectText:
-      "Ещё один проект Structo Robotics: роботизированная система определяет загрязнение солнечных панелей, оценивает потерю выработки и выполняет мягкую локальную очистку после пыли, песка и грязи.",
+      "Ещё один проект Structor Robotics: роботизированная система определяет загрязнение солнечных панелей, оценивает потерю выработки и выполняет мягкую локальную очистку после пыли, песка и грязи.",
     solarProjectButton: "Открыть презентацию",
     solarProjectContact: "Обсудить пилот",
     problemKicker: "Проблема рынка",
@@ -284,7 +287,7 @@ const translations = {
     appsKicker: "Published App Store apps",
     appsTitle: "iPhone-приложения, уже доступные для скачивания.",
     appsIntro:
-      "Помимо робототехнических проектов Structo показывает цифровые продукты, опубликованные в App Store: квитанции, перевод, подготовку к экзаменам, рисование и чистку фото.",
+      "Помимо робототехнических проектов Structor показывает цифровые продукты, опубликованные в App Store: квитанции, перевод, подготовку к экзаменам, рисование и чистку фото.",
     appBadgeStore: "App Store",
     appReceiptText: "Простое приложение для квитанций, PDF и быстрой отправки для фрилансеров и малого бизнеса в Израиле.",
     appTavoraText: "Переводчик текста и голоса с offline-first подходом, языковыми пакетами и чистым интерфейсом для поездок, работы и переезда.",

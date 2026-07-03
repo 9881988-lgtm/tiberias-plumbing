@@ -85,6 +85,14 @@ a {
   font-weight: 800;
 }
 
+.brand-logo {
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(31, 111, 235, 0.18);
+}
+
 .main-nav {
   min-width: 0;
   max-width: 100%;
@@ -753,6 +761,288 @@ h2 {
   font-weight: 900;
 }
 
+.hub-page {
+  background: #fff;
+}
+
+.hub-hero {
+  position: relative;
+  min-height: calc(100svh - 76px);
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  background: var(--charcoal);
+}
+
+.hub-hero__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(15, 23, 32, 0.92), rgba(15, 23, 32, 0.62)),
+    url("assets/structo-white-excavator-30m-boom.png") center / cover;
+}
+
+.hub-hero__layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.55fr);
+  gap: 48px;
+  align-items: end;
+  padding: 84px 0;
+}
+
+.hub-logo,
+.subhero-logo {
+  width: clamp(90px, 12vw, 132px);
+  height: clamp(90px, 12vw, 132px);
+  border-radius: 24px;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.28);
+}
+
+.hub-identity h1 {
+  margin: 20px 0 18px;
+  font-size: clamp(3.8rem, 10vw, 9.4rem);
+  line-height: 0.88;
+}
+
+.hub-summary {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18px);
+}
+
+.hub-summary strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.42rem;
+}
+
+.hub-summary p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.direction-section {
+  background: #fff;
+}
+
+.direction-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.direction-card {
+  position: relative;
+  min-height: 430px;
+  display: grid;
+  grid-template-rows: 168px auto auto 1fr auto;
+  gap: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(17, 32, 47, 0.08);
+}
+
+.direction-card:hover,
+.direction-card:focus-visible,
+.innovation-card:hover,
+.innovation-card:focus-visible {
+  border-color: rgba(31, 111, 235, 0.42);
+  box-shadow: 0 18px 46px rgba(31, 111, 235, 0.13);
+  transform: translateY(-2px);
+}
+
+.direction-card > img {
+  width: calc(100% + 36px);
+  height: 168px;
+  margin: -18px -18px 0;
+  object-fit: cover;
+}
+
+.direction-icons {
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: -18px -18px 0;
+  background: linear-gradient(135deg, #0f1720, #183d5e);
+}
+
+.direction-icons img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.direction-number {
+  direction: ltr;
+  width: max-content;
+  border-radius: 999px;
+  padding: 4px 10px;
+  color: #fff;
+  background: var(--charcoal);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.direction-card h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1.18;
+}
+
+.direction-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.direction-card strong {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0 14px;
+  color: #fff;
+  background: var(--blue);
+}
+
+.direction-card--solar strong {
+  background: var(--amber);
+}
+
+.direction-card--apps strong {
+  background: var(--teal);
+}
+
+.direction-card--innovation strong {
+  background: var(--green);
+}
+
+.subhero {
+  padding: 90px 0 78px;
+  color: #fff;
+  background:
+    linear-gradient(120deg, rgba(15, 23, 32, 0.94), rgba(15, 23, 32, 0.7)),
+    url("assets/solar-drone-panel-cleaning-hero.png") center / cover;
+}
+
+.subhero h1 {
+  max-width: 980px;
+  margin-top: 22px;
+}
+
+.app-catalog {
+  display: grid;
+  gap: 18px;
+  padding: 76px 0;
+}
+
+.app-detail {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) auto;
+  gap: 22px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(17, 32, 47, 0.06);
+}
+
+.app-detail__icon {
+  width: 86px;
+  height: 86px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(17, 32, 47, 0.16);
+}
+
+.app-detail h2 {
+  margin-bottom: 10px;
+  font-size: 1.9rem;
+}
+
+.app-detail p {
+  color: var(--muted);
+}
+
+.app-detail ul {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 0;
+  padding-inline-start: 20px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.app-detail__cta {
+  min-width: 160px;
+}
+
+.innovation-picker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  padding: 76px 0;
+}
+
+.innovation-card {
+  display: grid;
+  grid-template-rows: 270px 1fr;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(17, 32, 47, 0.08);
+}
+
+.innovation-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.innovation-card div {
+  display: grid;
+  gap: 12px;
+  padding: 26px;
+}
+
+.innovation-card h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.innovation-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.innovation-card strong {
+  display: inline-flex;
+  width: max-content;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0 16px;
+  color: #fff;
+  background: var(--green);
+}
+
 .deck-page {
   background: #fff;
 }
@@ -941,11 +1231,30 @@ h2 {
 }
 
 @media (max-width: 1000px) {
-  .site-header {
+    .site-header {
     grid-template-columns: 1fr;
     justify-items: stretch;
     gap: 12px;
     min-height: auto;
+  }
+
+  .hub-hero__layout,
+  .direction-grid,
+  .innovation-picker {
+    grid-template-columns: 1fr;
+  }
+
+  .direction-card {
+    min-height: 360px;
+  }
+
+  .app-detail {
+    grid-template-columns: 78px minmax(0, 1fr);
+  }
+
+  .app-detail__cta {
+    grid-column: 1 / -1;
+    width: 100%;
   }
 
   .brand {
@@ -1010,6 +1319,10 @@ h2 {
   .contact-panel {
     width: min(100%, 460px);
   }
+
+  .hub-identity h1 {
+    font-size: clamp(3.3rem, 15vw, 6.8rem);
+  }
 }
 
 @media (max-width: 640px) {
@@ -1037,6 +1350,40 @@ h2 {
   .section-inner,
   .hero-content {
     width: calc(100% - 32px);
+  }
+
+  .hub-hero {
+    min-height: auto;
+  }
+
+  .hub-hero__layout {
+    width: calc(100% - 32px);
+    padding: 58px 0;
+  }
+
+  .hub-summary {
+    padding: 20px;
+  }
+
+  .direction-card {
+    min-height: 0;
+  }
+
+  .app-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .app-detail__icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .innovation-card {
+    grid-template-rows: 220px 1fr;
+  }
+
+  .innovation-card img {
+    height: 220px;
   }
 
   .hero-content {

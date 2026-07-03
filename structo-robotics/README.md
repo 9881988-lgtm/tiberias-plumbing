@@ -1,6 +1,6 @@
-# Structo Robotics website
+# Structor Robotics website
 
-Static multilingual website for Structo Robotics.
+Static multilingual website for Structor Robotics.
 
 Languages:
 - Hebrew
