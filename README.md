@@ -52,3 +52,8 @@
 - Tiberias plumber
 - דוד שמש בטבריה
 - אינסטלטור בטבריה
+
+## Open-source maintenance
+
+This public repository is maintained as a static website and app landing-page
+hub for local service and small-business projects in Israel.
