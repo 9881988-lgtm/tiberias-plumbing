@@ -211,6 +211,105 @@
       border-radius: 18px;
       background: #fff9eb;
     }
+    .growth-panel {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 18px 38px rgba(17, 24, 39, .08);
+      overflow: hidden;
+    }
+    .growth-panel__header {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 20px;
+      padding: 30px;
+      background: linear-gradient(135deg, rgba(8, 102, 255, .12), rgba(16, 163, 127, .12));
+    }
+    .growth-panel__header p { margin-bottom: 0; color: var(--muted); font-size: 18px; }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 22px;
+    }
+    .tool-card {
+      min-height: 142px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fbfcff;
+    }
+    .tool-card strong { display: block; margin-bottom: 6px; font-size: 18px; line-height: 1.2; }
+    .tool-card span { color: var(--muted); font-weight: 700; }
+    .calculator {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 22px;
+      padding: 30px;
+      border-top: 1px solid var(--line);
+      background: #f6f9ff;
+    }
+    .calculator label {
+      display: block;
+      margin-bottom: 14px;
+      color: #344256;
+      font-weight: 900;
+    }
+    .calculator input {
+      width: 100%;
+      min-height: 48px;
+      margin-top: 6px;
+      padding: 0 14px;
+      border: 1px solid rgba(8, 102, 255, .26);
+      border-radius: 10px;
+      color: var(--ink);
+      background: white;
+      font: inherit;
+      font-weight: 800;
+    }
+    .result-box {
+      display: grid;
+      gap: 12px;
+      align-content: center;
+      padding: 24px;
+      color: white;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #071f42, #10a37f);
+    }
+    .result-box strong { font-size: clamp(34px, 5vw, 56px); line-height: 1; }
+    .result-box span { color: rgba(255,255,255,.78); font-size: 18px; font-weight: 800; }
+    .guide {
+      padding: 30px;
+      border-top: 1px solid var(--line);
+    }
+    .guide-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .guide-tabs button {
+      min-height: 40px;
+      padding: 0 16px;
+      border: 1px solid rgba(8, 102, 255, .22);
+      border-radius: 10px;
+      color: var(--blue-dark);
+      background: white;
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .guide-tabs button[aria-selected="true"] { color: white; background: var(--blue); }
+    .guide-copy {
+      display: none;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fbfcff;
+    }
+    .guide-copy.active { display: block; }
+    .guide-copy ul { margin: 0; padding-inline-start: 22px; }
+    .guide-copy li { margin-bottom: 10px; }
     .cta {
       display: grid;
       grid-template-columns: 1fr auto;
@@ -244,9 +343,9 @@
     .footer a { color: white; text-decoration: underline; text-underline-offset: 3px; }
     @media (max-width: 900px) {
       .nav { display: none; }
-      .hero, .split, .cta { grid-template-columns: 1fr; }
+      .hero, .split, .cta, .growth-panel__header, .calculator { grid-template-columns: 1fr; }
       .phone-stage { min-height: auto; }
-      .grid, .facts { grid-template-columns: 1fr; }
+      .grid, .facts, .tool-grid { grid-template-columns: 1fr; }
       .section-head { display: block; }
     }
     @media (max-width: 620px) {
@@ -283,6 +382,7 @@
     <nav class="nav" aria-label="ניווט">
       <a href="#features">יכולות</a>
       <a href="#price">מחיר</a>
+      <a href="#tools">כלים</a>
       <a href="#ru">Русский</a>
       <a href="./support.html">תמיכה</a>
     </nav>
@@ -368,6 +468,96 @@
       </div>
     </section>
 
+    <section id="tools" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">כלים בחינם</p>
+          <h2>לפני שמורידים: בדקו אם ReceiptIL מתאים לעסק שלכם</h2>
+        </div>
+        <p>החלק הזה נועד לעצמאים שרוצים להבין במהירות אם הם צריכים פתרון פשוט לקבלות, כמה כסף אפשר לחסוך, ומה כדאי לבדוק עם רואה החשבון.</p>
+      </div>
+
+      <div class="growth-panel">
+        <div class="growth-panel__header">
+          <div>
+            <p class="eyebrow">למה זה עוזר</p>
+            <h3>עמוד שימושי שאפשר לשלוח לחברים, לקוחות ורואי חשבון</h3>
+          </div>
+          <p>במקום פרסומת רגילה בלבד, אפשר לשתף מדריך קצר לעצמאים בישראל. מי שהמדריך רלוונטי לו יראה מיד את היתרון של אפליקציה פשוטה וזולה לקבלות.</p>
+        </div>
+
+        <div class="tool-grid" aria-label="כלי צמיחה">
+          <div class="tool-card"><strong>שאלה ראשונה</strong><span>האם אתם צריכים להוציא קבלות פשוטות מהטלפון?</span></div>
+          <div class="tool-card"><strong>חיסכון</strong><span>השוואה בין מנוי חודשי לבין ₪18 חד-פעמי.</span></div>
+          <div class="tool-card"><strong>שליחה מהירה</strong><span>PDF שאפשר להעביר ללקוח ב-WhatsApp או במייל.</span></div>
+          <div class="tool-card"><strong>בדיקה עם רו״ח</strong><span>נוסח ברור: כלי עזר, לא ייעוץ מס.</span></div>
+        </div>
+
+        <div class="calculator" aria-label="מחשבון חיסכון">
+          <div>
+            <h3>מחשבון חיסכון שנתי</h3>
+            <p>הכניסו כמה עולה לכם פתרון אחר בחודש. ReceiptIL עולה ₪18 פעם אחת, כך שהחיסכון נראה מהר מאוד.</p>
+            <label for="monthlyCost">עלות חודשית של פתרון אחר, ₪
+              <input id="monthlyCost" type="number" min="0" step="1" value="35" inputmode="numeric">
+            </label>
+          </div>
+          <div class="result-box">
+            <span>חיסכון משוער בשנה הראשונה מול מנוי</span>
+            <strong id="savingResult">₪402</strong>
+            <span>החישוב הוא השוואה פשוטה: 12 חודשים פחות ₪18 חד-פעמי.</span>
+          </div>
+        </div>
+
+        <div class="guide">
+          <p class="eyebrow">שפרו לפני ההורדה</p>
+          <h3>צ׳ק-ליסט קצר לעצמאי בישראל</h3>
+          <div class="guide-tabs" role="tablist" aria-label="שפות">
+            <button type="button" aria-selected="true" data-guide="he">עברית</button>
+            <button type="button" aria-selected="false" data-guide="ru">Русский</button>
+            <button type="button" aria-selected="false" data-guide="en">English</button>
+            <button type="button" aria-selected="false" data-guide="fr">Français</button>
+          </div>
+          <div class="guide-copy active" data-guide-copy="he">
+            <ul>
+              <li>בדקו מול רואה חשבון אילו מסמכים העסק שלכם צריך להפיק.</li>
+              <li>הכינו מראש שם עסק, מספר עוסק, כתובת ופרטי קשר.</li>
+              <li>שמרו PDF של כל קבלה במקום מסודר, למשל תיקייה חודשית.</li>
+              <li>שלחו ללקוח קבלה מיד אחרי קבלת תשלום כדי לא לשכוח.</li>
+              <li>עקבו אחרי סיכום שנתי, במיוחד אם אתם עוסק פטור או עוסק זעיר.</li>
+            </ul>
+          </div>
+          <div class="guide-copy" data-guide-copy="ru" dir="ltr">
+            <ul>
+              <li>Проверьте с бухгалтером, какие документы нужны именно вашему бизнесу.</li>
+              <li>Заранее подготовьте название бизнеса, номер עוסק, адрес и контакты.</li>
+              <li>Сохраняйте PDF каждой квитанции в понятной папке по месяцам.</li>
+              <li>Отправляйте квитанцию клиенту сразу после получения оплаты.</li>
+              <li>Следите за годовым итогом, особенно если вы עוסק פטור или маленький бизнес.</li>
+            </ul>
+          </div>
+          <div class="guide-copy" data-guide-copy="en" dir="ltr">
+            <ul>
+              <li>Ask your accountant which documents your specific business must issue.</li>
+              <li>Prepare your business name, registration number, address, and contact details.</li>
+              <li>Save every receipt PDF in a simple monthly folder.</li>
+              <li>Send the receipt to the client right after payment, while the details are fresh.</li>
+              <li>Watch your yearly totals, especially if you are VAT-exempt or very small.</li>
+            </ul>
+          </div>
+          <div class="guide-copy" data-guide-copy="fr" dir="ltr">
+            <ul>
+              <li>Demandez à votre comptable quels documents votre activité doit émettre.</li>
+              <li>Préparez le nom de l’entreprise, le numéro d’activité, l’adresse et les contacts.</li>
+              <li>Gardez chaque reçu PDF dans un dossier mensuel clair.</li>
+              <li>Envoyez le reçu au client juste après le paiement.</li>
+              <li>Suivez les totaux annuels, surtout pour une petite activité en Israël.</li>
+            </ul>
+          </div>
+          <p style="margin-top:22px"><a class="button primary" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">להוריד את ReceiptIL</a></p>
+        </div>
+      </div>
+    </section>
+
     <section class="cta">
       <div>
         <h2>עצמאים? נסו את ReceiptIL</h2>
@@ -407,5 +597,28 @@
     <span> · </span>
     <a href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">App Store</a>
   </footer>
+  <script>
+    const costInput = document.querySelector('#monthlyCost');
+    const savingResult = document.querySelector('#savingResult');
+    function updateSaving() {
+      const monthly = Math.max(0, Number(costInput.value) || 0);
+      const saving = Math.max(0, (monthly * 12) - 18);
+      savingResult.textContent = `₪${saving.toLocaleString('he-IL')}`;
+    }
+    costInput.addEventListener('input', updateSaving);
+    updateSaving();
+
+    document.querySelectorAll('[data-guide]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const guide = button.dataset.guide;
+        document.querySelectorAll('[data-guide]').forEach((item) => {
+          item.setAttribute('aria-selected', String(item === button));
+        });
+        document.querySelectorAll('[data-guide-copy]').forEach((copy) => {
+          copy.classList.toggle('active', copy.dataset.guideCopy === guide);
+        });
+      });
+    });
+  </script>
 </body>
 </html>
