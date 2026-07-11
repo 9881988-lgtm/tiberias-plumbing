@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neravia AI - Private Offline AI Assistant for iPhone</title>
+  <meta name="description" content="Neravia AI is a private offline-first iPhone assistant for chat, translation, summaries, code help, and quick ideas. No account required.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://9881988-lgtm.github.io/tiberias-plumbing/neravia-ai/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Neravia AI - Private Offline AI Assistant">
+  <meta property="og:description" content="Chat, translate, summarize, write, and prepare ideas from one clean iPhone workspace. Offline-first and private by design.">
+  <meta property="og:url" content="https://9881988-lgtm.github.io/tiberias-plumbing/neravia-ai/">
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root {
+      --ink: #101828;
+      --muted: #617089;
+      --line: rgba(16, 24, 40, .12);
+      --panel: #ffffff;
+      --blue: #3157ff;
+      --aqua: #10b7a7;
+      --dark: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 8%, rgba(49, 87, 255, .18), transparent 28%),
+        radial-gradient(circle at 88% 12%, rgba(16, 183, 167, .18), transparent 30%),
+        #f7f9fc;
+      line-height: 1.58;
+    }
+    a { color: inherit; text-decoration: none; }
+    .shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 72px;
+      padding: 14px max(16px, calc((100vw - 1120px) / 2));
+      border-bottom: 1px solid var(--line);
+      background: rgba(247, 249, 252, .86);
+      backdrop-filter: blur(14px);
+    }
+    .brand { display: inline-flex; align-items: center; gap: 12px; font-weight: 900; }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      color: white;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--blue), var(--aqua));
+      box-shadow: 0 14px 28px rgba(49, 87, 255, .22);
+    }
+    .nav { display: flex; gap: 18px; color: #344054; font-weight: 800; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 44px;
+      align-items: center;
+      padding: 74px 0 52px;
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      margin-bottom: 20px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    h2 { margin-bottom: 18px; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; }
+    h3 { margin-bottom: 8px; font-size: 22px; line-height: 1.2; }
+    .lead { max-width: 700px; color: #344054; font-size: 21px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 22px;
+      border-radius: 10px;
+      font-weight: 900;
+    }
+    .button.primary { color: white; background: var(--blue); box-shadow: 0 16px 34px rgba(49, 87, 255, .24); }
+    .button.secondary { color: var(--blue); background: white; border: 1px solid rgba(49, 87, 255, .24); }
+    .demo {
+      min-height: 480px;
+      padding: 28px;
+      color: white;
+      border-radius: 28px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.16), transparent 42%),
+        linear-gradient(135deg, #151a35, #273c9b 56%, #10b7a7);
+      box-shadow: 0 26px 60px rgba(16, 24, 40, .18);
+    }
+    .screen {
+      height: 100%;
+      min-height: 424px;
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,.26);
+      border-radius: 24px;
+      background: rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+    }
+    .message {
+      margin: 0 0 14px;
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.16);
+    }
+    .message:nth-child(2) { margin-left: 34px; background: rgba(255,255,255,.28); }
+    .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .chip {
+      padding: 9px 12px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      color: rgba(255,255,255,.9);
+      font-weight: 800;
+    }
+    .section { padding: 58px 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      min-height: 210px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel);
+      box-shadow: 0 16px 34px rgba(16, 24, 40, .08);
+    }
+    .card p { color: var(--muted); }
+    .notice {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin: 42px 0;
+      padding: 30px;
+      border: 1px solid rgba(16, 183, 167, .34);
+      border-radius: 18px;
+      background: #effdfa;
+    }
+    .notice p { color: #365265; }
+    .footer {
+      padding: 34px max(16px, calc((100vw - 1120px) / 2));
+      color: rgba(255,255,255,.72);
+      background: var(--dark);
+    }
+    .footer a { color: white; text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 860px) {
+      .nav { display: none; }
+      .hero, .grid, .notice { grid-template-columns: 1fr; }
+      .hero { padding-top: 46px; }
+      .demo { min-height: auto; }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Neravia AI",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "iOS",
+      "url": "https://9881988-lgtm.github.io/tiberias-plumbing/neravia-ai/",
+      "description": "Neravia AI is a private offline-first iPhone assistant for chat, translation, summaries, code help, and quick ideas."
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Neravia AI home">
+      <span class="mark" aria-hidden="true">N</span>
+      <span>Neravia AI</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="./support.html">Support</a>
+      <a href="./privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Private offline-first AI for iPhone</p>
+        <h1>Neravia AI</h1>
+        <p class="lead">Chat, translate, summarize, write, and prepare ideas from one clean iPhone workspace. Neravia AI is built for private on-device work, with no account login required.</p>
+        <div class="actions">
+          <a class="button primary" href="./support.html">Support</a>
+          <a class="button secondary" href="./privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="demo" aria-label="Neravia AI workspace preview">
+        <div class="screen">
+          <p class="message"><strong>You:</strong> Summarize these notes into three clear action points.</p>
+          <p class="message"><strong>Neravia:</strong> Here is a concise plan with priorities, risks, and next steps.</p>
+          <p class="message"><strong>You:</strong> Translate the result into French and Hebrew.</p>
+          <div class="chips">
+            <span class="chip">Chat</span>
+            <span class="chip">Translate</span>
+            <span class="chip">Summarize</span>
+            <span class="chip">Code</span>
+            <span class="chip">Create</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <p class="eyebrow">What it does</p>
+      <h2>One small AI workspace for everyday tasks</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Private chat</h3>
+          <p>Ask questions, draft ideas, rewrite text, and prepare practical answers from your iPhone.</p>
+        </article>
+        <article class="card">
+          <h3>Translation</h3>
+          <p>Use the 20-language interface and translation tools for travel, study, and everyday communication.</p>
+        </article>
+        <article class="card">
+          <h3>Summaries and code help</h3>
+          <p>Turn notes into short takeaways, prepare outlines, and get lightweight help with technical text or code.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="privacy" class="notice">
+      <div>
+        <p class="eyebrow">Privacy</p>
+        <h2>Offline-first by design</h2>
+        <p>The current App Store build is designed for private on-device work. It does not require an account, and prompts are not sent to our servers by this app.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Access</p>
+        <h2>2 days included, lifetime unlock</h2>
+        <p>New users receive 2 days of included access. Pro access is handled by Apple through the App Store as a one-time lifetime unlock.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>Neravia AI</strong>
+    <span> · </span>
+    <a href="./support.html">Support</a>
+    <span> · </span>
+    <a href="./privacy-policy.html">Privacy Policy</a>
+    <span> · </span>
+    <a href="mailto:318612518714b@gmail.com">318612518714b@gmail.com</a>
+  </footer>
+</body>
+</html>
