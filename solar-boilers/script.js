@@ -6,7 +6,8 @@ const SETTINGS = {
   priceLabel: {
     he: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
     ru: "от 2,200 ₪ · код שמש2200: скидка 100 ₪",
-    en: "from 2,200 ₪ · code שמש2200: 100 ₪ discount"
+    en: "from 2,200 ₪ · code שמש2200: 100 ₪ discount",
+    fr: "à partir de 2 200 ₪ · code שמש2200 : remise de 100 ₪"
   },
   bookingHours: 3,
   slotDaysAhead: 21,
@@ -15,28 +16,29 @@ const SETTINGS = {
   serviceName: {
     he: "מכירה והתקנה של דוד שמש",
     ru: "Продажа и установка солнечного бойлера",
-    en: "Solar boiler sale and installation"
+    en: "Solar boiler sale and installation",
+    fr: "Vente et installation de chauffe-eau solaire"
   }
 };
 
 const translations = {
   he: {
-    title: "דודי שמש בטבריה | מכירה והתקנה מ-2,200 ₪ | 053 361 3100",
-    description: "מכירה והתקנה של דודי שמש בטבריה: דוד שמש, קולטים, חיבורי מים ובדיקת מערכת. מחיר החל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
+    title: "דודי שמש בטבריה והצפון | התקנה מ-2,200 ₪ | 053 361 3100",
+    description: "מכירה והתקנה של דודי שמש בטבריה, צפת, נוף הגליל, בית שאן ועמק הירדן. מחיר החל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
     brandTitle: "מים ושמש",
     brandSubtitle: "דודי שמש",
     navService: "השירות",
     navBooking: "הזמנה",
     navFaq: "שאלות",
     languageButton: "Русский",
-    heroEyebrow: "טבריה · מכירה והתקנה",
+    heroEyebrow: "טבריה והצפון · מכירה והתקנה",
     heroTitle: "דוד שמש חדש לבית, כולל התקנה מסודרת",
-    heroLead: "אספקה והתקנה של דודי שמש וקולטים, חיבורי מים ובדיקת מערכת. מתאים לדירות, בתים פרטיים ויחידות אירוח בטבריה.",
+    heroLead: "אספקה והתקנה של דודי שמש וקולטים, חיבורי מים ובדיקת מערכת בטבריה, צפת, נוף הגליל, בית שאן ועמק הירדן.",
     bookButton: "לקבלת הצעת מחיר",
     bookButtonShort: "להצעת מחיר",
     priceNote: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
     timeNote: "חלון עבודה 3 שעות",
-    areaNote: "טבריה בלבד",
+    areaNote: "טבריה · צפת · נוף הגליל · בית שאן · עמק הירדן",
     trustCleanTitle: "דוד וקולטים",
     trustCleanText: "התאמה לפי נפח וגג",
     trustDisinfectionTitle: "התקנה וחיבורים",
@@ -83,12 +85,16 @@ const translations = {
     errorMessage: "לא הצלחנו לשלוח לשרת Google. אפשר לשלוח את הפרטים ב-WhatsApp.",
     emailRequired: "בחרת email, לכן צריך למלא כתובת email.",
     areaTiberias: "טבריה",
+    areaSafed: "צפת",
+    areaNofHagalil: "נוף הגליל",
+    areaBeitShean: "בית שאן",
+    areaJordanValley: "עמק הירדן",
     units1: "דוד שמש חדש",
     units2: "דוד וקולטים",
     units3: "בדיקה והצעת מחיר",
     areaEyebrow: "אזור השירות",
-    areaTitle: "דודי שמש בטבריה",
-    areaText: "העבודה מתאימה לבתים פרטיים, דירות, יחידות אירוח ועסקים קטנים בטבריה.",
+    areaTitle: "דודי שמש בטבריה ובצפון",
+    areaText: "שירות לבתים פרטיים, דירות, יחידות אירוח ועסקים קטנים בטבריה, צפת, נוף הגליל, בית שאן ויישובי עמק הירדן.",
     contactTitle: "פרטי קשר",
     copyButton: "העתקת המספר",
     copiedButton: "המספר הועתק",
@@ -103,25 +109,25 @@ const translations = {
     faq4Question: "אפשר לשלוח תמונה ב-WhatsApp?",
     faq4Answer: "כן. אחרי שליחת הטופס נפתחת הודעת WhatsApp מוכנה, ואפשר לצרף תמונה של הגג או הדוד הקיים.",
     footerTitle: "מים ושמש - דודי שמש",
-    footerText: "מכירה והתקנה של דודי שמש בטבריה."
+    footerText: "מכירה והתקנה של דודי שמש בטבריה ובצפון ישראל."
   },
   ru: {
-    title: "Солнечные бойлеры в Тверии | Продажа и установка от 2,200 ₪ | 053 361 3100",
-    description: "Продажа и установка солнечных бойлеров в Тверии: бойлер, коллекторы, водяные подключения и проверка системы. Цена от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
+    title: "Солнечные бойлеры в Тверии и на севере | Установка от 2,200 ₪ | 053 361 3100",
+    description: "Продажа и установка солнечных бойлеров в Тверии, Цфате, Ноф-ха-Галиле, Бейт-Шеане и Иорданской долине. Цена от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Солнечные бойлеры",
     navService: "Услуга",
     navBooking: "Заявка",
     navFaq: "Вопросы",
     languageButton: "עברית",
-    heroEyebrow: "Тверия · продажа и установка",
+    heroEyebrow: "Тверия и север Израиля · продажа и установка",
     heroTitle: "Новый солнечный бойлер для дома с аккуратной установкой",
-    heroLead: "Поставка и установка солнечных бойлеров и коллекторов, подключение воды и проверка системы. Для квартир, частных домов и гостевых юнитов в Тверии.",
+    heroLead: "Поставка и установка солнечных бойлеров и коллекторов, подключение воды и проверка системы в Тверии, Цфате, Ноф-ха-Галиле, Бейт-Шеане и Иорданской долине.",
     bookButton: "Получить цену",
     bookButtonShort: "Цена",
     priceNote: "от 2,200 ₪ · код שמש2200: скидка 100 ₪",
     timeNote: "3 часа рабочего времени",
-    areaNote: "Тверия",
+    areaNote: "Тверия · Цфат · Ноф-ха-Галиль · Бейт-Шеан · Иорданская долина",
     trustCleanTitle: "Бойлер и коллекторы",
     trustCleanText: "подбор по объему и крыше",
     trustDisinfectionTitle: "Установка и подключения",
@@ -168,12 +174,16 @@ const translations = {
     errorMessage: "Не удалось отправить на сервер Google. Можно отправить данные в WhatsApp.",
     emailRequired: "Вы выбрали email, поэтому нужно заполнить адрес email.",
     areaTiberias: "Тверия",
+    areaSafed: "Цфат",
+    areaNofHagalil: "Ноф-ха-Галиль",
+    areaBeitShean: "Бейт-Шеан",
+    areaJordanValley: "Иорданская долина",
     units1: "новый солнечный бойлер",
     units2: "бойлер и коллекторы",
     units3: "проверка и расчет цены",
     areaEyebrow: "Зона обслуживания",
-    areaTitle: "Солнечные бойлеры в Тверии",
-    areaText: "Работа подходит для частных домов, квартир, гостевых юнитов и небольших бизнесов в Тверии.",
+    areaTitle: "Солнечные бойлеры в Тверии и на севере Израиля",
+    areaText: "Работаем в Тверии, Цфате, Ноф-ха-Галиле, Бейт-Шеане и населённых пунктах Иорданской долины.",
     contactTitle: "Контакты",
     copyButton: "Скопировать номер",
     copiedButton: "Номер скопирован",
@@ -188,25 +198,25 @@ const translations = {
     faq4Question: "Можно отправить фото в WhatsApp?",
     faq4Answer: "Да. После формы откроется готовое сообщение WhatsApp, к нему можно прикрепить фото крыши или старого бойлера.",
     footerTitle: "Маим ве-Шемеш - солнечные бойлеры",
-    footerText: "Продажа и установка солнечных бойлеров в Тверии."
+    footerText: "Продажа и установка солнечных бойлеров в Тверии и на севере Израиля."
   },
   en: {
-    title: "Solar boilers in Tiberias | Sale and installation from 2,200 ₪ | 053 361 3100",
-    description: "Solar boiler sale and installation in Tiberias: boiler, collectors, water connections and system check. Price from 2,200 ₪. Code שמש2200 gives 100 ₪ off.",
+    title: "Solar boilers in Tiberias and Northern Israel | From 2,200 ₪ | 053 361 3100",
+    description: "Solar boiler sale and installation in Tiberias, Safed, Nof HaGalil, Beit She'an and the Jordan Valley. Price from 2,200 ₪. Code שמש2200 gives 100 ₪ off.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Solar boilers",
     navService: "Service",
     navBooking: "Booking",
     navFaq: "FAQ",
     languageButton: "עברית",
-    heroEyebrow: "Tiberias · sale and installation",
+    heroEyebrow: "Tiberias and Northern Israel · sale and installation",
     heroTitle: "A new solar boiler for your home, installed properly",
-    heroLead: "Supply and installation of solar boilers and collectors, water connections and system check. Suitable for apartments, private homes and guest units in Tiberias.",
+    heroLead: "Supply and installation of solar boilers and collectors, water connections and system checks in Tiberias, Safed, Nof HaGalil, Beit She'an and the Jordan Valley.",
     bookButton: "Get a quote",
     bookButtonShort: "Quote",
     priceNote: "from 2,200 ₪ · code שמש2200: 100 ₪ discount",
     timeNote: "3-hour work window",
-    areaNote: "Tiberias only",
+    areaNote: "Tiberias · Safed · Nof HaGalil · Beit She'an · Jordan Valley",
     trustCleanTitle: "Boiler and collectors",
     trustCleanText: "sized for the roof and household",
     trustDisinfectionTitle: "Installation and connections",
@@ -253,12 +263,16 @@ const translations = {
     errorMessage: "Could not send to the Google server. You can send the details through WhatsApp.",
     emailRequired: "You chose email, so an email address is required.",
     areaTiberias: "Tiberias",
+    areaSafed: "Safed",
+    areaNofHagalil: "Nof HaGalil",
+    areaBeitShean: "Beit She'an",
+    areaJordanValley: "Jordan Valley",
     units1: "new solar boiler",
     units2: "boiler and collectors",
     units3: "inspection and quote",
     areaEyebrow: "Service area",
-    areaTitle: "Solar boilers in Tiberias",
-    areaText: "The service is suitable for private homes, apartments, guest units and small businesses in Tiberias.",
+    areaTitle: "Solar boilers in Tiberias and Northern Israel",
+    areaText: "Service for homes, apartments, guest units and small businesses in Tiberias, Safed, Nof HaGalil, Beit She'an and Jordan Valley communities.",
     contactTitle: "Contact",
     copyButton: "Copy number",
     copiedButton: "Number copied",
@@ -273,17 +287,107 @@ const translations = {
     faq4Question: "Can I send a photo on WhatsApp?",
     faq4Answer: "Yes. After the form, a prepared WhatsApp message opens, and you can attach a photo of the roof or existing boiler.",
     footerTitle: "Mayim VeShemesh - solar boilers",
-    footerText: "Solar boiler sale and installation in Tiberias."
+    footerText: "Solar boiler sale and installation in Tiberias and Northern Israel."
+  },
+  fr: {
+    title: "Chauffe-eau solaires à Tibériade et dans le nord | Dès 2 200 ₪ | 053 361 3100",
+    description: "Vente et installation de chauffe-eau solaires à Tibériade, Safed, Nof HaGalil, Beit She'an et dans la vallée du Jourdain. Dès 2 200 ₪. Code שמש2200 : remise de 100 ₪.",
+    brandTitle: "Mayim VeShemesh",
+    brandSubtitle: "Chauffe-eau solaires",
+    navService: "Service",
+    navBooking: "Devis",
+    navFaq: "Questions",
+    languageButton: "עברית",
+    heroEyebrow: "Tibériade et nord d'Israël · vente et installation",
+    heroTitle: "Un chauffe-eau solaire neuf, installé proprement chez vous",
+    heroLead: "Fourniture et installation de chauffe-eau solaires et de capteurs, raccordements d'eau et contrôle du système à Tibériade, Safed, Nof HaGalil, Beit She'an et dans la vallée du Jourdain.",
+    bookButton: "Obtenir un devis",
+    bookButtonShort: "Devis",
+    priceNote: "dès 2 200 ₪ · code שמש2200 : remise de 100 ₪",
+    timeNote: "Créneau de travail de 3 heures",
+    areaNote: "Tibériade · Safed · Nof HaGalil · Beit She'an · vallée du Jourdain",
+    trustCleanTitle: "Ballon et capteurs",
+    trustCleanText: "dimensionnés selon le foyer et le toit",
+    trustDisinfectionTitle: "Installation et raccordements",
+    trustDisinfectionText: "eau, capteurs et contrôle du système",
+    trustHoursTitle: "Dim-Jeu 09:00-18:00",
+    trustHoursText: "selon les créneaux disponibles",
+    serviceEyebrow: "Ce qui est compris",
+    serviceTitle: "Une solution complète, de l'inspection jusqu'à l'eau chaude",
+    serviceLead: "Avant le devis final, nous vérifions le volume nécessaire, l'état du toit, l'accès aux capteurs et les raccordements d'eau afin de coordonner une installation claire, sans surprise inutile.",
+    featureUnitTitle: "Choix du ballon",
+    featureUnitText: "Sélection du volume selon le nombre d'occupants, l'usage quotidien et les conditions du toit, avec recommandation des capteurs.",
+    featureWashTitle: "Installation des capteurs",
+    featureWashText: "Positionnement des capteurs dans la meilleure orientation possible, raccordement et contrôle du débit.",
+    featureDisinfectTitle: "Contrôle et finition",
+    featureDisinfectText: "Contrôle des raccords, fuites et vannes, puis nettoyage de la zone de travail avant la remise au client.",
+    leadEyebrow: "Demande rapide",
+    leadTitle: "Indiquez votre adresse et votre téléphone pour réserver un créneau de 3 heures",
+    leadText: "Le prix commence à 2 200 ₪. Le code שמש2200 donne 100 ₪ de remise. Après l'envoi, un message WhatsApp préparé s'ouvre pour finaliser les détails.",
+    leadHighlight1: "Créneau de 3 heures",
+    leadHighlight2: "WhatsApp ou email",
+    leadHighlight3: "Dim-Jeu 09:00-18:00",
+    fieldName: "Nom",
+    fieldPhone: "Téléphone",
+    fieldAddress: "Adresse complète",
+    fieldArea: "Zone",
+    fieldUnits: "Type de demande",
+    fieldBookingDate: "Choisir une date",
+    fieldBookingTime: "Choisir une heure",
+    fieldEmail: "Email pour confirmer le devis",
+    fieldContact: "Comment souhaitez-vous recevoir la réponse ?",
+    contactEither: "le moyen le plus rapide",
+    fieldNotes: "Remarques",
+    notesPlaceholder: "volume souhaité, étage, accès au toit, ballon existant ou photo sur WhatsApp",
+    slotLoading: "Chargement des créneaux...",
+    slotUnavailable: "Aucun créneau disponible à cette date",
+    slotHelper: "Chaque créneau réserve 3 heures de travail. Après l'envoi, l'horaire est vérifié et réservé dans le calendrier.",
+    slotLive: "Les horaires sont affichés depuis le calendrier.",
+    slotFallback: "Les horaires sont affichés à titre indicatif et seront confirmés lors de la prise de contact.",
+    slotRequired: "Choisissez une date et une heure disponibles.",
+    submitButton: "Envoyer la demande",
+    submitWorking: "Envoi...",
+    successWithGoogle: "Demande envoyée et créneau transmis au calendrier. Prix de départ confirmé : dès 2 200 ₪. Code שמש2200 : remise de 100 ₪.",
+    successFallback: "Les informations sont prêtes à être envoyées. Prix de départ : dès 2 200 ₪. Code שמש2200 : remise de 100 ₪.",
+    errorMessage: "L'envoi au serveur Google a échoué. Vous pouvez envoyer les informations par WhatsApp.",
+    emailRequired: "Vous avez choisi l'email ; veuillez saisir une adresse email.",
+    areaTiberias: "Tibériade",
+    areaSafed: "Safed",
+    areaNofHagalil: "Nof HaGalil",
+    areaBeitShean: "Beit She'an",
+    areaJordanValley: "Vallée du Jourdain",
+    units1: "nouveau chauffe-eau solaire",
+    units2: "ballon et capteurs",
+    units3: "inspection et devis",
+    areaEyebrow: "Zone de service",
+    areaTitle: "Chauffe-eau solaires à Tibériade et dans le nord d'Israël",
+    areaText: "Service pour maisons, appartements, hébergements et petites entreprises à Tibériade, Safed, Nof HaGalil, Beit She'an et dans les localités de la vallée du Jourdain.",
+    contactTitle: "Contact",
+    copyButton: "Copier le numéro",
+    copiedButton: "Numéro copié",
+    faqEyebrow: "Questions",
+    faqTitle: "À savoir avant de réserver",
+    faq1Question: "Que comprend l'installation ?",
+    faq1Answer: "Fourniture d'un ballon adapté, pose et raccordement, contrôle des capteurs, recherche de fuites et mise en service selon l'installation existante.",
+    faq2Question: "Combien de temps est réservé ?",
+    faq2Answer: "Chaque demande reçoit un créneau de 3 heures comprenant l'inspection, le déplacement et la coordination selon les conditions du toit.",
+    faq3Question: "Le prix est-il fixe ?",
+    faq3Answer: "Le prix commence à 2 200 ₪. Le code שמש2200 donne 100 ₪ de remise. Le prix final dépend du volume, des capteurs, de l'accès au toit et de l'état des raccordements d'eau.",
+    faq4Question: "Puis-je envoyer une photo sur WhatsApp ?",
+    faq4Answer: "Oui. Un message WhatsApp préparé s'ouvre et vous pouvez joindre une photo du toit ou du chauffe-eau existant.",
+    footerTitle: "Mayim VeShemesh - chauffe-eau solaires",
+    footerText: "Vente et installation de chauffe-eau solaires à Tibériade et dans le nord d'Israël."
   }
 };
 
 const whatsappMessages = {
-  he: "שלום, אני רוצה לקבל הצעת מחיר לדוד שמש בטבריה. המחיר מתחיל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
-  ru: "Здравствуйте, хочу получить цену на солнечный бойлер в Тверии. Цена начинается от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
-  en: "Hello, I would like to get a quote for a solar boiler in Tiberias. The price starts from 2,200 ₪. Code שמש2200 gives 100 ₪ off."
+  he: "שלום, אני רוצה לקבל הצעת מחיר לדוד שמש בטבריה או בצפון. המחיר מתחיל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
+  ru: "Здравствуйте, хочу получить цену на солнечный бойлер в Тверии или на севере Израиля. Цена начинается от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
+  en: "Hello, I would like a quote for a solar boiler in Tiberias or Northern Israel. The price starts from 2,200 ₪. Code שמש2200 gives 100 ₪ off.",
+  fr: "Bonjour, je souhaite obtenir un devis pour un chauffe-eau solaire à Tibériade ou dans le nord d'Israël. Le prix commence à 2 200 ₪. Le code שמש2200 donne 100 ₪ de remise."
 };
 
-const supportedLanguages = ["he", "ru", "en"];
+const supportedLanguages = ["he", "ru", "en", "fr"];
 const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
 let currentLanguage = supportedLanguages.includes(requestedLanguage) ? requestedLanguage : "he";
 
@@ -307,7 +411,7 @@ const applyLanguage = (language) => {
   setMeta('meta[name="description"]', dictionary.description);
   setMeta('meta[property="og:title"]', dictionary.title.replace(" | 053 361 3100", ""));
   setMeta('meta[property="og:description"]', dictionary.description);
-  setMeta('meta[property="og:locale"]', { he: "he_IL", ru: "ru_RU", en: "en_US" }[language]);
+  setMeta('meta[property="og:locale"]', { he: "he_IL", ru: "ru_RU", en: "en_US", fr: "fr_FR" }[language]);
   setMeta('meta[name="twitter:title"]', dictionary.title.replace(" | 053 361 3100", ""));
   setMeta('meta[name="twitter:description"]', dictionary.description);
 
@@ -350,7 +454,7 @@ const applyLanguage = (language) => {
 };
 
 document.querySelector("[data-language-toggle]")?.addEventListener("click", () => {
-  const next = currentLanguage === "he" ? "ru" : currentLanguage === "ru" ? "en" : "he";
+  const next = currentLanguage === "he" ? "ru" : currentLanguage === "ru" ? "en" : currentLanguage === "en" ? "fr" : "he";
   applyLanguage(next);
 });
 
@@ -653,6 +757,22 @@ const formatLeadMessage = (lead) => {
     ].filter(Boolean).join("\n");
   }
 
+  if (currentLanguage === "fr") {
+    return [
+      "Demande de devis pour un chauffe-eau solaire",
+      `Prix de départ : ${lead.priceLabel}`,
+      `Nom : ${lead.name}`,
+      `Téléphone : ${lead.phone}`,
+      lead.email ? `Email : ${lead.email}` : "",
+      `Adresse : ${lead.address}`,
+      `Zone : ${lead.area}`,
+      `Type de demande : ${lead.units}`,
+      lead.preferredDateTime ? `Créneau choisi : ${lead.bookingDate} ${lead.bookingSlotLabel || lead.preferredDateTime}` : "Créneau choisi : non sélectionné",
+      `Durée réservée : ${SETTINGS.bookingHours} heures`,
+      lead.notes ? `Remarques : ${lead.notes}` : ""
+    ].filter(Boolean).join("\n");
+  }
+
   return [
     "Заявка на расчет солнечного бойлера",
     `Стартовая цена: ${lead.priceLabel}`,
@@ -673,6 +793,7 @@ const openFallbackChannel = (lead, message) => {
     const subject = encodeURIComponent(
       currentLanguage === "he" ? "בקשה לדוד שמש בטבריה" :
       currentLanguage === "en" ? "Solar boiler request in Tiberias" :
+      currentLanguage === "fr" ? "Demande de chauffe-eau solaire dans le nord d'Israël" :
       "Заявка на солнечный бойлер в Тверии"
     );
     window.location.href = `mailto:${SETTINGS.ownerEmail}?subject=${subject}&body=${encodeURIComponent(message)}`;
