@@ -1,13 +1,656 @@
 <!doctype html>
 <html lang="he" dir="rtl">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=/tiberias-plumbing/solar-boilers/">
-    <meta name="robots" content="noindex, follow">
-    <link rel="canonical" href="https://9881988-lgtm.github.io/tiberias-plumbing/solar-boilers/">
-    <title>Redirecting to solar boilers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>דודי שמש וחשמל בטבריה | התקנה ותיקון מהיר | 053 361 3100</title>
+    <meta name="description" content="דודי שמש וחשמל בטבריה והצפון: התקנה, החלפה, קולטים, תרמוסטט, גוף חימום ותיקון נזילות. שירות בעברית, רוסית ואנגלית. WhatsApp: 053 361 3100." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="theme-color" content="#101820" />
+    <meta name="geo.region" content="IL-Z" />
+    <meta name="geo.placename" content="Tiberias" />
+    <meta name="ICBM" content="32.7959, 35.5310" />
+    <link rel="canonical" href="https://9881988-lgtm.github.io/tiberias-plumbing/boilers/" />
+    <link rel="alternate" hreflang="he-IL" href="https://9881988-lgtm.github.io/tiberias-plumbing/boilers/" />
+    <link rel="alternate" hreflang="ru-IL" href="https://9881988-lgtm.github.io/tiberias-plumbing/boilers/?lang=ru" />
+    <link rel="alternate" hreflang="en-IL" href="https://9881988-lgtm.github.io/tiberias-plumbing/boilers/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/boilers/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="מים ושמש - דודי שמש וחשמל" />
+    <meta property="og:url" content="https://9881988-lgtm.github.io/tiberias-plumbing/boilers/" />
+    <meta property="og:title" content="דודי שמש וחשמל בטבריה | התקנה ותיקון מהיר" />
+    <meta property="og:description" content="התקנת דודי שמש, תיקון דודי חשמל, החלפת גוף חימום וקולטים בטבריה והצפון." />
+    <meta property="og:image" content="https://9881988-lgtm.github.io/tiberias-plumbing/solar-boilers/assets/solar-boiler-tiberias-hero.png" />
+    <meta property="og:locale" content="he_IL" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="דודי שמש וחשמל בטבריה" />
+    <meta name="twitter:description" content="התקנה, החלפה ותיקון דודים בטבריה, צפת, נוף הגליל, בית שאן ועמק הירדן." />
+    <meta name="twitter:image" content="https://9881988-lgtm.github.io/tiberias-plumbing/solar-boilers/assets/solar-boiler-tiberias-hero.png" />
+
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="../solar-boilers/assets/solar-boiler-tiberias-hero.png" />
+
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #070a0d;
+        --panel: rgba(255, 255, 255, 0.075);
+        --panel-strong: rgba(255, 255, 255, 0.12);
+        --line: rgba(255, 255, 255, 0.16);
+        --text: #f8fbff;
+        --muted: rgba(248, 251, 255, 0.68);
+        --gold: #ffd166;
+        --orange: #ff7a3d;
+        --cyan: #73e0ff;
+        --green: #7dffb2;
+        --shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+        --radius: 28px;
+        --content: 1140px;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--text);
+        background:
+          radial-gradient(circle at 12% 8%, rgba(255, 209, 102, 0.18), transparent 28rem),
+          radial-gradient(circle at 90% 4%, rgba(115, 224, 255, 0.16), transparent 24rem),
+          linear-gradient(135deg, #070a0d 0%, #101820 48%, #080b10 100%);
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: inherit; }
+      img { display: block; max-width: 100%; }
+      .wrap { width: min(var(--content), calc(100% - 32px)); margin: 0 auto; }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        border-bottom: 1px solid var(--line);
+        background: rgba(7, 10, 13, 0.82);
+        backdrop-filter: blur(18px);
+      }
+
+      .topbar__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        min-height: 72px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+
+      .brand__mark {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 16px;
+        color: #101820;
+        background: linear-gradient(135deg, var(--gold), #fff4bd);
+        box-shadow: 0 12px 30px rgba(255, 209, 102, 0.24);
+      }
+
+      .brand strong { display: block; font-size: 1rem; letter-spacing: -0.02em; }
+      .brand small { color: var(--muted); font-size: 0.78rem; }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      .nav a { text-decoration: none; }
+      .nav a:hover { color: var(--text); }
+
+      .phone-pill,
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 48px;
+        padding: 0 18px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 900;
+        white-space: nowrap;
+      }
+
+      .phone-pill {
+        color: #101820;
+        background: var(--text);
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 76px 0 42px;
+      }
+
+      .hero__grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.86fr);
+        align-items: center;
+        gap: 34px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        margin: 0 0 16px;
+        color: var(--gold);
+        font-size: 0.78rem;
+        font-weight: 950;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p { margin-top: 0; }
+
+      h1 {
+        max-width: 760px;
+        margin-bottom: 18px;
+        font-size: clamp(2.65rem, 8vw, 6.35rem);
+        line-height: 0.92;
+        letter-spacing: -0.075em;
+      }
+
+      .lead {
+        max-width: 690px;
+        margin-bottom: 26px;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 2.1vw, 1.35rem);
+      }
+
+      .hero__actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .button--primary {
+        color: #121212;
+        border-color: transparent;
+        background: linear-gradient(135deg, var(--gold), #fff1b0);
+        box-shadow: 0 18px 42px rgba(255, 209, 102, 0.18);
+      }
+
+      .button--whatsapp {
+        color: var(--text);
+        background: rgba(125, 255, 178, 0.12);
+      }
+
+      .hero-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: calc(var(--radius) + 8px);
+        background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0.055));
+        box-shadow: var(--shadow);
+      }
+
+      .hero-card img {
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+      }
+
+      .hero-card__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--line);
+      }
+
+      .metric {
+        padding: 18px 14px;
+        background: rgba(7, 10, 13, 0.8);
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 1.24rem;
+        color: var(--gold);
+      }
+
+      .metric span {
+        color: var(--muted);
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
+      .strip {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin: 28px auto 0;
+      }
+
+      .strip div,
+      .card,
+      .quote,
+      .lead-box {
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background: var(--panel);
+        box-shadow: 0 14px 40px rgba(0, 0, 0, 0.16);
+      }
+
+      .strip div {
+        padding: 18px;
+      }
+
+      .strip strong {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--green);
+      }
+
+      .strip span { color: var(--muted); font-size: 0.93rem; }
+
+      section { padding: 62px 0; }
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+        font-size: clamp(2rem, 4vw, 3.4rem);
+        line-height: 1;
+        letter-spacing: -0.055em;
+      }
+
+      .section-head p {
+        max-width: 560px;
+        color: var(--muted);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .card {
+        padding: 24px;
+      }
+
+      .card__icon {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        margin-bottom: 18px;
+        border-radius: 16px;
+        color: #101820;
+        background: var(--gold);
+        font-weight: 950;
+      }
+
+      .card h3 {
+        margin-bottom: 8px;
+        font-size: 1.25rem;
+      }
+
+      .card p { color: var(--muted); margin-bottom: 0; }
+
+      .split {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 20px;
+        align-items: stretch;
+      }
+
+      .quote,
+      .lead-box {
+        padding: 28px;
+      }
+
+      .quote ul {
+        display: grid;
+        gap: 14px;
+        padding: 0;
+        margin: 22px 0 0;
+        list-style: none;
+      }
+
+      .quote li {
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.07);
+        color: var(--muted);
+      }
+
+      .lead-box {
+        background:
+          linear-gradient(135deg, rgba(255, 209, 102, 0.16), rgba(115, 224, 255, 0.08)),
+          var(--panel);
+      }
+
+      .lead-box .phone {
+        display: inline-block;
+        margin: 10px 0 18px;
+        color: var(--gold);
+        font-size: clamp(2rem, 5vw, 4rem);
+        font-weight: 950;
+        line-height: 1;
+        text-decoration: none;
+      }
+
+      .areas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .areas span {
+        padding: 9px 13px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.055);
+        font-weight: 800;
+      }
+
+      .faq {
+        display: grid;
+        gap: 10px;
+      }
+
+      details {
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: var(--panel);
+        padding: 18px 20px;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: 950;
+      }
+
+      details p {
+        margin: 12px 0 0;
+        color: var(--muted);
+      }
+
+      footer {
+        padding: 34px 0 100px;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+      }
+
+      .mobile-cta {
+        position: fixed;
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        z-index: 20;
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      @media (max-width: 860px) {
+        .nav { display: none; }
+        .topbar__inner { min-height: 64px; }
+        .phone-pill { display: none; }
+        .hero { padding-top: 42px; }
+        .hero__grid,
+        .split,
+        .grid,
+        .strip {
+          grid-template-columns: 1fr;
+        }
+        .hero-card img { height: 270px; }
+        .section-head { display: block; }
+        .mobile-cta { display: grid; }
+        footer { padding-bottom: 120px; }
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": ["LocalBusiness", "HomeAndConstructionBusiness", "Plumber"],
+            "@id": "https://9881988-lgtm.github.io/tiberias-plumbing/boilers/#business",
+            "name": "מים ושמש - דודי שמש וחשמל",
+            "alternateName": ["Boiler service Tiberias", "Ремонт бойлеров Тверия"],
+            "url": "https://9881988-lgtm.github.io/tiberias-plumbing/boilers/",
+            "telephone": "+972533613100",
+            "image": "https://9881988-lgtm.github.io/tiberias-plumbing/solar-boilers/assets/solar-boiler-tiberias-hero.png",
+            "priceRange": "₪₪",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Tiberias",
+              "addressRegion": "Northern District",
+              "addressCountry": "IL"
+            },
+            "areaServed": ["Tiberias", "Safed", "Nof HaGalil", "Beit She'an", "Jordan Valley"],
+            "availableLanguage": ["Hebrew", "Russian", "English"],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Boiler services",
+              "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Solar boiler installation" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electric boiler repair" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heating element and thermostat replacement" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Collector and leak inspection" } }
+              ]
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://9881988-lgtm.github.io/tiberias-plumbing/boilers/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "אפשר לתקן דוד חשמל או שחייבים להחליף?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "במקרים רבים מספיק להחליף גוף חימום, תרמוסטט או פלאנג'. אם הדוד ישן, חלוד או נוזל מהגוף עצמו, בדרך כלל עדיף להחליף."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "באילו אזורים יש שירות?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "השירות מיועד לטבריה, צפת, נוף הגליל, בית שאן ועמק הירדן, לפי זמינות ביומן."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "איך מזמינים?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "אפשר להתקשר או לשלוח WhatsApp ל-053 361 3100 עם כתובת, תמונת הדוד ותיאור התקלה."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <a href="/tiberias-plumbing/solar-boilers/">Solar boilers landing</a>
+    <header class="topbar">
+      <div class="wrap topbar__inner">
+        <a class="brand" href="#top" aria-label="חזרה לראש הדף">
+          <span class="brand__mark" aria-hidden="true">☀</span>
+          <span>
+            <strong>מים ושמש</strong>
+            <small>דודי שמש וחשמל בטבריה</small>
+          </span>
+        </a>
+        <nav class="nav" aria-label="ניווט">
+          <a href="#services">שירותים</a>
+          <a href="#areas">אזורי שירות</a>
+          <a href="#faq">שאלות</a>
+          <a href="../solar-boilers/">דודי שמש</a>
+        </nav>
+        <a class="phone-pill" href="tel:+972533613100" dir="ltr">053 361 3100</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap hero__grid">
+          <div>
+            <p class="eyebrow">טבריה והצפון · שירות דודים</p>
+            <h1>מים חמים בבית, בלי סיפור ארוך.</h1>
+            <p class="lead">
+              התקנה ותיקון של דודי שמש ודודי חשמל: החלפת גוף חימום, תרמוסטט, פלאנג', קולטים, נזילות וחיבורים. שלחו תמונה ב‑WhatsApp ונחזור עם כיוון מחיר ותיאום.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="tel:+972533613100">להתקשר עכשיו</a>
+              <a class="button button--whatsapp" href="https://wa.me/972533613100?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A0%D7%99%20%D7%A6%D7%A8%D7%99%D7%9A%2F%D7%94%20%D7%A9%D7%99%D7%A8%D7%95%D7%AA%20%D7%9C%D7%93%D7%95%D7%93%20%D7%91%D7%98%D7%91%D7%A8%D7%99%D7%94" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="תקציר שירות">
+            <img src="../solar-boilers/assets/solar-boiler-tiberias-hero.png" alt="דוד שמש וקולטים על גג בטבריה" width="1672" height="941" />
+            <div class="hero-card__body">
+              <div class="metric"><strong>3 ש׳</strong><span>חלון עבודה</span></div>
+              <div class="metric"><strong>₪</strong><span>מחיר לפי בדיקה</span></div>
+              <div class="metric"><strong>HE/RU/EN</strong><span>שירות שפות</span></div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="wrap strip" aria-label="יתרונות">
+          <div><strong>דוד לא מחמם?</strong><span>בדיקת גוף חימום, תרמוסטט ופלאנג׳.</span></div>
+          <div><strong>דוד שמש חדש</strong><span>התאמת נפח, קולטים וחיבורי מים.</span></div>
+          <div><strong>נזילה מהדוד</strong><span>בדיקת מקור התקלה והמלצה ברורה.</span></div>
+          <div><strong>תיאום מהיר</strong><span>שלחו תמונה וכתובת ב‑WhatsApp.</span></div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">מה אנחנו עושים</p>
+              <h2>שירות מלא לדודים — מהתקלה הקטנה עד החלפה מלאה</h2>
+            </div>
+            <p>העמוד בנוי ללידים מהירים מגוגל ומ‑WhatsApp: כותרת ברורה, טלפון קבוע, אזורי שירות ו‑FAQ שגוגל מבין.</p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <span class="card__icon">01</span>
+              <h3>תיקון דוד חשמל</h3>
+              <p>גוף חימום, תרמוסטט, קצר חשמלי, פלאנג׳, אבנית וחוסר מים חמים.</p>
+            </article>
+            <article class="card">
+              <span class="card__icon">02</span>
+              <h3>התקנת דוד שמש</h3>
+              <p>דוד חדש, קולטים, חיבורי מים ובדיקת מערכת לאחר ההתקנה.</p>
+            </article>
+            <article class="card">
+              <span class="card__icon">03</span>
+              <h3>בדיקת נזילות וקולטים</h3>
+              <p>זיהוי נזילות, בעיות זרימה, קולטים פגומים וחיבורים ישנים.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="areas">
+        <div class="wrap split">
+          <div class="quote">
+            <p class="eyebrow">איך מזמינים</p>
+            <h2>שלחו תמונה של הדוד — זה חוסך זמן וכסף</h2>
+            <ul>
+              <li>1. כתובת מלאה ואזור.</li>
+              <li>2. תמונה של הדוד / הקולטים / הנזילה.</li>
+              <li>3. תיאור קצר: אין מים חמים, נזילה, קצר, החלפה.</li>
+              <li>4. נקבע חלון הגעה של עד 3 שעות לפי זמינות.</li>
+            </ul>
+          </div>
+
+          <div class="lead-box">
+            <p class="eyebrow">הזמנה עכשיו</p>
+            <h2>טלפון ו‑WhatsApp</h2>
+            <a class="phone" href="tel:+972533613100" dir="ltr">053 361 3100</a>
+            <p>שירות בטבריה והצפון. אם לא ניתן לענות מיד — שלחו WhatsApp ונחזור עם תשובה מסודרת.</p>
+            <div class="areas" aria-label="אזורי שירות">
+              <span>טבריה</span>
+              <span>צפת</span>
+              <span>נוף הגליל</span>
+              <span>בית שאן</span>
+              <span>עמק הירדן</span>
+              <span>יישובי הסביבה</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">שאלות נפוצות</p>
+              <h2>לפני שמזמינים טכנאי</h2>
+            </div>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>הדוד לא מחמם — מה התקלה הכי נפוצה?</summary>
+              <p>בדרך כלל גוף חימום, תרמוסטט או הצטברות אבנית. לפעמים מדובר בקצר או בחיווט, ולכן בודקים במקום לפני החלפה.</p>
+            </details>
+            <details>
+              <summary>מתי עדיף להחליף דוד במקום לתקן?</summary>
+              <p>אם הדוד ישן מאוד, חלוד, נוזל מגוף המיכל או יש כמה תקלות יחד — לרוב החלפה תהיה פתרון נכון יותר.</p>
+            </details>
+            <details>
+              <summary>יש גם עמוד לדודי שמש בלבד?</summary>
+              <p>כן. לעמוד המלא של התקנת דודי שמש וקולטים: <a href="../solar-boilers/">דודי שמש בטבריה והצפון</a>.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <strong>מים ושמש</strong>
+        <p>דודי שמש וחשמל בטבריה והצפון · טלפון <span dir="ltr">053 361 3100</span></p>
+      </div>
+    </footer>
+
+    <div class="mobile-cta" aria-label="פעולות מהירות">
+      <a class="button button--primary" href="tel:+972533613100">טלפון</a>
+      <a class="button button--whatsapp" href="https://wa.me/972533613100" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
   </body>
 </html>
