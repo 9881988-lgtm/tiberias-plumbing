@@ -11,6 +11,7 @@
     <link rel="alternate" hreflang="he-IL" href="https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/" />
     <link rel="alternate" hreflang="en" href="https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/?lang=en" />
     <link rel="alternate" hreflang="ru" href="https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/?lang=ru" />
+    <link rel="alternate" hreflang="fr" href="https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/?lang=fr" />
     <link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/" />
 
     <meta property="og:type" content="website" />
@@ -27,7 +28,7 @@
 
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" as="image" href="../receiptil/assets/dashboard.png" />
-    <link rel="stylesheet" href="styles.css?v=digital-20260714" />
+    <link rel="stylesheet" href="styles.css?v=digital-20260718-coupon" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
     <script>
@@ -50,7 +51,7 @@
         "telephone": "+972533613100",
         "email": "9881988@gmail.com",
         "areaServed": "Israel",
-        "availableLanguage": ["Hebrew", "English", "Russian"],
+        "availableLanguage": ["Hebrew", "English", "Russian", "French"],
         "priceRange": "₪₪-₪₪₪",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -102,6 +103,7 @@
           <button class="language-button is-active" type="button" data-lang="he" aria-pressed="true">עברית</button>
           <button class="language-button" type="button" data-lang="en" aria-pressed="false">EN</button>
           <button class="language-button" type="button" data-lang="ru" aria-pressed="false">RU</button>
+          <button class="language-button" type="button" data-lang="fr" aria-pressed="false">FR</button>
         </div>
         <a class="header-cta" href="#contact" data-i18n="headerCta">בדיקת פרויקט</a>
       </div>
@@ -120,13 +122,18 @@
           <p class="eyebrow" data-i18n="heroKicker">Structor Robotics · סטודיו דיגיטלי בישראל</p>
           <h1 id="hero-title" data-i18n="heroTitle">מהרעיון למוצר. מהמוצר ללקוחות.</h1>
           <p class="hero-lead" data-i18n="heroLead">אנחנו בונים אפליקציות, דפי נחיתה ואתרים רב-לשוניים, ומקימים קמפיינים מדידים ב-Google וב-Facebook לעסקים שרוצים להתחיל נכון ולצמוח.</p>
+          <a class="hero-offer" href="#contact">
+            <span data-i18n="offerBadge">קופון DIGITAL100</span>
+            <strong data-i18n="offerTitle">100 ₪ הנחה על הפרויקט הראשון</strong>
+            <small data-i18n="offerTermsShort">בהזמנה מ-1,500 ₪ · עד 17.08.2026</small>
+          </a>
           <div class="hero-actions">
             <a class="button button-primary" href="#pricing" data-i18n="heroPricing">ראו מחירים</a>
             <a class="button button-ghost" href="#work" data-i18n="heroWork">ראו מוצרים שפרסמנו</a>
           </div>
           <div class="hero-facts" aria-label="Studio facts">
             <span><strong>8</strong><small data-i18n="factApps">אפליקציות ב-App Store</small></span>
-            <span><strong>3</strong><small data-i18n="factLanguages">שפות באתר</small></span>
+            <span><strong>4</strong><small data-i18n="factLanguages">שפות באתר</small></span>
             <span><strong>1</strong><small data-i18n="factTeam">צוות אחד מהרעיון להשקה</small></span>
           </div>
         </div>
@@ -267,11 +274,30 @@
             <p data-i18n="contactText">אפשר לשלוח ב-WhatsApp תיאור קצר, קישור לדוגמה ותקציב משוער. נענה עם שאלות ממוקדות והשלב הבא.</p>
           </div>
           <div class="contact-funnel">
+            <div class="funnel-step">
+              <span>01</span>
+              <strong data-i18n="funnelStep1">בחרו את השירות</strong>
+            </div>
             <div class="choice-grid" role="group" aria-label="Choose a service">
               <button class="is-selected" type="button" data-service-choice="landing" data-i18n="choiceLanding">דף נחיתה</button>
               <button type="button" data-service-choice="website" data-i18n="choiceWebsite">אתר</button>
               <button type="button" data-service-choice="app" data-i18n="choiceApp">אפליקציה</button>
               <button type="button" data-service-choice="ads" data-i18n="choiceAds">Google / Meta</button>
+            </div>
+            <div class="funnel-step funnel-step-coupon">
+              <span>02</span>
+              <div>
+                <strong data-i18n="couponTitle">קבלו 100 ₪ הנחה</strong>
+                <small data-i18n="couponTerms">הקופון תקף לפרויקט ראשון מ-1,500 ₪ עד 17.08.2026. לא כולל תקציב מדיה ושירותי צד שלישי.</small>
+              </div>
+              <button class="coupon-copy" type="button" data-copy-coupon="DIGITAL100" aria-label="Copy coupon code">
+                <span class="coupon-code">DIGITAL100</span>
+                <span data-i18n="copyCoupon">העתקה</span>
+              </button>
+            </div>
+            <div class="funnel-step">
+              <span>03</span>
+              <strong data-i18n="funnelStep3">שלחו תיאור קצר ב-WhatsApp</strong>
             </div>
             <a class="button button-primary button-wide" data-whatsapp-cta href="https://wa.me/972533613100" target="_blank" rel="noopener" data-i18n="contactWhatsapp">שליחת בקשה ב-WhatsApp</a>
             <a class="email-link" href="mailto:9881988@gmail.com">9881988@gmail.com</a>
@@ -286,6 +312,6 @@
       <span data-i18n="footerText">פיתוח אפליקציות · אתרים · Google Ads · Meta Ads</span>
       <span>Israel · 2026</span>
     </footer>
-    <script src="script.js?v=digital-20260714"></script>
+    <script src="script.js?v=digital-20260718-coupon"></script>
   </body>
 </html>

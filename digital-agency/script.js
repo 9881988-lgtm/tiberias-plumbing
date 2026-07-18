@@ -11,6 +11,9 @@ const translations = {
     heroKicker: "Structor Robotics · סטודיו דיגיטלי בישראל",
     heroTitle: "מהרעיון למוצר. מהמוצר ללקוחות.",
     heroLead: "אנחנו בונים אפליקציות, דפי נחיתה ואתרים רב-לשוניים, ומקימים קמפיינים מדידים ב-Google וב-Facebook לעסקים שרוצים להתחיל נכון ולצמוח.",
+    offerBadge: "קופון DIGITAL100",
+    offerTitle: "100 ₪ הנחה על הפרויקט הראשון",
+    offerTermsShort: "בהזמנה מ-1,500 ₪ · עד 17.08.2026",
     heroPricing: "ראו מחירים",
     heroWork: "ראו מוצרים שפרסמנו",
     factApps: "אפליקציות ב-App Store",
@@ -85,6 +88,12 @@ const translations = {
     contactKicker: "מתחילים בשיחה קצרה",
     contactTitle: "בחרו מה צריך לבנות. אנחנו נחזיר תוכנית התחלה.",
     contactText: "אפשר לשלוח ב-WhatsApp תיאור קצר, קישור לדוגמה ותקציב משוער. נענה עם שאלות ממוקדות והשלב הבא.",
+    funnelStep1: "בחרו את השירות",
+    couponTitle: "קבלו 100 ₪ הנחה",
+    couponTerms: "הקופון תקף לפרויקט ראשון מ-1,500 ₪ עד 17.08.2026. לא כולל תקציב מדיה ושירותי צד שלישי.",
+    copyCoupon: "העתקה",
+    couponCopied: "הועתק",
+    funnelStep3: "שלחו תיאור קצר ב-WhatsApp",
     choiceLanding: "דף נחיתה",
     choiceWebsite: "אתר",
     choiceApp: "אפליקציה",
@@ -104,6 +113,9 @@ const translations = {
     heroKicker: "Structor Robotics · Digital studio in Israel",
     heroTitle: "From idea to product. From product to customers.",
     heroLead: "We build apps, multilingual landing pages and websites, then launch measurable Google and Facebook campaigns for businesses ready to start well and grow.",
+    offerBadge: "DIGITAL100 coupon",
+    offerTitle: "₪100 off your first project",
+    offerTermsShort: "Orders from ₪1,500 · valid through 17 Aug 2026",
     heroPricing: "View pricing",
     heroWork: "See published products",
     factApps: "apps on the App Store",
@@ -178,6 +190,12 @@ const translations = {
     contactKicker: "Start with a short conversation",
     contactTitle: "Choose what needs building. We will return a starting plan.",
     contactText: "Send a short WhatsApp description, a reference link and an estimated budget. We will reply with focused questions and the next step.",
+    funnelStep1: "Choose a service",
+    couponTitle: "Get ₪100 off",
+    couponTerms: "Valid for a first project from ₪1,500 through 17 Aug 2026. Media spend and third-party services are excluded.",
+    copyCoupon: "Copy",
+    couponCopied: "Copied",
+    funnelStep3: "Send a short description on WhatsApp",
     choiceLanding: "Landing page",
     choiceWebsite: "Website",
     choiceApp: "App",
@@ -197,6 +215,9 @@ const translations = {
     heroKicker: "Structor Robotics · Цифровая студия в Израиле",
     heroTitle: "От идеи к продукту. От продукта к клиентам.",
     heroLead: "Мы создаём приложения, многоязычные лендинги и сайты, а затем запускаем измеримые кампании в Google и Facebook для бизнеса, который хочет правильно стартовать и расти.",
+    offerBadge: "Промокод DIGITAL100",
+    offerTitle: "Скидка 100 ₪ на первый проект",
+    offerTermsShort: "При заказе от 1 500 ₪ · до 17.08.2026",
     heroPricing: "Посмотреть цены",
     heroWork: "Посмотреть наши продукты",
     factApps: "приложений в App Store",
@@ -271,19 +292,128 @@ const translations = {
     contactKicker: "Начинаем с короткого разговора",
     contactTitle: "Выберите, что нужно создать. Мы подготовим план старта.",
     contactText: "Отправьте в WhatsApp короткое описание, ссылку на пример и примерный бюджет. Мы ответим точными вопросами и предложим следующий шаг.",
+    funnelStep1: "Выберите услугу",
+    couponTitle: "Получите скидку 100 ₪",
+    couponTerms: "Промокод действует на первый проект от 1 500 ₪ до 17.08.2026. Рекламный бюджет и сторонние сервисы не включены.",
+    copyCoupon: "Копировать",
+    couponCopied: "Скопировано",
+    funnelStep3: "Отправьте краткое описание в WhatsApp",
     choiceLanding: "Лендинг",
     choiceWebsite: "Сайт",
     choiceApp: "Приложение",
     choiceAds: "Google / Meta",
     contactWhatsapp: "Отправить запрос в WhatsApp",
     footerText: "Разработка приложений · Сайты · Google Ads · Meta Ads"
+  },
+  fr: {
+    pageTitle: "Structor Digital | Applications, sites, Google Ads et Meta Ads",
+    pageDescription: "Développement d’applications, landing pages et sites multilingues, configuration et gestion de campagnes Google et Facebook avec des prix transparents pour les entreprises en Israël.",
+    brandSub: "Produit · Design · Croissance",
+    navServices: "Services",
+    navPricing: "Tarifs",
+    navWork: "Produits",
+    navContact: "Contact",
+    headerCta: "Décrire un projet",
+    heroKicker: "Structor Robotics · Studio numérique en Israël",
+    heroTitle: "De l’idée au produit. Du produit aux clients.",
+    heroLead: "Nous créons des applications, des landing pages et des sites multilingues, puis lançons des campagnes Google et Facebook mesurables pour les entreprises qui veulent bien démarrer et se développer.",
+    offerBadge: "Coupon DIGITAL100",
+    offerTitle: "100 ₪ de réduction sur votre premier projet",
+    offerTermsShort: "Commande dès 1 500 ₪ · valable jusqu’au 17.08.2026",
+    heroPricing: "Voir les tarifs",
+    heroWork: "Voir nos produits publiés",
+    factApps: "applications sur l’App Store",
+    factLanguages: "langues du site",
+    factTeam: "équipe de l’idée au lancement",
+    servicesKicker: "Nos compétences",
+    servicesTitle: "Tout ce qu’il faut pour lancer et vendre un produit numérique",
+    servicesLead: "Stratégie, design, développement, publicité et mesure au même endroit. Nous commençons par un périmètre clair et l’élargissons seulement lorsque cela se justifie.",
+    serviceAppTitle: "Développement d’applications",
+    serviceAppText: "Cadrage produit, UX/UI, développement iOS, intégrations IA et préparation à l’App Store. Commencez par un prototype ou un MVP ciblé.",
+    serviceAppPrice: "MVP à partir de 24 900 ₪",
+    serviceLandingTitle: "Landing pages et sites",
+    serviceLandingText: "Sites rapides et multilingues avec message clair, design, SEO essentiel, WhatsApp, formulaires et mesure des conversions.",
+    serviceLandingPrice: "Landing page à partir de 1 900 ₪",
+    serviceGoogleTitle: "Google Ads",
+    serviceGoogleText: "Recherche de mots-clés, structure de campagne Search, annonces, suivi des conversions, mots-clés négatifs et optimisation continue.",
+    serviceGooglePrice: "Gestion à partir de 1 500 ₪/mois",
+    serviceMetaTitle: "Facebook et Instagram",
+    serviceMetaText: "Audiences, créations, textes, tests publicitaires, remarketing et rapport d’action clair dans Meta Ads.",
+    serviceMetaPrice: "Gestion à partir de 1 500 ₪/mois",
+    pricingKicker: "Tarifs transparents",
+    pricingTitle: "Des prix de départ comparés au marché israélien",
+    pricingLead: "Nous avons étudié les tarifs publiés en Israël en 2026. Les fourchettes varient selon la complexité, les langues, les intégrations, les créations et le budget média.",
+    marketService: "Service",
+    marketRange: "Fourchette du marché 2026",
+    ourStart: "Notre prix de départ",
+    marketLanding: "Landing page",
+    marketSite: "Site vitrine",
+    marketApp: "MVP d’application",
+    marketAppRange: "10 000–25 000 ₪ pour un projet simple ; 80 000–180 000 ₪ pour une équipe produit complète",
+    marketGoogleRange: "1 500–3 500 ₪/mois pour une petite entreprise",
+    perMonth: "par mois",
+    packageLandingTitle: "Landing page de conversion",
+    packageLanding1: "Une page au design personnalisé",
+    packageLanding2: "Jusqu’à 3 langues",
+    packageLanding3: "WhatsApp, formulaire et SEO essentiel",
+    packageLanding4: "Balise Google et mesure des clics",
+    packageSiteTitle: "Site vitrine professionnel",
+    packageSite1: "Jusqu’à 5 pages",
+    packageSite2: "Design responsive et multilingue",
+    packageSite3: "Pages de services, prospects et analytique",
+    packageSite4: "Préparé pour les campagnes et le SEO",
+    packageAppTitle: "MVP d’application iOS",
+    packageApp1: "Cadrage produit et parcours utilisateur principal",
+    packageApp2: "Jusqu’à 5 écrans principaux",
+    packageApp3: "Design, développement et tests",
+    packageApp4: "Préparation à la soumission sur l’App Store",
+    packageAdsTitle: "Google + Meta",
+    monthlySuffix: "/mois",
+    packageAds1: "Configuration combinée à partir de 1 500 ₪",
+    packageAds2: "Annonces, audiences et mots-clés",
+    packageAds3: "Tests et optimisation",
+    packageAds4: "Rapport mensuel et recommandations",
+    choosePackage: "Choisir ce forfait",
+    priceNote: "Les prix sont des estimations de départ et n’incluent pas la TVA si elle s’applique. Le budget média, le domaine, l’hébergement et les services tiers sont facturés séparément. Le devis final suit un cadrage écrit.",
+    workKicker: "Produits en ligne",
+    workTitle: "Nous ne faisons pas que présenter. Nous publions des produits.",
+    workLead: "Notre portfolio comprend des applications App Store pour les reçus en Israël, la traduction, les documents, la voix, l’apprentissage de l’hébreu et la création.",
+    allApps: "Voir toutes les applications",
+    processKicker: "Notre méthode",
+    processTitle: "Quatre étapes. Une équipe responsable.",
+    process1Title: "Définir le résultat",
+    process1Text: "Identifier le client, l’action attendue et la mesure du succès.",
+    process2Title: "Fixer le périmètre",
+    process2Text: "Un document court avec le périmètre, le prix, le calendrier et les exclusions.",
+    process3Title: "Concevoir et développer",
+    process3Text: "Des points de validation, des tests et des corrections avant publication.",
+    process4Title: "Lancer et améliorer",
+    process4Text: "Mesure, première campagne et plan d’amélioration fondé sur les données.",
+    researchKicker: "Base tarifaire",
+    researchTitle: "Sources du marché vérifiées en juillet 2026",
+    contactKicker: "Commençons par un court échange",
+    contactTitle: "Choisissez ce qu’il faut créer. Nous vous proposerons un plan de départ.",
+    contactText: "Envoyez sur WhatsApp une courte description, un lien de référence et un budget estimé. Nous répondrons avec des questions ciblées et la prochaine étape.",
+    funnelStep1: "Choisissez un service",
+    couponTitle: "Obtenez 100 ₪ de réduction",
+    couponTerms: "Valable sur un premier projet dès 1 500 ₪ jusqu’au 17.08.2026. Le budget média et les services tiers sont exclus.",
+    copyCoupon: "Copier",
+    couponCopied: "Copié",
+    funnelStep3: "Envoyez une courte description sur WhatsApp",
+    choiceLanding: "Landing page",
+    choiceWebsite: "Site",
+    choiceApp: "Application",
+    choiceAds: "Google / Meta",
+    contactWhatsapp: "Envoyer la demande sur WhatsApp",
+    footerText: "Développement d’applications · Sites · Google Ads · Meta Ads"
   }
 };
 
 const metaByLanguage = {
   he: { dir: "rtl", locale: "he_IL" },
   en: { dir: "ltr", locale: "en_US" },
-  ru: { dir: "ltr", locale: "ru_RU" }
+  ru: { dir: "ltr", locale: "ru_RU" },
+  fr: { dir: "ltr", locale: "fr_FR" }
 };
 
 const serviceMessages = {
@@ -304,7 +434,20 @@ const serviceMessages = {
     website: "Здравствуйте! Хочу получить предложение по профессиональному сайту от 4 900 ₪.",
     app: "Здравствуйте! Хочу обсудить MVP приложения для iOS от 24 900 ₪.",
     ads: "Здравствуйте! Хочу обсудить настройку и ведение рекламы в Google и Meta."
+  },
+  fr: {
+    landing: "Bonjour, je souhaite recevoir un devis pour une landing page multilingue à partir de 1 900 ₪.",
+    website: "Bonjour, je souhaite recevoir un devis pour un site vitrine professionnel à partir de 4 900 ₪.",
+    app: "Bonjour, je souhaite discuter d’un MVP d’application iOS à partir de 24 900 ₪.",
+    ads: "Bonjour, je souhaite discuter de la configuration et de la gestion de campagnes Google Ads et Meta Ads."
   }
+};
+
+const couponMessages = {
+  he: "קוד קופון: DIGITAL100 - הנחה של 100 ₪ על פרויקט ראשון מ-1,500 ₪ עד 17.08.2026.",
+  en: "Coupon code: DIGITAL100 - ₪100 off a first project from ₪1,500 through 17 Aug 2026.",
+  ru: "Промокод: DIGITAL100 - скидка 100 ₪ на первый проект от 1 500 ₪ до 17.08.2026.",
+  fr: "Code promo : DIGITAL100 - 100 ₪ de réduction sur un premier projet dès 1 500 ₪ jusqu’au 17.08.2026."
 };
 
 const supportedLanguages = Object.keys(translations);
@@ -317,7 +460,7 @@ const setMeta = (selector, value) => {
 };
 
 const updateWhatsApp = () => {
-  const message = serviceMessages[currentLanguage][selectedService];
+  const message = `${serviceMessages[currentLanguage][selectedService]}\n\n${couponMessages[currentLanguage]}`;
   const href = `https://wa.me/972533613100?text=${encodeURIComponent(message)}`;
   document.querySelectorAll("[data-whatsapp-cta]").forEach((link) => {
     link.href = href;
@@ -386,6 +529,34 @@ document.querySelectorAll("[data-service-choice]").forEach((button) => {
 document.querySelector("[data-whatsapp-cta]")?.addEventListener("click", () => {
   if (typeof window.gtag === "function") {
     window.gtag("event", "conversion", { send_to: "AW-18222920780/y3s9CPfTsb0cEMzorvFD" });
+  }
+});
+
+document.querySelector("[data-copy-coupon]")?.addEventListener("click", async (event) => {
+  const button = event.currentTarget;
+  const code = button.dataset.copyCoupon;
+  const label = button.querySelector("[data-i18n='copyCoupon']");
+
+  try {
+    await navigator.clipboard.writeText(code);
+  } catch {
+    const input = document.createElement("input");
+    input.value = code;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    input.remove();
+  }
+
+  if (label) {
+    label.textContent = translations[currentLanguage].couponCopied;
+    window.setTimeout(() => {
+      label.textContent = translations[currentLanguage].copyCoupon;
+    }, 1800);
+  }
+
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "coupon_copy", { coupon: code });
   }
 });
 
