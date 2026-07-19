@@ -411,4 +411,19 @@ catalogFilterButtons.forEach((button) => {
   });
 });
 
+document.querySelectorAll('a[href*="apps.apple.com"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof window.gtag !== "function") return;
+    const appCard = link.closest("[data-app-category]");
+    const appName = appCard?.querySelector("h2")?.textContent?.trim() || "Unknown app";
+    const appId = link.href.match(/id(\d+)/)?.[1] || "";
+    window.gtag("event", "app_store_click", {
+      app_name: appName,
+      app_id: appId,
+      app_category: appCard?.dataset.appCategory || "",
+      link_url: link.href
+    });
+  });
+});
+
 setHubLanguage(getInitialHubLanguage());

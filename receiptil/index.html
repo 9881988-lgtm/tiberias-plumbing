@@ -15,6 +15,13 @@
   <meta name="twitter:title" content="ReceiptIL - קבלות לעצמאים בישראל">
   <meta name="twitter:description" content="קבלות, PDF, WhatsApp ומעקב שנתי באפליקציה פשוטה לאייפון.">
   <meta name="twitter:image" content="https://9881988-lgtm.github.io/tiberias-plumbing/receiptil/assets/social/facebook-receiptil-4x5.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18222920780');
+  </script>
   <style>
     :root {
       --ink: #111827;
@@ -616,6 +623,17 @@
         });
         document.querySelectorAll('[data-guide-copy]').forEach((copy) => {
           copy.classList.toggle('active', copy.dataset.guideCopy === guide);
+        });
+      });
+    });
+
+    document.querySelectorAll('a[href*="apps.apple.com"]').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (typeof window.gtag !== 'function') return;
+        window.gtag('event', 'app_store_click', {
+          app_name: 'ReceiptIL',
+          app_id: '6784747059',
+          link_url: link.href
         });
       });
     });
