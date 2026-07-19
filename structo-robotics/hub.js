@@ -394,20 +394,32 @@ hubLanguageButtons.forEach((button) => {
 
 const catalogFilterButtons = document.querySelectorAll("[data-app-filter]");
 const catalogItems = document.querySelectorAll("[data-app-category]");
+const supportedCatalogFilters = ["all", "business", "language", "creative"];
+
+function setCatalogFilter(category) {
+  const selectedCategory = supportedCatalogFilters.includes(category) ? category : "all";
+
+  catalogFilterButtons.forEach((item) => {
+    const isActive = item.dataset.appFilter === selectedCategory;
+    item.classList.toggle("is-active", isActive);
+    item.setAttribute("aria-pressed", String(isActive));
+  });
+
+  catalogItems.forEach((item) => {
+    item.hidden = selectedCategory !== "all" && item.dataset.appCategory !== selectedCategory;
+  });
+}
 
 catalogFilterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const selectedCategory = button.dataset.appFilter;
-
-    catalogFilterButtons.forEach((item) => {
-      const isActive = item === button;
-      item.classList.toggle("is-active", isActive);
-      item.setAttribute("aria-pressed", String(isActive));
-    });
-
-    catalogItems.forEach((item) => {
-      item.hidden = selectedCategory !== "all" && item.dataset.appCategory !== selectedCategory;
-    });
+    setCatalogFilter(button.dataset.appFilter);
+    const url = new URL(window.location.href);
+    if (button.dataset.appFilter === "all") {
+      url.searchParams.delete("category");
+    } else {
+      url.searchParams.set("category", button.dataset.appFilter);
+    }
+    window.history.replaceState({}, "", url);
   });
 });
 
@@ -427,3 +439,4 @@ document.querySelectorAll('a[href*="apps.apple.com"]').forEach((link) => {
 });
 
 setHubLanguage(getInitialHubLanguage());
+setCatalogFilter(new URLSearchParams(window.location.search).get("category"));
