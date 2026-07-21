@@ -28,7 +28,7 @@
 
     <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" as="image" href="../receiptil/assets/dashboard.png" />
-    <link rel="stylesheet" href="styles.css?v=digital-20260718-coupon" />
+    <link rel="stylesheet" href="styles.css?v=digital-20260721-funnel" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
     <script>
@@ -132,7 +132,7 @@
             <a class="button button-ghost" href="#work" data-i18n="heroWork">ראו מוצרים שפרסמנו</a>
           </div>
           <div class="hero-facts" aria-label="Studio facts">
-            <span><strong>8</strong><small data-i18n="factApps">אפליקציות ב-App Store</small></span>
+            <span><strong>13</strong><small data-i18n="factApps">אפליקציות ב-App Store</small></span>
             <span><strong>4</strong><small data-i18n="factLanguages">שפות באתר</small></span>
             <span><strong>1</strong><small data-i18n="factTeam">צוות אחד מהרעיון להשקה</small></span>
           </div>
@@ -234,6 +234,8 @@
             <a href="https://apps.apple.com/il/app/voxluma/id6783862180" target="_blank" rel="noopener"><img src="../structo-robotics/assets/apps/voxluma.png" alt="VoxLuma" /><strong>VoxLuma</strong></a>
             <a href="https://apps.apple.com/il/app/ivricards/id6787127422" target="_blank" rel="noopener"><img src="../structo-robotics/assets/apps/ivricards.png" alt="IvriCards" /><strong>IvriCards</strong></a>
             <a href="https://apps.apple.com/il/app/traceluma/id6783609165" target="_blank" rel="noopener"><img src="../structo-robotics/assets/apps/traceluma.png" alt="TraceLuma" /><strong>TraceLuma</strong></a>
+            <a class="app-gallery__new" href="https://apps.apple.com/il/app/polluma-ua/id6792070545" target="_blank" rel="noopener"><img src="../structo-robotics/assets/apps/polluma-ua.png" alt="PolLuma UA" /><strong>PolLuma UA</strong><small data-i18n="newRelease">חדש</small></a>
+            <a href="https://apps.apple.com/il/app/lumaclean-photo-cleaner/id6783388167" target="_blank" rel="noopener"><img src="../structo-robotics/assets/apps/lumaclean.png" alt="LumaClean" /><strong>LumaClean</strong></a>
           </div>
           <a class="portfolio-link" href="../structo-robotics/apps.html" data-i18n="allApps">לכל האפליקציות והפרטים</a>
         </div>
@@ -284,8 +286,27 @@
               <button type="button" data-service-choice="app" data-i18n="choiceApp">אפליקציה</button>
               <button type="button" data-service-choice="ads" data-i18n="choiceAds">Google / Meta</button>
             </div>
-            <div class="funnel-step funnel-step-coupon">
+            <div class="funnel-step">
               <span>02</span>
+              <strong data-i18n="funnelStep2">בחרו את המטרה</strong>
+            </div>
+            <div class="choice-grid choice-grid-three" role="group" aria-label="Choose a project goal">
+              <button class="is-selected" type="button" data-goal-choice="launch" data-i18n="goalLaunch">להשיק מוצר חדש</button>
+              <button type="button" data-goal-choice="leads" data-i18n="goalLeads">לקבל יותר פניות</button>
+              <button type="button" data-goal-choice="improve" data-i18n="goalImprove">לשפר מוצר קיים</button>
+            </div>
+            <div class="funnel-step">
+              <span>03</span>
+              <strong data-i18n="funnelStepBudget">מה התקציב המתוכנן?</strong>
+            </div>
+            <div class="choice-grid choice-grid-budget" role="group" aria-label="Choose an estimated budget">
+              <button class="is-selected" type="button" data-budget-choice="estimate" data-i18n="budgetEstimate">צריך הערכה</button>
+              <button type="button" data-budget-choice="small" data-i18n="budgetSmall">עד 5,000 ₪</button>
+              <button type="button" data-budget-choice="medium" data-i18n="budgetMedium">5,000–20,000 ₪</button>
+              <button type="button" data-budget-choice="large" data-i18n="budgetLarge">20,000 ₪ ומעלה</button>
+            </div>
+            <div class="funnel-step funnel-step-coupon">
+              <span>04</span>
               <div>
                 <strong data-i18n="couponTitle">קבלו 100 ₪ הנחה</strong>
                 <small data-i18n="couponTerms">הקופון תקף לפרויקט ראשון מ-1,500 ₪ עד 17.08.2026. לא כולל תקציב מדיה ושירותי צד שלישי.</small>
@@ -296,9 +317,10 @@
               </button>
             </div>
             <div class="funnel-step">
-              <span>03</span>
+              <span>05</span>
               <strong data-i18n="funnelStep3">שלחו תיאור קצר ב-WhatsApp</strong>
             </div>
+            <p class="funnel-summary" data-funnel-summary aria-live="polite"></p>
             <a class="button button-primary button-wide" data-whatsapp-cta href="https://wa.me/972533613100" target="_blank" rel="noopener" data-i18n="contactWhatsapp">שליחת בקשה ב-WhatsApp</a>
             <a class="email-link" href="mailto:9881988@gmail.com">9881988@gmail.com</a>
             <a class="phone-link" href="tel:+972533613100" dir="ltr">053 361 3100</a>
@@ -312,6 +334,6 @@
       <span data-i18n="footerText">פיתוח אפליקציות · אתרים · Google Ads · Meta Ads</span>
       <span>Israel · 2026</span>
     </footer>
-    <script src="script.js?v=digital-20260718-coupon"></script>
+    <script src="script.js?v=digital-20260721-funnel"></script>
   </body>
 </html>

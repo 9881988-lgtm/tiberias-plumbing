@@ -89,6 +89,15 @@ const translations = {
     contactTitle: "בחרו מה צריך לבנות. אנחנו נחזיר תוכנית התחלה.",
     contactText: "אפשר לשלוח ב-WhatsApp תיאור קצר, קישור לדוגמה ותקציב משוער. נענה עם שאלות ממוקדות והשלב הבא.",
     funnelStep1: "בחרו את השירות",
+    funnelStep2: "בחרו את המטרה",
+    goalLaunch: "להשיק מוצר חדש",
+    goalLeads: "לקבל יותר פניות",
+    goalImprove: "לשפר מוצר קיים",
+    funnelStepBudget: "מה התקציב המתוכנן?",
+    budgetEstimate: "צריך הערכה",
+    budgetSmall: "עד 5,000 ₪",
+    budgetMedium: "5,000–20,000 ₪",
+    budgetLarge: "20,000 ₪ ומעלה",
     couponTitle: "קבלו 100 ₪ הנחה",
     couponTerms: "הקופון תקף לפרויקט ראשון מ-1,500 ₪ עד 17.08.2026. לא כולל תקציב מדיה ושירותי צד שלישי.",
     copyCoupon: "העתקה",
@@ -98,6 +107,8 @@ const translations = {
     choiceWebsite: "אתר",
     choiceApp: "אפליקציה",
     choiceAds: "Google / Meta",
+    newRelease: "חדש",
+    funnelSummary: "הבחירה שלכם: {service} · {goal} · {budget}",
     contactWhatsapp: "שליחת בקשה ב-WhatsApp",
     footerText: "פיתוח אפליקציות · אתרים · Google Ads · Meta Ads"
   },
@@ -191,6 +202,15 @@ const translations = {
     contactTitle: "Choose what needs building. We will return a starting plan.",
     contactText: "Send a short WhatsApp description, a reference link and an estimated budget. We will reply with focused questions and the next step.",
     funnelStep1: "Choose a service",
+    funnelStep2: "Choose the goal",
+    goalLaunch: "Launch a new product",
+    goalLeads: "Get more leads",
+    goalImprove: "Improve an existing product",
+    funnelStepBudget: "What is the estimated budget?",
+    budgetEstimate: "Need an estimate",
+    budgetSmall: "Up to ₪5,000",
+    budgetMedium: "₪5,000–20,000",
+    budgetLarge: "₪20,000+",
     couponTitle: "Get ₪100 off",
     couponTerms: "Valid for a first project from ₪1,500 through 17 Aug 2026. Media spend and third-party services are excluded.",
     copyCoupon: "Copy",
@@ -200,6 +220,8 @@ const translations = {
     choiceWebsite: "Website",
     choiceApp: "App",
     choiceAds: "Google / Meta",
+    newRelease: "New",
+    funnelSummary: "Your selection: {service} · {goal} · {budget}",
     contactWhatsapp: "Send request on WhatsApp",
     footerText: "App development · Websites · Google Ads · Meta Ads"
   },
@@ -293,6 +315,15 @@ const translations = {
     contactTitle: "Выберите, что нужно создать. Мы подготовим план старта.",
     contactText: "Отправьте в WhatsApp короткое описание, ссылку на пример и примерный бюджет. Мы ответим точными вопросами и предложим следующий шаг.",
     funnelStep1: "Выберите услугу",
+    funnelStep2: "Выберите цель",
+    goalLaunch: "Запустить новый продукт",
+    goalLeads: "Получать больше заявок",
+    goalImprove: "Улучшить существующий продукт",
+    funnelStepBudget: "Какой ориентировочный бюджет?",
+    budgetEstimate: "Нужна оценка",
+    budgetSmall: "До 5 000 ₪",
+    budgetMedium: "5 000–20 000 ₪",
+    budgetLarge: "От 20 000 ₪",
     couponTitle: "Получите скидку 100 ₪",
     couponTerms: "Промокод действует на первый проект от 1 500 ₪ до 17.08.2026. Рекламный бюджет и сторонние сервисы не включены.",
     copyCoupon: "Копировать",
@@ -302,6 +333,8 @@ const translations = {
     choiceWebsite: "Сайт",
     choiceApp: "Приложение",
     choiceAds: "Google / Meta",
+    newRelease: "Новинка",
+    funnelSummary: "Ваш выбор: {service} · {goal} · {budget}",
     contactWhatsapp: "Отправить запрос в WhatsApp",
     footerText: "Разработка приложений · Сайты · Google Ads · Meta Ads"
   },
@@ -395,6 +428,15 @@ const translations = {
     contactTitle: "Choisissez ce qu’il faut créer. Nous vous proposerons un plan de départ.",
     contactText: "Envoyez sur WhatsApp une courte description, un lien de référence et un budget estimé. Nous répondrons avec des questions ciblées et la prochaine étape.",
     funnelStep1: "Choisissez un service",
+    funnelStep2: "Choisissez l’objectif",
+    goalLaunch: "Lancer un nouveau produit",
+    goalLeads: "Obtenir plus de prospects",
+    goalImprove: "Améliorer un produit existant",
+    funnelStepBudget: "Quel est le budget estimé ?",
+    budgetEstimate: "Besoin d’une estimation",
+    budgetSmall: "Jusqu’à 5 000 ₪",
+    budgetMedium: "5 000–20 000 ₪",
+    budgetLarge: "20 000 ₪ et plus",
     couponTitle: "Obtenez 100 ₪ de réduction",
     couponTerms: "Valable sur un premier projet dès 1 500 ₪ jusqu’au 17.08.2026. Le budget média et les services tiers sont exclus.",
     copyCoupon: "Copier",
@@ -404,6 +446,8 @@ const translations = {
     choiceWebsite: "Site",
     choiceApp: "Application",
     choiceAds: "Google / Meta",
+    newRelease: "Nouveau",
+    funnelSummary: "Votre sélection : {service} · {goal} · {budget}",
     contactWhatsapp: "Envoyer la demande sur WhatsApp",
     footerText: "Développement d’applications · Sites · Google Ads · Meta Ads"
   }
@@ -450,9 +494,65 @@ const couponMessages = {
   fr: "Code promo : DIGITAL100 - 100 ₪ de réduction sur un premier projet dès 1 500 ₪ jusqu’au 17.08.2026."
 };
 
+const goalMessages = {
+  he: {
+    launch: "המטרה: להשיק מוצר חדש.",
+    leads: "המטרה: לקבל יותר פניות.",
+    improve: "המטרה: לשפר מוצר קיים."
+  },
+  en: {
+    launch: "Goal: launch a new product.",
+    leads: "Goal: get more leads.",
+    improve: "Goal: improve an existing product."
+  },
+  ru: {
+    launch: "Цель: запустить новый продукт.",
+    leads: "Цель: получать больше заявок.",
+    improve: "Цель: улучшить существующий продукт."
+  },
+  fr: {
+    launch: "Objectif : lancer un nouveau produit.",
+    leads: "Objectif : obtenir plus de prospects.",
+    improve: "Objectif : améliorer un produit existant."
+  }
+};
+
+const budgetMessages = {
+  he: {
+    estimate: "תקציב: צריך הערכה.",
+    small: "תקציב משוער: עד 5,000 ₪.",
+    medium: "תקציב משוער: 5,000–20,000 ₪.",
+    large: "תקציב משוער: 20,000 ₪ ומעלה."
+  },
+  en: {
+    estimate: "Budget: I need an estimate.",
+    small: "Estimated budget: up to ₪5,000.",
+    medium: "Estimated budget: ₪5,000–20,000.",
+    large: "Estimated budget: ₪20,000+."
+  },
+  ru: {
+    estimate: "Бюджет: нужна оценка.",
+    small: "Ориентировочный бюджет: до 5 000 ₪.",
+    medium: "Ориентировочный бюджет: 5 000–20 000 ₪.",
+    large: "Ориентировочный бюджет: от 20 000 ₪."
+  },
+  fr: {
+    estimate: "Budget : j’ai besoin d’une estimation.",
+    small: "Budget estimé : jusqu’à 5 000 ₪.",
+    medium: "Budget estimé : 5 000–20 000 ₪.",
+    large: "Budget estimé : 20 000 ₪ et plus."
+  }
+};
+
+const serviceKeys = { landing: "choiceLanding", website: "choiceWebsite", app: "choiceApp", ads: "choiceAds" };
+const goalKeys = { launch: "goalLaunch", leads: "goalLeads", improve: "goalImprove" };
+const budgetKeys = { estimate: "budgetEstimate", small: "budgetSmall", medium: "budgetMedium", large: "budgetLarge" };
+
 const supportedLanguages = Object.keys(translations);
 let currentLanguage = "he";
 let selectedService = "landing";
+let selectedGoal = "launch";
+let selectedBudget = "estimate";
 
 const setMeta = (selector, value) => {
   const element = document.querySelector(selector);
@@ -460,11 +560,18 @@ const setMeta = (selector, value) => {
 };
 
 const updateWhatsApp = () => {
-  const message = `${serviceMessages[currentLanguage][selectedService]}\n\n${couponMessages[currentLanguage]}`;
+  const dictionary = translations[currentLanguage];
+  const message = `${serviceMessages[currentLanguage][selectedService]}\n${goalMessages[currentLanguage][selectedGoal]}\n${budgetMessages[currentLanguage][selectedBudget]}\n\n${couponMessages[currentLanguage]}`;
   const href = `https://wa.me/972533613100?text=${encodeURIComponent(message)}`;
   document.querySelectorAll("[data-whatsapp-cta]").forEach((link) => {
     link.href = href;
   });
+  const summary = dictionary.funnelSummary
+    .replace("{service}", dictionary[serviceKeys[selectedService]])
+    .replace("{goal}", dictionary[goalKeys[selectedGoal]])
+    .replace("{budget}", dictionary[budgetKeys[selectedBudget]]);
+  const summaryElement = document.querySelector("[data-funnel-summary]");
+  if (summaryElement) summaryElement.textContent = summary;
 };
 
 const selectService = (service, scrollToContact = false) => {
@@ -474,6 +581,22 @@ const selectService = (service, scrollToContact = false) => {
   });
   updateWhatsApp();
   if (scrollToContact) document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
+const selectGoal = (goal) => {
+  selectedGoal = goal;
+  document.querySelectorAll("[data-goal-choice]").forEach((button) => {
+    button.classList.toggle("is-selected", button.dataset.goalChoice === goal);
+  });
+  updateWhatsApp();
+};
+
+const selectBudget = (budget) => {
+  selectedBudget = budget;
+  document.querySelectorAll("[data-budget-choice]").forEach((button) => {
+    button.classList.toggle("is-selected", button.dataset.budgetChoice === budget);
+  });
+  updateWhatsApp();
 };
 
 const applyLanguage = (language, updateAddress = true) => {
@@ -524,6 +647,14 @@ document.querySelectorAll("[data-lang]").forEach((button) => {
 
 document.querySelectorAll("[data-service-choice]").forEach((button) => {
   button.addEventListener("click", () => selectService(button.dataset.serviceChoice, Boolean(button.closest(".package"))));
+});
+
+document.querySelectorAll("[data-goal-choice]").forEach((button) => {
+  button.addEventListener("click", () => selectGoal(button.dataset.goalChoice));
+});
+
+document.querySelectorAll("[data-budget-choice]").forEach((button) => {
+  button.addEventListener("click", () => selectBudget(button.dataset.budgetChoice));
 });
 
 document.querySelector("[data-whatsapp-cta]")?.addEventListener("click", () => {
