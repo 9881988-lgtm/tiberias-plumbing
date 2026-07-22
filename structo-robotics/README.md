@@ -8,7 +8,7 @@ Languages:
 - Russian
 
 Contact:
-- WhatsApp: +972 50 302 7014
+- WhatsApp: +972-53-361-31-00
 - Email: 9881988@gmail.com
 
 ## Free hosting options

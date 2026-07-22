@@ -11,7 +11,7 @@ const solarTranslations = {
     heroTitle: "רחפן-רובוט לניטור וניקוי פאנלים סולאריים",
     heroLead:
       "מערכת רובוטית שמזהה לכלוך על פאנלים סולאריים, מחליטה מתי ניקוי משתלם, ומבצעת ניקוי מקומי בטוח ללא צורך בעבודה ידנית בגובה.",
-    whatsapp: "WhatsApp: +972 50 302 7014",
+    whatsapp: "WhatsApp: +972-53-361-31-00",
     seePoc: "ראה תוכנית POC",
     summaryKicker: "The opportunity",
     summaryTitle: "אבק על פאנלים הוא בעיית תפוקה, תחזוקה ובטיחות.",
@@ -106,7 +106,7 @@ const solarTranslations = {
     heroTitle: "Drone-robot for solar panel monitoring and cleaning",
     heroLead:
       "A robotic system that detects soiling on photovoltaic panels, decides when cleaning is economically justified, and performs safe local cleaning without manual work at height.",
-    whatsapp: "WhatsApp: +972 50 302 7014",
+    whatsapp: "WhatsApp: +972-53-361-31-00",
     seePoc: "See the POC plan",
     summaryKicker: "The opportunity",
     summaryTitle: "Dust on solar panels is an energy-yield, maintenance, and safety problem.",
@@ -201,7 +201,7 @@ const solarTranslations = {
     heroTitle: "Дрон-робот для мониторинга и мойки солнечных панелей",
     heroLead:
       "Мониторинг, решение и безопасная локальная мойка без работ на высоте.",
-    whatsapp: "WhatsApp: +972 50 302 7014",
+    whatsapp: "WhatsApp: +972-53-361-31-00",
     seePoc: "Смотреть POC-план",
     summaryKicker: "Возможность",
     summaryTitle: "Пыль на солнечных панелях — это проблема выработки, обслуживания и безопасности.",

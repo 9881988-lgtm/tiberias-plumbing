@@ -12,7 +12,7 @@ const translations = {
     heroTitle: "הרכבה רובוטית של אלמנטים טרומיים מבטון",
     heroLead:
       "Structor Robotics מפתחת מערכת רובוטית להרכבת אלמנטים טרומיים באמצעות פלטפורמת high-reach כבדה, אחיזה בארבע נקודות, ראייה ממוחשבת וחיבור ברגים אוטומטי.",
-    whatsapp: "WhatsApp: +972 50 302 7014",
+    whatsapp: "WhatsApp: +972-53-361-31-00",
     seeSolution: "ראה את הפתרון",
     introKicker: "The company",
     introTitle: "אנחנו מחברים מכניקה כבדה קיימת עם שכבת רובוטיקה חכמה.",
@@ -113,7 +113,7 @@ const translations = {
     heroTitle: "Robotic assembly for precast concrete construction",
     heroLead:
       "Structor Robotics develops a robotic system for assembling precast concrete elements using a heavy high-reach platform, four-point gripping, computer vision, and automated bolted connections.",
-    whatsapp: "WhatsApp: +972 50 302 7014",
+    whatsapp: "WhatsApp: +972-53-361-31-00",
     seeSolution: "See the solution",
     introKicker: "The company",
     introTitle: "We connect existing heavy machinery with an intelligent robotics layer.",
@@ -214,7 +214,7 @@ const translations = {
     heroTitle: "Роботизированный монтаж сборных железобетонных элементов",
     heroLead:
       "Structor Robotics разрабатывает роботизированную систему для монтажа сборных ЖБ элементов на базе тяжёлой high-reach платформы, четырёхточечного захвата, компьютерного зрения и автоматического болтового соединения.",
-    whatsapp: "WhatsApp: +972 50 302 7014",
+    whatsapp: "WhatsApp: +972-53-361-31-00",
     seeSolution: "Смотреть решение",
     introKicker: "Компания",
     introTitle: "Мы соединяем существующую тяжёлую механику с интеллектуальной роботикой.",
