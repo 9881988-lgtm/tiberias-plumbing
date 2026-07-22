@@ -1,4 +1,4 @@
-const phone = "79262652990";
+const phone = "972533613100";
 
 const filters = document.querySelectorAll(".filter");
 const cards = document.querySelectorAll(".tour-card");
