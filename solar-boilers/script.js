@@ -2,7 +2,7 @@ const SETTINGS = {
   googleScriptUrl: "",
   ownerEmail: "",
   whatsappNumber: "972533613100",
-  phoneDisplay: "053 361 3100",
+  phoneDisplay: "+972-53-361-31-00",
   priceLabel: {
     he: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
     ru: "от 2,200 ₪ · код שמש2200: скидка 100 ₪",
@@ -23,7 +23,7 @@ const SETTINGS = {
 
 const translations = {
   he: {
-    title: "דודי שמש בטבריה והצפון | התקנה מ-2,200 ₪ | 053 361 3100",
+    title: "דודי שמש בטבריה והצפון | התקנה מ-2,200 ₪ | +972-53-361-31-00",
     description: "מכירה והתקנה של דודי שמש בטבריה, צפת, נוף הגליל, בית שאן ועמק הירדן. מחיר החל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
     brandTitle: "מים ושמש",
     brandSubtitle: "דודי שמש",
@@ -112,7 +112,7 @@ const translations = {
     footerText: "מכירה והתקנה של דודי שמש בטבריה ובצפון ישראל."
   },
   ru: {
-    title: "Солнечные бойлеры в Тверии и на севере | Установка от 2,200 ₪ | 053 361 3100",
+    title: "Солнечные бойлеры в Тверии и на севере | Установка от 2,200 ₪ | +972-53-361-31-00",
     description: "Продажа и установка солнечных бойлеров в Тверии, Цфате, Ноф-ха-Галиле, Бейт-Шеане и Иорданской долине. Цена от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Солнечные бойлеры",
@@ -201,7 +201,7 @@ const translations = {
     footerText: "Продажа и установка солнечных бойлеров в Тверии и на севере Израиля."
   },
   en: {
-    title: "Solar boilers in Tiberias and Northern Israel | From 2,200 ₪ | 053 361 3100",
+    title: "Solar boilers in Tiberias and Northern Israel | From 2,200 ₪ | +972-53-361-31-00",
     description: "Solar boiler sale and installation in Tiberias, Safed, Nof HaGalil, Beit She'an and the Jordan Valley. Price from 2,200 ₪. Code שמש2200 gives 100 ₪ off.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Solar boilers",
@@ -290,7 +290,7 @@ const translations = {
     footerText: "Solar boiler sale and installation in Tiberias and Northern Israel."
   },
   fr: {
-    title: "Chauffe-eau solaires à Tibériade et dans le nord | Dès 2 200 ₪ | 053 361 3100",
+    title: "Chauffe-eau solaires à Tibériade et dans le nord | Dès 2 200 ₪ | +972-53-361-31-00",
     description: "Vente et installation de chauffe-eau solaires à Tibériade, Safed, Nof HaGalil, Beit She'an et dans la vallée du Jourdain. Dès 2 200 ₪. Code שמש2200 : remise de 100 ₪.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Chauffe-eau solaires",
@@ -409,10 +409,10 @@ const applyLanguage = (language) => {
   document.documentElement.dir = isHebrew ? "rtl" : "ltr";
   document.title = dictionary.title;
   setMeta('meta[name="description"]', dictionary.description);
-  setMeta('meta[property="og:title"]', dictionary.title.replace(" | 053 361 3100", ""));
+  setMeta('meta[property="og:title"]', dictionary.title.replace(" | +972-53-361-31-00", ""));
   setMeta('meta[property="og:description"]', dictionary.description);
   setMeta('meta[property="og:locale"]', { he: "he_IL", ru: "ru_RU", en: "en_US", fr: "fr_FR" }[language]);
-  setMeta('meta[name="twitter:title"]', dictionary.title.replace(" | 053 361 3100", ""));
+  setMeta('meta[name="twitter:title"]', dictionary.title.replace(" | +972-53-361-31-00", ""));
   setMeta('meta[name="twitter:description"]', dictionary.description);
 
   document.querySelectorAll("[data-key]").forEach((element) => {
