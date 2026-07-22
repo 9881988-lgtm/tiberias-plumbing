@@ -58,7 +58,7 @@ const translations = {
     openInnovation: "פתחו חדשנות",
     contactKicker: "קשר",
     contactTitle: "אותו צוות, שתי ויטרינות: שירות מקומי ומוצרים דיגיטליים",
-    contactText: "לשירותי בית בטבריה התקשרו ל-053 361 3100. לשיתופי פעולה, IT, אתרים ואפליקציות אפשר לכתוב גם במייל.",
+    contactText: "לשירותי בית בטבריה התקשרו למספר +972-53-361-31-00. לשיתופי פעולה, IT, אתרים ואפליקציות אפשר לכתוב גם במייל.",
     phoneLabel: "טלפון שירותים",
     footerText: "ויטרינה רב-לשונית לשירותים, אפליקציות ושיווק"
   },
@@ -121,7 +121,7 @@ const translations = {
     openInnovation: "Explore innovation",
     contactKicker: "Contact",
     contactTitle: "One team, two showcases: local services and digital products",
-    contactText: "For home services in Tiberias, call 053 361 3100. For IT, websites, apps and partnerships, email us as well.",
+    contactText: "For home services in Tiberias, call +972-53-361-31-00. For IT, websites, apps and partnerships, email us as well.",
     phoneLabel: "Service phone",
     footerText: "A multilingual showcase for services, apps and marketing"
   },
@@ -184,7 +184,7 @@ const translations = {
     openInnovation: "Открыть инновации",
     contactKicker: "Контакты",
     contactTitle: "Одна команда, две витрины: местные услуги и цифровые продукты",
-    contactText: "По услугам для дома в Тверии звоните 053 361 3100. По IT, сайтам, приложениям и сотрудничеству можно также написать на почту.",
+    contactText: "По услугам для дома в Тверии звоните +972-53-361-31-00. По IT, сайтам, приложениям и сотрудничеству можно также написать на почту.",
     phoneLabel: "Телефон услуг",
     footerText: "Многоязычная витрина услуг, приложений и маркетинга"
   }

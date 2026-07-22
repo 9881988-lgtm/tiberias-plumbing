@@ -20,7 +20,7 @@
 
 1. Добавить сайт в Google Search Console.
 2. Подтвердить владение сайтом.
-3. Создать Google Business Profile для услуги в Тверии и указать телефон `053 361 3100`.
+3. Создать Google Business Profile для услуги в Тверии и указать телефон `+972-53-361-31-00`.
 4. Добавить финальный адрес сайта в Search Console и отправить страницу на индексацию.
 5. Постоянный URL GitHub Pages уже добавлен в `canonical`, `og:url`, `og:image`, JSON-LD и `sitemap.xml`.
 6. После подтверждения Search Console отправить sitemap: `https://9881988-lgtm.github.io/tiberias-plumbing/sitemap.xml`.
