@@ -1,6 +1,6 @@
 (function () {
   const phone = "972533613100";
-  const displayPhone = "053 361 3100";
+  const displayPhone = "+972-53-361-31-00";
 
   const translations = {
     he: {
