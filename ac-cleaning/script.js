@@ -2,7 +2,7 @@ const SETTINGS = {
   googleScriptUrl: "",
   ownerEmail: "tib778877@gmail.com",
   whatsappNumber: "972533613100",
-  phoneDisplay: "053 361 3100",
+  phoneDisplay: "+972-53-361-31-00",
   priceLabel: {
     he: "ניקוי אקספרס + חיטוי 190 ₪ / 3 מזגנים ב-490 ₪ / ניקוי עמוק מ-450 ₪",
     ru: "экспресс-мойка + дезинфекция 190 ₪ / 3 кондиционера за 490 ₪ / глубокая мойка от 450 ₪",
@@ -29,7 +29,7 @@ const SETTINGS = {
 
 const translations = {
   he: {
-    title: "ניקוי מזגנים בטבריה ובצפון | שטיפה וחיטוי | 053 361 3100",
+    title: "ניקוי מזגנים בטבריה ובצפון | שטיפה וחיטוי | +972-53-361-31-00",
     description: "ניקוי מזגנים בטבריה, צפת, נוף הגליל, בית שאן ועמק הירדן: ניקוי אקספרס + חיטוי ב-190 ₪ או 3 מזגנים ב-490 ₪.",
     brandTitle: "מים ושמש",
     brandSubtitle: "ניקוי מזגנים",
@@ -148,7 +148,7 @@ const translations = {
     footerText: "ניקוי יחידה פנימית, שטיפה וחיטוי בטבריה ובערים נבחרות בצפון ישראל."
   },
   ru: {
-    title: "Мойка кондиционеров в Тверии и на севере Израиля | 053 361 3100",
+    title: "Мойка кондиционеров в Тверии и на севере Израиля | +972-53-361-31-00",
     description: "Мойка кондиционеров в Тверии, Цфате, Ноф-ха-Галиле, Бейт-Шеане и Иорданской долине: 190 ₪ или 3 кондиционера за 490 ₪.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Мойка кондиционеров",
@@ -267,7 +267,7 @@ const translations = {
     footerText: "Чистка внутреннего блока, промывка и дезинфекция в Тверии и выбранных городах севера Израиля."
   },
   en: {
-    title: "AC Cleaning in Tiberias and Northern Israel | 053 361 3100",
+    title: "AC Cleaning in Tiberias and Northern Israel | +972-53-361-31-00",
     description: "AC cleaning in Tiberias, Safed, Nof HaGalil, Beit She'an and the Jordan Valley: 190 ₪ or 3 AC units for 490 ₪.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "AC cleaning",
@@ -386,7 +386,7 @@ const translations = {
     footerText: "Indoor unit cleaning, washing and disinfection in Tiberias and selected northern cities."
   },
   fr: {
-    title: "Nettoyage de climatiseurs à Tibériade et dans le nord | 053 361 3100",
+    title: "Nettoyage de climatiseurs à Tibériade et dans le nord | +972-53-361-31-00",
     description: "Nettoyage à Tibériade, Safed, Nof HaGalil, Beit She'an et dans la vallée du Jourdain : 190 ₪ ou 3 climatiseurs pour 490 ₪.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Nettoyage de climatiseurs",
