@@ -1,0 +1,39 @@
+const copy = {
+  en: {
+    heroEyebrow: "Private AI. On your Mac.", heroLead: "Work with documents using local Gemma models on Apple Silicon. Your files and prompts stay on your computer during generation.", download: "Download on the Mac App Store", seeHow: "See how it works", heroNote: "Free to use. Optional Pro removes the short pre-request screen for $0.99/month.",
+    proof1: "Apple Silicon", proof2: "macOS 26+", proof3: "No account", proof4: "Offline after model download", workflowEyebrow: "A focused document workflow", workflowTitle: "From a private file to a useful answer", step1: "Choose a local Gemma model. The smallest download is about 280 MB.", step2: "Import PDF, TXT, Markdown, RTF, CSV or JSON.", step3: "Summarize, extract facts, review risks, translate or ask a question.", step4: "Keep working offline after the selected model is installed.",
+    insideEyebrow: "Inside the app", insideTitle: "Clear controls, visible model requirements", screen1: "Ask questions and create source-grounded summaries.", screen2: "See exactly what Pro changes before subscribing.", screen3: "The free version remains usable without a subscription.", modelsEyebrow: "Choose the model you can run", modelsTitle: "Start compact. Scale up when the Mac allows it.", modelsText: "NoCloud AI shows download size, recommended memory and required free space before you install a model. Larger models download only when you choose them.",
+    pricingEyebrow: "Simple entry", pricingTitle: "Try the real workflow before paying", freeTitle: "Free", freeText: "Use local models and document actions. A short NoCloud AI screen appears before a request.", month: "/ month", proText: "Removes the pre-request screen. No trial is required because the free version stays available.", faqTitle: "Before you install", faq1q: "Does it send my documents to NoCloud AI?", faq1a: "The app description states that documents and prompts stay on the computer during local generation. Internet is needed for the first model download.", faq2q: "Which Macs are supported?", faq2a: "A Mac with Apple Silicon and macOS 26 or later is required.", faq3q: "Can I use it without subscribing?", faq3a: "Yes. The free version remains usable; Pro removes the short screen shown before a request.", finalEyebrow: "Available now", finalTitle: "Give one private document a local first pass.", catalog: "All Structor Robotics apps"
+  },
+  ru: {
+    heroEyebrow: "Приватный AI. На вашем Mac.", heroLead: "Работайте с документами через локальные модели Gemma на Apple Silicon. Во время генерации файлы и запросы остаются на компьютере.", download: "Скачать в Mac App Store", seeHow: "Как это работает", heroNote: "Можно пользоваться бесплатно. Pro за $0.99/месяц убирает короткий экран перед запросом.",
+    proof1: "Apple Silicon", proof2: "macOS 26+", proof3: "Без аккаунта", proof4: "Офлайн после загрузки модели", workflowEyebrow: "Работа с документами", workflowTitle: "От приватного файла к полезному ответу", step1: "Выберите локальную модель Gemma. Самая компактная загрузка — около 280 МБ.", step2: "Импортируйте PDF, TXT, Markdown, RTF, CSV или JSON.", step3: "Создайте сводку, извлеките факты, проверьте риски, переведите или задайте вопрос.", step4: "После установки выбранной модели продолжайте работать офлайн.",
+    insideEyebrow: "Внутри приложения", insideTitle: "Понятные элементы управления и видимые требования", screen1: "Задавайте вопросы и получайте сводки по источнику.", screen2: "До подписки видно, что именно меняет Pro.", screen3: "Бесплатная версия остаётся доступной без подписки.", modelsEyebrow: "Выберите подходящую модель", modelsTitle: "Начните с компактной. Увеличивайте модель по возможностям Mac.", modelsText: "Перед установкой NoCloud AI показывает размер загрузки, рекомендуемую память и необходимое свободное место. Большие модели скачиваются только по вашему выбору.",
+    pricingEyebrow: "Простой вход", pricingTitle: "Проверьте реальный сценарий до оплаты", freeTitle: "Бесплатно", freeText: "Локальные модели и работа с документами доступны. Перед запросом показывается короткий экран NoCloud AI.", month: "/ месяц", proText: "Убирает экран перед запросом. Пробный период не нужен: бесплатная версия остаётся доступной.", faqTitle: "Перед установкой", faq1q: "Отправляются ли документы в NoCloud AI?", faq1a: "Согласно описанию приложения, при локальной генерации документы и запросы остаются на компьютере. Интернет нужен для первой загрузки модели.", faq2q: "Какие Mac поддерживаются?", faq2a: "Нужен Mac с Apple Silicon и macOS 26 или новее.", faq3q: "Можно пользоваться без подписки?", faq3a: "Да. Бесплатная версия работает; Pro убирает короткий экран перед запросом.", finalEyebrow: "Уже в App Store", finalTitle: "Начните с одного приватного документа.", catalog: "Все приложения Structor Robotics"
+  },
+  he: {
+    heroEyebrow: "AI פרטי. על ה-Mac שלכם.", heroLead: "עבודה עם מסמכים באמצעות מודלי Gemma מקומיים על Apple Silicon. הקבצים והבקשות נשארים במחשב בזמן ההפקה.", download: "הורדה מ-Mac App Store", seeHow: "איך זה עובד", heroNote: "אפשר להשתמש בחינם. Pro ב-$0.99 לחודש מסיר את המסך הקצר לפני בקשה.",
+    proof1: "Apple Silicon", proof2: "macOS 26+", proof3: "ללא חשבון", proof4: "אופליין לאחר הורדת מודל", workflowEyebrow: "תהליך עבודה ממוקד", workflowTitle: "ממסמך פרטי לתשובה שימושית", step1: "בחרו מודל Gemma מקומי. ההורדה הקטנה ביותר היא כ-280 MB.", step2: "ייבאו PDF, TXT, Markdown, RTF, CSV או JSON.", step3: "צרו סיכום, חלצו עובדות, בדקו סיכונים, תרגמו או שאלו שאלה.", step4: "המשיכו לעבוד אופליין לאחר התקנת המודל.",
+    insideEyebrow: "בתוך האפליקציה", insideTitle: "שליטה ברורה ודרישות מודל גלויות", screen1: "שאלות וסיכומים שמבוססים על המקור.", screen2: "רואים בדיוק מה Pro משנה לפני הרשמה.", screen3: "הגרסה החינמית נשארת זמינה ללא מנוי.", modelsEyebrow: "בחרו מודל שה-Mac יכול להריץ", modelsTitle: "התחילו בקטן. עברו למודל גדול כשהמחשב מאפשר.", modelsText: "NoCloud AI מציגה גודל הורדה, זיכרון מומלץ ומקום פנוי נדרש לפני התקנה. מודלים גדולים יורדים רק לפי בחירתכם.",
+    pricingEyebrow: "כניסה פשוטה", pricingTitle: "נסו תהליך אמיתי לפני תשלום", freeTitle: "חינם", freeText: "מודלים מקומיים ופעולות מסמך זמינים. לפני בקשה מופיע מסך קצר של NoCloud AI.", month: "/ חודש", proText: "מסיר את המסך שלפני הבקשה. אין צורך בתקופת ניסיון כי הגרסה החינמית נשארת זמינה.", faqTitle: "לפני ההתקנה", faq1q: "האם המסמכים נשלחים ל-NoCloud AI?", faq1a: "לפי תיאור האפליקציה, בזמן הפקה מקומית המסמכים והבקשות נשארים במחשב. אינטרנט נדרש להורדת המודל הראשונה.", faq2q: "אילו מחשבי Mac נתמכים?", faq2a: "נדרש Mac עם Apple Silicon ו-macOS 26 ומעלה.", faq3q: "אפשר להשתמש בלי מנוי?", faq3a: "כן. הגרסה החינמית נשארת פעילה; Pro מסיר את המסך הקצר לפני בקשה.", finalEyebrow: "זמין עכשיו", finalTitle: "התחילו עם מסמך פרטי אחד.", catalog: "כל האפליקציות של Structor Robotics"
+  }
+};
+
+function setLanguage(language) {
+  const selected = copy[language] ? language : "en";
+  document.documentElement.lang = selected;
+  document.documentElement.dir = selected === "he" ? "rtl" : "ltr";
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const value = copy[selected][element.dataset.i18n];
+    if (value) element.textContent = value;
+  });
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.lang === selected);
+  });
+  const url = new URL(window.location.href);
+  if (selected === "en") url.searchParams.delete("lang"); else url.searchParams.set("lang", selected);
+  window.history.replaceState({}, "", url);
+}
+
+document.querySelectorAll("[data-lang]").forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
+setLanguage(new URLSearchParams(window.location.search).get("lang") || (navigator.language.startsWith("ru") ? "ru" : navigator.language.startsWith("he") ? "he" : "en"));
