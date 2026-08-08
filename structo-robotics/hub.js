@@ -27,15 +27,22 @@ const hubTranslations = {
 
     appsPageKicker: "IT and App Store products",
     appsPageTitle: "האפליקציות שלנו ב-App Store",
-    appsPageLead: "38 אפליקציות ל-iPhone ול-Mac שכבר זמינות להורדה: כלים פרטיים לעבודה, מסמכים, AI, לימודים, נסיעות, אוכל, מעקב אישי ויצירה.",
+    appsPageLead: "85 אפליקציות ל-iPhone ול-Mac שכבר פורסמו ב-App Store: כלים פרטיים לעבודה, מסמכים, AI, לימודים, יצירה ויומני שטח מקצועיים.",
+    portfolioProofCount: "אפליקציות שפורסמו",
+    portfolioProofKicker: "פורטפוליו App Store מאומת",
+    portfolioProofTitle: "פורטפוליו אמיתי, מהרעיון ועד לפרסום ב-Apple",
+    portfolioProofText: "כל 85 האפליקציות ברשימה נבדקו מול App Store Connect ונגד עמוד מוצר ציבורי של Apple. הקטלוג מציג ניסיון בפיתוח מוצר, פרטיות, תהליכי שטח, שפות ו-AI מקומי.",
     catalogFilterKicker: "בחירה לפי משימה",
     catalogFilterTitle: "איזו בעיה תרצו לפתור?",
-    catalogFilterAll: "כל 38 האפליקציות",
+    catalogFilterAll: "כל 85 האפליקציות",
     catalogFilterBusiness: "עסק ופרודוקטיביות",
     catalogFilterLanguage: "שפות ולימודים",
     catalogFilterCreative: "יצירה ומדיה",
     appStoreButton: "פתח ב-App Store",
     productPageButton: "לעמוד המוצר",
+    specialistAppsKicker: "47 פרסומים מקצועיים חדשים",
+    specialistAppsTitle: "כלי שטח ותפעול לעסקים מקצועיים",
+    specialistAppsText: "האפליקציות הבאות פורסמו באנגלית לקהלים מקצועיים. כל כרטיס מציג תקציר, תיאור מלא ורישום ציבורי מאומת ב-App Store.",
     noCloudCategory: "AI פרטי אופליין / Mac",
     noCloudFull: "NoCloud AI מריצה מודלי Gemma מקומיים על מחשבי Mac עם Apple Silicon. אפשר לייבא מסמכים, לסכם, לחלץ עובדות, לבדוק סיכונים, לתרגם ולשאול שאלות בלי לשלוח את התוכן לשירות הענן של NoCloud AI.",
     noCloudFeature1: "PDF, TXT, Markdown, RTF, CSV ו-JSON",
@@ -270,15 +277,22 @@ const hubTranslations = {
 
     appsPageKicker: "IT and App Store products",
     appsPageTitle: "Our App Store apps",
-    appsPageLead: "Explore 38 iPhone and Mac apps already available to download: private work tools, documents, AI, learning, travel, food, personal tracking, and creative utilities.",
+    appsPageLead: "Explore 85 iPhone and Mac apps already published in the App Store: private work tools, documents, AI, learning, creative utilities, and specialist field records.",
+    portfolioProofCount: "published apps",
+    portfolioProofKicker: "Verified App Store portfolio",
+    portfolioProofTitle: "A real product portfolio, from idea to Apple release",
+    portfolioProofText: "All 85 apps in this catalog were checked in App Store Connect and against a public Apple product page. The portfolio demonstrates delivery across product design, privacy, field operations, languages, and local AI.",
     catalogFilterKicker: "Choose by task",
     catalogFilterTitle: "What would you like to accomplish?",
-    catalogFilterAll: "All 38 apps",
+    catalogFilterAll: "All 85 apps",
     catalogFilterBusiness: "Business & productivity",
     catalogFilterLanguage: "Languages & learning",
     catalogFilterCreative: "Creativity & media",
     appStoreButton: "Open in App Store",
     productPageButton: "Product page",
+    specialistAppsKicker: "47 new specialist releases",
+    specialistAppsTitle: "Field and operations tools for professional businesses",
+    specialistAppsText: "The following apps are published in English for specialist professional audiences. Every card includes a summary, the full description, and a verified public App Store listing.",
     noCloudCategory: "Private offline AI / Mac",
     noCloudFull: "NoCloud AI runs local Gemma models on Apple Silicon Macs. Import documents to summarize, extract key facts, review risks, translate, and ask questions without sending the content to the NoCloud AI cloud service.",
     noCloudFeature1: "PDF, TXT, Markdown, RTF, CSV, and JSON",
@@ -513,15 +527,22 @@ const hubTranslations = {
 
     appsPageKicker: "IT и продукты App Store",
     appsPageTitle: "Наши приложения в App Store",
-    appsPageLead: "Здесь собраны 38 приложений для iPhone и Mac: приватные рабочие инструменты, документы, AI, обучение, поездки, кулинария, личные журналы и творчество.",
+    appsPageLead: "Здесь собраны 85 приложений для iPhone и Mac, уже опубликованных в App Store: приватные рабочие инструменты, документы, AI, обучение, творчество и профессиональные полевые журналы.",
+    portfolioProofCount: "опубликованных приложений",
+    portfolioProofKicker: "Проверенный портфель App Store",
+    portfolioProofTitle: "Реальный продуктовый портфель: от идеи до публикации у Apple",
+    portfolioProofText: "Все 85 приложений в каталоге сверены с App Store Connect и публичной страницей продукта Apple. Портфель показывает наш опыт в разработке продуктов, приватности, полевых процессах, языках и локальном AI.",
     catalogFilterKicker: "Выбор по задаче",
     catalogFilterTitle: "Какую задачу нужно решить?",
-    catalogFilterAll: "Все 38 приложений",
+    catalogFilterAll: "Все 85 приложений",
     catalogFilterBusiness: "Бизнес и продуктивность",
     catalogFilterLanguage: "Языки и обучение",
     catalogFilterCreative: "Творчество и медиа",
     appStoreButton: "Открыть в App Store",
     productPageButton: "Страница продукта",
+    specialistAppsKicker: "47 новых профессиональных релизов",
+    specialistAppsTitle: "Полевые и операционные инструменты для профессионального бизнеса",
+    specialistAppsText: "Следующие приложения опубликованы на английском для узких профессиональных аудиторий. В каждой карточке есть краткое и полное описание, а также проверенная публичная ссылка App Store.",
     noCloudCategory: "Приватный офлайн-AI / Mac",
     noCloudFull: "NoCloud AI запускает локальные модели Gemma на компьютерах Mac с Apple Silicon. Можно импортировать документы, делать краткие сводки, извлекать факты, проверять риски, переводить и задавать вопросы без отправки содержимого в облачный сервис NoCloud AI.",
     noCloudFeature1: "PDF, TXT, Markdown, RTF, CSV и JSON",
@@ -759,6 +780,103 @@ function localizeLandingLinks(language) {
   });
 }
 
+const publishedAppLabels = {
+  he: {
+    category: "כלי מקצועי / iPhone",
+    details: "תיאור App Store מלא",
+    minimumOs: "גרסת מערכת מינימלית",
+    appStore: "פתח ב-App Store"
+  },
+  en: {
+    category: "Professional tool / iPhone",
+    details: "Full App Store description",
+    minimumOs: "Minimum system version",
+    appStore: "Open in App Store"
+  },
+  ru: {
+    category: "Профессиональный инструмент / iPhone",
+    details: "Полное описание App Store",
+    minimumOs: "Минимальная версия системы",
+    appStore: "Открыть в App Store"
+  }
+};
+
+function renderPublishedApps() {
+  const catalog = document.querySelector(".app-catalog");
+  const apps = Array.isArray(window.structorPublishedApps) ? window.structorPublishedApps : [];
+  if (!catalog || apps.length === 0) return;
+
+  apps.forEach((app) => {
+    const article = document.createElement("article");
+    article.className = "app-detail app-detail--published";
+    article.dataset.appCategory = app.category || "business";
+
+    const icon = document.createElement("img");
+    icon.className = "app-detail__icon";
+    icon.src = app.icon;
+    icon.alt = `${app.name} icon`;
+    icon.width = 86;
+    icon.height = 86;
+    icon.loading = "lazy";
+
+    const body = document.createElement("div");
+    body.className = "app-detail__body";
+
+    const kicker = document.createElement("p");
+    kicker.className = "section-kicker";
+    kicker.dataset.publishedAppLabel = "category";
+
+    const title = document.createElement("h2");
+    title.textContent = app.name;
+
+    const language = /[А-Яа-яЁё]/.test(app.description) ? "ru" : "en";
+    const summary = document.createElement("p");
+    summary.className = "published-app__summary";
+    summary.lang = language;
+    summary.dir = "ltr";
+    summary.textContent = app.summary;
+
+    const minimumOs = document.createElement("p");
+    minimumOs.className = "published-app__system";
+    minimumOs.dataset.publishedAppSystem = app.minimumOsVersion || "";
+
+    const details = document.createElement("details");
+    details.className = "published-app__details";
+
+    const detailsLabel = document.createElement("summary");
+    detailsLabel.dataset.publishedAppLabel = "details";
+
+    const fullDescription = document.createElement("p");
+    fullDescription.lang = language;
+    fullDescription.dir = "ltr";
+    fullDescription.textContent = app.description;
+
+    details.append(detailsLabel, fullDescription);
+    body.append(kicker, title, summary, minimumOs, details);
+
+    const link = document.createElement("a");
+    link.className = "app-link app-detail__cta";
+    link.href = app.appStoreUrl;
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.dataset.publishedAppLabel = "appStore";
+
+    article.append(icon, body, link);
+    catalog.append(article);
+  });
+}
+
+function localizePublishedApps(language) {
+  const labels = publishedAppLabels[language] || publishedAppLabels.en;
+  document.querySelectorAll("[data-published-app-label]").forEach((element) => {
+    element.textContent = labels[element.dataset.publishedAppLabel] || "";
+  });
+  document.querySelectorAll("[data-published-app-system]").forEach((element) => {
+    const version = element.dataset.publishedAppSystem;
+    element.textContent = version ? `${labels.minimumOs}: iOS ${version}+` : "";
+  });
+}
+
 function setHubLanguage(language) {
   const selectedLanguage = supportedHubLanguages.includes(language) ? language : "he";
   const dictionary = hubTranslations[selectedLanguage];
@@ -778,12 +896,15 @@ function setHubLanguage(language) {
   });
 
   localizeLandingLinks(selectedLanguage);
+  localizePublishedApps(selectedLanguage);
   localStorage.setItem("structor-language", selectedLanguage);
 }
 
 hubLanguageButtons.forEach((button) => {
   button.addEventListener("click", () => setHubLanguage(button.dataset.setHubLang));
 });
+
+renderPublishedApps();
 
 const catalogFilterButtons = document.querySelectorAll("[data-app-filter]");
 const catalogItems = document.querySelectorAll("[data-app-category]");
