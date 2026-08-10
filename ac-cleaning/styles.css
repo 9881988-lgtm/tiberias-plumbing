@@ -1004,6 +1004,20 @@ details p {
   }
 }
 
+@media (max-width: 440px) {
+  .site-header {
+    gap: 8px;
+  }
+
+  .brand strong {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
