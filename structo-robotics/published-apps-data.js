@@ -468,5 +468,385 @@ window.structorPublishedApps = [
     "appStoreUrl": "https://apps.apple.com/il/app/yardquote-upholstery/id6793834013?uo=4",
     "icon": "assets/apps/published-6793834013.jpg",
     "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797486337,
+    "name": "Agoraphobia: WideWorld",
+    "category": "wellness",
+    "summary": "WideWorld is focused support for open or public spaces. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.",
+    "description": "WideWorld is focused support for open or public spaces. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.\n\nYOUR STARTER LADDER\n1. Imagine standing just outside a familiar doorway\n2. Look outside for two minutes\n3. Stand at an open doorway with support\n4. Agree a very short outdoor step with a clinician\n\nIMPORTANT SAFETY\nAgoraphobic fear can be complex. Build real-world steps with a qualified clinician, especially if you are housebound or panic is severe.\n\nThis app supports skills and reflection. It does not diagnose, cure a phobia, replace a qualified clinician or provide emergency care. Your notes stay on this iPhone. No account, advertising, analytics or tracking.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/agoraphobia-wideworld/id6797486337?uo=4",
+    "icon": "assets/apps/published-6797486337.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797151580,
+    "name": "Alcohol Reset: Alcova",
+    "category": "wellness",
+    "summary": "Alcova helps you change alcohol use with a safety-first plan. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Alcova helps you change alcohol use with a safety-first plan. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/alcohol-reset-alcova/id6797151580?uo=4",
+    "icon": "assets/apps/published-6797151580.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797152070,
+    "name": "Binge Eating Support",
+    "category": "wellness",
+    "summary": "Eating Balance helps you build regular, non-punitive eating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Eating Balance helps you build regular, non-punitive eating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/binge-eating-support/id6797152070?uo=4",
+    "icon": "assets/apps/published-6797152070.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797486378,
+    "name": "Bridge Fear: BridgeCalm",
+    "category": "wellness",
+    "summary": "BridgeCalm is focused support for bridges. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.",
+    "description": "BridgeCalm is focused support for bridges. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.\n\nYOUR STARTER LADDER\n1. Read the name of a familiar bridge\n2. Look at a bridge photo\n3. Watch a passenger-view crossing video\n4. Approach a small pedestrian bridge with support\n\nIMPORTANT SAFETY\nPractise only on open public routes with normal barriers. If driving, another person must operate the vehicle.\n\nThis app supports skills and reflection. It does not diagnose, cure a phobia, replace a qualified clinician or provide emergency care. Your notes stay on this iPhone. No account, advertising, analytics or tracking.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/bridge-fear-bridgecalm/id6797486378?uo=4",
+    "icon": "assets/apps/published-6797486378.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797151864,
+    "name": "Caffeine Balance: Cafelyn",
+    "category": "wellness",
+    "summary": "Cafelyn helps you reduce caffeine and energy drink dependence. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Cafelyn helps you reduce caffeine and energy drink dependence. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/caffeine-balance-cafelyn/id6797151864?uo=4",
+    "icon": "assets/apps/published-6797151864.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797151780,
+    "name": "Cannabis Reset: Cannava",
+    "category": "wellness",
+    "summary": "Cannava helps you reduce or stop cannabis use. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Cannava helps you reduce or stop cannabis use. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/cannabis-reset-cannava/id6797151780?uo=4",
+    "icon": "assets/apps/published-6797151780.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797485572,
+    "name": "Claustrophobia: OpenSpace",
+    "category": "wellness",
+    "summary": "OpenSpace is focused support for enclosed spaces. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.",
+    "description": "OpenSpace is focused support for enclosed spaces. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.\n\nYOUR STARTER LADDER\n1. Look at a photo of a small comfortable room\n2. Sit near an open doorway for one minute\n3. Stand inside a room with the door fully open\n4. Partly close the door while keeping control of it\n\nIMPORTANT SAFETY\nChoose legal, ventilated, unlocked spaces. Never enter tanks, tunnels, machinery or any place not intended for public access.\n\nThis app supports skills and reflection. It does not diagnose, cure a phobia, replace a qualified clinician or provide emergency care. Your notes stay on this iPhone. No account, advertising, analytics or tracking.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/claustrophobia-openspace/id6797485572?uo=4",
+    "icon": "assets/apps/published-6797485572.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797317451,
+    "name": "Dating App Reset: DateCalm",
+    "category": "wellness",
+    "summary": "DateCalm helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "DateCalm helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/dating-app-reset-datecalm/id6797317451?uo=4",
+    "icon": "assets/apps/published-6797317451.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797316857,
+    "name": "Doomscroll Reset: NewsCalm",
+    "category": "wellness",
+    "summary": "NewsCalm helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "NewsCalm helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/doomscroll-reset-newscalm/id6797316857?uo=4",
+    "icon": "assets/apps/published-6797316857.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797486344,
+    "name": "Driving Anxiety: RoadEase",
+    "category": "wellness",
+    "summary": "RoadEase is focused support for driving. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.",
+    "description": "RoadEase is focused support for driving. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.\n\nYOUR STARTER LADDER\n1. Look at a photo of a quiet road\n2. Sit in a parked car with the engine off\n3. Sit in a parked car with a support person\n4. Ride as a passenger on a short familiar route\n\nIMPORTANT SAFETY\nNever operate or look at this app while driving. Real driving steps require a licensed driver, a roadworthy vehicle and an agreed safe route.\n\nThis app supports skills and reflection. It does not diagnose, cure a phobia, replace a qualified clinician or provide emergency care. Your notes stay on this iPhone. No account, advertising, analytics or tracking.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/driving-anxiety-roadease/id6797486344?uo=4",
+    "icon": "assets/apps/published-6797486344.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797315968,
+    "name": "Energy Drink Reset: Energava",
+    "category": "wellness",
+    "summary": "Energava helps you reduce caffeine and energy drink dependence. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Energava helps you reduce caffeine and energy drink dependence. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/energy-drink-reset-energava/id6797315968?uo=4",
+    "icon": "assets/apps/published-6797315968.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797318162,
+    "name": "Exercise Balance",
+    "category": "wellness",
+    "summary": "MoveBalance helps you build flexible, non-punitive movement. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "MoveBalance helps you build flexible, non-punitive movement. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/exercise-balance/id6797318162?uo=4",
+    "icon": "assets/apps/published-6797318162.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797318587,
+    "name": "Fast Food Reset",
+    "category": "wellness",
+    "summary": "FastFood Reset helps you build regular, non-punitive eating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "FastFood Reset helps you build regular, non-punitive eating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/fast-food-reset/id6797318587?uo=4",
+    "icon": "assets/apps/published-6797318587.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797484368,
+    "name": "Fear of Flying: SkyCalm",
+    "category": "wellness",
+    "summary": "SkyCalm is focused support for flying. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.",
+    "description": "SkyCalm is focused support for flying. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.\n\nYOUR STARTER LADDER\n1. Read a neutral description of a short flight\n2. Look at a still photo of an aircraft cabin\n3. Watch a short take-off video with sound low\n4. Visit an airport viewing area with support\n\nIMPORTANT SAFETY\nPractise only while seated safely. Never use the app during safety briefings, take-off or an emergency.\n\nThis app supports skills and reflection. It does not diagnose, cure a phobia, replace a qualified clinician or provide emergency care. Your notes stay on this iPhone. No account, advertising, analytics or tracking.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/fear-of-flying-skycalm/id6797484368?uo=4",
+    "icon": "assets/apps/published-6797484368.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797485174,
+    "name": "Fear of Heights: HeightEase",
+    "category": "wellness",
+    "summary": "HeightEase is focused support for heights. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.",
+    "description": "HeightEase is focused support for heights. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.\n\nYOUR STARTER LADDER\n1. Say the word height and notice the prediction\n2. Look at a photo taken from an upper floor\n3. Watch a calm viewpoint video\n4. Stand well back from a closed upper-floor window\n\nIMPORTANT SAFETY\nUse only locations with solid barriers and normal public access. Never climb, lean over edges or practise alone in unsafe places.\n\nThis app supports skills and reflection. It does not diagnose, cure a phobia, replace a qualified clinician or provide emergency care. Your notes stay on this iPhone. No account, advertising, analytics or tracking.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/fear-of-heights-heightease/id6797485174?uo=4",
+    "icon": "assets/apps/published-6797485174.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797318126,
+    "name": "Food Delivery Reset",
+    "category": "wellness",
+    "summary": "DeliveryCalm helps you build regular, non-punitive eating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "DeliveryCalm helps you build regular, non-punitive eating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/food-delivery-reset/id6797318126?uo=4",
+    "icon": "assets/apps/published-6797318126.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797318091,
+    "name": "Internet Reset: WebCalm",
+    "category": "wellness",
+    "summary": "WebCalm helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "WebCalm helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/internet-reset-webcalm/id6797318091?uo=4",
+    "icon": "assets/apps/published-6797318091.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797317573,
+    "name": "Intimacy Balance",
+    "category": "wellness",
+    "summary": "Intima Balance helps you change compulsive sexual and dating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Intima Balance helps you change compulsive sexual and dating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/intimacy-balance/id6797317573?uo=4",
+    "icon": "assets/apps/published-6797317573.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797316422,
+    "name": "Loot Box Reset: Lootless",
+    "category": "wellness",
+    "summary": "Lootless helps you build a healthier relationship with gaming. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Lootless helps you build a healthier relationship with gaming. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/loot-box-reset-lootless/id6797316422?uo=4",
+    "icon": "assets/apps/published-6797316422.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797316335,
+    "name": "Mobile Gaming Reset",
+    "category": "wellness",
+    "summary": "MobiGame helps you build a healthier relationship with gaming. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "MobiGame helps you build a healthier relationship with gaming. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/mobile-gaming-reset/id6797316335?uo=4",
+    "icon": "assets/apps/published-6797316335.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6795704326,
+    "name": "NutriLuma: Offline Food Log",
+    "category": "wellness",
+    "summary": "NutriLuma is a lightweight private food diary for people who want quick meal estimates without creating an account or uploading their meals to a cloud service.\n\nDescribe what you ate, optionally attach a meal photo as a local visual reference, and save an approximate calorie and macro estimate. Your diary, compact photo references, calorie goal, water count, and weight note remain on your iPhone.",
+    "description": "NutriLuma is a lightweight private food diary for people who want quick meal estimates without creating an account or uploading their meals to a cloud service.\n\nDescribe what you ate, optionally attach a meal photo as a local visual reference, and save an approximate calorie and macro estimate. Your diary, compact photo references, calorie goal, water count, and weight note remain on your iPhone.\n\nPRIVATE, PRACTICAL FOOD LOGGING\n• Description-based calorie and macro estimates\n• Optional meal photos stored as local visual references\n• Breakfast, lunch, dinner, and snack records\n• Daily calorie, protein, carbohydrate, and fat summary\n• Calorie goal, water count, and weight note\n• Simple ingredient-keyword guide\n• 20-language first-launch choice\n• No account, advertising, analytics, tracking, or cloud upload\n\nSOURCES AND LIMITATIONS\nA visible Sources & limitations button in the Meal estimate card opens an in-app page with functional links to USDA FoodData Central, the Dietary Guidelines for Americans 2025-2030, and FDA Nutrition Facts guidance. Estimates use a simple on-device text heuristic, do not identify portion size, and can differ by recipe, brand, and preparation. Verify actual values using a package label or a specific USDA food record.\n\nMONETIZATION\nUse the complete app free for seven days. Then unlock lifetime access with one $4.99 App Store purchase. There is no recurring subscription. Restore Purchases is available on the unlock screen.\n\nIMPORTANT\nA photo is not analyzed to identify food. Results are approximate and are not medical, diagnostic, or dietetic advice. NutriLuma is not intended for diagnosis, treatment, pregnancy nutrition, eating-disorder care, or medication decisions.",
+    "appStoreUrl": "https://apps.apple.com/il/app/nutriluma-offline-food-log/id6795704326?uo=4",
+    "icon": "assets/apps/published-6795704326.jpg",
+    "minimumOsVersion": "18.0"
+  },
+  {
+    "id": 6795703550,
+    "name": "Offline Budget: Private Money",
+    "category": "business",
+    "summary": "Offline Budget is a private expense tracker for freelancers, cash budgeters, travelers, and anyone who wants control without connecting a bank account.\n\nLog expenses in seconds, organize custom categories, set monthly limits, and see exactly where your money goes. Your finance history stays on your device and remains useful without an internet connection.",
+    "description": "Offline Budget is a private expense tracker for freelancers, cash budgeters, travelers, and anyone who wants control without connecting a bank account.\n\nLog expenses in seconds, organize custom categories, set monthly limits, and see exactly where your money goes. Your finance history stays on your device and remains useful without an internet connection.\n\nBUILT FOR MANUAL CONTROL\n• Fast expense entry with category, note, amount, and date\n• Monthly budget progress and recent spending\n• Custom categories, currencies, themes, and a home-screen widget\n• Shortcuts support for quick expense capture\n• No account, bank login, advertising, analytics, or tracking\n\nFREE CORE TRACKING\nHome, transactions, categories, and monthly budget tracking are available free. Start using the app without creating an account or making a purchase.\n\nOFFLINE BUDGET PRO — $4.99 LIFETIME\nMake one optional purchase to unlock advanced analytics, category trends, monthly projections, spending signals, and JSON import/export forever. There is no subscription and no automatic renewal. Restore Purchases is available in Settings and on the Pro screen.\n\nOffline Budget is a recordkeeping and planning tool. It does not connect to financial institutions and does not provide financial, tax, or investment advice.\n\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/offline-budget-private-money/id6795703550?uo=4",
+    "icon": "assets/apps/published-6795703550.jpg",
+    "minimumOsVersion": "18.0"
+  },
+  {
+    "id": 6797151821,
+    "name": "Opioid Recovery: Opionix",
+    "category": "wellness",
+    "summary": "Opionix helps you support opioid recovery alongside qualified care. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Opionix helps you support opioid recovery alongside qualified care. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/opioid-recovery-opionix/id6797151821?uo=4",
+    "icon": "assets/apps/published-6797151821.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797315098,
+    "name": "Pain Med Recovery: Relivra",
+    "category": "wellness",
+    "summary": "Relivra helps you support opioid recovery alongside qualified care. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Relivra helps you support opioid recovery alongside qualified care. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/pain-med-recovery-relivra/id6797315098?uo=4",
+    "icon": "assets/apps/published-6797315098.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797151918,
+    "name": "Phone Balance: Phonera",
+    "category": "wellness",
+    "summary": "Phonera helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Phonera helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/phone-balance-phonera/id6797151918?uo=4",
+    "icon": "assets/apps/published-6797151918.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6796402507,
+    "name": "Quit Smoking: Aeris",
+    "category": "wellness",
+    "summary": "Aeris helps you stop smoking one craving and one choice at a time.\n\nOpen the 90-second rescue when an urge appears. Breathe at a steady pace, identify the trigger, drink water, change activity, and record how the urge changed. The app also provides a personal quit plan, gentle daily check-ins, missions, points, recovery milestones, and a freedom garden that grows with your progress.",
+    "description": "Aeris helps you stop smoking one craving and one choice at a time.\n\nOpen the 90-second rescue when an urge appears. Breathe at a steady pace, identify the trigger, drink water, change activity, and record how the urge changed. The app also provides a personal quit plan, gentle daily check-ins, missions, points, recovery milestones, and a freedom garden that grows with your progress.\n\nPERSONAL SUPPORT\n• Choose from 10 support paths for social situations, stress, family, couples, independent quitting, life after 50, past slips, fitness, wellbeing, and financial motivation\n• Use the core experience in 20 languages\n• Track smoke-free time, cigarettes avoided, and money saved\n• Log a slip without losing your plan or previous progress\n• Keep your plan and journal locally on your iPhone\n\nWHAT STAYS FREE\nThe craving rescue, core quit plan, reminders, recovery information, and one selected support path remain free.\n\nAERIS PREMIUM\nMonthly: $4.99\nAnnual: $29.99\nPremium unlocks all 10 personalized paths, adaptive daily missions, and deeper trigger insights. Payment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel your subscription in Apple ID subscription settings.\n\nAeris provides behavioral support and educational information. It does not diagnose, prescribe medication, or replace a qualified clinician. If you are pregnant, under 18, have a serious health condition, or take other medicines, consult a clinician before using quit-smoking medication.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/quit-smoking-aeris/id6796402507?uo=4",
+    "icon": "assets/apps/published-6796402507.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797151406,
+    "name": "Quit Vaping: Vapora",
+    "category": "wellness",
+    "summary": "Vapora helps you quit nicotine and handle cravings. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Vapora helps you quit nicotine and handle cravings. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/quit-vaping-vapora/id6797151406?uo=4",
+    "icon": "assets/apps/published-6797151406.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797152055,
+    "name": "Shopping Reset: Shopless",
+    "category": "wellness",
+    "summary": "Shopless helps you reduce compulsive buying. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Shopless helps you reduce compulsive buying. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/shopping-reset-shopless/id6797152055?uo=4",
+    "icon": "assets/apps/published-6797152055.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797316664,
+    "name": "Short Video Reset",
+    "category": "wellness",
+    "summary": "ClipCalm helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "ClipCalm helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/short-video-reset/id6797316664?uo=4",
+    "icon": "assets/apps/published-6797316664.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797314715,
+    "name": "Sleep Med Reset: Somniva",
+    "category": "wellness",
+    "summary": "Somniva helps you plan safer change with professional support. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Somniva helps you plan safer change with professional support. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/sleep-med-reset-somniva/id6797314715?uo=4",
+    "icon": "assets/apps/published-6797314715.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797316579,
+    "name": "Social Media Reset",
+    "category": "wellness",
+    "summary": "Socialyn helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Socialyn helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/social-media-reset/id6797316579?uo=4",
+    "icon": "assets/apps/published-6797316579.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797316131,
+    "name": "Spending Reset: Spendora",
+    "category": "wellness",
+    "summary": "Spendora helps you reduce compulsive buying. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Spendora helps you reduce compulsive buying. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/spending-reset-spendora/id6797316131?uo=4",
+    "icon": "assets/apps/published-6797316131.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797317285,
+    "name": "Streaming Reset: Streamora",
+    "category": "wellness",
+    "summary": "Streamora helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Streamora helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/streaming-reset-streamora/id6797317285?uo=4",
+    "icon": "assets/apps/published-6797317285.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797318533,
+    "name": "Sweets Balance",
+    "category": "wellness",
+    "summary": "SweetBalance helps you build regular, non-punitive eating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "SweetBalance helps you build regular, non-punitive eating patterns. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/sweets-balance/id6797318533?uo=4",
+    "icon": "assets/apps/published-6797318533.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797315779,
+    "name": "Trading Reset: TradeCalm",
+    "category": "wellness",
+    "summary": "TradeCalm helps you interrupt high-risk trading and betting loops. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "TradeCalm helps you interrupt high-risk trading and betting loops. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/trading-reset-tradecalm/id6797315779?uo=4",
+    "icon": "assets/apps/published-6797315779.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797486802,
+    "name": "Tunnel Fear: TunnelEase",
+    "category": "wellness",
+    "summary": "TunnelEase is focused support for tunnels. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.",
+    "description": "TunnelEase is focused support for tunnels. Build a gradual safety-aware step ladder, record anxious predictions, practise voluntarily, and compare the prediction with what actually happened.\n\nOpen the 90-second grounding pause when anxiety is high. Three daily moments support morning planning, one daytime practice and an evening reflection. Courage points reward showing up, not forcing anxiety to disappear.\n\nYOUR STARTER LADDER\n1. Look at a brightly lit tunnel photo\n2. Watch a short tunnel video\n3. Walk near a wide pedestrian underpass entrance\n4. Cross a short public underpass with support\n\nIMPORTANT SAFETY\nUse only public, open routes. Never stop in a traffic tunnel or enter restricted infrastructure.\n\nThis app supports skills and reflection. It does not diagnose, cure a phobia, replace a qualified clinician or provide emergency care. Your notes stay on this iPhone. No account, advertising, analytics or tracking.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/tunnel-fear-tunnelease/id6797486802?uo=4",
+    "icon": "assets/apps/published-6797486802.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797317282,
+    "name": "TV Binge Reset",
+    "category": "wellness",
+    "summary": "Screen Evening helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "Screen Evening helps you regain attention from compulsive digital habits. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/tv-binge-reset/id6797317282?uo=4",
+    "icon": "assets/apps/published-6797317282.jpg",
+    "minimumOsVersion": "17.0"
+  },
+  {
+    "id": 6797317855,
+    "name": "Workaholism Reset: WorkCalm",
+    "category": "wellness",
+    "summary": "WorkCalm helps you set healthier limits around work. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.",
+    "description": "WorkCalm helps you set healthier limits around work. Use a 90-second urge tool, daily missions, trigger planning, private progress tracking, motivational rewards and condition-specific safety guidance. Core safety and emergency support remain free. The app complements—not replaces—qualified care.\n\nPREMIUM SUBSCRIPTIONS\nMonthly: $4.99\nAnnual: $29.99\nPayment is charged to your Apple ID. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel in Apple ID subscription settings.\n\nPrivacy Policy: https://offline-opportunity-apps.xcvjdwsdf2.chatgpt.site/privacy\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "appStoreUrl": "https://apps.apple.com/il/app/workaholism-reset-workcalm/id6797317855?uo=4",
+    "icon": "assets/apps/published-6797317855.jpg",
+    "minimumOsVersion": "17.0"
   }
 ];

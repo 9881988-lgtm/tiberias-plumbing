@@ -27,22 +27,23 @@ const hubTranslations = {
 
     appsPageKicker: "IT and App Store products",
     appsPageTitle: "האפליקציות שלנו ב-App Store",
-    appsPageLead: "85 אפליקציות ל-iPhone ול-Mac שכבר פורסמו ב-App Store: כלים פרטיים לעבודה, מסמכים, AI, לימודים, יצירה ויומני שטח מקצועיים.",
+    appsPageLead: "123 אפליקציות ל-iPhone ול-Mac שכבר פורסמו ב-App Store: כלים פרטיים לעבודה, מסמכים, בריאות ואיזון, AI, לימודים, יצירה ויומני שטח מקצועיים.",
     portfolioProofCount: "אפליקציות שפורסמו",
     portfolioProofKicker: "פורטפוליו App Store מאומת",
     portfolioProofTitle: "פורטפוליו אמיתי, מהרעיון ועד לפרסום ב-Apple",
-    portfolioProofText: "כל 85 האפליקציות ברשימה נבדקו מול App Store Connect ונגד עמוד מוצר ציבורי של Apple. הקטלוג מציג ניסיון בפיתוח מוצר, פרטיות, תהליכי שטח, שפות ו-AI מקומי.",
+    portfolioProofText: "כל 123 האפליקציות ברשימה נבדקו מול App Store Connect ונגד עמוד מוצר ציבורי של Apple. הקטלוג מציג ניסיון בפיתוח מוצר, פרטיות, בריאות ואיזון, תהליכי שטח, שפות ו-AI מקומי.",
     catalogFilterKicker: "בחירה לפי משימה",
     catalogFilterTitle: "איזו בעיה תרצו לפתור?",
-    catalogFilterAll: "כל 85 האפליקציות",
+    catalogFilterAll: "כל 123 האפליקציות",
     catalogFilterBusiness: "עסק ופרודוקטיביות",
+    catalogFilterWellness: "בריאות ואיזון",
     catalogFilterLanguage: "שפות ולימודים",
     catalogFilterCreative: "יצירה ומדיה",
     appStoreButton: "פתח ב-App Store",
     productPageButton: "לעמוד המוצר",
-    specialistAppsKicker: "47 פרסומים מקצועיים חדשים",
-    specialistAppsTitle: "כלי שטח ותפעול לעסקים מקצועיים",
-    specialistAppsText: "האפליקציות הבאות פורסמו באנגלית לקהלים מקצועיים. כל כרטיס מציג תקציר, תיאור מלא ורישום ציבורי מאומת ב-App Store.",
+    specialistAppsKicker: "85 פרסומים חדשים",
+    specialistAppsTitle: "כלים מקצועיים ואפליקציות לבריאות ואיזון",
+    specialistAppsText: "האפליקציות הבאות פורסמו באנגלית לקהלים מקצועיים ולאנשים המחפשים כלים פרטיים לשגרה, בריאות ואיזון. כל כרטיס מציג תקציר, תיאור מלא ורישום ציבורי מאומת ב-App Store.",
     noCloudCategory: "AI פרטי אופליין / Mac",
     noCloudFull: "NoCloud AI מריצה מודלי Gemma מקומיים על מחשבי Mac עם Apple Silicon. אפשר לייבא מסמכים, לסכם, לחלץ עובדות, לבדוק סיכונים, לתרגם ולשאול שאלות בלי לשלוח את התוכן לשירות הענן של NoCloud AI.",
     noCloudFeature1: "PDF, TXT, Markdown, RTF, CSV ו-JSON",
@@ -277,22 +278,23 @@ const hubTranslations = {
 
     appsPageKicker: "IT and App Store products",
     appsPageTitle: "Our App Store apps",
-    appsPageLead: "Explore 85 iPhone and Mac apps already published in the App Store: private work tools, documents, AI, learning, creative utilities, and specialist field records.",
+    appsPageLead: "Explore 123 iPhone and Mac apps already published in the App Store: private work tools, documents, wellbeing, AI, learning, creative utilities, and specialist field records.",
     portfolioProofCount: "published apps",
     portfolioProofKicker: "Verified App Store portfolio",
     portfolioProofTitle: "A real product portfolio, from idea to Apple release",
-    portfolioProofText: "All 85 apps in this catalog were checked in App Store Connect and against a public Apple product page. The portfolio demonstrates delivery across product design, privacy, field operations, languages, and local AI.",
+    portfolioProofText: "All 123 apps in this catalog were checked in App Store Connect and against a public Apple product page. The portfolio demonstrates delivery across product design, privacy, wellbeing, field operations, languages, and local AI.",
     catalogFilterKicker: "Choose by task",
     catalogFilterTitle: "What would you like to accomplish?",
-    catalogFilterAll: "All 85 apps",
+    catalogFilterAll: "All 123 apps",
     catalogFilterBusiness: "Business & productivity",
+    catalogFilterWellness: "Health & balance",
     catalogFilterLanguage: "Languages & learning",
     catalogFilterCreative: "Creativity & media",
     appStoreButton: "Open in App Store",
     productPageButton: "Product page",
-    specialistAppsKicker: "47 new specialist releases",
-    specialistAppsTitle: "Field and operations tools for professional businesses",
-    specialistAppsText: "The following apps are published in English for specialist professional audiences. Every card includes a summary, the full description, and a verified public App Store listing.",
+    specialistAppsKicker: "85 recent releases",
+    specialistAppsTitle: "Professional tools and health-and-balance apps",
+    specialistAppsText: "The following apps are published in English for specialist professional audiences and people seeking private tools for routines, health, and balance. Every card includes a summary, the full description, and a verified public App Store listing.",
     noCloudCategory: "Private offline AI / Mac",
     noCloudFull: "NoCloud AI runs local Gemma models on Apple Silicon Macs. Import documents to summarize, extract key facts, review risks, translate, and ask questions without sending the content to the NoCloud AI cloud service.",
     noCloudFeature1: "PDF, TXT, Markdown, RTF, CSV, and JSON",
@@ -527,22 +529,23 @@ const hubTranslations = {
 
     appsPageKicker: "IT и продукты App Store",
     appsPageTitle: "Наши приложения в App Store",
-    appsPageLead: "Здесь собраны 85 приложений для iPhone и Mac, уже опубликованных в App Store: приватные рабочие инструменты, документы, AI, обучение, творчество и профессиональные полевые журналы.",
+    appsPageLead: "Здесь собраны 123 приложения для iPhone и Mac, уже опубликованных в App Store: приватные рабочие инструменты, документы, здоровье и баланс, AI, обучение, творчество и профессиональные полевые журналы.",
     portfolioProofCount: "опубликованных приложений",
     portfolioProofKicker: "Проверенный портфель App Store",
     portfolioProofTitle: "Реальный продуктовый портфель: от идеи до публикации у Apple",
-    portfolioProofText: "Все 85 приложений в каталоге сверены с App Store Connect и публичной страницей продукта Apple. Портфель показывает наш опыт в разработке продуктов, приватности, полевых процессах, языках и локальном AI.",
+    portfolioProofText: "Все 123 приложения в каталоге сверены с App Store Connect и публичной страницей продукта Apple. Портфель показывает наш опыт в разработке продуктов, приватности, здоровье и балансе, полевых процессах, языках и локальном AI.",
     catalogFilterKicker: "Выбор по задаче",
     catalogFilterTitle: "Какую задачу нужно решить?",
-    catalogFilterAll: "Все 85 приложений",
+    catalogFilterAll: "Все 123 приложения",
     catalogFilterBusiness: "Бизнес и продуктивность",
+    catalogFilterWellness: "Здоровье и баланс",
     catalogFilterLanguage: "Языки и обучение",
     catalogFilterCreative: "Творчество и медиа",
     appStoreButton: "Открыть в App Store",
     productPageButton: "Страница продукта",
-    specialistAppsKicker: "47 новых профессиональных релизов",
-    specialistAppsTitle: "Полевые и операционные инструменты для профессионального бизнеса",
-    specialistAppsText: "Следующие приложения опубликованы на английском для узких профессиональных аудиторий. В каждой карточке есть краткое и полное описание, а также проверенная публичная ссылка App Store.",
+    specialistAppsKicker: "85 новых релизов",
+    specialistAppsTitle: "Профессиональные инструменты и приложения для здоровья и баланса",
+    specialistAppsText: "Следующие приложения опубликованы на английском для профессиональных аудиторий и людей, которым нужны приватные инструменты для привычек, здоровья и баланса. В каждой карточке есть краткое и полное описание, а также проверенная публичная ссылка App Store.",
     noCloudCategory: "Приватный офлайн-AI / Mac",
     noCloudFull: "NoCloud AI запускает локальные модели Gemma на компьютерах Mac с Apple Silicon. Можно импортировать документы, делать краткие сводки, извлекать факты, проверять риски, переводить и задавать вопросы без отправки содержимого в облачный сервис NoCloud AI.",
     noCloudFeature1: "PDF, TXT, Markdown, RTF, CSV и JSON",
@@ -783,18 +786,21 @@ function localizeLandingLinks(language) {
 const publishedAppLabels = {
   he: {
     category: "כלי מקצועי / iPhone",
+    wellnessCategory: "בריאות ואיזון / iPhone",
     details: "תיאור App Store מלא",
     minimumOs: "גרסת מערכת מינימלית",
     appStore: "פתח ב-App Store"
   },
   en: {
     category: "Professional tool / iPhone",
+    wellnessCategory: "Health & balance / iPhone",
     details: "Full App Store description",
     minimumOs: "Minimum system version",
     appStore: "Open in App Store"
   },
   ru: {
     category: "Профессиональный инструмент / iPhone",
+    wellnessCategory: "Здоровье и баланс / iPhone",
     details: "Полное описание App Store",
     minimumOs: "Минимальная версия системы",
     appStore: "Открыть в App Store"
@@ -824,7 +830,7 @@ function renderPublishedApps() {
 
     const kicker = document.createElement("p");
     kicker.className = "section-kicker";
-    kicker.dataset.publishedAppLabel = "category";
+    kicker.dataset.publishedAppLabel = app.category === "wellness" ? "wellnessCategory" : "category";
 
     const title = document.createElement("h2");
     title.textContent = app.name;
@@ -908,7 +914,7 @@ renderPublishedApps();
 
 const catalogFilterButtons = document.querySelectorAll("[data-app-filter]");
 const catalogItems = document.querySelectorAll("[data-app-category]");
-const supportedCatalogFilters = ["all", "business", "language", "creative"];
+const supportedCatalogFilters = ["all", "business", "wellness", "language", "creative"];
 
 function setCatalogFilter(category) {
   const selectedCategory = supportedCatalogFilters.includes(category) ? category : "all";
