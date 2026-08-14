@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:background-remover-apps:he",
+  "title": "אפליקציות להסרת רקע",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "989920057",
+      "name": "Magic Eraser Background Editor",
+      "location": "Honk Honk Punch Pty Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/c0/8f/dec08f5a-f3f1-45e6-63db-5ffc7e130590/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Magic Eraser Background Editor מאת Honk Honk Punch Pty Ltd. צילום החנות המתוארך כולל Business, Photo & Video, גרסה 3.16.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "103.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 103.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/magic-eraser-background-editor/id989920057?uo=4"
+    },
+    {
+      "id": "1455009060",
+      "name": "Photoroom: AI Photo Editor",
+      "location": "Photoroom",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/21/ab/ab21abf8-8044-131a-ba58-8e3e8c5e364d/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Photoroom: AI Photo Editor מאת Photoroom. צילום החנות המתוארך כולל Photo & Video, Graphics & Design, גרסה 2026.33.01 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "227.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 227.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/photoroom-ai-photo-editor/id1455009060?uo=4"
+    },
+    {
+      "id": "515094775",
+      "name": "Bazaart AI Photo Editor Design",
+      "location": "Bazaart Ltd.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0e/9e/d9/0e9ed9ab-804f-1e01-2688-6b475ed8545f/Bazaart_Icon_v3-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Bazaart AI Photo Editor Design מאת Bazaart Ltd.. צילום החנות המתוארך כולל Photo & Video, Graphics & Design, גרסה 26.4.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "259.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 259.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/bazaart-ai-photo-editor-design/id515094775?uo=4"
+    },
+    {
+      "id": "1534785237",
+      "name": "Pixelcut AI Photo Editor",
+      "location": "Pixelcut Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d1/84/20/d18420b5-2c41-d86c-3182-6c42bb36dee6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Pixelcut AI Photo Editor מאת Pixelcut Inc.. צילום החנות המתוארך כולל Graphics & Design, Photo & Video, גרסה 0.46.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "217.9K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 217.9K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/pixelcut-ai-photo-editor/id1534785237?uo=4"
+    },
+    {
+      "id": "587366035",
+      "name": "Picsart AI Photo Editor, Video",
+      "location": "PicsArt, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/49/8b/55/498b55e4-7aab-ad55-b4cb-8ce68366deed/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Picsart AI Photo Editor, Video מאת PicsArt, Inc.. צילום החנות המתוארך כולל Photo & Video, Graphics & Design, גרסה 30.5.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "1.2M‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 1.2M‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/picsart-ai-photo-editor-video/id587366035?uo=4"
+    },
+    {
+      "id": "815072622",
+      "name": "Background Eraser: AI Remove",
+      "location": "SUNWOONG JANG",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/29/76/79/297679bd-f7a1-1677-a59e-99e6544d536a/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Background Eraser: AI Remove מאת SUNWOONG JANG. צילום החנות המתוארך כולל Photo & Video, Graphics & Design, גרסה 2.5.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 95/100",
+        "חינם",
+        "134K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 134K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/background-eraser-ai-remove/id815072622?uo=4"
+    },
+    {
+      "id": "944665061",
+      "name": "ProKnockOut-Cut Paste Photos",
+      "location": "RETOUCH AI PTE. LTD.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/fe/83/67fe83f1-9c94-c2b9-73e9-26f4f530c8ac/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "ProKnockOut-Cut Paste Photos מאת RETOUCH AI PTE. LTD.. צילום החנות המתוארך כולל Photo & Video, Business, גרסה 7.88 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 95/100",
+        "חינם",
+        "73.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 73.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/proknockout-cut-paste-photos/id944665061?uo=4"
+    },
+    {
+      "id": "1230394683",
+      "name": "Photo Retouch-Object Removal",
+      "location": "Shenzhen Tushi Technology Co.,Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/9f/7c/dd9f7cc5-9eb5-c209-be25-6143bfce713a/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Photo Retouch-Object Removal מאת Shenzhen Tushi Technology Co.,Ltd. צילום החנות המתוארך כולל Photo & Video, Business, גרסה 5.26 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 95/100",
+        "חינם",
+        "120.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 120.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/photo-retouch-object-removal/id1230394683?uo=4"
+    },
+    {
+      "id": "1332651082",
+      "name": "Pixomatic - AI Photo BG Eraser",
+      "location": "Mosaic S.r.l.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b9/ff/49/b9ff49db-5997-d9f0-1e23-3b2ca6d142ec/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Pixomatic - AI Photo BG Eraser מאת Mosaic S.r.l.. צילום החנות המתוארך כולל Photo & Video, Graphics & Design, גרסה 2.55.36 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "26.3K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 26.3K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/pixomatic-ai-photo-bg-eraser/id1332651082?uo=4"
+    },
+    {
+      "id": "1465934502",
+      "name": "Photo Eraser - Remove Objects",
+      "location": "AI Photo Editor Lab SRL",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/29/ed/c229ed4c-593f-c496-ff95-ed7b22a9e81a/AppIcon-0-0-1x_U007epad-0-1-0-85-220.jpeg/512x512bb.jpg",
+      "summary": "Photo Eraser - Remove Objects מאת AI Photo Editor Lab SRL. צילום החנות המתוארך כולל Photo & Video, Utilities, גרסה 3.9 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 92/100",
+        "חינם",
+        "22.2K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 22.2K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/photo-eraser-remove-objects/id1465934502?uo=4"
+    },
+    {
+      "id": "926035241",
+      "name": "Background Eraser 〜 Stickers",
+      "location": "handyCloset Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/26/7a/60/267a6094-0227-497f-1ab6-f9859d27c965/Free-AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Background Eraser 〜 Stickers מאת handyCloset Inc.. צילום החנות המתוארך כולל Photo & Video, גרסה 26.0.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 91/100",
+        "חינם",
+        "41K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 41K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/background-eraser-stickers/id926035241?uo=4"
+    },
+    {
+      "id": "1625562410",
+      "name": "Background Remover:Photoclean",
+      "location": "ahmet cetinkaya",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/28/69/47/2869476c-76f8-bc8d-cb7a-c261781a81d5/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Background Remover:Photoclean מאת ahmet cetinkaya. צילום החנות המתוארך כולל Photo & Video, Weather, גרסה 1.0 ועדכון 2022. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 59/100",
+        "חינם",
+        "2 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 2",
+        "price": "חינם",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 59,
+      "url": "https://apps.apple.com/us/app/background-remover-photoclean/id1625562410?uo=4"
+    }
+  ]
+};

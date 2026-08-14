@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:form-builder-apps:es",
+  "title": "apps para crear formularios",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1391524277",
+      "name": "Jotform - Form, Sign & Survey",
+      "location": "Jotform Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/92/37/0b/92370b65-b470-0624-50a6-6947bd597366/JF-Mobile-AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Jotform - Form, Sign & Survey, de Jotform Inc. Esta captura registra Business, Productivity, versión 3.3.13 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 97/100",
+        "Gratis",
+        "43,8 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 43,8 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/jotform-form-sign-survey/id1391524277?uo=4"
+    },
+    {
+      "id": "1544827472",
+      "name": "Forms+",
+      "location": "Amad Marwat",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4c/cd/f8/4ccdf8c7-2cee-6683-fed1-1bdb9445db70/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Forms+, de Amad Marwat. Esta captura registra Productivity, Education, versión 1.8.8 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 96/100",
+        "Gratis",
+        "44,3 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 44,3 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/forms/id1544827472?uo=4"
+    },
+    {
+      "id": "1619382448",
+      "name": "Forms for Google Docs",
+      "location": "Aurora Innovation Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/95/32/34/9532341d-0e49-d7a3-1684-4a26b75308e4/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Forms for Google Docs, de Aurora Innovation Limited. Esta captura registra Productivity, Utilities, versión 2.4.10 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 96/100",
+        "Gratis",
+        "57,1 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 57,1 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/forms-for-google-docs/id1619382448?uo=4"
+    },
+    {
+      "id": "702967051",
+      "name": "FastField: Field Service Forms",
+      "location": "FastField, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/d9/6f/4ad96ff0-56d6-0061-8409-d5bf2f308324/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "summary": "FastField: Field Service Forms, de FastField, Inc.. Esta captura registra Business, Productivity, versión 6.4.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 91/100",
+        "Gratis",
+        "16,8 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 16,8 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/fastfield-field-service-forms/id702967051?uo=4"
+    },
+    {
+      "id": "1528832508",
+      "name": "Forms for Google Forms.",
+      "location": "Niharika Jindal",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f9/80/8d/f9808db3-ddaa-e79c-721e-253cdf033dc8/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Forms for Google Forms., de Niharika Jindal. Esta captura registra Productivity, Utilities, versión 6.2.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 90/100",
+        "Gratis",
+        "5,3 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 5,3 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/forms-for-google-forms/id1528832508?uo=4"
+    },
+    {
+      "id": "6740201688",
+      "name": "Jotform Sign: eSign PDF & Docs",
+      "location": "Jotform Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/ae/4c/82ae4ce7-6614-ea43-f543-d3cbd11e9726/AppIcon-0-0-1x_U007epad-0-10-0-85-220.png/512x512bb.jpg",
+      "summary": "Jotform Sign: eSign PDF & Docs, de Jotform Inc. Esta captura registra Productivity, Business, versión 1.4.9 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 85/100",
+        "Gratis",
+        "306 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 306",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 85,
+      "url": "https://apps.apple.com/us/app/jotform-sign-esign-pdf-docs/id6740201688?uo=4"
+    },
+    {
+      "id": "805565969",
+      "name": "Zoho Forms: Build mobile forms",
+      "location": "Zoho Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5c/f4/c2/5cf4c299-1919-3e50-8341-55a97af83f29/AppIcon-0-0-1x_U007emarketing-0-9-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Zoho Forms: Build mobile forms, de Zoho Corporation. Esta captura registra Business, Productivity, versión 6.24 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 83/100",
+        "Gratis",
+        "453 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 453",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/zoho-forms-build-mobile-forms/id805565969?uo=4"
+    },
+    {
+      "id": "839543670",
+      "name": "MoreApp Forms",
+      "location": "MORE Apps B.V.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f4/09/2f/f4092fa8-c976-e21c-8b1f-ff9b3b4d031a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "MoreApp Forms, de MORE Apps B.V.. Esta captura registra Business, Productivity, versión 7.1.56 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 76/100",
+        "Gratis",
+        "23 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 23",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 76,
+      "url": "https://apps.apple.com/us/app/moreapp-forms/id839543670?uo=4"
+    },
+    {
+      "id": "6755877434",
+      "name": "Form Builder：For Google Forms",
+      "location": "Ariane Strassohn",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/cc/14/c6cc1455-58b2-d5e8-712f-b63413b88566/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Form Builder：For Google Forms, de Ariane Strassohn. Esta captura registra Utilities, Productivity, versión 6.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 74/100",
+        "Gratis",
+        "1 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 1",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/form-builder-for-google-forms/id6755877434?uo=4"
+    },
+    {
+      "id": "6740539057",
+      "name": "Jotform AI Agent & Chatbot",
+      "location": "Jotform Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a8/50/4d/a8504d7a-077d-a273-d166-c30a15d6afb2/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Jotform AI Agent & Chatbot, de Jotform Inc. Esta captura registra Business, Productivity, versión 1.3.5 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 74/100",
+        "Gratis",
+        "1 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 1",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/jotform-ai-agent-chatbot/id6740539057?uo=4"
+    },
+    {
+      "id": "1477890863",
+      "name": "forms.app: Unlimited Responses",
+      "location": "Insura Teknoloji Anonim Sirketi",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/81/2f/a4812fb0-4418-5174-b6c5-1921298916ed/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "forms.app: Unlimited Responses, de Insura Teknoloji Anonim Sirketi. Esta captura registra Productivity, Business, versión 1.4.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 71/100",
+        "Gratis",
+        "47 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.0/5 · 47",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 71,
+      "url": "https://apps.apple.com/us/app/forms-app-unlimited-responses/id1477890863?uo=4"
+    },
+    {
+      "id": "6737158154",
+      "name": "Form Builder Vendor",
+      "location": "Ethan Bonin",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/71/40/e6/7140e680-2e67-6003-9b5e-44af92cbcc93/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Form Builder Vendor, de Ethan Bonin. Esta captura registra Productivity, Utilities, versión 1.0 y actualización 2024. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 10/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 10,
+      "url": "https://apps.apple.com/us/app/form-builder-vendor/id6737158154?uo=4"
+    }
+  ]
+};

@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:digital-signature-apps:es",
+  "title": "apps de firma digital",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "474990205",
+      "name": "Docusign - Upload & Sign Docs",
+      "location": "Docusign",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/3f/36/673f3670-d88f-5f37-3311-1a62c7227d13/dsIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Docusign - Upload & Sign Docs, de Docusign. Esta captura registra Productivity, Business, versión 3.47.2 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 99/100",
+        "Gratis",
+        "822,9 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 822,9 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/docusign-upload-sign-docs/id474990205?uo=4"
+    },
+    {
+      "id": "381786507",
+      "name": "Signeasy: Sign PDF Documents",
+      "location": "Glykka LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/16/98/d1/1698d12b-b12f-32f3-f394-a16fc8873a2d/Signeasy_icon-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Signeasy: Sign PDF Documents, de Glykka LLC. Esta captura registra Productivity, Business, versión 19.0.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 96/100",
+        "Gratis",
+        "34 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 34 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/signeasy-sign-pdf-documents/id381786507?uo=4"
+    },
+    {
+      "id": "1306571435",
+      "name": "Signature Maker & Esign Now",
+      "location": "Loyal Foundry, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/ee/a6/c4eea625-7b81-ec45-ec3a-e42b94cd6d66/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Signature Maker & Esign Now, de Loyal Foundry, Inc.. Esta captura registra Productivity, Business, versión 12.6.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 91/100",
+        "Gratis",
+        "10 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 10 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/signature-maker-esign-now/id1306571435?uo=4"
+    },
+    {
+      "id": "489262811",
+      "name": "SignNow: e-Signature app",
+      "location": "airSlate, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e9/fd/54/e9fd54f0-c974-8ce8-a6d6-e78d02838f2e/AppIcon-0-0-1x_U007emarketing-0-11-0-0-GLES2_U002c0-85-220.png/512x512bb.jpg",
+      "summary": "SignNow: e-Signature app, de airSlate, Inc.. Esta captura registra Productivity, Utilities, versión 15.27.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 90/100",
+        "Gratis",
+        "17,8 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 17,8 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/signnow-e-signature-app/id489262811?uo=4"
+    },
+    {
+      "id": "1502608223",
+      "name": "e Signature Scanner, Sign PDF",
+      "location": "Profuse SRL",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/27/d6/8f/27d68fa5-a252-66e7-e254-eee254d1fc5f/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "e Signature Scanner, Sign PDF, de Profuse SRL. Esta captura registra Business, Utilities, versión 2.0.5 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 86/100",
+        "Gratis",
+        "2 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 2 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/e-signature-scanner-sign-pdf/id1502608223?uo=4"
+    },
+    {
+      "id": "1361059450",
+      "name": "Fill and Sign Documents: eSign",
+      "location": "Maplewoods Associates Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/02/01/6a02013c-5146-6bf9-1a0e-af5439a60694/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Fill and Sign Documents: eSign, de Maplewoods Associates Ltd. Esta captura registra Productivity, Business, versión 2.49.4 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 85/100",
+        "Gratis",
+        "4,9 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 4,9 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 85,
+      "url": "https://apps.apple.com/us/app/fill-and-sign-documents-esign/id1361059450?uo=4"
+    },
+    {
+      "id": "6749570001",
+      "name": "eSign: Digital & Signature App",
+      "location": "Digital Gully LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/b5/03/4db50378-e56c-777e-d548-a12716809e98/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.jpg",
+      "summary": "eSign: Digital & Signature App, de Digital Gully LLC. Esta captura registra Utilities, Business, versión 1.1.6 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 80/100",
+        "Gratis",
+        "70 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 70",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/esign-digital-signature-app/id6749570001?uo=4"
+    },
+    {
+      "id": "1470646598",
+      "name": "Signature-App",
+      "location": "TITANO DIGITAL TEKNOLOJI LIMITED SIRKETI",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/fb/c8/ca/fbc8cab5-6c75-8b88-6ec5-da92da096b57/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.jpeg/512x512bb.jpg",
+      "summary": "Signature-App, de TITANO DIGITAL TEKNOLOJI LIMITED SIRKETI. Esta captura registra Business, Productivity, versión 1.7.1 y actualización 2024. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 71/100",
+        "Gratis",
+        "2,6 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 2,6 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 71,
+      "url": "https://apps.apple.com/us/app/signature-app/id1470646598?uo=4"
+    },
+    {
+      "id": "1462523696",
+      "name": "Digital signature creator",
+      "location": "Softuvo Solutions Private Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/3f/12/93/3f12932b-2c63-92bb-5486-695ddae6adfe/AppIcon-0-1x_U007emarketing-0-0-85-220-5.png/512x512bb.jpg",
+      "summary": "Digital signature creator, de Softuvo Solutions Private Limited. Esta captura registra Utilities, Photo & Video, versión 1.0 y actualización 2019. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 57/100",
+        "Gratis",
+        "4 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 4",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 8.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 57,
+      "url": "https://apps.apple.com/us/app/digital-signature-creator/id1462523696?uo=4"
+    },
+    {
+      "id": "1430745510",
+      "name": "Digital Signature App",
+      "location": "Qrioustech Team LLP",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/93/96/9a/93969a01-d0c1-6176-ab73-41cea31bea5d/AppIcon-1x_U007emarketing-85-220-0-9.png/512x512bb.jpg",
+      "summary": "Digital Signature App, de Qrioustech Team LLP. Esta captura registra Productivity, versión 1.0 y actualización 2018. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 49/100",
+        "Gratis",
+        "10 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "3.8/5 · 10",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 9.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 49,
+      "url": "https://apps.apple.com/us/app/digital-signature-app/id1430745510?uo=4"
+    },
+    {
+      "id": "6448913344",
+      "name": "Digital Signature Offline",
+      "location": "Muhammad Tanweer",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d8/2a/10/d82a1063-9fb2-33f4-1704-f4637f89d1b6/AppIcon-1x_U007emarketing-0-7-0-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Digital Signature Offline, de Muhammad Tanweer. Esta captura registra Utilities, versión 1.5 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 10/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 10,
+      "url": "https://apps.apple.com/us/app/digital-signature-offline/id6448913344?uo=4"
+    },
+    {
+      "id": "1465067982",
+      "name": "Signature On Glass",
+      "location": "Auto-IT Australia Pty Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a3/a4/e0/a3a4e056-a794-7491-feb6-be0cc94ee58a/AppIcon-0-0-1x_U007epad-0-85-220.png/512x512bb.jpg",
+      "summary": "Signature On Glass, de Auto-IT Australia Pty Ltd. Esta captura registra Business, Productivity, versión 2.0.0 y actualización 2024. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 10/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 10,
+      "url": "https://apps.apple.com/us/app/signature-on-glass/id1465067982?uo=4"
+    }
+  ]
+};

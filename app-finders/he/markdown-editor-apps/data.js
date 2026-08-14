@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:markdown-editor-apps:he",
+  "title": "אפליקציות לעריכת Markdown",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1236254471",
+      "name": "Drafts",
+      "location": "Agile Tortoise",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/53/70/675370de-b810-6723-3202-3c5b92374c47/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Drafts מאת Agile Tortoise. צילום החנות המתוארך כולל Productivity, Business, גרסה 53.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 92/100",
+        "חינם",
+        "10.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 10.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/drafts/id1236254471?uo=4"
+    },
+    {
+      "id": "1016366447",
+      "name": "Bear - Markdown Notes",
+      "location": "Shiny Frog Ltd.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/fb/71/8dfb71c1-1066-5ac5-3a66-23a1d6f23b29/AppIcon-26-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Bear - Markdown Notes מאת Shiny Frog Ltd.. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 2.9.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 90/100",
+        "חינם",
+        "6.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 6.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/bear-markdown-notes/id1016366447?uo=4"
+    },
+    {
+      "id": "1352499399",
+      "name": "Microsoft Whiteboard",
+      "location": "Microsoft Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/e5/52/86e55205-e601-ba1d-4e75-4f4d8a708496/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Microsoft Whiteboard מאת Microsoft Corporation. צילום החנות המתוארך כולל Productivity, גרסה 25.11204.0.9201 ועדכון 2025. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 87/100",
+        "חינם",
+        "12.1K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 12.1K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399?uo=4"
+    },
+    {
+      "id": "1557175442",
+      "name": "Obsidian - Connected Notes",
+      "location": "Dynalist Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2c/d7/f7/2cd7f7ce-eaae-c08b-5765-a1a30034d6b4/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Obsidian - Connected Notes מאת Dynalist Inc.. צילום החנות המתוארך כולל Productivity, Reference, גרסה 1.13.6 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 86/100",
+        "חינם",
+        "2.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 2.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/obsidian-connected-notes/id1557175442?uo=4"
+    },
+    {
+      "id": "1548193893",
+      "name": "Runestone Text Editor",
+      "location": "Simon Stovring",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f4/a1/e9/f4a1e9ed-5d45-74ce-79cf-1aed5c0e3cc0/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Runestone Text Editor מאת Simon Stovring. צילום החנות המתוארך כולל Developer Tools, גרסה 1.6.1 ועדכון 2025. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 84/100",
+        "חינם",
+        "1.9K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 1.9K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 84,
+      "url": "https://apps.apple.com/us/app/runestone-text-editor/id1548193893?uo=4"
+    },
+    {
+      "id": "1507139439",
+      "name": "One Markdown",
+      "location": "禄海 区",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/be/a4/ffbea406-b8a6-14b9-21ed-7dabf2c131c4/OneMarkdown-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "One Markdown מאת 禄海 区. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.6.7 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 80/100",
+        "חינם",
+        "144 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 144",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/one-markdown/id1507139439?uo=4"
+    },
+    {
+      "id": "1606625287",
+      "name": "Subtext",
+      "location": "Nick Lockwood",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/60/1b/d0601b61-3c89-aadf-c771-689abde4fded/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Subtext מאת Nick Lockwood. צילום החנות המתוארך כולל Developer Tools, Utilities, גרסה 1.2.4 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 77/100",
+        "חינם",
+        "74 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 74",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 77,
+      "url": "https://apps.apple.com/us/app/subtext/id1606625287?uo=4"
+    },
+    {
+      "id": "6761887912",
+      "name": "Notelane - Markdown Editor",
+      "location": "Asterios Digital GmbH",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/2e/14/fa2e14d2-4d08-0c86-5e00-5200f25db5eb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Notelane - Markdown Editor מאת Asterios Digital GmbH. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.2.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 76/100",
+        "חינם",
+        "4 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 4",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 76,
+      "url": "https://apps.apple.com/us/app/notelane-markdown-editor/id6761887912?uo=4"
+    },
+    {
+      "id": "6769123480",
+      "name": "Marked — Markdown Editor",
+      "location": "TREZE MARKETING SOCIEDAD LIMITADA",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e3/ab/86/e3ab866c-ac35-5d03-c3ea-31d14758834c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Marked — Markdown Editor מאת TREZE MARKETING SOCIEDAD LIMITADA. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 75/100",
+        "חינם",
+        "2 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 2",
+        "price": "חינם",
+        "system": "iOS/iPadOS 26.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/marked-markdown-editor/id6769123480?uo=4"
+    },
+    {
+      "id": "6444049843",
+      "name": "Simple Markdown Editor",
+      "location": "YUKI TANAIKE",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7d/4a/2d/7d4a2dbd-29d2-6726-2dc5-3b43fd9519a5/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Simple Markdown Editor מאת YUKI TANAIKE. צילום החנות המתוארך כולל Utilities, Developer Tools, גרסה 2.0.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 75/100",
+        "חינם",
+        "3 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 3",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/simple-markdown-editor/id6444049843?uo=4"
+    },
+    {
+      "id": "1494902837",
+      "name": "Markdown゜",
+      "location": "Teleprompter LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/d5/1b/8c/d51b8c32-5079-f9d7-5916-4fd979bd2aef/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "Markdown゜ מאת Teleprompter LLC. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.0.3 ועדכון 2020. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 66/100",
+        "חינם",
+        "470 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 470",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 66,
+      "url": "https://apps.apple.com/us/app/markdown/id1494902837?uo=4"
+    },
+    {
+      "id": "1594063100",
+      "name": "Markcurial: Markdown Editor",
+      "location": "Charles Fager",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/72/35/41/72354198-e898-c6a4-f158-642cf50bc6b2/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "Markcurial: Markdown Editor מאת Charles Fager. צילום החנות המתוארך כולל Productivity, Developer Tools, גרסה 1.2 ועדכון 2022. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 61/100",
+        "חינם",
+        "11 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 11",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 61,
+      "url": "https://apps.apple.com/us/app/markcurial-markdown-editor/id1594063100?uo=4"
+    }
+  ]
+};

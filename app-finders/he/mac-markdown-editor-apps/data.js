@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:mac-markdown-editor-apps:he",
+  "title": "אפליקציות Markdown ל-Mac",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1507139439",
+      "name": "One Markdown",
+      "location": "禄海 区",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/be/a4/ffbea406-b8a6-14b9-21ed-7dabf2c131c4/OneMarkdown-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "One Markdown מאת 禄海 区. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.6.7 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 80/100",
+        "חינם",
+        "144 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 144",
+        "price": "חינם",
+        "system": "macOS 14.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/one-markdown/id1507139439?uo=4"
+    },
+    {
+      "id": "6578456621",
+      "name": "Markdown Editor for Safari",
+      "location": "Coffee & Fun LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bc/2d/ea/bc2dea4e-ee2b-a4e7-aef1-d625068b249b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Markdown Editor for Safari מאת Coffee & Fun LLC. צילום החנות המתוארך כולל Developer Tools, Productivity, גרסה 2.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 74/100",
+        "בתשלום",
+        "1 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 1",
+        "price": "$2.99",
+        "system": "macOS 15.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 2.99,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/markdown-editor-for-safari/id6578456621?uo=4"
+    },
+    {
+      "id": "6736839987",
+      "name": "Editor - Markdown Notes",
+      "location": "Constellation Corp Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/75/a0/53/75a05334-0f72-c675-f829-dd39600c2026/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Editor - Markdown Notes מאת Constellation Corp Ltd. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 62/100",
+        "חינם",
+        "3 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "3.7/5 · 3",
+        "price": "חינם",
+        "system": "macOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 62,
+      "url": "https://apps.apple.com/us/app/editor-markdown-notes/id6736839987?uo=4"
+    },
+    {
+      "id": "1091189122",
+      "name": "Bear: Markdown Notes",
+      "location": "Shiny Frog Ltd.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/aa/a9/3d/aaa93dd5-8bdf-acf9-4b2b-038dd0edf151/AppIcon-26-0-0-85-220-0-0-6-0-2x-0-0-0.png/512x512bb.png",
+      "summary": "Bear: Markdown Notes מאת Shiny Frog Ltd.. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 2.9.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "macOS 12.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/bear-markdown-notes/id1091189122?mt=12&uo=4"
+    },
+    {
+      "id": "6775062589",
+      "name": "Markdown Editor: Linen",
+      "location": "Ctrl Alt Go Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/5d/27/2a5d279f-40c5-6aa2-fd92-48c05087d95b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Markdown Editor: Linen מאת Ctrl Alt Go Ltd. צילום החנות המתוארך כולל Utilities, Productivity, גרסה 1.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "macOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/markdown-editor-linen/id6775062589?uo=4"
+    },
+    {
+      "id": "6761522003",
+      "name": "Notes — Markdown Editor",
+      "location": "Nhat Dinh",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/68/9d/2f/689d2f74-b76f-5388-6b78-2e2f633f3384/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Notes — Markdown Editor מאת Nhat Dinh. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.13.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "בתשלום",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "$9.99",
+        "system": "macOS 18.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 9.99,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/notes-markdown-editor/id6761522003?uo=4"
+    },
+    {
+      "id": "6772566977",
+      "name": "Quirely Markdowns Editor",
+      "location": "Reggie Fisher",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/a8/05/11a8053b-698a-f30d-16ae-7f4513c818cb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Quirely Markdowns Editor מאת Reggie Fisher. צילום החנות המתוארך כולל Productivity, גרסה 1.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "macOS 26.2+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/quirely-markdowns-editor/id6772566977?uo=4"
+    },
+    {
+      "id": "6757132489",
+      "name": "Marky Mark Markdown Editor",
+      "location": "4Utopia, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c6/cb/40/c6cb402d-7626-c02c-ddf5-88cd3c018683/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Marky Mark Markdown Editor מאת 4Utopia, Inc.. צילום החנות המתוארך כולל Developer Tools, Productivity, גרסה 1.0.5 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "בתשלום",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "$4.99",
+        "system": "macOS 13.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 4.99,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/marky-mark-markdown-editor/id6757132489?uo=4"
+    },
+    {
+      "id": "6775708874",
+      "name": "HipMark - Markdown Editor",
+      "location": "力 程",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d7/33/92/d7339259-d312-aab0-d549-023b67efea83/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "HipMark - Markdown Editor מאת 力 程. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.1.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "macOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/hipmark-markdown-editor/id6775708874?uo=4"
+    },
+    {
+      "id": "6781877496",
+      "name": "QingMo - Markdown Editor",
+      "location": "兆卓 张",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a2/71/70/a2717040-38fb-af08-9220-b721dce10ba8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "QingMo - Markdown Editor מאת 兆卓 张. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.0.4 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "macOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/qingmo-markdown-editor/id6781877496?uo=4"
+    },
+    {
+      "id": "6762869045",
+      "name": "Margo: Markdown Editor",
+      "location": "Marco Tini",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/a2/11/4ca211d4-74e2-1cf2-3cc1-a7ce9b72384c/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Margo: Markdown Editor מאת Marco Tini. צילום החנות המתוארך כולל Productivity, Developer Tools, גרסה 1.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "בתשלום",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "$19.99",
+        "system": "macOS 17.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 19.99,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/margo-markdown-editor/id6762869045?uo=4"
+    },
+    {
+      "id": "1458220908",
+      "name": "Markdown Editor",
+      "location": "Satoshi Iwaki",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/dd/ed/3a/dded3a7c-73b1-47e6-0ce4-ad9321be6d84/AppIcon-0-0-85-220-0-0-0-0-4-0-0-0-2x-P3-0-0-0-0-0.png/512x512bb.png",
+      "summary": "Markdown Editor מאת Satoshi Iwaki. צילום החנות המתוארך כולל Productivity, Developer Tools, גרסה 1.5.0 ועדכון 2021. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 4/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "macOS 10.13+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 4,
+      "url": "https://apps.apple.com/us/app/markdown-editor/id1458220908?mt=12&uo=4"
+    }
+  ]
+};

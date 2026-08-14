@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:ai-writing-apps:he",
+  "title": "אפליקציות AI לכתיבה",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "6448311069",
+      "name": "ChatGPT",
+      "location": "OpenAI OpCo, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/af/5b/dc/af5bdcf7-7eb9-b981-88b3-1014de5b987a/AppIcon-0-0-1x_U007epad-0-0-0-1-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "ChatGPT מאת OpenAI OpCo, LLC. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.2026.209 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "9.3M‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 9.3M‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4"
+    },
+    {
+      "id": "6473753684",
+      "name": "Claude by Anthropic",
+      "location": "Anthropic PBC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/09/42/1c09427f-e3f5-4b9a-4e64-03ca2689d2b6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Claude by Anthropic מאת Anthropic PBC. צילום החנות המתוארך כולל Productivity, Business, גרסה 1.260813.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "228.2K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 228.2K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4"
+    },
+    {
+      "id": "6477489729",
+      "name": "Google Gemini",
+      "location": "Google LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/16/af/44/16af4490-5928-e166-a715-c93fb1d71685/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Google Gemini מאת Google LLC. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.2026.3170610 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "2.1M‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 2.1M‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/google-gemini/id6477489729?uo=4"
+    },
+    {
+      "id": "1158877342",
+      "name": "Grammarly: AI Keyboard & Notes",
+      "location": "Superhuman Platform Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/5e/e7/125ee72f-2b37-3e8a-39a0-7cd09fc50f31/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Grammarly: AI Keyboard & Notes מאת Superhuman Platform Inc. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 13.2.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 96/100",
+        "חינם",
+        "221.1K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 221.1K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/grammarly-ai-keyboard-notes/id1158877342?uo=4"
+    },
+    {
+      "id": "1639845219",
+      "name": "AI Writer: Email Letter Essay",
+      "location": "Tuling Network Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/4b/20/e14b2088-a1de-a399-d40b-eb67b9fa2e3d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "AI Writer: Email Letter Essay מאת Tuling Network Limited. צילום החנות המתוארך כולל Reference, Productivity, גרסה 16.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 91/100",
+        "חינם",
+        "6.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 6.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/ai-writer-email-letter-essay/id1639845219?uo=4"
+    },
+    {
+      "id": "489746330",
+      "name": "Werdsmith: Writing App",
+      "location": "Werdsmith Pty Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/ee/5d/bfee5dd0-4d94-4e43-fff4-71a116855c57/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Werdsmith: Writing App מאת Werdsmith Pty Ltd. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 6.5.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 90/100",
+        "חינם",
+        "8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/werdsmith-writing-app/id489746330?uo=4"
+    },
+    {
+      "id": "1660877567",
+      "name": "Chat AI - Ask Anything",
+      "location": "ElevenThirteen LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/49/b6/2d49b636-076d-734d-a78c-b52f5c2c3c0d/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Chat AI - Ask Anything מאת ElevenThirteen LLC. צילום החנות המתוארך כולל Productivity, Reference, גרסה 1.9 ועדכון 2024. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 88/100",
+        "חינם",
+        "130K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 130K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/chat-ai-ask-anything/id1660877567?uo=4"
+    },
+    {
+      "id": "1670723178",
+      "name": "Author AI: Book Creator",
+      "location": "Murphy Brantley",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/0c/d3/790cd3ae-43b4-930b-81cb-990b0f0bbcf7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Author AI: Book Creator מאת Murphy Brantley. צילום החנות המתוארך כולל Utilities, Books, גרסה 3.8.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 87/100",
+        "חינם",
+        "3.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 3.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/author-ai-book-creator/id1670723178?uo=4"
+    },
+    {
+      "id": "1361725141",
+      "name": "MyStory.today",
+      "location": "Richard Nespithal",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6b/2d/dc/6b2ddc03-20a9-01ee-4727-2ca1b229828c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "MyStory.today מאת Richard Nespithal. צילום החנות המתוארך כולל Productivity, גרסה 1.38.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 86/100",
+        "חינם",
+        "2.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 2.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/mystory-today/id1361725141?uo=4"
+    },
+    {
+      "id": "6740884542",
+      "name": "Sudowrite - AI Novel Writing",
+      "location": "Human Plus Plus, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f7/8f/d3/f78fd317-8556-7fce-ce8f-8f60dc50cdb8/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Sudowrite - AI Novel Writing מאת Human Plus Plus, Inc.. צילום החנות המתוארך כולל Utilities, Books, גרסה 2026.30.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 81/100",
+        "חינם",
+        "356 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 356",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 81,
+      "url": "https://apps.apple.com/us/app/sudowrite-ai-novel-writing/id6740884542?uo=4"
+    },
+    {
+      "id": "6737175869",
+      "name": "AI Story Generator - InkPal",
+      "location": "Lubo Shang",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/cf/75/c9cf75f2-a528-5b96-21cc-913cadb30538/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "AI Story Generator - InkPal מאת Lubo Shang. צילום החנות המתוארך כולל Utilities, Lifestyle, גרסה 3.16 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 78/100",
+        "חינם",
+        "330 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.2/5 · 330",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 78,
+      "url": "https://apps.apple.com/us/app/ai-story-generator-inkpal/id6737175869?uo=4"
+    },
+    {
+      "id": "6751134683",
+      "name": "AI Writing - WritePilot",
+      "location": "Subhan Dastgeer",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2e/bf/e2/2ebfe299-81f2-d63e-f4dc-4a2c7bf370f0/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "AI Writing - WritePilot מאת Subhan Dastgeer. צילום החנות המתוארך כולל Productivity, גרסה 1.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 75/100",
+        "חינם",
+        "11 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 11",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/ai-writing-writepilot/id6751134683?uo=4"
+    }
+  ]
+};

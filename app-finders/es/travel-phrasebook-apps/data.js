@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:travel-phrasebook-apps:es",
+  "title": "apps de frases para viajar",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "419309804",
+      "name": "Learn Thai -Travel Phrasebook",
+      "location": "Webron Software LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/92/8a/91/928a9155-a7ec-9ce3-811c-ceabdc5d18d8/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Learn Thai -Travel Phrasebook, de Webron Software LTD. Esta captura registra Education, Travel, versión 6.1.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 84/100",
+        "Gratis",
+        "560 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 560",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.2+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 84,
+      "url": "https://apps.apple.com/us/app/learn-thai-travel-phrasebook/id419309804?uo=4"
+    },
+    {
+      "id": "1036192034",
+      "name": "Loecsen Travel Phrasebook",
+      "location": "Studio Loecsen",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/54/c2/2a/54c22abe-d36d-6139-b53a-c51185986d73/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Loecsen Travel Phrasebook, de Studio Loecsen. Esta captura registra Education, Travel, versión 3.1.4 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 83/100",
+        "Gratis",
+        "248 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 248",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/loecsen-travel-phrasebook/id1036192034?uo=4"
+    },
+    {
+      "id": "654949336",
+      "name": "Learn Arabic Travel Phrasebook",
+      "location": "Webron Software LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/8e/79/2d8e79a4-f59a-5f97-cf73-1d50a36717ec/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Learn Arabic Travel Phrasebook, de Webron Software LTD. Esta captura registra Travel, Education, versión 2.8 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 73/100",
+        "Gratis",
+        "29 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 29",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 73,
+      "url": "https://apps.apple.com/us/app/learn-arabic-travel-phrasebook/id654949336?uo=4"
+    },
+    {
+      "id": "450181262",
+      "name": "Travel Phrasebook | Translator",
+      "location": "Bravolol Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/6c/a9/d8/6ca9d8d5-b59f-fb99-1c47-54dd965f17e7/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "Travel Phrasebook | Translator, de Bravolol Limited. Esta captura registra Education, Reference, versión 18.0 y actualización 2023. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 69/100",
+        "Gratis",
+        "809 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 809",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 69,
+      "url": "https://apps.apple.com/us/app/travel-phrasebook-translator/id450181262?uo=4"
+    },
+    {
+      "id": "1141889872",
+      "name": "Simply Learn Mexican Spanish - Travel Phrasebook",
+      "location": "Syla Technologies LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple19/v4/b2/2d/bb/b22dbb05-0171-9e5f-bc20-33cf614daede/pr_source.png/512x512bb.jpg",
+      "summary": "Simply Learn Mexican Spanish - Travel Phrasebook, de Syla Technologies LLC. Esta captura registra Education, Travel, versión 1.1.2 y actualización 2017. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 60/100",
+        "Gratis",
+        "21 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 21",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 9.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 60,
+      "url": "https://apps.apple.com/us/app/simply-learn-mexican-spanish-travel-phrasebook/id1141889872?uo=4"
+    },
+    {
+      "id": "1141892177",
+      "name": "Simply Learn French : Travel Phrasebook For France",
+      "location": "Syla Technologies LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple127/v4/f6/9d/80/f69d8036-f372-bcef-9812-1869fdb22c8b/pr_source.png/512x512bb.jpg",
+      "summary": "Simply Learn French : Travel Phrasebook For France, de Syla Technologies LLC. Esta captura registra Education, Travel, versión 1.1.2 y actualización 2017. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 59/100",
+        "Gratis",
+        "2 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 2",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 9.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 59,
+      "url": "https://apps.apple.com/us/app/simply-learn-french-travel-phrasebook-for-france/id1141892177?uo=4"
+    },
+    {
+      "id": "519750143",
+      "name": "Portuguese Travel Phrasebook",
+      "location": "Danilo Cimino",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/99/57/cd/9957cd8d-3e9d-9ee7-31ff-ca60931c7af0/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Portuguese Travel Phrasebook, de Danilo Cimino. Esta captura registra Travel, Books, versión 20 y actualización 2023. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 58/100",
+        "Gratis",
+        "34 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 34",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 58,
+      "url": "https://apps.apple.com/us/app/portuguese-travel-phrasebook/id519750143?uo=4"
+    },
+    {
+      "id": "403927809",
+      "name": "Speak Thai Travel Phrasebook",
+      "location": "Ryan Zander",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/d7/96/6b/d7966b1d-1631-6bc8-af40-135fd6c18377/AppIcon-0-1x_U007emarketing-0-85-220-7.png/512x512bb.jpg",
+      "summary": "Speak Thai Travel Phrasebook, de Ryan Zander. Esta captura registra Travel, Education, versión 3.0 y actualización 2019. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 57/100",
+        "De pago",
+        "4 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 4",
+        "price": "$2.99",
+        "system": "iOS/iPadOS 8.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 2.99,
+      "score": 57,
+      "url": "https://apps.apple.com/us/app/speak-thai-travel-phrasebook/id403927809?uo=4"
+    },
+    {
+      "id": "523049301",
+      "name": "Hungarian Travel Phrasebook",
+      "location": "Danilo Cimino",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/6d/58/c8/6d58c8ac-62dd-344f-070b-eaf0068a899b/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Hungarian Travel Phrasebook, de Danilo Cimino. Esta captura registra Travel, Books, versión 19 y actualización 2022. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 54/100",
+        "Gratis",
+        "28 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.0/5 · 28",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 54,
+      "url": "https://apps.apple.com/us/app/hungarian-travel-phrasebook/id523049301?uo=4"
+    },
+    {
+      "id": "6689492949",
+      "name": "Travel Phrasebook - Phrase Log",
+      "location": "Martins Svikkalns",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ec/19/fb/ec19fb3e-836e-b991-c23f-74142a24d83c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Travel Phrasebook - Phrase Log, de Martins Svikkalns. Esta captura registra Travel, Education, versión 1.4 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 49/100",
+        "Gratis",
+        "1 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "3.0/5 · 1",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 49,
+      "url": "https://apps.apple.com/us/app/travel-phrasebook-phrase-log/id6689492949?uo=4"
+    },
+    {
+      "id": "6738938534",
+      "name": "Travel Phrasebook - LingoDeck",
+      "location": "Temno Modro d.o.o.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e9/f5/eb/e9f5eb25-f42c-f6f1-8737-12ca99073a99/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Travel Phrasebook - LingoDeck, de Temno Modro d.o.o.. Esta captura registra Education, Travel, versión 1.0.4 y actualización 2024. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 10/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 10,
+      "url": "https://apps.apple.com/us/app/travel-phrasebook-lingodeck/id6738938534?uo=4"
+    },
+    {
+      "id": "6746075785",
+      "name": "Portugal Travel Phrasebook",
+      "location": "Youla Lee",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/90/97/cf9097e2-be7e-17c2-2bf4-f780ba9d9dd2/AppIcon-1x_U007emarketing-0-8-0-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Portugal Travel Phrasebook, de Youla Lee. Esta captura registra Travel, Education, versión 1.0 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 10/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 10,
+      "url": "https://apps.apple.com/us/app/portugal-travel-phrasebook/id6746075785?uo=4"
+    }
+  ]
+};

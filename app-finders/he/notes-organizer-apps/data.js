@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:notes-organizer-apps:he",
+  "title": "אפליקציות לארגון פתקים",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1232780281",
+      "name": "Notion: Notes, Tasks, AI",
+      "location": "Notion Labs, Incorporated",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/76/97/e3/7697e332-7885-3267-2532-45f529da9994/AppIconProd-0-0-1x_U007epad-0-0-0-1-0-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "Notion: Notes, Tasks, AI מאת Notion Labs, Incorporated. צילום החנות המתוארך כולל Productivity, Business, גרסה 1.7.328 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "89.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 89.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4"
+    },
+    {
+      "id": "1444383602",
+      "name": "Goodnotes: AI Notes, Docs, PDF",
+      "location": "Goodnotes Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/0e/06/ea0e06be-bde7-e5e5-1a8a-fc29c5099de9/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Goodnotes: AI Notes, Docs, PDF מאת Goodnotes Limited. צילום החנות המתוארך כולל Productivity, Education, גרסה 7.1.12 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "440.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 440.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602?uo=4"
+    },
+    {
+      "id": "410395246",
+      "name": "Microsoft OneNote",
+      "location": "Microsoft Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/77/10/5f771049-91c6-88b3-f934-13fb56ce4aa0/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Microsoft OneNote מאת Microsoft Corporation. צילום החנות המתוארך כולל Productivity, Education, גרסה 16.112.4 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "1.1M‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 1.1M‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/microsoft-onenote/id410395246?uo=4"
+    },
+    {
+      "id": "1110145109",
+      "name": "Notes",
+      "location": "Apple Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/96/85/52/96855209-27d3-bfb0-0516-105a2223ef50/notes-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Notes מאת Apple Inc.. צילום החנות המתוארך כולל Productivity, גרסה 2.0 ועדכון 2025. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 94/100",
+        "חינם",
+        "625.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 625.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 10.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/notes/id1110145109?uo=4"
+    },
+    {
+      "id": "281796108",
+      "name": "Evernote: AI Notes & Notebook",
+      "location": "Evernote Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/2b/95/2c2b95e5-53ad-2324-9ad7-0aaad40f7894/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Evernote: AI Notes & Notebook מאת Evernote Corporation. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 11.29.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "77K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 77K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/evernote-ai-notes-notebook/id281796108?uo=4"
+    },
+    {
+      "id": "1029207872",
+      "name": "Google Keep - Notes and lists",
+      "location": "Google LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/aa/dd/96/aadd9635-aa90-65a7-9e89-f0d59bc7e235/keep_2026_ios-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Google Keep - Notes and lists מאת Google LLC. צילום החנות המתוארך כולל Productivity, Business, גרסה 2.2026.32101 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "29K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 29K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/google-keep-notes-and-lists/id1029207872?uo=4"
+    },
+    {
+      "id": "973801089",
+      "name": "Notebook – Notes, Notepad",
+      "location": "Zoho Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/87/8f/41878f9b-7609-5a17-bfc6-14c6c9defd5f/AppIcon_Linism_Light-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Notebook – Notes, Notepad מאת Zoho Corporation. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 6.8.37 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "23.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 23.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/notebook-notes-notepad/id973801089?uo=4"
+    },
+    {
+      "id": "551139514",
+      "name": "Workflowy: Note, List, Outline",
+      "location": "FunRoutine INC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e3/25/0c/e3250cf6-27b6-ce98-f06d-0f537842575f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Workflowy: Note, List, Outline מאת FunRoutine INC. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 4.3.2608101547 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 92/100",
+        "חינם",
+        "8.2K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 8.2K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/workflowy-note-list-outline/id551139514?uo=4"
+    },
+    {
+      "id": "1207183021",
+      "name": "Simple Notepad -BestNote-",
+      "location": "Daikuzono Takuma",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/85/01/108501c4-71f5-f302-cf4e-93bc4cb605cc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Simple Notepad -BestNote- מאת Daikuzono Takuma. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 3.3.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 88/100",
+        "חינם",
+        "2.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 2.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/simple-notepad-bestnote/id1207183021?uo=4"
+    },
+    {
+      "id": "6450029780",
+      "name": "EasyNotes - Note Taking Apps",
+      "location": "Gulooloo Tech Co., Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/f2/d7/c3f2d75e-8509-064e-3600-0f02adcb99ec/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "EasyNotes - Note Taking Apps מאת Gulooloo Tech Co., Limited. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.1.34 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 88/100",
+        "חינם",
+        "3.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 3.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/easynotes-note-taking-apps/id6450029780?uo=4"
+    },
+    {
+      "id": "1457937396",
+      "name": "Simple Notes - Notepad Manager",
+      "location": "Komorebi Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/af/ca/ac/afcaac1c-9248-0207-7fda-4a88a96939d7/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Simple Notes - Notepad Manager מאת Komorebi Inc.. צילום החנות המתוארך כולל Productivity, Education, גרסה 4.1.0 ועדכון 2025. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 82/100",
+        "חינם",
+        "791 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 791",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 82,
+      "url": "https://apps.apple.com/us/app/simple-notes-notepad-manager/id1457937396?uo=4"
+    },
+    {
+      "id": "6443648972",
+      "name": "Orca: Categorize Your Notes",
+      "location": "Cole Horvitz",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/3e/ec/43/3eec4331-ccac-5b15-ceb3-3be13785d36d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Orca: Categorize Your Notes מאת Cole Horvitz. צילום החנות המתוארך כולל Productivity, Lifestyle, גרסה 1.0 ועדכון 2022. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 60/100",
+        "חינם",
+        "4 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 4",
+        "price": "חינם",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 60,
+      "url": "https://apps.apple.com/us/app/orca-categorize-your-notes/id6443648972?uo=4"
+    }
+  ]
+};

@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:ai-writing-apps:es",
+  "title": "apps de escritura con IA",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "6448311069",
+      "name": "ChatGPT",
+      "location": "OpenAI OpCo, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/af/5b/dc/af5bdcf7-7eb9-b981-88b3-1014de5b987a/AppIcon-0-0-1x_U007epad-0-0-0-1-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "ChatGPT, de OpenAI OpCo, LLC. Esta captura registra Productivity, Utilities, versión 1.2026.209 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 98/100",
+        "Gratis",
+        "9,3 M volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 9,3 M",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/chatgpt/id6448311069?uo=4"
+    },
+    {
+      "id": "6473753684",
+      "name": "Claude by Anthropic",
+      "location": "Anthropic PBC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1c/09/42/1c09427f-e3f5-4b9a-4e64-03ca2689d2b6/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Claude by Anthropic, de Anthropic PBC. Esta captura registra Productivity, Business, versión 1.260813.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 97/100",
+        "Gratis",
+        "228,2 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 228,2 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4"
+    },
+    {
+      "id": "6477489729",
+      "name": "Google Gemini",
+      "location": "Google LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/16/af/44/16af4490-5928-e166-a715-c93fb1d71685/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Google Gemini, de Google LLC. Esta captura registra Productivity, Utilities, versión 1.2026.3170610 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 97/100",
+        "Gratis",
+        "2,1 M volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 2,1 M",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/google-gemini/id6477489729?uo=4"
+    },
+    {
+      "id": "1158877342",
+      "name": "Grammarly: AI Keyboard & Notes",
+      "location": "Superhuman Platform Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/5e/e7/125ee72f-2b37-3e8a-39a0-7cd09fc50f31/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Grammarly: AI Keyboard & Notes, de Superhuman Platform Inc. Esta captura registra Productivity, Utilities, versión 13.2.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 96/100",
+        "Gratis",
+        "221,1 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 221,1 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/grammarly-ai-keyboard-notes/id1158877342?uo=4"
+    },
+    {
+      "id": "1639845219",
+      "name": "AI Writer: Email Letter Essay",
+      "location": "Tuling Network Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/4b/20/e14b2088-a1de-a399-d40b-eb67b9fa2e3d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "AI Writer: Email Letter Essay, de Tuling Network Limited. Esta captura registra Reference, Productivity, versión 16.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 91/100",
+        "Gratis",
+        "6,6 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 6,6 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/ai-writer-email-letter-essay/id1639845219?uo=4"
+    },
+    {
+      "id": "489746330",
+      "name": "Werdsmith: Writing App",
+      "location": "Werdsmith Pty Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bf/ee/5d/bfee5dd0-4d94-4e43-fff4-71a116855c57/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Werdsmith: Writing App, de Werdsmith Pty Ltd. Esta captura registra Productivity, Utilities, versión 6.5.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 90/100",
+        "Gratis",
+        "8 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 8 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/werdsmith-writing-app/id489746330?uo=4"
+    },
+    {
+      "id": "1660877567",
+      "name": "Chat AI - Ask Anything",
+      "location": "ElevenThirteen LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2d/49/b6/2d49b636-076d-734d-a78c-b52f5c2c3c0d/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Chat AI - Ask Anything, de ElevenThirteen LLC. Esta captura registra Productivity, Reference, versión 1.9 y actualización 2024. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 88/100",
+        "Gratis",
+        "130 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 130 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/chat-ai-ask-anything/id1660877567?uo=4"
+    },
+    {
+      "id": "1670723178",
+      "name": "Author AI: Book Creator",
+      "location": "Murphy Brantley",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/79/0c/d3/790cd3ae-43b4-930b-81cb-990b0f0bbcf7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Author AI: Book Creator, de Murphy Brantley. Esta captura registra Utilities, Books, versión 3.8.2 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 87/100",
+        "Gratis",
+        "3,6 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 3,6 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/author-ai-book-creator/id1670723178?uo=4"
+    },
+    {
+      "id": "1361725141",
+      "name": "MyStory.today",
+      "location": "Richard Nespithal",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6b/2d/dc/6b2ddc03-20a9-01ee-4727-2ca1b229828c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "MyStory.today, de Richard Nespithal. Esta captura registra Productivity, versión 1.38.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 86/100",
+        "Gratis",
+        "2,5 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 2,5 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/mystory-today/id1361725141?uo=4"
+    },
+    {
+      "id": "6740884542",
+      "name": "Sudowrite - AI Novel Writing",
+      "location": "Human Plus Plus, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f7/8f/d3/f78fd317-8556-7fce-ce8f-8f60dc50cdb8/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Sudowrite - AI Novel Writing, de Human Plus Plus, Inc.. Esta captura registra Utilities, Books, versión 2026.30.2 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 81/100",
+        "Gratis",
+        "356 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 356",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 81,
+      "url": "https://apps.apple.com/us/app/sudowrite-ai-novel-writing/id6740884542?uo=4"
+    },
+    {
+      "id": "6737175869",
+      "name": "AI Story Generator - InkPal",
+      "location": "Lubo Shang",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c9/cf/75/c9cf75f2-a528-5b96-21cc-913cadb30538/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "AI Story Generator - InkPal, de Lubo Shang. Esta captura registra Utilities, Lifestyle, versión 3.16 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 78/100",
+        "Gratis",
+        "330 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.2/5 · 330",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 78,
+      "url": "https://apps.apple.com/us/app/ai-story-generator-inkpal/id6737175869?uo=4"
+    },
+    {
+      "id": "6751134683",
+      "name": "AI Writing - WritePilot",
+      "location": "Subhan Dastgeer",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2e/bf/e2/2ebfe299-81f2-d63e-f4dc-4a2c7bf370f0/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "AI Writing - WritePilot, de Subhan Dastgeer. Esta captura registra Productivity, versión 1.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 75/100",
+        "Gratis",
+        "11 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 11",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/ai-writing-writepilot/id6751134683?uo=4"
+    }
+  ]
+};

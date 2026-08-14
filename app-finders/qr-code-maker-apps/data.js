@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:qr-code-maker-apps:en",
+  "title": "QR code maker apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "903799541",
+      "name": "QR Code Reader/QR Scanner App",
+      "location": "MixerBox Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8b/c2/70/8bc2709b-4f15-cb83-807f-8b3535100aa1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "QR Code Reader/QR Scanner App by MixerBox Inc.. This dated store snapshot records Utilities, Productivity, version 2.35 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "140.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 140.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/qr-code-reader-qr-scanner-app/id903799541?uo=4"
+    },
+    {
+      "id": "1080558159",
+      "name": "QR Code Reader: Quick Scan",
+      "location": "Komorebi Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/95/11/61/951161c6-de24-db36-1161-114531902d0b/AppIcon-0-0-1x_U007epad-0-1-0-85-220.jpeg/512x512bb.jpg",
+      "summary": "QR Code Reader: Quick Scan by Komorebi Inc.. This dated store snapshot records Productivity, Utilities, version 4.0.3 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 96/100",
+        "Free",
+        "160.2K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 160.2K",
+        "price": "Free",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/qr-code-reader-quick-scan/id1080558159?uo=4"
+    },
+    {
+      "id": "1574018167",
+      "name": "QR Code Generator - QRHyper",
+      "location": "Gulooloo Tech Co., Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/61/ac/d7/61acd719-e845-c306-3e63-1aa5c89fd184/AppIcon-0-0-1x_U007emarketing-0-8-0-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "QR Code Generator - QRHyper by Gulooloo Tech Co., Limited. This dated store snapshot records Productivity, Utilities, version 2.6.9 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 93/100",
+        "Free",
+        "17.4K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 17.4K",
+        "price": "Free",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/qr-code-generator-qrhyper/id1574018167?uo=4"
+    },
+    {
+      "id": "1584764976",
+      "name": "QR Code Reader＊Barcode Scanner",
+      "location": "VISARGERD, S.L.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/91/2d/5d912d68-2a91-bc20-a977-a99d7eb451cd/AppIcon-icon_v3_3-0-0-1x_U007ephone-0-11-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "QR Code Reader＊Barcode Scanner by VISARGERD, S.L.. This dated store snapshot records Utilities, Reference, version 4.8.2 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 91/100",
+        "Free",
+        "22.2K rating volume"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 22.2K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/qr-code-reader-barcode-scanner/id1584764976?uo=4"
+    },
+    {
+      "id": "416098700",
+      "name": "Qrafter: QR Code Reader",
+      "location": "AKE Software GmbH",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4f/34/57/4f3457de-b2ed-1104-f920-378c96810b72/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Qrafter: QR Code Reader by AKE Software GmbH. This dated store snapshot records Productivity, Utilities, version 2026.14 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 88/100",
+        "Free",
+        "4K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 4K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/qrafter-qr-code-reader/id416098700?uo=4"
+    },
+    {
+      "id": "1456241169",
+      "name": "QR Code Generator - MQRG",
+      "location": "NBApps",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6b/fc/6a/6bfc6a6f-0a97-eaff-7c6a-8fdc8ebd79e9/Icon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "QR Code Generator - MQRG by NBApps. This dated store snapshot records Utilities, Business, version 8.5.12 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 87/100",
+        "Free",
+        "3.6K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 3.6K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/qr-code-generator-mqrg/id1456241169?uo=4"
+    },
+    {
+      "id": "1525413524",
+      "name": "QR Creator: Scan & Make QRCode",
+      "location": "Arthur Eduardo Skaetta Alvarez Desenvolvimento de Software LTDA.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/97/32/1d/97321d47-1a9a-a851-ba86-2c222b7f0d07/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "QR Creator: Scan & Make QRCode by Arthur Eduardo Skaetta Alvarez Desenvolvimento de Software LTDA.. This dated store snapshot records Productivity, Utilities, version 1.1.353 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 84/100",
+        "Free",
+        "458 rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 458",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 84,
+      "url": "https://apps.apple.com/us/app/qr-creator-scan-make-qrcode/id1525413524?uo=4"
+    },
+    {
+      "id": "1048473097",
+      "name": "QR Code & Barcode Scanner ・",
+      "location": "TeaCapps GmbH",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/34/a7/e8/34a7e8ae-dd74-bf88-8cab-51c72c3e0ff2/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "QR Code & Barcode Scanner ・ by TeaCapps GmbH. This dated store snapshot records Utilities, Productivity, version 2.5.4 and a 2023 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 80/100",
+        "Free",
+        "94.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 94.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/qr-code-barcode-scanner/id1048473097?uo=4"
+    },
+    {
+      "id": "1601025694",
+      "name": "Me QR - QR Code Generator",
+      "location": "ME TEAM LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ac/20/17/ac2017b2-81b2-0c3c-b494-cbdabb8a7315/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "summary": "Me QR - QR Code Generator by ME TEAM LTD. This dated store snapshot records Utilities, Business, version 1.13.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 80/100",
+        "Free",
+        "59 rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 59",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/me-qr-qr-code-generator/id1601025694?uo=4"
+    },
+    {
+      "id": "6736972682",
+      "name": "QR Code Maker ◌",
+      "location": "Andy Sutanto",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d1/aa/a5/d1aaa52c-e17d-aab6-5e47-e8885c4c0898/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.jpeg/512x512bb.jpg",
+      "summary": "QR Code Maker ◌ by Andy Sutanto. This dated store snapshot records Utilities, Business, version 1.0.1 and a 2025 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 77/100",
+        "Free",
+        "67 rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 67",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 77,
+      "url": "https://apps.apple.com/us/app/qr-code-maker/id6736972682?uo=4"
+    },
+    {
+      "id": "6670402440",
+      "name": "QR Code Generator and Scanner‎",
+      "location": "Hunter Nelson",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/97/c9/6b97c945-c752-a249-877a-a7a1252f6976/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "QR Code Generator and Scanner‎ by Hunter Nelson. This dated store snapshot records Utilities, version 1.3.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 74/100",
+        "Free",
+        "32 rating volume"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 32",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/qr-code-generator-and-scanner/id6670402440?uo=4"
+    },
+    {
+      "id": "513617634",
+      "name": "QR Code Maker",
+      "location": "matan radomski",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/28/7d/d8/287dd89b-7b14-ddc5-7934-b35cc4dec158/AppIcon-1x_U007emarketing-85-220-7.png/512x512bb.jpg",
+      "summary": "QR Code Maker by matan radomski. This dated store snapshot records Utilities, Productivity, version 2.3 and a 2017 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 47/100",
+        "Free",
+        "20 rating volume"
+      ],
+      "facts": {
+        "rating": "3.4/5 · 20",
+        "price": "Free",
+        "system": "iOS/iPadOS 8.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 47,
+      "url": "https://apps.apple.com/us/app/qr-code-maker/id513617634?uo=4"
+    }
+  ]
+};

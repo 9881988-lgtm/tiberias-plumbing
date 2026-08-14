@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:pdf-editor-apps:en",
+  "title": "PDF editor apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "842842640",
+      "name": "Google Docs",
+      "location": "Google LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/6a/9f/516a9fa6-fe9c-b40f-1d3b-8344d03a3107/docs_2026_ios-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Google Docs by Google LLC. This dated store snapshot records Productivity, Business, version 1.2026.32102 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 98/100",
+        "Free",
+        "3.2M rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 3.2M",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/google-docs/id842842640?uo=4"
+    },
+    {
+      "id": "743974925",
+      "name": "PDF Expert: Editor & Converter",
+      "location": "Readdle Technologies Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7d/b1/48/7db14845-418d-2abc-2991-18007bbc3b3f/AppIcon-Production-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Expert: Editor & Converter by Readdle Technologies Limited. This dated store snapshot records Productivity, Business, version 7.25.11 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "215.8K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 215.8K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/pdf-expert-editor-converter/id743974925?uo=4"
+    },
+    {
+      "id": "469337564",
+      "name": "Acrobat Reader: PDF Editor",
+      "location": "Adobe Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/6b/b1/506bb13f-8274-529e-6ac8-999665ff8957/ReleaseAppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Acrobat Reader: PDF Editor by Adobe Inc.. This dated store snapshot records Business, Productivity, version 26.07.01 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 96/100",
+        "Free",
+        "642K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 642K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.3+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/acrobat-reader-pdf-editor/id469337564?uo=4"
+    },
+    {
+      "id": "1207332399",
+      "name": "iLovePDF - PDF Editor & Scan",
+      "location": "ILOVEPDF S.L.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/aa/1d/e1aa1d83-8e15-181d-9c1b-72640b4612ea/logo-ilovepdf-glass-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "iLovePDF - PDF Editor & Scan by ILOVEPDF S.L.. This dated store snapshot records Productivity, Utilities, version 4.0.4 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 96/100",
+        "Free",
+        "50.8K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 50.8K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/ilovepdf-pdf-editor-scan/id1207332399?uo=4"
+    },
+    {
+      "id": "1532638515",
+      "name": "PDF Editor ®",
+      "location": "SMM service, s.r.o.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/76/09/44/760944f8-5f07-361b-149b-c6100e8a74aa/AppIcon-0-0-1x_U007epad-0-11-0-85-220.jpeg/512x512bb.jpg",
+      "summary": "PDF Editor ® by SMM service, s.r.o.. This dated store snapshot records Business, Utilities, version 3.4.11 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 92/100",
+        "Free",
+        "28.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 28.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/pdf-editor/id1532638515?uo=4"
+    },
+    {
+      "id": "6465897558",
+      "name": "PDF Gear - PDF Editor & Reader",
+      "location": "PDF GEAR TECH PTE. LTD.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/14/39/41143915-db45-c6ff-afca-5e83cc4327ce/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Gear - PDF Editor & Reader by PDF GEAR TECH PTE. LTD.. This dated store snapshot records Business, Productivity, version 2.25 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 91/100",
+        "Free",
+        "8.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 8.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/pdf-gear-pdf-editor-reader/id6465897558?uo=4"
+    },
+    {
+      "id": "6443583054",
+      "name": "PDF Editor: Read, Scan & Sign",
+      "location": "Rhophi Analytics LLP",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/f4/ca/42f4ca74-5da7-650b-803f-69b505f8f11d/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "PDF Editor: Read, Scan & Sign by Rhophi Analytics LLP. This dated store snapshot records Business, Productivity, version PDF Editor v1.1.85 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 90/100",
+        "Free",
+        "7.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 7.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/pdf-editor-read-scan-sign/id6443583054?uo=4"
+    },
+    {
+      "id": "1516765045",
+      "name": "PDFelement: PDF Editor, Viewer",
+      "location": "Wondershare Technology Group Co.,LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/15/68/e8/1568e87e-de19-163a-eabc-05a977882d55/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "PDFelement: PDF Editor, Viewer by Wondershare Technology Group Co.,LTD. This dated store snapshot records Productivity, Utilities, version V6.1.14 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 90/100",
+        "Free",
+        "7.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 7.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/pdfelement-pdf-editor-viewer/id1516765045?uo=4"
+    },
+    {
+      "id": "571613512",
+      "name": "pdfFiller: edit PDF documents",
+      "location": "airSlate, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/28/f7/a428f707-9268-6312-db84-a7280e2d1e9f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "pdfFiller: edit PDF documents by airSlate, Inc.. This dated store snapshot records Business, Productivity, version 6.36.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 88/100",
+        "Free",
+        "8.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 8.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/pdffiller-edit-pdf-documents/id571613512?uo=4"
+    },
+    {
+      "id": "507040546",
+      "name": "Foxit PDF Editor",
+      "location": "FOXIT SOFTWARE INCORPORATED",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/64/19/476419fb-378d-4832-4df9-f4bb25a27af7/AppIcon-0-1x_U007emarketing-0-7-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Foxit PDF Editor by FOXIT SOFTWARE INCORPORATED. This dated store snapshot records Productivity, Business, version 2026.4.3 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 87/100",
+        "Free",
+        "4.8K rating volume"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 4.8K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/foxit-pdf-editor/id507040546?uo=4"
+    },
+    {
+      "id": "805075929",
+      "name": "PDF Reader & Editor | Xodo",
+      "location": "Xodo Technologies Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/26/4d/9e264d52-336a-c78b-2f92-838753ecde11/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Reader & Editor | Xodo by Xodo Technologies Inc.. This dated store snapshot records Business, Productivity, version 9.16.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 83/100",
+        "Free",
+        "1.7K rating volume"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 1.7K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/pdf-reader-editor-xodo/id805075929?uo=4"
+    },
+    {
+      "id": "6745093574",
+      "name": "Free PDF Editor, Converter App",
+      "location": "AMPLIFY VENTURES LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/5e/76/f25e762c-e018-e76b-239c-c99596d3f273/FreePDFEditor-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Free PDF Editor, Converter App by AMPLIFY VENTURES LTD. This dated store snapshot records Productivity, Business, version 1.11 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 79/100",
+        "Free",
+        "158 rating volume"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 158",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 79,
+      "url": "https://apps.apple.com/us/app/free-pdf-editor-converter-app/id6745093574?uo=4"
+    }
+  ]
+};

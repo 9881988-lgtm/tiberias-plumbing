@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:train-planner-apps:en",
+  "title": "train planner apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "469463298",
+      "name": "Citymapper: All Live Transit",
+      "location": "Citymapper Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/b6/0c/58b60ca5-2f21-2eca-427f-14ea5265edee/AppIcon-Release-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Citymapper: All Live Transit by Citymapper Limited. This dated store snapshot records Navigation, Travel, version 11.47 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 99/100",
+        "Free",
+        "106.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 106.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/citymapper-all-live-transit/id469463298?uo=4"
+    },
+    {
+      "id": "453671246",
+      "name": "Eurostar: Train travel & Hotel",
+      "location": "Eurostar International Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ab/12/b5/ab12b598-df7d-53d7-a3e6-bd2aed123815/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "summary": "Eurostar: Train travel & Hotel by Eurostar International Limited. This dated store snapshot records Travel, version 15.0.1271 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 95/100",
+        "Free",
+        "25.9K rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 25.9K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/eurostar-train-travel-hotel/id453671246?uo=4"
+    },
+    {
+      "id": "334235181",
+      "name": "Trainline: Cheap Train Tickets",
+      "location": "thetrainline",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/35/9b/49359bcd-406c-4528-a5ae-bba37ef41d48/app-icon-classic-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Trainline: Cheap Train Tickets by thetrainline. This dated store snapshot records Travel, Navigation, version 429.0.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 93/100",
+        "Free",
+        "9.8K rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 9.8K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/trainline-cheap-train-tickets/id334235181?uo=4"
+    },
+    {
+      "id": "1052177547",
+      "name": "Train Ticket App : RailYatri",
+      "location": "Stelling Technologies Private Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/90/8c/d6/908cd6e8-3e74-7451-96dd-e4c3a1470561/AppIcon-1x_U007emarketing-0-5-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Train Ticket App : RailYatri by Stelling Technologies Private Limited. This dated store snapshot records Travel, Utilities, version 4.17 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 89/100",
+        "Free",
+        "6.4K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 6.4K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/train-ticket-app-railyatri/id1052177547?uo=4"
+    },
+    {
+      "id": "569793256",
+      "name": "Rome2Rio: Travel Route Planner",
+      "location": "Rome2rio Pty Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/32/30/ee32306c-53ec-e824-f3ed-0904c5b0e0cd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Rome2Rio: Travel Route Planner by Rome2rio Pty Ltd. This dated store snapshot records Travel, Navigation, version 2026.08.10 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 85/100",
+        "Free",
+        "924 rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 924",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 85,
+      "url": "https://apps.apple.com/us/app/rome2rio-travel-route-planner/id569793256?uo=4"
+    },
+    {
+      "id": "1411737922",
+      "name": "TrainPal: UK& EU train tickets",
+      "location": "Trainpal B.V.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/60/10/ad/6010ad03-454a-5405-ec00-d5b64b911eb4/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "TrainPal: UK& EU train tickets by Trainpal B.V.. This dated store snapshot records Travel, Navigation, version 3.89.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 83/100",
+        "Free",
+        "472 rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 472",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/trainpal-uk-eu-train-tickets/id1411737922?uo=4"
+    },
+    {
+      "id": "6443581415",
+      "name": "Mapway: Maps & Transit Planner",
+      "location": "Mapway Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8d/ab/f0/8dabf072-3a18-668e-da77-106b44070903/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Mapway: Maps & Transit Planner by Mapway Inc.. This dated store snapshot records Navigation, Travel, version 2.10.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 83/100",
+        "Free",
+        "1.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 1.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/mapway-maps-transit-planner/id6443581415?uo=4"
+    },
+    {
+      "id": "1129001637",
+      "name": "Seatfrog: Rail Journey Planner",
+      "location": "Seatfrog PTY LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/75/53/b6755318-4617-b36c-5b3e-ddf24744ff88/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Seatfrog: Rail Journey Planner by Seatfrog PTY LTD. This dated store snapshot records Travel, Lifestyle, version 4.4.18 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 83/100",
+        "Free",
+        "352 rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 352",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/seatfrog-rail-journey-planner/id1129001637?uo=4"
+    },
+    {
+      "id": "519094154",
+      "name": "National Rail",
+      "location": "Train Information Services Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a5/02/03/a5020325-d24a-ac19-131d-a6e581a8945e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "National Rail by Train Information Services Limited. This dated store snapshot records Travel, Navigation, version 10.4.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 79/100",
+        "Free",
+        "73 rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 73",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 79,
+      "url": "https://apps.apple.com/us/app/national-rail/id519094154?uo=4"
+    },
+    {
+      "id": "891379341",
+      "name": "Train Times UK Journey Planner",
+      "location": "APP KTCHN LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1c/cc/ca/1cccca10-fe01-12fa-1661-8c99aac2d7f4/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Train Times UK Journey Planner by APP KTCHN LTD. This dated store snapshot records Travel, Business, version 5.1.12 and a 2024 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 68/100",
+        "Free",
+        "129 rating volume"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 129",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 68,
+      "url": "https://apps.apple.com/us/app/train-times-uk-journey-planner/id891379341?uo=4"
+    },
+    {
+      "id": "579547877",
+      "name": "Eurail/Interrail Rail Planner",
+      "location": "Interrail B.V.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/54/91/97/549197f7-283c-d586-ed39-fad201a6f0b0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Eurail/Interrail Rail Planner by Interrail B.V.. This dated store snapshot records Travel, Navigation, version 53.1.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 66/100",
+        "Free",
+        "1.5K rating volume"
+      ],
+      "facts": {
+        "rating": "2.7/5 · 1.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 66,
+      "url": "https://apps.apple.com/us/app/eurail-interrail-rail-planner/id579547877?uo=4"
+    },
+    {
+      "id": "6476298246",
+      "name": "Train Journey Planner - UK",
+      "location": "Sumit Kukadiya",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/e0/3e/09/e03e094a-1c45-c369-c53f-34e7777a2968/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Train Journey Planner - UK by Sumit Kukadiya. This dated store snapshot records Travel, version 1.0 and a 2024 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 4/100",
+        "Free",
+        "Below 4.0 / unrated"
+      ],
+      "facts": {
+        "rating": "Below 4.0 / unrated",
+        "price": "Free",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 4,
+      "url": "https://apps.apple.com/us/app/train-journey-planner-uk/id6476298246?uo=4"
+    }
+  ]
+};

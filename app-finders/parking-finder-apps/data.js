@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:parking-finder-apps:en",
+  "title": "parking finder apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "499097243",
+      "name": "SpotHero: #1 Rated Parking App",
+      "location": "SpotHero, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/eb/e2/ac/ebe2ac5f-cfcd-c51c-5f23-9e993b926f50/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "SpotHero: #1 Rated Parking App by SpotHero, Inc.. This dated store snapshot records Navigation, Travel, version 8.11.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 99/100",
+        "Free",
+        "407.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 407.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/spothero-1-rated-parking-app/id499097243?uo=4"
+    },
+    {
+      "id": "595743376",
+      "name": "ParkWhiz - #1 Parking App",
+      "location": "ParkWhiz, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/7a/c1/7b7ac117-09af-62a4-d4f5-64bfc9a56dc5/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "ParkWhiz - #1 Parking App by ParkWhiz, Inc.. This dated store snapshot records Navigation, Travel, version 11.5.7 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 98/100",
+        "Free",
+        "187.7K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 187.7K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/parkwhiz-1-parking-app/id595743376?uo=4"
+    },
+    {
+      "id": "365399299",
+      "name": "ParkMobile: Park. Pay. Go.",
+      "location": "Parkmobile USA, Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d3/48/12/d34812a1-a3ff-912d-0fee-19edddea1ea8/AppIcon-PMUS-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "ParkMobile: Park. Pay. Go. by Parkmobile USA, Inc. This dated store snapshot records Navigation, Travel, version 26.32.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 98/100",
+        "Free",
+        "1.3M rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 1.3M",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/parkmobile-park-pay-go/id365399299?uo=4"
+    },
+    {
+      "id": "448474183",
+      "name": "PayByPhone Parking",
+      "location": "PayByPhone Technologies Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/f6/26/e4f626d2-ecd0-1757-9e36-7af9ab6697ea/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "PayByPhone Parking by PayByPhone Technologies Inc.. This dated store snapshot records Travel, Navigation, version 26.8.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 98/100",
+        "Free",
+        "750.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 750.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/paybyphone-parking/id448474183?uo=4"
+    },
+    {
+      "id": "1140927456",
+      "name": "Way - #1 Car Services App",
+      "location": "way com inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/af/05/8aaf0575-301f-7074-7217-ab7867fdf3b3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Way - #1 Car Services App by way com inc. This dated store snapshot records Finance, Navigation, version 89.0.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "59.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 59.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/way-1-car-services-app/id1140927456?uo=4"
+    },
+    {
+      "id": "501324867",
+      "name": "Passport Parking",
+      "location": "Passport Labs, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/92/7c/4e927c1a-df9e-a22c-6461-4492fa66e6eb/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Passport Parking by Passport Labs, Inc.. This dated store snapshot records Travel, Navigation, version 9.9.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "97.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 97.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/passport-parking/id501324867?uo=4"
+    },
+    {
+      "id": "383076098",
+      "name": "BestParking: Get Parking Deals",
+      "location": "BestParking.com",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c5/69/bc/c569bc91-ce0f-19b9-92c5-d25f13757daa/BPAppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "BestParking: Get Parking Deals by BestParking.com. This dated store snapshot records Navigation, Travel, version 11.5.7 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 95/100",
+        "Free",
+        "37.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 37.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/bestparking-get-parking-deals/id383076098?uo=4"
+    },
+    {
+      "id": "1414389805",
+      "name": "Parking.com - Find Parking Now",
+      "location": "Metropolis Technologies, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f5/9c/ba/f59cbaf2-bba8-ff4e-4955-810e034891bb/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "summary": "Parking.com - Find Parking Now by Metropolis Technologies, Inc.. This dated store snapshot records Navigation, Travel, version 3.67.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 91/100",
+        "Free",
+        "19.6K rating volume"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 19.6K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/parking-com-find-parking-now/id1414389805?uo=4"
+    },
+    {
+      "id": "897809583",
+      "name": "SpotAngels Parking & Gas",
+      "location": "Sweetch, Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ba/ad/4c/baad4c2c-43a9-c363-b4e5-d8cefe4cf09f/AppIcon-0-1x_U007emarketing-0-6-0-85-220-0.png/512x512bb.jpg",
+      "summary": "SpotAngels Parking & Gas by Sweetch, Inc. This dated store snapshot records Navigation, Travel, version 12.3.4 and a 2025 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 82/100",
+        "Free",
+        "12.7K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 12.7K",
+        "price": "Free",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 82,
+      "url": "https://apps.apple.com/us/app/spotangels-parking-gas/id897809583?uo=4"
+    },
+    {
+      "id": "987712319",
+      "name": "Find My Parked Car",
+      "location": "Amit Miron",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/05/d3/e3/05d3e3ac-35e2-3a7e-ce66-f8c731b2a911/AppIcon-1x_U007emarketing-0-10-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Find My Parked Car by Amit Miron. This dated store snapshot records Navigation, Utilities, version 3.6.8 and a 2023 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 75/100",
+        "Free",
+        "12.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 12.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/find-my-parked-car/id987712319?uo=4"
+    },
+    {
+      "id": "6769035695",
+      "name": "ParkTrack - GPS Compass",
+      "location": "晓 郭",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/de/80/d1/de80d1a4-8cd1-bfb2-bb65-327c36bba89f/AppIcon-0-0-1x_U007emarketing-0-5-85-220.png/512x512bb.jpg",
+      "summary": "ParkTrack - GPS Compass by 晓 郭. This dated store snapshot records Navigation, version 2.0.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 74/100",
+        "Free",
+        "1 rating volume"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 1",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/parktrack-gps-compass/id6769035695?uo=4"
+    },
+    {
+      "id": "6751178563",
+      "name": "Find my car - Puurfect Parking",
+      "location": "Pen Sangsubhan",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/9f/f5/c49ff513-a9fa-fb2f-399a-137a2924a68c/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Find my car - Puurfect Parking by Pen Sangsubhan. This dated store snapshot records Utilities, Navigation, version 1.2 and a 2025 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 16/100",
+        "Free",
+        "Below 4.0 / unrated"
+      ],
+      "facts": {
+        "rating": "Below 4.0 / unrated",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 16,
+      "url": "https://apps.apple.com/us/app/find-my-car-puurfect-parking/id6751178563?uo=4"
+    }
+  ]
+};

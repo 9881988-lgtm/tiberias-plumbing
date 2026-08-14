@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:pdf-scanner-apps:en",
+  "title": "PDF scanner apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1199564834",
+      "name": "Adobe Scan: PDF & OCR Scanner",
+      "location": "Adobe Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/e7/f3/04e7f3cc-37f9-7b29-580c-566298e1122d/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "Adobe Scan: PDF & OCR Scanner by Adobe Inc.. This dated store snapshot records Business, Productivity, version 26.08.12 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 99/100",
+        "Free",
+        "1.6M rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 1.6M",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/adobe-scan-pdf-ocr-scanner/id1199564834?uo=4"
+    },
+    {
+      "id": "377672876",
+      "name": "Scanner App: Genius Scan",
+      "location": "The Grizzly Labs",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/d7/00/45d700ee-2222-0626-57c2-01bd7249b8d2/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Scanner App: Genius Scan by The Grizzly Labs. This dated store snapshot records Business, Productivity, version 8.13.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 99/100",
+        "Free",
+        "1.4M rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 1.4M",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/scanner-app-genius-scan/id377672876?uo=4"
+    },
+    {
+      "id": "388627783",
+      "name": "CamScanner - PDF Scanner App",
+      "location": "INTSIG Information Co., Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3c/f5/15/3cf515f6-c289-255b-a746-b93376436953/AppIconLite-0-0-1x_U007ephone-0-6-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "CamScanner - PDF Scanner App by INTSIG Information Co., Ltd. This dated store snapshot records Productivity, Business, version 7.23.5 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 98/100",
+        "Free",
+        "1.9M rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 1.9M",
+        "price": "Free",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/camscanner-pdf-scanner-app/id388627783?uo=4"
+    },
+    {
+      "id": "595563753",
+      "name": "Tiny Scanner - PDF Scanner App",
+      "location": "TinyWork Apps",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c0/09/91/c00991bf-5044-5558-7e7d-c3ffde62a2ae/AppIconMain-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Tiny Scanner - PDF Scanner App by TinyWork Apps. This dated store snapshot records Business, Productivity, version 8.16.7 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 98/100",
+        "Free",
+        "180.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 180.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/tiny-scanner-pdf-scanner-app/id595563753?uo=4"
+    },
+    {
+      "id": "1040093707",
+      "name": "iScanner: PDF Document Scanner",
+      "location": "BP Mobile LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/28/fd/35/28fd35e2-748e-fe9f-a59b-39137a91aa47/AppIconFreeApp-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "iScanner: PDF Document Scanner by BP Mobile LLC. This dated store snapshot records Business, Productivity, version 6.10 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "1.4M rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 1.4M",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/iscanner-pdf-document-scanner/id1040093707?uo=4"
+    },
+    {
+      "id": "1291962681",
+      "name": "Scanner – Scan PDF & Document",
+      "location": "Luni",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/25/46/50254654-6e3a-fdce-7a35-d95990d42a71/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Scanner – Scan PDF & Document by Luni. This dated store snapshot records Business, Utilities, version 2.11.20 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "221.7K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 221.7K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/scanner-scan-pdf-document/id1291962681?uo=4"
+    },
+    {
+      "id": "469337564",
+      "name": "Acrobat Reader: PDF Editor",
+      "location": "Adobe Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/6b/b1/506bb13f-8274-529e-6ac8-999665ff8957/ReleaseAppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Acrobat Reader: PDF Editor by Adobe Inc.. This dated store snapshot records Business, Productivity, version 26.07.01 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 96/100",
+        "Free",
+        "642K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 642K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.3+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/acrobat-reader-pdf-editor/id469337564?uo=4"
+    },
+    {
+      "id": "1461747901",
+      "name": "Mobile Scanner App - Scan PDF",
+      "location": "Glority Global Group Ltd.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/53/a0/8d/53a08d41-6066-5933-323f-5021c1459cfd/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "Mobile Scanner App - Scan PDF by Glority Global Group Ltd.. This dated store snapshot records Productivity, Utilities, version 2.25.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 96/100",
+        "Free",
+        "55.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 55.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/mobile-scanner-app-scan-pdf/id1461747901?uo=4"
+    },
+    {
+      "id": "1515133401",
+      "name": "PDF Converter - Word to PDF",
+      "location": "Minimodev Technologies LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/3c/93/303c9376-f327-88fd-7064-b82f3bd2b84c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Converter - Word to PDF by Minimodev Technologies LTD. This dated store snapshot records Productivity, Utilities, version 1.8.6 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 94/100",
+        "Free",
+        "32.7K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 32.7K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/pdf-converter-word-to-pdf/id1515133401?uo=4"
+    },
+    {
+      "id": "1561802302",
+      "name": "PDF Scanner AI: Scan Documents",
+      "location": "CACAO MOBILE SP Z O O",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9b/c0/c1/9bc0c184-62bc-e8c7-887b-01d0859302a6/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "PDF Scanner AI: Scan Documents by CACAO MOBILE SP Z O O. This dated store snapshot records Business, Utilities, version 2.7.229 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 90/100",
+        "Free",
+        "6.6K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 6.6K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/pdf-scanner-ai-scan-documents/id1561802302?uo=4"
+    },
+    {
+      "id": "1524443123",
+      "name": "PDF Scanner・Document Scanner",
+      "location": "Games Wing",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/bc/d8/58bcd81a-1397-114b-fa30-9293df49f566/AppIcon-0-0-1x_U007emarketing-0-0-0-8-0-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Scanner・Document Scanner by Games Wing. This dated store snapshot records Productivity, Business, version 1.8.8 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 86/100",
+        "Free",
+        "1.9K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 1.9K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/pdf-scanner-document-scanner/id1524443123?uo=4"
+    },
+    {
+      "id": "1420369608",
+      "name": "Document Scanner App- PDF Scan",
+      "location": "Hareshbhai Issamaliya",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/b6/04/b9/b604b932-7eab-596e-0c06-3713485b21c0/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Document Scanner App- PDF Scan by Hareshbhai Issamaliya. This dated store snapshot records Business, Productivity, version 1.2.5 and a 2019 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 66/100",
+        "Free",
+        "1.8K rating volume"
+      ],
+      "facts": {
+        "rating": "4.2/5 · 1.8K",
+        "price": "Free",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 66,
+      "url": "https://apps.apple.com/us/app/document-scanner-app-pdf-scan/id1420369608?uo=4"
+    }
+  ]
+};

@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:pdf-editor-apps:he",
+  "title": "אפליקציות לעריכת PDF",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "842842640",
+      "name": "Google Docs",
+      "location": "Google LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/51/6a/9f/516a9fa6-fe9c-b40f-1d3b-8344d03a3107/docs_2026_ios-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Google Docs מאת Google LLC. צילום החנות המתוארך כולל Productivity, Business, גרסה 1.2026.32102 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "3.2M‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 3.2M‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/google-docs/id842842640?uo=4"
+    },
+    {
+      "id": "743974925",
+      "name": "PDF Expert: Editor & Converter",
+      "location": "Readdle Technologies Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7d/b1/48/7db14845-418d-2abc-2991-18007bbc3b3f/AppIcon-Production-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Expert: Editor & Converter מאת Readdle Technologies Limited. צילום החנות המתוארך כולל Productivity, Business, גרסה 7.25.11 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "215.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 215.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/pdf-expert-editor-converter/id743974925?uo=4"
+    },
+    {
+      "id": "469337564",
+      "name": "Acrobat Reader: PDF Editor",
+      "location": "Adobe Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/6b/b1/506bb13f-8274-529e-6ac8-999665ff8957/ReleaseAppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Acrobat Reader: PDF Editor מאת Adobe Inc.. צילום החנות המתוארך כולל Business, Productivity, גרסה 26.07.01 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 96/100",
+        "חינם",
+        "642K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 642K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.3+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/acrobat-reader-pdf-editor/id469337564?uo=4"
+    },
+    {
+      "id": "1207332399",
+      "name": "iLovePDF - PDF Editor & Scan",
+      "location": "ILOVEPDF S.L.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/aa/1d/e1aa1d83-8e15-181d-9c1b-72640b4612ea/logo-ilovepdf-glass-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "iLovePDF - PDF Editor & Scan מאת ILOVEPDF S.L.. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 4.0.4 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 96/100",
+        "חינם",
+        "50.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 50.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/ilovepdf-pdf-editor-scan/id1207332399?uo=4"
+    },
+    {
+      "id": "1532638515",
+      "name": "PDF Editor ®",
+      "location": "SMM service, s.r.o.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/76/09/44/760944f8-5f07-361b-149b-c6100e8a74aa/AppIcon-0-0-1x_U007epad-0-11-0-85-220.jpeg/512x512bb.jpg",
+      "summary": "PDF Editor ® מאת SMM service, s.r.o.. צילום החנות המתוארך כולל Business, Utilities, גרסה 3.4.11 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 92/100",
+        "חינם",
+        "28.3K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 28.3K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/pdf-editor/id1532638515?uo=4"
+    },
+    {
+      "id": "6465897558",
+      "name": "PDF Gear - PDF Editor & Reader",
+      "location": "PDF GEAR TECH PTE. LTD.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/41/14/39/41143915-db45-c6ff-afca-5e83cc4327ce/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Gear - PDF Editor & Reader מאת PDF GEAR TECH PTE. LTD.. צילום החנות המתוארך כולל Business, Productivity, גרסה 2.25 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 91/100",
+        "חינם",
+        "8.3K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 8.3K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/pdf-gear-pdf-editor-reader/id6465897558?uo=4"
+    },
+    {
+      "id": "6443583054",
+      "name": "PDF Editor: Read, Scan & Sign",
+      "location": "Rhophi Analytics LLP",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/42/f4/ca/42f4ca74-5da7-650b-803f-69b505f8f11d/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "PDF Editor: Read, Scan & Sign מאת Rhophi Analytics LLP. צילום החנות המתוארך כולל Business, Productivity, גרסה PDF Editor v1.1.85 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 90/100",
+        "חינם",
+        "7.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 7.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/pdf-editor-read-scan-sign/id6443583054?uo=4"
+    },
+    {
+      "id": "1516765045",
+      "name": "PDFelement: PDF Editor, Viewer",
+      "location": "Wondershare Technology Group Co.,LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/15/68/e8/1568e87e-de19-163a-eabc-05a977882d55/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "PDFelement: PDF Editor, Viewer מאת Wondershare Technology Group Co.,LTD. צילום החנות המתוארך כולל Productivity, Utilities, גרסה V6.1.14 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 90/100",
+        "חינם",
+        "7.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 7.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/pdfelement-pdf-editor-viewer/id1516765045?uo=4"
+    },
+    {
+      "id": "571613512",
+      "name": "pdfFiller: edit PDF documents",
+      "location": "airSlate, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a4/28/f7/a428f707-9268-6312-db84-a7280e2d1e9f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "pdfFiller: edit PDF documents מאת airSlate, Inc.. צילום החנות המתוארך כולל Business, Productivity, גרסה 6.36.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 88/100",
+        "חינם",
+        "8.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 8.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/pdffiller-edit-pdf-documents/id571613512?uo=4"
+    },
+    {
+      "id": "507040546",
+      "name": "Foxit PDF Editor",
+      "location": "FOXIT SOFTWARE INCORPORATED",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/64/19/476419fb-378d-4832-4df9-f4bb25a27af7/AppIcon-0-1x_U007emarketing-0-7-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Foxit PDF Editor מאת FOXIT SOFTWARE INCORPORATED. צילום החנות המתוארך כולל Productivity, Business, גרסה 2026.4.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 87/100",
+        "חינם",
+        "4.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 4.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/foxit-pdf-editor/id507040546?uo=4"
+    },
+    {
+      "id": "805075929",
+      "name": "PDF Reader & Editor | Xodo",
+      "location": "Xodo Technologies Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/26/4d/9e264d52-336a-c78b-2f92-838753ecde11/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Reader & Editor | Xodo מאת Xodo Technologies Inc.. צילום החנות המתוארך כולל Business, Productivity, גרסה 9.16.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 83/100",
+        "חינם",
+        "1.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 1.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/pdf-reader-editor-xodo/id805075929?uo=4"
+    },
+    {
+      "id": "6745093574",
+      "name": "Free PDF Editor, Converter App",
+      "location": "AMPLIFY VENTURES LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f2/5e/76/f25e762c-e018-e76b-239c-c99596d3f273/FreePDFEditor-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Free PDF Editor, Converter App מאת AMPLIFY VENTURES LTD. צילום החנות המתוארך כולל Productivity, Business, גרסה 1.11 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 79/100",
+        "חינם",
+        "158 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 158",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 79,
+      "url": "https://apps.apple.com/us/app/free-pdf-editor-converter-app/id6745093574?uo=4"
+    }
+  ]
+};

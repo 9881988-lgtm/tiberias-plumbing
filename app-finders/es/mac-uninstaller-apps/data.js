@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:mac-uninstaller-apps:es",
+  "title": "desinstaladores para Mac",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1033808943",
+      "name": "Delete Apps: Uninstaller",
+      "location": "FIPLAB Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/0c/9f/c80c9f2d-0688-d684-aa09-8a910d86c95c/App-Icon-New-0-0-85-220-0-0-6-0-2x.png/512x512bb.png",
+      "summary": "Delete Apps: Uninstaller, de FIPLAB Ltd. Esta captura registra Utilities, Business, versión 2.4 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 20/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 10.13+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/delete-apps-uninstaller/id1033808943?mt=12&uo=4"
+    },
+    {
+      "id": "1561724782",
+      "name": "Uninstaller - Clean App File‪s",
+      "location": "凌云 张",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/2f/d9/5b2fd9b0-3b4d-de7b-05b5-c38e5264c35f/AppIcon-0-0-85-220-0-0-5-0-2x.png/512x512bb.png",
+      "summary": "Uninstaller - Clean App File‪s, de 凌云 张. Esta captura registra Utilities, Productivity, versión 2.7.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 20/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 10.11+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/uninstaller-clean-app-file-s/id1561724782?mt=12&uo=4"
+    },
+    {
+      "id": "6473684385",
+      "name": "XApp - Uninstall Expert",
+      "location": "Ningbo Shangguan Technology Co.,Ltd.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/10/c2/1210c26a-2a43-561e-618f-2849cfef68dd/AppIcon-0-0-85-220-0-0-5-0-2x.png/512x512bb.png",
+      "summary": "XApp - Uninstall Expert, de Ningbo Shangguan Technology Co.,Ltd.. Esta captura registra Utilities, versión 1.1.9 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 20/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 10.15+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/xapp-uninstall-expert/id6473684385?mt=12&uo=4"
+    },
+    {
+      "id": "6758100220",
+      "name": "CleanApp: Deep Uninstaller",
+      "location": "Hangzhou Yuuan Technology Co., Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/89/d6/df/89d6df74-9d6a-945e-484f-e2eb6f3cfe11/AppIcon.png/512x512bb.png",
+      "summary": "CleanApp: Deep Uninstaller, de Hangzhou Yuuan Technology Co., Ltd. Esta captura registra Utilities, Productivity, versión 2.1.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 20/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 10.14+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/cleanapp-deep-uninstaller/id6758100220?mt=12&uo=4"
+    },
+    {
+      "id": "1373706803",
+      "name": "Uninstaller sensei",
+      "location": "Maksym Katrych",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/57/d6/8557d605-d721-eedf-57f5-fc5288b7b945/Appicon.png/512x512bb.png",
+      "summary": "Uninstaller sensei, de Maksym Katrych. Esta captura registra Utilities, Productivity, versión 1.9.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 20/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 11.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/uninstaller-sensei/id1373706803?mt=12&uo=4"
+    },
+    {
+      "id": "1133028347",
+      "name": "Cleaner One Pro - Uninstaller",
+      "location": "Trend Micro, Incorporated",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/43/0b/38/430b3807-30c1-379d-d9df-f21d125c073d/AppIcon-0-0-85-220-0-0-4-0-2x-sRGB.png/512x512bb.png",
+      "summary": "Cleaner One Pro - Uninstaller, de Trend Micro, Incorporated. Esta captura registra Utilities, Productivity, versión 6.6.8 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 16/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 10.15+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 16,
+      "url": "https://apps.apple.com/us/app/cleaner-one-pro-uninstaller/id1133028347?mt=12&uo=4"
+    },
+    {
+      "id": "6748003724",
+      "name": "App Cleaner - App Uninstaller",
+      "location": "裕涛 兰",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/df/95/8bdf9558-db9a-381f-c801-4e8c994c72e3/AppIcon-0-0-85-220-0-5-0-2x-P3.png/512x512bb.png",
+      "summary": "App Cleaner - App Uninstaller, de 裕涛 兰. Esta captura registra Utilities, versión 1.0.5 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 16/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 13+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 16,
+      "url": "https://apps.apple.com/us/app/app-cleaner-app-uninstaller/id6748003724?mt=12&uo=4"
+    },
+    {
+      "id": "1018633858",
+      "name": "Uninstaller-OS Cleaner",
+      "location": "坤 刘",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0b/6a/c1/0b6ac1af-75c8-de80-e283-e2cab55e25c8/AppIcon-85-220-5-0-0-2x-P3-0-0.png/512x512bb.png",
+      "summary": "Uninstaller-OS Cleaner, de 坤 刘. Esta captura registra Productivity, Utilities, versión 12.5.9 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 16/100",
+        "De pago",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "$2.99",
+        "system": "macOS 10.11+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 2.99,
+      "score": 16,
+      "url": "https://apps.apple.com/us/app/uninstaller-os-cleaner/id1018633858?mt=12&uo=4"
+    },
+    {
+      "id": "6511220682",
+      "name": "CleanMyApp - Uninstaller",
+      "location": "军诗 程",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4b/cf/ad/4bcfade9-5641-082b-ebad-e6a4172772e1/AppIcon-85-220-0-4-2x.png/512x512bb.png",
+      "summary": "CleanMyApp - Uninstaller, de 军诗 程. Esta captura registra Utilities, Lifestyle, versión 2.0 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 10/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 10.15+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 10,
+      "url": "https://apps.apple.com/us/app/cleanmyapp-uninstaller/id6511220682?mt=12&uo=4"
+    },
+    {
+      "id": "6740852984",
+      "name": "Uninstaller - Clean Your App",
+      "location": "光蓉 蔡",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/bf/a4/11bfa437-434e-5f6d-4a18-e6904e99102b/AppIcon-85-220-4-2x.png/512x512bb.png",
+      "summary": "Uninstaller - Clean Your App, de 光蓉 蔡. Esta captura registra Utilities, versión 1.0.1 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 10/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 10.15+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 10,
+      "url": "https://apps.apple.com/us/app/uninstaller-clean-your-app/id6740852984?mt=12&uo=4"
+    },
+    {
+      "id": "1199973273",
+      "name": "App Uninstaller - Clean Leftover Application Files",
+      "location": "Pocket Bits LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple111/v4/99/87/9b/99879b59-4fa8-63c9-4d72-3b0fd660a902/mzl.uzjhocrm.png/512x512bb.png",
+      "summary": "App Uninstaller - Clean Leftover Application Files, de Pocket Bits LLC. Esta captura registra Utilities, Productivity, versión 1.0 y actualización 2017. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 4/100",
+        "De pago",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "$5.99",
+        "system": "macOS 10.11+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 5.99,
+      "score": 4,
+      "url": "https://apps.apple.com/us/app/app-uninstaller-clean-leftover-application-files/id1199973273?mt=12&uo=4"
+    },
+    {
+      "id": "1528819741",
+      "name": "CareOS - App Uninstaller",
+      "location": "永康 李",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/fb/48/0e/fb480e32-5d87-039e-49e0-15ea29aad446/AppIcon-0-0-85-220-0-0-0-0-4-0-0-0-2x-sRGB-0-0-0-0-0.png/512x512bb.png",
+      "summary": "CareOS - App Uninstaller, de 永康 李. Esta captura registra Productivity, Utilities, versión 6.5.79 y actualización 2023. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 4/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "macOS 10.12+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 4,
+      "url": "https://apps.apple.com/us/app/careos-app-uninstaller/id1528819741?mt=12&uo=4"
+    }
+  ]
+};

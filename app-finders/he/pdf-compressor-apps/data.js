@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:pdf-compressor-apps:he",
+  "title": "אפליקציות לדחיסת PDF",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1207332399",
+      "name": "iLovePDF - PDF Editor & Scan",
+      "location": "ILOVEPDF S.L.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e1/aa/1d/e1aa1d83-8e15-181d-9c1b-72640b4612ea/logo-ilovepdf-glass-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "iLovePDF - PDF Editor & Scan מאת ILOVEPDF S.L.. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 4.0.4 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 96/100",
+        "חינם",
+        "50.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 50.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/ilovepdf-pdf-editor-scan/id1207332399?uo=4"
+    },
+    {
+      "id": "469337564",
+      "name": "Acrobat Reader: PDF Editor",
+      "location": "Adobe Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/6b/b1/506bb13f-8274-529e-6ac8-999665ff8957/ReleaseAppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Acrobat Reader: PDF Editor מאת Adobe Inc.. צילום החנות המתוארך כולל Business, Productivity, גרסה 26.07.01 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 96/100",
+        "חינם",
+        "642K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 642K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.3+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/acrobat-reader-pdf-editor/id469337564?uo=4"
+    },
+    {
+      "id": "627640657",
+      "name": "PDF it All Document Converter",
+      "location": "DIGISET LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c8/3c/db/c83cdbcc-400b-166b-b812-77f6c667c19c/AppIconComposer-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "PDF it All Document Converter מאת DIGISET LLC. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 6.1.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 92/100",
+        "חינם",
+        "8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/pdf-it-all-document-converter/id627640657?uo=4"
+    },
+    {
+      "id": "1661806464",
+      "name": "Compress It! PDF Compressor",
+      "location": "DIGISET LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d5/13/d9/d513d921-3385-7243-9e19-963c361570b8/AppIconComposer-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Compress It! PDF Compressor מאת DIGISET LLC. צילום החנות המתוארך כולל Utilities, Productivity, גרסה 1.6.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 85/100",
+        "חינם",
+        "430 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 430",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 85,
+      "url": "https://apps.apple.com/us/app/compress-it-pdf-compressor/id1661806464?uo=4"
+    },
+    {
+      "id": "6748140542",
+      "name": "PDF Compressor－Compress PDF",
+      "location": "ECLIXTECH UK LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2e/7d/39/2e7d39cf-1ce3-a67e-eece-5df5479e15d9/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Compressor－Compress PDF מאת ECLIXTECH UK LTD. צילום החנות המתוארך כולל Productivity, גרסה 1.0.7 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 81/100",
+        "חינם",
+        "136 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 136",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 81,
+      "url": "https://apps.apple.com/us/app/pdf-compressor-compress-pdf/id6748140542?uo=4"
+    },
+    {
+      "id": "1637213307",
+      "name": "PDF Compressor : Compress PDF",
+      "location": "Vishalbhai Vaghasiya",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8e/7a/a9/8e7aa903-6062-88d8-8faf-a7d3fab9a472/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "PDF Compressor : Compress PDF מאת Vishalbhai Vaghasiya. צילום החנות המתוארך כולל Utilities, גרסה 1.7 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 80/100",
+        "חינם",
+        "806 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 806",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/pdf-compressor-compress-pdf/id1637213307?uo=4"
+    },
+    {
+      "id": "1609168763",
+      "name": "pdf compressor & compress pdf",
+      "location": "Sounak Sarkar",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ae/9a/27/ae9a27ee-9e6c-8f77-d1bd-2002a5045777/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "pdf compressor & compress pdf מאת Sounak Sarkar. צילום החנות המתוארך כולל Business, Productivity, גרסה 2.8 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 80/100",
+        "חינם",
+        "153 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 153",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/pdf-compressor-compress-pdf/id1609168763?uo=4"
+    },
+    {
+      "id": "6751105575",
+      "name": "PDF Converter: PDF Compressor",
+      "location": "COMPREHENSIVE SOLUTIONS FOR DIGITAL MARKETING AND SOFTWARE DEVELOPMENT LIMITED",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/e1/d8/39e1d811-4d7f-bf15-b5ae-c0f48d68c3b1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "PDF Converter: PDF Compressor מאת COMPREHENSIVE SOLUTIONS FOR DIGITAL MARKETING AND SOFTWARE DEVELOPMENT LIMITED. צילום החנות המתוארך כולל Utilities, Productivity, גרסה 1.0.6 ועדכון 2025. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 78/100",
+        "חינם",
+        "138 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 138",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 78,
+      "url": "https://apps.apple.com/us/app/pdf-converter-pdf-compressor/id6751105575?uo=4"
+    },
+    {
+      "id": "1643148563",
+      "name": "PDF Compressor: Size Reduce",
+      "location": "Hardik Dhameliya",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f1/9d/b0/f19db08a-85c5-1031-d25a-cefcbc79092a/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "PDF Compressor: Size Reduce מאת Hardik Dhameliya. צילום החנות המתוארך כולל Utilities, גרסה 5.11 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 74/100",
+        "חינם",
+        "57 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 57",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/pdf-compressor-size-reduce/id1643148563?uo=4"
+    },
+    {
+      "id": "1474336522",
+      "name": "PDF Compressor - Compress PDF",
+      "location": "Tu Phan",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fe/c2/ab/fec2abbd-1d50-11c6-e21d-1e7fbe41afa3/AppIcon-0-0-1x_U007emarketing-0-0-0-10-85-220.png/512x512bb.jpg",
+      "summary": "PDF Compressor - Compress PDF מאת Tu Phan. צילום החנות המתוארך כולל Utilities, Productivity, גרסה 2.3 ועדכון 2020. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 64/100",
+        "חינם",
+        "532 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 532",
+        "price": "חינם",
+        "system": "iOS/iPadOS 8.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 64,
+      "url": "https://apps.apple.com/us/app/pdf-compressor-compress-pdf/id1474336522?uo=4"
+    },
+    {
+      "id": "6446500701",
+      "name": "PDF Compressor",
+      "location": "HurryApp LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cf/c8/fb/cfc8fbe4-1470-66df-51b1-0c9ec69e2fce/AppIcon-0-0-1x_U007epad-0-85-220.jpeg/512x512bb.jpg",
+      "summary": "PDF Compressor מאת HurryApp LTD. צילום החנות המתוארך כולל Utilities, גרסה 1.9.3 ועדכון 2024. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 57/100",
+        "חינם",
+        "55 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.2/5 · 55",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 57,
+      "url": "https://apps.apple.com/us/app/pdf-compressor/id6446500701?uo=4"
+    },
+    {
+      "id": "6757967560",
+      "name": "PDF Compressor : Compress Size",
+      "location": "Soufiane Bouziane",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d9/c6/3f/d9c63faf-0e51-91f4-7d54-203203f008b9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "PDF Compressor : Compress Size מאת Soufiane Bouziane. צילום החנות המתוארך כולל Productivity, Business, גרסה 1.0.9 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/pdf-compressor-compress-size/id6757967560?uo=4"
+    }
+  ]
+};

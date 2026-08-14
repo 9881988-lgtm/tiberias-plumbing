@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:meal-planner-apps:he",
+  "title": "אפליקציות לתכנון ארוחות",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1217456898",
+      "name": "Tasty: Recipes, Cooking Videos",
+      "location": "BuzzFeed",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/43/0f/94/430f94cb-882d-eb16-d3f2-e2d7f20aae15/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Tasty: Recipes, Cooking Videos מאת BuzzFeed. צילום החנות המתוארך כולל Food & Drink, Entertainment, גרסה 3.39.4 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 99/100",
+        "חינם",
+        "432.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 432.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/tasty-recipes-cooking-videos/id1217456898?uo=4"
+    },
+    {
+      "id": "1593779280",
+      "name": "ReciMe: Recipes & Meal Planner",
+      "location": "ReciMe Pty Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/9e/c7/589ec777-3e74-5b5b-e039-6ce0e86dd0c0/App_Icon_Primary-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "ReciMe: Recipes & Meal Planner מאת ReciMe Pty Ltd. צילום החנות המתוארך כולל Food & Drink, Social Networking, גרסה 6.1.4 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "274K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 274K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/recime-recipes-meal-planner/id1593779280?uo=4"
+    },
+    {
+      "id": "1079999103",
+      "name": "Mealime Meal Plans & Recipes",
+      "location": "Mealime Meal Plans Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/06/98/e0/0698e063-a807-0254-dfb7-1951297f62aa/AppIcon-0-0-1x_U007emarketing-0-6-85-220.png/512x512bb.jpg",
+      "summary": "Mealime Meal Plans & Recipes מאת Mealime Meal Plans Inc. צילום החנות המתוארך כולל Food & Drink, Health & Fitness, גרסה 4.21.34 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "53.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 53.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/mealime-meal-plans-recipes/id1079999103?uo=4"
+    },
+    {
+      "id": "575756462",
+      "name": "eMeals - Healthy Meal Plans",
+      "location": "eMeals, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7d/dd/a9/7ddda913-165d-1178-765f-20c778c89afb/AppIconGlass-0-1x_U007ephone-0-1-0-85-220-0.png/512x512bb.jpg",
+      "summary": "eMeals - Healthy Meal Plans מאת eMeals, Inc.. צילום החנות המתוארך כולל Food & Drink, Health & Fitness, גרסה 6.3.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 94/100",
+        "חינם",
+        "52.4K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 52.4K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/emeals-healthy-meal-plans/id575756462?uo=4"
+    },
+    {
+      "id": "981637806",
+      "name": "Eat This Much - Meal Planner",
+      "location": "Eat This Much Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/b7/f7/67b7f7f8-b0ec-f633-21f7-b864b467c00d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Eat This Much - Meal Planner מאת Eat This Much Inc.. צילום החנות המתוארך כולל Health & Fitness, Food & Drink, גרסה 2.0.164 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "22K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 22K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/eat-this-much-meal-planner/id981637806?uo=4"
+    },
+    {
+      "id": "1215348056",
+      "name": "Plan to Eat: Meal Planner",
+      "location": "Plan to Eat, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/1c/37/4d1c37b3-0c8a-c52c-184a-42fce00f3021/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Plan to Eat: Meal Planner מאת Plan to Eat, LLC. צילום החנות המתוארך כולל Food & Drink, Productivity, גרסה 3.7.10 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 92/100",
+        "חינם",
+        "6.1K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 6.1K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/plan-to-eat-meal-planner/id1215348056?uo=4"
+    },
+    {
+      "id": "1249805978",
+      "name": "MealPrepPro Planner & Recipes",
+      "location": "Nibble Apps Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/26/d9/71/26d97189-e4f2-a0f1-4cf3-c996f7a6bdad/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "MealPrepPro Planner & Recipes מאת Nibble Apps Ltd. צילום החנות המתוארך כולל Food & Drink, Health & Fitness, גרסה 3.142 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 91/100",
+        "חינם",
+        "11.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 11.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/mealpreppro-planner-recipes/id1249805978?uo=4"
+    },
+    {
+      "id": "6460821436",
+      "name": "Meal Planner & Weekly Menu",
+      "location": "Raquel Martinez Figueirido",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/60/83/eb6083e9-edbf-48b0-4601-f19a170ffd9d/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Meal Planner & Weekly Menu מאת Raquel Martinez Figueirido. צילום החנות המתוארך כולל Food & Drink, Health & Fitness, גרסה 1.5.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 87/100",
+        "חינם",
+        "1.4K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 1.4K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/meal-planner-weekly-menu/id6460821436?uo=4"
+    },
+    {
+      "id": "333425918",
+      "name": "MealBoard - Meal Planner",
+      "location": "Ray Bernardo",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/43/24/4d4324b5-b065-1126-5752-e815b50162b6/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "MealBoard - Meal Planner מאת Ray Bernardo. צילום החנות המתוארך כולל Food & Drink, Health & Fitness, גרסה 6.0.12 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 87/100",
+        "חינם",
+        "2.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 2.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 26.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/mealboard-meal-planner/id333425918?uo=4"
+    },
+    {
+      "id": "6777471316",
+      "name": "mise - meal planner",
+      "location": "TEGS LABS LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/af/55/60/af5560b1-daee-0ce7-e6ea-8ee153344fb5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "mise - meal planner מאת TEGS LABS LTD. צילום החנות המתוארך כולל Food & Drink, Health & Fitness, גרסה 1.0.61 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 85/100",
+        "חינם",
+        "773 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 773",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 85,
+      "url": "https://apps.apple.com/us/app/mise-meal-planner/id6777471316?uo=4"
+    },
+    {
+      "id": "1612213187",
+      "name": "Daily Meal Planner",
+      "location": "Futasaji LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2e/39/a2/2e39a210-4cc1-e73d-7b65-a0fc0f626fff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Daily Meal Planner מאת Futasaji LLC. צילום החנות המתוארך כולל Health & Fitness, Lifestyle, גרסה 2.7.4 ועדכון 2025. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 85/100",
+        "חינם",
+        "1.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 1.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 85,
+      "url": "https://apps.apple.com/us/app/daily-meal-planner/id1612213187?uo=4"
+    },
+    {
+      "id": "6761518086",
+      "name": "Meal Planner - Calendar & List",
+      "location": "MITSUKO MARGOT KUBOTA ONO",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d7/c2/4f/d7c24f74-858b-76f5-108a-cff9fd3ec78d/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Meal Planner - Calendar & List מאת MITSUKO MARGOT KUBOTA ONO. צילום החנות המתוארך כולל Food & Drink, Health & Fitness, גרסה 1.8.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 20/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/meal-planner-calendar-list/id6761518086?uo=4"
+    }
+  ]
+};

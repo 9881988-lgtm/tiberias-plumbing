@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:receipt-scanner-apps:ru",
+  "title": "приложения для сканирования чеков",
+  "sourceButton": "Открыть в App Store",
+  "ui": {
+    "any": "Любой",
+    "confirm": "—",
+    "officialSource": "Открыть в App Store",
+    "suggestUpdate": "Сообщить об изменении",
+    "save": "Сохранить",
+    "saved": "Сохранено",
+    "compare": "Сравнить",
+    "noMatchesTitle": "В снимке нет точного совпадения",
+    "noMatchesText": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "location": "Разработчик",
+    "bestFor": "Доказательства",
+    "feature": "Показатель",
+    "matcherButton": "Показать вариант",
+    "matcherEmpty": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "matcherNoResult": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "matcherResult": "Найдите сильный стартовый вариант",
+    "matcherApply": "Каталог"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Цена",
+      "allLabel": "Любая цена",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Бесплатно"
+        },
+        {
+          "value": "Paid",
+          "label": "Платно"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Рейтинг",
+      "allLabel": "Любой рейтинг",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Ниже 4,0 / нет рейтинга"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Число оценок",
+      "allLabel": "Любое число",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1 000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Менее 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Обновление",
+      "allLabel": "Любая дата",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Раньше"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Рейтинг App Store"
+    },
+    {
+      "key": "price",
+      "label": "Цена в магазине"
+    },
+    {
+      "key": "system",
+      "label": "Минимальная ОС"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Цена",
+        "placeholder": "Любая цена"
+      },
+      {
+        "key": "rating",
+        "label": "Рейтинг",
+        "placeholder": "Любой рейтинг"
+      },
+      {
+        "key": "reviews",
+        "label": "Число оценок",
+        "placeholder": "Любое число"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "377672876",
+      "name": "Scanner App: Genius Scan",
+      "location": "The Grizzly Labs",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/45/d7/00/45d700ee-2222-0626-57c2-01bd7249b8d2/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Scanner App: Genius Scan, разработчик The Grizzly Labs. В датированном снимке указаны категории Business, Productivity, версия 8.13.1 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 99/100",
+        "Бесплатно",
+        "1,4 млн число оценок"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 1,4 млн",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/scanner-app-genius-scan/id377672876?uo=4"
+    },
+    {
+      "id": "1182474649",
+      "name": "Fetch: Receipts for Gift Cards",
+      "location": "Fetch Rewards, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/51/d8/62/51d8622f-d919-0d78-4223-90d19aa6fd01/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Fetch: Receipts for Gift Cards, разработчик Fetch Rewards, LLC. В датированном снимке указаны категории Shopping, Lifestyle, версия 4.56.1 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 98/100",
+        "Бесплатно",
+        "7,5 млн число оценок"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 7,5 млн",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/fetch-receipts-for-gift-cards/id1182474649?uo=4"
+    },
+    {
+      "id": "559887125",
+      "name": "Ibotta: Save & Earn Cash Back",
+      "location": "Ibotta, Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6d/b9/c5/6db9c56a-6808-e45d-ee27-f8f838ee813b/AppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Ibotta: Save & Earn Cash Back, разработчик Ibotta, Inc. В датированном снимке указаны категории Shopping, Lifestyle, версия 6.349.0 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 98/100",
+        "Бесплатно",
+        "2 млн число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 2 млн",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/ibotta-save-earn-cash-back/id559887125?uo=4"
+    },
+    {
+      "id": "525373618",
+      "name": "Receipt Hog: Shopping Rewards",
+      "location": "ScoutIt, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2b/7f/de/2b7fdea7-79d8-8dfe-8873-abb3b295d528/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Receipt Hog: Shopping Rewards, разработчик ScoutIt, Inc.. В датированном снимке указаны категории Shopping, Lifestyle, версия 9.7.3 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 97/100",
+        "Бесплатно",
+        "264,7 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 264,7 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/receipt-hog-shopping-rewards/id525373618?uo=4"
+    },
+    {
+      "id": "6446371504",
+      "name": "Frisbee: Rewards for Receipts",
+      "location": "Klover Holdings, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/31/af/4931af6b-97d6-0dfe-6d6d-fba0674be9a0/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Frisbee: Rewards for Receipts, разработчик Klover Holdings, Inc.. В датированном снимке указаны категории Shopping, версия 2026.6.10 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 97/100",
+        "Бесплатно",
+        "60,6 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 60,6 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.2+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/frisbee-rewards-for-receipts/id6446371504?uo=4"
+    },
+    {
+      "id": "1538521095",
+      "name": "SimplyWise: Receipts, Expenses",
+      "location": "SimplyWise, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/7b/ad/6a7bad42-ac01-65eb-5545-63ba5745cc59/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "SimplyWise: Receipts, Expenses, разработчик SimplyWise, Inc.. В датированном снимке указаны категории Finance, Business, версия 0.85.0 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 96/100",
+        "Бесплатно",
+        "36,8 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 36,8 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/simplywise-receipts-expenses/id1538521095?uo=4"
+    },
+    {
+      "id": "1450157256",
+      "name": "ReceiptJar",
+      "location": "THE U GROUP & CO LIMITED",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/59/98/13599892-f205-f2cc-c43d-54ed76fe471b/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "ReceiptJar, разработчик THE U GROUP & CO LIMITED. В датированном снимке указаны категории Shopping, Finance, версия 13.0.0 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 96/100",
+        "Бесплатно",
+        "63,4 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 63,4 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/receiptjar/id1450157256?uo=4"
+    },
+    {
+      "id": "942370264",
+      "name": "CoinOut: Receipts for Rewards",
+      "location": "Coin Out Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7b/48/34/7b4834ed-2fd1-27f7-e880-9da8796d1b25/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "CoinOut: Receipts for Rewards, разработчик Coin Out Inc.. В датированном снимке указаны категории Shopping, Lifestyle, версия 4.1.30 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 96/100",
+        "Бесплатно",
+        "88,2 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 88,2 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/coinout-receipts-for-rewards/id942370264?uo=4"
+    },
+    {
+      "id": "1528787066",
+      "name": "Receipt Scanner: Easy Expense",
+      "location": "Easy Expense Tracker LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/14/aa/eb/14aaeb1e-66ea-fed2-6cd8-85b606b24ab2/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Receipt Scanner: Easy Expense, разработчик Easy Expense Tracker LLC. В датированном снимке указаны категории Business, Finance, версия 5.70.0 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 90/100",
+        "Бесплатно",
+        "2,4 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 2,4 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/receipt-scanner-easy-expense/id1528787066?uo=4"
+    },
+    {
+      "id": "732079889",
+      "name": "Receipt Pal: Earn Gift Cards",
+      "location": "The NPD Group, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0a/42/91/0a42917f-3ec2-011a-ec05-8c3beeba49c5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Receipt Pal: Earn Gift Cards, разработчик The NPD Group, Inc.. В датированном снимке указаны категории Shopping, Lifestyle, версия 11.2 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 90/100",
+        "Бесплатно",
+        "22,9 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 22,9 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/receipt-pal-earn-gift-cards/id732079889?uo=4"
+    },
+    {
+      "id": "1484095338",
+      "name": "QuickReceipts Smart Scanner",
+      "location": "QuickReceipts, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bb/5b/dc/bb5bdc91-5ac3-7308-ea4a-a76c178f5783/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "QuickReceipts Smart Scanner, разработчик QuickReceipts, Inc.. В датированном снимке указаны категории Finance, Business, версия 2.59 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 88/100",
+        "Бесплатно",
+        "1,7 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 1,7 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/quickreceipts-smart-scanner/id1484095338?uo=4"
+    },
+    {
+      "id": "1550270774",
+      "name": "Receipt Scanner・Track Expenses",
+      "location": "Saldo Apps Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/75/7c/97757c61-1152-67b9-0fc3-47b8bf5e952f/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Receipt Scanner・Track Expenses, разработчик Saldo Apps Inc.. В датированном снимке указаны категории Finance, Business, версия 6.0.1 и обновление 2025 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 78/100",
+        "Бесплатно",
+        "3,9 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 3,9 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 78,
+      "url": "https://apps.apple.com/us/app/receipt-scanner-track-expenses/id1550270774?uo=4"
+    }
+  ]
+};

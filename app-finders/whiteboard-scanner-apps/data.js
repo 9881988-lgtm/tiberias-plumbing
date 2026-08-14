@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:whiteboard-scanner-apps:en",
+  "title": "whiteboard scanner apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1017559099",
+      "name": "TurboScan™: document scanner",
+      "location": "Piksoft Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/12/e3/bd/12e3bd09-63d0-e99d-a996-97d86bd03f5f/AppIcon-Free-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "TurboScan™: document scanner by Piksoft Inc.. This dated store snapshot records Business, Productivity, version 3.4.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 99/100",
+        "Free",
+        "101.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 101.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/turboscan-document-scanner/id1017559099?uo=4"
+    },
+    {
+      "id": "342548956",
+      "name": "TurboScan™ Pro: PDF scanner",
+      "location": "Piksoft Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e5/d4/66/e5d466ce-6175-6656-b697-c9b897a1ad9d/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "TurboScan™ Pro: PDF scanner by Piksoft Inc.. This dated store snapshot records Business, Productivity, version 3.4.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 99/100",
+        "Paid",
+        "295.6K rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 295.6K",
+        "price": "$9.99",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 9.99,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/turboscan-pro-pdf-scanner/id342548956?uo=4"
+    },
+    {
+      "id": "1291962681",
+      "name": "Scanner – Scan PDF & Document",
+      "location": "Luni",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/50/25/46/50254654-6e3a-fdce-7a35-d95990d42a71/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Scanner – Scan PDF & Document by Luni. This dated store snapshot records Business, Utilities, version 2.11.20 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "221.7K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 221.7K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/scanner-scan-pdf-document/id1291962681?uo=4"
+    },
+    {
+      "id": "1496800347",
+      "name": "xScan : Document Scanner App",
+      "location": "VPN MobApps Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0b/32/f1/0b32f12a-d00a-a8e5-8ae0-57d7ac982b2f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "xScan : Document Scanner App by VPN MobApps Limited. This dated store snapshot records Business, Productivity, version 2.10.5 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 93/100",
+        "Free",
+        "31.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 31.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/xscan-document-scanner-app/id1496800347?uo=4"
+    },
+    {
+      "id": "1568660349",
+      "name": "Scanner App - Scan PDF & Docs",
+      "location": "TAPSUITE YAZILIM HIZMETLERI ANONIM SIRKETI",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d8/55/9d/d8559ddd-528c-4298-bd17-252ec088c903/AppIcon-0-0-1x_U007epad-0-1-0-85-220.jpeg/512x512bb.jpg",
+      "summary": "Scanner App - Scan PDF & Docs by TAPSUITE YAZILIM HIZMETLERI ANONIM SIRKETI. This dated store snapshot records Business, Productivity, version 3.1.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 93/100",
+        "Free",
+        "29.4K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 29.4K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/scanner-app-scan-pdf-docs/id1568660349?uo=4"
+    },
+    {
+      "id": "307868751",
+      "name": "JotNot Scanner App Pro",
+      "location": "MobiTech 3000 LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/7a/2a/ba/7a2abab1-e2b0-d867-e421-e471d3a54ba1/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "JotNot Scanner App Pro by MobiTech 3000 LLC. This dated store snapshot records Business, Productivity, version 5.1.4 and a 2020 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 80/100",
+        "Paid",
+        "30.2K rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 30.2K",
+        "price": "$6.99",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 6.99,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/jotnot-scanner-app-pro/id307868751?uo=4"
+    },
+    {
+      "id": "310789464",
+      "name": "JotNot Scanner App",
+      "location": "MobiTech 3000 LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/bd/9c/34/bd9c3484-55eb-17ce-ab57-2978670b5146/AppIconLite-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "JotNot Scanner App by MobiTech 3000 LLC. This dated store snapshot records Productivity, Business, version 5.1.4 and a 2020 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 78/100",
+        "Free",
+        "13.9K rating volume"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 13.9K",
+        "price": "Free",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 78,
+      "url": "https://apps.apple.com/us/app/jotnot-scanner-app/id310789464?uo=4"
+    },
+    {
+      "id": "6759267167",
+      "name": "SlatCam: Whiteboard Scanner",
+      "location": "JASON JEONG",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/46/12/42/46124249-10a2-95b5-2f44-d1afd8364b66/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "SlatCam: Whiteboard Scanner by JASON JEONG. This dated store snapshot records Productivity, Photo & Video, version 1.0.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 75/100",
+        "Free",
+        "2 rating volume"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 2",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/slatcam-whiteboard-scanner/id6759267167?uo=4"
+    },
+    {
+      "id": "1519510717",
+      "name": "Scanner: Scan Documents",
+      "location": "Distrito SLU",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/f3/b8/b4/f3b8b4a6-172d-1ad2-b442-2b0e169b464f/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Scanner: Scan Documents by Distrito SLU. This dated store snapshot records Business, version 1.5 and a 2020 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 75/100",
+        "Free",
+        "6.9K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 6.9K",
+        "price": "Free",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/scanner-scan-documents/id1519510717?uo=4"
+    },
+    {
+      "id": "6761327188",
+      "name": "Whiteboard Lens",
+      "location": "Henrik Lexow",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/55/e6/0c/55e60c1a-b26d-5ee2-e825-2d026988ff02/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Whiteboard Lens by Henrik Lexow. This dated store snapshot records Productivity, Business, version 1.1.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 74/100",
+        "Free",
+        "1 rating volume"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 1",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/whiteboard-lens/id6761327188?uo=4"
+    },
+    {
+      "id": "6758513056",
+      "name": "MEMO Whiteboard Scanner",
+      "location": "New Things Lab B.V.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/18/7f/35187fc7-7a5a-9191-6458-619207dc84b7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "MEMO Whiteboard Scanner by New Things Lab B.V.. This dated store snapshot records Productivity, version 1.0.4 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 74/100",
+        "Free",
+        "1 rating volume"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 1",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/memo-whiteboard-scanner/id6758513056?uo=4"
+    },
+    {
+      "id": "542229387",
+      "name": "CaptureBoard: Scan Whiteboard, Business cards, receipts and more",
+      "location": "MaaDoTaa LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/40/d1/d4/40d1d4a8-a92d-4e3e-f49d-ed75c75532ec/mzl.djwmcyhd.jpg/512x512bb.jpg",
+      "summary": "CaptureBoard: Scan Whiteboard, Business cards, receipts and more by MaaDoTaa LLC. This dated store snapshot records Utilities, Photo & Video, version 3.5 and a 2016 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 21/100",
+        "Free",
+        "6 rating volume"
+      ],
+      "facts": {
+        "rating": "1.2/5 · 6",
+        "price": "Free",
+        "system": "iOS/iPadOS 7.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 21,
+      "url": "https://apps.apple.com/us/app/captureboard-scan-whiteboard-business-cards-receipts/id542229387?uo=4"
+    }
+  ]
+};

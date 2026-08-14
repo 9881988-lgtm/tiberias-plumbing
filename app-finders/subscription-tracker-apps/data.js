@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:subscription-tracker-apps:en",
+  "title": "subscription tracker apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1130616675",
+      "name": "Rocket Money - Bills & Budgets",
+      "location": "Rocket Money",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d0/41/79/d041796d-425c-42d3-ceae-4c587c1a9186/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Rocket Money - Bills & Budgets by Rocket Money. This dated store snapshot records Finance, Productivity, version 15.5.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 95/100",
+        "Free",
+        "380.2K rating volume"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 380.2K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/rocket-money-bills-budgets/id1130616675?uo=4"
+    },
+    {
+      "id": "6751181747",
+      "name": "SubPilot: Cancel Subscriptions",
+      "location": "LINERIOS LIMITED",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/9b/c2/4f9bc21e-5495-24e8-2805-8c7696fb8ebd/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.jpg",
+      "summary": "SubPilot: Cancel Subscriptions by LINERIOS LIMITED. This dated store snapshot records Finance, Lifestyle, version 1.22.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 88/100",
+        "Free",
+        "4.4K rating volume"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 4.4K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.2+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/subpilot-cancel-subscriptions/id6751181747?uo=4"
+    },
+    {
+      "id": "1059152023",
+      "name": "Bobby - Track subscriptions",
+      "location": "Yummygum",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/de/b8/2e/deb82e99-10bc-0e36-ccc3-a8762b24809d/AppIcon-0-1x_U007ephone-0-1-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Bobby - Track subscriptions by Yummygum. This dated store snapshot records Finance, Productivity, version 3.10.4 and a 2025 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 87/100",
+        "Free",
+        "8K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 8K",
+        "price": "Free",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/bobby-track-subscriptions/id1059152023?uo=4"
+    },
+    {
+      "id": "6740202306",
+      "name": "MonoBoost Cancel Subscriptions",
+      "location": "Mnboost Corp",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/af/2e/98/af2e9835-edb3-8b28-b42c-32655f50fc89/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "MonoBoost Cancel Subscriptions by Mnboost Corp. This dated store snapshot records Utilities, version 1.3.101 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 86/100",
+        "Free",
+        "5.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 5.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/monoboost-cancel-subscriptions/id6740202306?uo=4"
+    },
+    {
+      "id": "6692620188",
+      "name": "Subscription Manager: Orbit",
+      "location": "Flooben Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/55/ff/91/55ff91c3-5b29-da96-07d6-e80c5f3dfd60/AppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Subscription Manager: Orbit by Flooben Ltd. This dated store snapshot records Finance, Productivity, version 1.2.94 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 81/100",
+        "Free",
+        "115 rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 115",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 81,
+      "url": "https://apps.apple.com/us/app/subscription-manager-orbit/id6692620188?uo=4"
+    },
+    {
+      "id": "6761034583",
+      "name": "SubFind: Subscription Tracker",
+      "location": "ELMOND TECHNOLOGIES L.L.C",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/70/68/c9/7068c902-ee49-b2ac-c9bd-6b776ccd3dfc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "SubFind: Subscription Tracker by ELMOND TECHNOLOGIES L.L.C. This dated store snapshot records Finance, Utilities, version 2.2 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 78/100",
+        "Free",
+        "11 rating volume"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 11",
+        "price": "Free",
+        "system": "iOS/iPadOS 16+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 78,
+      "url": "https://apps.apple.com/us/app/subfind-subscription-tracker/id6761034583?uo=4"
+    },
+    {
+      "id": "6739703718",
+      "name": "Subscription Tracker: Subby",
+      "location": "Abhaya Chandra G P",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/49/e2/81/49e28119-6981-3ef8-7bb9-000a91a7b9e1/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Subscription Tracker: Subby by Abhaya Chandra G P. This dated store snapshot records Finance, Productivity, version 1.8.4 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 77/100",
+        "Free",
+        "18 rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 18",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 77,
+      "url": "https://apps.apple.com/us/app/subscription-tracker-subby/id6739703718?uo=4"
+    },
+    {
+      "id": "6752399847",
+      "name": "Subscription Tracker - Submind",
+      "location": "Indie Goodies LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fa/d2/f0/fad2f020-c235-4815-f9b3-85f1e48f29ce/Icon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Subscription Tracker - Submind by Indie Goodies LLC. This dated store snapshot records Utilities, Productivity, version 1.5.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 76/100",
+        "Free",
+        "4 rating volume"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 4",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 76,
+      "url": "https://apps.apple.com/us/app/subscription-tracker-submind/id6752399847?uo=4"
+    },
+    {
+      "id": "6746950605",
+      "name": "Subscription Trackerㅤ",
+      "location": "Jack Furness",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/38/98/3f/38983f88-822d-d217-6b26-45b1c2011734/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Subscription Trackerㅤ by Jack Furness. This dated store snapshot records Finance, Utilities, version 1.0.7 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 73/100",
+        "Free",
+        "44 rating volume"
+      ],
+      "facts": {
+        "rating": "4.2/5 · 44",
+        "price": "Free",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 73,
+      "url": "https://apps.apple.com/us/app/subscription-tracker%E3%85%A4/id6746950605?uo=4"
+    },
+    {
+      "id": "1502336248",
+      "name": "Subscription Tracker",
+      "location": "Ali Alhady",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/f7/0b/07/f70b0765-49da-f03c-1e3f-945b75496b76/AppIcon-1x_U007emarketing-0-0-0-7-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Subscription Tracker by Ali Alhady. This dated store snapshot records Finance, Utilities, version 1.4.5 and a 2022 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 65/100",
+        "Free",
+        "257 rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 257",
+        "price": "Free",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 65,
+      "url": "https://apps.apple.com/us/app/subscription-tracker/id1502336248?uo=4"
+    },
+    {
+      "id": "6771250519",
+      "name": "Postpone: Subscription Tracker",
+      "location": "MatchedCV, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2b/23/cc/2b23cc75-5f23-239a-52a6-2706eb71b830/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Postpone: Subscription Tracker by MatchedCV, LLC. This dated store snapshot records Finance, Lifestyle, version v.1.05 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 20/100",
+        "Free",
+        "Below 4.0 / unrated"
+      ],
+      "facts": {
+        "rating": "Below 4.0 / unrated",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/postpone-subscription-tracker/id6771250519?uo=4"
+    },
+    {
+      "id": "6755901499",
+      "name": "SubSynk: Subscription Tracker",
+      "location": "Twinkle Makwana",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/76/ee/be76eefb-f4b9-16bc-bfac-f535964e8a5f/AppLogo-1x_U007emarketing-0-7-0-85-220-0.png/512x512bb.jpg",
+      "summary": "SubSynk: Subscription Tracker by Twinkle Makwana. This dated store snapshot records Finance, Utilities, version 1.2 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 20/100",
+        "Free",
+        "Below 4.0 / unrated"
+      ],
+      "facts": {
+        "rating": "Below 4.0 / unrated",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/subsynk-subscription-tracker/id6755901499?uo=4"
+    }
+  ]
+};

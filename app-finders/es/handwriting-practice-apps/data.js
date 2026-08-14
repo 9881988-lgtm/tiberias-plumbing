@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:handwriting-practice-apps:es",
+  "title": "apps para practicar escritura",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1512640380",
+      "name": "Writey Cursive Handwriting",
+      "location": "Writey B.V.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ff/86/83/ff86831f-427a-b6c4-2205-2e9ed6c485c2/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-GLES2_U002c0-85-220.png/512x512bb.jpg",
+      "summary": "Writey Cursive Handwriting, de Writey B.V.. Esta captura registra Education, Family, Games, versión 4.5.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 90/100",
+        "Gratis",
+        "12 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 12 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/writey-cursive-handwriting/id1512640380?uo=4"
+    },
+    {
+      "id": "1643464145",
+      "name": "Cursive: Learn Cursive",
+      "location": "enoiu",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/5e/c3/985ec336-b3ee-5878-c49d-62a234597d7c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Cursive: Learn Cursive, de enoiu. Esta captura registra Education, Reference, versión 7.3.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 88/100",
+        "Gratis",
+        "4,8 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 4,8 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/cursive-learn-cursive/id1643464145?uo=4"
+    },
+    {
+      "id": "1305242235",
+      "name": "Writing Wizard: Learn to Write",
+      "location": "Pierre Abel",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/d1/86/b6d18673-e0d0-ecf0-0f2f-04f59b7edcec/AppIcon-start2021-0-0-1x_U007emarketing-0-5-85-220.png/512x512bb.jpg",
+      "summary": "Writing Wizard: Learn to Write, de Pierre Abel. Esta captura registra Education, versión 3.5.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 87/100",
+        "Gratis",
+        "5 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 5 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/writing-wizard-learn-to-write/id1305242235?uo=4"
+    },
+    {
+      "id": "645416621",
+      "name": "iTrace — handwriting practice",
+      "location": "DEVPOCKET LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b8/ff/db/b8ffdb55-f13f-99a0-9fb8-9e9fe7d66c40/AppIcon_Subscriptions-0-0-1x_U007epad-0-0-0-1-0-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "iTrace — handwriting practice, de DEVPOCKET LLC. Esta captura registra Education, Family, Games, versión 3.0.8 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 84/100",
+        "Gratis",
+        "2,5 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 2,5 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 84,
+      "url": "https://apps.apple.com/us/app/itrace-handwriting-practice/id645416621?uo=4"
+    },
+    {
+      "id": "1598691036",
+      "name": "Calligraphy Master: Cursive",
+      "location": "Hangzhou Good Play Network Technology Co., Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/d8/68/8bd868f0-bc3a-ded0-495a-f402738c55b9/AppIcon-0-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Calligraphy Master: Cursive, de Hangzhou Good Play Network Technology Co., Ltd. Esta captura registra Utilities, Education, versión 3.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 84/100",
+        "Gratis",
+        "2,4 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 2,4 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 84,
+      "url": "https://apps.apple.com/us/app/calligraphy-master-cursive/id1598691036?uo=4"
+    },
+    {
+      "id": "1576501331",
+      "name": "Calligraphy Practice · Cursive",
+      "location": "Lidwien Veugen",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/77/5f/ba775fe3-6852-c317-f45a-d2cc6da3a01e/AppIcon-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg",
+      "summary": "Calligraphy Practice · Cursive, de Lidwien Veugen. Esta captura registra Graphics & Design, Education, versión 9.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 83/100",
+        "Gratis",
+        "633 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 633",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/calligraphy-practice-cursive/id1576501331?uo=4"
+    },
+    {
+      "id": "1567948511",
+      "name": "Handwriting Practice App",
+      "location": "Lidwien Veugen",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cf/e1/c6/cfe1c631-f476-ef66-5736-4a20c260455b/AppIcon-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg",
+      "summary": "Handwriting Practice App, de Lidwien Veugen. Esta captura registra Entertainment, Graphics & Design, versión 10.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 82/100",
+        "Gratis",
+        "641 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 641",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 82,
+      "url": "https://apps.apple.com/us/app/handwriting-practice-app/id1567948511?uo=4"
+    },
+    {
+      "id": "1620416791",
+      "name": "Modern Handwriting Calligraphy",
+      "location": "SPRINNET Systems, s.r.o.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/20/c9/7820c98c-73d1-b24b-4afc-2fb5be64d4d1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Modern Handwriting Calligraphy, de SPRINNET Systems, s.r.o.. Esta captura registra Education, Reference, versión 2.9.2 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 75/100",
+        "Gratis",
+        "426 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 426",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/modern-handwriting-calligraphy/id1620416791?uo=4"
+    },
+    {
+      "id": "6737120401",
+      "name": "Cursively Handwriting Practice",
+      "location": "ASVETA CZ s.r.o.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/e3/93/fde3937c-b17a-b985-31e6-36d9f324c539/cursively-app-icon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Cursively Handwriting Practice, de ASVETA CZ s.r.o.. Esta captura registra Education, Reference, versión 1.7 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 73/100",
+        "Gratis",
+        "129 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 129",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 73,
+      "url": "https://apps.apple.com/us/app/cursively-handwriting-practice/id6737120401?uo=4"
+    },
+    {
+      "id": "6746206473",
+      "name": "Cursive Handwriting Practice ·",
+      "location": "The App Studio LC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/fe/92/e2fe923f-9288-a115-d1dc-3f47c9182487/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Cursive Handwriting Practice ·, de The App Studio LC. Esta captura registra Education, Utilities, versión 1.0 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 65/100",
+        "Gratis",
+        "38 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 38",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 65,
+      "url": "https://apps.apple.com/us/app/cursive-handwriting-practice/id6746206473?uo=4"
+    },
+    {
+      "id": "1541520267",
+      "name": "Handwriting Lettering Practice",
+      "location": "Meital Goor",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/35/08/20/35082011-6734-f1c1-42f3-c51b01cde6c7/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Handwriting Lettering Practice, de Meital Goor. Esta captura registra Lifestyle, Education, versión 1.1 y actualización 2021. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 35/100",
+        "Gratis",
+        "35 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "2.1/5 · 35",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 35,
+      "url": "https://apps.apple.com/us/app/handwriting-lettering-practice/id1541520267?uo=4"
+    },
+    {
+      "id": "6520393445",
+      "name": "Toolis",
+      "location": "Muhammad Al Hafiz Rahmadhani",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3a/f4/63/3af463e7-504b-cf68-60cb-ca9ec44ed7f3/AppIcon-0-0-1x_U007ephone-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Toolis, de Muhammad Al Hafiz Rahmadhani. Esta captura registra Education, Utilities, versión 1.0 y actualización 2024. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 4/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 4,
+      "url": "https://apps.apple.com/us/app/toolis/id6520393445?uo=4"
+    }
+  ]
+};

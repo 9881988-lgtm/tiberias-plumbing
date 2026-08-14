@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:handwriting-practice-apps:he",
+  "title": "אפליקציות לתרגול כתב יד",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1512640380",
+      "name": "Writey Cursive Handwriting",
+      "location": "Writey B.V.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ff/86/83/ff86831f-427a-b6c4-2205-2e9ed6c485c2/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-GLES2_U002c0-85-220.png/512x512bb.jpg",
+      "summary": "Writey Cursive Handwriting מאת Writey B.V.. צילום החנות המתוארך כולל Education, Family, Games, גרסה 4.5.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 90/100",
+        "חינם",
+        "12K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 12K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/writey-cursive-handwriting/id1512640380?uo=4"
+    },
+    {
+      "id": "1643464145",
+      "name": "Cursive: Learn Cursive",
+      "location": "enoiu",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/98/5e/c3/985ec336-b3ee-5878-c49d-62a234597d7c/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Cursive: Learn Cursive מאת enoiu. צילום החנות המתוארך כולל Education, Reference, גרסה 7.3.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 88/100",
+        "חינם",
+        "4.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 4.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/cursive-learn-cursive/id1643464145?uo=4"
+    },
+    {
+      "id": "1305242235",
+      "name": "Writing Wizard: Learn to Write",
+      "location": "Pierre Abel",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b6/d1/86/b6d18673-e0d0-ecf0-0f2f-04f59b7edcec/AppIcon-start2021-0-0-1x_U007emarketing-0-5-85-220.png/512x512bb.jpg",
+      "summary": "Writing Wizard: Learn to Write מאת Pierre Abel. צילום החנות המתוארך כולל Education, גרסה 3.5.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 87/100",
+        "חינם",
+        "5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/writing-wizard-learn-to-write/id1305242235?uo=4"
+    },
+    {
+      "id": "645416621",
+      "name": "iTrace — handwriting practice",
+      "location": "DEVPOCKET LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b8/ff/db/b8ffdb55-f13f-99a0-9fb8-9e9fe7d66c40/AppIcon_Subscriptions-0-0-1x_U007epad-0-0-0-1-0-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "iTrace — handwriting practice מאת DEVPOCKET LLC. צילום החנות המתוארך כולל Education, Family, Games, גרסה 3.0.8 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 84/100",
+        "חינם",
+        "2.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 2.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 84,
+      "url": "https://apps.apple.com/us/app/itrace-handwriting-practice/id645416621?uo=4"
+    },
+    {
+      "id": "1598691036",
+      "name": "Calligraphy Master: Cursive",
+      "location": "Hangzhou Good Play Network Technology Co., Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8b/d8/68/8bd868f0-bc3a-ded0-495a-f402738c55b9/AppIcon-0-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Calligraphy Master: Cursive מאת Hangzhou Good Play Network Technology Co., Ltd. צילום החנות המתוארך כולל Utilities, Education, גרסה 3.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 84/100",
+        "חינם",
+        "2.4K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 2.4K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 84,
+      "url": "https://apps.apple.com/us/app/calligraphy-master-cursive/id1598691036?uo=4"
+    },
+    {
+      "id": "1576501331",
+      "name": "Calligraphy Practice · Cursive",
+      "location": "Lidwien Veugen",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ba/77/5f/ba775fe3-6852-c317-f45a-d2cc6da3a01e/AppIcon-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg",
+      "summary": "Calligraphy Practice · Cursive מאת Lidwien Veugen. צילום החנות המתוארך כולל Graphics & Design, Education, גרסה 9.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 83/100",
+        "חינם",
+        "633 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 633",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/calligraphy-practice-cursive/id1576501331?uo=4"
+    },
+    {
+      "id": "1567948511",
+      "name": "Handwriting Practice App",
+      "location": "Lidwien Veugen",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cf/e1/c6/cfe1c631-f476-ef66-5736-4a20c260455b/AppIcon-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg",
+      "summary": "Handwriting Practice App מאת Lidwien Veugen. צילום החנות המתוארך כולל Entertainment, Graphics & Design, גרסה 10.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 82/100",
+        "חינם",
+        "641 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 641",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 82,
+      "url": "https://apps.apple.com/us/app/handwriting-practice-app/id1567948511?uo=4"
+    },
+    {
+      "id": "1620416791",
+      "name": "Modern Handwriting Calligraphy",
+      "location": "SPRINNET Systems, s.r.o.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/20/c9/7820c98c-73d1-b24b-4afc-2fb5be64d4d1/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Modern Handwriting Calligraphy מאת SPRINNET Systems, s.r.o.. צילום החנות המתוארך כולל Education, Reference, גרסה 2.9.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 75/100",
+        "חינם",
+        "426 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 426",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/modern-handwriting-calligraphy/id1620416791?uo=4"
+    },
+    {
+      "id": "6737120401",
+      "name": "Cursively Handwriting Practice",
+      "location": "ASVETA CZ s.r.o.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fd/e3/93/fde3937c-b17a-b985-31e6-36d9f324c539/cursively-app-icon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Cursively Handwriting Practice מאת ASVETA CZ s.r.o.. צילום החנות המתוארך כולל Education, Reference, גרסה 1.7 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 73/100",
+        "חינם",
+        "129 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 129",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 73,
+      "url": "https://apps.apple.com/us/app/cursively-handwriting-practice/id6737120401?uo=4"
+    },
+    {
+      "id": "6746206473",
+      "name": "Cursive Handwriting Practice ·",
+      "location": "The App Studio LC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/fe/92/e2fe923f-9288-a115-d1dc-3f47c9182487/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Cursive Handwriting Practice · מאת The App Studio LC. צילום החנות המתוארך כולל Education, Utilities, גרסה 1.0 ועדכון 2025. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 65/100",
+        "חינם",
+        "38 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 38",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 65,
+      "url": "https://apps.apple.com/us/app/cursive-handwriting-practice/id6746206473?uo=4"
+    },
+    {
+      "id": "1541520267",
+      "name": "Handwriting Lettering Practice",
+      "location": "Meital Goor",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/35/08/20/35082011-6734-f1c1-42f3-c51b01cde6c7/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Handwriting Lettering Practice מאת Meital Goor. צילום החנות המתוארך כולל Lifestyle, Education, גרסה 1.1 ועדכון 2021. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 35/100",
+        "חינם",
+        "35 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "2.1/5 · 35",
+        "price": "חינם",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 35,
+      "url": "https://apps.apple.com/us/app/handwriting-lettering-practice/id1541520267?uo=4"
+    },
+    {
+      "id": "6520393445",
+      "name": "Toolis",
+      "location": "Muhammad Al Hafiz Rahmadhani",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3a/f4/63/3af463e7-504b-cf68-60cb-ca9ec44ed7f3/AppIcon-0-0-1x_U007ephone-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Toolis מאת Muhammad Al Hafiz Rahmadhani. צילום החנות המתוארך כולל Education, Utilities, גרסה 1.0 ועדכון 2024. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 4/100",
+        "חינם",
+        "פחות מ-4.0 / ללא דירוג"
+      ],
+      "facts": {
+        "rating": "פחות מ-4.0 / ללא דירוג",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 4,
+      "url": "https://apps.apple.com/us/app/toolis/id6520393445?uo=4"
+    }
+  ]
+};

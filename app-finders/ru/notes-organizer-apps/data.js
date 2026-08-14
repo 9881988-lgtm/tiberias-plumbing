@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:notes-organizer-apps:ru",
+  "title": "органайзеры заметок",
+  "sourceButton": "Открыть в App Store",
+  "ui": {
+    "any": "Любой",
+    "confirm": "—",
+    "officialSource": "Открыть в App Store",
+    "suggestUpdate": "Сообщить об изменении",
+    "save": "Сохранить",
+    "saved": "Сохранено",
+    "compare": "Сравнить",
+    "noMatchesTitle": "В снимке нет точного совпадения",
+    "noMatchesText": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "location": "Разработчик",
+    "bestFor": "Доказательства",
+    "feature": "Показатель",
+    "matcherButton": "Показать вариант",
+    "matcherEmpty": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "matcherNoResult": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "matcherResult": "Найдите сильный стартовый вариант",
+    "matcherApply": "Каталог"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Цена",
+      "allLabel": "Любая цена",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Бесплатно"
+        },
+        {
+          "value": "Paid",
+          "label": "Платно"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Рейтинг",
+      "allLabel": "Любой рейтинг",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Ниже 4,0 / нет рейтинга"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Число оценок",
+      "allLabel": "Любое число",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1 000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Менее 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Обновление",
+      "allLabel": "Любая дата",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Раньше"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Рейтинг App Store"
+    },
+    {
+      "key": "price",
+      "label": "Цена в магазине"
+    },
+    {
+      "key": "system",
+      "label": "Минимальная ОС"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Цена",
+        "placeholder": "Любая цена"
+      },
+      {
+        "key": "rating",
+        "label": "Рейтинг",
+        "placeholder": "Любой рейтинг"
+      },
+      {
+        "key": "reviews",
+        "label": "Число оценок",
+        "placeholder": "Любое число"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1232780281",
+      "name": "Notion: Notes, Tasks, AI",
+      "location": "Notion Labs, Incorporated",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/76/97/e3/7697e332-7885-3267-2532-45f529da9994/AppIconProd-0-0-1x_U007epad-0-0-0-1-0-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "Notion: Notes, Tasks, AI, разработчик Notion Labs, Incorporated. В датированном снимке указаны категории Productivity, Business, версия 1.7.328 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 97/100",
+        "Бесплатно",
+        "89,8 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 89,8 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4"
+    },
+    {
+      "id": "1444383602",
+      "name": "Goodnotes: AI Notes, Docs, PDF",
+      "location": "Goodnotes Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ea/0e/06/ea0e06be-bde7-e5e5-1a8a-fc29c5099de9/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Goodnotes: AI Notes, Docs, PDF, разработчик Goodnotes Limited. В датированном снимке указаны категории Productivity, Education, версия 7.1.12 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 97/100",
+        "Бесплатно",
+        "440,6 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 440,6 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 18.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602?uo=4"
+    },
+    {
+      "id": "410395246",
+      "name": "Microsoft OneNote",
+      "location": "Microsoft Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5f/77/10/5f771049-91c6-88b3-f934-13fb56ce4aa0/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Microsoft OneNote, разработчик Microsoft Corporation. В датированном снимке указаны категории Productivity, Education, версия 16.112.4 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 97/100",
+        "Бесплатно",
+        "1,1 млн число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 1,1 млн",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/microsoft-onenote/id410395246?uo=4"
+    },
+    {
+      "id": "1110145109",
+      "name": "Notes",
+      "location": "Apple Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/96/85/52/96855209-27d3-bfb0-0516-105a2223ef50/notes-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Notes, разработчик Apple Inc.. В датированном снимке указаны категории Productivity, версия 2.0 и обновление 2025 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 94/100",
+        "Бесплатно",
+        "625,8 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 625,8 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 10.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/notes/id1110145109?uo=4"
+    },
+    {
+      "id": "281796108",
+      "name": "Evernote: AI Notes & Notebook",
+      "location": "Evernote Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/2b/95/2c2b95e5-53ad-2324-9ad7-0aaad40f7894/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Evernote: AI Notes & Notebook, разработчик Evernote Corporation. В датированном снимке указаны категории Productivity, Utilities, версия 11.29.3 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 93/100",
+        "Бесплатно",
+        "77 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 77 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/evernote-ai-notes-notebook/id281796108?uo=4"
+    },
+    {
+      "id": "1029207872",
+      "name": "Google Keep - Notes and lists",
+      "location": "Google LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/aa/dd/96/aadd9635-aa90-65a7-9e89-f0d59bc7e235/keep_2026_ios-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Google Keep - Notes and lists, разработчик Google LLC. В датированном снимке указаны категории Productivity, Business, версия 2.2026.32101 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 93/100",
+        "Бесплатно",
+        "29 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 29 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/google-keep-notes-and-lists/id1029207872?uo=4"
+    },
+    {
+      "id": "973801089",
+      "name": "Notebook – Notes, Notepad",
+      "location": "Zoho Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/87/8f/41878f9b-7609-5a17-bfc6-14c6c9defd5f/AppIcon_Linism_Light-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Notebook – Notes, Notepad, разработчик Zoho Corporation. В датированном снимке указаны категории Productivity, Utilities, версия 6.8.37 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 93/100",
+        "Бесплатно",
+        "23,8 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 23,8 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/notebook-notes-notepad/id973801089?uo=4"
+    },
+    {
+      "id": "551139514",
+      "name": "Workflowy: Note, List, Outline",
+      "location": "FunRoutine INC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e3/25/0c/e3250cf6-27b6-ce98-f06d-0f537842575f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Workflowy: Note, List, Outline, разработчик FunRoutine INC. В датированном снимке указаны категории Productivity, Utilities, версия 4.3.2608101547 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 92/100",
+        "Бесплатно",
+        "8,2 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 8,2 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/workflowy-note-list-outline/id551139514?uo=4"
+    },
+    {
+      "id": "1207183021",
+      "name": "Simple Notepad -BestNote-",
+      "location": "Daikuzono Takuma",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/85/01/108501c4-71f5-f302-cf4e-93bc4cb605cc/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Simple Notepad -BestNote-, разработчик Daikuzono Takuma. В датированном снимке указаны категории Productivity, Utilities, версия 3.3.3 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 88/100",
+        "Бесплатно",
+        "2,8 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 2,8 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/simple-notepad-bestnote/id1207183021?uo=4"
+    },
+    {
+      "id": "6450029780",
+      "name": "EasyNotes - Note Taking Apps",
+      "location": "Gulooloo Tech Co., Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c3/f2/d7/c3f2d75e-8509-064e-3600-0f02adcb99ec/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "EasyNotes - Note Taking Apps, разработчик Gulooloo Tech Co., Limited. В датированном снимке указаны категории Productivity, Utilities, версия 1.1.34 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 88/100",
+        "Бесплатно",
+        "3,8 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 3,8 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/easynotes-note-taking-apps/id6450029780?uo=4"
+    },
+    {
+      "id": "1457937396",
+      "name": "Simple Notes - Notepad Manager",
+      "location": "Komorebi Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/af/ca/ac/afcaac1c-9248-0207-7fda-4a88a96939d7/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Simple Notes - Notepad Manager, разработчик Komorebi Inc.. В датированном снимке указаны категории Productivity, Education, версия 4.1.0 и обновление 2025 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 82/100",
+        "Бесплатно",
+        "791 число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 791",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 82,
+      "url": "https://apps.apple.com/us/app/simple-notes-notepad-manager/id1457937396?uo=4"
+    },
+    {
+      "id": "6443648972",
+      "name": "Orca: Categorize Your Notes",
+      "location": "Cole Horvitz",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/3e/ec/43/3eec4331-ccac-5b15-ceb3-3be13785d36d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Orca: Categorize Your Notes, разработчик Cole Horvitz. В датированном снимке указаны категории Productivity, Lifestyle, версия 1.0 и обновление 2022 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 60/100",
+        "Бесплатно",
+        "4 число оценок"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 4",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 60,
+      "url": "https://apps.apple.com/us/app/orca-categorize-your-notes/id6443648972?uo=4"
+    }
+  ]
+};

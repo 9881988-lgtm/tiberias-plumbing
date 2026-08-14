@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:markdown-editor-apps:es",
+  "title": "editores Markdown",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1236254471",
+      "name": "Drafts",
+      "location": "Agile Tortoise",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/67/53/70/675370de-b810-6723-3202-3c5b92374c47/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Drafts, de Agile Tortoise. Esta captura registra Productivity, Business, versión 53.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 92/100",
+        "Gratis",
+        "10,7 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 10,7 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/drafts/id1236254471?uo=4"
+    },
+    {
+      "id": "1016366447",
+      "name": "Bear - Markdown Notes",
+      "location": "Shiny Frog Ltd.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8d/fb/71/8dfb71c1-1066-5ac5-3a66-23a1d6f23b29/AppIcon-26-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Bear - Markdown Notes, de Shiny Frog Ltd.. Esta captura registra Productivity, Utilities, versión 2.9.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 90/100",
+        "Gratis",
+        "6,8 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 6,8 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/bear-markdown-notes/id1016366447?uo=4"
+    },
+    {
+      "id": "1352499399",
+      "name": "Microsoft Whiteboard",
+      "location": "Microsoft Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/86/e5/52/86e55205-e601-ba1d-4e75-4f4d8a708496/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Microsoft Whiteboard, de Microsoft Corporation. Esta captura registra Productivity, versión 25.11204.0.9201 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 87/100",
+        "Gratis",
+        "12,1 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 12,1 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399?uo=4"
+    },
+    {
+      "id": "1557175442",
+      "name": "Obsidian - Connected Notes",
+      "location": "Dynalist Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2c/d7/f7/2cd7f7ce-eaae-c08b-5765-a1a30034d6b4/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Obsidian - Connected Notes, de Dynalist Inc.. Esta captura registra Productivity, Reference, versión 1.13.6 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 86/100",
+        "Gratis",
+        "2,7 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 2,7 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/obsidian-connected-notes/id1557175442?uo=4"
+    },
+    {
+      "id": "1548193893",
+      "name": "Runestone Text Editor",
+      "location": "Simon Stovring",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f4/a1/e9/f4a1e9ed-5d45-74ce-79cf-1aed5c0e3cc0/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Runestone Text Editor, de Simon Stovring. Esta captura registra Developer Tools, versión 1.6.1 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 84/100",
+        "Gratis",
+        "1,9 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 1,9 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 84,
+      "url": "https://apps.apple.com/us/app/runestone-text-editor/id1548193893?uo=4"
+    },
+    {
+      "id": "1507139439",
+      "name": "One Markdown",
+      "location": "禄海 区",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/be/a4/ffbea406-b8a6-14b9-21ed-7dabf2c131c4/OneMarkdown-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "One Markdown, de 禄海 区. Esta captura registra Productivity, Utilities, versión 1.6.7 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 80/100",
+        "Gratis",
+        "144 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 144",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 14.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/one-markdown/id1507139439?uo=4"
+    },
+    {
+      "id": "1606625287",
+      "name": "Subtext",
+      "location": "Nick Lockwood",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d0/60/1b/d0601b61-3c89-aadf-c771-689abde4fded/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Subtext, de Nick Lockwood. Esta captura registra Developer Tools, Utilities, versión 1.2.4 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 77/100",
+        "Gratis",
+        "74 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 74",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 14.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 77,
+      "url": "https://apps.apple.com/us/app/subtext/id1606625287?uo=4"
+    },
+    {
+      "id": "6761887912",
+      "name": "Notelane - Markdown Editor",
+      "location": "Asterios Digital GmbH",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fa/2e/14/fa2e14d2-4d08-0c86-5e00-5200f25db5eb/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Notelane - Markdown Editor, de Asterios Digital GmbH. Esta captura registra Productivity, Utilities, versión 1.2.2 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 76/100",
+        "Gratis",
+        "4 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 4",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 76,
+      "url": "https://apps.apple.com/us/app/notelane-markdown-editor/id6761887912?uo=4"
+    },
+    {
+      "id": "6769123480",
+      "name": "Marked — Markdown Editor",
+      "location": "TREZE MARKETING SOCIEDAD LIMITADA",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e3/ab/86/e3ab866c-ac35-5d03-c3ea-31d14758834c/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Marked — Markdown Editor, de TREZE MARKETING SOCIEDAD LIMITADA. Esta captura registra Productivity, Utilities, versión 1.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 75/100",
+        "Gratis",
+        "2 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 2",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 26.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/marked-markdown-editor/id6769123480?uo=4"
+    },
+    {
+      "id": "6444049843",
+      "name": "Simple Markdown Editor",
+      "location": "YUKI TANAIKE",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7d/4a/2d/7d4a2dbd-29d2-6726-2dc5-3b43fd9519a5/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Simple Markdown Editor, de YUKI TANAIKE. Esta captura registra Utilities, Developer Tools, versión 2.0.2 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 75/100",
+        "Gratis",
+        "3 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 3",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/simple-markdown-editor/id6444049843?uo=4"
+    },
+    {
+      "id": "1494902837",
+      "name": "Markdown゜",
+      "location": "Teleprompter LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/d5/1b/8c/d51b8c32-5079-f9d7-5916-4fd979bd2aef/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "Markdown゜, de Teleprompter LLC. Esta captura registra Productivity, Utilities, versión 1.0.3 y actualización 2020. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 66/100",
+        "Gratis",
+        "470 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 470",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 66,
+      "url": "https://apps.apple.com/us/app/markdown/id1494902837?uo=4"
+    },
+    {
+      "id": "1594063100",
+      "name": "Markcurial: Markdown Editor",
+      "location": "Charles Fager",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/72/35/41/72354198-e898-c6a4-f158-642cf50bc6b2/AppIcon-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "Markcurial: Markdown Editor, de Charles Fager. Esta captura registra Productivity, Developer Tools, versión 1.2 y actualización 2022. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 61/100",
+        "Gratis",
+        "11 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 11",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 61,
+      "url": "https://apps.apple.com/us/app/markcurial-markdown-editor/id1594063100?uo=4"
+    }
+  ]
+};

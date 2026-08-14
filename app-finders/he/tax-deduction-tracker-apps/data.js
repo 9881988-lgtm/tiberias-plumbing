@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:tax-deduction-tracker-apps:he",
+  "title": "אפליקציות למעקב ניכויי מס",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "940247939",
+      "name": "TurboTax: File Your Tax Return",
+      "location": "Intuit Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/19/9b/28/199b2815-b7e3-1ef1-8c6a-3636f7812f63/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "TurboTax: File Your Tax Return מאת Intuit Inc.. צילום החנות המתוארך כולל Finance, Productivity, גרסה 12.15 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "938.1K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 938.1K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/turbotax-file-your-tax-return/id940247939?uo=4"
+    },
+    {
+      "id": "1041591359",
+      "name": "Stride: Mileage & Tax Tracker",
+      "location": "Stride Health, Inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6a/b4/ab/6ab4ab38-3dc7-36f3-bf96-69e6006ab8d3/AppIcon-0-1x_U007epad-0-1-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Stride: Mileage & Tax Tracker מאת Stride Health, Inc. צילום החנות המתוארך כולל Finance, Productivity, גרסה 26.5.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "94.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 94.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/stride-mileage-tax-tracker/id1041591359?uo=4"
+    },
+    {
+      "id": "482050344",
+      "name": "H&R Block Tax Prep: File Taxes",
+      "location": "HRB Tax Group, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/3d/d9/ee3dd962-4976-199f-8748-115a000968b2/AppIcon-0-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "summary": "H&R Block Tax Prep: File Taxes מאת HRB Tax Group, Inc.. צילום החנות המתוארך כולל Finance, Productivity, גרסה 15.12.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "115.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 115.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/h-r-block-tax-prep-file-taxes/id482050344?uo=4"
+    },
+    {
+      "id": "985378916",
+      "name": "Mileage Tracker by Everlance",
+      "location": "Everlance Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/32/25/d1/3225d1e1-bb4a-c5a8-0a60-438b3d9b097a/EverlanceIconLG-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Mileage Tracker by Everlance מאת Everlance Inc.. צילום החנות המתוארך כולל Finance, Business, גרסה 5.5.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "51.4K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 51.4K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/mileage-tracker-by-everlance/id985378916?uo=4"
+    },
+    {
+      "id": "924418916",
+      "name": "Mileage Tracker by Driversnote",
+      "location": "Driversnote ApS",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3a/23/9c/3a239c67-a067-3f7a-d077-da55a67a0c39/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Mileage Tracker by Driversnote מאת Driversnote ApS. צילום החנות המתוארך כולל Finance, Business, גרסה 4.28.4 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 95/100",
+        "חינם",
+        "38.3K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 38.3K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/mileage-tracker-by-driversnote/id924418916?uo=4"
+    },
+    {
+      "id": "490111274",
+      "name": "MyBlock: Tax Docs & Refund",
+      "location": "HRB Tax Group, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1f/12/07/1f12076b-200d-5204-fb87-45fff9af17cb/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
+      "summary": "MyBlock: Tax Docs & Refund מאת HRB Tax Group, Inc.. צילום החנות המתוארך כולל Finance, Business, גרסה 14.8.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 94/100",
+        "חינם",
+        "57.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 57.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/myblock-tax-docs-refund/id490111274?uo=4"
+    },
+    {
+      "id": "1471090941",
+      "name": "Keeper: Tax Filing & Expenses",
+      "location": "Keeper Tax Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/37/ad/88/37ad889a-1826-4c31-47f5-92b7fd3af58d/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "Keeper: Tax Filing & Expenses מאת Keeper Tax Inc.. צילום החנות המתוארך כולל Finance, גרסה 01.04.202 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "12.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 12.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/keeper-tax-filing-expenses/id1471090941?uo=4"
+    },
+    {
+      "id": "951737201",
+      "name": "Hurdlr Mileage, Expenses & Tax",
+      "location": "Hurdlr, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a3/bc/88/a3bc8826-4a7f-fc32-647a-c941d8505231/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Hurdlr Mileage, Expenses & Tax מאת Hurdlr, Inc.. צילום החנות המתוארך כולל Finance, Business, גרסה 42.2.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 89/100",
+        "חינם",
+        "21K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 21K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/hurdlr-mileage-expenses-tax/id951737201?uo=4"
+    },
+    {
+      "id": "1168218441",
+      "name": "TaxCaddy",
+      "location": "Thomson Reuters",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0b/c4/cd/0bc4cd19-7878-6e16-84cd-e7688751fcf5/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "TaxCaddy מאת Thomson Reuters. צילום החנות המתוארך כולל Finance, גרסה 10.7.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 88/100",
+        "חינם",
+        "8.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 8.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/taxcaddy/id1168218441?uo=4"
+    },
+    {
+      "id": "322143854",
+      "name": "Shoeboxed: Receipt Scanner",
+      "location": "Shoeboxed, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ed/7c/73/ed7c73ba-3fff-2148-6c8f-f3ee5f16f389/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Shoeboxed: Receipt Scanner מאת Shoeboxed, Inc.. צילום החנות המתוארך כולל Finance, Business, גרסה 7.1.9 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 85/100",
+        "חינם",
+        "1.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 1.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 85,
+      "url": "https://apps.apple.com/us/app/shoeboxed-receipt-scanner/id322143854?uo=4"
+    },
+    {
+      "id": "528944663",
+      "name": "Mileage Expense Log & Tracker",
+      "location": "Michael Chu",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a5/18/30/a518306a-c5ae-3219-4f9d-318807548adb/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Mileage Expense Log & Tracker מאת Michael Chu. צילום החנות המתוארך כולל Finance, Business, גרסה 5.11.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 83/100",
+        "חינם",
+        "894 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 894",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/mileage-expense-log-tracker/id528944663?uo=4"
+    },
+    {
+      "id": "290874373",
+      "name": "XpenseTracker",
+      "location": "Silverware Software, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/03/4a/a6/034aa6d6-5951-312a-debd-680ede1a6c13/AppIconXT-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "XpenseTracker מאת Silverware Software, LLC. צילום החנות המתוארך כולל Finance, Business, גרסה 10.84 ועדכון 2021. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 73/100",
+        "בתשלום",
+        "4.9K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 4.9K‏",
+        "price": "$4.99",
+        "system": "iOS/iPadOS 11.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 4.99,
+      "score": 73,
+      "url": "https://apps.apple.com/us/app/xpensetracker/id290874373?uo=4"
+    }
+  ]
+};

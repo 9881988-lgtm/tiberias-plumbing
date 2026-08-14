@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:habit-tracker-apps:es",
+  "title": "apps de hábitos",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1528595748",
+      "name": "Finch: Self-Care Pet",
+      "location": "Finch Care Public Benefit Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/40/f0/79/40f07924-5e95-1e73-d7f8-5e56f6051a3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Finch: Self-Care Pet, de Finch Care Public Benefit Corporation. Esta captura registra Health & Fitness, Lifestyle, versión 3.73.197 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 99/100",
+        "Gratis",
+        "739,4 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 739,4 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/finch-self-care-pet/id1528595748?uo=4"
+    },
+    {
+      "id": "1438388363",
+      "name": "Habit Tracker",
+      "location": "Inner Grow Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/66/48/5d664875-578c-759a-c16c-e008f3b4df5f/AppIcon-pink-gr-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Habit Tracker, de Inner Grow Limited. Esta captura registra Productivity, Health & Fitness, versión 2.14.22 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 98/100",
+        "Gratis",
+        "145,3 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 145,3 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/habit-tracker/id1438388363?uo=4"
+    },
+    {
+      "id": "1499198946",
+      "name": "Structured: Daily Planner Todo",
+      "location": "unorderly GmbH",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d9/6d/26/d96d261d-76f6-d826-4073-05055b30de36/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Structured: Daily Planner Todo, de unorderly GmbH. Esta captura registra Productivity, Education, versión 4.5.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 98/100",
+        "Gratis",
+        "164,1 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 164,1 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/structured-daily-planner-todo/id1499198946?uo=4"
+    },
+    {
+      "id": "983826477",
+      "name": "Productive - Habit Tracker",
+      "location": "Mosaic S.r.l.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/8c/d1/7f8cd183-7ce1-b8b3-b690-51a7565ee76b/AppIcon_iOS-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Productive - Habit Tracker, de Mosaic S.r.l.. Esta captura registra Productivity, Health & Fitness, versión 3.26.39 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 96/100",
+        "Gratis",
+        "91,1 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 91,1 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/productive-habit-tracker/id983826477?uo=4"
+    },
+    {
+      "id": "672401817",
+      "name": "Strides: Habit Tracker + Goals",
+      "location": "Goals LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a6/2e/b3/a62eb338-7d6a-4b80-7137-2a0d6986fb12/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "Strides: Habit Tracker + Goals, de Goals LLC. Esta captura registra Productivity, Lifestyle, versión 19.12 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 94/100",
+        "Gratis",
+        "19,1 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 19,1 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/strides-habit-tracker-goals/id672401817?uo=4"
+    },
+    {
+      "id": "1450486923",
+      "name": "Routine Planner, Habit Tracker",
+      "location": "Routinery Corp.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/93/e2/4093e2f2-b3e0-7298-a59e-d2e9df29ca20/Default-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Routine Planner, Habit Tracker, de Routinery Corp.. Esta captura registra Productivity, Health & Fitness, versión 3.29.33 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 93/100",
+        "Gratis",
+        "17,6 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 17,6 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/routine-planner-habit-tracker/id1450486923?uo=4"
+    },
+    {
+      "id": "6474421906",
+      "name": "Atoms - from Atomic Habits",
+      "location": "Atomic Development Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/62/b6/0062b686-10ed-390b-a621-e5c6f979294a/AppIcon-0-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg",
+      "summary": "Atoms - from Atomic Habits, de Atomic Development Inc.. Esta captura registra Productivity, Lifestyle, versión 3.5.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 93/100",
+        "Gratis",
+        "10,6 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 10,6 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/atoms-from-atomic-habits/id6474421906?uo=4"
+    },
+    {
+      "id": "6480042457",
+      "name": "Habit Tracker - Daily Goals",
+      "location": "Uniqo Lab FZC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c5/7f/42/c57f4244-9589-e1d4-be0d-b3b481549629/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Habit Tracker - Daily Goals, de Uniqo Lab FZC. Esta captura registra Productivity, Lifestyle, versión 1.1.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 90/100",
+        "Gratis",
+        "3,2 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 3,2 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/habit-tracker-daily-goals/id6480042457?uo=4"
+    },
+    {
+      "id": "6443918070",
+      "name": "Habit Tracker - HabitKit",
+      "location": "Sebastian Roehl",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/87/0e/5b/870e5b09-11f1-c9e1-c560-c4349089207f/NewAppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Habit Tracker - HabitKit, de Sebastian Roehl. Esta captura registra Productivity, versión 1.16.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 89/100",
+        "Gratis",
+        "2,3 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 2,3 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/habit-tracker-habitkit/id6443918070?uo=4"
+    },
+    {
+      "id": "1547137474",
+      "name": "Onrise: Habit Tracker & Focus",
+      "location": "Maximilian Munker",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/96/bc/d696bcde-a743-eba2-0882-18aeed250ee7/AppIcon-0-0-1x_U007epad-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Onrise: Habit Tracker & Focus, de Maximilian Munker. Esta captura registra Productivity, Health & Fitness, versión 1.1.8 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 89/100",
+        "Gratis",
+        "2,5 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 2,5 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/onrise-habit-tracker-focus/id1547137474?uo=4"
+    },
+    {
+      "id": "1522121879",
+      "name": "Habit Rabbit: Habit Tracker",
+      "location": "Justin Patrick Silang",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/3e/cb/673ecb34-6fa2-c899-abd2-5b448e8cc0fc/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "summary": "Habit Rabbit: Habit Tracker, de Justin Patrick Silang. Esta captura registra Productivity, versión 5.12 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 86/100",
+        "Gratis",
+        "8,6 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 8,6 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/habit-rabbit-habit-tracker/id1522121879?uo=4"
+    },
+    {
+      "id": "6749204658",
+      "name": "Habit Tracker: Habit OK",
+      "location": "Develife apps Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0c/8a/03/0c8a0364-5cd2-b5de-3e82-436f600df040/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Habit Tracker: Habit OK, de Develife apps Limited. Esta captura registra Productivity, Health & Fitness, versión 3.9.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 79/100",
+        "Gratis",
+        "40 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 40",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 79,
+      "url": "https://apps.apple.com/us/app/habit-tracker-habit-ok/id6749204658?uo=4"
+    }
+  ]
+};

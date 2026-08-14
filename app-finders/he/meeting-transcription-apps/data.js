@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:meeting-transcription-apps:he",
+  "title": "אפליקציות לתמלול פגישות",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1276437113",
+      "name": "Otter Transcribe Voice Notes",
+      "location": "Otter.ai, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/3f/e9/d63fe927-2540-3c5c-3756-d2c8105f9596/otter-logo-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Otter Transcribe Voice Notes מאת Otter.ai, Inc.. צילום החנות המתוארך כולל Productivity, Business, גרסה 3.105.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 97/100",
+        "חינם",
+        "72.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 72.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/otter-transcribe-voice-notes/id1276437113?uo=4"
+    },
+    {
+      "id": "6670175056",
+      "name": "Summary - AI Note Taker",
+      "location": "Labhouse Mobile SL",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b0/af/63/b0af6358-e51f-2069-45b8-5215a9411ed9/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Summary - AI Note Taker מאת Labhouse Mobile SL. צילום החנות המתוארך כולל Productivity, Business, גרסה 2.18.7 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 95/100",
+        "חינם",
+        "46K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 46K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/summary-ai-note-taker/id6670175056?uo=4"
+    },
+    {
+      "id": "6504206467",
+      "name": "Minutes: AI Meeting Note Taker",
+      "location": "Minutes AI, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/6c/78/986c78d2-cf53-efbc-5be8-8dde080204b3/AppIcon-0-0-1x_U007epad-0-1-0-85-220.jpeg/512x512bb.jpg",
+      "summary": "Minutes: AI Meeting Note Taker מאת Minutes AI, LLC. צילום החנות המתוארך כולל Productivity, Business, גרסה 1.12.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 94/100",
+        "חינם",
+        "14K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 14K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/minutes-ai-meeting-note-taker/id6504206467?uo=4"
+    },
+    {
+      "id": "6739429409",
+      "name": "Granola - AI Meeting Notes",
+      "location": "Granola inc",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/42/dc/5f/42dc5f36-38ea-9ba9-7ea7-355fae8e50ce/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Granola - AI Meeting Notes מאת Granola inc. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 1.15.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 94/100",
+        "חינם",
+        "11.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 11.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/granola-ai-meeting-notes/id6739429409?uo=4"
+    },
+    {
+      "id": "6451491556",
+      "name": "Wave AI Note Taker & Recorder",
+      "location": "Mohrer Associates LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/88/25/0a/88250a5e-7e29-66cf-4aa7-9dd4d8b73e2e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Wave AI Note Taker & Recorder מאת Mohrer Associates LLC. צילום החנות המתוארך כולל Productivity, Utilities, גרסה 3.9.5 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "11.8K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 11.8K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/wave-ai-note-taker-recorder/id6451491556?uo=4"
+    },
+    {
+      "id": "6463164203",
+      "name": "Fireflies: AI notetaker",
+      "location": "FIREFLIES.AI CORP.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/df/fe/0b/dffe0b0c-71b1-e893-0b2b-8bbb5b58b993/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Fireflies: AI notetaker מאת FIREFLIES.AI CORP.. צילום החנות המתוארך כולל Productivity, Business, גרסה 0.5.49 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 91/100",
+        "חינם",
+        "4.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 4.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/fireflies-ai-notetaker/id6463164203?uo=4"
+    },
+    {
+      "id": "1241342461",
+      "name": "Transcribe - Speech to Text",
+      "location": "DENIVIP Group OOO",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/1d/af/eb1daf6b-3c82-5b78-af43-92f6930eda64/transcribe-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Transcribe - Speech to Text מאת DENIVIP Group OOO. צילום החנות המתוארך כולל Utilities, Business, גרסה 4.23.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 89/100",
+        "חינם",
+        "10.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 10.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/transcribe-speech-to-text/id1241342461?uo=4"
+    },
+    {
+      "id": "1460290478",
+      "name": "Transcribe Audio to Text Notes",
+      "location": "WBS s. r. o.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/4f/8d/2a4f8db1-8ec1-e995-688e-e7d0494dad01/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Transcribe Audio to Text Notes מאת WBS s. r. o.. צילום החנות המתוארך כולל Utilities, Productivity, גרסה 2.14 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 87/100",
+        "חינם",
+        "3.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 3.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.2+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/transcribe-audio-to-text-notes/id1460290478?uo=4"
+    },
+    {
+      "id": "1149425482",
+      "name": "Noted: Record & AI Transcribe",
+      "location": "Digital Workroom Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d9/46/71/d94671f2-8911-53b5-b359-5e4eb5a7b508/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Noted: Record & AI Transcribe מאת Digital Workroom Ltd. צילום החנות המתוארך כולל Productivity, Business, גרסה 6.5 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 86/100",
+        "חינם",
+        "3.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 3.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/noted-record-ai-transcribe/id1149425482?uo=4"
+    },
+    {
+      "id": "6476133984",
+      "name": "Smart AI Note Taker - MeetGeek",
+      "location": "Aivision Products S.R.L.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0d/c3/0d/0dc30da8-1a1e-dd0a-4bb1-49f9c5b963b3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Smart AI Note Taker - MeetGeek מאת Aivision Products S.R.L.. צילום החנות המתוארך כולל Productivity, Business, גרסה 1.17.5 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 83/100",
+        "חינם",
+        "150 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 150",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 83,
+      "url": "https://apps.apple.com/us/app/smart-ai-note-taker-meetgeek/id6476133984?uo=4"
+    },
+    {
+      "id": "6449362725",
+      "name": "AI Chat: Smart AI Assistant",
+      "location": "Asad Ahsan",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b5/be/43/b5be43dd-22a0-c363-3611-cb96e2f20a14/AppIcon-20-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "AI Chat: Smart AI Assistant מאת Asad Ahsan. צילום החנות המתוארך כולל Productivity, גרסה 1.0.30 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 81/100",
+        "חינם",
+        "718 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 718",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 81,
+      "url": "https://apps.apple.com/us/app/ai-chat-smart-ai-assistant/id6449362725?uo=4"
+    },
+    {
+      "id": "6450753757",
+      "name": "ChadAI: GPT нейросеть, ии фото",
+      "location": "Artur Artemovich Koltsov, IP",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7b/d0/73/7bd073b8-f51c-939a-3960-028bfa1a5297/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "ChadAI: GPT нейросеть, ии фото מאת Artur Artemovich Koltsov, IP. צילום החנות המתוארך כולל Education, Productivity, גרסה 1.0.32 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 72/100",
+        "חינם",
+        "43 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.1/5 · 43",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.3+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 72,
+      "url": "https://apps.apple.com/us/app/chadai-gpt-%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D1%81%D0%B5%D1%82%D1%8C-%D0%B8%D0%B8-%D1%84%D0%BE%D1%82%D0%BE/id6450753757?uo=4"
+    }
+  ]
+};

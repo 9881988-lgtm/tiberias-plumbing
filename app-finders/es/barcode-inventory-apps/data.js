@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:barcode-inventory-apps:es",
+  "title": "apps de inventario con códigos de barras",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1226650677",
+      "name": "QR Code Reader，Barcode Scanner",
+      "location": "AIR APPS SYSTEMS, UNIPESSOAL, LDA",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/37/ff/c2/37ffc297-c67b-bd4d-5c29-b395092b86c7/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "QR Code Reader，Barcode Scanner, de AIR APPS SYSTEMS, UNIPESSOAL, LDA. Esta captura registra Utilities, Business, versión 2026.3.4 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 96/100",
+        "Gratis",
+        "70,6 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 70,6 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/qr-code-reader-barcode-scanner/id1226650677?uo=4"
+    },
+    {
+      "id": "529353551",
+      "name": "Sortly: Inventory Simplified",
+      "location": "Sortly Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/51/9d/bf/519dbfa7-4393-c7c0-e6c4-2d3ce9b42dd8/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Sortly: Inventory Simplified, de Sortly Inc.. Esta captura registra Business, Productivity, versión 10.25.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 91/100",
+        "Gratis",
+        "9,4 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 9,4 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 18.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/sortly-inventory-simplified/id529353551?uo=4"
+    },
+    {
+      "id": "1584764976",
+      "name": "QR Code Reader＊Barcode Scanner",
+      "location": "VISARGERD, S.L.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5d/91/2d/5d912d68-2a91-bc20-a977-a99d7eb451cd/AppIcon-icon_v3_3-0-0-1x_U007ephone-0-11-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "QR Code Reader＊Barcode Scanner, de VISARGERD, S.L.. Esta captura registra Utilities, Reference, versión 4.8.2 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 91/100",
+        "Gratis",
+        "22,2 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 22,2 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/qr-code-reader-barcode-scanner/id1584764976?uo=4"
+    },
+    {
+      "id": "1161117971",
+      "name": "Barcode Scanner - Orca Scan",
+      "location": "ORCA SCAN LIMITED",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1c/d2/32/1cd2325e-490f-269d-ceb0-6def18c2cf10/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Barcode Scanner - Orca Scan, de ORCA SCAN LIMITED. Esta captura registra Productivity, Business, versión 12.7.2 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 87/100",
+        "Gratis",
+        "1,9 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 1,9 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/barcode-scanner-orca-scan/id1161117971?uo=4"
+    },
+    {
+      "id": "1563044692",
+      "name": "Inventory with barcode",
+      "location": "emmanuel orvain",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/0f/5a/110f5aa0-92ca-5a92-e1a9-e9b031358572/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Inventory with barcode, de emmanuel orvain. Esta captura registra Productivity, Utilities, versión 7.29.3 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 82/100",
+        "Gratis",
+        "213 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 213",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 82,
+      "url": "https://apps.apple.com/us/app/inventory-with-barcode/id1563044692?uo=4"
+    },
+    {
+      "id": "1614817060",
+      "name": "Inventory Easy - Stock Tracker",
+      "location": "B TO J PTY LTD",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/fa/92/0afa920b-93b3-5ef0-886c-b60f8e0511ae/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Inventory Easy - Stock Tracker, de B TO J PTY LTD. Esta captura registra Business, Productivity, versión 27.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 80/100",
+        "Gratis",
+        "74 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 74",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/inventory-easy-stock-tracker/id1614817060?uo=4"
+    },
+    {
+      "id": "1325512157",
+      "name": "BoxHero: Inventory Management",
+      "location": "BGPworks",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fe/da/64/feda6455-1cf0-344c-6233-cff2aee6f028/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "BoxHero: Inventory Management, de BGPworks. Esta captura registra Business, Productivity, versión 3.57.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 79/100",
+        "Gratis",
+        "164 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 164",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 79,
+      "url": "https://apps.apple.com/us/app/boxhero-inventory-management/id1325512157?uo=4"
+    },
+    {
+      "id": "1048012518",
+      "name": "Stockroom Inventory",
+      "location": "Stockroom Software LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/47/cf/6047cf9e-dad8-8f07-a9f1-82a214984958/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Stockroom Inventory, de Stockroom Software LLC. Esta captura registra Productivity, Business, versión 3.6.6 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 78/100",
+        "Gratis",
+        "1,4 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 1,4 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 78,
+      "url": "https://apps.apple.com/us/app/stockroom-inventory/id1048012518?uo=4"
+    },
+    {
+      "id": "1558366385",
+      "name": "BoxOrganizer - Inventory",
+      "location": "BO24 UG (haftungsbeschraenkt)",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6a/1c/a2/6a1ca2d0-7a56-909c-ac12-e30577bd2b2b/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+      "summary": "BoxOrganizer - Inventory, de BO24 UG (haftungsbeschraenkt). Esta captura registra Productivity, Lifestyle, versión 2.2.2 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 69/100",
+        "Gratis",
+        "146 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 146",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 69,
+      "url": "https://apps.apple.com/us/app/boxorganizer-inventory/id1558366385?uo=4"
+    },
+    {
+      "id": "976989941",
+      "name": "Inventory Scan",
+      "location": "Cesar Augusto Trujillo Cetina",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/cb/5d/39/cb5d399c-8d4a-2a1c-c5d2-f0f4c2ede1a5/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-P3-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Inventory Scan, de Cesar Augusto Trujillo Cetina. Esta captura registra Productivity, Utilities, versión 3.0.5 y actualización 2023. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 68/100",
+        "Gratis",
+        "478 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 478",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 68,
+      "url": "https://apps.apple.com/us/app/inventory-scan/id976989941?uo=4"
+    },
+    {
+      "id": "6449892755",
+      "name": "Donate2Support",
+      "location": "Special Moments Of Arkansas LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/43/c3/6b/43c36bf7-adae-6d48-75f9-cdd72c8860a8/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Donate2Support, de Special Moments Of Arkansas LLC. Esta captura registra Social Networking, versión 1.5.13 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 54/100",
+        "Gratis",
+        "109 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "2.1/5 · 109",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "100-999",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 54,
+      "url": "https://apps.apple.com/us/app/donate2support/id6449892755?uo=4"
+    },
+    {
+      "id": "1526783666",
+      "name": "Physical Inventory Barcode",
+      "location": "CITEK TECHNOLOGY JOINT STOCK COMPANY",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/e0/a6/3a/e0a63a63-d671-3d25-3d14-65e7a4e7ee4c/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Physical Inventory Barcode, de CITEK TECHNOLOGY JOINT STOCK COMPANY. Esta captura registra Productivity, versión 1.2 y actualización 2021. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 16/100",
+        "Gratis",
+        "1 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "1.0/5 · 1",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 9.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 16,
+      "url": "https://apps.apple.com/us/app/physical-inventory-barcode/id1526783666?uo=4"
+    }
+  ]
+};

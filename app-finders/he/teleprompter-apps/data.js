@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:teleprompter-apps:he",
+  "title": "אפליקציות טלפרומפטר",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "941620509",
+      "name": "Teleprompter",
+      "location": "Teleprompter Apps Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/75/9c/df/759cdf43-659d-0036-7548-cdd33c388fb8/icon-lite-26-na-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Teleprompter מאת Teleprompter Apps Ltd. צילום החנות המתוארך כולל Productivity, Photo & Video, גרסה 3.79.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 95/100",
+        "חינם",
+        "31.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 31.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/teleprompter/id941620509?uo=4"
+    },
+    {
+      "id": "1124958568",
+      "name": "BIGVU Teleprompter Captions AI",
+      "location": "BIGVU INC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/eb/36/2f/eb362f26-2f59-4381-3fa5-c69ddd5360b5/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-0-0-0-85-220.png/512x512bb.jpg",
+      "summary": "BIGVU Teleprompter Captions AI מאת BIGVU INC. צילום החנות המתוארך כולל Photo & Video, Business, גרסה 2.81.1 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 95/100",
+        "חינם",
+        "34.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 34.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/bigvu-teleprompter-captions-ai/id1124958568?uo=4"
+    },
+    {
+      "id": "1139307843",
+      "name": "Teleprompter for Video",
+      "location": "Norton Five Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/26/07/0f/26070f9c-bf53-45e9-47f1-8dd47834bd79/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Teleprompter for Video מאת Norton Five Ltd. צילום החנות המתוארך כולל Photo & Video, Business, גרסה 11.3.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 94/100",
+        "חינם",
+        "14.2K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 14.2K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/teleprompter-for-video/id1139307843?uo=4"
+    },
+    {
+      "id": "1420515755",
+      "name": "Teleprompter.com",
+      "location": "Teleprompter LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/34/c1/f1/34c1f193-074b-fade-45b6-8c759c3c8276/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Teleprompter.com מאת Teleprompter LLC. צילום החנות המתוארך כולל Productivity, Photo & Video, גרסה 12.1.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 94/100",
+        "חינם",
+        "27.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 27.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/teleprompter-com/id1420515755?uo=4"
+    },
+    {
+      "id": "941070561",
+      "name": "Teleprompter Pro",
+      "location": "Teleprompter Apps Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/59/0e/7f/590e7fa0-7d34-5785-361c-0c1127682412/icon-pro-26-na-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Teleprompter Pro מאת Teleprompter Apps Ltd. צילום החנות המתוארך כולל Productivity, Photo & Video, גרסה 3.79.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "15.3K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 15.3K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/teleprompter-pro/id941070561?uo=4"
+    },
+    {
+      "id": "894811756",
+      "name": "PromptSmart Pro - Teleprompter",
+      "location": "Belleau Technologies, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ca/61/5f/ca615f56-3830-2d30-a96b-ab033499d643/AppIcon-0-0-1x_U007emarketing-0-9-0-85-220.png/512x512bb.jpg",
+      "summary": "PromptSmart Pro - Teleprompter מאת Belleau Technologies, LLC. צילום החנות המתוארך כולל Photo & Video, Productivity, גרסה 4.0.2 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 91/100",
+        "בתשלום",
+        "11.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 11.5K‏",
+        "price": "$29.99",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 29.99,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/promptsmart-pro-teleprompter/id894811756?uo=4"
+    },
+    {
+      "id": "1559566851",
+      "name": "Teleprompter: Floating Notes",
+      "location": "万其 沈",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8d/c2/b5/8dc2b50d-fb66-e983-a885-e1db934f6d7f/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Teleprompter: Floating Notes מאת 万其 沈. צילום החנות המתוארך כולל Photo & Video, גרסה 2.6.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 86/100",
+        "חינם",
+        "1.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 1.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/teleprompter-floating-notes/id1559566851?uo=4"
+    },
+    {
+      "id": "1590820344",
+      "name": "Teleprompter - VILO",
+      "location": "Salix Dijital Pazarlama Anonim Sirketi",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/54/00/13/54001372-14e7-818b-d431-88a6ddd938d0/AppIcon26-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Teleprompter - VILO מאת Salix Dijital Pazarlama Anonim Sirketi. צילום החנות המתוארך כולל Productivity, Photo & Video, גרסה 2.4.15 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 86/100",
+        "חינם",
+        "2.9K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 2.9K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/teleprompter-vilo/id1590820344?uo=4"
+    },
+    {
+      "id": "572401027",
+      "name": "Telepromptr",
+      "location": "Teleprompter Apps Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c1/9f/17/c19f1770-9984-ab6f-64b9-aad38732fcbf/icon_clap-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "summary": "Telepromptr מאת Teleprompter Apps Ltd. צילום החנות המתוארך כולל Photo & Video, Productivity, גרסה 4.4 ועדכון 2024. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 76/100",
+        "חינם",
+        "1.3K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 1.3K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 76,
+      "url": "https://apps.apple.com/us/app/telepromptr/id572401027?uo=4"
+    },
+    {
+      "id": "1444106389",
+      "name": "Video Teleprompter",
+      "location": "Teleprompter Apps Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/63/e0/8f/63e08fc6-9335-86ab-c6d3-ffcb45e4bb13/AppIcon-0-0-1x_U007emarketing-0-0-0-6-0-0-P3-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Video Teleprompter מאת Teleprompter Apps Ltd. צילום החנות המתוארך כולל Photo & Video, Productivity, גרסה 3.9.19 ועדכון 2022. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 75/100",
+        "חינם",
+        "6.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 6.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/video-teleprompter/id1444106389?uo=4"
+    },
+    {
+      "id": "922921003",
+      "name": "PromptSmart Lite Teleprompter",
+      "location": "Belleau Technologies, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/2d/62/67/2d6267bd-b5aa-55d9-98ce-f7a0478da8c8/AppIcon-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "PromptSmart Lite Teleprompter מאת Belleau Technologies, LLC. צילום החנות המתוארך כולל Productivity, Photo & Video, גרסה 3.0 ועדכון 2023. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 74/100",
+        "חינם",
+        "4.7K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 4.7K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/promptsmart-lite-teleprompter/id922921003?uo=4"
+    },
+    {
+      "id": "1031079244",
+      "name": "Video Teleprompter Lite",
+      "location": "Teleprompter Apps Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/b9/d8/8f/b9d88f38-770d-aa77-f3a5-89a72d34fd4c/AppIcon-lite-0-0-1x_U007emarketing-0-0-0-6-0-0-P3-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg",
+      "summary": "Video Teleprompter Lite מאת Teleprompter Apps Ltd. צילום החנות המתוארך כולל Photo & Video, Productivity, גרסה 3.9.2 ועדכון 2021. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 72/100",
+        "חינם",
+        "2.1K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 2.1K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 12.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 72,
+      "url": "https://apps.apple.com/us/app/video-teleprompter-lite/id1031079244?uo=4"
+    }
+  ]
+};

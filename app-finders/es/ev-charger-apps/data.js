@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:ev-charger-apps:es",
+  "title": "apps para cargadores de vehículos eléctricos",
+  "sourceButton": "Ver en App Store",
+  "ui": {
+    "any": "Cualquiera",
+    "confirm": "—",
+    "officialSource": "Ver en App Store",
+    "suggestUpdate": "Informar de un cambio",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "compare": "Comparar",
+    "noMatchesTitle": "No hay coincidencia exacta",
+    "noMatchesText": "Quita un filtro o verifica la ficha actual de App Store.",
+    "location": "Desarrollador",
+    "bestFor": "Evidencia",
+    "feature": "Medida",
+    "matcherButton": "Mostrar opción",
+    "matcherEmpty": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherNoResult": "Quita un filtro o verifica la ficha actual de App Store.",
+    "matcherResult": "Encuentra un buen punto de partida",
+    "matcherApply": "Directorio"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Precio",
+      "allLabel": "Cualquier precio",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Gratis"
+        },
+        {
+          "value": "Paid",
+          "label": "De pago"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Valoración",
+      "allLabel": "Cualquier valoración",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Menos de 4,0 / sin valorar"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Volumen de valoraciones",
+      "allLabel": "Cualquier volumen",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1.000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Menos de 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Última actualización",
+      "allLabel": "Cualquier fecha",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Anterior"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Valoración en App Store"
+    },
+    {
+      "key": "price",
+      "label": "Precio"
+    },
+    {
+      "key": "system",
+      "label": "Sistema mínimo"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Precio",
+        "placeholder": "Cualquier precio"
+      },
+      {
+        "key": "rating",
+        "label": "Valoración",
+        "placeholder": "Cualquier valoración"
+      },
+      {
+        "key": "reviews",
+        "label": "Volumen de valoraciones",
+        "placeholder": "Cualquier volumen"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "421788217",
+      "name": "PlugShare: Charging Stations",
+      "location": "PlugShare LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/79/02/af/7902af92-190c-e43d-44d8-687f8b875281/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/512x512bb.jpg",
+      "summary": "PlugShare: Charging Stations, de PlugShare LLC. Esta captura registra Navigation, Social Networking, versión 7.37.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 97/100",
+        "Gratis",
+        "141 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 141 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/plugshare-charging-stations/id421788217?uo=4"
+    },
+    {
+      "id": "1281660968",
+      "name": "EVgo - Find a Fast EV Charger",
+      "location": "EVgo Services, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/e2/8f/94e28f60-eee1-ac03-d8da-327189d747a5/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "EVgo - Find a Fast EV Charger, de EVgo Services, LLC. Esta captura registra Navigation, Travel, versión 26.10.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 94/100",
+        "Gratis",
+        "28,9 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 28,9 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/evgo-find-a-fast-ev-charger/id1281660968?uo=4"
+    },
+    {
+      "id": "1458030456",
+      "name": "Electrify America",
+      "location": "Electrify America, LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dd/72/11/dd72119a-ca76-bd64-1400-ce1414479dd4/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Electrify America, de Electrify America, LLC. Esta captura registra Navigation, Travel, versión 7.34.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 93/100",
+        "Gratis",
+        "26,9 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 26,9 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.2+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/electrify-america/id1458030456?uo=4"
+    },
+    {
+      "id": "548640732",
+      "name": "ChargeHub EV Charge Point Map",
+      "location": "Mogile Technologies Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/d9/0b/5dd90b10-0d39-1703-58de-88ecd402660d/EVChargeHub-0-1x_U007emarketing-0-11-0-sRGB-85-220-0.png/512x512bb.jpg",
+      "summary": "ChargeHub EV Charge Point Map, de Mogile Technologies Inc.. Esta captura registra Navigation, Travel, versión 12.154.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 92/100",
+        "Gratis",
+        "11,7 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 11,7 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/chargehub-ev-charge-point-map/id548640732?uo=4"
+    },
+    {
+      "id": "356866743",
+      "name": "ChargePoint®",
+      "location": "ChargePoint, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/27/94/f22794fc-c002-59f6-08cc-770273cbf45c/AppIcon-0-0-1x_U007emarketing-0-0-0-11-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "ChargePoint®, de ChargePoint, Inc.. Esta captura registra Navigation, Travel, versión 7.2.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 89/100",
+        "Gratis",
+        "18,7 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 18,7 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/chargepoint/id356866743?uo=4"
+    },
+    {
+      "id": "1197712470",
+      "name": "EV Connect",
+      "location": "EV Connect Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d7/d7/95/d7d7955b-153b-d5c0-0957-bd1e8da37849/AppIcon-0-0-1x_U007epad-0-7-0-85-220.png/512x512bb.jpg",
+      "summary": "EV Connect, de EV Connect Inc.. Esta captura registra Navigation, Travel, versión 6.1.4 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 88/100",
+        "Gratis",
+        "6,8 mil volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 6,8 mil",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 88,
+      "url": "https://apps.apple.com/us/app/ev-connect/id1197712470?uo=4"
+    },
+    {
+      "id": "964082746",
+      "name": "Zapmap: EV charging points map",
+      "location": "Zapmap Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4f/10/36/4f10363a-94d5-601b-d863-824863531e61/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Zapmap: EV charging points map, de Zapmap Limited. Esta captura registra Navigation, Travel, versión 7.8.25 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 78/100",
+        "Gratis",
+        "95 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 95",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 78,
+      "url": "https://apps.apple.com/us/app/zapmap-ev-charging-points-map/id964082746?uo=4"
+    },
+    {
+      "id": "1434206736",
+      "name": "ChargeFinder: Public Charging",
+      "location": "ChargeFinder Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/ee/f7/b7eef744-2639-34df-8234-3799b8d09339/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "ChargeFinder: Public Charging, de ChargeFinder Inc.. Esta captura registra Navigation, Travel, versión 3.3.1 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 75/100",
+        "Gratis",
+        "29 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 29",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/chargefinder-public-charging/id1434206736?uo=4"
+    },
+    {
+      "id": "6476642022",
+      "name": "EV Car Charging Stations App",
+      "location": "Aleksandr Alekseev",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/d6/8b/2cd68baf-cd96-41e0-9daa-ca3a850fb3db/appicon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "EV Car Charging Stations App, de Aleksandr Alekseev. Esta captura registra Navigation, Lifestyle, versión 1.0.13 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 69/100",
+        "Gratis",
+        "14 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 14",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 14.2+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 69,
+      "url": "https://apps.apple.com/us/app/ev-car-charging-stations-app/id6476642022?uo=4"
+    },
+    {
+      "id": "6733227200",
+      "name": "EV Charger Map Tesla And More",
+      "location": "XIAOCHUAN HE",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0a/2c/d3/0a2cd37d-051d-1817-c93e-abd6f5031475/AppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "EV Charger Map Tesla And More, de XIAOCHUAN HE. Esta captura registra Navigation, Utilities, versión 1.0.11 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 66/100",
+        "Gratis",
+        "6 volumen de valoraciones"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 6",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 17.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 66,
+      "url": "https://apps.apple.com/us/app/ev-charger-map-tesla-and-more/id6733227200?uo=4"
+    },
+    {
+      "id": "6787498391",
+      "name": "PlugMap: EV Charger Finder",
+      "location": "Faisal Mahmood",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/08/7c/60/087c60c8-7aef-7743-d311-f53edc7de29b/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "PlugMap: EV Charger Finder, de Faisal Mahmood. Esta captura registra Navigation, versión 1.0.0 y actualización 2026. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 20/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 20,
+      "url": "https://apps.apple.com/us/app/plugmap-ev-charger-finder/id6787498391?uo=4"
+    },
+    {
+      "id": "6752038464",
+      "name": "NearCharge: EV Charger Finder",
+      "location": "Mathieu MENUT",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/bf/b7/b8bfb75d-0386-334b-f2c0-044d2ce04111/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "NearCharge: EV Charger Finder, de Mathieu MENUT. Esta captura registra Navigation, versión 1.2 y actualización 2025. Verifica funciones, privacidad y compras en la ficha actual de Apple.",
+      "tags": [
+        "Evidencia 16/100",
+        "Gratis",
+        "Menos de 4,0 / sin valorar"
+      ],
+      "facts": {
+        "rating": "Menos de 4,0 / sin valorar",
+        "price": "Gratis",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 16,
+      "url": "https://apps.apple.com/us/app/nearcharge-ev-charger-finder/id6752038464?uo=4"
+    }
+  ]
+};

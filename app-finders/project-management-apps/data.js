@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:project-management-apps:en",
+  "title": "project management apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1353634006",
+      "name": "Google Tasks: Get Things Done",
+      "location": "Google LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/15/da/8115dad9-de62-6253-4dd9-8139a9e3382e/tasks_2026_ios-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Google Tasks: Get Things Done by Google LLC. This dated store snapshot records Productivity, version 26.32.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 98/100",
+        "Free",
+        "105.6K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 105.6K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/google-tasks-get-things-done/id1353634006?uo=4"
+    },
+    {
+      "id": "568421135",
+      "name": "Smartsheet: Projects & Teams",
+      "location": "Smartsheet Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/63/27/0e/63270e10-d971-a14e-b58c-a249353ab998/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Smartsheet: Projects & Teams by Smartsheet Inc.. This dated store snapshot records Business, Productivity, version 26.14.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 98/100",
+        "Free",
+        "119.3K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 119.3K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/smartsheet-projects-teams/id568421135?uo=4"
+    },
+    {
+      "id": "1232780281",
+      "name": "Notion: Notes, Tasks, AI",
+      "location": "Notion Labs, Incorporated",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/76/97/e3/7697e332-7885-3267-2532-45f529da9994/AppIconProd-0-0-1x_U007epad-0-0-0-1-0-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "Notion: Notes, Tasks, AI by Notion Labs, Incorporated. This dated store snapshot records Productivity, Business, version 1.7.328 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "89.8K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 89.8K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4"
+    },
+    {
+      "id": "541164041",
+      "name": "Microsoft 365 Copilot",
+      "location": "Microsoft Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c0/6d/d8/c06dd84a-fdb9-6b38-8ad1-2cc68b848b13/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-0-85-220.png/512x512bb.jpg",
+      "summary": "Microsoft 365 Copilot by Microsoft Corporation. This dated store snapshot records Productivity, Business, version 2.113 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 97/100",
+        "Free",
+        "1.3M rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 1.3M",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 97,
+      "url": "https://apps.apple.com/us/app/microsoft-365-copilot/id541164041?uo=4"
+    },
+    {
+      "id": "1290128888",
+      "name": "monday.com - AI Work Platform",
+      "location": "monday.com Ltd.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/b1/dc/aeb1dca2-5168-30fb-11e4-8d26a316d6c8/AppIcon-Monday-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "monday.com - AI Work Platform by monday.com Ltd.. This dated store snapshot records Business, Productivity, version 5.66 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 96/100",
+        "Free",
+        "47.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 47.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/monday-com-ai-work-platform/id1290128888?uo=4"
+    },
+    {
+      "id": "374930542",
+      "name": "Procore",
+      "location": "Procore Technologies",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/22/90/c2/2290c2a7-097d-8593-9dbc-532393f6e12c/AppIcon-0-0-1x_U007epad-0-1-0-0-P3-GLES2_U002c0-85-220.png/512x512bb.jpg",
+      "summary": "Procore by Procore Technologies. This dated store snapshot records Business, Productivity, version 2026.0805 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 94/100",
+        "Free",
+        "45.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 45.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/procore/id374930542?uo=4"
+    },
+    {
+      "id": "1015603248",
+      "name": "Basecamp - Project Management",
+      "location": "37Signals LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/80/43/57/804357a6-e6dc-5f86-aecb-236888695baa/basecamp-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Basecamp - Project Management by 37Signals LLC. This dated store snapshot records Business, Productivity, version 5.0.14 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 93/100",
+        "Free",
+        "20.9K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 20.9K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.2+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/basecamp-project-management/id1015603248?uo=4"
+    },
+    {
+      "id": "489969512",
+      "name": "Asana: Work Management",
+      "location": "Asana, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/35/cd/08/35cd0873-21d7-1005-46f2-879a69d2b688/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Asana: Work Management by Asana, Inc.. This dated store snapshot records Business, Productivity, version 26.31.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 92/100",
+        "Free",
+        "15.6K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 15.6K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/asana-work-management/id489969512?uo=4"
+    },
+    {
+      "id": "1219301037",
+      "name": "Microsoft Planner",
+      "location": "Microsoft Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7d/9e/90/7d9e90ec-8363-d83c-c321-1262a68fcc2f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Microsoft Planner by Microsoft Corporation. This dated store snapshot records Productivity, version 1.17.18 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 91/100",
+        "Free",
+        "13.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 13.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/microsoft-planner/id1219301037?uo=4"
+    },
+    {
+      "id": "1535098836",
+      "name": "ClickUp: Tasks, Chat, Docs, AI",
+      "location": "Mango Technologies, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6f/d9/09/6fd90992-ad0c-92c9-e64c-1ba9c65459c1/AppIcon-0-0-1x_U007epad-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "ClickUp: Tasks, Chat, Docs, AI by Mango Technologies, Inc.. This dated store snapshot records Productivity, Business, version 7.1.0 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 91/100",
+        "Free",
+        "9.4K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 9.4K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/clickup-tasks-chat-docs-ai/id1535098836?uo=4"
+    },
+    {
+      "id": "461504587",
+      "name": "Trello: Daily Task Tracker",
+      "location": "Trello, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/1b/a5/f1/1ba5f111-c13f-eb48-b315-c65428be2259/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Trello: Daily Task Tracker by Trello, Inc.. This dated store snapshot records Productivity, Business, version 2026.16 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 87/100",
+        "Free",
+        "6.9K rating volume"
+      ],
+      "facts": {
+        "rating": "4.3/5 · 6.9K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/trello-daily-task-tracker/id461504587?uo=4"
+    },
+    {
+      "id": "6790497176",
+      "name": "BlueHill - Project Management",
+      "location": "BlueHill Payments, Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a6/17/7a/a6177a3b-4dc1-2e38-c9d5-87ec0d7283c7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "BlueHill - Project Management by BlueHill Payments, Inc.. This dated store snapshot records Productivity, Business, version 1.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 74/100",
+        "Free",
+        "1 rating volume"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 1",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.1+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/bluehill-project-management/id6790497176?uo=4"
+    }
+  ]
+};

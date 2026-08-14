@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:duplicate-photo-finder-apps:ru",
+  "title": "поиск дубликатов фотографий",
+  "sourceButton": "Открыть в App Store",
+  "ui": {
+    "any": "Любой",
+    "confirm": "—",
+    "officialSource": "Открыть в App Store",
+    "suggestUpdate": "Сообщить об изменении",
+    "save": "Сохранить",
+    "saved": "Сохранено",
+    "compare": "Сравнить",
+    "noMatchesTitle": "В снимке нет точного совпадения",
+    "noMatchesText": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "location": "Разработчик",
+    "bestFor": "Доказательства",
+    "feature": "Показатель",
+    "matcherButton": "Показать вариант",
+    "matcherEmpty": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "matcherNoResult": "Уберите фильтр или проверьте текущую карточку App Store.",
+    "matcherResult": "Найдите сильный стартовый вариант",
+    "matcherApply": "Каталог"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Цена",
+      "allLabel": "Любая цена",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Бесплатно"
+        },
+        {
+          "value": "Paid",
+          "label": "Платно"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Рейтинг",
+      "allLabel": "Любой рейтинг",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4,5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4,0–4,49"
+        },
+        {
+          "value": "other",
+          "label": "Ниже 4,0 / нет рейтинга"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Число оценок",
+      "allLabel": "Любое число",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1 000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Менее 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Обновление",
+      "allLabel": "Любая дата",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Раньше"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "Рейтинг App Store"
+    },
+    {
+      "key": "price",
+      "label": "Цена в магазине"
+    },
+    {
+      "key": "system",
+      "label": "Минимальная ОС"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Цена",
+        "placeholder": "Любая цена"
+      },
+      {
+        "key": "rating",
+        "label": "Рейтинг",
+        "placeholder": "Любой рейтинг"
+      },
+      {
+        "key": "reviews",
+        "label": "Число оценок",
+        "placeholder": "Любое число"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "962194608",
+      "name": "Google Photos: Backup & Edit",
+      "location": "Google LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f5/b1/c0/f5b1c02f-784e-6fd2-d120-d43ff5129872/Photos-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Google Photos: Backup & Edit, разработчик Google LLC. В датированном снимке указаны категории Photo & Video, версия 7.88.0 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 98/100",
+        "Бесплатно",
+        "1,5 млн число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 1,5 млн",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/google-photos-backup-edit/id962194608?uo=4"
+    },
+    {
+      "id": "1510944943",
+      "name": "Cleanup: Phone Storage Cleaner",
+      "location": "DEEP FLOW SOFTWARE SERVICES - FZCO",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ee/51/10/ee51106c-63da-475f-6710-0f472dcbcbfc/AppIcon-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Cleanup: Phone Storage Cleaner, разработчик DEEP FLOW SOFTWARE SERVICES - FZCO. В датированном снимке указаны категории Utilities, Photo & Video, версия 6.20.0 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 96/100",
+        "Бесплатно",
+        "697,7 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 697,7 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/cleanup-phone-storage-cleaner/id1510944943?uo=4"
+    },
+    {
+      "id": "984305203",
+      "name": "Slidebox: Photo Cleaner App",
+      "location": "Slidebox LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b8/0b/96/b80b9618-4d4d-1e4f-8421-dc05911310dc/AppIcon-0-0-1x_U007emarketing-0-8-85-220.jpeg/512x512bb.jpg",
+      "summary": "Slidebox: Photo Cleaner App, разработчик Slidebox LLC. В датированном снимке указаны категории Photo & Video, Utilities, версия 26.719.0 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 94/100",
+        "Бесплатно",
+        "16,4 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 16,4 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/slidebox-photo-cleaner-app/id984305203?uo=4"
+    },
+    {
+      "id": "1185398417",
+      "name": "Duplicate Cleaner App-Softices",
+      "location": "Softices Consultancy Private Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0d/26/21/0d262114-2dab-d1f1-efd4-f2deb6b8ec82/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Duplicate Cleaner App-Softices, разработчик Softices Consultancy Private Limited. В датированном снимке указаны категории Utilities, Lifestyle, версия 6.9 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 89/100",
+        "Бесплатно",
+        "3,4 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 3,4 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/duplicate-cleaner-app-softices/id1185398417?uo=4"
+    },
+    {
+      "id": "966475595",
+      "name": "Duplicate Photos Fixer",
+      "location": "Shrishail Rana",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/02/69/bc/0269bcd9-e268-08e9-432b-d75e2887f4de/AppIcon-0-0-1x_U007emarketing-0-8-85-220.png/512x512bb.jpg",
+      "summary": "Duplicate Photos Fixer, разработчик Shrishail Rana. В датированном снимке указаны категории Photo & Video, Utilities, версия 3.0 и обновление 2025 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 79/100",
+        "Платно",
+        "3,1 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.2/5 · 3,1 тыс.",
+        "price": "$4.99",
+        "system": "iOS/iPadOS 8.0+"
+      },
+      "filters": {
+        "price": "Paid",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 4.99,
+      "score": 79,
+      "url": "https://apps.apple.com/us/app/duplicate-photos-fixer/id966475595?uo=4"
+    },
+    {
+      "id": "1066797785",
+      "name": "Remo Duplicate Photos Remover",
+      "location": "Remo Software Private Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple115/v4/6f/86/8f/6f868fd0-7222-da26-dbdd-7759a37174a7/AppIcon-1x_U007emarketing-0-6-85-220.png/512x512bb.jpg",
+      "summary": "Remo Duplicate Photos Remover, разработчик Remo Software Private Limited. В датированном снимке указаны категории Photo & Video, версия 3.6 и обновление 2021 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 75/100",
+        "Бесплатно",
+        "13,5 тыс. число оценок"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 13,5 тыс.",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 9.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/remo-duplicate-photos-remover/id1066797785?uo=4"
+    },
+    {
+      "id": "6774906761",
+      "name": "Duplicate Photo Finder",
+      "location": "Khawaja Salman Nadeem",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4a/13/3b/4a133b92-097c-01d2-5e82-13addb3ec7e5/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "Duplicate Photo Finder, разработчик Khawaja Salman Nadeem. В датированном снимке указаны категории Utilities, Photo & Video, версия 4.1 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 75/100",
+        "Бесплатно",
+        "3 число оценок"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 3",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 75,
+      "url": "https://apps.apple.com/us/app/duplicate-photo-finder/id6774906761?uo=4"
+    },
+    {
+      "id": "6756620076",
+      "name": "PhotoClean: Duplicate Photos",
+      "location": "Pawel Lukasz",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0c/7a/68/0c7a686f-7ceb-200a-855f-70bb74cb0209/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "PhotoClean: Duplicate Photos, разработчик Pawel Lukasz. В датированном снимке указаны категории Photo & Video, Lifestyle, версия 1.3.0 и обновление 2026 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 74/100",
+        "Бесплатно",
+        "1 число оценок"
+      ],
+      "facts": {
+        "rating": "5.0/5 · 1",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 74,
+      "url": "https://apps.apple.com/us/app/photoclean-duplicate-photos/id6756620076?uo=4"
+    },
+    {
+      "id": "1597695980",
+      "name": "Remove Duplicate Photos",
+      "location": "WEBDIA INC.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/11/3b/75/113b7502-e922-23b9-7b31-bf3899036950/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Remove Duplicate Photos, разработчик WEBDIA INC.. В датированном снимке указаны категории Photo & Video, Utilities, версия 1.4.1 и обновление 2025 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 72/100",
+        "Бесплатно",
+        "39 число оценок"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 39",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 72,
+      "url": "https://apps.apple.com/us/app/remove-duplicate-photos/id1597695980?uo=4"
+    },
+    {
+      "id": "6477995855",
+      "name": "Duplicate Photos Cleaner Fast",
+      "location": "Viren Baid",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/83/0a/96/830a962a-a5ec-9345-b6a7-dc64cd4541d2/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Duplicate Photos Cleaner Fast, разработчик Viren Baid. В датированном снимке указаны категории Utilities, Productivity, версия 1.8 и обновление 2025 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 72/100",
+        "Бесплатно",
+        "14 число оценок"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 14",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 72,
+      "url": "https://apps.apple.com/us/app/duplicate-photos-cleaner-fast/id6477995855?uo=4"
+    },
+    {
+      "id": "1207200929",
+      "name": "Cisdem Duplicate Finder",
+      "location": "ENOL INTERNATIONAL CO., LIMITED",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/27/a0/1f/27a01fe3-ee1f-ab45-7666-b62f41bcdaee/AppIcon-1x_U007epad-0-10-0-85-220-0.png/512x512bb.jpg",
+      "summary": "Cisdem Duplicate Finder, разработчик ENOL INTERNATIONAL CO., LIMITED. В датированном снимке указаны категории Productivity, Utilities, версия 2.1.1 и обновление 2024 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 65/100",
+        "Бесплатно",
+        "14 число оценок"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 14",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 65,
+      "url": "https://apps.apple.com/us/app/cisdem-duplicate-finder/id1207200929?uo=4"
+    },
+    {
+      "id": "6456410775",
+      "name": "Delete Duplicate Photos",
+      "location": "Berkay Gurcesme",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7e/e3/ff/7ee3ffdc-394d-3e42-bd64-6b0f6ebcc38a/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "summary": "Delete Duplicate Photos, разработчик Berkay Gurcesme. В датированном снимке указаны категории Utilities, Productivity, версия 1.2.0 и обновление 2024 года. Функции, приватность и покупки проверяйте в текущей карточке Apple.",
+      "tags": [
+        "Доказательства 63/100",
+        "Бесплатно",
+        "119 число оценок"
+      ],
+      "facts": {
+        "rating": "4.5/5 · 119",
+        "price": "Бесплатно",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "100-999",
+        "updated": "older"
+      },
+      "priceSort": 0,
+      "score": 63,
+      "url": "https://apps.apple.com/us/app/delete-duplicate-photos/id6456410775?uo=4"
+    }
+  ]
+};

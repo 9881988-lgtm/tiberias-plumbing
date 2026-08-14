@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:voice-recorder-apps:en",
+  "title": "voice recorder apps",
+  "sourceButton": "View on App Store",
+  "ui": {
+    "any": "Any",
+    "confirm": "—",
+    "officialSource": "View on App Store",
+    "suggestUpdate": "Report an update",
+    "save": "Save",
+    "saved": "Saved",
+    "compare": "Compare",
+    "noMatchesTitle": "No exact match in this snapshot",
+    "noMatchesText": "Clear a filter or verify the current App Store page.",
+    "location": "Developer",
+    "bestFor": "Evidence",
+    "feature": "Measure",
+    "matcherButton": "Show match",
+    "matcherEmpty": "Clear a filter or verify the current App Store page.",
+    "matcherNoResult": "Clear a filter or verify the current App Store page.",
+    "matcherResult": "Find a strong starting point",
+    "matcherApply": "Directory"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "Price",
+      "allLabel": "Any price",
+      "options": [
+        {
+          "value": "Free",
+          "label": "Free"
+        },
+        {
+          "value": "Paid",
+          "label": "Paid"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "Rating",
+      "allLabel": "Any rating",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "4.5+"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "Below 4.0 / unrated"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "Rating volume",
+      "allLabel": "Any volume",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "1,000+"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "Under 100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "Last update",
+      "allLabel": "Any date",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "Older"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "App Store rating"
+    },
+    {
+      "key": "price",
+      "label": "Store price"
+    },
+    {
+      "key": "system",
+      "label": "Minimum OS"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "Price",
+        "placeholder": "Any price"
+      },
+      {
+        "key": "rating",
+        "label": "Rating",
+        "placeholder": "Any rating"
+      },
+      {
+        "key": "reviews",
+        "label": "Rating volume",
+        "placeholder": "Any volume"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "955000203",
+      "name": "Voice Recorder Lite: Record HD",
+      "location": "LiveBird Technologies Private Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4e/b6/a2/4eb6a273-7dc6-cd63-33c4-6ff27ae84fb4/AppIcon-1-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Voice Recorder Lite: Record HD by LiveBird Technologies Private Limited. This dated store snapshot records Business, Productivity, version 9.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 95/100",
+        "Free",
+        "73.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 73.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 95,
+      "url": "https://apps.apple.com/us/app/voice-recorder-lite-record-hd/id955000203?uo=4"
+    },
+    {
+      "id": "1069512134",
+      "name": "Voice Memos",
+      "location": "Apple Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/52/24/32/52243281-b115-79d1-bab3-3cb135bcc69f/voicememos-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Voice Memos by Apple Inc.. This dated store snapshot records Utilities, version 2.6 and a 2025 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 94/100",
+        "Free",
+        "1.1M rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 1.1M",
+        "price": "Free",
+        "system": "iOS/iPadOS 10.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/voice-memos/id1069512134?uo=4"
+    },
+    {
+      "id": "1336782987",
+      "name": "Voice recorder - Voz",
+      "location": "Hieu Nguyen",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2f/33/c0/2f33c0a9-3b45-8436-4bde-e96935fa31ce/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Voice recorder - Voz by Hieu Nguyen. This dated store snapshot records Utilities, Productivity, version 3.4 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 93/100",
+        "Free",
+        "25.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 25.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/voice-recorder-voz/id1336782987?uo=4"
+    },
+    {
+      "id": "546983235",
+      "name": "Voice Record Pro",
+      "location": "Dayana Networks Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c4/ec/a2/c4eca24d-c97c-02f9-fc12-cbc8b827fbd7/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Voice Record Pro by Dayana Networks Ltd. This dated store snapshot records Utilities, Music, version 4.1.3 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 93/100",
+        "Free",
+        "16.2K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 16.2K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/voice-record-pro/id546983235?uo=4"
+    },
+    {
+      "id": "1222784166",
+      "name": "Easy Voice Recorder",
+      "location": "Digipom Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/78/6a/f2/786af277-d89a-3e85-22d6-4b12f0a16080/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/512x512bb.jpg",
+      "summary": "Easy Voice Recorder by Digipom Inc.. This dated store snapshot records Productivity, Utilities, version 1.3.2 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 92/100",
+        "Free",
+        "10.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 10.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 18.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 92,
+      "url": "https://apps.apple.com/us/app/easy-voice-recorder/id1222784166?uo=4"
+    },
+    {
+      "id": "492995106",
+      "name": "Voice Recorder & Notes Pro",
+      "location": "Linfei Ltd.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/2d/34/d42d3457-797d-a970-dfab-eddcbdb21fbc/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Voice Recorder & Notes Pro by Linfei Ltd.. This dated store snapshot records Utilities, Productivity, version 13.4 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 91/100",
+        "Free",
+        "13.2K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 13.2K",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 91,
+      "url": "https://apps.apple.com/us/app/voice-recorder-notes-pro/id492995106?uo=4"
+    },
+    {
+      "id": "1440401331",
+      "name": "Voice Recorder & Transcribe",
+      "location": "Jakub Bartus",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/18/f2/4018f275-ed88-cdaa-82bc-d7532935b57d/AppIconCompose-0-0-1x_U007epad-0-0-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Voice Recorder & Transcribe by Jakub Bartus. This dated store snapshot records Business, Utilities, version 15.0.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 89/100",
+        "Free",
+        "2.1K rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 2.1K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/voice-recorder-transcribe/id1440401331?uo=4"
+    },
+    {
+      "id": "1332549224",
+      "name": "Voice recorder: Audio editor",
+      "location": "Hieu Nguyen",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/23/90/51/23905163-6f3a-b9ea-6648-37ae8f21d2b6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Voice recorder: Audio editor by Hieu Nguyen. This dated store snapshot records Utilities, Productivity, version 4.17 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 89/100",
+        "Free",
+        "7.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 7.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/voice-recorder-audio-editor/id1332549224?uo=4"
+    },
+    {
+      "id": "685310398",
+      "name": "Voice Recorder & Audio Editor",
+      "location": "TapMedia Ltd",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/dc/f0/79/dcf079a6-33ff-909c-4d10-fc43f556670f/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/512x512bb.jpg",
+      "summary": "Voice Recorder & Audio Editor by TapMedia Ltd. This dated store snapshot records Utilities, Business, version 6.0.8 and a 2025 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 87/100",
+        "Free",
+        "451.5K rating volume"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 451.5K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 87,
+      "url": "https://apps.apple.com/us/app/voice-recorder-audio-editor/id685310398?uo=4"
+    },
+    {
+      "id": "1639516366",
+      "name": "Voice Recorder — Audio Memos",
+      "location": "PrimeForm OU",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9e/9a/54/9e9a5448-8a13-7a7d-9994-1940e6f34ec4/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Voice Recorder — Audio Memos by PrimeForm OU. This dated store snapshot records Business, Utilities, version 3.3.13 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 86/100",
+        "Free",
+        "3.8K rating volume"
+      ],
+      "facts": {
+        "rating": "4.4/5 · 3.8K",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.0-4.49",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/voice-recorder-audio-memos/id1639516366?uo=4"
+    },
+    {
+      "id": "6761861091",
+      "name": "75 Days Challenge - Reset75",
+      "location": "EHM TECH LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/03/3b/33/033b336a-2c61-7e19-237e-d4dcd39bab52/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "75 Days Challenge - Reset75 by EHM TECH LLC. This dated store snapshot records Health & Fitness, Lifestyle, version 1.0.6 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 80/100",
+        "Free",
+        "60 rating volume"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 60",
+        "price": "Free",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 80,
+      "url": "https://apps.apple.com/us/app/75-days-challenge-reset75/id6761861091?uo=4"
+    },
+    {
+      "id": "6449427444",
+      "name": "De Jure AI",
+      "location": "Detech Yazilim Anonim Sirketi",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/44/19/ae4419a1-2e72-ca90-6076-53a96f699e56/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "summary": "De Jure AI by Detech Yazilim Anonim Sirketi. This dated store snapshot records Reference, version 2.6.1 and a 2026 update. Verify features, privacy labels and in-app purchases on Apple’s current page.",
+      "tags": [
+        "Evidence 32/100",
+        "Free",
+        "1 rating volume"
+      ],
+      "facts": {
+        "rating": "1.0/5 · 1",
+        "price": "Free",
+        "system": "iOS/iPadOS 16.4+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "other",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 32,
+      "url": "https://apps.apple.com/us/app/de-jure-ai/id6449427444?uo=4"
+    }
+  ]
+};

@@ -1,0 +1,445 @@
+window.DIRECTORY_CONFIG = {
+  "key": "app-finders:habit-tracker-apps:he",
+  "title": "אפליקציות למעקב הרגלים",
+  "sourceButton": "צפייה ב-App Store",
+  "ui": {
+    "any": "הכול",
+    "confirm": "—",
+    "officialSource": "צפייה ב-App Store",
+    "suggestUpdate": "דיווח על שינוי",
+    "save": "שמירה",
+    "saved": "נשמר",
+    "compare": "השוואה",
+    "noMatchesTitle": "אין התאמה מדויקת בצילום",
+    "noMatchesText": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "location": "מפתח",
+    "bestFor": "ראיות",
+    "feature": "מדד",
+    "matcherButton": "הצגת התאמה",
+    "matcherEmpty": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherNoResult": "אפשר להסיר מסנן או לבדוק את עמוד App Store העדכני.",
+    "matcherResult": "מציאת נקודת פתיחה חזקה",
+    "matcherApply": "מדריך"
+  },
+  "facets": [
+    {
+      "key": "price",
+      "label": "מחיר",
+      "allLabel": "כל מחיר",
+      "options": [
+        {
+          "value": "Free",
+          "label": "חינם"
+        },
+        {
+          "value": "Paid",
+          "label": "בתשלום"
+        }
+      ]
+    },
+    {
+      "key": "rating",
+      "label": "דירוג",
+      "allLabel": "כל דירוג",
+      "options": [
+        {
+          "value": "4.5+",
+          "label": "+4.5"
+        },
+        {
+          "value": "4.0-4.49",
+          "label": "4.0–4.49"
+        },
+        {
+          "value": "other",
+          "label": "פחות מ-4.0 / ללא דירוג"
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "label": "כמות דירוגים",
+      "allLabel": "כל כמות",
+      "options": [
+        {
+          "value": "1000+",
+          "label": "+1,000"
+        },
+        {
+          "value": "100-999",
+          "label": "100–999"
+        },
+        {
+          "value": "under100",
+          "label": "פחות מ-100"
+        }
+      ]
+    },
+    {
+      "key": "updated",
+      "label": "עדכון אחרון",
+      "allLabel": "כל תאריך",
+      "options": [
+        {
+          "value": "2026",
+          "label": "2026"
+        },
+        {
+          "value": "2025",
+          "label": "2025"
+        },
+        {
+          "value": "older",
+          "label": "ישן יותר"
+        }
+      ]
+    }
+  ],
+  "factKeys": [
+    {
+      "key": "rating",
+      "label": "דירוג App Store"
+    },
+    {
+      "key": "price",
+      "label": "מחיר בחנות"
+    },
+    {
+      "key": "system",
+      "label": "מערכת מינימלית"
+    }
+  ],
+  "matcher": {
+    "fields": [
+      {
+        "key": "price",
+        "label": "מחיר",
+        "placeholder": "כל מחיר"
+      },
+      {
+        "key": "rating",
+        "label": "דירוג",
+        "placeholder": "כל דירוג"
+      },
+      {
+        "key": "reviews",
+        "label": "כמות דירוגים",
+        "placeholder": "כל כמות"
+      }
+    ]
+  },
+  "listings": [
+    {
+      "id": "1528595748",
+      "name": "Finch: Self-Care Pet",
+      "location": "Finch Care Public Benefit Corporation",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/40/f0/79/40f07924-5e95-1e73-d7f8-5e56f6051a3e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Finch: Self-Care Pet מאת Finch Care Public Benefit Corporation. צילום החנות המתוארך כולל Health & Fitness, Lifestyle, גרסה 3.73.197 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 99/100",
+        "חינם",
+        "739.4K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 739.4K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.6+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 99,
+      "url": "https://apps.apple.com/us/app/finch-self-care-pet/id1528595748?uo=4"
+    },
+    {
+      "id": "1438388363",
+      "name": "Habit Tracker",
+      "location": "Inner Grow Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/66/48/5d664875-578c-759a-c16c-e008f3b4df5f/AppIcon-pink-gr-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Habit Tracker מאת Inner Grow Limited. צילום החנות המתוארך כולל Productivity, Health & Fitness, גרסה 2.14.22 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "145.3K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 145.3K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/habit-tracker/id1438388363?uo=4"
+    },
+    {
+      "id": "1499198946",
+      "name": "Structured: Daily Planner Todo",
+      "location": "unorderly GmbH",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d9/6d/26/d96d261d-76f6-d826-4073-05055b30de36/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Structured: Daily Planner Todo מאת unorderly GmbH. צילום החנות המתוארך כולל Productivity, Education, גרסה 4.5.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 98/100",
+        "חינם",
+        "164.1K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 164.1K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 98,
+      "url": "https://apps.apple.com/us/app/structured-daily-planner-todo/id1499198946?uo=4"
+    },
+    {
+      "id": "983826477",
+      "name": "Productive - Habit Tracker",
+      "location": "Mosaic S.r.l.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7f/8c/d1/7f8cd183-7ce1-b8b3-b690-51a7565ee76b/AppIcon_iOS-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Productive - Habit Tracker מאת Mosaic S.r.l.. צילום החנות המתוארך כולל Productivity, Health & Fitness, גרסה 3.26.39 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 96/100",
+        "חינם",
+        "91.1K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.6/5 · 91.1K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 14.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 96,
+      "url": "https://apps.apple.com/us/app/productive-habit-tracker/id983826477?uo=4"
+    },
+    {
+      "id": "672401817",
+      "name": "Strides: Habit Tracker + Goals",
+      "location": "Goals LLC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a6/2e/b3/a62eb338-7d6a-4b80-7137-2a0d6986fb12/AppIcon-0-0-1x_U007epad-0-1-0-P3-85-220.png/512x512bb.jpg",
+      "summary": "Strides: Habit Tracker + Goals מאת Goals LLC. צילום החנות המתוארך כולל Productivity, Lifestyle, גרסה 19.12 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 94/100",
+        "חינם",
+        "19.1K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 19.1K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 94,
+      "url": "https://apps.apple.com/us/app/strides-habit-tracker-goals/id672401817?uo=4"
+    },
+    {
+      "id": "1450486923",
+      "name": "Routine Planner, Habit Tracker",
+      "location": "Routinery Corp.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/40/93/e2/4093e2f2-b3e0-7298-a59e-d2e9df29ca20/Default-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg",
+      "summary": "Routine Planner, Habit Tracker מאת Routinery Corp.. צילום החנות המתוארך כולל Productivity, Health & Fitness, גרסה 3.29.33 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "17.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 17.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.5+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/routine-planner-habit-tracker/id1450486923?uo=4"
+    },
+    {
+      "id": "6474421906",
+      "name": "Atoms - from Atomic Habits",
+      "location": "Atomic Development Inc.",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/62/b6/0062b686-10ed-390b-a621-e5c6f979294a/AppIcon-0-1x_U007ephone-0-1-85-220-0.png/512x512bb.jpg",
+      "summary": "Atoms - from Atomic Habits מאת Atomic Development Inc.. צילום החנות המתוארך כולל Productivity, Lifestyle, גרסה 3.5.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 93/100",
+        "חינם",
+        "10.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 10.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 16.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 93,
+      "url": "https://apps.apple.com/us/app/atoms-from-atomic-habits/id6474421906?uo=4"
+    },
+    {
+      "id": "6480042457",
+      "name": "Habit Tracker - Daily Goals",
+      "location": "Uniqo Lab FZC",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c5/7f/42/c57f4244-9589-e1d4-be0d-b3b481549629/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "summary": "Habit Tracker - Daily Goals מאת Uniqo Lab FZC. צילום החנות המתוארך כולל Productivity, Lifestyle, גרסה 1.1.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 90/100",
+        "חינם",
+        "3.2K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 3.2K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 17.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 90,
+      "url": "https://apps.apple.com/us/app/habit-tracker-daily-goals/id6480042457?uo=4"
+    },
+    {
+      "id": "6443918070",
+      "name": "Habit Tracker - HabitKit",
+      "location": "Sebastian Roehl",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/87/0e/5b/870e5b09-11f1-c9e1-c560-c4349089207f/NewAppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "summary": "Habit Tracker - HabitKit מאת Sebastian Roehl. צילום החנות המתוארך כולל Productivity, גרסה 1.16.0 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 89/100",
+        "חינם",
+        "2.3K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.9/5 · 2.3K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/habit-tracker-habitkit/id6443918070?uo=4"
+    },
+    {
+      "id": "1547137474",
+      "name": "Onrise: Habit Tracker & Focus",
+      "location": "Maximilian Munker",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d6/96/bc/d696bcde-a743-eba2-0882-18aeed250ee7/AppIcon-0-0-1x_U007epad-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Onrise: Habit Tracker & Focus מאת Maximilian Munker. צילום החנות המתוארך כולל Productivity, Health & Fitness, גרסה 1.1.8 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 89/100",
+        "חינם",
+        "2.5K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 2.5K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 13.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 89,
+      "url": "https://apps.apple.com/us/app/onrise-habit-tracker-focus/id1547137474?uo=4"
+    },
+    {
+      "id": "1522121879",
+      "name": "Habit Rabbit: Habit Tracker",
+      "location": "Justin Patrick Silang",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/3e/cb/673ecb34-6fa2-c899-abd2-5b448e8cc0fc/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.jpg",
+      "summary": "Habit Rabbit: Habit Tracker מאת Justin Patrick Silang. צילום החנות המתוארך כולל Productivity, גרסה 5.12 ועדכון 2025. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 86/100",
+        "חינם",
+        "8.6K‏ כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.7/5 · 8.6K‏",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "1000+",
+        "updated": "2025"
+      },
+      "priceSort": 0,
+      "score": 86,
+      "url": "https://apps.apple.com/us/app/habit-rabbit-habit-tracker/id1522121879?uo=4"
+    },
+    {
+      "id": "6749204658",
+      "name": "Habit Tracker: Habit OK",
+      "location": "Develife apps Limited",
+      "artwork": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0c/8a/03/0c8a0364-5cd2-b5de-3e82-436f600df040/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "summary": "Habit Tracker: Habit OK מאת Develife apps Limited. צילום החנות המתוארך כולל Productivity, Health & Fitness, גרסה 3.9.3 ועדכון 2026. יש לבדוק תכונות, פרטיות ורכישות בעמוד Apple העדכני.",
+      "tags": [
+        "ראיות 79/100",
+        "חינם",
+        "40 כמות דירוגים"
+      ],
+      "facts": {
+        "rating": "4.8/5 · 40",
+        "price": "חינם",
+        "system": "iOS/iPadOS 15.0+"
+      },
+      "filters": {
+        "price": "Free",
+        "rating": "4.5+",
+        "reviews": "under100",
+        "updated": "2026"
+      },
+      "priceSort": 0,
+      "score": 79,
+      "url": "https://apps.apple.com/us/app/habit-tracker-habit-ok/id6749204658?uo=4"
+    }
+  ]
+};
