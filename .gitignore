@@ -3,3 +3,7 @@ screenshots/
 assets/solar-boiler-tiberias-hero.png
 tiberias-plumbing-site.zip
 .DS_Store
+.app-finders-build/
+tools/app-finders/data/*.tmp
+tools/app-finders/data/source-snapshot.json
+tools/app-finders/data/quality-report.json

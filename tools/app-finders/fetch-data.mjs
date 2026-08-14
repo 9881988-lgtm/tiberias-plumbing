@@ -5,13 +5,22 @@ import { topics } from "./topics.mjs";
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
 const output = path.join(directory, "data", "source-snapshot.json");
+const temporaryOutput = `${output}.tmp`;
 const existing = fs.existsSync(output) ? JSON.parse(fs.readFileSync(output, "utf8")) : { topics: {} };
 const snapshot = { fetchedAt: new Date().toISOString(), source: "Apple iTunes Search API", country: "us", topics: { ...existing.topics } };
+const pendingTotal = topics.filter((topic) => !snapshot.topics[topic.slug]?.results?.length).length;
+let fetchedCount = 0;
 
 fs.mkdirSync(path.dirname(output), { recursive: true });
+fs.rmSync(temporaryOutput, { force: true });
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const cleanText = (value = "") => String(value).replace(/\s+/g, " ").trim();
+
+function saveSnapshot() {
+  fs.writeFileSync(temporaryOutput, `${JSON.stringify(snapshot, null, 2)}\n`);
+  fs.renameSync(temporaryOutput, output);
+}
 
 function normalize(item) {
   return {
@@ -41,7 +50,7 @@ function normalize(item) {
 for (let index = 0; index < topics.length; index += 1) {
   const topic = topics[index];
   if (snapshot.topics[topic.slug]?.results?.length) {
-    console.log(`[${index + 1}/100] cached ${topic.slug}`);
+    if ((index + 1) % 100 === 0) console.log(`Scanned ${index + 1}/${topics.length}; cached topics are intact.`);
     continue;
   }
 
@@ -78,8 +87,11 @@ for (let index = 0; index < topics.length; index += 1) {
     fetchedAt: new Date().toISOString(),
     results
   };
-  fs.writeFileSync(output, `${JSON.stringify(snapshot, null, 2)}\n`);
-  console.log(`[${index + 1}/100] fetched ${topic.slug}: ${results.length}`);
+  fetchedCount += 1;
+  if (fetchedCount % 10 === 0 || fetchedCount === pendingTotal) {
+    saveSnapshot();
+    console.log(`Fetched ${fetchedCount}/${pendingTotal}; latest ${topic.slug}: ${results.length}. Checkpoint saved.`);
+  }
   if (index < topics.length - 1) await wait(3200);
 }
 

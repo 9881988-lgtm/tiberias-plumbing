@@ -1,14 +1,17 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { finderCommon, finderLocales, finderPageCopy, articleTemplates } from "./copy.mjs";
-import { topics } from "./topics.mjs";
+import { finderCommon, finderLocales, finderPageCopy, intentAdvice, articleTemplates } from "./copy.mjs";
+import { baseTopics, topics } from "./topics.mjs";
+import { approvedIntentSlugs } from "./config.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const dataFile = path.join(path.dirname(fileURLToPath(import.meta.url)), "data", "source-snapshot.json");
 const snapshot = JSON.parse(fs.readFileSync(dataFile, "utf8"));
 const baseUrl = "https://9881988-lgtm.github.io/tiberias-plumbing";
 const buildDate = "2026-08-14";
+const generatedDirectory = path.join(root, "app-finders");
+const stagingDirectory = path.join(root, ".app-finders-build");
 
 const palette = {
   document: { accent: "#087c72", strong: "#075d56", soft: "#d8eeea", signal: "#d24d3f", header: "#132321", surface: "#f2f6f4" },
@@ -30,6 +33,8 @@ const groupNames = {
   he: { document: "מסמכים", creator: "יצירה", finance: "כספים", productivity: "פרודוקטיביות", business: "עסק קטן", research: "AI ומחקר", learning: "למידה", home: "בית", travel: "נסיעות", mac: "כלי Mac" }
 };
 
+const topicBySlug = Object.fromEntries(topics.map((topic) => [topic.slug, topic]));
+
 function esc(value = "") {
   return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
 }
@@ -38,7 +43,10 @@ const xml = esc;
 const jsonLd = (value) => JSON.stringify(value).replaceAll("<", "\\u003c");
 
 function write(relative, content) {
-  const file = path.join(root, relative);
+  const generatedPrefix = "app-finders/";
+  const file = relative.startsWith(generatedPrefix)
+    ? path.join(stagingDirectory, relative.slice(generatedPrefix.length))
+    : path.join(root, relative);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, content);
 }
@@ -131,6 +139,9 @@ function evaluateQuality() {
     const ids = results.slice(0, 12).map((app) => app.id);
     const rated = results.filter((app) => app.ratingCount >= 25 && app.rating >= 3.5).length;
     const artwork = results.filter((app) => app.artwork).length;
+    const minimumResults = topic.series === "intent" ? 10 : 8;
+    const minimumRated = topic.series === "intent" ? 6 : 5;
+    const overlapLimit = topic.series === "intent" ? 0.6 : 0.72;
     let maximumOverlap = 0;
     let overlapWith = "";
     for (const previous of approved) {
@@ -141,10 +152,11 @@ function evaluateQuality() {
       }
     }
     const reasons = [];
-    if (results.length < 8) reasons.push("fewer than 8 current results");
-    if (rated < 5) reasons.push("fewer than 5 mature rating signals");
+    if (results.length < minimumResults) reasons.push(`fewer than ${minimumResults} current results`);
+    if (rated < minimumRated) reasons.push(`fewer than ${minimumRated} mature rating signals`);
     if (artwork < 6) reasons.push("insufficient product visuals");
-    if (maximumOverlap >= 0.72) reasons.push(`result overlap ${Math.round(maximumOverlap * 100)}% with ${overlapWith}`);
+    if (maximumOverlap >= overlapLimit) reasons.push(`result overlap ${Math.round(maximumOverlap * 100)}% with ${overlapWith}`);
+    if (topic.series === "intent" && !approvedIntentSlugs.has(topic.slug)) reasons.push("intent draft pending demand-backed editorial review");
     const indexable = reasons.length === 0;
     if (indexable) approved.push({ slug: topic.slug, ids });
     rows.push({ slug: topic.slug, query: topic.term, resultCount: results.length, ratedCount: rated, artworkCount: artwork, maximumOverlap: Number(maximumOverlap.toFixed(3)), overlapWith, indexable, reasons });
@@ -180,13 +192,14 @@ function colorStyle(topic) {
 
 function head({ topic, locale, currentDir, kind, title, description, robots, image, guideSlug = "", schema }) {
   const canonicalUrl = canonical(topic, locale, kind, guideSlug);
-  return `<!doctype html><html lang="${finderLocales[locale].code}" dir="${finderLocales[locale].dir}"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>${esc(title)}</title><meta name="description" content="${esc(description)}" /><meta name="robots" content="${robots}" /><meta name="theme-color" content="${palette[topic?.archetype || "document"].header}" /><link rel="canonical" href="${canonicalUrl}" />${alternates(topic, kind, guideSlug)}<meta property="og:type" content="${kind === "guide" ? "article" : "website"}" /><meta property="og:title" content="${esc(title)}" /><meta property="og:description" content="${esc(description)}" /><meta property="og:url" content="${canonicalUrl}" />${image ? `<meta property="og:image" content="${esc(image)}" />` : ""}<meta name="twitter:card" content="summary_large_image" /><link rel="stylesheet" href="${relativeFile(currentDir, "directory-shared/directory.css")}?v=20260814d" /><style>${colorStyle(topic)}</style><script type="application/ld+json">${jsonLd(schema)}</script></head>`;
+  return `<!doctype html><html lang="${finderLocales[locale].code}" dir="${finderLocales[locale].dir}"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>${esc(title)}</title><meta name="description" content="${esc(description)}" /><meta name="robots" content="${robots}" /><meta name="theme-color" content="${palette[topic?.archetype || "document"].header}" /><link rel="canonical" href="${canonicalUrl}" />${alternates(topic, kind, guideSlug)}<meta property="og:type" content="${kind === "guide" ? "article" : "website"}" /><meta property="og:title" content="${esc(title)}" /><meta property="og:description" content="${esc(description)}" /><meta property="og:url" content="${canonicalUrl}" />${image ? `<meta property="og:image" content="${esc(image)}" />` : ""}<meta name="twitter:card" content="summary_large_image" /><link rel="stylesheet" href="${relativeFile(currentDir, "directory-shared/directory.css")}?v=20260814f" /><style>${colorStyle(topic)}</style><script type="application/ld+json">${jsonLd(schema)}</script></head>`;
 }
 
 function header(topic, locale, currentDir, kind = "home", guideSlug = "") {
   const c = finderCommon[locale];
   const home = topic ? finderDir(topic, locale) : hubDir(locale);
-  return `<header class="topbar"><a class="brand" href="${relativeHref(currentDir, hubDir(locale))}"><span class="brand-mark">AF</span><span>App Finders</span></a><nav aria-label="${esc(c.directory)}">${topic ? `<a href="${relativeHref(currentDir, home)}#directory">${esc(c.directory)}</a><a href="${relativeHref(currentDir, home)}#guides">${esc(c.guides)}</a>` : `<a href="#catalogs">${esc(c.directory)}</a>`}${switcher(topic, locale, currentDir, kind, guideSlug)}<a class="button button--primary" href="${relativeHref(currentDir, hubDir(locale))}">${esc(c.allFinders)}</a></nav></header>`;
+  const secondary = topic?.series === "intent" ? `<a href="${relativeHref(currentDir, home)}#related">${esc(c.related)}</a>` : `<a href="${relativeHref(currentDir, home)}#guides">${esc(c.guides)}</a>`;
+  return `<header class="topbar"><a class="brand" href="${relativeHref(currentDir, hubDir(locale))}"><span class="brand-mark">AF</span><span>App Finders</span></a><nav aria-label="${esc(c.directory)}">${topic ? `<a href="${relativeHref(currentDir, home)}#directory">${esc(c.directory)}</a>${secondary}` : `<a href="#catalogs">${esc(c.directory)}</a>`}${switcher(topic, locale, currentDir, kind, guideSlug)}<a class="button button--primary" href="${relativeHref(currentDir, hubDir(locale))}">${esc(c.allFinders)}</a></nav></header>`;
 }
 
 function footer(locale, currentDir) {
@@ -203,6 +216,14 @@ function homeSchema(topic, locale, listings) {
   return { "@context": "https://schema.org", "@graph": [
     { "@type": "CollectionPage", name: finderPageCopy(locale, topic).seoTitle, url, inLanguage: finderLocales[locale].code, dateModified: buildDate },
     { "@type": "ItemList", numberOfItems: listings.length, itemListElement: listings.map((listing, index) => ({ "@type": "ListItem", position: index + 1, item: { "@type": "SoftwareApplication", name: listing.name, url: listing.url, image: listing.artwork, applicationCategory: topic.labels.en, operatingSystem: listing.facts.system, offers: { "@type": "Offer", price: listing.priceSort, priceCurrency: "USD" } } })) },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "App Finders", item: canonical(topic, locale, "hub") }, { "@type": "ListItem", position: 2, name: topic.labels[locale], item: url }] }
+  ] };
+}
+
+function reviewSchema(topic, locale) {
+  const url = canonical(topic, locale);
+  return { "@context": "https://schema.org", "@graph": [
+    { "@type": "CollectionPage", name: finderPageCopy(locale, topic).seoTitle, url, inLanguage: finderLocales[locale].code, dateModified: buildDate },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "App Finders", item: canonical(topic, locale, "hub") }, { "@type": "ListItem", position: 2, name: topic.labels[locale], item: url }] }
   ] };
 }
@@ -243,15 +264,30 @@ function buildHome(topic, locale, source, quality) {
   const c = finderCommon[locale];
   const apps = source.results;
   const config = makeConfig(topic, locale, apps);
-  const guides = articleTemplates(locale, topic);
+  const isIntent = topic.series === "intent";
+  const baseTopic = isIntent ? topicBySlug[topic.baseSlug] : null;
+  const guides = isIntent ? [] : articleTemplates(locale, topic);
   const robots = quality.indexable ? "index,follow,max-image-preview:large,max-snippet:-1" : "noindex,follow";
-  const schema = homeSchema(topic, locale, config.listings);
+  const schema = quality.indexable ? homeSchema(topic, locale, config.listings) : reviewSchema(topic, locale);
   const pageHead = head({ topic, locale, currentDir, kind: "home", title: copy.seoTitle, description: copy.lead, robots, image: apps[0]?.artwork, schema });
-  const qualityNote = quality.indexable ? "" : `<aside class="quality-note"><strong>${esc(c.reviewNeeded)}.</strong> ${esc(c.qualityHold)}</aside>`;
+  const qualityNote = quality.indexable ? "" : `<aside class="quality-note"><strong>${esc(c.reviewNeeded)}.</strong> ${esc(c.qualityHold)}${topic.series === "intent" ? ` ${esc(c.intentCaveat)}` : ""}</aside>`;
+  const advice = intentAdvice(locale, topic);
+  const intentGuidance = advice ? `<section class="intent-guidance"><div><p class="eyebrow">${esc(topic.labels[locale])}</p><h2>${esc(advice.title)}</h2></div><p>${esc(advice.body)}</p></section>` : "";
   const method = c.methodSteps.map((step) => `<article class="method-step"><strong>${step[0]}</strong><h3>${esc(step[1])}</h3><p>${esc(step[2])}</p></article>`).join("");
-  const html = `${pageHead}<body>${header(topic, locale, currentDir)}<main><section class="hero finder-hero">${iconStage(apps)}<div class="hero__content"><p class="eyebrow">App Finders · ${esc(groupNames[locale][topic.archetype])}</p><h1>${esc(copy.title)}</h1><p class="hero__lead">${esc(copy.lead)}</p><div class="hero__proof">${c.proof.map((item) => `<span>${esc(item)}</span>`).join("")}</div><div class="hero__actions"><a class="button button--primary" href="#directory">${esc(c.directory)}</a><a class="button button--secondary" href="#guides">${esc(c.guides)}</a></div></div></section><section class="search-band"><div class="search-field"><i data-lucide="search"></i><input id="directory-search" type="search" placeholder="${esc(c.searchPlaceholder)}" /></div><button class="button button--primary" id="search-button">${esc(c.search)}</button></section><section class="pulse-band"><div class="pulse-band__inner"><div class="pulse-band__intro"><strong>${esc(c.snapshot)}</strong><p>${esc(source.fetchedAt.slice(0, 10))}</p></div><div class="pulse-band__metric"><strong>${config.listings.length}</strong><p>${esc(c.listings)}</p></div><div class="pulse-band__metric"><strong>${quality.indexable ? esc(c.indexable) : esc(c.reviewNeeded)}</strong><p>${esc(c.methodology)}</p></div><div class="pulse-band__metric"><strong>${esc(c.sourceName)}</strong><p>${esc(c.disclosed)}</p></div></div></section>${qualityNote}<section class="matcher-section"><div class="matcher-section__copy"><p class="eyebrow">${esc(c.methodology)}</p><h2>${esc(c.matcher)}</h2><p>${esc(c.matcherLead)}</p></div><div class="matcher-panel"><form class="matcher-form" id="matcher-form"></form><div class="matcher-result" id="matcher-result"></div></div></section><section class="directory-shell" id="directory"><div class="directory-intro"><div><p class="eyebrow">${esc(topic.labels[locale])}</p><h2>${esc(copy.title)}</h2></div><p>${esc(copy.lead)}</p></div><div class="directory-layout"><aside class="filters"><div class="filters__heading"><h3>${esc(c.filters)}</h3><button id="reset-filters">${esc(c.reset)}</button></div><div id="filters"></div></aside><div><div class="results-toolbar"><p><strong id="result-count">${config.listings.length}</strong> ${esc(c.count)}</p><select id="sort-results" aria-label="${esc(c.sortRecommended)}"><option value="recommended">${esc(c.sortRecommended)}</option><option value="name">${esc(c.sortName)}</option><option value="price">${esc(c.sortPrice)}</option><option value="location">${esc(c.sortLocation)}</option></select></div><div class="listing-grid" id="listing-grid">${config.listings.map((listing) => staticCard(listing, config)).join("")}</div></div></div></section><section class="editorial-section" id="guides"><div class="editorial-section__heading"><div><p class="eyebrow">${esc(c.guides)}</p><h2>${esc(c.editorialTitle)}</h2></div><p>${esc(c.editorialLead)}</p></div><div class="article-grid">${guides.map((guide, index) => guideCard(topic, locale, guide, currentDir, index, apps[index]?.artwork || apps[0]?.artwork)).join("")}</div></section><section class="method-section"><div class="method-section__heading"><div><p class="eyebrow">${esc(c.methodology)}</p><h2>${esc(c.methodTitle)}</h2></div><p>${esc(c.methodLead)}</p></div><div class="method-steps">${method}</div></section></main>${footer(locale, currentDir)}<div class="compare-bar" id="compare-bar"><span><strong id="compare-count">0</strong> ${esc(c.compare)}</span><button class="button button--primary" id="compare-open">${esc(c.compare)}</button></div><dialog class="compare-dialog" id="compare-dialog"><div class="compare-dialog__header"><h2>${esc(c.compareTitle)}</h2><button class="icon-button" id="compare-close" aria-label="${esc(c.close)}">×</button></div><div class="compare-scroll" id="compare-content"></div></dialog><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script><script src="data.js?v=20260814d"></script><script src="${relativeFile(currentDir, "directory-shared/directory.js")}?v=20260814d" defer></script></body></html>`;
+  const editorial = isIntent ? (() => {
+    const relatedTopics = [baseTopic, ...topics.filter((candidate) => candidate.baseSlug === topic.baseSlug)].filter(Boolean);
+    const cards = relatedTopics.map((candidate) => {
+      const candidateQuality = qualityBySlug[candidate.slug];
+      const app = snapshot.topics[candidate.slug]?.results?.[0];
+      return `<a class="finder-hub-card" href="${relativeHref(currentDir, finderDir(candidate, locale))}"><div><div class="finder-hub-card__top">${app?.artwork ? `<img src="${esc(app.artwork)}" alt="" width="92" height="92" loading="lazy" referrerpolicy="no-referrer" />` : ""}<span class="finder-status${candidateQuality?.indexable ? " finder-status--ready" : ""}">${esc(candidate.series === "intent" ? (candidateQuality?.indexable ? c.indexable : c.reviewNeeded) : c.baseCatalog)}</span></div><h3>${esc(candidate.labels[locale])}</h3></div><strong>${esc(c.browse)} →</strong></a>`;
+    }).join("");
+    return `<section class="editorial-section related-intents" id="related"><div class="editorial-section__heading"><div><p class="eyebrow">${esc(c.related)}</p><h2>${esc(baseTopic.labels[locale])}</h2></div><p>${esc(c.relatedLead)}</p></div><div class="finder-hub-grid">${cards}</div></section>`;
+  })() : `<section class="editorial-section" id="guides"><div class="editorial-section__heading"><div><p class="eyebrow">${esc(c.guides)}</p><h2>${esc(c.editorialTitle)}</h2></div><p>${esc(c.editorialLead)}</p></div><div class="article-grid">${guides.map((guide, index) => guideCard(topic, locale, guide, currentDir, index, apps[index]?.artwork || apps[0]?.artwork)).join("")}</div></section>`;
+  const secondaryTarget = isIntent ? "#related" : "#guides";
+  const secondaryLabel = isIntent ? c.related : c.guides;
+  const html = `${pageHead}<body>${header(topic, locale, currentDir)}<main><section class="hero finder-hero">${iconStage(apps)}<div class="hero__content"><p class="eyebrow">App Finders · ${esc(groupNames[locale][topic.archetype])}</p><h1>${esc(copy.title)}</h1><p class="hero__lead">${esc(copy.lead)}</p><div class="hero__proof">${c.proof.map((item) => `<span>${esc(item)}</span>`).join("")}</div><div class="hero__actions"><a class="button button--primary" href="#directory">${esc(c.directory)}</a><a class="button button--secondary" href="${secondaryTarget}">${esc(secondaryLabel)}</a></div></div></section><section class="search-band"><div class="search-field"><i data-lucide="search"></i><input id="directory-search" type="search" placeholder="${esc(c.searchPlaceholder)}" /></div><button class="button button--primary" id="search-button">${esc(c.search)}</button></section><section class="pulse-band"><div class="pulse-band__inner"><div class="pulse-band__intro"><strong>${esc(c.snapshot)}</strong><p>${esc(source.fetchedAt.slice(0, 10))}</p></div><div class="pulse-band__metric"><strong>${config.listings.length}</strong><p>${esc(c.listings)}</p></div><div class="pulse-band__metric"><strong>${quality.indexable ? esc(c.indexable) : esc(c.reviewNeeded)}</strong><p>${esc(c.methodology)}</p></div><div class="pulse-band__metric"><strong>${esc(c.sourceName)}</strong><p>${esc(c.disclosed)}</p></div></div></section>${qualityNote}${intentGuidance}<section class="matcher-section"><div class="matcher-section__copy"><p class="eyebrow">${esc(c.methodology)}</p><h2>${esc(c.matcher)}</h2><p>${esc(c.matcherLead)}</p></div><div class="matcher-panel"><form class="matcher-form" id="matcher-form"></form><div class="matcher-result" id="matcher-result"></div></div></section><section class="directory-shell" id="directory"><div class="directory-intro"><div><p class="eyebrow">${esc(topic.labels[locale])}</p><h2>${esc(copy.title)}</h2></div><p>${esc(copy.lead)}</p></div><div class="directory-layout"><aside class="filters"><div class="filters__heading"><h3>${esc(c.filters)}</h3><button id="reset-filters">${esc(c.reset)}</button></div><div id="filters"></div></aside><div><div class="results-toolbar"><p><strong id="result-count">${config.listings.length}</strong> ${esc(c.count)}</p><select id="sort-results" aria-label="${esc(c.sortRecommended)}"><option value="recommended">${esc(c.sortRecommended)}</option><option value="name">${esc(c.sortName)}</option><option value="price">${esc(c.sortPrice)}</option><option value="location">${esc(c.sortLocation)}</option></select></div><div class="listing-grid" id="listing-grid">${config.listings.map((listing) => staticCard(listing, config)).join("")}</div></div></div></section>${editorial}<section class="method-section" id="method"><div class="method-section__heading"><div><p class="eyebrow">${esc(c.methodology)}</p><h2>${esc(c.methodTitle)}</h2></div><p>${esc(c.methodLead)}</p></div><div class="method-steps">${method}</div></section></main>${footer(locale, currentDir)}<div class="compare-bar" id="compare-bar"><span><strong id="compare-count">0</strong> ${esc(c.compare)}</span><button class="button button--primary" id="compare-open">${esc(c.compare)}</button></div><dialog class="compare-dialog" id="compare-dialog"><div class="compare-dialog__header"><h2>${esc(c.compareTitle)}</h2><button class="icon-button" id="compare-close" aria-label="${esc(c.close)}">×</button></div><div class="compare-scroll" id="compare-content"></div></dialog><script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script><script src="data.js?v=20260814f"></script><script src="${relativeFile(currentDir, "directory-shared/directory.js")}?v=20260814f" defer></script></body></html>`;
   write(`${currentDir}/index.html`, html);
-  write(`${currentDir}/data.js`, `window.DIRECTORY_CONFIG = ${JSON.stringify(config, null, 2)};\n`);
+  write(`${currentDir}/data.js`, `window.DIRECTORY_CONFIG=${JSON.stringify(config)};\n`);
 }
 
 function guideSchema(topic, locale, guide) {
@@ -278,9 +314,10 @@ function buildGuide(topic, locale, guide, source, guideIndex) {
 
 function hubSchema(locale) {
   const url = canonical(topics[0], locale, "hub");
+  const eligibleTopics = topics.filter((topic) => qualityBySlug[topic.slug].indexable);
   return { "@context": "https://schema.org", "@graph": [
     { "@type": "CollectionPage", name: finderCommon[locale].hubTitle, description: finderCommon[locale].hubLead, url, inLanguage: finderLocales[locale].code },
-    { "@type": "ItemList", numberOfItems: topics.length, itemListElement: topics.map((topic, index) => ({ "@type": "ListItem", position: index + 1, name: topic.labels[locale], url: canonical(topic, locale) })) }
+    { "@type": "ItemList", numberOfItems: eligibleTopics.length, itemListElement: eligibleTopics.map((topic, index) => ({ "@type": "ListItem", position: index + 1, name: topic.labels[locale], url: canonical(topic, locale) })) }
   ] };
 }
 
@@ -292,13 +329,14 @@ function buildHub(locale) {
     const cards = topics.filter((topic) => topic.archetype === archetype).map((topic) => {
       const quality = qualityBySlug[topic.slug];
       const app = snapshot.topics[topic.slug]?.results?.[0];
-      return `<a class="finder-hub-card" href="${relativeHref(currentDir, finderDir(topic, locale))}"><div><div class="finder-hub-card__top">${app?.artwork ? `<img src="${esc(app.artwork)}" alt="" width="92" height="92" loading="lazy" referrerpolicy="no-referrer" />` : ""}<span class="finder-status${quality.indexable ? " finder-status--ready" : ""}">${esc(quality.indexable ? c.indexable : c.reviewNeeded)}</span></div><h3>${esc(topic.labels[locale])}</h3><p>${quality.resultCount} ${esc(c.listings)}</p></div><strong>${esc(c.browse)} →</strong></a>`;
+      return `<a class="finder-hub-card" data-catalog-card data-ready="${quality.indexable}" data-search="${esc(`${topic.labels[locale]} ${topic.term} ${groupNames[locale][archetype]}`.toLocaleLowerCase())}" href="${relativeHref(currentDir, finderDir(topic, locale))}"><div><div class="finder-hub-card__top">${app?.artwork ? `<img src="${esc(app.artwork)}" alt="" width="92" height="92" loading="lazy" referrerpolicy="no-referrer" />` : ""}<span class="finder-status${quality.indexable ? " finder-status--ready" : ""}">${esc(quality.indexable ? c.indexable : c.reviewNeeded)}</span></div><h3>${esc(topic.labels[locale])}</h3><p>${quality.resultCount} ${esc(c.listings)}</p></div><strong>${esc(c.browse)} →</strong></a>`;
     }).join("");
-    return `<section class="finder-hub__group"><header><h2>${esc(groupNames[locale][archetype])}</h2><p>10 ${esc(c.categoryCount)}</p></header><div class="finder-hub-grid">${cards}</div></section>`;
+    const groupCount = topics.filter((topic) => topic.archetype === archetype).length;
+    return `<section class="finder-hub__group" data-catalog-group><header><h2>${esc(groupNames[locale][archetype])}</h2><p><span data-group-count>${groupCount}</span> ${esc(c.categoryCount)}</p></header><div class="finder-hub-grid">${cards}</div></section>`;
   }).join("");
   const schema = hubSchema(locale);
   const pageHead = head({ topic: topics[0], locale, currentDir, kind: "hub", title: `${c.hubTitle} | Structor Robotics`, description: c.hubLead, robots: "index,follow,max-image-preview:large", image: allApps[0]?.artwork, schema });
-  const html = `${pageHead}<body>${header(null, locale, currentDir, "hub")}<main><section class="hero finder-hero">${iconStage(allApps)}<div class="hero__content"><p class="eyebrow">Structor Robotics · App Finders</p><h1>${esc(c.hubTitle)}</h1><p class="hero__lead">${esc(c.hubLead)}</p><div class="hero__proof"><span>100 ${esc(c.categoryCount)}</span><span>${qualityRows.filter((row) => row.indexable).length} ${esc(c.qualityCount)}</span><span>${esc(c.sourceName)}</span></div><div class="hero__actions"><a class="button button--primary" href="#catalogs">${esc(c.directory)}</a><a class="button button--secondary" href="${baseUrl}/structor-robotics/">Structor Robotics</a></div></div></section><aside class="quality-note"><strong>${esc(c.methodology)}.</strong> ${esc(c.methodLead)} ${esc(c.qualityHold)}</aside><div class="finder-hub" id="catalogs">${grouped}</div></main>${footer(locale, currentDir)}</body></html>`;
+  const html = `${pageHead}<body>${header(null, locale, currentDir, "hub")}<main><section class="hero finder-hero">${iconStage(allApps)}<div class="hero__content"><p class="eyebrow">Structor Robotics · App Finders</p><h1>${esc(c.hubTitle)}</h1><p class="hero__lead">${esc(c.hubLead)}</p><div class="hero__proof"><span>${topics.length.toLocaleString(finderLocales[locale].code)} ${esc(c.categoryCount)}</span><span>${qualityRows.filter((row) => row.indexable).length.toLocaleString(finderLocales[locale].code)} ${esc(c.qualityCount)}</span><span>${esc(c.sourceName)}</span></div><div class="hero__actions"><a class="button button--primary" href="#catalogs">${esc(c.directory)}</a><a class="button button--secondary" href="${baseUrl}/structor-robotics/">Structor Robotics</a></div></div></section><aside class="quality-note"><strong>${esc(c.methodology)}.</strong> ${esc(c.methodLead)} ${esc(c.qualityHold)}</aside><section class="catalog-search-band"><div class="search-field"><i data-lucide="search" aria-hidden="true"></i><input id="catalog-search" type="search" placeholder="${esc(c.catalogSearch)}" aria-label="${esc(c.catalogSearchLabel)}" /></div><div class="catalog-mode" role="group" aria-label="${esc(c.filterCatalogs)}"><button type="button" data-catalog-mode="all" aria-pressed="true">${esc(c.showAll)}</button><button type="button" data-catalog-mode="ready" aria-pressed="false">${esc(c.showReady)}</button></div><p aria-live="polite"><strong id="catalog-count">${topics.length.toLocaleString(finderLocales[locale].code)}</strong> ${esc(c.categoryCount)}</p></section><div class="finder-hub" id="catalogs">${grouped}</div></main>${footer(locale, currentDir)}<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script><script src="${relativeFile(currentDir, "directory-shared/directory.js")}?v=20260814f" defer></script></body></html>`;
   write(`${currentDir}/index.html`, html);
 }
 
@@ -326,6 +364,10 @@ function buildSitemap() {
   if (!robots.includes(line)) fs.writeFileSync(robotsFile, `${robots}\n${line}\n`);
 }
 
+const missingSources = topics.filter((topic) => !snapshot.topics[topic.slug]?.results?.length);
+if (missingSources.length) throw new Error(`Missing source snapshots for ${missingSources.length} topics; first: ${missingSources[0].slug}`);
+
+fs.rmSync(stagingDirectory, { recursive: true, force: true });
 for (const locale of Object.keys(finderLocales)) buildHub(locale);
 for (const topic of topics) {
   const source = snapshot.topics[topic.slug];
@@ -333,13 +375,16 @@ for (const topic of topics) {
   const quality = qualityBySlug[topic.slug];
   for (const locale of Object.keys(finderLocales)) {
     buildHome(topic, locale, source, quality);
-    articleTemplates(locale, topic).forEach((guide, index) => buildGuide(topic, locale, guide, source, index));
+    if (topic.series !== "intent") articleTemplates(locale, topic).forEach((guide, index) => buildGuide(topic, locale, guide, source, index));
   }
 }
+fs.rmSync(generatedDirectory, { recursive: true, force: true });
+fs.renameSync(stagingDirectory, generatedDirectory);
 buildSitemap();
 
-write("tools/app-finders/data/quality-report.json", `${JSON.stringify({ generatedAt: new Date().toISOString(), total: 100, indexable: qualityRows.filter((row) => row.indexable).length, reviewNeeded: qualityRows.filter((row) => !row.indexable).length, rows: qualityRows }, null, 2)}\n`);
+write("tools/app-finders/data/quality-report.json", `${JSON.stringify({ generatedAt: new Date().toISOString(), total: topics.length, indexable: qualityRows.filter((row) => row.indexable).length, reviewNeeded: qualityRows.filter((row) => !row.indexable).length, rows: qualityRows }, null, 2)}\n`);
 const reportRows = qualityRows.map((row) => `| ${row.slug} | ${row.resultCount} | ${row.ratedCount} | ${Math.round(row.maximumOverlap * 100)}% | ${row.indexable ? "index" : `noindex: ${row.reasons.join("; ")}`} |`).join("\n");
-write("marketing/directory-projects/app-finders-quality-2026-08-14.md", `# App Finders quality report — 2026-08-14\n\n- Generated catalogs: **100**\n- Quality-gate pass: **${qualityRows.filter((row) => row.indexable).length}**\n- Held at noindex: **${qualityRows.filter((row) => !row.indexable).length}**\n- Source: Apple iTunes Search API snapshot; US storefront.\n- Guide pages remain noindex until individual editorial review because their structure is shared.\n\n| Catalog | Results | Mature ratings | Max overlap | Search status |\n|---|---:|---:|---:|---|\n${reportRows}\n`);
+write("marketing/directory-projects/app-finders-quality-2026-08-14.md", `# App Finders quality report — 2026-08-14\n\n- Generated catalogs: **${topics.length}**\n- Quality-gate pass: **${qualityRows.filter((row) => row.indexable).length}**\n- Held at noindex: **${qualityRows.filter((row) => !row.indexable).length}**\n- Source: Apple iTunes Search API snapshot; US storefront.\n- Only the 100 original catalogs include topic-specific guide drafts; those guides remain noindex pending individual editorial review.\n- The 900 intent catalogs use one comparison page each and do not create repeated guide pages.\n- All intent catalogs remain noindex until an individual demand-backed editorial review clears them. This prevents a browseable expansion from becoming scaled search content.\n- Search policy reference: https://developers.google.com/search/docs/essentials/spam-policies\n\n| Catalog | Results | Mature ratings | Max overlap | Search status |\n|---|---:|---:|---:|---|\n${reportRows}\n`);
 
-console.log(`Built 100 App Finder catalogs in 4 languages (${100 * 4 * 4 + 4} HTML pages). ${qualityRows.filter((row) => row.indexable).length} passed the index quality gate.`);
+const htmlPageCount = topics.length * Object.keys(finderLocales).length + baseTopics.length * 3 * Object.keys(finderLocales).length + Object.keys(finderLocales).length;
+console.log(`Built ${topics.length} App Finder catalogs in 4 languages (${htmlPageCount} HTML pages). ${qualityRows.filter((row) => row.indexable).length} passed the index quality gate.`);

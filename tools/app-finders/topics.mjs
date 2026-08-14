@@ -2,7 +2,7 @@ const topic = (slug, term, en, es, ru, he, archetype, entity = "software") => ({
   slug, term, labels: { en, es, ru, he }, archetype, entity
 });
 
-export const topics = [
+export const baseTopics = [
   topic("pdf-scanner-apps", "pdf scanner", "PDF scanner apps", "apps para escanear PDF", "приложения для сканирования PDF", "אפליקציות לסריקת PDF", "document"),
   topic("receipt-scanner-apps", "receipt scanner", "receipt scanner apps", "apps para escanear recibos", "приложения для сканирования чеков", "אפליקציות לסריקת קבלות", "document"),
   topic("document-scanner-apps", "document scanner", "document scanner apps", "apps para escanear documentos", "приложения-сканеры документов", "אפליקציות לסריקת מסמכים", "document"),
@@ -114,4 +114,66 @@ export const topics = [
   topic("mac-markdown-editor-apps", "mac markdown editor", "Mac Markdown editor apps", "editores Markdown para Mac", "Markdown-редакторы для Mac", "אפליקציות Markdown ל-Mac", "mac", "macSoftware")
 ];
 
-if (topics.length !== 100) throw new Error(`Expected 100 app-finder topics, received ${topics.length}`);
+const standardQualifiers = [
+  { slug: "beginners", term: "beginners", labels: { en: "for beginners", es: "para principiantes", ru: "для начинающих", he: "למתחילים" } },
+  { slug: "small-business", term: "small business", labels: { en: "for small business", es: "para pequeñas empresas", ru: "для малого бизнеса", he: "לעסקים קטנים" } },
+  { slug: "teams", term: "team", labels: { en: "for teams", es: "para equipos", ru: "для команд", he: "לצוותים" } },
+  { slug: "students", term: "students", labels: { en: "for students", es: "para estudiantes", ru: "для студентов", he: "לסטודנטים" } },
+  { slug: "offline", term: "offline", labels: { en: "that work offline", es: "que funcionan sin conexión", ru: "с работой без интернета", he: "שעובדות ללא אינטרנט" } },
+  { slug: "privacy", term: "private", labels: { en: "with a privacy focus", es: "centradas en privacidad", ru: "с повышенной приватностью", he: "עם דגש על פרטיות" } },
+  { slug: "free", term: "free", labels: { en: "with a free option", es: "con opción gratuita", ru: "с бесплатным вариантом", he: "עם אפשרות חינמית" } },
+  { slug: "ipad", term: "ipad", labels: { en: "for iPad", es: "para iPad", ru: "для iPad", he: "ל-iPad" } },
+  { slug: "mac", term: "mac", labels: { en: "for Mac", es: "para Mac", ru: "для Mac", he: "ל-Mac" }, entity: "macSoftware" }
+];
+
+const macQualifiers = [
+  { slug: "apple-silicon", term: "apple silicon", labels: { en: "for Apple Silicon", es: "para Apple Silicon", ru: "для Apple Silicon", he: "ל-Apple Silicon" } },
+  { slug: "lightweight", term: "lightweight", labels: { en: "that are lightweight", es: "ligeras", ru: "с низкой нагрузкой", he: "קלות משקל" } },
+  { slug: "privacy", term: "private", labels: { en: "with a privacy focus", es: "centradas en privacidad", ru: "с повышенной приватностью", he: "עם דגש על פרטיות" } },
+  { slug: "free", term: "free", labels: { en: "with a free option", es: "con opción gratuita", ru: "с бесплатным вариантом", he: "עם אפשרות חינמית" } },
+  { slug: "no-subscription", term: "no subscription", labels: { en: "without a subscription", es: "sin suscripción", ru: "без подписки", he: "ללא מנוי" } },
+  { slug: "productivity", term: "productivity", labels: { en: "for productivity", es: "para productividad", ru: "для продуктивной работы", he: "לפרודוקטיביות" } },
+  { slug: "power-users", term: "power users", labels: { en: "for power users", es: "para usuarios avanzados", ru: "для опытных пользователей", he: "למשתמשים מתקדמים" } },
+  { slug: "developers", term: "developers", labels: { en: "for developers", es: "para desarrolladores", ru: "для разработчиков", he: "למפתחים" } },
+  { slug: "business", term: "business", labels: { en: "for business", es: "para empresas", ru: "для бизнеса", he: "לעסקים" } }
+];
+
+const noAccountQualifier = {
+  slug: "no-account",
+  term: "no account",
+  labels: { en: "without an account", es: "sin cuenta", ru: "без аккаунта", he: "ללא חשבון" }
+};
+
+const noSubscriptionQualifier = {
+  slug: "no-subscription",
+  term: "no subscription",
+  labels: { en: "without a subscription", es: "sin suscripción", ru: "без подписки", he: "ללא מנוי" }
+};
+
+const intentTopic = (base, qualifier) => ({
+  slug: `${base.slug.replace(/-apps$/, "")}-${qualifier.slug}-apps`,
+  term: `${base.term} ${qualifier.term}`,
+  labels: Object.fromEntries(Object.keys(base.labels).map((locale) => [locale, `${base.labels[locale]} ${qualifier.labels[locale]}`])),
+  archetype: base.archetype,
+  entity: qualifier.entity || base.entity,
+  series: "intent",
+  baseSlug: base.slug,
+  qualifier: qualifier.slug
+});
+
+export const intentTopics = baseTopics.flatMap((base) => {
+  let qualifiers = base.archetype === "mac" ? macQualifiers : standardQualifiers;
+  if (["offline-ai-apps", "offline-translator-apps", "offline-map-apps"].includes(base.slug)) {
+    qualifiers = qualifiers.map((qualifier) => qualifier.slug === "offline" ? noAccountQualifier : qualifier);
+  }
+  if (base.slug === "markdown-editor-apps") {
+    qualifiers = qualifiers.map((qualifier) => qualifier.slug === "mac" ? noSubscriptionQualifier : qualifier);
+  }
+  return qualifiers.map((qualifier) => intentTopic(base, qualifier));
+});
+
+export const topics = [...baseTopics, ...intentTopics];
+
+if (baseTopics.length !== 100) throw new Error(`Expected 100 base topics, received ${baseTopics.length}`);
+if (intentTopics.length !== 900) throw new Error(`Expected 900 intent topics, received ${intentTopics.length}`);
+if (topics.length !== 1000) throw new Error(`Expected 1,000 app-finder topics, received ${topics.length}`);

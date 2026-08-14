@@ -1,8 +1,46 @@
 (function () {
   "use strict";
 
+  const hubSearch = document.querySelector("#catalog-search");
+  if (hubSearch) {
+    const hubCards = [...document.querySelectorAll("[data-catalog-card]")];
+    const hubGroups = [...document.querySelectorAll("[data-catalog-group]")];
+    const modeButtons = [...document.querySelectorAll("[data-catalog-mode]")];
+    const hubCount = document.querySelector("#catalog-count");
+    const formatter = new Intl.NumberFormat(document.documentElement.lang || "en");
+    let hubMode = "all";
+    const updateHub = () => {
+      const terms = hubSearch.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+      let visible = 0;
+      hubCards.forEach((card) => {
+        const matchesQuery = terms.every((term) => card.dataset.search.includes(term));
+        const matchesMode = hubMode === "all" || card.dataset.ready === "true";
+        const matches = matchesQuery && matchesMode;
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      hubGroups.forEach((group) => {
+        const groupVisible = group.querySelectorAll("[data-catalog-card]:not([hidden])").length;
+        group.hidden = groupVisible === 0;
+        const groupCount = group.querySelector("[data-group-count]");
+        if (groupCount) groupCount.textContent = formatter.format(groupVisible);
+      });
+      if (hubCount) hubCount.textContent = formatter.format(visible);
+    };
+    hubSearch.addEventListener("input", updateHub);
+    modeButtons.forEach((button) => button.addEventListener("click", () => {
+      hubMode = button.dataset.catalogMode;
+      modeButtons.forEach((candidate) => candidate.setAttribute("aria-pressed", String(candidate === button)));
+      updateHub();
+    }));
+    updateHub();
+  }
+
   const config = window.DIRECTORY_CONFIG;
-  if (!config) return;
+  if (!config) {
+    if (window.lucide) window.lucide.createIcons();
+    return;
+  }
 
   const urlState = new URLSearchParams(window.location.search);
 

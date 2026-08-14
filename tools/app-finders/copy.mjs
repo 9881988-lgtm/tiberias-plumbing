@@ -7,7 +7,7 @@ export const finderLocales = {
 
 export const finderCommon = {
   en: {
-    hubTitle: "100 focused App Store finders", hubLead: "Browse source-linked app comparisons built around a specific job, not a generic chart.",
+    hubTitle: "1,000 focused App Store finders", hubLead: "Search source-linked app comparisons built around a specific job and buying intent, not a generic chart.",
     directory: "Directory", guides: "Decision guides", language: "Language", allFinders: "All app finders", methodology: "Methodology",
     searchPlaceholder: "Search by app, developer or requirement...", search: "Search apps", filters: "Filters", reset: "Reset",
     sortRecommended: "Evidence score", sortName: "Name", sortPrice: "Lowest price", sortLocation: "Developer",
@@ -27,10 +27,11 @@ export const finderCommon = {
     methodSteps: [["01", "Official query", "Every listing comes from a dated Apple Search API response."], ["02", "Normalize", "Price, rating volume, OS and update date use one visible format."], ["03", "Check confidence", "A high rating with two reviews is not treated like a mature signal."], ["04", "Verify now", "The App Store page controls current features, privacy and purchases."]],
     footer: "Independent discovery layer using official App Store links. Verify current pricing, compatibility, privacy labels and in-app purchases before installing.",
     indexable: "Quality-checked", reviewNeeded: "Editorial review", category: "Category", browse: "Open catalog",
-    categoryCount: "categories", qualityCount: "quality-checked", qualityHold: "Catalog drafts that fail a source or uniqueness gate remain explicitly noindex.", dateLabel: "14 August 2026"
+    categoryCount: "categories", qualityCount: "quality-checked", qualityHold: "Catalog drafts that have not passed source, uniqueness and editorial gates remain explicitly noindex.", dateLabel: "14 August 2026",
+    catalogSearch: "Search 1,000 catalogs...", catalogSearchLabel: "Search catalogs", filterCatalogs: "Filter catalogs", showAll: "All catalogs", showReady: "Quality-checked", related: "Related intent catalogs", relatedLead: "Compare the same core job across narrower needs before choosing an app.", baseCatalog: "Core catalog", intentCaveat: "The search snapshot is a candidate list, not proof that every app meets this qualifier. Verify the current product page and test the workflow."
   },
   es: {
-    hubTitle: "100 buscadores especializados de App Store", hubLead: "Compara apps con fuentes y una tarea concreta, no con una clasificación genérica.",
+    hubTitle: "1.000 buscadores especializados de App Store", hubLead: "Busca comparaciones con fuentes para una tarea e intención concretas, no una clasificación genérica.",
     directory: "Directorio", guides: "Guías de decisión", language: "Idioma", allFinders: "Todos los buscadores", methodology: "Metodología",
     searchPlaceholder: "Busca por app, desarrollador o requisito...", search: "Buscar apps", filters: "Filtros", reset: "Restablecer",
     sortRecommended: "Puntuación de evidencia", sortName: "Nombre", sortPrice: "Menor precio", sortLocation: "Desarrollador",
@@ -50,10 +51,11 @@ export const finderCommon = {
     methodSteps: [["01", "Consulta oficial", "Cada ficha procede de una respuesta fechada de Apple."], ["02", "Normalización", "Precio, valoraciones, sistema y fecha usan un formato común."], ["03", "Confianza", "Dos opiniones no pesan como una señal madura."], ["04", "Verificación", "La ficha de App Store manda sobre funciones, privacidad y compras."]],
     footer: "Capa de descubrimiento independiente con enlaces oficiales. Verifica precio, compatibilidad, privacidad y compras antes de instalar.",
     indexable: "Calidad verificada", reviewNeeded: "Revisión editorial", category: "Categoría", browse: "Abrir catálogo",
-    categoryCount: "categorías", qualityCount: "con calidad verificada", qualityHold: "Los borradores que no superan el control de fuentes o singularidad permanecen explícitamente en noindex.", dateLabel: "14 de agosto de 2026"
+    categoryCount: "categorías", qualityCount: "con calidad verificada", qualityHold: "Los borradores sin aprobación de fuentes, singularidad y revisión editorial permanecen explícitamente en noindex.", dateLabel: "14 de agosto de 2026",
+    catalogSearch: "Buscar entre 1.000 catálogos...", catalogSearchLabel: "Buscar catálogos", filterCatalogs: "Filtrar catálogos", showAll: "Todos", showReady: "Verificados", related: "Catálogos relacionados", relatedLead: "Compara la misma tarea con necesidades más precisas antes de elegir.", baseCatalog: "Catálogo principal", intentCaveat: "La búsqueda es una lista de candidatos, no prueba que cada app cumpla este criterio. Verifica la ficha actual y prueba el flujo."
   },
   ru: {
-    hubTitle: "100 точных каталогов приложений App Store", hubLead: "Сравнивайте приложения для конкретной задачи по источникам, а не по общей таблице популярности.",
+    hubTitle: "1000 точных каталогов приложений App Store", hubLead: "Ищите сравнения по конкретной задаче и намерению, основанные на источниках, а не общей популярности.",
     directory: "Каталог", guides: "Гайды по выбору", language: "Язык", allFinders: "Все каталоги", methodology: "Методика",
     searchPlaceholder: "Поиск по приложению, разработчику или требованиям...", search: "Найти приложения", filters: "Фильтры", reset: "Сбросить",
     sortRecommended: "Оценка доказательности", sortName: "Название", sortPrice: "Минимальная цена", sortLocation: "Разработчик",
@@ -73,10 +75,11 @@ export const finderCommon = {
     methodSteps: [["01", "Официальный запрос", "Каждая карточка получена из датированного ответа Apple."], ["02", "Единый формат", "Цена, рейтинг, ОС и дата показаны одинаково."], ["03", "Уверенность", "Высокий рейтинг из двух голосов не равен зрелому сигналу."], ["04", "Проверка сейчас", "Функции, приватность и покупки определяет текущая карточка App Store."]],
     footer: "Независимый каталог с официальными ссылками. До установки проверьте цену, совместимость, приватность и встроенные покупки.",
     indexable: "Проверено", reviewNeeded: "Нужна редактура", category: "Категория", browse: "Открыть каталог",
-    categoryCount: "категорий", qualityCount: "прошли проверку", qualityHold: "Черновики, не прошедшие проверку источников или уникальности, явно остаются в noindex.", dateLabel: "14 августа 2026"
+    categoryCount: "категорий", qualityCount: "прошли проверку", qualityHold: "Черновики без проверки источников, уникальности и редакционного допуска явно остаются в noindex.", dateLabel: "14 августа 2026",
+    catalogSearch: "Поиск по 1000 каталогам...", catalogSearchLabel: "Найти каталог", filterCatalogs: "Фильтр каталогов", showAll: "Все каталоги", showReady: "Проверенные", related: "Связанные каталоги", relatedLead: "Сравните одну основную задачу для разных условий до выбора приложения.", baseCatalog: "Основной каталог", intentCaveat: "Снимок поиска — список кандидатов, а не доказательство соответствия каждого приложения критерию. Проверьте актуальную карточку и протестируйте сценарий."
   },
   he: {
-    hubTitle: "100 מדריכי App Store ממוקדים", hubLead: "משווים אפליקציות לפי משימה מוגדרת ומקורות רשמיים, לא לפי טבלה כללית.",
+    hubTitle: "1,000 מדריכי App Store ממוקדים", hubLead: "מחפשים השוואות מבוססות מקורות לפי משימה וכוונת שימוש מוגדרות, לא לפי טבלה כללית.",
     directory: "מדריך", guides: "מדריכי החלטה", language: "שפה", allFinders: "כל המדריכים", methodology: "מתודולוגיה",
     searchPlaceholder: "חיפוש לפי אפליקציה, מפתח או דרישה...", search: "חיפוש אפליקציות", filters: "מסננים", reset: "איפוס",
     sortRecommended: "ציון ראיות", sortName: "שם", sortPrice: "מחיר נמוך", sortLocation: "מפתח",
@@ -96,7 +99,8 @@ export const finderCommon = {
     methodSteps: [["01", "שאילתה רשמית", "כל רישום מגיע מתשובת Apple מתוארכת."], ["02", "נרמול", "מחיר, דירוג, מערכת ותאריך מוצגים באותו פורמט."], ["03", "בדיקת ביטחון", "דירוג גבוה משתי הצבעות אינו אות בוגר."], ["04", "אימות עכשיו", "עמוד App Store קובע תכונות, פרטיות ורכישות."]],
     footer: "שכבת גילוי עצמאית עם קישורים רשמיים. בדקו מחיר, תאימות, תוויות פרטיות ורכישות לפני התקנה.",
     indexable: "עבר בדיקת איכות", reviewNeeded: "נדרשת עריכה", category: "קטגוריה", browse: "פתיחת מדריך",
-    categoryCount: "קטגוריות", qualityCount: "עברו בדיקת איכות", qualityHold: "טיוטות שאינן עוברות בדיקת מקורות או ייחודיות נשארות במפורש ב-noindex.", dateLabel: "14 באוגוסט 2026"
+    categoryCount: "קטגוריות", qualityCount: "עברו בדיקת איכות", qualityHold: "טיוטות ללא בדיקת מקורות, ייחודיות ואישור עריכתי נשארות במפורש ב-noindex.", dateLabel: "14 באוגוסט 2026",
+    catalogSearch: "חיפוש בין 1,000 מדריכים...", catalogSearchLabel: "חיפוש מדריכים", filterCatalogs: "סינון מדריכים", showAll: "כל המדריכים", showReady: "נבדקו", related: "מדריכים קשורים", relatedLead: "משווים את אותה משימה לצרכים מדויקים יותר לפני הבחירה.", baseCatalog: "המדריך הראשי", intentCaveat: "תמונת החיפוש היא רשימת מועמדים ולא הוכחה שכל אפליקציה עומדת בתנאי. בדקו את עמוד המוצר העדכני ונסו את התהליך."
   }
 };
 
@@ -170,15 +174,137 @@ export function finderPageCopy(locale, topic) {
     : locale === "es" ? `Compara ${label} con datos actuales de App Store.`
     : locale === "ru" ? `Сравните ${label} по актуальным данным App Store.`
     : `השוו ${label} בעזרת נתוני App Store עדכניים.`;
-  const seoTitle = locale === "en" ? `Best ${label} | App Store guide`
-    : locale === "es" ? `Mejores ${label} | guía App Store`
-    : locale === "ru" ? `Лучшие ${label} | гид App Store`
-    : `${label} | מדריך App Store`;
-  const lead = locale === "en" ? `${label} directory: ${archetypeCopy[topic.archetype][locale]}`
-    : locale === "es" ? `Directorio de ${label}: ${archetypeCopy[topic.archetype][locale]}`
-    : locale === "ru" ? `Каталог «${label}»: ${archetypeCopy[topic.archetype][locale]}`
-    : `מדריך ${label}: ${archetypeCopy[topic.archetype][locale]}`;
+  const seoTitle = topic.series === "intent"
+    ? locale === "en" ? `${label} | App Store comparison`
+      : locale === "es" ? `${label} | comparativa App Store`
+      : locale === "ru" ? `${label} | сравнение App Store`
+      : `${label} | השוואת App Store`
+    : locale === "en" ? `Compare ${label} | App Store guide`
+      : locale === "es" ? `Compara ${label} | guía App Store`
+      : locale === "ru" ? `Сравнение: ${label} | гид App Store`
+      : `השוואת ${label} | מדריך App Store`;
+  const lead = topic.series === "intent"
+    ? locale === "en" ? `${label}: compare current price, rating volume, compatibility and update evidence for this specific use case.`
+      : locale === "es" ? `${label}: compara precio, valoraciones, compatibilidad y actualización para este caso de uso.`
+      : locale === "ru" ? `${label}: сравните цену, число оценок, совместимость и свежесть для этого сценария.`
+      : `${label}: השוו מחיר, כמות דירוגים, תאימות ועדכניות לתרחיש השימוש הזה.`
+    : locale === "en" ? `${label} directory: ${archetypeCopy[topic.archetype][locale]}`
+      : locale === "es" ? `Directorio de ${label}: ${archetypeCopy[topic.archetype][locale]}`
+      : locale === "ru" ? `Каталог «${label}»: ${archetypeCopy[topic.archetype][locale]}`
+      : `מדריך ${label}: ${archetypeCopy[topic.archetype][locale]}`;
   return { ...c, label, title, seoTitle, lead };
+}
+
+const intentAdviceCopy = {
+  beginners: {
+    en: ["Test the first ten minutes", "Look for a clear first run, a reversible sample task and an export you can understand before adding real data."],
+    es: ["Prueba los primeros diez minutos", "Busca un inicio claro, una tarea de muestra reversible y una exportación comprensible antes de añadir datos reales."],
+    ru: ["Проверьте первые десять минут", "Оцените понятность первого запуска, обратимость тестовой задачи и экспорт до добавления реальных данных."],
+    he: ["בדקו את עשר הדקות הראשונות", "חפשו התחלה ברורה, משימת דוגמה הפיכה וייצוא מובן לפני הוספת מידע אמיתי."]
+  },
+  "small-business": {
+    en: ["Price the complete business workflow", "Check export, ownership, support, recurring limits and the cost of every seat needed for the real job."],
+    es: ["Calcula el flujo completo del negocio", "Comprueba exportación, propiedad, soporte, límites recurrentes y el coste de cada plaza necesaria."],
+    ru: ["Посчитайте весь рабочий процесс", "Проверьте экспорт, владение данными, поддержку, регулярные лимиты и стоимость каждого нужного места."],
+    he: ["תמחרו את תהליך העסק המלא", "בדקו ייצוא, בעלות, תמיכה, מגבלות חוזרות ועלות כל מושב שנדרש לעבודה האמיתית."]
+  },
+  teams: {
+    en: ["Test roles before rollout", "Use a sample workspace to verify invitations, permissions, shared state, audit history and a clean export."],
+    es: ["Prueba los roles antes del despliegue", "Usa un espacio de muestra para verificar invitaciones, permisos, estado compartido, historial y exportación."],
+    ru: ["Проверьте роли до внедрения", "На тестовом пространстве проверьте приглашения, права, общее состояние, историю действий и экспорт."],
+    he: ["בדקו תפקידים לפני הטמעה", "השתמשו בסביבת דוגמה כדי לבדוק הזמנות, הרשאות, מצב משותף, היסטוריה וייצוא נקי."]
+  },
+  students: {
+    en: ["Check the semester cost", "Compare the free limit, offline access, file export and whether your work remains usable after a course ends."],
+    es: ["Calcula el coste del semestre", "Compara el límite gratuito, acceso sin conexión, exportación y si el trabajo sigue siendo útil al acabar el curso."],
+    ru: ["Посчитайте стоимость семестра", "Сравните бесплатный лимит, доступ без сети, экспорт и доступность работы после окончания курса."],
+    he: ["חשבו את עלות הסמסטר", "השוו מגבלה חינמית, גישה לא מקוונת, ייצוא והאם העבודה נשארת שימושית אחרי סיום הקורס."]
+  },
+  offline: {
+    en: ["Prove it without a connection", "Complete setup first, switch off Wi-Fi and cellular data, then repeat the core task and verify what still syncs later."],
+    es: ["Compruébalo sin conexión", "Completa la configuración, apaga Wi-Fi y datos, repite la tarea principal y verifica qué se sincroniza después."],
+    ru: ["Докажите работу без сети", "Завершите настройку, отключите Wi-Fi и мобильные данные, повторите основную задачу и проверьте последующую синхронизацию."],
+    he: ["הוכיחו פעולה ללא חיבור", "סיימו הגדרה, כבו Wi-Fi ונתונים סלולריים, חזרו על המשימה המרכזית ובדקו מה מסתנכרן אחר כך."]
+  },
+  privacy: {
+    en: ["Trace the data path", "Review permissions, account requirements, local or cloud processing, retention and deletion before using sensitive material."],
+    es: ["Sigue la ruta de los datos", "Revisa permisos, cuenta, procesamiento local o en nube, retención y borrado antes de usar material sensible."],
+    ru: ["Проследите путь данных", "До работы с чувствительными материалами проверьте разрешения, аккаунт, локальную или облачную обработку, хранение и удаление."],
+    he: ["עקבו אחר מסלול הנתונים", "בדקו הרשאות, דרישת חשבון, עיבוד מקומי או בענן, שמירה ומחיקה לפני שימוש בחומר רגיש."]
+  },
+  free: {
+    en: ["Find the real paywall", "Run the full task through export and identify limits, watermarks, ads, trials and recurring purchases before choosing."],
+    es: ["Encuentra el muro de pago real", "Completa la tarea hasta exportar e identifica límites, marcas de agua, anuncios, pruebas y compras recurrentes."],
+    ru: ["Найдите настоящий платный барьер", "Пройдите задачу до экспорта и выясните лимиты, водяные знаки, рекламу, пробный период и регулярные покупки."],
+    he: ["מצאו את חומת התשלום האמיתית", "השלימו את המשימה עד לייצוא וזהו מגבלות, סימני מים, פרסומות, תקופות ניסיון ורכישות חוזרות."]
+  },
+  ipad: {
+    en: ["Test the iPad workflow", "Verify Files and Share Sheet support, multitasking, keyboard behavior and Apple Pencil input where the task needs it."],
+    es: ["Prueba el flujo en iPad", "Verifica Archivos, compartir, multitarea, teclado y Apple Pencil cuando la tarea lo necesite."],
+    ru: ["Проверьте сценарий на iPad", "Проверьте Files и меню «Поделиться», многозадачность, клавиатуру и Apple Pencil, если он нужен задаче."],
+    he: ["בדקו את תהליך העבודה ב-iPad", "בדקו Files ושיתוף, ריבוי משימות, מקלדת ו-Apple Pencil כאשר המשימה דורשת זאת."]
+  },
+  mac: {
+    en: ["Verify the Mac build", "Confirm Apple Silicon and macOS support, file access, background activity, menu-bar behavior and clean removal."],
+    es: ["Verifica la versión para Mac", "Confirma Apple Silicon, macOS, acceso a archivos, actividad en segundo plano, barra de menús y desinstalación."],
+    ru: ["Проверьте версию для Mac", "Уточните поддержку Apple Silicon и macOS, доступ к файлам, фоновую работу, строку меню и полное удаление."],
+    he: ["בדקו את גרסת ה-Mac", "אשרו Apple Silicon ו-macOS, גישה לקבצים, פעילות רקע, שורת תפריטים והסרה נקייה."]
+  },
+  "no-account": {
+    en: ["Test without creating an identity", "Confirm the core task, local history and export work without sign-up, then check what optional sync would change."],
+    es: ["Prueba sin crear una identidad", "Confirma que tarea, historial y exportación funcionan sin registro y revisa qué cambiaría una sincronización opcional."],
+    ru: ["Проверьте работу без регистрации", "Убедитесь, что основная задача, локальная история и экспорт доступны без аккаунта, и выясните роль необязательной синхронизации."],
+    he: ["בדקו ללא יצירת זהות", "אשרו שהמשימה, ההיסטוריה המקומית והייצוא עובדים ללא הרשמה ובדקו מה ישתנה בסנכרון אופציונלי."]
+  },
+  "no-subscription": {
+    en: ["Confirm the purchase model", "Check whether one-time access includes updates, every required feature, export and continued use without a recurring payment."],
+    es: ["Confirma el modelo de compra", "Comprueba si el pago único incluye actualizaciones, funciones necesarias, exportación y uso continuado sin cuota."],
+    ru: ["Уточните модель покупки", "Проверьте, включает ли разовая оплата обновления, нужные функции, экспорт и дальнейшее использование без регулярного платежа."],
+    he: ["אשרו את מודל הרכישה", "בדקו אם תשלום חד-פעמי כולל עדכונים, תכונות נדרשות, ייצוא ושימוש מתמשך ללא חיוב חוזר."]
+  },
+  "apple-silicon": {
+    en: ["Check native compatibility", "Verify the exact chip and macOS requirement, then measure first launch, memory use and any Rosetta dependency."],
+    es: ["Comprueba la compatibilidad nativa", "Verifica chip y macOS exactos y mide primer inicio, memoria y cualquier dependencia de Rosetta."],
+    ru: ["Проверьте нативную совместимость", "Уточните чип и версию macOS, затем оцените первый запуск, память и зависимость от Rosetta."],
+    he: ["בדקו תאימות טבעית", "אמתו שבב וגרסת macOS מדויקים ומדדו הפעלה ראשונה, זיכרון ותלות ב-Rosetta."]
+  },
+  lightweight: {
+    en: ["Measure background load", "Compare idle CPU, memory, launch time, background helpers and whether quitting the app actually stops its processes."],
+    es: ["Mide la carga en segundo plano", "Compara CPU y memoria en reposo, inicio, procesos auxiliares y si cerrar detiene realmente la app."],
+    ru: ["Измерьте фоновую нагрузку", "Сравните CPU и память в простое, время запуска, фоновые помощники и остановку процессов после выхода."],
+    he: ["מדדו עומס ברקע", "השוו CPU וזיכרון במנוחה, זמן הפעלה, תהליכי עזר והאם יציאה באמת עוצרת את התהליכים."]
+  },
+  productivity: {
+    en: ["Time one repeated task", "Measure setup, clicks, keyboard flow, automation and export on the same task instead of comparing feature counts."],
+    es: ["Cronometra una tarea repetida", "Mide configuración, clics, teclado, automatización y exportación en la misma tarea, no el número de funciones."],
+    ru: ["Замерьте одну повторяемую задачу", "Сравнивайте настройку, клики, клавиатуру, автоматизацию и экспорт на одной задаче, а не число функций."],
+    he: ["מדדו משימה חוזרת אחת", "מדדו הגדרה, לחיצות, מקלדת, אוטומציה וייצוא באותה משימה במקום לספור תכונות."]
+  },
+  "power-users": {
+    en: ["Verify control and portability", "Test shortcuts, batch actions, advanced settings, error recovery and complete export with a realistic sample."],
+    es: ["Verifica control y portabilidad", "Prueba atajos, lotes, ajustes avanzados, recuperación de errores y exportación completa con una muestra realista."],
+    ru: ["Проверьте контроль и переносимость", "На реалистичном примере проверьте горячие клавиши, пакетные действия, тонкие настройки, восстановление ошибок и полный экспорт."],
+    he: ["בדקו שליטה וניידות", "בדקו קיצורים, פעולות אצווה, הגדרות מתקדמות, התאוששות משגיאות וייצוא מלא עם דוגמה מציאותית."]
+  },
+  developers: {
+    en: ["Inspect integration and data access", "Verify file formats, automation hooks, logs, local paths, version control fit and an exit route before adoption."],
+    es: ["Revisa integración y acceso a datos", "Verifica formatos, automatización, registros, rutas locales, control de versiones y una salida antes de adoptar."],
+    ru: ["Проверьте интеграции и доступ к данным", "Уточните форматы, автоматизацию, логи, локальные пути, совместимость с контролем версий и способ выхода."],
+    he: ["בדקו אינטגרציה וגישה לנתונים", "אמתו פורמטים, אוטומציה, יומנים, נתיבים מקומיים, התאמה לבקרת גרסאות ודרך יציאה."]
+  },
+  business: {
+    en: ["Check ownership and continuity", "Confirm licensing, business data ownership, backup, export, support response and what happens if billing stops."],
+    es: ["Comprueba propiedad y continuidad", "Confirma licencia, propiedad de datos, copia, exportación, soporte y qué ocurre si se detiene la facturación."],
+    ru: ["Проверьте владение и непрерывность", "Уточните лицензию, права на деловые данные, резервирование, экспорт, поддержку и последствия остановки оплаты."],
+    he: ["בדקו בעלות והמשכיות", "אשרו רישוי, בעלות על נתוני העסק, גיבוי, ייצוא, תגובת תמיכה ומה קורה כשהחיוב נפסק."]
+  }
+};
+
+export function intentAdvice(locale, topic) {
+  if (topic.series !== "intent") return null;
+  const copy = intentAdviceCopy[topic.qualifier]?.[locale];
+  if (!copy) throw new Error(`Missing intent advice for ${topic.qualifier}/${locale}`);
+  return { title: copy[0], body: copy[1] };
 }
 
 export function articleTemplates(locale, topic) {
