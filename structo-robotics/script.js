@@ -338,5 +338,12 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.setLang));
 });
 
+const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
 const savedLanguage = localStorage.getItem("structo-language");
-setLanguage(savedLanguage && translations[savedLanguage] ? savedLanguage : "he");
+setLanguage(
+  requestedLanguage && translations[requestedLanguage]
+    ? requestedLanguage
+    : savedLanguage && translations[savedLanguage]
+      ? savedLanguage
+      : "he"
+);
