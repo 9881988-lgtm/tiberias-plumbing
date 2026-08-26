@@ -471,11 +471,25 @@ img {
   color: var(--muted);
 }
 
-.service-list article > strong {
+.service-list article > strong,
+.service-list article > .service-detail {
   justify-self: end;
   color: var(--teal);
   font-size: 1.05rem;
   text-align: end;
+}
+
+.service-list article > .service-detail {
+  font-weight: 900;
+  text-underline-offset: 5px;
+}
+
+.service-list-featured {
+  background: linear-gradient(90deg, rgba(199, 241, 91, 0.13), transparent 72%);
+}
+
+[dir="rtl"] .service-list-featured {
+  background: linear-gradient(-90deg, rgba(199, 241, 91, 0.13), transparent 72%);
 }
 
 .pricing-section {
@@ -1086,7 +1100,8 @@ footer a {
     grid-template-columns: 50px minmax(0, 1fr);
   }
 
-  .service-list article > strong {
+  .service-list article > strong,
+  .service-list article > .service-detail {
     grid-column: 2;
     justify-self: start;
     text-align: start;
@@ -1164,7 +1179,8 @@ footer a {
     gap: 15px;
   }
 
-  .service-list article > strong {
+  .service-list article > strong,
+  .service-list article > .service-detail {
     grid-column: 1;
   }
 

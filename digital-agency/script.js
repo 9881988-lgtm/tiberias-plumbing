@@ -1,11 +1,12 @@
 const translations = {
   he: {
-    pageTitle: "Structor Digital | אפליקציות, אתרים ופרסום Google ו-Meta",
-    pageDescription: "פיתוח אפליקציות, בניית דפי נחיתה ואתרים, הקמה וניהול קמפיינים ב-Google וב-Facebook. מחירים שקופים ותהליך מסודר לעסקים בישראל.",
+    pageTitle: "Structor Digital | אפליקציות, אתרים, פרסום ואוטומציית AI",
+    pageDescription: "פיתוח אפליקציות ואתרים, פרסום Google ו-Meta, אוטומציית מוקדי שירות ועובדים וירטואליים. מחירים שקופים ותהליך מסודר לעסקים.",
     brandSub: "מוצר · עיצוב · צמיחה",
     navServices: "שירותים",
     navPricing: "מחירים",
     navWork: "מוצרים",
+    navCallCenter: "מוקד AI",
     navContact: "קשר",
     headerCta: "בדיקת פרויקט",
     heroKicker: "Structor Robotics · סטודיו דיגיטלי בישראל",
@@ -34,6 +35,9 @@ const translations = {
     serviceMetaTitle: "Facebook & Instagram",
     serviceMetaText: "קהלים, קריאייטיב, כתיבה, בדיקות מודעות, רימרקטינג ודוח פעולה ברור ב-Meta Ads.",
     serviceMetaPrice: "ניהול החל מ-₪1,500 לחודש",
+    serviceCallCenterTitle: "מוקד שירות AI ועובדים וירטואליים",
+    serviceCallCenterText: "פיילוט, חיבור לטלפוניה, CRM, הזמנות ומלאי, מענה רב-לשוני והעברה מבוקרת לנציג אנושי.",
+    serviceCallCenterCta: "לפתרון ולמצגת",
     pricingKicker: "מחירון שקוף",
     pricingTitle: "מחירי פתיחה שמבוססים על השוק הישראלי",
     pricingLead: "בדקנו מחירונים שפורסמו בישראל ב-2026. הטווחים משתנים לפי מורכבות, מספר שפות, אינטגרציות, קריאייטיב ותקציב המדיה.",
@@ -110,15 +114,16 @@ const translations = {
     newRelease: "חדש",
     funnelSummary: "הבחירה שלכם: {service} · {goal} · {budget}",
     contactWhatsapp: "שליחת בקשה ב-WhatsApp",
-    footerText: "פיתוח אפליקציות · אתרים · Google Ads · Meta Ads"
+    footerText: "פיתוח אפליקציות · אתרים · פרסום · מוקדי שירות AI"
   },
   en: {
-    pageTitle: "Structor Digital | Apps, websites, Google Ads and Meta Ads",
-    pageDescription: "App development, multilingual landing pages and websites, plus Google and Facebook campaign setup and management with transparent pricing for Israeli businesses.",
+    pageTitle: "Structor Digital | Apps, websites, ads and AI automation",
+    pageDescription: "App and website development, Google and Meta Ads, AI contact center automation and virtual employees with transparent scoping.",
     brandSub: "Product · Design · Growth",
     navServices: "Services",
     navPricing: "Pricing",
     navWork: "Products",
+    navCallCenter: "AI center",
     navContact: "Contact",
     headerCta: "Scope a project",
     heroKicker: "Structor Robotics · Digital studio in Israel",
@@ -147,6 +152,9 @@ const translations = {
     serviceMetaTitle: "Facebook & Instagram",
     serviceMetaText: "Audiences, creative, copy, ad testing, remarketing and a clear action report in Meta Ads.",
     serviceMetaPrice: "Management from ₪1,500/month",
+    serviceCallCenterTitle: "AI contact center and virtual employees",
+    serviceCallCenterText: "Pilot design, telephony, CRM, order and inventory integrations, multilingual service, and controlled human handoff.",
+    serviceCallCenterCta: "View the solution and deck",
     pricingKicker: "Transparent pricing",
     pricingTitle: "Starting prices benchmarked against the Israeli market",
     pricingLead: "We reviewed pricing published in Israel in 2026. Ranges vary with complexity, languages, integrations, creative volume and media budget.",
@@ -223,15 +231,16 @@ const translations = {
     newRelease: "New",
     funnelSummary: "Your selection: {service} · {goal} · {budget}",
     contactWhatsapp: "Send request on WhatsApp",
-    footerText: "App development · Websites · Google Ads · Meta Ads"
+    footerText: "App development · Websites · Advertising · AI contact centers"
   },
   ru: {
-    pageTitle: "Structor Digital | Приложения, сайты, Google Ads и Meta Ads",
-    pageDescription: "Разработка приложений, многоязычных лендингов и сайтов, настройка и ведение рекламы в Google и Facebook с прозрачными ценами для бизнеса в Израиле.",
+    pageTitle: "Structor Digital | Приложения, сайты, реклама и AI-автоматизация",
+    pageDescription: "Разработка приложений и сайтов, Google и Meta Ads, автоматизация колл-центров и виртуальные сотрудники с прозрачным объёмом работ.",
     brandSub: "Продукт · Дизайн · Рост",
     navServices: "Услуги",
     navPricing: "Цены",
     navWork: "Продукты",
+    navCallCenter: "AI-колл-центр",
     navContact: "Контакты",
     headerCta: "Обсудить проект",
     heroKicker: "Structor Robotics · Цифровая студия в Израиле",
@@ -260,6 +269,9 @@ const translations = {
     serviceMetaTitle: "Facebook и Instagram",
     serviceMetaText: "Аудитории, креативы, тексты, тестирование объявлений, ремаркетинг и понятный отчёт в Meta Ads.",
     serviceMetaPrice: "Ведение от 1 500 ₪ в месяц",
+    serviceCallCenterTitle: "AI-колл-центр и виртуальные сотрудники",
+    serviceCallCenterText: "Пилот, подключение телефонии, CRM, заказов и склада, многоязычное обслуживание и контролируемая передача оператору.",
+    serviceCallCenterCta: "Открыть решение и презентацию",
     pricingKicker: "Прозрачные цены",
     pricingTitle: "Стартовые цены, рассчитанные по рынку Израиля",
     pricingLead: "Мы изучили открытые прайс-листы Израиля за 2026 год. Диапазоны меняются в зависимости от сложности, языков, интеграций, объёма креативов и рекламного бюджета.",
@@ -336,15 +348,16 @@ const translations = {
     newRelease: "Новинка",
     funnelSummary: "Ваш выбор: {service} · {goal} · {budget}",
     contactWhatsapp: "Отправить запрос в WhatsApp",
-    footerText: "Разработка приложений · Сайты · Google Ads · Meta Ads"
+    footerText: "Разработка приложений · Сайты · Реклама · AI-колл-центры"
   },
   fr: {
-    pageTitle: "Structor Digital | Applications, sites, Google Ads et Meta Ads",
-    pageDescription: "Développement d’applications, landing pages et sites multilingues, configuration et gestion de campagnes Google et Facebook avec des prix transparents pour les entreprises en Israël.",
+    pageTitle: "Structor Digital | Applications, sites, publicité et automatisation IA",
+    pageDescription: "Développement d’applications et de sites, Google et Meta Ads, automatisation de centres de service et employés virtuels avec un cadrage transparent.",
     brandSub: "Produit · Design · Croissance",
     navServices: "Services",
     navPricing: "Tarifs",
     navWork: "Produits",
+    navCallCenter: "Centre IA",
     navContact: "Contact",
     headerCta: "Décrire un projet",
     heroKicker: "Structor Robotics · Studio numérique en Israël",
@@ -373,6 +386,9 @@ const translations = {
     serviceMetaTitle: "Facebook et Instagram",
     serviceMetaText: "Audiences, créations, textes, tests publicitaires, remarketing et rapport d’action clair dans Meta Ads.",
     serviceMetaPrice: "Gestion à partir de 1 500 ₪/mois",
+    serviceCallCenterTitle: "Centre de service IA et employés virtuels",
+    serviceCallCenterText: "Pilote, téléphonie, CRM, commandes et stocks, service multilingue et transfert humain contrôlé.",
+    serviceCallCenterCta: "Voir la solution et la présentation",
     pricingKicker: "Tarifs transparents",
     pricingTitle: "Des prix de départ comparés au marché israélien",
     pricingLead: "Nous avons étudié les tarifs publiés en Israël en 2026. Les fourchettes varient selon la complexité, les langues, les intégrations, les créations et le budget média.",
@@ -449,7 +465,7 @@ const translations = {
     newRelease: "Nouveau",
     funnelSummary: "Votre sélection : {service} · {goal} · {budget}",
     contactWhatsapp: "Envoyer la demande sur WhatsApp",
-    footerText: "Développement d’applications · Sites · Google Ads · Meta Ads"
+    footerText: "Applications · Sites · Publicité · Centres de service IA"
   }
 };
 

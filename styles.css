@@ -604,6 +604,10 @@ button {
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.it-grid article:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .article-number {
   display: block;
   margin-bottom: 32px;
@@ -880,6 +884,10 @@ button {
 
   .it-grid article {
     min-height: auto;
+  }
+
+  .it-grid article:last-child:nth-child(odd) {
+    grid-column: auto;
   }
 
   .site-footer {
