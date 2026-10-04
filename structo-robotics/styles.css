@@ -765,6 +765,38 @@ h2 {
   background: #fff;
 }
 
+.about-studio-section {
+  padding: 72px 0;
+  border-bottom: 1px solid var(--line, #e2e8f0);
+}
+
+.about-studio-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.about-studio-layout p {
+  line-height: 1.75;
+}
+
+.about-studio-note {
+  padding: 28px;
+  border-radius: 20px;
+  background: #eef7f5;
+}
+
+@media (max-width: 760px) {
+  .about-studio-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .about-studio-section {
+    padding: 48px 0;
+  }
+}
+
 .hub-hero {
   position: relative;
   min-height: calc(100svh - 76px);
@@ -779,8 +811,8 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(120deg, rgba(15, 23, 32, 0.92), rgba(15, 23, 32, 0.62)),
-    url("assets/structo-white-excavator-30m-boom.png") center / cover;
+    linear-gradient(120deg, rgba(4, 13, 28, 0.95), rgba(4, 13, 28, 0.35)),
+    url("assets/edelstein-digital-lab-hero.png") center / cover;
 }
 
 .hub-hero__layout {

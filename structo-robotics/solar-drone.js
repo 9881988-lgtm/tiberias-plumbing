@@ -16,7 +16,7 @@ const solarTranslations = {
     summaryKicker: "The opportunity",
     summaryTitle: "אבק על פאנלים הוא בעיית תפוקה, תחזוקה ובטיחות.",
     summaryCopy:
-      "Structor Robotics מפתחת שכבת רובוטיקה ותוכנה שמחברת רחפן, חיישנים, ראייה ממוחשבת ומנגנון ניקוי קל. המטרה היא להוכיח POC תוך 12 חודשים ולפתוח שוק שירותים לבעלי מערכות סולאריות, חברות תחזוקה ושותפי אנרגיה.",
+      "Edelstein Digital Lab מפתחת שכבת רובוטיקה ותוכנה שמחברת רחפן, חיישנים, ראייה ממוחשבת ומנגנון ניקוי קל. המטרה היא להוכיח POC תוך 12 חודשים ולפתוח שוק שירותים לבעלי מערכות סולאריות, חברות תחזוקה ושותפי אנרגיה.",
     metric1Value: "250K ₪",
     metric1Label: "תקציב POC",
     metric2Value: "12M",
@@ -111,7 +111,7 @@ const solarTranslations = {
     summaryKicker: "The opportunity",
     summaryTitle: "Dust on solar panels is an energy-yield, maintenance, and safety problem.",
     summaryCopy:
-      "Structor Robotics is developing a robotics and software layer that connects a drone, sensors, computer vision, and a lightweight cleaning module. The goal is to prove a POC within 12 months and open a service market for solar owners, maintenance companies, and energy partners.",
+      "Edelstein Digital Lab is developing a robotics and software layer that connects a drone, sensors, computer vision, and a lightweight cleaning module. The goal is to prove a POC within 12 months and open a service market for solar owners, maintenance companies, and energy partners.",
     metric1Value: "250K ₪",
     metric1Label: "POC budget",
     metric2Value: "12M",
@@ -206,7 +206,7 @@ const solarTranslations = {
     summaryKicker: "Возможность",
     summaryTitle: "Пыль на солнечных панелях — это проблема выработки, обслуживания и безопасности.",
     summaryCopy:
-      "Structor Robotics разрабатывает робототехнический и программный слой, который соединяет дрон, сенсоры, компьютерное зрение и лёгкий чистящий модуль. Цель — доказать POC за 12 месяцев и открыть рынок услуг для владельцев солнечных систем, сервисных компаний и энергетических партнёров.",
+      "Edelstein Digital Lab разрабатывает робототехнический и программный слой, который соединяет дрон, сенсоры, компьютерное зрение и лёгкий чистящий модуль. Цель — доказать POC за 12 месяцев и открыть рынок услуг для владельцев солнечных систем, сервисных компаний и энергетических партнёров.",
     metric1Value: "250K ₪",
     metric1Label: "Бюджет POC",
     metric2Value: "12M",

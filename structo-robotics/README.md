@@ -1,6 +1,6 @@
-# Structor Robotics website
+# Edelstein Digital Lab website
 
-Static multilingual website for Structor Robotics.
+Static multilingual website for Edelstein Digital Lab.
 
 Languages:
 - Hebrew

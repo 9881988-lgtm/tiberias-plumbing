@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
-  <title id="title">Structor Robotics logo</title>
-  <desc id="desc">A geometric robotics mark combining a structural frame, circuit nodes, and solar rays.</desc>
+  <title id="title">Edelstein Digital Lab logo</title>
+  <desc id="desc">A geometric digital studio mark combining a structured frame, connected nodes, and bright rays.</desc>
   <rect width="320" height="320" rx="56" fill="#0f1720"/>
   <path d="M160 36 268 98v124l-108 62L52 222V98L160 36Z" fill="#12202f" stroke="#48d5cf" stroke-width="10"/>
   <path d="M94 206V114l66-38 66 38v92l-66 38-66-38Z" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round"/>
