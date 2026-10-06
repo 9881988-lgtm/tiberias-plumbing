@@ -1,0 +1,43 @@
+name: Validate PHP app-catalogue notice
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/build-apps-maintenance.php
+      - scripts/apps-maintenance-README.md
+      - structo-robotics/apps.html
+      - .github/workflows/apps-maintenance-php.yml
+  pull_request:
+    paths:
+      - scripts/build-apps-maintenance.php
+      - structo-robotics/apps.html
+      - .github/workflows/apps-maintenance-php.yml
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Check PHP syntax
+        run: php -l scripts/build-apps-maintenance.php
+      - name: Generate the page using PHP
+        run: php scripts/build-apps-maintenance.php
+      - name: Confirm committed output matches PHP
+        run: |
+          php scripts/build-apps-maintenance.php --check
+          git diff --exit-code -- structo-robotics/apps.html
+      - name: Confirm catalogue stays hidden
+        run: |
+          php scripts/build-apps-maintenance.php --stdout > /tmp/apps-notice.html
+          if grep -Eq 'apps\.apple\.com|class="app-detail|published-apps-data\.js' /tmp/apps-notice.html; then
+            echo "Unexpected app catalogue content in maintenance page"
+            exit 1
+          fi
