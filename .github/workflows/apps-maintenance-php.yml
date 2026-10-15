@@ -1,16 +1,18 @@
-name: Validate PHP app-catalogue notice
+name: Validate single-app catalogue
 
 on:
   push:
     branches: [main]
     paths:
       - scripts/build-apps-maintenance.php
+      - scripts/apps-catalog-template.html
       - scripts/apps-maintenance-README.md
       - structo-robotics/apps.html
       - .github/workflows/apps-maintenance-php.yml
   pull_request:
     paths:
       - scripts/build-apps-maintenance.php
+      - scripts/apps-catalog-template.html
       - structo-robotics/apps.html
       - .github/workflows/apps-maintenance-php.yml
 
@@ -34,10 +36,13 @@ jobs:
         run: |
           php scripts/build-apps-maintenance.php --check
           git diff --exit-code -- structo-robotics/apps.html
-      - name: Confirm catalogue stays hidden
+      - name: Confirm only ReceiptIL is presented as published
         run: |
-          php scripts/build-apps-maintenance.php --stdout > /tmp/apps-notice.html
-          if grep -Eq 'apps\.apple\.com|class="app-detail|published-apps-data\.js' /tmp/apps-notice.html; then
-            echo "Unexpected app catalogue content in maintenance page"
+          php scripts/build-apps-maintenance.php --stdout > /tmp/apps-catalogue.html
+          grep -q 'id6784747059' /tmp/apps-catalogue.html
+          unexpected_ids="$(grep -Eo 'id[0-9]{10}' /tmp/apps-catalogue.html | sort -u | grep -v '^id6784747059$' || true)"
+          if [ -n "$unexpected_ids" ]; then
+            echo "Unexpected App Store identifiers in the single-app catalogue:"
+            echo "$unexpected_ids"
             exit 1
           fi
