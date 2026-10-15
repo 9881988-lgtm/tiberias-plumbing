@@ -368,6 +368,44 @@ img {
   color: var(--muted);
 }
 
+.sales-stack-section {
+  background: #edf2ef;
+}
+
+.sales-stack {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-inline-start: 1px solid var(--line);
+}
+
+.sales-stack article {
+  min-height: 250px;
+  padding: 28px;
+  border-inline-end: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--white);
+}
+
+.sales-stack span {
+  display: block;
+  margin-bottom: 58px;
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 950;
+}
+
+.sales-stack h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.sales-stack p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .outcome-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -611,6 +649,16 @@ img {
   min-width: 86px;
 }
 
+.deck-version {
+  padding: 10px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 4px;
+  color: var(--lime);
+  font-size: 0.78rem;
+  font-weight: 900;
+  direction: ltr;
+}
+
 .deck-controls {
   display: flex;
   align-items: center;
@@ -755,6 +803,7 @@ footer a {
 
   .package-grid,
   .outcome-list,
+  .sales-stack,
   .pilot-steps,
   .faq-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -889,12 +938,14 @@ footer a {
   }
 
   .outcome-list,
+  .sales-stack,
   .pilot-steps,
   .faq-list {
     grid-template-columns: 1fr;
   }
 
   .outcome-list article,
+  .sales-stack article,
   .pilot-steps li {
     min-height: 210px;
   }
