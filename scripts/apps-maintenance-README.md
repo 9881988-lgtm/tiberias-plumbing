@@ -1,10 +1,10 @@
-# Temporary app-catalogue page
+# Single-app catalogue
 
-The App Store catalogue at `structo-robotics/apps.html` is temporarily replaced by a multilingual under-development notice. Individual product pages, app listings on Apple, and the rest of the website are not removed.
+The App Store catalogue at `structo-robotics/apps.html` presents ReceiptIL as the only currently published app. All other products are described as being in development, testing, or release preparation and are not shown as available downloads.
 
 ## PHP implementation
 
-The source is `scripts/build-apps-maintenance.php` (PHP 8.0+). PHP runs **at build time** and generates a static HTML page. GitHub Pages does not execute PHP requests; this change does not turn the website into a PHP backend.
+The editable page source is `scripts/apps-catalog-template.html`. `scripts/build-apps-maintenance.php` (PHP 8.0+) copies that template to the published path at build time. GitHub Pages does not execute PHP requests; this remains a static website.
 
 ```sh
 php -l scripts/build-apps-maintenance.php
@@ -12,14 +12,14 @@ php scripts/build-apps-maintenance.php
 php scripts/build-apps-maintenance.php --check
 ```
 
-The generator also accepts `--stdout`, rejects unknown arguments and writes only to the fixed catalogue path. It creates the output atomically. Interface copy is escaped; JSON embedded in the script is encoded with HTML-safe flags. The generated page has no app cards, App Store links, analytics scripts or contact-data submission forms.
+The generator also accepts `--stdout`, rejects unknown arguments and writes only to the fixed catalogue path. It creates the output atomically. The workflow checks that ReceiptIL App Store ID `6784747059` is present and that no other App Store ID is exposed by the catalogue.
 
 Hebrew is the default (RTL). English and Russian are available through visible language buttons and `?lang=en` / `?lang=ru`. Unknown language values fall back to Hebrew and never become HTML.
 
-## Restore the catalogue
+## Product positioning
 
-The last complete catalogue remains in Git history at commit `39d74efdb58c99b6ead208819a3ac6f4d5d5e521`, path `structo-robotics/apps.html`. A local backup was also saved as `outputs/Website_Apps_Original_2026_10_06.html` in the working workspace (not published).
+ReceiptIL is described as a supporting iPhone tool for one business profile, receipt-form preparation, PDF export, and basic yearly tracking. The catalogue must always state that ReceiptIL is not registered accounting software and does not issue certified or digitally signed electronic documents. Business users should confirm requirements with an Israeli accountant or tax adviser.
 
-When restoring, copy the original catalogue back and remove or update the maintenance-page check workflow so that it no longer expects a generated notice.
+Hebrew is the default (RTL). English and Russian are available through visible language buttons and `?lang=en` / `?lang=ru`. Unknown language values fall back to Hebrew.
 
-This is new PHP build-tool code created on 6 October 2026, not evidence of past PHP employment or production PHP-backend experience.
+When another app is genuinely available, add it to the source template and update the workflow allowlist in the same commit.
