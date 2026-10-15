@@ -653,7 +653,7 @@ img {
 
 .app-gallery {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: minmax(220px, 290px);
   gap: 12px;
 }
 
@@ -709,6 +709,13 @@ img {
   color: var(--teal);
   font-weight: 900;
   text-underline-offset: 5px;
+}
+
+.portfolio-development {
+  max-width: 720px;
+  margin: 22px 0 0;
+  color: var(--ink-soft);
+  line-height: 1.7;
 }
 
 .process-section {
@@ -1118,7 +1125,7 @@ footer a {
   }
 
   .app-gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: minmax(220px, 290px);
   }
 
   .process-list {
@@ -1202,7 +1209,7 @@ footer a {
   }
 
   .app-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .process-list {
