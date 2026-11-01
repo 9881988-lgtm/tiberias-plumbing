@@ -76,6 +76,10 @@ for language in ['he', 'en', 'ru', 'fr']:
     assert 'DIGITAL100' not in file.read_text()
     assert '123' not in file.read_text()
     assert publication_notices[language] in file.read_text(), f'Missing publication status: {language}'
+    assert 'iPhone Duo' in file.read_text() and 'iOS 27.2' in file.read_text()
+    assert 'https://www.apple.com/iphone-duo/' in page.links
+    assert 'https://support.apple.com/en-us/100100' in page.links
+    assert 'next-releases' in page.ids
     print(f'{language}: metadata, JSON-LD, anchors and local resources OK')
 
 ElementTree.parse(agency / 'sitemap.xml')

@@ -8,7 +8,7 @@ const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261027';
+const version = '20261101-duo';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -73,6 +73,10 @@ function render(lang, t) {
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
   <section class="section intro"><div class="wrap intro-layout"><p class="eyebrow">${e(t.introLabel)}</p><div class="intro-main"><h2 class="preline">${e(t.introTitle)}</h2><div class="intro-copy"><p>${e(t.introText)}</p><a class="text-link" href="#services">${e(t.introLink)}${arrow()}</a></div></div></div></section>
   <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(t.workTitle)}</h2></div><p>${e(t.workIntro)}</p></div>
+    <div class="platform-preview" id="next-releases" aria-labelledby="platform-title">
+      <div class="platform-copy"><p class="eyebrow">${e(t.platformKicker)}</p><h3 id="platform-title" class="preline">${e(t.platformTitle)}</h3><p class="platform-models"><a href="https://www.apple.com/iphone-duo/" target="_blank" rel="noopener"><bdi>iPhone Duo</bdi>${icon('ArrowUpRight')}</a><a href="https://support.apple.com/en-us/100100" target="_blank" rel="noopener"><bdi>iOS 27.2</bdi>${icon('ArrowUpRight')}</a></p><p class="platform-description">${e(t.platformText)}</p><p class="platform-verified">${e(t.platformVerified)}</p></div>
+      <figure class="platform-figure"><img src="${rel}assets/iphone-duo-ios-27-2.webp" width="1536" height="1024" alt="${e(t.platformAlt)}" loading="lazy"><figcaption>${e(t.platformCaption)}</figcaption></figure>
+    </div>
     <div class="project-grid">
       <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}</div></article>
       <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}assets/mayim-website.webp" alt="${e(t.projects[1].title)}" width="1440" height="1040" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}</div></article>
