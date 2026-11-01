@@ -46,6 +46,12 @@ class Page(HTMLParser):
 
 
 agency = Path(__file__).resolve().parents[1]
+publication_notices = {
+    'he': 'ReceiptIL היא האפליקציה היחידה שלנו שפורסמה ב-App Store.',
+    'en': 'ReceiptIL is our only app published on the App Store.',
+    'ru': 'в App Store опубликовано одно наше приложение — ReceiptIL.',
+    'fr': 'ReceiptIL est notre seule application publiée sur l’App Store.',
+}
 for language in ['he', 'en', 'ru', 'fr']:
     file = agency / ('' if language == 'he' else language) / 'index.html'
     page = Page()
@@ -69,6 +75,7 @@ for language in ['he', 'en', 'ru', 'fr']:
         assert target.exists(), f'Missing local target: {target}'
     assert 'DIGITAL100' not in file.read_text()
     assert '123' not in file.read_text()
+    assert publication_notices[language] in file.read_text(), f'Missing publication status: {language}'
     print(f'{language}: metadata, JSON-LD, anchors and local resources OK')
 
 ElementTree.parse(agency / 'sitemap.xml')
