@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
 import { createRequire } from 'node:module';
 import { content } from './content.mjs';
+import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
 const require = createRequire(import.meta.url);
 const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
@@ -23,6 +24,7 @@ const serviceValues = ['landing', 'website', 'app', 'ai', 'ads'];
 const budgets = ['estimate', 'small', 'medium', 'large'];
 function render(lang, t) {
   const rel = lang === 'he' ? './' : '../';
+  const pageVersion = crmPlans[lang] ? '20261102-crm' : version;
   const parent = `${rel}../`;
   const canonical = rootURL + pathFor(lang);
   const schema = {
@@ -32,7 +34,8 @@ function render(lang, t) {
       {'@type':'FAQPage',mainEntity:t.faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}
     ]
   };
-  const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('');
+  if (crmPlans[lang]) schema['@graph'].push({'@type':'Service',name:'CRM / AI sales',provider:{'@id':rootURL+'#organization'},offers:crmPlans[lang].plans.map(p=>({'@type':'Offer',name:p.name,description:p.billing,priceSpecification:{'@type':'UnitPriceSpecification',price:p.price.replace(/[ ,]/g,''),priceCurrency:'ILS',valueAddedTaxIncluded:false,description:p.period}}))});
+  const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + (crmPlans[lang] ? `<a href="#crm-pricing">${lang === 'he' ? 'מסלולי CRM' : 'Тарифы CRM'}</a>` : '');
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
   const projectIntro = p => `<div class="project-topline"><span>${e(p.label)}</span><span class="project-status">${e(p.status)}</span></div><h3 class="preline">${e(p.title)}</h3><p>${e(p.text)}</p>${tags(p)}<p class="project-note">${e(p.note)}</p>`;
   return `<!doctype html>
@@ -52,7 +55,8 @@ function render(lang, t) {
   <link rel="icon" href="${parent}structo-robotics/assets/structor-robotics-logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="${rel}assets/hero.webp" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="${rel}styles.css?v=${version}">
+  <link rel="stylesheet" href="${rel}styles.css?v=${pageVersion}">
+  ${crmPlans[lang] ? `<link rel="stylesheet" href="${rel}crm-plans.css?v=20261102-crm">` : ''}
   <script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-18222920780');</script>
@@ -86,6 +90,7 @@ function render(lang, t) {
   <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(t.serviceTitle)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p></div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
   <section class="ai-section"><div class="wrap ai-layout"><div><p class="eyebrow">${e(t.aiLabel)}</p><h2 class="preline">${e(t.aiTitle)}</h2></div><div><p>${e(t.aiText)}</p><a class="btn btn-light" href="${rel}ai-call-center/?lang=${lang}">${e(t.aiLink)}${arrow()}</a><small class="ai-note">${e(t.aiNote)}</small></div></div></section>
   <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(t.processTitle)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
+  ${renderCrmPlans(lang)}
   <section class="section pricing" id="pricing"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.pricingLabel)}</p><h2 class="preline">${e(t.pricingTitle)}</h2></div><p>${e(t.pricingIntro)}</p></div><div class="pricing-grid">${t.packages.map(([title,price,text,id],i)=>`<article class="package"><h3>${e(title)}</h3><p class="package-price"><small>${e(t.from)}</small><strong>₪${price}</strong>${i===3?`<span>${e(t.monthly)}</span>`:''}</p><p>${e(text)}</p><button type="button" data-service-choice="${id}">${e(t.choose)}${arrow()}</button></article>`).join('')}</div><p class="price-note">${e(t.priceNote)}</p></div></section>
   <section class="section faq"><div class="wrap faq-layout"><div><p class="eyebrow">${e(t.faqLabel)}</p><h2>${e(t.faqTitle)}</h2></div><div class="faq-list">${t.faqs.map(([q,a])=>`<details><summary>${e(q)}${icon('Plus')}</summary><p>${e(a)}</p></details>`).join('')}</div></div></section>
   <section class="contact" id="contact"><div class="wrap contact-layout"><div><p class="eyebrow">${e(t.contactLabel)}</p><h2 class="preline">${e(t.contactTitle)}</h2><p class="contact-lead">${e(t.contactText)}</p><a class="contact-phone" dir="ltr" href="tel:+972533613100">+972 53 361 3100</a><a class="contact-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a><address class="address"><span>${e(t.location)}</span><span>${e(t.hours).replace('09:00–18:00','<bdi dir="ltr">09:00–18:00</bdi>')}</span><span>${e(t.appointment)}</span></address></div>
@@ -94,11 +99,20 @@ function render(lang, t) {
 </main>
 <footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Structor Digital.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Structor Digital</span><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
 <a class="mobile-contact" href="#contact" aria-label="${e(t.start)}" title="${e(t.start)}">${icon('MessageCircle')}</a>
-<script src="${rel}script.js?v=${version}" defer></script>
+<script src="${rel}script.js?v=${pageVersion}" defer></script>
 </body></html>`;
 }
 await mkdir(target, {recursive:true});
+const callCenterPath = join(target, 'ai-call-center', 'index.html');
+try {
+  const callCenter = await readFile(callCenterPath, 'utf8');
+  if (callCenter.includes('<!-- CRM PLANS START -->')) {
+    await writeFile(callCenterPath, callCenter.replace(/<!-- CRM PLANS START -->[\s\S]*?<!-- CRM PLANS END -->/, `<!-- CRM PLANS START -->${renderCrmPlans('he')}<!-- CRM PLANS END -->`));
+  }
+} catch (error) { if (error.code !== 'ENOENT') throw error; }
+const selectedLanguages = process.env.SITE_LANGUAGES?.split(',');
 for (const [lang,t] of Object.entries(content)) {
+  if (selectedLanguages && !selectedLanguages.includes(lang)) continue;
   const dir = join(target,pathFor(lang));
   await mkdir(dir,{recursive:true});
   await writeFile(join(dir,'index.html'),render(lang,t));
@@ -110,3 +124,4 @@ for (const name of ['styles.css','script.js']) {
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-10-27</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}</urlset>`;
 await writeFile(join(target,'sitemap.xml'),sitemap);
 console.log(`Built ${Object.keys(content).length} localised Structor Digital pages in ${target}`);
+

@@ -80,8 +80,21 @@ for language in ['he', 'en', 'ru', 'fr']:
     assert 'https://www.apple.com/iphone-duo/' in page.links
     assert 'https://support.apple.com/en-us/100100' in page.links
     assert 'next-releases' in page.ids
+    if language in ('he', 'ru'):
+        html = file.read_text()
+        assert html.count('class="crm-plan"') == 4
+        assert 'crm-pricing' in page.ids
+        vat = 'אינם כוללים מע״מ' if language == 'he' else 'не включают НДС'
+        assert vat in html
+        business_price = '12,960' if language == 'he' else '12 960'
+        business_31 = '13,392' if language == 'he' else '13 392'
+        assert business_price in html and business_31 in html
+        service = next(item for item in page.schemas[0]['@graph'] if item.get('@type') == 'Service')
+        assert [offer['name'] for offer in service['offers']] == ['Light', 'Booking', 'Business', 'Business Plus']
+        assert all(offer['priceSpecification']['valueAddedTaxIncluded'] is False for offer in service['offers'])
     print(f'{language}: metadata, JSON-LD, anchors and local resources OK')
 
 ElementTree.parse(agency / 'sitemap.xml')
 ElementTree.parse(agency.parent / 'sitemap.xml')
 print('Both XML sitemaps parse correctly')
+

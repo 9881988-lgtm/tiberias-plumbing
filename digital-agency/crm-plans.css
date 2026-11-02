@@ -1,0 +1,31 @@
+.crm-pricing { background: #f7f8f7; color: #171c1b; padding: 80px 24px; scroll-margin-top: 96px; letter-spacing: 0; }
+.crm-inner { max-width: 1180px; margin-inline: auto; min-width: 0; }
+body#top .crm-pricing { scroll-margin-top: 0; }
+.crm-heading { max-width: 850px; }
+.crm-kicker { font-size: 13px; font-weight: 700; color: #28724c; margin: 0 0 14px; }
+.crm-heading h2 { font-size: 36px; line-height: 1.2; margin: 0 0 20px; letter-spacing: 0; }
+.crm-heading > p:last-child { font-size: 17px; line-height: 1.7; }
+.crm-vat { border-inline-start: 4px solid #28724c; padding: 12px 16px; background: #eaf1ed; font-size: 16px; margin: 24px 0; }
+.crm-plan-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
+.crm-plan { display: flex; flex-direction: column; min-width: 0; padding: 24px 20px; border: 1px solid #cfd7d2; background: #fff; border-radius: 4px; }
+.crm-plan h3 { font-size: 21px; margin: 0 0 20px; line-height: 1.3; }
+.crm-amount { font-size: 31px; font-weight: 700; line-height: 1.2; margin: 0 0 10px; white-space: nowrap; }
+.crm-period { min-height: 48px; font-size: 14px; line-height: 1.6; margin: 0 0 12px; color: #44534c; }
+.crm-billing { min-height: 108px; font-size: 14px; line-height: 1.7; margin: 0; padding-bottom: 18px; border-bottom: 1px solid #e1e6e3; }
+.crm-plan ul { padding-inline-start: 18px; margin: 20px 0 28px; font-size: 14px; line-height: 1.8; }
+.crm-plan li + li { margin-top: 7px; }
+.crm-contact { display: block; margin-top: auto; padding-block: 10px; font-size: 14px; font-weight: 700; color: #185c3a; text-underline-offset: 4px; }
+.crm-contact:focus-visible { outline: 3px solid #28724c; outline-offset: 4px; }
+.crm-included { margin-top: 48px; padding-top: 32px; border-top: 1px solid #cfd7d2; }
+.crm-pricing h3 { letter-spacing: 0; }
+.crm-included > h3, .crm-more h3 { font-size: 24px; line-height: 1.4; margin: 0 0 24px; }
+.crm-included dl { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px 40px; margin: 0; }
+.crm-included dt { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 8px; }
+.crm-included dd { margin: 0; font-size: 16px; line-height: 1.8; color: #43514a; }
+.crm-more { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 40px; border-top: 1px solid #cfd7d2; margin-top: 36px; padding-top: 32px; }
+.crm-more ul { padding-inline-start: 20px; font-size: 15px; line-height: 1.8; margin: 0; }
+.crm-more li + li { margin-top: 12px; }
+.crm-vat-inline { font-size: 15px; margin-top: 24px; }
+.crm-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 1100px) { .crm-plan-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .crm-billing { min-height: 76px; } }
+@media (max-width: 600px) { .crm-pricing { padding: 52px 20px; } .crm-heading h2 { font-size: 28px; } .crm-plan-grid, .crm-included dl, .crm-more { grid-template-columns: minmax(0,1fr); } .crm-plan { padding: 24px; } .crm-period, .crm-billing { min-height: 0; } .crm-billing { padding-bottom: 16px; } .crm-plan ul { margin-block: 18px; } .crm-more { gap: 32px; } }
