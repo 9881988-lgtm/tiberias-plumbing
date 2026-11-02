@@ -28,78 +28,154 @@
 
     <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" as="image" href="assets/call-center-retail.webp" />
-    <link rel="stylesheet" href="styles.css?v=call-center-20260826" />
+    <link rel="stylesheet" href="styles.css?v=20261102-crm" />
 
+    <link rel="stylesheet" href="../crm-plans.css?v=20261102-crm" />
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "ProfessionalService",
-            "@id": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/#organization",
-            "name": "Structor Digital",
-            "parentOrganization": { "@type": "Organization", "name": "Structor Robotics" },
-            "url": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/",
-            "telephone": "+972-53-361-31-00",
-            "email": "9881988@gmail.com",
-            "areaServed": ["Israel", "Worldwide"],
-            "availableLanguage": ["Hebrew", "English", "Russian", "French"]
-          },
-          {
-            "@type": "Service",
-            "@id": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/ai-call-center/#service",
-            "name": "AI sales agent, CRM and contact center automation",
-            "serviceType": "AI sales and contact center integration",
-            "provider": { "@id": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/#organization" },
-            "url": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/ai-call-center/",
-            "description": "Discovery, pilot design and integration of an OpenAI sales agent, Golani CRM, contact center workflows and controlled human escalation.",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "ILS",
-              "priceSpecification": {
-                "@type": "UnitPriceSpecification",
-                "price": "18",
-                "priceCurrency": "ILS",
-                "unitText": "active line-hour"
-              },
-              "description": "The commercial model includes the AI sales agent, Golani CRM and sales workflow. VAT, telephony, third-party services and one-time integration are excluded."
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Structor Robotics", "item": "https://9881988-lgtm.github.io/tiberias-plumbing/" },
-              { "@type": "ListItem", "position": 2, "name": "Structor Digital", "item": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/" },
-              { "@type": "ListItem", "position": 3, "name": "AI Contact Center", "item": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/ai-call-center/" }
-            ]
-          },
-          {
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "מהי אוטומציה של מוקד שירות באמצעות AI?",
-                "acceptedAnswer": { "@type": "Answer", "text": "אוטומציה של מוקד שירות משלבת שיחה קולית עם גישה מבוקרת למערכות העסק, כדי לבדוק מידע, לבצע פעולות שהוגדרו מראש ולהעביר חריגים לנציג אנושי." }
-              },
-              {
-                "@type": "Question",
-                "name": "לאילו מערכות ניתן לחבר עובד וירטואלי?",
-                "acceptedAnswer": { "@type": "Answer", "text": "אפשר לבדוק חיבור לטלפוניה, CRM, ERP, הזמנות, מלאי, משלוחים, החזרות ואחריות. החיבור תלוי ב-API, בהרשאות, באיכות הנתונים ובמדיניות האבטחה של הארגון." }
-              },
-              {
-                "@type": "Question",
-                "name": "האם עובד וירטואלי מחליף את כל נציגי השירות?",
-                "acceptedAnswer": { "@type": "Answer", "text": "לא. מתחילים מתהליכים חוזרים ומוגדרים, ומעבירים לנציג אנושי מקרים חריגים, ביטחון נמוך או החלטות הדורשות שיקול דעת." }
-              },
-              {
-                "@type": "Question",
-                "name": "איך מתחילים פיילוט למוקד AI?",
-                "acceptedAnswer": { "@type": "Answer", "text": "בוחרים קו אחד ותהליך אחד, מגדירים מקורות נתונים והרשאות, בודקים תרחישים ומודדים דיוק, זמן טיפול, העברה לנציג ואיכות התיעוד לפני הרחבה." }
-              }
-            ]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/#organization",
+      "name": "Structor Digital",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Structor Robotics"
+      },
+      "url": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/",
+      "telephone": "+972-53-361-31-00",
+      "email": "9881988@gmail.com",
+      "areaServed": [
+        "Israel",
+        "Worldwide"
+      ],
+      "availableLanguage": [
+        "Hebrew",
+        "English",
+        "Russian",
+        "French"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/ai-call-center/#service",
+      "name": "AI sales agent, CRM and contact center automation",
+      "serviceType": "AI sales and contact center integration",
+      "provider": {
+        "@id": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/#organization"
+      },
+      "url": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/ai-call-center/",
+      "description": "Discovery, pilot design and integration of an OpenAI sales agent, Golani CRM, contact center workflows and controlled human escalation.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Light",
+          "description": "Monthly subscription plus ₪18 per actual call-hour.",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 2000,
+            "priceCurrency": "ILS",
+            "valueAddedTaxIncluded": false
           }
-        ]
-      }
+        },
+        {
+          "@type": "Offer",
+          "name": "Booking",
+          "description": "Monthly subscription plus ₪18 per actual call-hour; includes Light.",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 3000,
+            "priceCurrency": "ILS",
+            "valueAddedTaxIncluded": false
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business",
+          "description": "First line 24/7, full calendar month including idle time. ₪12,960/30 days; ₪13,392/31 days; includes Light.",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 12960,
+            "priceCurrency": "ILS",
+            "valueAddedTaxIncluded": false
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Business Plus",
+          "description": "Includes Light and Business. First line: ₪12,960/30 days or ₪13,392/31 days. Additional lines: ₪18 per actual call-hour, no duplicate first-line billing.",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 12960,
+            "priceCurrency": "ILS",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Structor Robotics",
+          "item": "https://9881988-lgtm.github.io/tiberias-plumbing/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Structor Digital",
+          "item": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AI Contact Center",
+          "item": "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/ai-call-center/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "מהי אוטומציה של מוקד שירות באמצעות AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "אוטומציה של מוקד שירות משלבת שיחה קולית עם גישה מבוקרת למערכות העסק, כדי לבדוק מידע, לבצע פעולות שהוגדרו מראש ולהעביר חריגים לנציג אנושי."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "לאילו מערכות ניתן לחבר עובד וירטואלי?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "אפשר לבדוק חיבור לטלפוניה, CRM, ERP, הזמנות, מלאי, משלוחים, החזרות ואחריות. החיבור תלוי ב-API, בהרשאות, באיכות הנתונים ובמדיניות האבטחה של הארגון."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "האם עובד וירטואלי מחליף את כל נציגי השירות?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "לא. מתחילים מתהליכים חוזרים ומוגדרים, ומעבירים לנציג אנושי מקרים חריגים, ביטחון נמוך או החלטות הדורשות שיקול דעת."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "איך מתחילים פיילוט למוקד AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "בוחרים קו אחד ותהליך אחד, מגדירים מקורות נתונים והרשאות, בודקים תרחישים ומודדים דיוק, זמן טיפול, העברה לנציג ואיכות התיעוד לפני הרחבה."
+          }
+        }
+      ]
+    }
+  ]
+}
     </script>
   </head>
   <body>
@@ -139,7 +215,7 @@
           </div>
           <div class="hero-facts" aria-label="Offer facts">
             <span><strong>4</strong><small data-i18n="factLanguages">שפות שירות אפשריות</small></span>
-            <span><strong>18 ₪</strong><small data-i18n="factPrice">מודל מחיר לשעת קו פעילה</small></span>
+            <span><strong>18 ₪</strong><small data-i18n="factPrice">לשעת שיחה בפועל, בתוספת המנוי במסלולי Light ו-Booking</small></span>
             <span><strong>1</strong><small data-i18n="factPilot">קו ראשון לפיילוט מבוקר</small></span>
           </div>
         </div>
@@ -218,20 +294,22 @@
         </div>
       </section>
 
-      <section class="section pricing-section">
+      <section class="section pricing-section" data-pricing-fallback hidden>
         <div class="inner pricing-layout">
           <div>
             <p class="eyebrow" data-i18n="pricingKicker">מודל מסחרי</p>
-            <p class="price"><strong>18</strong><span>₪</span></p>
-            <p class="price-unit" data-i18n="priceUnit">לשעת קו פעילה</p>
+            <p class="price"><strong>2,000</strong><span>₪</span></p>
+            <p class="price-unit" data-i18n="priceUnit">Light לחודש, בתוספת שיחות</p>
           </div>
           <div class="pricing-copy">
-            <h2 data-i18n="pricingTitle">משלמים לפי זמן פעילות מוגדר, לאחר בדיקת התאמה</h2>
-            <p data-i18n="pricingText">דוגמה: קו אחד, 8 שעות ביום, 22 ימי עבודה = 3,168 ₪. שלושה קווים באותו היקף = 9,504 ₪. קו אחד 24/7 במשך 30 יום = 12,960 ₪.</p>
-            <p class="fine-print" data-i18n="pricingNote">המחירים הם המחשה מסחרית לפני מע״מ. טלפוניה, שירותי צד שלישי, שימושי ספקי מודלים ואינטגרציה חד-פעמית אינם כלולים. המחיר הסופי נקבע לאחר בדיקה טכנית והגדרת היקף.</p>
+            <h2 data-i18n="pricingTitle">תוכניות CRM, AI ומכירות</h2>
+            <p data-i18n="pricingText">Light: ‏2,000 ₪ לחודש. Booking: ‏3,000 ₪ לחודש. שיחות בפועל: 18 ₪ לשעה. Business / Business Plus: ‏12,960 ₪ ל-30 יום או 13,392 ₪ ל-31 יום לקו הראשון 24/7.</p>
+            <p class="fine-print" data-i18n="pricingNote">המחירים אינם כוללים מע״מ. כל המסלולים כוללים Light ללא מנוי Light נוסף. פירוט ותנאי החיוב זמינים בעברית וברוסית.</p>
           </div>
         </div>
       </section>
+
+      <div id="crm-plans-host"><!-- CRM PLANS START --><section class="crm-pricing" id="crm-pricing" aria-labelledby="crm-pricing-title" lang="he" dir="rtl"><div class="crm-inner"><header class="crm-heading"><p class="crm-kicker">CRM · נציג מכירות AI · נוכחות דיגיטלית</p><h2 id="crm-pricing-title">מערכת אחת. ארבע תוכניות שירות.</h2><p>בוחרים את המסלול המתאים לעסק. כל המסלולים כוללים את Light ללא דמי מנוי נוספים עבור Light. היקף ההטמעה והאינטגרציות הזמינות מסוכמים לפני תחילת העבודה.</p></header><p class="crm-vat"><strong>כל המחירים בשקלים ואינם כוללים מע״מ.</strong></p><div class="crm-plan-grid"><article class="crm-plan"><h3><bdi>Light</bdi></h3><p class="crm-amount"><bdi dir="ltr">2,000 ₪</bdi></p><p class="crm-period">לחודש</p><p class="crm-billing">בתוספת 18 ₪ לשעת שיחה בפועל (30 אגורות לדקה).</p><ul><li>נציג מכירות AI ו-CRM בנייד</li><li>אתר עם משפך מכירות וקידום אורגני</li><li>עמודי עסק ברשתות החברתיות וב-Google Maps</li></ul><a class="crm-contact" href="#contact">לתיאום שיחת התאמה<span class="crm-sr-only"> — Light</span></a></article><article class="crm-plan"><h3><bdi>Booking</bdi></h3><p class="crm-amount"><bdi dir="ltr">3,000 ₪</bdi></p><p class="crm-period">לחודש</p><p class="crm-billing">בתוספת 18 ₪ לשעת שיחה בפועל (30 אגורות לדקה).</p><ul><li>כל שירותי Light, ללא תשלום נוסף על Light</li><li>Booking.com ו-Airbnb: מחירים ויומנים</li><li>הזמנות והנחיות לאורחים מתוך ה-CRM</li></ul><a class="crm-contact" href="#contact">לתיאום שיחת התאמה<span class="crm-sr-only"> — Booking</span></a></article><article class="crm-plan"><h3><bdi>Business</bdi></h3><p class="crm-amount"><bdi dir="ltr">12,960 ₪</bdi></p><p class="crm-period">ל-30 יום · קו אחד 24/7</p><p class="crm-billing">13,392 ₪ ל-31 יום. 18 ₪ × 24 שעות × מספר הימים בחודש.</p><ul><li>כל שירותי Light ואינטגרציות מורכבות</li><li>לעסקים גדולים ולארגונים</li><li>השיחות בקו הראשון כלולות</li></ul><a class="crm-contact" href="#contact">לתיאום שיחת התאמה<span class="crm-sr-only"> — Business</span></a></article><article class="crm-plan"><h3><bdi>Business Plus</bdi></h3><p class="crm-amount"><bdi dir="ltr">12,960 ₪</bdi></p><p class="crm-period">ל-30 יום · הקו הראשון 24/7</p><p class="crm-billing">13,392 ₪ ל-31 יום. קווים נוספים: 18 ₪ לשעת שיחה בפועל.</p><ul><li>כל שירותי Light ו-Business</li><li>תמיכה במספר קווי טלפון</li><li>ללא חיוב כפול על הקו הראשון</li></ul><a class="crm-contact" href="#contact">לתיאום שיחת התאמה<span class="crm-sr-only"> — Business Plus</span></a></article></div><div class="crm-included"><h3>בכל מסלול כלולים כל שירותי Light</h3><dl><div><dt>נציג מכירות AI ו-CRM בנייד</dt><dd>מתאימים את הנציג הווירטואלי לקטלוג ולתסריטי העסק. לקוחות, עסקאות והיסטוריית פניות זמינים ב-CRM מהטלפון.</dd></div><div><dt>סיכומי שיחות ויומן</dt><dd>אחרי שיחה נכנסת מתקבלת הודעה על עסקה שנסגרה או תמלול השיחה ב-WhatsApp או בדוא״ל. בתיאום שירות מוסכם ניתן ליצור אירוע ב-Google Calendar.</dd></div><div><dt>אתר וקידום אורגני</dt><dd>בונים אתר עסקי עם משפך מכירות ותשתית SEO מתקדמת. היקף האתר והליווי השוטף מוגדרים בהצעה.</dd></div><div><dt>נוכחות דיגיטלית</dt><dd>מקימים ומעצבים עמודי עסק ב-Facebook, Instagram, TikTok ו-LinkedIn, סרטון תדמית אחד ל-YouTube ופרופיל ב-Google Maps. ההקמה והאימות כפופים לכללי הפלטפורמות ולהרשאות בעל העסק.</dd></div></dl></div><div class="crm-more"><div><h3>Booking: מהזמנה ועד קבלת האורח</h3><ul><li>חיבור העסק ל-Booking.com ול-Airbnb, אוטומציה וסנכרון מחירים בגבולות שסוכמו.</li><li>סנכרון יומני הפלטפורמות זה עם זה ועם ה-CRM, בכפוף לחיבורים הנתמכים.</li><li>ה-CRM מציג הזמנה מסוימת, תאריכים ותפוסה. הנציג מוסר הנחיות בהתאם להזמנה מאומתת.</li><li>קוד לתיבת מפתחות ופרטי גישה אחרים נמסרים רק באישור בעל הנכס ולאחר אימות האורח.</li><li>עמוד הזמנה ישירה וקישור מ-Google; אפשרויות הזמנה דרך Google בהתאם לתמיכת הפלטפורמה.</li></ul></div><div><h3>תנאים ברורים מראש</h3><ul><li>Light ו-Booking: דמי מנוי חודשיים בתוספת זמן השיחות בפועל בלבד. זמן ללא שיחה אינו מחויב כשיחה.</li><li>Business והקו הראשון ב-Business Plus: חיוב עבור חודש קלנדרי מלא, 24/7, גם כשאין שיחות. בחודש באורך אחר: 18 ₪ × 24 × מספר הימים.</li><li>Business Plus: קווים נוספים מחויבים רק על שיחות בפועל, 30 אגורות לדקה. אין חיוב כפול על הקו הראשון.</li><li>דומיין, אחסון, תקציב פרסום, שירותי צד שלישי, עבודה נוספת ואינטגרציות מורכבות מוגדרים בהצעה כתובה לפני ההפעלה. אין התחייבות להיקפים בלתי מוגבלים שלא סוכמו.</li><li>AI עלול לטעות. הרשאות, אימות מידע והעברה לנציג אנושי מוגדרים בפיילוט. אין הבטחה למכירות, לדירוג בחיפוש או לאישור פלטפורמות.</li></ul><p class="crm-vat-inline"><strong>כל המחירים בשקלים ואינם כוללים מע״מ.</strong></p></div></div></div></section><!-- CRM PLANS END --></div>
 
       <section id="pilot" class="section pilot-section">
         <div class="inner">
@@ -265,7 +343,7 @@
             <details><summary data-i18n="faq2Question">לאילו מערכות ניתן לחבר עובד וירטואלי?</summary><p data-i18n="faq2Answer">אפשר לבדוק חיבור לטלפוניה, CRM, ERP, הזמנות, מלאי, משלוחים, החזרות ואחריות. ההיתכנות תלויה ב-API, בהרשאות, בנתונים ובמדיניות האבטחה.</p></details>
             <details><summary data-i18n="faq3Question">האם עובד וירטואלי מחליף את כל נציגי השירות?</summary><p data-i18n="faq3Answer">לא. מתחילים מתהליכים חוזרים ומוגדרים. חריגים, ביטחון נמוך והחלטות הדורשות שיקול דעת עוברים לנציג אנושי.</p></details>
             <details><summary data-i18n="faq4Question">איך מתחילים פיילוט למוקד AI?</summary><p data-i18n="faq4Answer">בוחרים קו אחד ותהליך אחד, מגדירים מקורות והרשאות, בודקים תרחישים ומודדים דיוק, זמן טיפול, העברה לנציג ואיכות תיעוד.</p></details>
-            <details><summary data-i18n="faq5Question">איך מחושב המחיר?</summary><p data-i18n="faq5Answer">המודל המסחרי המוצג הוא 18 ₪ לשעת קו פעילה. אינטגרציה, טלפוניה, שירותי צד שלישי ומע״מ מתומחרים בנפרד לאחר בדיקה טכנית.</p></details>
+            <details><summary data-i18n="faq5Question">איך מחושב המחיר?</summary><p data-i18n="faq5Answer">Light: ‏2,000 ₪ לחודש; Booking: ‏3,000 ₪ לחודש. בשניהם מתווסף 18 ₪ לשעת שיחה בפועל (30 אגורות לדקה). Business והקו הראשון ב-Business Plus מחויבים עבור חודש מלא 24/7, כולל זמן ללא שיחות: 12,960 ₪ ל-30 יום או 13,392 ₪ ל-31 יום. קווים נוספים ב-Business Plus מחויבים רק על שיחות בפועל. כל המסלולים כוללים Light ללא חיוב מנוי נוסף. המחירים אינם כוללים מע״מ.</p></details>
             <details><summary data-i18n="faq6Question">איך נשמרת שליטה על הנתונים והפעולות?</summary><p data-i18n="faq6Answer">מגדירים הרשאות, מקורות אמת, פעולות מותרות, יומן ביקורת ותנאי העברה לנציג. מפרט האבטחה מותאם למדיניות ולמערכות של הלקוח.</p></details>
           </div>
         </div>
@@ -276,39 +354,22 @@
           <div class="section-head section-head-light">
             <div>
               <p class="eyebrow" data-i18n="deckKicker">המצגת המסחרית</p>
-              <h2 data-i18n="deckTitle">נציג AI, Golani CRM ומכירות ב-10 שקפים</h2>
+              <h2 data-i18n="deckTitle">CRM, מכירות ותוכניות שירות ב-15 שקפים</h2>
             </div>
-            <p data-i18n="deckLead">מצגת מסחרית מעודכנת ברוסית: OpenAI בשיחה, CRM בניהול ותהליך מסודר למחלקת המכירות.</p>
+            <p data-i18n="deckLead">המצגת המעודכנת מ-2.11.2026 בעברית וברוסית, כולל פירוט השירותים, השיחות והמחירים ללא מע״מ.</p>
           </div>
 
           <div class="deck-toolbar">
-            <div class="deck-version" data-i18n="deckVersion">CRM + Sales · Русский</div>
-            <div class="deck-controls">
-              <button type="button" data-deck-prev title="Previous slide" aria-label="Previous slide">←</button>
-              <span data-deck-count aria-live="polite">1 / 10</span>
-              <button type="button" data-deck-next title="Next slide" aria-label="Next slide">→</button>
+            <div class="deck-version" data-i18n="deckVersion">CRM + AI + Sales · 02.11.2026</div>
+            <div class="deck-language language-switch" role="group" aria-label="Presentation language">
+              <button type="button" data-deck-lang="he" class="is-active" aria-pressed="true">עברית</button>
+              <button type="button" data-deck-lang="ru" aria-pressed="false">Русский</button>
             </div>
           </div>
-
-          <figure class="deck-stage">
-            <img data-deck-image src="assets/slides-ru/slide-1.png" alt="AI sales agent, CRM and contact center presentation, slide 1" />
-          </figure>
-
-          <div class="deck-thumbnails" aria-label="Presentation slides">
-            <button class="is-active" type="button" data-slide="1" aria-label="Slide 1"><img src="assets/slides-ru/slide-1.png" alt="" /></button>
-            <button type="button" data-slide="2" aria-label="Slide 2"><img src="assets/slides-ru/slide-2.png" alt="" /></button>
-            <button type="button" data-slide="3" aria-label="Slide 3"><img src="assets/slides-ru/slide-3.png" alt="" /></button>
-            <button type="button" data-slide="4" aria-label="Slide 4"><img src="assets/slides-ru/slide-4.png" alt="" /></button>
-            <button type="button" data-slide="5" aria-label="Slide 5"><img src="assets/slides-ru/slide-5.png" alt="" /></button>
-            <button type="button" data-slide="6" aria-label="Slide 6"><img src="assets/slides-ru/slide-6.png" alt="" /></button>
-            <button type="button" data-slide="7" aria-label="Slide 7"><img src="assets/slides-ru/slide-7.png" alt="" /></button>
-            <button type="button" data-slide="8" aria-label="Slide 8"><img src="assets/slides-ru/slide-8.png" alt="" /></button>
-            <button type="button" data-slide="9" aria-label="Slide 9"><img src="assets/slides-ru/slide-9.png" alt="" /></button>
-            <button type="button" data-slide="10" aria-label="Slide 10"><img src="assets/slides-ru/slide-10.png" alt="" /></button>
-          </div>
-
+          <div class="deck-stage"><iframe data-deck-frame src="deck/Edelstein_Digital_CRM_HE_2026-11-02.pdf#view=FitH" title="מצגת CRM ותוכניות שירות" loading="lazy"></iframe></div>
           <div class="deck-downloads">
-            <a class="button button-primary" href="deck/Structo_AI_Call_Center_Proposal_RU.pdf" target="_blank" rel="noopener" data-i18n="openRussianDeck">פתיחת מצגת CRM ומכירות ב-PDF</a>
+            <a class="button button-primary" href="deck/Edelstein_Digital_CRM_HE_2026-11-02.pdf" target="_blank" rel="noopener" data-i18n="openHebrewDeck">פתיחת PDF בעברית</a>
+            <a class="button button-outline" href="deck/Edelstein_Digital_CRM_RU_2026-11-02.pdf" target="_blank" rel="noopener" data-i18n="openRussianDeck">פתיחת PDF ברוסית</a>
           </div>
         </div>
       </section>
@@ -335,6 +396,7 @@
       <span>Israel · 2026</span>
     </footer>
 
-    <script src="script.js?v=call-center-crm-sales-20261014-final"></script>
+    <script type="module" src="script.js?v=20261102-crm"></script>
   </body>
 </html>
+
