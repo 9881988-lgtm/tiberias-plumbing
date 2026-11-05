@@ -97,7 +97,7 @@ for route in ROUTES:
             assert [x['priceSpecification']['price'] for x in app['offers']] == ['2000', '3000', '12960', '12960']
             assert all(x['priceSpecification']['valueAddedTaxIncluded'] is False for x in app['offers'])
         assert raw.count('class="crm-plan"') == 4
-        assert '9881988@gmail.com' in raw and 'tel:+972533613100' in raw
+        assert '9881988@gmail.com' in raw and 'tel:+972555071400' in raw
         assert 'demo-privacy' in p.ids and 'cost-total' in p.ids
         assert '91.107.216.53' not in raw
         assert 'не включают НДС' in raw if lang == 'ru' else ('אינם כוללים מע״מ' in raw if lang == 'he' else 'exclude VAT' in raw)

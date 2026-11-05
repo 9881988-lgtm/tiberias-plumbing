@@ -2,7 +2,7 @@ const SETTINGS = {
   googleScriptUrl: "",
   ownerEmail: "",
   whatsappNumber: "972533613100",
-  phoneDisplay: "+972-53-361-31-00",
+  phoneDisplay: "+972-55-507-1400",
   priceLabel: {
     he: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
     ru: "от 2,200 ₪ · код שמש2200: скидка 100 ₪",
@@ -23,7 +23,7 @@ const SETTINGS = {
 
 const translations = {
   he: {
-    title: "דודי שמש מחדרה ועד הצפון | התקנה מ-2,200 ₪ | +972-53-361-31-00",
+    title: "דודי שמש מחדרה ועד הצפון | התקנה מ-2,200 ₪ | +972-55-507-1400",
     description: "מכירה והתקנה של דודי שמש מחדרה וקיסריה דרך חיפה והקריות ועד טבריה, הגליל ועמק הירדן. מחיר החל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
     brandTitle: "מים ושמש",
     brandSubtitle: "דודי שמש",
@@ -116,7 +116,7 @@ const translations = {
     footerText: "מכירה והתקנה של דודי שמש מחדרה ועד צפון ישראל."
   },
   ru: {
-    title: "Солнечные бойлеры от Хадеры до севера Израиля | Установка от 2,200 ₪ | +972-53-361-31-00",
+    title: "Солнечные бойлеры от Хадеры до севера Израиля | Установка от 2,200 ₪ | +972-55-507-1400",
     description: "Продажа и установка солнечных бойлеров от Хадеры и Кейсарии через Хайфу и Крайот до Тверии, Галилеи и Иорданской долины. Цена от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Солнечные бойлеры",
@@ -209,7 +209,7 @@ const translations = {
     footerText: "Продажа и установка солнечных бойлеров от Хадеры до всего севера Израиля."
   },
   en: {
-    title: "Solar boilers from Hadera across Northern Israel | From 2,200 ₪ | +972-53-361-31-00",
+    title: "Solar boilers from Hadera across Northern Israel | From 2,200 ₪ | +972-55-507-1400",
     description: "Solar boiler sale and installation from Hadera and Caesarea through Haifa and the Krayot to Tiberias, the Galilee and the Jordan Valley. Price from 2,200 ₪. Code שמש2200 gives 100 ₪ off.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Solar boilers",
@@ -302,7 +302,7 @@ const translations = {
     footerText: "Solar boiler sale and installation from Hadera across Northern Israel."
   },
   fr: {
-    title: "Chauffe-eau solaires de Hadera au nord d'Israël | Dès 2 200 ₪ | +972-53-361-31-00",
+    title: "Chauffe-eau solaires de Hadera au nord d'Israël | Dès 2 200 ₪ | +972-55-507-1400",
     description: "Vente et installation de chauffe-eau solaires de Hadera et Césarée via Haïfa et les Krayot jusqu'à Tibériade, la Galilée et la vallée du Jourdain. Dès 2 200 ₪. Code שמש2200 : remise de 100 ₪.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Chauffe-eau solaires",
@@ -425,10 +425,10 @@ const applyLanguage = (language) => {
   document.documentElement.dir = isHebrew ? "rtl" : "ltr";
   document.title = dictionary.title;
   setMeta('meta[name="description"]', dictionary.description);
-  setMeta('meta[property="og:title"]', dictionary.title.replace(" | +972-53-361-31-00", ""));
+  setMeta('meta[property="og:title"]', dictionary.title.replace(" | +972-55-507-1400", ""));
   setMeta('meta[property="og:description"]', dictionary.description);
   setMeta('meta[property="og:locale"]', { he: "he_IL", ru: "ru_RU", en: "en_US", fr: "fr_FR" }[language]);
-  setMeta('meta[name="twitter:title"]', dictionary.title.replace(" | +972-53-361-31-00", ""));
+  setMeta('meta[name="twitter:title"]', dictionary.title.replace(" | +972-55-507-1400", ""));
   setMeta('meta[name="twitter:description"]', dictionary.description);
 
   document.querySelectorAll("[data-key]").forEach((element) => {

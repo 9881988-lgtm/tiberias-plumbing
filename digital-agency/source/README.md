@@ -23,6 +23,10 @@ Published rates remain Light 2000 ILS/month and Booking 3000 ILS/month plus 18 I
 
 SEO includes unique titles/descriptions, crawlable visible content, WebPage/CollectionPage, SoftwareApplication, offers with VAT exclusion, breadcrumbs and visible FAQ data. No fabricated ratings or review counts. This does not guarantee rich results, indexing or rankings. Search Console sitemap submission and URL inspection require authorized access and are separate from publication.
 
+### Contact routing
+
+Calls on the public site use the owner-confirmed CRM number `+972 55 507 1400` (`tel:+972555071400`). This includes displayed phone numbers, copy-number controls, localized call text and Organization/LocalBusiness telephone metadata. WhatsApp remains a distinct, previously verified channel on `+972 53 361 3100` (`wa.me/972533613100`); do not change its destination merely because the call number changes. Registration of the CRM number in WhatsApp has not been verified. Do not place a test call or change provider routing as part of a website contact edit.
+
 ## Facts and scope
 
 The portfolio identifies ReceiptIL as the published product, the local-service website as an in-house project, and the AI contact centre as a pilot proposal. It makes no claims about 123 live apps, unnamed client results, awards, or accounting certification. The existing project prices, phone, email, address and hours are retained. The expired DIGITAL100 promotion is removed.

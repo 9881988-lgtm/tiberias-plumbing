@@ -2,7 +2,7 @@ const SETTINGS = {
   googleScriptUrl: "",
   ownerEmail: "tib778877@gmail.com",
   whatsappNumber: "972533613100",
-  phoneDisplay: "+972-53-361-31-00",
+  phoneDisplay: "+972-55-507-1400",
   priceLabel: {
     he: "אקספרס + חיטוי 190 ₪ / 3 אקספרס ב-490 ₪ / פירוק מלא + חיטוי 300–500 ₪ / מזמינים 3 ניקויים מלאים והרביעי חינם",
     ru: "экспресс + дезинфекция 190 ₪ / 3 экспресс за 490 ₪ / полная разборка + дезинфекция 300–500 ₪ / при заказе 3 полных чисток четвёртая бесплатно",
@@ -29,7 +29,7 @@ const SETTINGS = {
 
 const translations = {
   he: {
-    title: "ניקוי וחיטוי מזגנים מחדרה ועד הצפון | +972-53-361-31-00",
+    title: "ניקוי וחיטוי מזגנים מחדרה ועד הצפון | +972-55-507-1400",
     description: "ניקוי וחיטוי מזגנים מחדרה ועד צפון ישראל: אקספרס ב-190 ₪, 3 ב-490 ₪, או פירוק מלא ב-300–500 ₪. מזמינים 3 ניקויים מלאים והרביעי חינם.",
     brandTitle: "מים ושמש",
     brandSubtitle: "ניקוי מזגנים",
@@ -154,7 +154,7 @@ const translations = {
     footerText: "ניקוי יחידה פנימית, שטיפה וחיטוי מחדרה ועד הגליל והגולן."
   },
   ru: {
-    title: "Мойка и дезинфекция кондиционеров от Хадеры по северу Израиля | +972-53-361-31-00",
+    title: "Мойка и дезинфекция кондиционеров от Хадеры по северу Израиля | +972-55-507-1400",
     description: "Мойка кондиционеров от Хадеры по северу: экспресс 190 ₪, 3 за 490 ₪ или полная разборка с дезинфекцией 300–500 ₪. При заказе 3 полных чисток четвёртая бесплатно.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Мойка кондиционеров",
@@ -279,7 +279,7 @@ const translations = {
     footerText: "Чистка внутреннего блока, мойка и дезинфекция от Хадеры до Галилеи и Голан."
   },
   en: {
-    title: "AC Cleaning and Disinfection from Hadera Across Northern Israel | +972-53-361-31-00",
+    title: "AC Cleaning and Disinfection from Hadera Across Northern Israel | +972-55-507-1400",
     description: "AC cleaning from Hadera across northern Israel: express 190 ₪, 3 for 490 ₪, or full dismantling and disinfection 300–500 ₪. Book 3 full cleanings and the fourth is free.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "AC cleaning",
@@ -404,7 +404,7 @@ const translations = {
     footerText: "Indoor unit cleaning, washing and disinfection from Hadera to the Galilee and Golan."
   },
   fr: {
-    title: "Nettoyage et désinfection de climatiseurs de Hadera au nord d'Israël | +972-53-361-31-00",
+    title: "Nettoyage et désinfection de climatiseurs de Hadera au nord d'Israël | +972-55-507-1400",
     description: "Nettoyage de Hadera au nord : express 190 ₪, 3 pour 490 ₪, ou démontage complet et désinfection 300–500 ₪. Pour 3 nettoyages complets, le quatrième est offert.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Nettoyage de climatiseurs",

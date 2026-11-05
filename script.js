@@ -62,7 +62,7 @@ const translations = {
     openCallCenter: "פתחו פתרון ומצגת",
     contactKicker: "קשר",
     contactTitle: "אותו צוות, שתי ויטרינות: שירות מקומי ומוצרים דיגיטליים",
-    contactText: "לשירותי בית בטבריה התקשרו למספר +972-53-361-31-00. לשיתופי פעולה, IT, אתרים ואפליקציות אפשר לכתוב גם במייל.",
+    contactText: "לשירותי בית בטבריה התקשרו למספר +972-55-507-1400. לשיתופי פעולה, IT, אתרים ואפליקציות אפשר לכתוב גם במייל.",
     phoneLabel: "טלפון שירותים",
     footerText: "ויטרינה רב-לשונית לשירותים, אפליקציות ושיווק"
   },
@@ -129,7 +129,7 @@ const translations = {
     openCallCenter: "Open the solution and deck",
     contactKicker: "Contact",
     contactTitle: "One team, two showcases: local services and digital products",
-    contactText: "For home services in Tiberias, call +972-53-361-31-00. For IT, websites, apps and partnerships, email us as well.",
+    contactText: "For home services in Tiberias, call +972-55-507-1400. For IT, websites, apps and partnerships, email us as well.",
     phoneLabel: "Service phone",
     footerText: "A multilingual showcase for services, apps and marketing"
   },
@@ -196,7 +196,7 @@ const translations = {
     openCallCenter: "Открыть решение и презентацию",
     contactKicker: "Контакты",
     contactTitle: "Одна команда, две витрины: местные услуги и цифровые продукты",
-    contactText: "По услугам для дома в Тверии звоните +972-53-361-31-00. По IT, сайтам, приложениям и сотрудничеству можно также написать на почту.",
+    contactText: "По услугам для дома в Тверии звоните +972-55-507-1400. По IT, сайтам, приложениям и сотрудничеству можно также написать на почту.",
     phoneLabel: "Телефон услуг",
     footerText: "Многоязычная витрина услуг, приложений и маркетинга"
   }
