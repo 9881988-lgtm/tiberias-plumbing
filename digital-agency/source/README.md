@@ -11,6 +11,18 @@ The existing GitHub Pages site, redesigned on 2026-10-27. No framework or runtim
 - Old `?lang=` links resolve to the corresponding static page while preserving other query parameters and the fragment.
 - Changes to language URLs also require updating the root sitemap.
 
+## Galany CRM software pages (5 November 2026)
+
+`software-content.mjs` is the HE/RU/EN copy source. `software.mjs` renders 12 static pages under `software/`, `galany-crm/`, `ai-sales-agent/` and `call-center-software/`. The normal `build.mjs` command also rebuilds them and the local sitemap. These are distinct product intents, not automatically generated keyword/location pages. Canonicals and reciprocal hreflang links use real static URLs.
+
+The cloud CRM is operational; its text assistance and voice module are integrated. Customer telephony is still a pilot, not a live production promise. External channel activation, Booking/Airbnb and Calendar integrations require supported connections and acceptance testing. Public brand: Galany CRM. Existing application/interface name: Golani CRM. The screenshot is a previously verified test interface with fictional data, not customer data or proof of live platform sync.
+
+Published rates remain Light 2000 ILS/month and Booking 3000 ILS/month plus 18 ILS per actual call-hour. Business first-line pricing is 18 x 24 x calendar days including idle time; Business Plus extra lines use actual call minutes. All prices exclude VAT. No standalone duplicate Light fee or tax calculation is introduced.
+
+`software.js` builds a demo/subscription-proposal draft in WhatsApp or email; it does not collect leads in a backend, send messages, accept a contract or activate a subscription. Campaign source fields are allowlisted and are included in a visitor-approved draft. A draft event is not a signup or purchase. No new analytics account, advertising campaign or paid integration is configured. The browser calculator is an estimate, not an invoice.
+
+SEO includes unique titles/descriptions, crawlable visible content, WebPage/CollectionPage, SoftwareApplication, offers with VAT exclusion, breadcrumbs and visible FAQ data. No fabricated ratings or review counts. This does not guarantee rich results, indexing or rankings. Search Console sitemap submission and URL inspection require authorized access and are separate from publication.
+
 ## Facts and scope
 
 The portfolio identifies ReceiptIL as the published product, the local-service website as an in-house project, and the AI contact centre as a pilot proposal. It makes no claims about 123 live apps, unnamed client results, awards, or accounting certification. The existing project prices, phone, email, address and hours are retained. The expired DIGITAL100 promotion is removed.

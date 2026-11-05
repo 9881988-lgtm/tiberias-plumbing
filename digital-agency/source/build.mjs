@@ -4,12 +4,13 @@ import { dirname, resolve, join } from 'node:path';
 import { createRequire } from 'node:module';
 import { content } from './content.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
+import { buildSoftware, renderSoftwareTeaser, softwarePath, softwareUrls } from './software.mjs';
 const require = createRequire(import.meta.url);
 const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261101-duo';
+const version = '20261105-galany';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -24,7 +25,7 @@ const serviceValues = ['landing', 'website', 'app', 'ai', 'ads'];
 const budgets = ['estimate', 'small', 'medium', 'large'];
 function render(lang, t) {
   const rel = lang === 'he' ? './' : '../';
-  const pageVersion = crmPlans[lang] ? '20261102-crm' : version;
+  const pageVersion = version;
   const parent = `${rel}../`;
   const canonical = rootURL + pathFor(lang);
   const schema = {
@@ -35,7 +36,8 @@ function render(lang, t) {
     ]
   };
   if (crmPlans[lang]) schema['@graph'].push({'@type':'Service',name:'CRM / AI sales',provider:{'@id':rootURL+'#organization'},offers:crmPlans[lang].plans.map(p=>({'@type':'Offer',name:p.name,description:p.billing,priceSpecification:{'@type':'UnitPriceSpecification',price:p.price.replace(/[ ,]/g,''),priceCurrency:'ILS',valueAddedTaxIncluded:false,description:p.period}}))});
-  const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + (crmPlans[lang] ? `<a href="#crm-pricing">${lang === 'he' ? 'מסלולי CRM' : 'Тарифы CRM'}</a>` : '');
+  const productLang = lang === 'fr' ? 'en' : lang;
+  const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>`;
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
   const projectIntro = p => `<div class="project-topline"><span>${e(p.label)}</span><span class="project-status">${e(p.status)}</span></div><h3 class="preline">${e(p.title)}</h3><p>${e(p.text)}</p>${tags(p)}<p class="project-note">${e(p.note)}</p>`;
   return `<!doctype html>
@@ -56,6 +58,7 @@ function render(lang, t) {
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="${rel}assets/hero.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="${rel}styles.css?v=${pageVersion}">
+  <link rel="stylesheet" href="${rel}software.css?v=${pageVersion}">
   ${crmPlans[lang] ? `<link rel="stylesheet" href="${rel}crm-plans.css?v=20261102-crm">` : ''}
   <script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
@@ -75,6 +78,7 @@ function render(lang, t) {
     <div class="wrap hero-inner"><p class="eyebrow">${e(t.kicker)}</p><h1 id="hero-title"><span>Structor</span><span class="digital">Digital.</span></h1><p class="hero-lead">${e(t.lead)}</p><div class="hero-actions"><a class="btn" href="#contact">${e(t.heroCta)}${arrow()}</a><a class="text-link" href="#work">${e(t.heroWork)}${icon('ArrowDown')}</a></div><span class="hero-foot">${e(t.scroll)}</span></div>
   </section>
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
+  ${renderSoftwareTeaser(lang,rel)}
   <section class="section intro"><div class="wrap intro-layout"><p class="eyebrow">${e(t.introLabel)}</p><div class="intro-main"><h2 class="preline">${e(t.introTitle)}</h2><div class="intro-copy"><p>${e(t.introText)}</p><a class="text-link" href="#services">${e(t.introLink)}${arrow()}</a></div></div></div></section>
   <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(t.workTitle)}</h2></div><p>${e(t.workIntro)}</p></div>
     <div class="platform-preview" id="next-releases" aria-labelledby="platform-title">
@@ -84,11 +88,11 @@ function render(lang, t) {
     <div class="project-grid">
       <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}</div></article>
       <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}assets/mayim-website.webp" alt="${e(t.projects[1].title)}" width="1440" height="1040" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}</div></article>
-      <article class="project project-wide"><a class="project-media" href="${rel}ai-call-center/?lang=${lang}" aria-label="${e(t.projects[2].action)}"><img src="${rel}ai-call-center/assets/verified-answer.webp" width="1536" height="1024" alt="AI / CRM" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel}ai-call-center/?lang=${lang}">${e(t.projects[2].action)}${arrow()}</a></div></article>
+      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a></div></article>
     </div>
   </div></section>
   <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(t.serviceTitle)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p></div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
-  <section class="ai-section"><div class="wrap ai-layout"><div><p class="eyebrow">${e(t.aiLabel)}</p><h2 class="preline">${e(t.aiTitle)}</h2></div><div><p>${e(t.aiText)}</p><a class="btn btn-light" href="${rel}ai-call-center/?lang=${lang}">${e(t.aiLink)}${arrow()}</a><small class="ai-note">${e(t.aiNote)}</small></div></div></section>
+  <section class="ai-section"><div class="wrap ai-layout"><div><p class="eyebrow">${e(t.aiLabel)}</p><h2 class="preline">${e(t.aiTitle)}</h2></div><div><p>${e(t.aiText)}</p><a class="btn btn-light" href="${rel + softwarePath('crm',productLang)}">${e(t.aiLink)}${arrow()}</a><small class="ai-note">${e(t.aiNote)}</small></div></div></section>
   <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(t.processTitle)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
   ${renderCrmPlans(lang)}
   <section class="section pricing" id="pricing"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.pricingLabel)}</p><h2 class="preline">${e(t.pricingTitle)}</h2></div><p>${e(t.pricingIntro)}</p></div><div class="pricing-grid">${t.packages.map(([title,price,text,id],i)=>`<article class="package"><h3>${e(title)}</h3><p class="package-price"><small>${e(t.from)}</small><strong>₪${price}</strong>${i===3?`<span>${e(t.monthly)}</span>`:''}</p><p>${e(text)}</p><button type="button" data-service-choice="${id}">${e(t.choose)}${arrow()}</button></article>`).join('')}</div><p class="price-note">${e(t.priceNote)}</p></div></section>
@@ -107,7 +111,10 @@ const callCenterPath = join(target, 'ai-call-center', 'index.html');
 try {
   const callCenter = await readFile(callCenterPath, 'utf8');
   if (callCenter.includes('<!-- CRM PLANS START -->')) {
-    await writeFile(callCenterPath, callCenter.replace(/<!-- CRM PLANS START -->[\s\S]*?<!-- CRM PLANS END -->/, `<!-- CRM PLANS START -->${renderCrmPlans('he')}<!-- CRM PLANS END -->`));
+    let updated = callCenter.replace(/<!-- CRM PLANS START -->[\s\S]*?<!-- CRM PLANS END -->/, `<!-- CRM PLANS START -->${renderCrmPlans('he')}<!-- CRM PLANS END -->`);
+    const productLinks = '<!-- GALANY LINKS START --><section style="padding:28px 24px;background:#edf3ee;color:#171916" aria-label="Galany CRM"><div style="max-width:1160px;margin:auto;display:flex;flex-wrap:wrap;gap:18px"><strong>Galany CRM</strong><a href="../galany-crm/">CRM לעסקים בישראל</a><a href="../ai-sales-agent/">נציג מכירות AI</a><a href="../call-center-software/">תוכנת מוקד</a><a href="../galany-crm/ru/">CRM на русском</a><a href="../galany-crm/en/">CRM in English</a></div></section><!-- GALANY LINKS END -->';
+    updated = updated.includes('<!-- GALANY LINKS START -->') ? updated.replace(/<!-- GALANY LINKS START -->[\s\S]*?<!-- GALANY LINKS END -->/,productLinks) : updated.replace(/<main[^>]*>/,match=>match+productLinks);
+    await writeFile(callCenterPath,updated);
   }
 } catch (error) { if (error.code !== 'ENOENT') throw error; }
 const selectedLanguages = process.env.SITE_LANGUAGES?.split(',');
@@ -115,13 +122,14 @@ for (const [lang,t] of Object.entries(content)) {
   if (selectedLanguages && !selectedLanguages.includes(lang)) continue;
   const dir = join(target,pathFor(lang));
   await mkdir(dir,{recursive:true});
-  await writeFile(join(dir,'index.html'),render(lang,t));
+  await writeFile(join(dir,'index.html'),render(lang,t).replace(/[ \t]+$/gm,''));
 }
 for (const name of ['styles.css','script.js']) {
   const file = join(here,name);
   try { await copyFile(file,join(target,name)); } catch(error) { if(error.code !== 'ENOENT') throw error; }
 }
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-10-27</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}</urlset>`;
+await buildSoftware(target);
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-11-05</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}${softwareUrls.map(url=>`<url><loc>${url}</loc><lastmod>2026-11-05</lastmod></url>`).join('')}</urlset>`;
 await writeFile(join(target,'sitemap.xml'),sitemap);
 console.log(`Built ${Object.keys(content).length} localised Structor Digital pages in ${target}`);
 

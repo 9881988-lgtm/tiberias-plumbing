@@ -5,3 +5,4 @@ Sitemap: https://9881988-lgtm.github.io/tiberias-plumbing/sitemap.xml
 Sitemap: https://9881988-lgtm.github.io/tiberias-plumbing/sitemap-structo.xml
 Sitemap: https://9881988-lgtm.github.io/tiberias-plumbing/sitemap-directories.xml
 Sitemap: https://9881988-lgtm.github.io/tiberias-plumbing/sitemap-app-finders.xml
+Sitemap: https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/sitemap.xml
