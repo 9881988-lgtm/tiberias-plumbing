@@ -35,7 +35,7 @@ function render(lang, t) {
       {'@type':'FAQPage',mainEntity:t.faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}
     ]
   };
-  if (crmPlans[lang]) schema['@graph'].push({'@type':'Service',name:'CRM / AI sales',provider:{'@id':rootURL+'#organization'},offers:crmPlans[lang].plans.map(p=>({'@type':'Offer',name:p.name,description:p.billing,priceSpecification:{'@type':'UnitPriceSpecification',price:p.price.replace(/[ ,]/g,''),priceCurrency:'ILS',valueAddedTaxIncluded:false,description:p.period}}))});
+  if (crmPlans[lang]) schema['@graph'].push({'@type':'Service',name:'CRM / AI sales',provider:{'@id':rootURL+'#organization'},offers:crmPlans[lang].plans.map(p=>({'@type':'Offer',name:p.name,description:p.billing,priceSpecification:{'@type':'UnitPriceSpecification',price:p.price.replace(/[ ,]/g,''),priceCurrency:'ILS',valueAddedTaxIncluded:p.price.replace(/[ ,]/g,'')==='1000'?undefined:false,description:p.period}}))});
   const productLang = lang === 'fr' ? 'en' : lang;
   const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>`;
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;

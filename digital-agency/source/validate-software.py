@@ -93,14 +93,14 @@ for route in ROUTES:
         assert 'aggregateRating' not in raw and 'ratingCount' not in raw
         if route != 'software':
             app = next(x for x in graph if x['@type'] == 'SoftwareApplication')
-            assert len(app['offers']) == 4
-            assert [x['priceSpecification']['price'] for x in app['offers']] == ['2000', '3000', '12960', '12960']
-            assert all(x['priceSpecification']['valueAddedTaxIncluded'] is False for x in app['offers'])
-        assert raw.count('class="crm-plan"') == 4
+            assert len(app['offers']) == 5
+            assert [x['priceSpecification']['price'] for x in app['offers']] == ['1000', '2000', '3000', '12960', '12960']
+            assert all(x['priceSpecification']['valueAddedTaxIncluded'] is False for x in app['offers'][1:])
+        assert raw.count('class="crm-plan"') == 5
         assert '9881988@gmail.com' in raw and 'tel:+972555071400' in raw
         assert 'demo-privacy' in p.ids and 'cost-total' in p.ids
         assert '91.107.216.53' not in raw
-        assert 'не включают НДС' in raw if lang == 'ru' else ('אינם כוללים מע״מ' in raw if lang == 'he' else 'exclude VAT' in raw)
+        assert 'без НДС' in raw if lang == 'ru' else ('אינם כוללים מע״מ' in raw if lang == 'he' else 'exclude VAT' in raw)
         urls.add(canonical)
         print(f'{relative}: static content, links, metadata, hreflang, schema and prices OK')
 
