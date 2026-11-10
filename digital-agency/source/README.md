@@ -1,4 +1,4 @@
-# Structor Digital
+# Edelstein Lab Digital
 
 The existing GitHub Pages site, redesigned on 2026-10-27. No framework or runtime build is required to serve it.
 
@@ -59,3 +59,7 @@ Final generation prompt:
 ## Validation
 
 Before publishing, validate JavaScript syntax, JSON-LD, local assets and links; test desktop and narrow mobile layouts for all four languages, RTL, menu, service accordions, package-to-brief selection, empty-brief validation and generated contact links. Do not send live test enquiries.
+
+## Public company identity (10 November 2026)
+
+The owner confirmed the public company name **Edelstein Lab Digital**. Galany CRM remains the product name; Golani CRM remains the label in the existing test-interface image. The agency's page URLs, business contacts, prices, and existing parent-company reference are unchanged. A typographic E mark is used for the company. The former social-preview screenshot is not used as the agency's sharing image because it contains the old name. Historical artwork prompts above retain their original wording.

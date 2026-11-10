@@ -4,7 +4,7 @@ export const softwareRoutes = {
 
 export const softwareContent = {
   ru: {
-    language: 'Русский', home: 'Structor Digital', software: 'Программное обеспечение',
+    language: 'Русский', home: 'Edelstein Lab Digital', software: 'Программное обеспечение',
     nav: ['Обзор', 'Возможности', 'Тарифы', 'Демонстрация'],
     demo: 'Запросить демонстрацию', plans: 'Сравнить тарифы', details: 'Подробнее',
     eyebrow: 'Galany CRM · Для бизнеса в Израиле',
@@ -27,7 +27,7 @@ export const softwareContent = {
     privacy: 'Форма ничего не отправляет и не хранит. Откроется черновик; отправка только после вашего действия в WhatsApp или почте. Не указывайте пароли и данные клиентов.',
     invalid: 'Кратко опишите задачу бизнеса.', prepared: 'Черновик подготовлен. Отправьте его в выбранном приложении.',
     message: 'Здравствуйте! Хочу демонстрацию и предложение по подписке Galany CRM.', taskLabel: 'Задача', planLabel: 'Тариф',
-    footer: 'Galany CRM · Structor Digital / Structor Robotics', address: 'Gush Etzion 1, Тверия, Израиль', hours: 'Вс–Чт, 09:00–18:00 · встречи по записи',
+    footer: 'Galany CRM · Edelstein Lab Digital / Structor Robotics', address: 'Gush Etzion 1, Тверия, Израиль', hours: 'Вс–Чт, 09:00–18:00 · встречи по записи',
     deck: 'Презентация с тарифами (PDF)', pricingLink: 'Все условия тарифов',
     pages: {
       software: {
@@ -38,7 +38,7 @@ export const softwareContent = {
         faqs: [['Какие продукты можно заказать?', 'Galany CRM, её модуль AI-продавца и модуль колл-центра. Можно начать с одной задачи; состав внедрения фиксируется в предложении.'], ['Это три отдельные подписки?', 'Нет. AI-продавец и колл-центр входят в архитектуру Galany CRM. Все тарифы включают Light без повторной оплаты Light; дополнительные работы согласуются отдельно.'], ['Можно оплатить на сайте?', 'На сайте можно запросить демонстрацию и предложение. Условия подключения и оплаты согласовываются письменно; публичного самостоятельного оформления подписки пока нет.']]
       },
       crm: {
-        name: 'Galany CRM', title: 'Galany CRM — CRM для Израиля, продажи и AI | Structor Digital',
+        name: 'Galany CRM', title: 'Galany CRM — CRM для Израиля, продажи и AI | Edelstein Lab Digital',
         description: 'CRM для бизнеса в Израиле: клиенты, сделки, задачи, бронирования, почта и встроенные AI-модули. Galany CRM от 2 000 ₪/месяц, без НДС. Запросите демонстрацию.',
         lead: 'Ваши клиенты, договорённости и следующий шаг — в одном месте. Работающая облачная CRM со встроенным AI-продавцом и модулем колл-центра.',
         features: [['Контакты и сделки', 'Единая история клиента, статусы сделок и согласованные следующие действия.'], ['Задачи и бронирования', 'Рабочий календарь и управление бронированиями внутри CRM. Синхронизация внешних площадок — отдельная интеграция.'], ['Почта и AI-помощник', 'Работа с подключённым ящиком, подготовка писем и сводок. Отправка клиенту требует разрешённого действия, а не только текста AI.'], ['Рабочее пространство в телефоне', 'Доступ через браузер и единые данные вместо нескольких отдельных таблиц. Права доступа определяет владелец.']],
@@ -61,7 +61,7 @@ export const softwareContent = {
     }
   },
   he: {
-    language: 'עברית', home: 'Structor Digital', software: 'תוכנות לעסקים',
+    language: 'עברית', home: 'Edelstein Lab Digital', software: 'תוכנות לעסקים',
     nav: ['סקירה', 'יכולות', 'מסלולים', 'הדגמה'], demo: 'לתיאום הדגמה', plans: 'להשוואת מסלולים', details: 'לפרטים', eyebrow: 'Galany CRM · לעסקים בישראל',
     caption: 'ממשק Golani CRM בסביבת בדיקה, עם נתונים פיקטיביים. Galany CRM הוא שם ההצעה המסחרית שלנו.',
     availableTitle: 'CRM פעיל. הטמעה בהתאם לעסק שלכם.',
@@ -81,7 +81,7 @@ export const softwareContent = {
     privacy: 'הטופס אינו שולח או שומר מידע. תיפתח טיוטה; השליחה מתבצעת רק על ידכם ב-WhatsApp או בדוא״ל. אין להזין סיסמאות או פרטי לקוחות.',
     invalid: 'נא לתאר בקצרה את הצורך העסקי.', prepared: 'הטיוטה מוכנה. יש לשלוח אותה באפליקציה שבחרתם.',
     message: 'שלום! אשמח להדגמה ולהצעת מנוי עבור Galany CRM.', taskLabel: 'צורך עסקי', planLabel: 'מסלול',
-    footer: 'Galany CRM · Structor Digital / Structor Robotics', address: 'גוש עציון 1, טבריה, ישראל', hours: 'א׳–ה׳, 09:00–18:00 · פגישות בתיאום מראש',
+    footer: 'Galany CRM · Edelstein Lab Digital / Structor Robotics', address: 'גוש עציון 1, טבריה, ישראל', hours: 'א׳–ה׳, 09:00–18:00 · פגישות בתיאום מראש',
     deck: 'מצגת ומסלולים (PDF)', pricingLink: 'לתנאי המסלולים המלאים',
     pages: {
       software: {name: 'תוכנות לעסקים', title: 'תוכנות לעסקים בישראל — CRM, מכירות ומוקד | Galany CRM', description: 'Galany CRM לעסקים בישראל: לקוחות, עסקאות ומשימות, נציג מכירות AI ומודול מוקד טלפוני מובנים. מסלולים בשקלים והדגמה לפני הטמעה.', lead: 'סביבת עבודה ללקוחות, למכירות ולשירות. Galany CRM מחברת ניהול עסקי, נציג מכירות AI ומוקד קולי.',
@@ -99,7 +99,7 @@ export const softwareContent = {
     }
   },
   en: {
-    language: 'English', home: 'Structor Digital', software: 'Business software', nav: ['Overview', 'Capabilities', 'Pricing', 'Demo'],
+    language: 'English', home: 'Edelstein Lab Digital', software: 'Business software', nav: ['Overview', 'Capabilities', 'Pricing', 'Demo'],
     demo: 'Request a demo', plans: 'Compare plans', details: 'Explore', eyebrow: 'Galany CRM · Built around businesses in Israel',
     caption: 'Golani CRM interface in a test environment with fictional data. Galany CRM is the name of our commercial offering.',
     availableTitle: 'An operational CRM. A rollout tailored to your business.',
@@ -115,7 +115,7 @@ export const softwareContent = {
     fieldProduct: 'Interested in', fieldPlan: 'Plan', fieldNeed: 'Business need', needPlaceholder: 'For example: a service business in Haifa, 40 weekly enquiries, Hebrew and Russian; appointments and customer history.',
     unsure: 'Help me choose', send: 'Continue in WhatsApp', email: 'Or send by email', privacy: 'This form does not send or store data. It opens a draft; you choose whether to send it in WhatsApp or email. Do not include passwords or customer records.',
     invalid: 'Please briefly describe your business need.', prepared: 'Draft prepared. Send it in your chosen application.', message: 'Hello! I would like a Galany CRM demo and subscription proposal.', taskLabel: 'Business need', planLabel: 'Plan',
-    footer: 'Galany CRM · Structor Digital / Structor Robotics', address: 'Gush Etzion 1, Tiberias, Israel', hours: 'Sunday–Thursday, 09:00–18:00 · visits by appointment', deck: 'Presentation and pricing (PDF)', pricingLink: 'Full plan terms',
+    footer: 'Galany CRM · Edelstein Lab Digital / Structor Robotics', address: 'Gush Etzion 1, Tiberias, Israel', hours: 'Sunday–Thursday, 09:00–18:00 · visits by appointment', deck: 'Presentation and pricing (PDF)', pricingLink: 'Full plan terms',
     pages: {
       software: {name: 'Business software', title: 'Business software for Israel — CRM, AI sales and calls | Galany', description: 'Galany CRM for businesses in Israel: contacts, deals and tasks with integrated AI sales and call-center modules. ILS pricing and a demo before implementation.', lead: 'A workspace for customers, sales and service. Galany CRM connects business management, an AI salesperson and a voice contact center.',
         features: [['Everyday CRM', 'Contacts, enquiry history, deals, tasks, bookings and connected email instead of disconnected notes.'], ['AI-assisted sales', 'Work from your approved price list: qualify the need, explain an offer, handle objections and agree a next step.'], ['Voice service', 'An integrated voice module, call history and transcripts. Customer telephony launches only after a separate pilot.']],

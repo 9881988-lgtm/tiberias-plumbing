@@ -10,7 +10,7 @@ const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261105-crm-phone';
+const version = '20261110-edelstein-brand';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -30,8 +30,8 @@ function render(lang, t) {
   const canonical = rootURL + pathFor(lang);
   const schema = {
     '@context': 'https://schema.org', '@graph': [
-      {'@type':'ProfessionalService','@id':rootURL+'#organization',name:'Structor Digital',parentOrganization:{'@type':'Organization',name:'Structor Robotics'},url:rootURL,description:t.description,telephone:'+972-55-507-1400',email:'9881988@gmail.com',address:{'@type':'PostalAddress',streetAddress:'Gush Etzion 1',addressLocality:'Tiberias',addressCountry:'IL'},areaServed:['Israel','Worldwide'],availableLanguage:['Hebrew','English','Russian','French'],openingHours:['Su-Th 09:00-18:00'],image:rootURL+'assets/hero.webp',hasOfferCatalog:{'@type':'OfferCatalog',name:'Digital services',itemListElement:t.packages.map(p=>({'@type':'Offer',priceCurrency:'ILS',price:p[1].replace(',',''),itemOffered:{'@type':'Service',name:p[0]},description:p[2]}))}},
-      {'@type':'WebPage',url:canonical,name:t.title,inLanguage:lang,isPartOf:{'@type':'WebSite',url:rootURL,name:'Structor Digital'}},
+      {'@type':'ProfessionalService','@id':rootURL+'#organization',name:'Edelstein Lab Digital',parentOrganization:{'@type':'Organization',name:'Structor Robotics'},url:rootURL,description:t.description,telephone:'+972-55-507-1400',email:'9881988@gmail.com',address:{'@type':'PostalAddress',streetAddress:'Gush Etzion 1',addressLocality:'Tiberias',addressCountry:'IL'},areaServed:['Israel','Worldwide'],availableLanguage:['Hebrew','English','Russian','French'],openingHours:['Su-Th 09:00-18:00'],image:rootURL+'assets/hero.webp',hasOfferCatalog:{'@type':'OfferCatalog',name:'Digital services',itemListElement:t.packages.map(p=>({'@type':'Offer',priceCurrency:'ILS',price:p[1].replace(',',''),itemOffered:{'@type':'Service',name:p[0]},description:p[2]}))}},
+      {'@type':'WebPage',url:canonical,name:t.title,inLanguage:lang,isPartOf:{'@type':'WebSite',url:rootURL,name:'Edelstein Lab Digital'}},
       {'@type':'FAQPage',mainEntity:t.faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}
     ]
   };
@@ -49,12 +49,12 @@ function render(lang, t) {
   <link rel="canonical" href="${canonical}">
   ${Object.keys(content).map(code=>`<link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}">`).join('\n  ')}
   <link rel="alternate" hreflang="x-default" href="${rootURL}">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="Structor Digital">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Edelstein Lab Digital">
   <meta property="og:title" content="${e(t.title)}"><meta property="og:description" content="${e(t.description)}"><meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${rootURL}assets/social-preview.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta property="og:image" content="${rootURL}assets/hero.webp"><meta property="og:image:width" content="1881"><meta property="og:image:height" content="836">
   <meta property="og:locale" content="${({he:'he_IL',en:'en_US',ru:'ru_RU',fr:'fr_FR'})[lang]}">
-  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${e(t.title)}"><meta name="twitter:description" content="${e(t.description)}"><meta name="twitter:image" content="${rootURL}assets/social-preview.jpg">
-  <link rel="icon" href="${parent}structo-robotics/assets/structor-robotics-logo.svg" type="image/svg+xml">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${e(t.title)}"><meta name="twitter:description" content="${e(t.description)}"><meta name="twitter:image" content="${rootURL}assets/hero.webp">
+  <link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="${rel}assets/hero.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="${rel}styles.css?v=${pageVersion}">
@@ -67,7 +67,7 @@ function render(lang, t) {
 <body id="top" data-base="${rel}" data-message-prefix="${e(t.sentPrefix)}" data-message-service="${e(t.messageService)}" data-message-budget="${e(t.messageBudget)}" data-message-brief="${e(t.messageBrief)}" data-invalid="${e(t.invalid)}">
 <a class="skip" href="#main">${e(t.skip)}</a>
 <header class="site-header"><div class="wrap header-inner">
-  <a class="wordmark" href="#top" aria-label="Structor Digital"><img src="${parent}structo-robotics/assets/structor-robotics-logo.svg" alt="" width="37" height="37"><span>Structor<small>Digital.</small></span></a>
+  <a class="wordmark" href="#top" aria-label="Edelstein Lab Digital"><img src="${rel}assets/edelstein-lab-digital-mark.svg" alt="" width="37" height="37"><span>Edelstein<small>Lab Digital</small></span></a>
   <nav class="desktop-nav" aria-label="${e(t.menu)}">${nav}</nav>
   <div class="header-tools"><select class="language-select" id="language" aria-label="Language / שפה">${[['he','עברית'],['en','EN'],['ru','RU'],['fr','FR']].map(([code,name])=>`<option value="${code==='he'?'./':code+'/'}"${code===lang?' selected':''}>${name}</option>`).join('')}</select><a class="header-link" href="#contact">${e(t.start)}${arrow()}</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="${e(t.menu)}" data-open-label="${e(t.menu)}" data-close-label="${e(t.close)}">${icon('Menu')}</button></div>
   <nav class="mobile-nav" id="mobile-nav" aria-label="${e(t.menu)}">${nav}</nav>
@@ -75,7 +75,7 @@ function render(lang, t) {
 <main id="main">
   <section class="hero" aria-labelledby="hero-title">
     <img class="hero-art" src="${rel}assets/hero.webp" width="1881" height="836" alt="" fetchpriority="high">
-    <div class="wrap hero-inner"><p class="eyebrow">${e(t.kicker)}</p><h1 id="hero-title"><span>Structor</span><span class="digital">Digital.</span></h1><p class="hero-lead">${e(t.lead)}</p><div class="hero-actions"><a class="btn" href="#contact">${e(t.heroCta)}${arrow()}</a><a class="text-link" href="#work">${e(t.heroWork)}${icon('ArrowDown')}</a></div><span class="hero-foot">${e(t.scroll)}</span></div>
+    <div class="wrap hero-inner"><p class="eyebrow">${e(t.kicker)}</p><h1 id="hero-title"><span>Edelstein</span> <span class="digital">Lab Digital.</span></h1><p class="hero-lead">${e(t.lead)}</p><div class="hero-actions"><a class="btn" href="#contact">${e(t.heroCta)}${arrow()}</a><a class="text-link" href="#work">${e(t.heroWork)}${icon('ArrowDown')}</a></div><span class="hero-foot">${e(t.scroll)}</span></div>
   </section>
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
   ${renderSoftwareTeaser(lang,rel)}
@@ -101,7 +101,7 @@ function render(lang, t) {
     <form class="brief-form" id="project-brief"><div class="form-row"><div class="field"><label for="service">${e(t.service)}</label><select name="service" id="service">${t.serviceOptions.map((title,i)=>`<option value="${serviceValues[i]}">${e(title)}</option>`).join('')}</select></div><div class="field"><label for="budget">${e(t.budget)}</label><select id="budget" name="budget">${t.budgets.map((title,i)=>`<option value="${budgets[i]}">${e(title)}</option>`).join('')}</select></div></div><div class="field"><label for="brief">${e(t.brief)}</label><textarea name="brief" id="brief" maxlength="1500" placeholder="${e(t.placeholder)}" required aria-describedby="brief-error form-privacy"></textarea></div><p id="brief-error" role="status" aria-live="polite"></p><a class="btn btn-light" id="continue-whatsapp" href="https://wa.me/972533613100" target="_blank" rel="noopener">${e(t.send)}${arrow()}</a><p class="form-privacy" id="form-privacy">${e(t.privacy)}</p><p class="mail-option">${e(t.mail)} <a id="brief-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a></p></form>
   </div></section>
 </main>
-<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Structor Digital.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Structor Digital</span><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Edelstein Lab Digital.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Edelstein Lab Digital</span><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
 <a class="mobile-contact" href="#contact" aria-label="${e(t.start)}" title="${e(t.start)}">${icon('MessageCircle')}</a>
 <script src="${rel}script.js?v=${pageVersion}" defer></script>
 </body></html>`;
@@ -129,7 +129,6 @@ for (const name of ['styles.css','script.js']) {
   try { await copyFile(file,join(target,name)); } catch(error) { if(error.code !== 'ENOENT') throw error; }
 }
 await buildSoftware(target);
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-11-05</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}${softwareUrls.map(url=>`<url><loc>${url}</loc><lastmod>2026-11-05</lastmod></url>`).join('')}</urlset>`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-11-10</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}${softwareUrls.map(url=>`<url><loc>${url}</loc><lastmod>2026-11-10</lastmod></url>`).join('')}</urlset>`;
 await writeFile(join(target,'sitemap.xml'),sitemap);
-console.log(`Built ${Object.keys(content).length} localised Structor Digital pages in ${target}`);
-
+console.log(`Built ${Object.keys(content).length} localised Edelstein Lab Digital pages in ${target}`);

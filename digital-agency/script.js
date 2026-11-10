@@ -53,7 +53,7 @@
   function updateBrief() {
     const message = [page.dataset.messagePrefix, '', `${page.dataset.messageService}: ${service.selectedOptions[0].text}`, `${page.dataset.messageBudget}: ${budget.selectedOptions[0].text}`, '', `${page.dataset.messageBrief}:`, brief.value.trim()].join('\n');
     continueLink.href = `https://wa.me/972533613100?text=${encodeURIComponent(message)}`;
-    emailLink.href = `mailto:9881988@gmail.com?subject=${encodeURIComponent(`Structor Digital · ${service.selectedOptions[0].text}`)}&body=${encodeURIComponent(message)}`;
+    emailLink.href = `mailto:9881988@gmail.com?subject=${encodeURIComponent(`Edelstein Lab Digital · ${service.selectedOptions[0].text}`)}&body=${encodeURIComponent(message)}`;
     status.textContent = '';
   }
   form.addEventListener('input', updateBrief);

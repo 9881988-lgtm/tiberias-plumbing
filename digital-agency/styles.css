@@ -21,3 +21,8 @@
 @media(max-width:850px){.platform-preview{gap:28px;grid-template-columns:1fr 1.1fr}.platform-copy h3{font-size:30px}.platform-description{font-size:14px}.platform-models{gap:10px 16px;font-size:12px}}
 @media(max-width:600px){.platform-preview{grid-template-columns:1fr;gap:25px;margin-bottom:40px;padding-block:26px}.platform-copy h3{font-size:31px}.platform-models{margin-top:18px;font-size:13px}.platform-description{max-width:none;margin-top:17px}.platform-verified{margin-top:12px}.platform-figure img{max-height:350px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* Company wordmark approved on 10 November 2026. */
+.hero h1 .digital{font-size:.78em}
+@media(max-width:540px){.wordmark span{font-size:16px}.wordmark small{font-size:12px}.footer-brand{font-size:clamp(18px,5.7vw,26px)}}
+@media(max-width:360px){.wordmark span{font-size:15px}}
