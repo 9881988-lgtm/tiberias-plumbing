@@ -41,6 +41,17 @@ test('Light and Booking bill actual call time, not idle time',()=>{
   f.nodes.get('#cost-plan').value='Booking';f.fire('#cost-plan');
   assert.equal(f.nodes.get('#cost-total').textContent,'3,036 ₪');
 });
+test('Dental plan includes the first 100 minutes and bills only excess duration',()=>{
+  const f=fixture();f.nodes.get('#cost-plan').value='dental_secretary';
+  for(const [minutes,total] of [[0,'1,000 ₪'],[100,'1,000 ₪'],[101,'1,000.3 ₪'],[160,'1,018 ₪'],[200,'1,030 ₪']]){
+    f.nodes.get('#cost-minutes').value=String(minutes);f.fire('#cost-plan');
+    assert.equal(f.nodes.get('#cost-total').textContent,total);
+  }
+});
+test('Unconfirmed generic receptionist plan does not show a made-up price',()=>{
+  const f=fixture();f.nodes.get('#cost-plan').value='My Receptionist';f.fire('#cost-plan');
+  assert.equal(f.nodes.get('#cost-total').textContent,'Quote required');
+});
 test('Business follows 28/29/30/31 calendar days without duplicate call fees',()=>{
   const f=fixture();f.nodes.get('#cost-plan').value='Business';
   for(const [days,total] of [[28,'12,096 ₪'],[29,'12,528 ₪'],[30,'12,960 ₪'],[31,'13,392 ₪']]){

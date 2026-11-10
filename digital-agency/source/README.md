@@ -63,3 +63,9 @@ Before publishing, validate JavaScript syntax, JSON-LD, local assets and links; 
 ## Public company identity (10 November 2026)
 
 The owner confirmed the public company name **Edelstein Lab Digital**. Galany CRM remains the product name; Golani CRM remains the label in the existing test-interface image. The agency's page URLs, business contacts, prices, and existing parent-company reference are unchanged. A typographic E mark is used for the company. The former social-preview screenshot is not used as the agency's sharing image because it contains the old name. Historical artwork prompts above retain their original wording.
+
+## Dental subscription (10 November 2026)
+
+`../dental-plan.mjs` is the approved shared pricing/copy source. `dental.mjs` builds Hebrew, Russian and English landing pages at `dental-secretary/`, with a public `catalog.json` and linked two-page PDF catalogues. The separate dental plan is ILS 1,000/month before applicable VAT, includes 100 incoming call minutes, and bills additional actual talk time at ILS 0.30/minute (ILS 18/hour). Setup is included; agreed external expenses are separate. One shared weekly content set is adapted for five platforms, including one short YouTube video. Existing generic receptionist and other plan terms remain separate.
+
+The service is administrative, not medical advice. Customer telephony remains a pilot requiring acceptance tests; calendar connectivity and patient-data handling require agreement before live use. No guaranteed patients, missed-call elimination, ratings, rankings or AI recommendations are promised. Reviews must be authentic and non-incentivised, without patient-identifying replies. Both sitemaps include the new pages. `dental.test.mjs` validates the approved terms and page/catalogue links.
