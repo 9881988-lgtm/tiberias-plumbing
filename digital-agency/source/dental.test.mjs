@@ -12,9 +12,9 @@ test('approved dental commercial terms remain exact',()=>{
 });
 test('dental variant supplements rather than replaces the generic receptionist plan',()=>{
   for(const lang of ['ru','he']){
-    assert.equal(crmPlans[lang].plans.length,6);
-    assert.equal(crmPlans[lang].plans[0].id,'dental_secretary');
-    assert.equal(crmPlans[lang].plans.filter(x=>x.price.replace(/[ ,]/g,'')==='1000').length,2);
+    assert.equal(crmPlans[lang].plans.length,7);
+    assert.equal(crmPlans[lang].plans.filter(x=>x.id==='dental_secretary').length,1);
+    assert.equal(crmPlans[lang].plans.filter(x=>x.price.replace(/[ ,]/g,'')==='1000').length,3);
   }
 });
 test('three dental pages expose truthful price, canonicals, FAQ and local files',()=>{

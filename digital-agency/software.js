@@ -49,13 +49,13 @@
       document.querySelector('#cost-total').textContent = '—';
       return;
     }
-    const dental = costPlan.value === 'dental_secretary';
+    const bundledSecretary = ['dental_secretary','auto_secretary'].includes(costPlan.value);
     const uncertainReceptionist = ['Свой секретарь','המזכירה שלי','My Receptionist'].includes(costPlan.value);
     if (uncertainReceptionist) {
       document.querySelector('#cost-total').textContent = language==='he'?'לפי הצעה':language==='ru'?'По предложению':'Quote required';
       return;
     }
-    const total = dental ? 1000+Math.max(0,count-100)*.30 : enterprise ? 18*24*Number(days.value)+(extra?count*.30:0) : (costPlan.value==='Booking'?3000:2000)+count*.30;
+    const total = bundledSecretary ? 1000+Math.max(0,count-100)*.30 : enterprise ? 18*24*Number(days.value)+(extra?count*.30:0) : (costPlan.value==='Booking'?3000:2000)+count*.30;
     document.querySelector('#cost-total').textContent = `${new Intl.NumberFormat(language==='he'?'he-IL':language==='ru'?'ru-RU':'en-US',{maximumFractionDigits:2}).format(total)} ₪`;
   }
   if (costPlan) {

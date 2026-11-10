@@ -6,12 +6,13 @@ import { content } from './content.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
 import { buildSoftware, renderSoftwareTeaser, softwarePath, softwareUrls } from './software.mjs';
 import { buildDental, dentalUrls, renderDentalTeaser } from './dental.mjs';
+import { buildAuto, autoUrls, renderAutoTeaser } from './auto.mjs';
 const require = createRequire(import.meta.url);
 const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261110-dental';
+const version = '20261110-auto-v1';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -81,6 +82,7 @@ function render(lang, t) {
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
   ${renderSoftwareTeaser(lang,rel)}
   ${renderDentalTeaser(lang)}
+  ${renderAutoTeaser(lang)}
   <section class="section intro"><div class="wrap intro-layout"><p class="eyebrow">${e(t.introLabel)}</p><div class="intro-main"><h2 class="preline">${e(t.introTitle)}</h2><div class="intro-copy"><p>${e(t.introText)}</p><a class="text-link" href="#services">${e(t.introLink)}${arrow()}</a></div></div></div></section>
   <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(t.workTitle)}</h2></div><p>${e(t.workIntro)}</p></div>
     <div class="platform-preview" id="next-releases" aria-labelledby="platform-title">
@@ -132,6 +134,7 @@ for (const name of ['styles.css','script.js']) {
 }
 await buildSoftware(target);
 await buildDental(target);
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-11-10</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}${[...softwareUrls,...dentalUrls].map(url=>`<url><loc>${url}</loc><lastmod>2026-11-10</lastmod></url>`).join('')}</urlset>`;
+await buildAuto(target);
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-11-10</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}${[...softwareUrls,...dentalUrls,...autoUrls].map(url=>`<url><loc>${url}</loc><lastmod>2026-11-10</lastmod></url>`).join('')}</urlset>`;
 await writeFile(join(target,'sitemap.xml'),sitemap);
 console.log(`Built ${Object.keys(content).length} localised Edelstein Lab Digital pages in ${target}`);
