@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 
 const base = new URL('../', import.meta.url);
 const publicRoot = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const brand = 'Edelstein Lab Digital';
+const brand = 'Eydelstein Digital Lab';
 const paths = [
   '', 'en/', 'ru/', 'fr/', 'ai-call-center/',
   ...['software', 'galany-crm', 'ai-sales-agent', 'call-center-software']
@@ -19,6 +19,7 @@ test('all agency pages use the owner-confirmed company name', () => {
   assert.equal(pages.length, 17);
   for (const { path, html } of pages) {
     assert.ok(html.includes(brand), path);
+    assert.doesNotMatch(html, /Edelstein (?:Lab Digital|Digital Lab)/, path);
     assert.ok(!html.includes('Structor Digital'), path);
     assert.ok(!html.includes('Einstein Vab Digital'), path);
   }
@@ -64,6 +65,19 @@ test('build sources preserve the approved identity for future builds', () => {
     assert.ok(source.includes(brand), path);
     assert.ok(!source.includes('Structor Digital'), path);
   }
-  assert.match(read('source/build.mjs'), /<span>Edelstein<\/span> <span class="digital">Lab Digital\.<\/span>/);
+  assert.match(read('source/build.mjs'), /<span>Eydelstein<\/span> <span class="digital">Digital Lab\.<\/span>/);
   assert.ok(!read('source/build.mjs').includes('assets/social-preview.jpg'));
+});
+
+test('industry pages and their catalogues use the same brand', () => {
+  for (const product of ['auto-secretary', 'dental-secretary']) {
+    for (const lang of ['', 'en/', 'ru/']) {
+      const path = `${product}/${lang}index.html`;
+      assert.ok(read(path).includes(brand), path);
+      assert.doesNotMatch(read(path), /Edelstein (?:Lab Digital|Digital Lab)/, path);
+    }
+    const catalog = read(`${product}/catalog.json`);
+    assert.ok(catalog.includes(brand));
+    assert.doesNotMatch(catalog, /Edelstein (?:Lab Digital|Digital Lab)/);
+  }
 });

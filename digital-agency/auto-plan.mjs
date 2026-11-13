@@ -5,9 +5,9 @@ export const autoTerms = Object.freeze({id:'auto_secretary', monthlyILS:1000, in
 
 export const autoContent = {
  ru: {
-  language:'Русский', name:'Свой секретарь для автосервиса', title:'Свой секретарь для автосервиса в Израиле | Edelstein Lab Digital',
+  language:'Русский', name:'Свой секретарь для автосервиса', title:'Свой секретарь для автосервиса в Израиле | Eydelstein Digital Lab',
   description:'Голосовой AI-секретарь, CRM или календарь, сайт и продвижение автосервиса. 1 000 ₪/месяц с 100 минутами. Далее 0,30 ₪/мин. НДС добавляется, если применим.',
-  eyebrow:'Edelstein Lab Digital · Автосервисы · Израиль',
+  eyebrow:'Eydelstein Digital Lab · Автосервисы · Израиль',
   lead:'Вы обслуживаете автомобили. Мы помогаем принимать обращения, записывать клиентов и продвигать ваш автосервис.',
   intro:'Голосовой AI-секретарь отвечает по утверждённой информации и помогает с записью на обслуживание и ремонт. CRM, сайт и регулярное продвижение входят в пакет. Сложные вопросы получает ваш сотрудник.',
   period:'в месяц · 100 минут входящих разговоров включены',
@@ -37,9 +37,9 @@ export const autoContent = {
   field:'Задача автосервиса', send:'Продолжить в WhatsApp', email:'Подготовить email', privacy:'Форма только подготавливает черновик. Отправляете его вы; данные в форме не хранятся.', invalid:'Кратко опишите задачу автосервиса.', prepared:'Черновик подготовлен.', message:'Здравствуйте! Интересует пакет «Свой секретарь для автосервиса».', taskLabel:'Задача', planLabel:'Тариф', disclaimer:'Организация обращений и записи. Диагностику и ремонт выполняет автосервис.'
  },
  he: {
-  language:'עברית', name:'המזכיר האישי למוסך', title:'מזכיר קולי AI למוסכים בישראל | Edelstein Lab Digital',
+  language:'עברית', name:'המזכיר האישי למוסך', title:'מזכיר קולי AI למוסכים בישראל | Eydelstein Digital Lab',
   description:'מזכיר קולי AI, CRM או יומן, אתר וקידום למוסך. 1,000 ₪ לחודש עם 100 דקות. מעבר לכך 0.30 ₪ לדקה. לפני מע״מ ככל שחל.',
-  eyebrow:'Edelstein Lab Digital · מוסכים · ישראל', lead:'אתם מטפלים ברכבים. אנחנו עוזרים לקבל פניות, לתאם תורים ולקדם את המוסך.',
+  eyebrow:'Eydelstein Digital Lab · מוסכים · ישראל', lead:'אתם מטפלים ברכבים. אנחנו עוזרים לקבל פניות, לתאם תורים ולקדם את המוסך.',
   intro:'מזכיר קולי AI משיב לפי מידע שאישרתם ומסייע לתאם טיפולים ותיקונים. החבילה כוללת CRM, אתר וקידום שוטף. שאלות מורכבות עוברות לצוות שלכם.',
   period:'לחודש · 100 דקות שיחות נכנסות כלולות',
   billing:'מעבר ל-100 דקות: 18 ₪ לשעת שיחה בפועל, כלומר 0.30 ₪ לדקה. המחיר לפני מע״מ; מע״מ יתווסף ככל שחל.',
@@ -68,9 +68,9 @@ export const autoContent = {
   field:'הצורך של המוסך', send:'להמשך ב-WhatsApp', email:'להכנת דוא״ל', privacy:'הטופס מכין טיוטה בלבד. אתם שולחים אותה; המידע אינו נשמר בטופס.', invalid:'תארו בקצרה את הצורך של המוסך.', prepared:'הטיוטה מוכנה.', message:'שלום! מעניינת אותי חבילת המזכיר האישי למוסך.', taskLabel:'הצורך', planLabel:'מסלול', disclaimer:'טיפול בפניות ותיאום תורים. המוסך מבצע אבחון ותיקון.'
  },
  en: {
-  language:'English', name:'My Auto Service Receptionist', title:'AI receptionist for auto repair shops in Israel | Edelstein Lab Digital',
+  language:'English', name:'My Auto Service Receptionist', title:'AI receptionist for auto repair shops in Israel | Eydelstein Digital Lab',
   description:'Voice AI receptionist, CRM or calendar, website and promotion for auto repair shops. ILS 1,000/month with 100 minutes. Excess ILS 0.30/min. VAT extra where applicable.',
-  eyebrow:'Edelstein Lab Digital · Auto repair shops · Israel', lead:'You service the vehicles. We help handle enquiries, book customers and promote your workshop.',
+  eyebrow:'Eydelstein Digital Lab · Auto repair shops · Israel', lead:'You service the vehicles. We help handle enquiries, book customers and promote your workshop.',
   intro:'A voice AI receptionist answers using approved information and helps book servicing and repairs. CRM, a website and ongoing promotion are included. Your team handles complex questions.',
   period:'per month · 100 incoming call minutes included',
   billing:'After 100 minutes: ILS 18 per actual call-hour, equivalent to ILS 0.30/min. Prices exclude VAT; VAT is added where applicable.',

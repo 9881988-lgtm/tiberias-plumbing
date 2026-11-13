@@ -20,7 +20,7 @@ for lang in ["ru","he","en"] {
   let services=t["services"] as! [[String]]
   let path=outputDir.appendingPathComponent("Auto_Secretary_\(lang.uppercased())_2026-11-10.pdf")
   var box=CGRect(x:0,y:0,width:w,height:h)
-  let meta=[kCGPDFContextTitle as String:s("name"),kCGPDFContextAuthor as String:"Edelstein Lab Digital"]
+  let meta=[kCGPDFContextTitle as String:s("name"),kCGPDFContextAuthor as String:"Eydelstein Digital Lab"]
   guard let pdf=CGContext(path as CFURL,mediaBox:&box,meta as CFDictionary) else {fatalError("PDF open failed")}
   var cursor:CGFloat=0, page=0
   func attr(_ size:CGFloat,_ bold:Bool=false,_ color:NSColor=ink,_ forceLTR:Bool=false)->[NSAttributedString.Key:Any]{
@@ -45,7 +45,7 @@ for lang in ["ru","he","en"] {
   func begin(){
     page+=1;pdf.beginPDFPage(nil);pdf.saveGState();pdf.translateBy(x:0,y:h);pdf.scaleBy(x:1,y:-1)
     NSGraphicsContext.saveGraphicsState();NSGraphicsContext.current=NSGraphicsContext(cgContext:pdf,flipped:true)
-    _=draw("Edelstein Lab Digital",CGRect(x:m,y:25,width:300,height:25),15,true,ink,true)
+    _=draw("Eydelstein Digital Lab",CGRect(x:m,y:25,width:300,height:25),15,true,ink,true)
     _=draw("GALANY CRM  /  AUTO SERVICE",CGRect(x:m,y:49,width:300,height:18),8,true,green,true)
     pdf.setFillColor(lime.cgColor);pdf.fill(CGRect(x:w-m-35,y:27,width:35,height:35));cursor=82
   }
@@ -78,7 +78,7 @@ for lang in ["ru","he","en"] {
   text(s("cta"),17,true,green,7)
   let linkY=cursor
   text("9881988@gmail.com  |  +972 55 507 1400",15,true,ink,6,true)
-  text("Website: Edelstein Lab Digital / Auto Service",14,false,green,4,true)
+  text("Website: Eydelstein Digital Lab / Auto Service",14,false,green,4,true)
   pdf.setURL(URL(string:site)! as CFURL,for:CGRect(x:m,y:h-cursor,width:w-2*m,height:cursor-linkY+4))
   end();pdf.closePDF()
   print("Created \(path.path)")

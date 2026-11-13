@@ -5,9 +5,9 @@ export const dentalTerms = Object.freeze({id:'dental_secretary', monthlyILS:1000
 
 export const dentalContent = {
   ru: {
-    language:'Русский', name:'Свой секретарь для стоматолога', title:'Свой секретарь для стоматолога в Израиле | Edelstein Lab Digital',
+    language:'Русский', name:'Свой секретарь для стоматолога', title:'Свой секретарь для стоматолога в Израиле | Eydelstein Digital Lab',
     description:'AI-секретарь, CRM или календарь, сайт и продвижение для частной стоматологии. 1 000 ₪/месяц, 100 минут включены; сверх пакета 0,30 ₪/мин. Без НДС, если применим.',
-    eyebrow:'Edelstein Lab Digital · Частная стоматология · Израиль',
+    eyebrow:'Eydelstein Digital Lab · Частная стоматология · Израиль',
     lead:'Вы лечите пациентов. Мы помогаем организовать обращения, запись и цифровое присутствие вашей клиники.',
     intro:'Голосовой AI-секретарь для организационных вопросов, CRM и регулярное продвижение в одном пакете. Это цифровой помощник, а не сотрудник-человек и не медицинский консультант.',
     period:'в месяц · 100 минут входящих разговоров включены',
@@ -34,9 +34,9 @@ export const dentalContent = {
     cta:'Обсудить пакет', pdf:'Каталог пакета · PDF', allPlans:'Все тарифы', contactTitle:'Покажем помощника на задаче вашей клиники', contactIntro:'Напишите название клиники, город, желаемый язык и систему записи. Не присылайте данные пациентов, диагнозы, снимки, документы или пароли.', placeholder:'Например: частная клиника в Хайфе, иврит и русский, Google Calendar; нужна запись на консультацию.', field:'Задача клиники', send:'Продолжить в WhatsApp', email:'Подготовить email', privacy:'Форма только подготавливает черновик. Отправляете его вы; данные в форме не хранятся.', invalid:'Кратко опишите задачу клиники.', prepared:'Черновик подготовлен.', message:'Здравствуйте! Интересует пакет «Свой секретарь для стоматолога».', taskLabel:'Задача', planLabel:'Тариф', disclaimer:'Административный сервис, не медицинская консультация.'
   },
   he: {
-    language:'עברית', name:'המזכיר האישי לרופא השיניים', title:'מזכיר קולי AI למרפאת שיניים בישראל | Edelstein Lab Digital',
+    language:'עברית', name:'המזכיר האישי לרופא השיניים', title:'מזכיר קולי AI למרפאת שיניים בישראל | Eydelstein Digital Lab',
     description:'מזכיר קולי AI, CRM או יומן, אתר ונוכחות דיגיטלית למרפאת שיניים פרטית. 1,000 ₪ לחודש כולל 100 דקות; מעבר לכך 0.30 ₪ לדקה. לפני מע״מ, ככל שחל.',
-    eyebrow:'Edelstein Lab Digital · מרפאות שיניים פרטיות · ישראל', lead:'אתם מטפלים במטופלים. אנחנו עוזרים לארגן פניות, תורים ונוכחות דיגיטלית.',
+    eyebrow:'Eydelstein Digital Lab · מרפאות שיניים פרטיות · ישראל', lead:'אתם מטפלים במטופלים. אנחנו עוזרים לארגן פניות, תורים ונוכחות דיגיטלית.',
     intro:'מזכיר קולי מבוסס AI לשאלות מנהליות, CRM וקידום שוטף בחבילה אחת. זהו עוזר דיגיטלי, לא מזכיר אנושי ולא יועץ רפואי.', period:'לחודש · 100 דקות שיחות נכנסות כלולות',
     billing:'מעבר ל-100 דקות: 18 ₪ לשעת שיחה בפועל, כלומר 0.30 ₪ לדקה. המחיר לפני מע״מ; מע״מ יתווסף ככל שחל.',
     launch:'ההקמה, האתר, הגדרת CRM בסיסית וכרטיסי העסק במפות כלולים ללא דמי הקמה נפרדים. ההיקף ולוח הזמנים מסוכמים בכתב לפני תחילת העבודה.',
@@ -59,9 +59,9 @@ export const dentalContent = {
     cta:'לבדיקת התאמה', pdf:'קטלוג החבילה · PDF', allPlans:'כל המסלולים', contactTitle:'נדגים על תהליך של המרפאה שלכם', contactIntro:'כתבו שם מרפאה, עיר, שפה ומערכת תורים. אין לשלוח פרטי מטופלים, אבחנות, צילומים, מסמכים או סיסמאות.', placeholder:'למשל: מרפאה פרטית בחיפה, עברית ורוסית, Google Calendar; דרוש תיאום תורי ייעוץ.', field:'הצורך של המרפאה', send:'להמשך ב-WhatsApp', email:'להכנת דוא״ל', privacy:'הטופס מכין טיוטה בלבד. אתם שולחים אותה; המידע אינו נשמר בטופס.', invalid:'תארו בקצרה את הצורך של המרפאה.', prepared:'הטיוטה מוכנה.', message:'שלום! מעניינת אותי חבילת המזכיר האישי לרופא השיניים.', taskLabel:'הצורך', planLabel:'מסלול', disclaimer:'שירות מנהלי, לא ייעוץ רפואי.'
   },
   en: {
-    language:'English', name:'My Dental Receptionist', title:'AI receptionist for dental clinics in Israel | Edelstein Lab Digital',
+    language:'English', name:'My Dental Receptionist', title:'AI receptionist for dental clinics in Israel | Eydelstein Digital Lab',
     description:'AI receptionist, CRM or calendar, website and digital presence for private dental clinics. ILS 1,000/month includes 100 minutes; excess ILS 0.30/min. VAT extra where applicable.',
-    eyebrow:'Edelstein Lab Digital · Private dental clinics · Israel', lead:'You care for patients. We help organise enquiries, appointments and your clinic’s digital presence.',
+    eyebrow:'Eydelstein Digital Lab · Private dental clinics · Israel', lead:'You care for patients. We help organise enquiries, appointments and your clinic’s digital presence.',
     intro:'A voice AI receptionist for administrative questions, CRM and ongoing promotion in one package. This is a digital assistant, not a human employee or a medical adviser.', period:'per month · 100 incoming call minutes included',
     billing:'After 100 minutes: ILS 18 per actual call-hour, equivalent to ILS 0.30/min. Prices exclude VAT; VAT is added where applicable.', launch:'Launch, the agreed website, basic CRM setup and map profiles are included without a separate setup fee. Scope and delivery dates are agreed in writing before work starts.',
     shortItems:['Voice AI receptionist and appointments in CRM or a supported calendar','Clinic website, SEO and AI-search discoverability work','Google Maps and Yandex Maps profiles and verification assistance','One weekly content set for Instagram, Facebook, LinkedIn, X and YouTube','Review responses and requests for genuine feedback'],

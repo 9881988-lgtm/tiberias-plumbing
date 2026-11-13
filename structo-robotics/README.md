@@ -1,6 +1,6 @@
-# Edelstein Digital Lab website
+# Eydelstein Digital Lab website
 
-Static multilingual website for Edelstein Digital Lab.
+Static multilingual website for Eydelstein Digital Lab.
 
 Languages:
 - Hebrew

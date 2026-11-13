@@ -1,4 +1,4 @@
-# Edelstein Lab Digital
+# Eydelstein Digital Lab
 
 The existing GitHub Pages site, redesigned on 2026-10-27. No framework or runtime build is required to serve it.
 
@@ -62,7 +62,7 @@ Before publishing, validate JavaScript syntax, JSON-LD, local assets and links; 
 
 ## Public company identity (10 November 2026)
 
-The owner confirmed the public company name **Edelstein Lab Digital**. Galany CRM remains the product name; Golani CRM remains the label in the existing test-interface image. The agency's page URLs, business contacts, prices, and existing parent-company reference are unchanged. A typographic E mark is used for the company. The former social-preview screenshot is not used as the agency's sharing image because it contains the old name. Historical artwork prompts above retain their original wording.
+The owner confirmed the public company name **Eydelstein Digital Lab**. Galany CRM remains the product name; Golani CRM remains the label in the existing test-interface image. The agency's page URLs, business contacts, prices, and existing parent-company reference are unchanged. A typographic E mark is used for the company. The former social-preview screenshot is not used as the agency's sharing image because it contains the old name. Historical artwork prompts above retain their original wording.
 
 ## Dental subscription (10 November 2026)
 

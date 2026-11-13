@@ -2,10 +2,10 @@ import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
 
 const translations = {
   he: {
-    pageTitle: "נציג מכירות AI, CRM ומוקד עסקי | Edelstein Lab Digital",
+    pageTitle: "נציג מכירות AI, CRM ומוקד עסקי | Eydelstein Digital Lab",
     pageDescription: "פתרון מכירות ושירות משולב: נציג AI מבוסס OpenAI, מוקד טלפוני, Golani CRM ומחלקת מכירות בתהליך אחד. מתחילים בפיילוט של קו אחד.",
     navOutcomes: "תוצאות", navIntegrations: "אינטגרציות", navPilot: "פיילוט", navDeck: "מצגת", headerCta: "בדיקת התאמה",
-    heroKicker: "Edelstein Lab Digital · AI, CRM ומכירות", heroTitle: "נציג מכירות AI, CRM ומוקד בתהליך אחד", heroLead: "אנו מטמיעים נציג מכירות מבוסס OpenAI, מחברים את Golani CRM ומארגנים תהליך למוקד ולמחלקת המכירות. השיחות, הלקוחות, העסקאות ומשימות ההמשך נשמרים במערכת אחת.", heroPilot: "התחילו בפיילוט של קו אחד", heroDeck: "למצגת המלאה",
+    heroKicker: "Eydelstein Digital Lab · AI, CRM ומכירות", heroTitle: "נציג מכירות AI, CRM ומוקד בתהליך אחד", heroLead: "אנו מטמיעים נציג מכירות מבוסס OpenAI, מחברים את Golani CRM ומארגנים תהליך למוקד ולמחלקת המכירות. השיחות, הלקוחות, העסקאות ומשימות ההמשך נשמרים במערכת אחת.", heroPilot: "התחילו בפיילוט של קו אחד", heroDeck: "למצגת המלאה",
     factLanguages: "שפות שירות אפשריות", factPrice: "לשעת שיחה בפועל, בתוספת המנוי במסלולי Light ו-Booking", factPilot: "קו ראשון לפיילוט מבוקר",
     signal1: "תשובות מבוססות על נתוני העסק", signal2: "פעולות רק בהרשאות שהוגדרו", signal3: "העברה אנושית כשנדרש שיקול דעת",
     salesStackKicker: "הפתרון המשולב", salesStackTitle: "מוקד, CRM ומחלקת מכירות על תהליך אחד", salesStackLead: "הלקוח מדבר עם נציג AI, ההקשר נשמר ב-Golani CRM והשלב הבא עובר לאדם הנכון במחלקת המכירות.", salesStack1Title: "נציג מכירות AI", salesStack1Text: "מבין צורך, עובד עם קטלוג מאושר, עונה על שאלות ומוביל לצעד הבא.", salesStack2Title: "Golani CRM", salesStack2Text: "שומר לקוחות, שיחות, עסקאות, סטטוסים ומשימות לחזרה.", salesStack3Title: "מחלקת מכירות", salesStack3Text: "מקבלת לידים מתועדים, ממשיכה טיפול ועוקבת אחרי תוצאה.",
@@ -23,10 +23,10 @@ const translations = {
     deckFrameTitle: "מצגת CRM ותוכניות שירות"
   },
   en: {
-    pageTitle: "AI Sales Agent, CRM and Contact Center | Edelstein Lab Digital",
+    pageTitle: "AI Sales Agent, CRM and Contact Center | Eydelstein Digital Lab",
     pageDescription: "One sales and service workflow with an OpenAI sales agent, contact center, Golani CRM and a managed sales process. Start with a one-line pilot.",
     navOutcomes: "Outcomes", navIntegrations: "Integrations", navPilot: "Pilot", navDeck: "Deck", headerCta: "Check fit",
-    heroKicker: "Edelstein Lab Digital · AI, CRM and sales", heroTitle: "An AI sales agent, CRM and contact center in one workflow", heroLead: "We deploy an OpenAI sales agent, connect Golani CRM and structure the workflow for the contact center and sales department. Conversations, customers, deals and follow-up tasks stay in one system.", heroPilot: "Start with a one-line pilot", heroDeck: "View the full deck",
+    heroKicker: "Eydelstein Digital Lab · AI, CRM and sales", heroTitle: "An AI sales agent, CRM and contact center in one workflow", heroLead: "We deploy an OpenAI sales agent, connect Golani CRM and structure the workflow for the contact center and sales department. Conversations, customers, deals and follow-up tasks stay in one system.", heroPilot: "Start with a one-line pilot", heroDeck: "View the full deck",
     factLanguages: "possible service languages", factPrice: "per actual call-hour, in addition to Light / Booking", factPilot: "first line for a controlled pilot",
     signal1: "Answers grounded in business data", signal2: "Actions limited to approved permissions", signal3: "Human escalation when judgment is required",
     salesStackKicker: "Integrated solution", salesStackTitle: "Contact center, CRM and sales on one workflow", salesStackLead: "The customer speaks with the AI agent, Golani CRM preserves the context, and the next step goes to the right person in the sales department.", salesStack1Title: "AI sales agent", salesStack1Text: "Clarifies the need, uses an approved catalog, answers questions and moves the lead to the next step.", salesStack2Title: "Golani CRM", salesStack2Text: "Stores customers, conversations, deals, statuses and follow-up tasks.", salesStack3Title: "Sales department", salesStack3Text: "Receives documented leads, continues the conversation and tracks the result.",
@@ -44,10 +44,10 @@ const translations = {
     deckFrameTitle: "CRM and service plans presentation"
   },
   ru: {
-    pageTitle: "AI-продавец, CRM и колл-центр | Edelstein Lab Digital",
+    pageTitle: "AI-продавец, CRM и колл-центр | Eydelstein Digital Lab",
     pageDescription: "Единое решение для продаж и сервиса: AI-продавец на базе OpenAI, колл-центр, Golani CRM и отдел продаж. Начните с пилота на одной линии.",
     navOutcomes: "Результат", navIntegrations: "Интеграции", navPilot: "Пилот", navDeck: "Презентация", headerCta: "Проверить проект",
-    heroKicker: "Edelstein Lab Digital · AI, CRM и продажи", heroTitle: "AI-продавец, CRM и колл-центр в одном процессе", heroLead: "Мы внедряем AI-продавца на базе OpenAI, подключаем Golani CRM и выстраиваем работу колл-центра и отдела продаж. Разговоры, клиенты, сделки и задачи на повторный контакт остаются в одной системе.", heroPilot: "Начать с пилота на одной линии", heroDeck: "Открыть презентацию",
+    heroKicker: "Eydelstein Digital Lab · AI, CRM и продажи", heroTitle: "AI-продавец, CRM и колл-центр в одном процессе", heroLead: "Мы внедряем AI-продавца на базе OpenAI, подключаем Golani CRM и выстраиваем работу колл-центра и отдела продаж. Разговоры, клиенты, сделки и задачи на повторный контакт остаются в одной системе.", heroPilot: "Начать с пилота на одной линии", heroDeck: "Открыть презентацию",
     factLanguages: "возможных языка обслуживания", factPrice: "за час разговоров, дополнительно к Light / Booking", factPilot: "первая линия для контролируемого пилота",
     signal1: "Ответы опираются на данные бизнеса", signal2: "Действия только в заданных правах", signal3: "Передача человеку там, где нужно решение",
     salesStackKicker: "Единое решение", salesStackTitle: "Колл-центр, CRM и отдел продаж в одном процессе", salesStackLead: "Клиент говорит с AI-продавцом, Golani CRM сохраняет контекст, а следующий шаг получает нужный сотрудник отдела продаж.", salesStack1Title: "AI-продавец", salesStack1Text: "Выявляет потребность, работает с согласованным каталогом, отвечает на вопросы и ведёт к следующему шагу.", salesStack2Title: "Golani CRM", salesStack2Text: "Хранит клиентов, разговоры, сделки, статусы и задачи на повторный контакт.", salesStack3Title: "Отдел продаж", salesStack3Text: "Получает оформленные лиды, продолжает работу и отслеживает результат.",
@@ -65,10 +65,10 @@ const translations = {
     deckFrameTitle: "Презентация CRM и тарифов"
   },
   fr: {
-    pageTitle: "Agent commercial IA, CRM et centre d’appels | Edelstein Lab Digital",
+    pageTitle: "Agent commercial IA, CRM et centre d’appels | Eydelstein Digital Lab",
     pageDescription: "Une solution de vente et de service avec un agent commercial OpenAI, le centre d’appels, Golani CRM et le processus de l’équipe commerciale.",
     navOutcomes: "Résultats", navIntegrations: "Intégrations", navPilot: "Pilote", navDeck: "Présentation", headerCta: "Évaluer le projet",
-    heroKicker: "Edelstein Lab Digital · IA, CRM et ventes", heroTitle: "Agent commercial IA, CRM et centre d’appels dans un même processus", heroLead: "Nous déployons un agent commercial OpenAI, connectons Golani CRM et structurons le travail du centre d’appels et de l’équipe commerciale. Les conversations, clients, affaires et suivis restent dans un même système.", heroPilot: "Commencer avec une ligne pilote", heroDeck: "Voir la présentation",
+    heroKicker: "Eydelstein Digital Lab · IA, CRM et ventes", heroTitle: "Agent commercial IA, CRM et centre d’appels dans un même processus", heroLead: "Nous déployons un agent commercial OpenAI, connectons Golani CRM et structurons le travail du centre d’appels et de l’équipe commerciale. Les conversations, clients, affaires et suivis restent dans un même système.", heroPilot: "Commencer avec une ligne pilote", heroDeck: "Voir la présentation",
     factLanguages: "langues de service possibles", factPrice: "par heure de conversation, en plus de Light / Booking", factPilot: "première ligne pour un pilote contrôlé",
     signal1: "Réponses fondées sur les données métier", signal2: "Actions limitées aux autorisations", signal3: "Transfert humain lorsqu’un jugement est requis",
     salesStackKicker: "Solution intégrée", salesStackTitle: "Centre d’appels, CRM et ventes dans un même processus", salesStackLead: "Le client parle à l’agent IA, Golani CRM conserve le contexte et la prochaine étape est attribuée à la bonne personne de l’équipe commerciale.", salesStack1Title: "Agent commercial IA", salesStack1Text: "Clarifie le besoin, utilise le catalogue approuvé, répond aux questions et prépare l’étape suivante.", salesStack2Title: "Golani CRM", salesStack2Text: "Conserve les clients, conversations, affaires, statuts et tâches de suivi.", salesStack3Title: "Équipe commerciale", salesStack3Text: "Reçoit des prospects documentés, poursuit l’échange et suit le résultat.",
