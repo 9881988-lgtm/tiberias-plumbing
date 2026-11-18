@@ -55,8 +55,6 @@ test('product identity, privacy boundaries and existing connections are retained
   const software = read('source/software-content.mjs');
   assert.match(software, /Production customer telephony is at pilot stage/);
   assert.match(software, /self-service checkout is not available/);
-  assert.match(software, /Booking is ILS 3,000\/month/);
-  assert.match(software, /Light is ILS 2,000\/month/);
 });
 
 test('build sources preserve the approved identity for future builds', () => {
@@ -69,15 +67,12 @@ test('build sources preserve the approved identity for future builds', () => {
   assert.ok(!read('source/build.mjs').includes('assets/social-preview.jpg'));
 });
 
-test('industry pages and their catalogues use the same brand', () => {
+test('industry pages use the same brand', () => {
   for (const product of ['auto-secretary', 'dental-secretary']) {
     for (const lang of ['', 'en/', 'ru/']) {
       const path = `${product}/${lang}index.html`;
       assert.ok(read(path).includes(brand), path);
       assert.doesNotMatch(read(path), /Edelstein (?:Lab Digital|Digital Lab)/, path);
     }
-    const catalog = read(`${product}/catalog.json`);
-    assert.ok(catalog.includes(brand));
-    assert.doesNotMatch(catalog, /Edelstein (?:Lab Digital|Digital Lab)/);
   }
 });

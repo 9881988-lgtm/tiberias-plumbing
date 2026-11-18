@@ -17,11 +17,11 @@ The existing GitHub Pages site, redesigned on 2026-10-27. No framework or runtim
 
 The cloud CRM is operational; its text assistance and voice module are integrated. Customer telephony is still a pilot, not a live production promise. External channel activation, Booking/Airbnb and Calendar integrations require supported connections and acceptance testing. Public brand: Galany CRM. Existing application/interface name: Golani CRM. The screenshot is a previously verified test interface with fictional data, not customer data or proof of live platform sync.
 
-Published rates remain Light 2000 ILS/month and Booking 3000 ILS/month plus 18 ILS per actual call-hour. Business first-line pricing is 18 x 24 x calendar days including idle time; Business Plus extra lines use actual call minutes. All prices exclude VAT. No standalone duplicate Light fee or tax calculation is introduced.
+Public pricing, calculators and priced downloads have been withdrawn. Implementation and service terms are discussed in an individual proposal.
 
-`software.js` builds a demo/subscription-proposal draft in WhatsApp or email; it does not collect leads in a backend, send messages, accept a contract or activate a subscription. Campaign source fields are allowlisted and are included in a visitor-approved draft. A draft event is not a signup or purchase. No new analytics account, advertising campaign or paid integration is configured. The browser calculator is an estimate, not an invoice.
+`software.js` builds a demo/subscription-proposal draft in WhatsApp or email; it does not collect leads in a backend, send messages, accept a contract or activate a subscription. Campaign source fields are allowlisted and are included in a visitor-approved draft. A draft event is not a signup or purchase. No new analytics account, advertising campaign or paid integration is configured.
 
-SEO includes unique titles/descriptions, crawlable visible content, WebPage/CollectionPage, SoftwareApplication, offers with VAT exclusion, breadcrumbs and visible FAQ data. No fabricated ratings or review counts. This does not guarantee rich results, indexing or rankings. Search Console sitemap submission and URL inspection require authorized access and are separate from publication.
+SEO includes unique titles/descriptions, crawlable visible content, WebPage/CollectionPage, SoftwareApplication, breadcrumbs and visible FAQ data. No fabricated ratings or review counts. This does not guarantee rich results, indexing or rankings. Search Console sitemap submission and URL inspection require authorized access and are separate from publication.
 
 ### Contact routing
 
@@ -29,7 +29,7 @@ Calls on the public site use the owner-confirmed CRM number `+972 55 507 1400` (
 
 ## Facts and scope
 
-The portfolio identifies ReceiptIL as the published product, the local-service website as an in-house project, and the AI contact centre as a pilot proposal. It makes no claims about 123 live apps, unnamed client results, awards, or accounting certification. The existing project prices, phone, email, address and hours are retained. The expired DIGITAL100 promotion is removed.
+The portfolio identifies ReceiptIL as the published product, the local-service website as an in-house project, and the AI contact centre as a pilot proposal. It makes no claims about 123 live apps, unnamed client results, awards, or accounting certification. Phone, email, address and hours are retained. Project pricing is quoted privately. The expired DIGITAL100 promotion is removed.
 
 Project briefs are assembled in the browser and passed to a WhatsApp or email link; the visitor still sends the message. There is no form backend, local storage or automatic submission. Existing Google tag configuration is retained; enquiry events contain categories, not project text.
 
@@ -58,20 +58,24 @@ Final generation prompt:
 
 ## Validation
 
-Before publishing, validate JavaScript syntax, JSON-LD, local assets and links; test desktop and narrow mobile layouts for all four languages, RTL, menu, service accordions, package-to-brief selection, empty-brief validation and generated contact links. Do not send live test enquiries.
+Before publishing, validate JavaScript syntax, JSON-LD, local assets and links; test desktop and narrow mobile layouts for all four languages, RTL, menu, service accordions, service-to-brief selection, empty-brief validation and generated contact links. Do not send live test enquiries.
 
 ## Public company identity (10 November 2026)
 
-The owner confirmed the public company name **Eydelstein Digital Lab**. Galany CRM remains the product name; Golani CRM remains the label in the existing test-interface image. The agency's page URLs, business contacts, prices, and existing parent-company reference are unchanged. A typographic E mark is used for the company. The former social-preview screenshot is not used as the agency's sharing image because it contains the old name. Historical artwork prompts above retain their original wording.
+The owner confirmed the public company name **Eydelstein Digital Lab**. Galany CRM remains the product name; Golani CRM remains the label in the existing test-interface image. The agency's page URLs, business contacts and existing parent-company reference are unchanged. A typographic E mark is used for the company. The former social-preview screenshot is not used as the agency's sharing image because it contains the old name. Historical artwork prompts above retain their original wording.
 
 ## Dental subscription (10 November 2026)
 
-`../dental-plan.mjs` is the approved shared pricing/copy source. `dental.mjs` builds Hebrew, Russian and English landing pages at `dental-secretary/`, with a public `catalog.json` and linked two-page PDF catalogues. The separate dental plan is ILS 1,000/month before applicable VAT, includes 100 incoming call minutes, and bills additional actual talk time at ILS 0.30/minute (ILS 18/hour). Setup is included; agreed external expenses are separate. One shared weekly content set is adapted for five platforms, including one short YouTube video. Existing generic receptionist and other plan terms remain separate.
+The dental service pages describe the approved package scope. Public pricing and the priced catalogues have been withdrawn.
 
 The service is administrative, not medical advice. Customer telephony remains a pilot requiring acceptance tests; calendar connectivity and patient-data handling require agreement before live use. No guaranteed patients, missed-call elimination, ratings, rankings or AI recommendations are promised. Reviews must be authentic and non-incentivised, without patient-identifying replies. Both sitemaps include the new pages. `dental.test.mjs` validates the approved terms and page/catalogue links.
 
 ## Auto workshop subscription (10 November 2026)
 
-`../auto-plan.mjs` defines the separate workshop package, with the same approved ILS 1,000/month before applicable VAT, 100 included incoming call minutes and ILS 0.30/minute excess rate. Setup is included, external costs are separately agreed, and one weekly content set covers five platforms. `auto.mjs` builds the three language pages and public catalogue at `auto-secretary/`. Existing dental and generic receptionist plans remain available.
+The workshop package has its own scope and a dedicated landing page in Hebrew, Russian and English.
 
-The assistant handles enquiries and service appointments only. Workshop staff confirm diagnosis, driving safety, final repair price, parts availability and completion time. Connections and call handling require a tested pilot. The catalogue includes four landscape PDF pages per language. Regenerate on macOS with `swift source/build-auto-catalog.swift auto-secretary/catalog.json <output-directory>` from the digital-agency directory. Updated general presentations retain the original 17 pages and append the four workshop pages, under new 2026-11-10 filenames. Old published PDFs are preserved. The presentation language selector now loads the current version instead of the older 2026-11-02 file.
+The workshop team confirms scope, diagnosis and safety. Customer call handling requires a tested pilot. Priced PDF versions are no longer served.
+
+## Innovation applications
+
+innovation.mjs builds four localized service pages and the home teasers. Consult the linked official Tnufa program page for current requirements. No grant or acceptance is guaranteed.

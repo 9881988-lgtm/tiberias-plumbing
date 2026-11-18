@@ -8,7 +8,7 @@
 - Сгенерированный hero-asset: `assets/solar-boiler-tiberias-hero.png`.
 - JSON-LD schema.org для `HomeAndConstructionBusiness`, `Plumber`, `WebSite`, `WebPage` и `FAQPage`.
 - Контакты и WhatsApp взяты из предыдущей воронки: `+972-53-361-31-00`.
-- Цена услуги: солнечный бойлер начинается от `2,200 ₪`; промокод `שמש2200` дает скидку `100 ₪`.
+Quotes are provided individually after reviewing the job.
 - Форма заявки собирает имя, телефон, адрес, район, тип запроса, выбранный слот, канал связи и комментарий.
 - Google Apps Script backend подготовлен в `google-apps-script/`: выдает слоты, создает событие календаря, отправляет email и может писать заявку в Google Sheet.
 
@@ -38,7 +38,7 @@
 В старой воронке был указан тот же путь для Google Business Profile: `https://business.google.com/`. Публичная ссылка на карточку в файлах не была сохранена, поэтому для этой услуги лучше обновить тот же существующий профиль `מים ושמש` в Google Business:
 
 - добавить услугу `דודי שמש` / `התקנת דוד שמש`;
-- поставить цену `החל מ-2,200 ₪`; добавить промокод `שמש2200` на скидку `100 ₪`;
+Quotes are provided individually after reviewing the job.
 - оставить телефон `+972-53-361-31-00`;
 - добавить ссылку на новый лендинг после публикации;
 - не создавать новый профиль, чтобы не потерять историю аккаунта.
@@ -48,8 +48,8 @@
 - דודי שמש בטבריה
 - התקנת דוד שמש בטבריה
 - מכירת דודי שמש בטבריה
-- דוד שמש מ-2,200 ₪
-- קוד שמש2200 100 ₪ הנחה
+Quotes are provided individually after reviewing the job.
+Quotes are provided individually after reviewing the job.
 - солнечный бойлер Тверия
 - установка солнечного бойлера Тверия
 - solar boiler installation Tiberias

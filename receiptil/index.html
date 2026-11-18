@@ -204,14 +204,6 @@
       background: linear-gradient(135deg, #071f42, #0866ff);
       box-shadow: var(--shadow);
     }
-    .price {
-      display: flex;
-      align-items: baseline;
-      gap: 10px;
-      margin: 16px 0 10px;
-    }
-    .price strong { font-size: 60px; line-height: 1; }
-    .price span { font-size: 22px; color: rgba(255,255,255,.78); }
     .warning {
       padding: 34px;
       border: 1px solid rgba(244, 182, 63, .5);
@@ -248,43 +240,6 @@
     }
     .tool-card strong { display: block; margin-bottom: 6px; font-size: 18px; line-height: 1.2; }
     .tool-card span { color: var(--muted); font-weight: 700; }
-    .calculator {
-      display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      gap: 22px;
-      padding: 30px;
-      border-top: 1px solid var(--line);
-      background: #f6f9ff;
-    }
-    .calculator label {
-      display: block;
-      margin-bottom: 14px;
-      color: #344256;
-      font-weight: 900;
-    }
-    .calculator input {
-      width: 100%;
-      min-height: 48px;
-      margin-top: 6px;
-      padding: 0 14px;
-      border: 1px solid rgba(8, 102, 255, .26);
-      border-radius: 10px;
-      color: var(--ink);
-      background: white;
-      font: inherit;
-      font-weight: 800;
-    }
-    .result-box {
-      display: grid;
-      gap: 12px;
-      align-content: center;
-      padding: 24px;
-      color: white;
-      border-radius: 16px;
-      background: linear-gradient(135deg, #071f42, #10a37f);
-    }
-    .result-box strong { font-size: clamp(34px, 5vw, 56px); line-height: 1; }
-    .result-box span { color: rgba(255,255,255,.78); font-size: 18px; font-weight: 800; }
     .guide {
       padding: 30px;
       border-top: 1px solid var(--line);
@@ -361,7 +316,7 @@
     .footer a { color: white; text-decoration: underline; text-underline-offset: 3px; }
     @media (max-width: 900px) {
       .nav { display: none; }
-      .hero, .split, .cta, .growth-panel__header, .calculator { grid-template-columns: 1fr; }
+      .hero, .split, .cta, .growth-panel__header { grid-template-columns: 1fr; }
       .phone-stage { min-height: auto; }
       .grid, .facts, .tool-grid { grid-template-columns: 1fr; }
       .section-head { display: block; }
@@ -370,7 +325,6 @@
       .hero { padding-top: 48px; }
       .phone-stage { grid-template-columns: 1fr; }
       .phone + .phone { display: none; }
-      .price strong { font-size: 48px; }
     }
   </style>
   <script type="application/ld+json">
@@ -380,11 +334,6 @@
       "name": "ReceiptIL",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "iOS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "ILS"
-      },
       "url": "https://9881988-lgtm.github.io/tiberias-plumbing/receiptil/",
       "downloadUrl": "https://apps.apple.com/il/app/receiptil/id6784747059",
       "description": "ReceiptIL is a supporting iPhone tool for preparing receipt forms, exporting PDFs, and tracking yearly totals. It is not registered accounting software and does not issue certified electronic documents."
@@ -399,7 +348,7 @@
     </a>
     <nav class="nav" aria-label="ניווט">
       <a href="#features">יכולות</a>
-      <a href="#price">מחיר</a>
+      <a href="#price">תנאי שימוש</a>
       <a href="#tools">כלים</a>
       <a href="#ru">Русский</a>
       <a href="./support.html">תמיכה</a>
@@ -411,17 +360,17 @@
       <div>
         <p class="eyebrow">כלי עזר למסמכים באייפון</p>
         <h1>הכנת טפסי קבלה ו-PDF באייפון</h1>
-        <p class="lead">ReceiptIL עוזרת להכין טופס קבלה, לייצא PDF, לשתף אותו ולעקוב אחרי סיכום שנתי בסיסי. הורדה בחינם, ושימוש מלא ב-₪18 בלבד - בערך $5 לתמיד.</p>
+        <p class="lead">ReceiptIL עוזרת להכין טופס קבלה, לייצא PDF, לשתף אותו ולעקוב אחרי סיכום שנתי בסיסי.</p>
         <div class="compliance-note" role="note">
           <strong>חשוב לפני שימוש עסקי</strong>
           ReceiptIL אינה תוכנת הנהלת חשבונות רשומה ואינה מפיקה מסמך אלקטרוני מאושר או חתום דיגיטלית. יש לבדוק עם רואה חשבון או יועץ מס אם וכיצד ניתן להשתמש בטופס מודפס וחתום ידנית בעסק שלכם.
         </div>
         <div class="hero-actions">
           <a class="button primary" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">להורדה ב-App Store</a>
-          <a class="button secondary" href="#price">לראות מחיר</a>
+          <a class="button secondary" href="#price">תנאי שימוש</a>
         </div>
         <div class="facts" aria-label="יתרונות">
-          <div class="fact"><strong>₪18 ≈ $5</strong><span>רכישה חד-פעמית לשימוש מלא</span></div>
+          <div class="fact"><strong>פרופיל עסק אחד</strong><span>הגדרת פרטי העסק באפליקציה</span></div>
           <div class="fact"><strong>PDF + WhatsApp</strong><span>שתפו טופס דרך iOS share sheet</span></div>
           <div class="fact"><strong>ללא חשבון</strong><span>המידע נשמר מקומית במכשיר</span></div>
         </div>
@@ -476,10 +425,9 @@
 
     <section id="price" class="section split">
       <div class="price-box">
-        <p class="eyebrow" style="color:#d8ecff">הצעה פשוטה</p>
+        <p class="eyebrow" style="color:#d8ecff">תנאי גישה</p>
         <h2>7 ימי ניסיון, ואז רכישה חד-פעמית</h2>
-        <div class="price"><strong>₪18</strong><span>בערך $5 לתמיד</span></div>
-        <p>ב-App Store האפליקציה מופיעה חינם להורדה. לאחר תקופת הניסיון, השימוש המלא נפתח מתוך האפליקציה ברכישה חד-פעמית של ₪18 בלבד, ללא מנוי חודשי.</p>
+        <p>לאחר תקופת הניסיון, השימוש המלא נפתח ברכישה חד-פעמית מתוך האפליקציה, ללא מנוי חודשי. פרטי הרכישה מופיעים ב-App Store.</p>
         <a class="button app-link" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">פתחו ב-App Store</a>
       </div>
       <div class="warning">
@@ -510,25 +458,11 @@
 
         <div class="tool-grid" aria-label="כלי צמיחה">
           <div class="tool-card"><strong>שאלה ראשונה</strong><span>האם העסק שלכם רשאי להשתמש בטופס מודפס וחתום ידנית?</span></div>
-          <div class="tool-card"><strong>מחיר ברור</strong><span>₪18 חד-פעמי עבור כלי העזר, ללא מנוי.</span></div>
+          <div class="tool-card"><strong>מעקב שנתי</strong><span>הצגת סיכום שנתי בסיסי לפי הנתונים שהזנתם.</span></div>
           <div class="tool-card"><strong>שיתוף טיוטה</strong><span>PDF שאפשר לשמור או להעביר לבדיקה בהתאם להנחיית רו״ח.</span></div>
           <div class="tool-card"><strong>בדיקה עם רו״ח</strong><span>כלי עזר בלבד, לא מערכת רשומה ולא ייעוץ מס.</span></div>
         </div>
 
-        <div class="calculator" aria-label="מחשבון חיסכון">
-          <div>
-            <h3>השוואת מחיר לכלי עזר אחר</h3>
-            <p>החישוב משווה מחיר בלבד לכלי מסמכים אחר. הוא אינו משווה יכולות משפטיות או חשבונאיות למערכת רשומה.</p>
-            <label for="monthlyCost">עלות חודשית של כלי עזר אחר, ₪
-              <input id="monthlyCost" type="number" min="0" step="1" value="35" inputmode="numeric">
-            </label>
-          </div>
-          <div class="result-box">
-            <span>פער מחיר משוער בשנה הראשונה</span>
-            <strong id="savingResult">₪402</strong>
-            <span>השוואת מחיר בלבד: 12 חודשים פחות ₪18. אין בכך קביעה של התאמה לעסק.</span>
-          </div>
-        </div>
 
         <div class="guide">
           <p class="eyebrow">שפרו לפני ההורדה</p>
@@ -583,7 +517,7 @@
     <section class="cta">
       <div>
         <h2>צריכים כלי פשוט להכנת טפסים?</h2>
-        <p>ReceiptIL מכינה טפסי קבלה ו-PDF לשימוש בהתאם להנחיית רואה החשבון שלכם: ₪18, בערך $5 לתמיד.</p>
+        <p>ReceiptIL מכינה טפסי קבלה ו-PDF לשימוש בהתאם להנחיית רואה החשבון שלכם.</p>
       </div>
       <a class="button app-link" href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">Download on App Store</a>
     </section>
@@ -591,7 +525,7 @@
     <section id="ru" class="section ru-block">
       <p class="eyebrow">Русская версия</p>
       <h2>ReceiptIL — инструмент для подготовки бланков и PDF</h2>
-      <p class="lead">Приложение помогает настроить данные одного бизнеса, подготовить бланк квитанции, сохранить PDF и посмотреть базовый годовой итог. ReceiptIL не является зарегистрированной бухгалтерской системой и не создаёт заверенный электронный документ. Полный доступ — разовая покупка ₪18.</p>
+      <p class="lead">Приложение помогает настроить данные одного бизнеса, подготовить бланк квитанции, сохранить PDF и посмотреть базовый годовой итог. ReceiptIL не является зарегистрированной бухгалтерской системой и не создаёт заверенный электронный документ.</p>
       <div class="compliance-note" role="note">
         <strong>До использования в бизнесе</strong>
         Уточните у израильского бухгалтера или налогового консультанта, допустим ли для вашего бизнеса распечатанный и подписанный вручную бланк и требуется ли зарегистрированная система.
@@ -603,7 +537,7 @@
         </article>
         <article class="card">
           <h3>Пробный старт</h3>
-          <p>Есть 7-дневный пробный период: можно проверить логику, а затем открыть полный доступ разовой покупкой ₪18, примерно $5.</p>
+          <p>После 7-дневного пробного периода полный доступ открывается разовой покупкой. Условия покупки указаны в App Store.</p>
         </article>
         <article class="card">
           <h3>Данные на телефоне</h3>
@@ -624,16 +558,6 @@
     <a href="https://apps.apple.com/il/app/receiptil/id6784747059" target="_blank" rel="noopener">App Store</a>
   </footer>
   <script>
-    const costInput = document.querySelector('#monthlyCost');
-    const savingResult = document.querySelector('#savingResult');
-    function updateSaving() {
-      const monthly = Math.max(0, Number(costInput.value) || 0);
-      const saving = Math.max(0, (monthly * 12) - 18);
-      savingResult.textContent = `₪${saving.toLocaleString('he-IL')}`;
-    }
-    costInput.addEventListener('input', updateSaving);
-    updateSaving();
-
     document.querySelectorAll('[data-guide]').forEach((button) => {
       button.addEventListener('click', () => {
         const guide = button.dataset.guide;

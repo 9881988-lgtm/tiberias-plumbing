@@ -4,6 +4,7 @@ import { dirname, resolve, join } from 'node:path';
 import { createRequire } from 'node:module';
 import { content } from './content.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
+import { buildInnovation, innovation, innovationUrls, renderInnovationTeaser } from './innovation.mjs';
 import { buildSoftware, renderSoftwareTeaser, softwarePath, softwareUrls } from './software.mjs';
 import { buildDental, dentalUrls, renderDentalTeaser } from './dental.mjs';
 import { buildAuto, autoUrls, renderAutoTeaser } from './auto.mjs';
@@ -12,7 +13,7 @@ const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261113-eydelstein';
+const version = '20261118-quote';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -23,8 +24,15 @@ function icon(name, extra = '') {
 const arrow = () => icon('ArrowUpRight', 'icon-direction');
 const pathFor = lang => lang === 'he' ? '' : `${lang}/`;
 const navIDs = ['work', 'services', 'process', 'contact'];
-const serviceValues = ['landing', 'website', 'app', 'ai', 'ads'];
-const budgets = ['estimate', 'small', 'medium', 'large'];
+const serviceValues = ['landing', 'website', 'app', 'ai', 'ads', 'innovation'];
+const hotelUrls = ['hotel-consulting/','hotel-consulting/ru/'].map(path=>rootURL+path);
+const hotelTeasers = {he:['ייעוץ תפעולי למלונות','הזמנות ישירות, ניהול תעריפים וקבלה קולית רב-לשונית במערכת אחת.','מה כלול בחבילה'],ru:['Консалтинг для отелей','Прямые брони, управление тарифами, многоязычный AI-ресепшн и работа команды в одной CRM.','Что входит в пакет']};
+function renderHotelTeaser(lang, rel) {
+  if (!hotelTeasers[lang]) return '';
+  const [title, text, cta] = hotelTeasers[lang];
+  const url = rel + 'hotel-consulting/' + (lang==='ru'?'ru/':'');
+  return '<section class="software-intro section" id="hotel-consulting"><div class="wrap"><h2>'+e(title)+'</h2><p class="software-summary">'+e(text)+'</p><a class="btn" href="'+url+'">'+e(cta)+'</a></div></section>';
+}
 function render(lang, t) {
   const rel = lang === 'he' ? './' : '../';
   const pageVersion = version;
@@ -32,12 +40,11 @@ function render(lang, t) {
   const canonical = rootURL + pathFor(lang);
   const schema = {
     '@context': 'https://schema.org', '@graph': [
-      {'@type':'ProfessionalService','@id':rootURL+'#organization',name:'Eydelstein Digital Lab',parentOrganization:{'@type':'Organization',name:'Structor Robotics'},url:rootURL,description:t.description,telephone:'+972-55-507-1400',email:'9881988@gmail.com',address:{'@type':'PostalAddress',streetAddress:'Gush Etzion 1',addressLocality:'Tiberias',addressCountry:'IL'},areaServed:['Israel','Worldwide'],availableLanguage:['Hebrew','English','Russian','French'],openingHours:['Su-Th 09:00-18:00'],image:rootURL+'assets/hero.webp',hasOfferCatalog:{'@type':'OfferCatalog',name:'Digital services',itemListElement:t.packages.map(p=>({'@type':'Offer',priceCurrency:'ILS',price:p[1].replace(',',''),itemOffered:{'@type':'Service',name:p[0]},description:p[2]}))}},
+      {'@type':'ProfessionalService','@id':rootURL+'#organization',name:'Eydelstein Digital Lab',parentOrganization:{'@type':'Organization',name:'Structor Robotics'},url:rootURL,description:t.description,telephone:'+972-55-507-1400',email:'9881988@gmail.com',address:{'@type':'PostalAddress',streetAddress:'Gush Etzion 1',addressLocality:'Tiberias',addressCountry:'IL'},areaServed:['Israel','Worldwide'],availableLanguage:['Hebrew','English','Russian','French'],openingHours:['Su-Th 09:00-18:00'],image:rootURL+'assets/hero.webp'},
       {'@type':'WebPage',url:canonical,name:t.title,inLanguage:lang,isPartOf:{'@type':'WebSite',url:rootURL,name:'Eydelstein Digital Lab'}},
       {'@type':'FAQPage',mainEntity:t.faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}
     ]
   };
-  if (crmPlans[lang]) schema['@graph'].push({'@type':'Service',name:'CRM / AI sales',provider:{'@id':rootURL+'#organization'},offers:crmPlans[lang].plans.map(p=>({'@type':'Offer',name:p.name,description:p.billing,priceSpecification:{'@type':'UnitPriceSpecification',price:p.price.replace(/[ ,]/g,''),priceCurrency:'ILS',valueAddedTaxIncluded:p.vatExcluded?false:p.price.replace(/[ ,]/g,'')==='1000'?undefined:false,description:p.period}}))});
   const productLang = lang === 'fr' ? 'en' : lang;
   const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>`;
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
@@ -66,7 +73,7 @@ function render(lang, t) {
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-18222920780');</script>
 </head>
-<body id="top" data-base="${rel}" data-message-prefix="${e(t.sentPrefix)}" data-message-service="${e(t.messageService)}" data-message-budget="${e(t.messageBudget)}" data-message-brief="${e(t.messageBrief)}" data-invalid="${e(t.invalid)}">
+<body id="top" data-base="${rel}" data-message-prefix="${e(t.sentPrefix)}" data-message-service="${e(t.messageService)}" data-message-brief="${e(t.messageBrief)}" data-invalid="${e(t.invalid)}">
 <a class="skip" href="#main">${e(t.skip)}</a>
 <header class="site-header"><div class="wrap header-inner">
   <a class="wordmark" href="#top" aria-label="Eydelstein Digital Lab"><img src="${rel}assets/edelstein-lab-digital-mark.svg" alt="" width="37" height="37"><span>Eydelstein<small>Digital Lab</small></span></a>
@@ -82,6 +89,8 @@ function render(lang, t) {
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
   ${renderSoftwareTeaser(lang,rel)}
   ${renderDentalTeaser(lang)}
+  ${renderInnovationTeaser(lang,rel)}
+  ${renderHotelTeaser(lang,rel)}
   ${renderAutoTeaser(lang)}
   <section class="section intro"><div class="wrap intro-layout"><p class="eyebrow">${e(t.introLabel)}</p><div class="intro-main"><h2 class="preline">${e(t.introTitle)}</h2><div class="intro-copy"><p>${e(t.introText)}</p><a class="text-link" href="#services">${e(t.introLink)}${arrow()}</a></div></div></div></section>
   <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(t.workTitle)}</h2></div><p>${e(t.workIntro)}</p></div>
@@ -91,7 +100,7 @@ function render(lang, t) {
     </div>
     <div class="project-grid">
       <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}</div></article>
-      <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}assets/mayim-website.webp" alt="${e(t.projects[1].title)}" width="1440" height="1040" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}</div></article>
+      <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}../ac-cleaning/assets/ac-cleaning-tiberias-hero.jpg" alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}</div></article>
       <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a></div></article>
     </div>
   </div></section>
@@ -99,10 +108,9 @@ function render(lang, t) {
   <section class="ai-section"><div class="wrap ai-layout"><div><p class="eyebrow">${e(t.aiLabel)}</p><h2 class="preline">${e(t.aiTitle)}</h2></div><div><p>${e(t.aiText)}</p><a class="btn btn-light" href="${rel + softwarePath('crm',productLang)}">${e(t.aiLink)}${arrow()}</a><small class="ai-note">${e(t.aiNote)}</small></div></div></section>
   <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(t.processTitle)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
   ${renderCrmPlans(lang)}
-  <section class="section pricing" id="pricing"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.pricingLabel)}</p><h2 class="preline">${e(t.pricingTitle)}</h2></div><p>${e(t.pricingIntro)}</p></div><div class="pricing-grid">${t.packages.map(([title,price,text,id],i)=>`<article class="package"><h3>${e(title)}</h3><p class="package-price"><small>${e(t.from)}</small><strong>₪${price}</strong>${i===3?`<span>${e(t.monthly)}</span>`:''}</p><p>${e(text)}</p><button type="button" data-service-choice="${id}">${e(t.choose)}${arrow()}</button></article>`).join('')}</div><p class="price-note">${e(t.priceNote)}</p></div></section>
   <section class="section faq"><div class="wrap faq-layout"><div><p class="eyebrow">${e(t.faqLabel)}</p><h2>${e(t.faqTitle)}</h2></div><div class="faq-list">${t.faqs.map(([q,a])=>`<details><summary>${e(q)}${icon('Plus')}</summary><p>${e(a)}</p></details>`).join('')}</div></div></section>
   <section class="contact" id="contact"><div class="wrap contact-layout"><div><p class="eyebrow">${e(t.contactLabel)}</p><h2 class="preline">${e(t.contactTitle)}</h2><p class="contact-lead">${e(t.contactText)}</p><a class="contact-phone" dir="ltr" href="tel:+972555071400">+972 55 507 1400</a><a class="contact-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a><a class="contact-email contact-whatsapp" href="https://wa.me/972533613100" dir="ltr">WhatsApp: +972 53 361 3100</a><address class="address"><span>${e(t.location)}</span><span>${e(t.hours).replace('09:00–18:00','<bdi dir="ltr">09:00–18:00</bdi>')}</span><span>${e(t.appointment)}</span></address></div>
-    <form class="brief-form" id="project-brief"><div class="form-row"><div class="field"><label for="service">${e(t.service)}</label><select name="service" id="service">${t.serviceOptions.map((title,i)=>`<option value="${serviceValues[i]}">${e(title)}</option>`).join('')}</select></div><div class="field"><label for="budget">${e(t.budget)}</label><select id="budget" name="budget">${t.budgets.map((title,i)=>`<option value="${budgets[i]}">${e(title)}</option>`).join('')}</select></div></div><div class="field"><label for="brief">${e(t.brief)}</label><textarea name="brief" id="brief" maxlength="1500" placeholder="${e(t.placeholder)}" required aria-describedby="brief-error form-privacy"></textarea></div><p id="brief-error" role="status" aria-live="polite"></p><a class="btn btn-light" id="continue-whatsapp" href="https://wa.me/972533613100" target="_blank" rel="noopener">${e(t.send)}${arrow()}</a><p class="form-privacy" id="form-privacy">${e(t.privacy)}</p><p class="mail-option">${e(t.mail)} <a id="brief-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a></p></form>
+    <form class="brief-form" id="project-brief"><div class="form-row"><div class="field"><label for="service">${e(t.service)}</label><select name="service" id="service">${[...t.serviceOptions,innovation[lang].label].map((title,i)=>`<option value="${serviceValues[i]}">${e(title)}</option>`).join('')}</select></div></div><div class="field"><label for="brief">${e(t.brief)}</label><textarea name="brief" id="brief" maxlength="1500" placeholder="${e(t.placeholder)}" required aria-describedby="brief-error form-privacy"></textarea></div><p id="brief-error" role="status" aria-live="polite"></p><a class="btn btn-light" id="continue-whatsapp" href="https://wa.me/972533613100" target="_blank" rel="noopener">${e(t.send)}${arrow()}</a><p class="form-privacy" id="form-privacy">${e(t.privacy)}</p><p class="mail-option">${e(t.mail)} <a id="brief-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a></p></form>
   </div></section>
 </main>
 <footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Eydelstein Digital Lab.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Eydelstein Digital Lab</span><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
@@ -135,6 +143,7 @@ for (const name of ['styles.css','script.js']) {
 await buildSoftware(target);
 await buildDental(target);
 await buildAuto(target);
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-11-10</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}${[...softwareUrls,...dentalUrls,...autoUrls].map(url=>`<url><loc>${url}</loc><lastmod>2026-11-10</lastmod></url>`).join('')}</urlset>`;
+await buildInnovation(target);
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-11-18</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}${[...softwareUrls,...dentalUrls,...autoUrls,...innovationUrls,...hotelUrls].map(url=>`<url><loc>${url}</loc><lastmod>2026-11-18</lastmod></url>`).join('')}</urlset>`;
 await writeFile(join(target,'sitemap.xml'),sitemap);
 console.log(`Built ${Object.keys(content).length} localised Eydelstein Digital Lab pages in ${target}`);

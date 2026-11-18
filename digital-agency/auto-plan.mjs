@@ -1,17 +1,15 @@
 export const autoRoot = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
 export const autoPath = lang => `auto-secretary/${lang === 'he' ? '' : lang + '/'}`;
-export const autoPdf = lang => `auto-secretary/catalog/Auto_Secretary_${lang.toUpperCase()}_2026-11-10.pdf`;
-export const autoTerms = Object.freeze({id:'auto_secretary', monthlyILS:1000, includedMinutes:100, excessMinuteILS:0.30, excessHourILS:18, pricesIncludeVAT:false, setupFeeILS:0, weeklyContentSets:1, channels:['Instagram','Facebook','LinkedIn','X','YouTube'], customerTelephony:'pilot', bookingRequiresAcceptanceTest:true});
 
 export const autoContent = {
  ru: {
   language:'Русский', name:'Свой секретарь для автосервиса', title:'Свой секретарь для автосервиса в Израиле | Eydelstein Digital Lab',
-  description:'Голосовой AI-секретарь, CRM или календарь, сайт и продвижение автосервиса. 1 000 ₪/месяц с 100 минутами. Далее 0,30 ₪/мин. НДС добавляется, если применим.',
+  description:"Голосовой AI-секретарь, CRM или календарь, сайт и продвижение автосервиса.",
   eyebrow:'Eydelstein Digital Lab · Автосервисы · Израиль',
   lead:'Вы обслуживаете автомобили. Мы помогаем принимать обращения, записывать клиентов и продвигать ваш автосервис.',
   intro:'Голосовой AI-секретарь отвечает по утверждённой информации и помогает с записью на обслуживание и ремонт. CRM, сайт и регулярное продвижение входят в пакет. Сложные вопросы получает ваш сотрудник.',
   period:'в месяц · 100 минут входящих разговоров включены',
-  billing:'Сверх 100 минут: 18 ₪ за час фактического разговора, то есть 0,30 ₪/мин. Цена без НДС; НДС добавляется, если применим.',
+  billing:"Состав работ и условия согласуем в индивидуальном предложении.",
   launch:'Запуск, согласованный сайт, базовая настройка CRM и карточек на картах включены без отдельной платы за запуск. Объём и сроки фиксируем письменно.',
   shortItems:['Голосовой AI-секретарь и запись на обслуживание в CRM или поддерживаемый календарь','Сайт автосервиса, SEO и подготовка к поиску в AI-сервисах','Google Карты и Яндекс Карты: оформление и помощь с подтверждением','Один комплект контента в неделю для Instagram, Facebook, LinkedIn, X и YouTube','Ответы на отзывы и запросы честной обратной связи'],
   servicesTitle:'Что входит в подписку',
@@ -24,13 +22,13 @@ export const autoContent = {
    ['SEO и доступность для AI-поиска','Улучшаем структуру сайта, метаданные, описания услуг, FAQ и согласованность информации об автосервисе. Помогаем поисковым и AI-сервисам находить и понимать страницы. Индексация и рекомендации ChatGPT/Gemini не гарантируются.'],
    ['Корректная работа с отзывами','Отслеживаем доступные отзывы, готовим ответы и помогаем запрашивать честную обратную связь у реальных клиентов без вознаграждений и отбора только довольных. Не публикуем личные данные клиента и сведения об автомобиле без разрешения.']
   ],
-  costTitle:'Понятная стоимость', example:'Пример: 160 минут разговоров за месяц = 1 000 + (160 - 100) × 0,30 = 1 018 ₪ до применимого НДС и согласованных внешних расходов.',
+  costTitle:'Понятная стоимость', example:"Состав работ и условия согласуем в индивидуальном предложении.",
   external:'Домен, хостинг, рекламный бюджет, платная телефония и сторонние подписки, если нужны, согласуются и оплачиваются отдельно. Платная реклама не входит в абонентскую плату. Работы сверх согласованного объёма выполняем только после одобрения сметы.',
   safetyTitle:'Контролируемый запуск и границы сервиса',
   safety:'Клиентская телефония находится на этапе пилота. Перед запуском проверяем язык, номер, маршрутизацию и передачу сотруднику. CRM или календарь подключаем и тестируем отдельно. Согласуем доступы, минимальный набор данных и сроки хранения. Ассистент не диагностирует неисправности и не подтверждает безопасность автомобиля. Диагноз, окончательную цену, наличие деталей и сроки ремонта подтверждает автосервис. При опасной ситуации направляем к сотруднику или соответствующей экстренной службе.',
   promise:'Цель пакета - меньше отвлечений и более организованная работа с обращениями. Не обещаем отсутствие всех пропущенных звонков, гарантированное число заказов, рост рейтинга или позиции в поиске.',
   processTitle:'Как подключиться', process:[['Проверка задачи','Обсуждаем услуги, марки, часы, языки и систему записи. Для демонстрации используем вымышленные данные.'],['Письменный объём','Фиксируем сайт, подключения, контент, сроки, внешние расходы и условия подписки и отмены.'],['Настройка и приёмка','Проверяем сценарий звонка, свободные интервалы, вместимость сервиса и передачу сотруднику.'],['Работа и контент','После согласованного запуска принимаем разрешённые обращения и выпускаем еженедельный комплект контента.']],
-  faqTitle:'Перед подключением', faqs:[['Это живой секретарь?','Нет. Это голосовой AI-секретарь, настроенный под ваш автосервис. Порядок передачи сложных вопросов и доступность ответственного сотрудника согласуем отдельно.'],['Что происходит после 100 минут?','Подписка включает 100 минут входящих разговоров в месяц. Превышение оплачивается по фактической длительности: 18 ₪/час, то есть 0,30 ₪/мин.'],['Есть отдельная плата за запуск?','Нет. Согласованный сайт, базовая настройка CRM и карточек на картах входят в пакет. Внешние расходы и работы сверх объёма оплачиваются отдельно после согласования.'],['Сколько публикаций входит?','Один комплект в неделю: одна тема для Instagram, Facebook, LinkedIn и X плюс одно короткое видео YouTube. Это не пять независимых контент-кампаний.'],['Можно ли записывать клиентов в нашу систему?','Проверяем поддерживаемое подключение CRM или календаря и разрешения автосервиса. До проверки не обещаем совместимость с любой системой или актуальный статус ремонта.'],['Может ли AI назвать полную стоимость ремонта?','Только утверждённые расценки и условия. Окончательную смету, диагностику, безопасность, детали и срок готовности подтверждает сотрудник автосервиса. Продажи, рейтинги и рекомендации AI не гарантируем.']],
+  faqTitle:'Перед подключением', faqs:[['Это живой секретарь?','Нет. Это голосовой AI-секретарь, настроенный под ваш автосервис. Порядок передачи сложных вопросов и доступность ответственного сотрудника согласуем отдельно.'],['Что происходит после 100 минут?',"Состав работ и условия согласуем в индивидуальном предложении."],['Есть отдельная плата за запуск?','Нет. Согласованный сайт, базовая настройка CRM и карточек на картах входят в пакет. Внешние расходы и работы сверх объёма оплачиваются отдельно после согласования.'],['Сколько публикаций входит?','Один комплект в неделю: одна тема для Instagram, Facebook, LinkedIn и X плюс одно короткое видео YouTube. Это не пять независимых контент-кампаний.'],['Можно ли записывать клиентов в нашу систему?','Проверяем поддерживаемое подключение CRM или календаря и разрешения автосервиса. До проверки не обещаем совместимость с любой системой или актуальный статус ремонта.'],['Может ли AI назвать полную стоимость ремонта?','Только утверждённые расценки и условия. Окончательную смету, диагностику, безопасность, детали и срок готовности подтверждает сотрудник автосервиса. Продажи, рейтинги и рекомендации AI не гарантируем.']],
   cta:'Обсудить пакет', pdf:'Каталог и презентация · PDF', allPlans:'Все тарифы', contactTitle:'Покажем помощника на задаче вашего автосервиса',
   contactIntro:'Напишите название автосервиса, город, языки и систему записи. Для первого обращения не присылайте данные клиентов, номера автомобилей, документы или пароли.',
   placeholder:'Например: автосервис в Хайфе, иврит и русский, Google Calendar; нужна запись на плановое ТО.',
@@ -38,11 +36,11 @@ export const autoContent = {
  },
  he: {
   language:'עברית', name:'המזכיר האישי למוסך', title:'מזכיר קולי AI למוסכים בישראל | Eydelstein Digital Lab',
-  description:'מזכיר קולי AI, CRM או יומן, אתר וקידום למוסך. 1,000 ₪ לחודש עם 100 דקות. מעבר לכך 0.30 ₪ לדקה. לפני מע״מ ככל שחל.',
+  description:"מזכיר קולי AI, CRM או יומן, אתר וקידום למוסך.",
   eyebrow:'Eydelstein Digital Lab · מוסכים · ישראל', lead:'אתם מטפלים ברכבים. אנחנו עוזרים לקבל פניות, לתאם תורים ולקדם את המוסך.',
   intro:'מזכיר קולי AI משיב לפי מידע שאישרתם ומסייע לתאם טיפולים ותיקונים. החבילה כוללת CRM, אתר וקידום שוטף. שאלות מורכבות עוברות לצוות שלכם.',
   period:'לחודש · 100 דקות שיחות נכנסות כלולות',
-  billing:'מעבר ל-100 דקות: 18 ₪ לשעת שיחה בפועל, כלומר 0.30 ₪ לדקה. המחיר לפני מע״מ; מע״מ יתווסף ככל שחל.',
+  billing:"ההיקף ותנאי השירות נקבעים בהצעה אישית.",
   launch:'ההקמה, האתר המוסכם, הגדרת CRM בסיסית וכרטיסי העסק במפות כלולים ללא דמי הקמה נפרדים. ההיקף ולוח הזמנים מסוכמים בכתב.',
   shortItems:['מזכיר קולי AI ותיאום טיפולים ב-CRM או ביומן נתמך','אתר למוסך, SEO והכנה לחיפוש בשירותי AI','Google Maps ו-Yandex Maps: הקמה וסיוע באימות','ערכת תוכן אחת בשבוע ל-Instagram, Facebook, LinkedIn, X ו-YouTube','מענה לביקורות ובקשת משוב אמיתי'],
   servicesTitle:'מה כלול במנוי',
@@ -55,13 +53,13 @@ export const autoContent = {
    ['SEO ונגישות לחיפוש AI','משפרים מבנה אתר, מטא-דאטה, תיאורי שירותים, שאלות נפוצות ועקביות פרטי העסק. מסייעים לשירותי חיפוש ו-AI למצוא ולהבין את העמודים. אין הבטחה לאינדוקס או להמלצות ChatGPT/Gemini.'],
    ['טיפול אחראי בביקורות','עוקבים אחר ביקורות זמינות, מכינים תשובות ומסייעים לבקש משוב אמיתי מלקוחות ללא תמריצים וללא בחירה רק במרוצים. לא מפרסמים פרטים אישיים או פרטי רכב ללא רשות.']
   ],
-  costTitle:'עלות ברורה מראש', example:'דוגמה: 160 דקות שיחה בחודש עולות 1,018 ₪ לפני מע״מ ככל שחל והוצאות חיצוניות שסוכמו. 60 הדקות הנוספות מחויבות ב-18 ₪ בסך הכול.',
+  costTitle:'עלות ברורה מראש', example:"ההיקף ותנאי השירות נקבעים בהצעה אישית.",
   external:'דומיין, אחסון, תקציב פרסום, טלפוניה בתשלום ומנויי צד שלישי, ככל שנדרשים, מסוכמים ומשולמים בנפרד. פרסום ממומן אינו כלול במנוי. עבודה מעבר להיקף המוסכם דורשת אישור הצעת מחיר.',
   safetyTitle:'הפעלה מבוקרת וגבולות השירות',
   safety:'הטלפוניה ללקוחות נמצאת בפיילוט. לפני ההפעלה בודקים שפה, מספר, ניתוב והעברה לצוות. מחברים ובודקים CRM או יומן בנפרד. מסכמים הרשאות, צמצום מידע ותקופות שמירה. העוזר אינו מאבחן תקלות ואינו מאשר שהרכב בטוח לנסיעה. המוסך מאשר אבחון, מחיר סופי, זמינות חלפים ומועד סיום. במצב מסוכן מפנים לאיש צוות או לשירות חירום מתאים.',
   promise:'מטרת החבילה היא פחות הפרעות וטיפול מסודר יותר בפניות. אין הבטחה לאפס שיחות שלא נענו, למספר הזמנות, לעלייה בדירוג או למיקום בחיפוש.',
   processTitle:'איך מתחילים', process:[['בדיקת הצורך','מסכמים שירותים, יצרני רכב, שעות, שפות ומערכת תורים. בהדגמה משתמשים בנתונים בדויים.'],['היקף בכתב','מגדירים אתר, חיבורים, תוכן, מועדים, הוצאות חיצוניות ותנאי מנוי וביטול.'],['הגדרה ובדיקת קבלה','בודקים תסריט שיחה, שעות פנויות, קיבולת המוסך והעברה לאיש צוות.'],['עבודה ותוכן','לאחר הפעלה מוסכמת מטפלים בפניות המורשות ומפיקים ערכת תוכן שבועית.']],
-  faqTitle:'שאלות לפני ההצטרפות', faqs:[['האם זה מזכיר אנושי?','לא. זהו מזכיר קולי AI המוגדר למוסך. מסכמים בנפרד העברת שאלות מורכבות וזמינות איש צוות אחראי.'],['מה קורה אחרי 100 דקות?','המנוי כולל 100 דקות שיחות נכנסות בחודש. זמן נוסף מחויב לפי משך השיחה בפועל: 18 ₪ לשעה, כלומר 0.30 ₪ לדקה.'],['יש דמי הקמה?','לא. האתר המוסכם, הגדרת CRM בסיסית וכרטיסי המפות כלולים. הוצאות חיצוניות ועבודה נוספת מחויבות בנפרד לאחר הסכמה.'],['כמה תוכן כלול?','ערכה אחת בשבוע: נושא אחד ל-Instagram, Facebook, LinkedIn ו-X וסרטון קצר אחד ל-YouTube. לא חמש תוכניות תוכן נפרדות.'],['אפשר לתאם במערכת שלנו?','בודקים חיבור נתמך ל-CRM או ליומן והרשאות המוסך. אין הבטחה לתאימות לכל מערכת או למצב תיקון עדכני לפני בדיקה.'],['האם AI יכול למסור מחיר תיקון סופי?','הוא מוסר רק מחירים ותנאים שאושרו. איש צוות מאשר הצעת מחיר סופית, אבחון, בטיחות, חלפים ומועד סיום. אין הבטחה למכירות, דירוגים או המלצות AI.']],
+  faqTitle:'שאלות לפני ההצטרפות', faqs:[['האם זה מזכיר אנושי?','לא. זהו מזכיר קולי AI המוגדר למוסך. מסכמים בנפרד העברת שאלות מורכבות וזמינות איש צוות אחראי.'],['מה קורה אחרי 100 דקות?',"ההיקף ותנאי השירות נקבעים בהצעה אישית."],['יש דמי הקמה?','לא. האתר המוסכם, הגדרת CRM בסיסית וכרטיסי המפות כלולים. הוצאות חיצוניות ועבודה נוספת מחויבות בנפרד לאחר הסכמה.'],['כמה תוכן כלול?','ערכה אחת בשבוע: נושא אחד ל-Instagram, Facebook, LinkedIn ו-X וסרטון קצר אחד ל-YouTube. לא חמש תוכניות תוכן נפרדות.'],['אפשר לתאם במערכת שלנו?','בודקים חיבור נתמך ל-CRM או ליומן והרשאות המוסך. אין הבטחה לתאימות לכל מערכת או למצב תיקון עדכני לפני בדיקה.'],['האם AI יכול למסור מחיר תיקון סופי?','הוא מוסר רק מחירים ותנאים שאושרו. איש צוות מאשר הצעת מחיר סופית, אבחון, בטיחות, חלפים ומועד סיום. אין הבטחה למכירות, דירוגים או המלצות AI.']],
   cta:'לבדיקת התאמה', pdf:'קטלוג ומצגת · PDF', allPlans:'כל המסלולים', contactTitle:'נדגים על תהליך של המוסך שלכם',
   contactIntro:'כתבו שם מוסך, עיר, שפות ומערכת תורים. בפנייה הראשונה אין לשלוח פרטי לקוחות, מספרי רכב, מסמכים או סיסמאות.',
   placeholder:'למשל: מוסך בחיפה, עברית ורוסית, Google Calendar; דרוש תיאום טיפול תקופתי.',
@@ -69,11 +67,11 @@ export const autoContent = {
  },
  en: {
   language:'English', name:'My Auto Service Receptionist', title:'AI receptionist for auto repair shops in Israel | Eydelstein Digital Lab',
-  description:'Voice AI receptionist, CRM or calendar, website and promotion for auto repair shops. ILS 1,000/month with 100 minutes. Excess ILS 0.30/min. VAT extra where applicable.',
+  description:"Voice AI receptionist, CRM or calendar, website and promotion for auto repair shops.",
   eyebrow:'Eydelstein Digital Lab · Auto repair shops · Israel', lead:'You service the vehicles. We help handle enquiries, book customers and promote your workshop.',
   intro:'A voice AI receptionist answers using approved information and helps book servicing and repairs. CRM, a website and ongoing promotion are included. Your team handles complex questions.',
   period:'per month · 100 incoming call minutes included',
-  billing:'After 100 minutes: ILS 18 per actual call-hour, equivalent to ILS 0.30/min. Prices exclude VAT; VAT is added where applicable.',
+  billing:"The scope and service terms are set out in a tailored proposal.",
   launch:'Launch, the agreed website, basic CRM setup and map profiles are included without a separate setup fee. We agree scope and dates in writing.',
   shortItems:['Voice AI receptionist and service appointments in CRM or a supported calendar','Workshop website, SEO and AI-search discoverability work','Google Maps and Yandex Maps profiles and verification assistance','One weekly content set for Instagram, Facebook, LinkedIn, X and YouTube','Review responses and requests for genuine feedback'],
   servicesTitle:'Included in the subscription',
@@ -86,13 +84,13 @@ export const autoContent = {
    ['SEO and AI-search discoverability','Improve site structure, metadata, service descriptions, FAQs and consistent business information. Help search and AI services find and understand the pages. Indexing and ChatGPT/Gemini recommendations are not guaranteed.'],
    ['Responsible review management','Monitor available reviews, prepare replies and help request genuine feedback from real customers without incentives or selecting only happy customers. Do not publish personal or vehicle details without permission.']
   ],
-  costTitle:'Clear monthly pricing', example:'Example: 160 call minutes in a month = 1,000 + (160 - 100) × 0.30 = ILS 1,018 before applicable VAT and agreed external costs.',
+  costTitle:'Clear monthly pricing', example:"The scope and service terms are set out in a tailored proposal.",
   external:'Domain, hosting, ad spend, paid telephony and third-party subscriptions, where needed, are agreed and paid separately. Paid advertising is not included in the subscription. Work beyond the agreed scope requires approval of a separate quote.',
   safetyTitle:'Controlled launch and service boundaries',
   safety:'Customer telephony is at pilot stage. Test language, number, routing and human handoff before launch. Connect and test CRM or calendar access separately. Agree permissions, data minimisation and retention. The assistant does not diagnose faults or confirm that a vehicle is safe to drive. Your workshop confirms the diagnosis, final price, parts availability and completion time. Dangerous situations go to your team or an appropriate emergency service.',
   promise:'The aim is fewer interruptions and more organised enquiry handling. We do not promise zero missed calls, a guaranteed number of jobs, higher ratings or search positions.',
   processTitle:'How to start', process:[['Check the workflow','Agree services, vehicle makes, hours, languages and scheduling system. Use fictional data for the demo.'],['Written scope','Agree website, connections, content, dates, external costs and subscription/cancellation terms.'],['Configure and accept','Test the call script, available slots, workshop capacity and human handoff.'],['Operate and publish','After agreed activation, handle authorised enquiries and produce the weekly content set.']],
-  faqTitle:'Before you subscribe', faqs:[['Is this a human receptionist?','No. It is a voice AI receptionist configured for your workshop. Agree escalation and availability of your responsible team member separately.'],['What happens after 100 minutes?','The monthly fee includes 100 incoming call minutes. Excess actual call duration costs ILS 18/hour, equivalent to ILS 0.30/minute.'],['Is there a setup fee?','No separate setup fee for the agreed website, basic CRM configuration and map profiles. External costs and out-of-scope work require separate agreement.'],['How much weekly content is included?','One shared topic adapted for Instagram, Facebook, LinkedIn and X, plus one short YouTube video. Not five independent content campaigns.'],['Can you book in our system?','We check the supported CRM/calendar connection and workshop permissions. Compatibility with every system or live repair status is not promised before testing.'],['Can AI quote the final repair price?','It shares approved prices and conditions only. Your team confirms the final quote, diagnosis, safety, parts and completion time. Sales, ratings and AI recommendations are not guaranteed.']],
+  faqTitle:'Before you subscribe', faqs:[['Is this a human receptionist?','No. It is a voice AI receptionist configured for your workshop. Agree escalation and availability of your responsible team member separately.'],['What happens after 100 minutes?',"The scope and service terms are set out in a tailored proposal."],['Is there a setup fee?','No separate setup fee for the agreed website, basic CRM configuration and map profiles. External costs and out-of-scope work require separate agreement.'],['How much weekly content is included?','One shared topic adapted for Instagram, Facebook, LinkedIn and X, plus one short YouTube video. Not five independent content campaigns.'],['Can you book in our system?','We check the supported CRM/calendar connection and workshop permissions. Compatibility with every system or live repair status is not promised before testing.'],['Can AI quote the final repair price?','It shares approved prices and conditions only. Your team confirms the final quote, diagnosis, safety, parts and completion time. Sales, ratings and AI recommendations are not guaranteed.']],
   cta:'Discuss the package', pdf:'Catalogue and presentation · PDF', allPlans:'All plans', contactTitle:'See the assistant on your workshop workflow',
   contactIntro:'Share the workshop name, city, languages and scheduling system. Do not include customer details, vehicle registrations, documents or passwords in the first enquiry.',
   placeholder:'For example: workshop in Haifa, Hebrew and Russian, Google Calendar; routine service bookings.',
@@ -100,5 +98,5 @@ export const autoContent = {
  }
 };
 
-export const autoPlans = Object.fromEntries(Object.entries(autoContent).map(([lang,t]) => [lang,{id:'auto_secretary', name:t.name, price:lang==='ru'?'1 000':'1,000', period:t.period, billing:t.billing, items:t.shortItems, vatExcluded:true, details:autoRoot+autoPath(lang), pdf:autoRoot+autoPdf(lang)}]));
+export const autoPlans = Object.fromEntries(Object.entries(autoContent).map(([lang,t]) => [lang,{id:'auto_secretary', name:t.name, period:t.period, billing:t.billing, items:t.shortItems, vatExcluded:true, details:autoRoot+autoPath(lang)}]));
 

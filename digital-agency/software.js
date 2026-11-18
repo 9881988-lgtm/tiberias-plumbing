@@ -34,32 +34,5 @@
     if (email) window.location.assign(url);
     else window.open(url,'_blank','noopener,noreferrer');
   });
-  const costPlan = document.querySelector('#cost-plan');
-  const minutes = document.querySelector('#cost-minutes');
-  const days = document.querySelector('#cost-days');
-  function estimate() {
-    const enterprise = ['Business','Business Plus'].includes(costPlan.value);
-    const extra = costPlan.value === 'Business Plus';
-    const minuteLabel = document.querySelector('#cost-minute-text');
-    document.querySelector('#cost-days-label').hidden = !enterprise;
-    document.querySelector('#cost-minutes-label').hidden = enterprise && !extra;
-    minuteLabel.textContent = extra ? minuteLabel.dataset.extra : minuteLabel.dataset.normal;
-    const count = enterprise && !extra ? 0 : Number(minutes.value);
-    if ((!enterprise || extra) && (minutes.value === '' || !Number.isFinite(count) || count < 0 || count > 1000000 || !Number.isInteger(count))) {
-      document.querySelector('#cost-total').textContent = '—';
-      return;
-    }
-    const bundledSecretary = ['dental_secretary','auto_secretary'].includes(costPlan.value);
-    const uncertainReceptionist = ['Свой секретарь','המזכירה שלי','My Receptionist'].includes(costPlan.value);
-    if (uncertainReceptionist) {
-      document.querySelector('#cost-total').textContent = language==='he'?'לפי הצעה':language==='ru'?'По предложению':'Quote required';
-      return;
-    }
-    const total = bundledSecretary ? 1000+Math.max(0,count-100)*.30 : enterprise ? 18*24*Number(days.value)+(extra?count*.30:0) : (costPlan.value==='Booking'?3000:2000)+count*.30;
-    document.querySelector('#cost-total').textContent = `${new Intl.NumberFormat(language==='he'?'he-IL':language==='ru'?'ru-RU':'en-US',{maximumFractionDigits:2}).format(total)} ₪`;
-  }
-  if (costPlan) {
-    [costPlan,minutes,days].forEach(control=>control.addEventListener('input',estimate));
-    estimate();
-  }
+
 })();

@@ -7,8 +7,8 @@ const CONFIG = {
   SHEET_NAME: "AC cleaning leads",
   SERVICE_NAME_HE: "ניקוי וחיטוי יחידה פנימית של מזגן",
   SERVICE_NAME_RU: "Мойка и дезинфекция внутреннего блока кондиционера",
-  PRICE_LABEL_HE: "בסיסי ללא פירוק 250 ₪ / עמוק + חיטוי מ-450 ₪ / יחידה שנייה מ-200 ₪",
-  PRICE_LABEL_RU: "базовая мойка 250 ₪ / глубокая + дезинфекция от 450 ₪ / второй блок от 200 ₪",
+  PRICE_LABEL_HE: "הצעת מחיר לפי פרטי העבודה",
+  PRICE_LABEL_RU: "Расчёт по деталям работы",
   BOOKING_HOURS: 3,
   WORKING_SCHEDULE: {
     0: { opens: "08:00", closes: "20:00" },

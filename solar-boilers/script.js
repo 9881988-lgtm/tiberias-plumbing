@@ -4,10 +4,10 @@ const SETTINGS = {
   whatsappNumber: "972533613100",
   phoneDisplay: "+972-55-507-1400",
   priceLabel: {
-    he: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
-    ru: "от 2,200 ₪ · код שמש2200: скидка 100 ₪",
-    en: "from 2,200 ₪ · code שמש2200: 100 ₪ discount",
-    fr: "à partir de 2 200 ₪ · code שמש2200 : remise de 100 ₪"
+    he: "הצעת מחיר לפי פרטי העבודה",
+    ru: "Расчёт по деталям работы",
+    en: "Quote based on the job",
+    fr: "Devis selon les travaux"
   },
   bookingHours: 3,
   slotDaysAhead: 21,
@@ -23,8 +23,8 @@ const SETTINGS = {
 
 const translations = {
   he: {
-    title: "דודי שמש מחדרה ועד הצפון | התקנה מ-2,200 ₪ | +972-55-507-1400",
-    description: "מכירה והתקנה של דודי שמש מחדרה וקיסריה דרך חיפה והקריות ועד טבריה, הגליל ועמק הירדן. מחיר החל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
+    title: "דודי שמש מחדרה ועד הצפון",
+    description: "מכירה והתקנת דודי שמש וקולטים מחדרה ועד הגליל, טבריה ועמק הירדן.",
     brandTitle: "מים ושמש",
     brandSubtitle: "דודי שמש",
     navService: "השירות",
@@ -36,7 +36,7 @@ const translations = {
     heroLead: "אספקה והתקנה של דודי שמש וקולטים, חיבורי מים ובדיקת מערכת מחדרה וקיסריה דרך חיפה והקריות ועד טבריה, הגליל ועמק הירדן.",
     bookButton: "לקבלת הצעת מחיר",
     bookButtonShort: "להצעת מחיר",
-    priceNote: "החל מ-2,200 ₪ · קוד שמש2200: 100 ₪ הנחה",
+    priceNote: "הצעת המחיר נקבעת לפי נפח הדוד, מצב הקולטים והצנרת והגישה לגג.",
     timeNote: "חלון עבודה 3 שעות",
     areaNote: "חדרה · קיסריה · חיפה והקריות · טבריה · הגליל",
     trustCleanTitle: "דוד וקולטים",
@@ -56,7 +56,7 @@ const translations = {
     featureDisinfectText: "בדיקת חיבורים, נזילות, ברזים וניקיון אזור העבודה לפני מסירת המערכת ללקוח.",
     leadEyebrow: "תיאום מהיר",
     leadTitle: "השאירו כתובת וטלפון, ונשריין חלון עבודה של 3 שעות",
-    leadText: "מחיר דוד שמש מתחיל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה. אחרי שליחת הפרטים נפתחת הודעת WhatsApp מוכנה להמשך תיאום.",
+    leadText: "שלחו תמונה, יישוב ותיאור קצר כדי שנוכל להכין הצעה מותאמת. הצעת המחיר נקבעת לפי נפח הדוד, מצב הקולטים והצנרת והגישה לגג.",
     leadHighlight1: "חלון עבודה 3 שעות",
     leadHighlight2: "WhatsApp או email",
     leadHighlight3: "א-ה 09:00-18:00",
@@ -80,8 +80,8 @@ const translations = {
     slotRequired: "בחרו תאריך ושעה פנויים.",
     submitButton: "שליחת בקשה",
     submitWorking: "שולח...",
-    successWithGoogle: "הבקשה נשלחה והמועד נשלח לשמירה ביומן. מחיר התחלתי מאושר: החל מ-2,200 ₪ לדוד שמש. קוד שמש2200 נותן 100 ₪ הנחה.",
-    successFallback: "הפרטים מוכנים לשליחה. מחיר התחלתי מאושר: החל מ-2,200 ₪ לדוד שמש. קוד שמש2200 נותן 100 ₪ הנחה.",
+    successWithGoogle: "הבקשה נשלחה ופרטי המועד הועברו ליומן. פרטי העבודה והמחיר יאושרו לאחר בדיקה.",
+    successFallback: "הפרטים מוכנים לשליחה. הצעת המחיר תימסר לאחר בדיקת הפרטים.",
     errorMessage: "לא הצלחנו לשלוח לשרת Google. אפשר לשלוח את הפרטים ב-WhatsApp.",
     emailRequired: "בחרת email, לכן צריך למלא כתובת email.",
     areaHadera: "חדרה",
@@ -109,15 +109,15 @@ const translations = {
     faq2Question: "כמה זמן מוקצה להזמנה?",
     faq2Answer: "לכל בקשה מוקצות 3 שעות עבודה ביומן, כולל זמן בדיקה, הגעה ותיאום המשך עבודה לפי תנאי הגג.",
     faq3Question: "האם המחיר קבוע?",
-    faq3Answer: "המחיר מתחיל מ-2,200 ₪ לדוד שמש. קוד שמש2200 נותן 100 ₪ הנחה. המחיר הסופי תלוי בנפח, קולטים, גישה לגג ומצב חיבורי המים.",
+    faq3Answer: "הצעת המחיר נקבעת לפי נפח הדוד, מצב הקולטים והצנרת והגישה לגג.",
     faq4Question: "אפשר לשלוח תמונה ב-WhatsApp?",
     faq4Answer: "כן. אחרי שליחת הטופס נפתחת הודעת WhatsApp מוכנה, ואפשר לצרף תמונה של הגג או הדוד הקיים.",
     footerTitle: "מים ושמש - דודי שמש",
     footerText: "מכירה והתקנה של דודי שמש מחדרה ועד צפון ישראל."
   },
   ru: {
-    title: "Солнечные бойлеры от Хадеры до севера Израиля | Установка от 2,200 ₪ | +972-55-507-1400",
-    description: "Продажа и установка солнечных бойлеров от Хадеры и Кейсарии через Хайфу и Крайот до Тверии, Галилеи и Иорданской долины. Цена от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
+    title: "Солнечные бойлеры от Хадеры до севера Израиля",
+    description: "Продажа и установка солнечных бойлеров и коллекторов от Хадеры до Галилеи, Тверии и Иорданской долины.",
     brandTitle: "Маим ве-Шемеш",
     brandSubtitle: "Солнечные бойлеры",
     navService: "Услуга",
@@ -129,7 +129,7 @@ const translations = {
     heroLead: "Поставка и установка солнечных бойлеров и коллекторов, подключение воды и проверка системы от Хадеры и Кейсарии через Хайфу и Крайот до Тверии, Галилеи и Иорданской долины.",
     bookButton: "Получить цену",
     bookButtonShort: "Цена",
-    priceNote: "от 2,200 ₪ · код שמש2200: скидка 100 ₪",
+    priceNote: "Предложение зависит от объёма бойлера, состояния коллекторов и труб и доступа к крыше.",
     timeNote: "3 часа рабочего времени",
     areaNote: "Хадера · Кейсария · Хайфа и Крайот · Тверия · Галилея",
     trustCleanTitle: "Бойлер и коллекторы",
@@ -149,7 +149,7 @@ const translations = {
     featureDisinfectText: "Проверка соединений, протечек, кранов и уборка рабочей зоны перед передачей системы клиенту.",
     leadEyebrow: "Быстрая заявка",
     leadTitle: "Оставьте адрес и телефон, а мы зарезервируем 3-часовой рабочий слот",
-    leadText: "Цена солнечного бойлера начинается от 2,200 ₪. Код שמש2200 дает скидку 100 ₪. После отправки откроется готовое сообщение WhatsApp для дальнейшего согласования.",
+    leadText: "Пришлите фото, населённый пункт и краткое описание для индивидуального расчёта. Предложение зависит от объёма бойлера, состояния коллекторов и труб и доступа к крыше.",
     leadHighlight1: "3-часовой слот",
     leadHighlight2: "WhatsApp или email",
     leadHighlight3: "Вс-Чт 09:00-18:00",
@@ -173,8 +173,8 @@ const translations = {
     slotRequired: "Выберите свободную дату и время.",
     submitButton: "Отправить заявку",
     submitWorking: "Отправляю...",
-    successWithGoogle: "Заявка отправлена, выбранный слот передан на бронирование в календарь. Стартовая цена подтверждена: от 2,200 ₪ за солнечный бойлер. Код שמש2200 дает скидку 100 ₪.",
-    successFallback: "Данные готовы к отправке. Стартовая цена подтверждена: от 2,200 ₪ за солнечный бойлер. Код שמש2200 дает скидку 100 ₪.",
+    successWithGoogle: "Заявка отправлена, данные о выбранном времени переданы в календарь. Объём и стоимость подтвердим после проверки.",
+    successFallback: "Данные готовы к отправке. Подготовим расчёт после проверки деталей.",
     errorMessage: "Не удалось отправить на сервер Google. Можно отправить данные в WhatsApp.",
     emailRequired: "Вы выбрали email, поэтому нужно заполнить адрес email.",
     areaHadera: "Хадера",
@@ -202,15 +202,15 @@ const translations = {
     faq2Question: "Сколько времени резервируется?",
     faq2Answer: "На каждую заявку выделяется 3 часа в календаре, включая проверку, выезд и согласование дальнейшей работы по условиям крыши.",
     faq3Question: "Цена фиксированная?",
-    faq3Answer: "Цена начинается от 2,200 ₪ за солнечный бойлер. Код שמש2200 дает скидку 100 ₪. Финальная цена зависит от объема, коллекторов, доступа на крышу и состояния водяных подключений.",
+    faq3Answer: "Предложение зависит от объёма бойлера, состояния коллекторов и труб и доступа к крыше.",
     faq4Question: "Можно отправить фото в WhatsApp?",
     faq4Answer: "Да. После формы откроется готовое сообщение WhatsApp, к нему можно прикрепить фото крыши или старого бойлера.",
     footerTitle: "Маим ве-Шемеш - солнечные бойлеры",
     footerText: "Продажа и установка солнечных бойлеров от Хадеры до всего севера Израиля."
   },
   en: {
-    title: "Solar boilers from Hadera across Northern Israel | From 2,200 ₪ | +972-55-507-1400",
-    description: "Solar boiler sale and installation from Hadera and Caesarea through Haifa and the Krayot to Tiberias, the Galilee and the Jordan Valley. Price from 2,200 ₪. Code שמש2200 gives 100 ₪ off.",
+    title: "Solar boilers from Hadera across Northern Israel",
+    description: "Solar water heater and collector sales and installation from Hadera through Galilee, Tiberias and the Jordan Valley.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Solar boilers",
     navService: "Service",
@@ -222,7 +222,7 @@ const translations = {
     heroLead: "Supply and installation of solar boilers and collectors, water connections and system checks from Hadera and Caesarea through Haifa and the Krayot to Tiberias, the Galilee and the Jordan Valley.",
     bookButton: "Get a quote",
     bookButtonShort: "Quote",
-    priceNote: "from 2,200 ₪ · code שמש2200: 100 ₪ discount",
+    priceNote: "The quote depends on tank capacity, collector and pipe condition, and roof access.",
     timeNote: "3-hour work window",
     areaNote: "Hadera · Caesarea · Haifa and Krayot · Tiberias · Galilee",
     trustCleanTitle: "Boiler and collectors",
@@ -242,7 +242,7 @@ const translations = {
     featureDisinfectText: "Checking connections, leaks, valves and cleaning the work area before handing the system to the customer.",
     leadEyebrow: "Fast booking",
     leadTitle: "Leave your address and phone number, and we will reserve a 3-hour work window",
-    leadText: "Solar boiler pricing starts from 2,200 ₪. Code שמש2200 gives 100 ₪ off. After sending the details, a prepared WhatsApp message opens for quick coordination.",
+    leadText: "Send a photo, town and a brief description so we can prepare a tailored quote. The quote depends on tank capacity, collector and pipe condition, and roof access.",
     leadHighlight1: "3-hour work window",
     leadHighlight2: "WhatsApp or email",
     leadHighlight3: "Sun-Thu 09:00-18:00",
@@ -266,8 +266,8 @@ const translations = {
     slotRequired: "Choose an available date and time.",
     submitButton: "Send request",
     submitWorking: "Sending...",
-    successWithGoogle: "Request sent and the selected slot was sent for calendar booking. Starting price confirmed: from 2,200 ₪ for a solar boiler. Code שמש2200 gives 100 ₪ off.",
-    successFallback: "The details are ready to send. Starting price confirmed: from 2,200 ₪ for a solar boiler. Code שמש2200 gives 100 ₪ off.",
+    successWithGoogle: "Request sent and the selected time passed to the calendar. We will confirm the scope and quote after review.",
+    successFallback: "Details are ready to send. We will provide a quote after reviewing them.",
     errorMessage: "Could not send to the Google server. You can send the details through WhatsApp.",
     emailRequired: "You chose email, so an email address is required.",
     areaHadera: "Hadera",
@@ -295,15 +295,15 @@ const translations = {
     faq2Question: "How much time is reserved?",
     faq2Answer: "Each request receives a 3-hour calendar slot, including inspection, arrival and further coordination according to roof conditions.",
     faq3Question: "Is the price fixed?",
-    faq3Answer: "The price starts from 2,200 ₪ for a solar boiler. Code שמש2200 gives 100 ₪ off. The final price depends on volume, collectors, roof access and the state of the water connections.",
+    faq3Answer: "The quote depends on tank capacity, collector and pipe condition, and roof access.",
     faq4Question: "Can I send a photo on WhatsApp?",
     faq4Answer: "Yes. After the form, a prepared WhatsApp message opens, and you can attach a photo of the roof or existing boiler.",
     footerTitle: "Mayim VeShemesh - solar boilers",
     footerText: "Solar boiler sale and installation from Hadera across Northern Israel."
   },
   fr: {
-    title: "Chauffe-eau solaires de Hadera au nord d'Israël | Dès 2 200 ₪ | +972-55-507-1400",
-    description: "Vente et installation de chauffe-eau solaires de Hadera et Césarée via Haïfa et les Krayot jusqu'à Tibériade, la Galilée et la vallée du Jourdain. Dès 2 200 ₪. Code שמש2200 : remise de 100 ₪.",
+    title: "Chauffe-eau solaires de Hadera au nord d'Israël",
+    description: "Vente et installation de chauffe-eau solaires et de capteurs, de Hadera à la Galilée, Tibériade et la vallée du Jourdain.",
     brandTitle: "Mayim VeShemesh",
     brandSubtitle: "Chauffe-eau solaires",
     navService: "Service",
@@ -315,7 +315,7 @@ const translations = {
     heroLead: "Fourniture et installation de chauffe-eau solaires et de capteurs, raccordements d'eau et contrôle du système de Hadera et Césarée via Haïfa et les Krayot jusqu'à Tibériade, la Galilée et la vallée du Jourdain.",
     bookButton: "Obtenir un devis",
     bookButtonShort: "Devis",
-    priceNote: "dès 2 200 ₪ · code שמש2200 : remise de 100 ₪",
+    priceNote: "Le devis dépend de la capacité du ballon, de l’état des capteurs et de la tuyauterie et de l’accès au toit.",
     timeNote: "Créneau de travail de 3 heures",
     areaNote: "Hadera · Césarée · Haïfa et Krayot · Tibériade · Galilée",
     trustCleanTitle: "Ballon et capteurs",
@@ -335,7 +335,7 @@ const translations = {
     featureDisinfectText: "Contrôle des raccords, fuites et vannes, puis nettoyage de la zone de travail avant la remise au client.",
     leadEyebrow: "Demande rapide",
     leadTitle: "Indiquez votre adresse et votre téléphone pour réserver un créneau de 3 heures",
-    leadText: "Le prix commence à 2 200 ₪. Le code שמש2200 donne 100 ₪ de remise. Après l'envoi, un message WhatsApp préparé s'ouvre pour finaliser les détails.",
+    leadText: "Envoyez une photo, la commune et une courte description pour un devis personnalisé. Le devis dépend de la capacité du ballon, de l’état des capteurs et de la tuyauterie et de l’accès au toit.",
     leadHighlight1: "Créneau de 3 heures",
     leadHighlight2: "WhatsApp ou email",
     leadHighlight3: "Dim-Jeu 09:00-18:00",
@@ -359,8 +359,8 @@ const translations = {
     slotRequired: "Choisissez une date et une heure disponibles.",
     submitButton: "Envoyer la demande",
     submitWorking: "Envoi...",
-    successWithGoogle: "Demande envoyée et créneau transmis au calendrier. Prix de départ confirmé : dès 2 200 ₪. Code שמש2200 : remise de 100 ₪.",
-    successFallback: "Les informations sont prêtes à être envoyées. Prix de départ : dès 2 200 ₪. Code שמש2200 : remise de 100 ₪.",
+    successWithGoogle: "Demande envoyée et créneau transmis au calendrier. Nous confirmerons le périmètre et le devis après vérification.",
+    successFallback: "Les informations sont prêtes à être envoyées. Nous établirons un devis après vérification.",
     errorMessage: "L'envoi au serveur Google a échoué. Vous pouvez envoyer les informations par WhatsApp.",
     emailRequired: "Vous avez choisi l'email ; veuillez saisir une adresse email.",
     areaHadera: "Hadera",
@@ -388,7 +388,7 @@ const translations = {
     faq2Question: "Combien de temps est réservé ?",
     faq2Answer: "Chaque demande reçoit un créneau de 3 heures comprenant l'inspection, le déplacement et la coordination selon les conditions du toit.",
     faq3Question: "Le prix est-il fixe ?",
-    faq3Answer: "Le prix commence à 2 200 ₪. Le code שמש2200 donne 100 ₪ de remise. Le prix final dépend du volume, des capteurs, de l'accès au toit et de l'état des raccordements d'eau.",
+    faq3Answer: "Le devis dépend de la capacité du ballon, de l’état des capteurs et de la tuyauterie et de l’accès au toit.",
     faq4Question: "Puis-je envoyer une photo sur WhatsApp ?",
     faq4Answer: "Oui. Un message WhatsApp préparé s'ouvre et vous pouvez joindre une photo du toit ou du chauffe-eau existant.",
     footerTitle: "Mayim VeShemesh - chauffe-eau solaires",
@@ -397,10 +397,10 @@ const translations = {
 };
 
 const whatsappMessages = {
-  he: "שלום, אני רוצה לקבל הצעת מחיר לדוד שמש מחדרה ועד הצפון. המחיר מתחיל מ-2,200 ₪. קוד שמש2200 נותן 100 ₪ הנחה.",
-  ru: "Здравствуйте, хочу получить цену на солнечный бойлер в зоне от Хадеры до севера Израиля. Цена начинается от 2,200 ₪. Код שמש2200 дает скидку 100 ₪.",
-  en: "Hello, I would like a quote for a solar boiler in the service area from Hadera across Northern Israel. The price starts from 2,200 ₪. Code שמש2200 gives 100 ₪ off.",
-  fr: "Bonjour, je souhaite obtenir un devis pour un chauffe-eau solaire dans la zone de Hadera au nord d'Israël. Le prix commence à 2 200 ₪. Le code שמש2200 donne 100 ₪ de remise."
+  he: "שלום, אשמח לקבל הצעה להתקנת דוד שמש.",
+  ru: "Здравствуйте! Хочу получить предложение на установку солнечного бойлера.",
+  en: "Hello! I would like a quote for solar water heater installation.",
+  fr: "Bonjour ! Je souhaite un devis pour la pose d’un chauffe-eau solaire."
 };
 
 const supportedLanguages = ["he", "ru", "en", "fr"];
@@ -744,7 +744,7 @@ const formatLeadMessage = (lead) => {
   if (currentLanguage === "he") {
     return [
       "בקשה להצעת מחיר לדוד שמש",
-      `מחיר התחלתי: ${lead.priceLabel}`,
+      `הצעת מחיר: ${lead.priceLabel}`,
       `שם: ${lead.name}`,
       `טלפון: ${lead.phone}`,
       lead.email ? `email: ${lead.email}` : "",
@@ -760,7 +760,7 @@ const formatLeadMessage = (lead) => {
   if (currentLanguage === "en") {
     return [
       "Solar boiler quote request",
-      `Starting price: ${lead.priceLabel}`,
+      `Quote: ${lead.priceLabel}`,
       `Name: ${lead.name}`,
       `Phone: ${lead.phone}`,
       lead.email ? `email: ${lead.email}` : "",
@@ -776,7 +776,7 @@ const formatLeadMessage = (lead) => {
   if (currentLanguage === "fr") {
     return [
       "Demande de devis pour un chauffe-eau solaire",
-      `Prix de départ : ${lead.priceLabel}`,
+      `Devis : ${lead.priceLabel}`,
       `Nom : ${lead.name}`,
       `Téléphone : ${lead.phone}`,
       lead.email ? `Email : ${lead.email}` : "",
@@ -791,7 +791,7 @@ const formatLeadMessage = (lead) => {
 
   return [
     "Заявка на расчет солнечного бойлера",
-    `Стартовая цена: ${lead.priceLabel}`,
+    `Расчёт: ${lead.priceLabel}`,
     `Имя: ${lead.name}`,
     `Телефон: ${lead.phone}`,
     lead.email ? `email: ${lead.email}` : "",

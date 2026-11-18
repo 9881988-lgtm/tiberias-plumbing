@@ -20,7 +20,7 @@ if (grid) {
       <p class="eyebrow">${kind}</p>
       <h2>${name}</h2>
       <p>${description}</p>
-      <span class="tag">7 days free · $4.99 lifetime</span>
+      <span class="tag">7-day trial · One-time purchase</span>
     `;
     grid.append(article);
   }

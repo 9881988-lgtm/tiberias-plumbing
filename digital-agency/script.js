@@ -45,13 +45,12 @@
 
   const form = document.querySelector('#project-brief');
   const service = form.elements.service;
-  const budget = form.elements.budget;
   const brief = form.elements.brief;
   const continueLink = document.querySelector('#continue-whatsapp');
   const emailLink = document.querySelector('#brief-email');
   const status = document.querySelector('#brief-error');
   function updateBrief() {
-    const message = [page.dataset.messagePrefix, '', `${page.dataset.messageService}: ${service.selectedOptions[0].text}`, `${page.dataset.messageBudget}: ${budget.selectedOptions[0].text}`, '', `${page.dataset.messageBrief}:`, brief.value.trim()].join('\n');
+    const message = [page.dataset.messagePrefix, '', `${page.dataset.messageService}: ${service.selectedOptions[0].text}`, '', `${page.dataset.messageBrief}:`, brief.value.trim()].join('\n');
     continueLink.href = `https://wa.me/972533613100?text=${encodeURIComponent(message)}`;
     emailLink.href = `mailto:9881988@gmail.com?subject=${encodeURIComponent(`Eydelstein Digital Lab · ${service.selectedOptions[0].text}`)}&body=${encodeURIComponent(message)}`;
     status.textContent = '';

@@ -39,21 +39,34 @@ function summaryFor(description) {
   return summary.join("\n\n") || paragraphs[0] || "";
 }
 
+function withoutPrices(description) {
+  return description
+    .replace(/^(Monthly|Annual): \$\d[\d.,]*\s*$/gm, '$1 subscription')
+    .replace(/\b(one(?:-time)?) (?:US )?\$\d[\d.,]* (?=(?:App Store )?purchase)/gi, '$1 ')
+    .replace(/\$\d[\d.,]*-per-month /g, '')
+    .replace(/\$\d[\d.,]* (?=LIFETIME\b)/g, '')
+    .replace(/(?:US )?\$\d+(?:[.,]\d\d)?(?!\d)/g, 'see the App Store for pricing');
+}
+
 const additions = lookup.results
   .filter((result) => !currentIds.has(String(result.trackId)))
-  .map((result) => ({
-    id: result.trackId,
-    name: result.trackName,
-    category: categoryFor(result),
-    summary: summaryFor(result.description),
-    description: result.description,
-    appStoreUrl: result.trackViewUrl.replace("/us/", "/il/"),
-    icon: `assets/apps/published-${result.trackId}.jpg`,
-    minimumOsVersion: result.minimumOsVersion
-  }))
+  .map((result) => {
+    const description = withoutPrices(result.description || "");
+    return {
+      id: result.trackId,
+      name: result.trackName,
+      category: categoryFor(result),
+      summary: summaryFor(description),
+      description,
+      appStoreUrl: result.trackViewUrl.replace("/us/", "/il/"),
+      icon: `assets/apps/published-${result.trackId}.jpg`,
+      minimumOsVersion: result.minimumOsVersion
+    };
+  })
   .sort((left, right) => left.name.localeCompare(right.name));
 
-const output = `window.structorPublishedApps = ${JSON.stringify([...current, ...additions], null, 2)};\n`;
+const cleaned = current.map(app => ({...app, summary: withoutPrices(app.summary), description: withoutPrices(app.description)}));
+const output = `window.structorPublishedApps = ${JSON.stringify([...cleaned, ...additions], null, 2)};\n`;
 fs.writeFileSync(dataPath, output);
 
 console.log(JSON.stringify({ existing: current.length, added: additions.length, total: current.length + additions.length }));
