@@ -1,0 +1,83 @@
+/* Shared product typography and spacing. Commercial content remains in each offer. */
+:root { --studio-ink:#192822;--studio-green:#265c47;--studio-line:#c7d2ca }
+.product-header { background:#fff;border-color:var(--studio-line) }
+.product-header-inner { min-height:70px }
+.product-header select,.product-header .hotel-language { font-size:14px;min-height:44px }
+.product-header a:focus-visible,main a:focus-visible,main summary:focus-visible,select:focus-visible { outline:3px solid #53956b;outline-offset:3px }
+.product-intro { background:#f3f5f1;color:var(--studio-ink);padding-block:32px 25px }
+.product-intro h1,.hotel-hero h1 { font-size:62px;line-height:1.03;letter-spacing:0;text-wrap:balance;overflow-wrap:break-word }
+.product-intro .eyebrow { display:flex;align-items:center;gap:12px;color:var(--studio-green);margin-block:0 14px }
+.product-intro .eyebrow::before { content:"";width:30px;height:3px;background:currentColor;flex:none }
+.breadcrumbs { font-size:13px;margin-bottom:26px }
+.product-lead { font-size:20px;line-height:1.48;max-width:65ch;margin-top:18px }
+.product-actions { gap:16px 24px;margin-block:22px }
+.product-actions .btn { min-height:46px;border-radius:3px }
+.product-actions .text-link { padding-block:8px }
+.product-section { padding-block:56px }
+.product-section h2 { line-height:1.12;text-wrap:balance }
+.section-two { gap:clamp(24px,5%,62px);grid-template-columns:minmax(0,1fr) minmax(0,1.2fr) }
+.availability,.hotel-channels { background:#20362c;color:#fff }
+.availability p,.hotel-channels dd,.hotel-channels .section-lead { color:#e1ebe4 }
+.availability h2,.hotel-channels h2 { color:white }
+.capability-list article { padding-block:22px }
+.capability-list p,.onboarding p,.product-faq p,.israel-grid p,.module-link p { font-size:16px }
+.module-link h3 { min-height:0 }
+.module-number { margin-bottom:10px }
+.product-figure { margin-block:0 16px;min-width:0 }
+.product-figure img { display:block;border:1px solid #c4d1ca;border-radius:4px;height:auto }
+.product-figure figcaption { font-size:13px;padding:8px 0;color:#45574c;line-height:1.45 }
+.product-contact { background:var(--studio-ink) }
+.product-contact label,.product-contact .product-note { font-size:14px }
+.product-contact select,.product-contact textarea { font-size:16px }
+.product-contact .btn-light { color:#16231c;background:#daff65 }
+.product-contact .product-phone { max-width:100%;direction:ltr }
+.product-intro:has(>.product-figure) { display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:40px;align-items:center;padding:44px max(32px,calc((100% - 1160px)/2)) 34px }
+.product-intro:has(>.product-figure)>.product-wrap { width:100%;margin-inline:0 }
+.product-intro:has(>.product-figure) .product-actions { margin-bottom:0 }
+.product-intro:has(>.product-figure) .breadcrumbs { margin-bottom:18px }
+.modules,.studio-resources { background:#edf2ed }
+.studio-resources a { display:inline-block;padding:10px 0;border-bottom:1px solid var(--studio-green);margin-inline-end:22px;font-weight:650 }
+.hotel-hero .product-lead { color:white }
+.studio-languages { display:flex;gap:10px;align-items:center }
+.studio-languages select { min-height:44px;background:#fff;border:1px solid var(--studio-line);color:var(--studio-ink);max-width:100% }
+.studio-navlinks { display:flex;flex-wrap:wrap;gap:8px 19px;margin-block:14px 0 }
+.studio-navlinks a { text-decoration:underline;text-underline-offset:4px }
+.service-rail { background:#f0f3ee;border-block:1px solid var(--studio-line);padding:16px 0 }
+.service-rail .product-wrap { display:flex;align-items:center;gap:10px 26px;flex-wrap:wrap }
+.service-rail strong { color:var(--studio-green);font-size:13px }
+.service-rail a { font-size:15px;font-weight:650;text-decoration:underline;text-underline-offset:4px }
+body:has(.sales-stack-section) .site-header { background:#fff;border-bottom:1px solid var(--studio-line) }
+body:has(.sales-stack-section) .site-header :is(.brand,nav a,.language-button,.brand small) { color:var(--studio-ink) }
+body:has(.sales-stack-section) .header-cta { background:var(--studio-ink);color:white;border-color:transparent }
+body:has(.sales-stack-section) .language-switcher { border-color:var(--studio-line) }
+body:has(.sales-stack-section) .service-rail .inner { display:flex;align-items:center;flex-wrap:wrap;gap:10px 24px }
+body:has(.sales-stack-section) .hero h1 { line-height:1.06;text-wrap:balance }
+body:has(.sales-stack-section) .signal-strip { background:#20362c;color:#f2f8ed }
+body:has(.sales-stack-section) .section { padding-block:56px }
+@media(max-width:900px){
+ .product-intro:has(>.product-figure) { grid-template-columns:1fr;gap:24px;padding:28px max(24px,7%) }
+ .product-intro h1,.hotel-hero h1 { font-size:48px }
+ .product-intro:has(>.product-figure) .product-figure { max-width:680px }
+}
+@media(max-width:650px){
+ body:has(.sales-stack-section) .site-header { grid-template-columns:minmax(0,1fr) auto;gap:6px;padding-inline:12px }
+ body:has(.sales-stack-section) .brand { width:auto;min-width:0;gap:6px }
+ body:has(.sales-stack-section) .brand img { width:27px;height:27px }
+ body:has(.sales-stack-section) .brand strong { font-size:13px;max-width:90px }
+ body:has(.sales-stack-section) .language-button { min-height:40px }
+ .onboarding p { overflow-wrap:anywhere }
+ .product-intro { padding-block:20px 12px }
+ .product-intro:has(>.product-figure) { padding:22px 18px 10px }
+ .product-intro h1,.hotel-hero h1 { font-size:38px }
+ .product-lead { font-size:17px }
+ .product-section { padding-block:37px }
+ .product-section h2 { font-size:29px }
+ .section-two { grid-template-columns:minmax(0,1fr) }
+ .product-header-inner { min-height:63px;gap:8px }
+ .product-header-tools { min-width:0;gap:6px }
+ .product-demo { display:none }
+ .product-header select { max-width:100px;font-size:14px }
+ .product-intro .breadcrumbs { font-size:12px }
+ .service-rail .product-wrap { gap:8px 16px }
+ .service-rail strong { width:100% }
+}

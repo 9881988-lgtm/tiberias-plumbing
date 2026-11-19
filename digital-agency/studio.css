@@ -56,6 +56,7 @@
 .studio-routes { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:46px }
 .studio-route { min-height:66px;display:flex;gap:16px;align-items:center;border-top:1px solid #62756b;padding-block:14px;font-size:17px;font-weight:600;line-height:1.35 }
 .studio-route>span { flex:1;min-width:0;overflow-wrap:anywhere }
+.studio-route small { display:block;margin-top:5px;color:#d6e3da;font-size:14px;line-height:1.4;font-weight:400 }
 .studio-route>.icon:first-child { color:#cffa63 }
 .studio-route:hover,.studio-route:focus-visible { color:#dafa78 }
 .secretary-catalogue .secretary-offer { border-color:#486859 }

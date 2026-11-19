@@ -2,6 +2,8 @@ import { mkdir, writeFile, copyFile, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
 import { createRequire } from 'node:module';
+import { execFileSync } from 'node:child_process';
+import { buildServiceEditions } from './service-editions.mjs';
 import { content } from './content.mjs';
 import { studio } from './studio.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
@@ -40,11 +42,11 @@ function render(lang, t) {
       {'@type':'FAQPage',mainEntity:t.faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))}
     ]
   };
-  const productLang = lang === 'fr' ? 'en' : lang;
+  const productLang = lang;
   const s = studio[lang];
-  const urls = [softwarePath('crm',productLang), softwarePath('sales',productLang), softwarePath('calls',productLang), 'dental-secretary/'+pathFor(productLang), 'auto-secretary/'+pathFor(productLang), ['he','ru'].includes(lang) ? 'hotel-consulting/'+pathFor(lang) : null, softwarePath('software',productLang), innovationPath(lang)];
-  const symbols = ['PanelsTopLeft','MessagesSquare','PhoneCall','CalendarDays','Wrench','Building2','Layers','Lightbulb'];
-  const directory = urls.map((url,i)=>url ? `<a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}</span>${arrow()}</a>` : '').join('');
+  const urls = [softwarePath('crm',productLang), softwarePath('sales',productLang), softwarePath('calls',productLang), 'dental-secretary/'+pathFor(productLang), 'auto-secretary/'+pathFor(productLang), 'hotel-consulting/'+pathFor(lang), softwarePath('software',productLang), innovationPath(lang), 'hotel-secretary/'+pathFor(lang), 'small-business-secretary/'+pathFor(lang)];
+  const symbols = ['PanelsTopLeft','MessagesSquare','PhoneCall','CalendarDays','Wrench','Building2','Layers','Lightbulb','BedDouble','PhoneForwarded'];
+  const directory = urls.map((url,i)=>url ? `<a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}${i===7?`<small>${e(s.applicationAction)}</small>`:''}</span>${arrow()}</a>` : '').join('');
   const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>` + (['ru','he'].includes(lang) ? `<a href="#secretary-catalog">${lang==='he'?'קטלוג':'Каталог'}</a>` : '');
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
   const projectIntro = p => `<div class="project-topline"><span>${e(p.label.replace(/^\d+\s*\/\s*/, ''))}</span><span class="project-status">${e(p.status)}</span></div><h3 class="preline">${e(p.title)}</h3><p>${e(p.text)}</p>${tags(p)}<p class="project-note">${e(p.note)}</p>`;
@@ -119,7 +121,8 @@ function render(lang, t) {
 await mkdir(target, {recursive:true});
 const callCenterPath = join(target, 'ai-call-center', 'index.html');
 const homeOnly = process.env.SITE_SCOPE === 'home';
-if (!homeOnly) try {
+const designOnly = process.env.SITE_SCOPE === 'service-design';
+if (!homeOnly && !designOnly) try {
   const callCenter = await readFile(callCenterPath, 'utf8');
   if (callCenter.includes('<!-- CRM PLANS START -->')) {
     let updated = callCenter.replace(/<!-- CRM PLANS START -->[\s\S]*?<!-- CRM PLANS END -->/, `<!-- CRM PLANS START -->${renderCrmPlans('he')}<!-- CRM PLANS END -->`);
@@ -135,16 +138,19 @@ for (const [lang,t] of Object.entries(content)) {
   await mkdir(dir,{recursive:true});
   await writeFile(join(dir,'index.html'),render(lang,t).replace(/[ \t]+$/gm,''));
 }
-for (const name of ['styles.css','studio.css','script.js']) {
+for (const name of ['styles.css','studio.css','service-studio.css','script.js']) {
   const file = join(here,'..',name);
   if (resolve(file) !== resolve(target,name)) await copyFile(file,join(target,name));
 }
 if (!homeOnly) {
-await buildSoftware(target);
-await buildDental(target);
-await buildAuto(target);
+await buildSoftware(target,designOnly?['fr']:undefined);
+if (!designOnly) {
+  await buildDental(target);
+  await buildAuto(target);
+  await buildSecretaryOffers(target);
+}
 await buildInnovation(target);
-await buildSecretaryOffers(target);
+await buildServiceEditions(target);
 const sitemapEntry = (url, lastModified='2026-11-18', alternates='') =>
   `<url><loc>${url}</loc><lastmod>${lastModified}</lastmod>${alternates}</url>`;
 const localizedHome = Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('');
@@ -155,6 +161,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www
   ...hotelUrls.map(url=>sitemapEntry(url)),
   ...secretaryUrls.map(url=>sitemapEntry(url,'2026-11-19'))
 ].join('')}</urlset>`;
-await writeFile(join(target,'sitemap.xml'),sitemap);
+if (!designOnly) await writeFile(join(target,'sitemap.xml'),sitemap);
+execFileSync('python3',[join(here,'service-layout.py'),target]);
 }
 console.log(`Built ${Object.keys(content).length} localised Eydelstein Digital Lab pages in ${target}`);

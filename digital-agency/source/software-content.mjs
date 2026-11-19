@@ -1,8 +1,10 @@
+import { frenchSoftware } from './software-fr.mjs';
 export const softwareRoutes = {
   software: 'software', crm: 'galany-crm', sales: 'ai-sales-agent', calls: 'call-center-software'
 };
 
 export const softwareContent = {
+  fr: frenchSoftware,
   ru: {
     language: 'Русский', home: 'Eydelstein Digital Lab', software: 'Программное обеспечение',
     nav: ['Обзор', 'Возможности', 'Тарифы', 'Демонстрация'],

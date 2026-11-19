@@ -4,6 +4,8 @@ The existing GitHub Pages site, redesigned on 2026-10-27. No framework or runtim
 
 ## Content and generated pages
 
+For service-design and translation releases run `SITE_SCOPE=service-design node digital-agency/source/build.mjs` from the repository root. This refreshes the localized landing pages, translated service editions and innovation copy, then applies navigation and reciprocal language links to existing editions without regenerating their approved tariff blocks. `service-studio.css` is the visual layer shared by internal services; `software-fr.mjs` and `service-editions.mjs` contain the additional language editions. PDF files are never build outputs.
+
 - `content.mjs` contains the HE / EN / RU / FR content.
 - `studio.mjs` contains the headline and catalogue labels for the homepage; `../studio.css` styles only the four homepages. To rebuild those pages without rewriting separately approved product pages, run `SITE_SCOPE=home node digital-agency/source/build.mjs` from the repository root.
 - `build.mjs` creates the four static HTML pages and the local sitemap. Run it with Node.js and the `lucide` package available to Node resolution. Lucide is used at build time only, so there is no runtime icon CDN.

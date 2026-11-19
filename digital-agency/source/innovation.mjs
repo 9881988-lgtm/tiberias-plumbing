@@ -12,13 +12,13 @@ export const innovation = {
     language: 'Русский', label: 'Инновационные проекты', title: 'Подготовка заявки в «Тнуфа» и акселераторы Израиля',
     seoTitle: 'Подготовка заявки в «Тнуфа» и акселераторы',
     lastModified: '2026-11-19',
-    summary: 'Помогаем выбрать грант для стартапа в Израиле, подготовить заявку в «Тнуфа» или акселератор и подать согласованный пакет документов.',
-    lead: 'Помогаем изобретателям и командам на ранней стадии: прорабатываем техническую идею, составляем план прототипа и готовим документы для гранта «Тнуфа» или подачи заявки в акселератор.',
+    summary: 'Готовим и подаём по вашей идее заявки в «Тнуфа» и другие акселераторы. Подбор программы, план проекта, бюджет и отправка согласованного пакета.',
+    lead: 'По вашей идее готовим и подаём заявки в программу «Тнуфа» и в другие подходящие акселераторы. Подбираем программу под стадию проекта, готовим пакет документов и отправляем его после вашего согласования.',
     stages: 'Что входит в работу', steps: [
       ['Выбор программы', 'Сверяем стадию проекта, требования, сроки и список документов. Рассматриваем программу «Тнуфа» Управления инноваций Израиля, профильные акселераторы и инкубаторы.'],
       ['Разработка проекта', 'Формулируем проблему и техническую новизну. Определяем, что проверить на прототипе или PoC, и составляем план работ с этапами и критериями проверки.'],
       ['Подготовка заявки', 'Собираем техническое описание, план НИОКР и бюджет на основе ваших данных. По требованиям программы готовим презентацию, резюме проекта и приложения.'],
-      ['Подача и сопровождение', 'Проверяем комплект, согласуем финальную версию с заявителем и помогаем с подачей в порядке, предусмотренном программой. При необходимости готовим материалы для интервью и ответы на уточнения.']
+      ['Подача и сопровождение', 'Проверяем комплект и после вашего согласования подаём заявку от вашего имени, если это разрешено программой. Если отправить её может только заявитель, готовим комплект и вместе с вами проходим последний шаг.']
     ],
     guideTitle: 'Гранты для стартапов в Израиле: с чего начать',
     questions: [
@@ -36,13 +36,13 @@ export const innovation = {
     language: 'עברית', label: 'מיזמים חדשניים', title: 'הכנת בקשה למסלול תנופה ולאקסלרטורים בישראל',
     seoTitle: 'הכנת בקשה למסלול תנופה ולאקסלרטורים',
     lastModified: '2026-11-19',
-    summary: 'מסייעים ליזמים לבחור מענק לסטארטאפ בישראל, להכין בקשה למסלול תנופה או לאקסלרטור ולהגיש אותה לאחר אישורכם.',
-    lead: 'מלווים יזמים וצוותים בתחילת הדרך: מגיבוש הרעיון ותכנון אב הטיפוס ועד להכנה והגשה של בקשה למענק תנופה או לתוכנית האצה.',
+    summary: 'מהרעיון שלכם ועד ההגשה: הכנת בקשות למסלול תנופה ולאקסלרטורים נוספים, בחירת תוכנית, בניית תקציב והגשה לאחר אישורכם.',
+    lead: 'יש לכם רעיון למיזם? אנחנו מכינים ומגישים עבורכם בקשות למסלול תנופה וגם לאקסלרטורים נוספים. מתאימים את התוכנית לשלב שבו אתם נמצאים, מכינים את המסמכים ומגישים לאחר אישורכם.',
     stages: 'מה כולל הליווי', steps: [
       ['בחירת מסלול', 'בודקים את שלב המיזם, תנאי הסף, המועדים והמסמכים הנדרשים. בוחנים את מסלול תנופה של רשות החדשנות, תוכניות האצה וחממות רלוונטיות.'],
       ['גיבוש המיזם', 'מגדירים את הבעיה ואת החדשנות הטכנולוגית. קובעים מה צריך לבדוק באב טיפוס או בהוכחת היתכנות ומכינים תוכנית עבודה עם אבני דרך ומדדי הצלחה לבדיקה.'],
       ['הכנת הבקשה', 'מכינים תיאור טכנולוגי, תוכנית מו״פ ותקציב על בסיס הנתונים שלכם. בהתאם לדרישות המסלול מכינים מצגת, תקציר ונספחים.'],
-      ['הגשה וליווי', 'בודקים את שלמות המסמכים, מאשרים את הנוסח עם מגיש הבקשה ומסייעים בהגשה לפי הנהלים. לפי הצורך מכינים חומרים לריאיון ומענה לבקשות הבהרה.']
+      ['הגשה וליווי', 'בודקים את המסמכים ומגישים בשמכם לאחר אישורכם, ככל שנהלי התוכנית מאפשרים זאת. אם רק היזם רשאי להגיש, מכינים את התיק ומלווים אתכם בשלב ההגשה הסופי.']
     ],
     guideTitle: 'מענקים לסטארטאפים בישראל: מאיפה מתחילים?',
     questions: [
@@ -58,13 +58,13 @@ export const innovation = {
   },
   en: {
     language: 'English', label: 'Innovation projects', title: 'Tnufa and accelerator application support',
-    summary: 'Develop your concept, prepare the documents and submit an innovation grant or accelerator application.',
-    lead: 'Support for founders and early-stage teams, from defining the technology and prototype plan to preparing and submitting the approved application.',
+    summary: 'From your idea to submission: we prepare and submit applications to Tnufa and other accelerators, with a project plan, budget and your approval.',
+    lead: 'Bring us your idea. We prepare and submit applications to Tnufa and to other accelerators that fit your project. We select a programme, assemble the documents and submit the package once you approve it.',
     stages: 'What we do', steps: [
       ['Program fit', 'We review the project stage, published requirements, deadlines and supporting documents. We look at the Israel Innovation Authority’s Tnufa program and relevant accelerators and incubators.'],
       ['Project development', 'We define the problem and technical novelty, scope a prototype or proof of concept, and set milestones and validation criteria.'],
       ['Application preparation', 'We draft the technical description, R&D plan and budget using your information. We prepare a pitch deck, summary and attachments as required.'],
-      ['Submission and follow-up', 'We check the package against the requirements, get your approval and assist with submission as permitted by the program. We can help prepare for interviews and respond to clarification requests.']
+      ['Submission and follow-up', 'We submit the approved application on your behalf where the programme permits it. If only the founder can submit, we prepare the complete file and guide you through the final step.']
     ],
     program: 'Official Tnufa program requirements', note: 'We are an independent service provider. Admission and grant decisions are made by the program organizer. No approval or funding is guaranteed.',
     contact: 'Tell us about your innovation project', contactIntro: 'Share the problem you solve, what you have built and the program you are considering. We agree the scope after an initial conversation.',
@@ -73,13 +73,13 @@ export const innovation = {
   },
   fr: {
     language: 'Français', label: 'Projets innovants', title: 'Préparer et déposer une candidature à Tnufa ou à un accélérateur',
-    summary: 'Nous vous aidons à structurer votre idée, à constituer le dossier et à déposer une demande de financement ou une candidature à un programme d’accélération.',
-    lead: 'Nous accompagnons les porteurs de projet, de la définition du concept et du prototype à la préparation et au dépôt du dossier validé.',
+    summary: 'De votre idée au dépôt du dossier : préparation et soumission de candidatures à Tnufa et à d’autres accélérateurs, avec plan de projet, budget et validation.',
+    lead: 'À partir de votre idée, nous préparons et déposons votre dossier auprès de Tnufa ou d’autres accélérateurs adaptés à votre projet. Nous choisissons le programme avec vous et déposons le dossier après votre validation.',
     stages: 'Notre accompagnement', steps: [
       ['Choix du programme', 'Nous examinons la maturité du projet, les critères publics, les délais et les pièces nécessaires pour Tnufa, le programme de l’Autorité israélienne de l’innovation, et les accélérateurs ou incubateurs pertinents.'],
       ['Développement du projet', 'Nous définissons le problème et la nouveauté technique, puis cadrons le prototype ou la preuve de concept, les jalons et les critères de validation.'],
       ['Préparation du dossier', 'À partir de vos données, nous préparons le descriptif technique, le plan de R&D, le budget et, si nécessaire, la présentation et les annexes.'],
-      ['Dépôt et suivi', 'Nous vérifions et validons le dossier avec vous avant de vous accompagner dans le dépôt selon les règles du programme. Nous pouvons préparer les entretiens et les réponses aux demandes de précisions.']
+      ['Dépôt et suivi', 'Après votre validation, nous déposons le dossier en votre nom lorsque le règlement le permet. Si le dépôt est réservé au porteur du projet, nous préparons le dossier complet et vous accompagnons dans la dernière étape.']
     ],
     program: 'Conditions officielles de Tnufa', note: 'Nous sommes un prestataire indépendant. L’organisme responsable décide de l’admission et du financement. Aucune acceptation ni subvention n’est garantie.',
     contact: 'Parlons de votre projet innovant', contactIntro: 'Indiquez le problème à résoudre, l’état d’avancement et le programme envisagé. Nous définirons les prestations après un premier échange.',

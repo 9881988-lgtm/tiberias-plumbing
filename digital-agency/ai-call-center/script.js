@@ -86,6 +86,17 @@ function applyLanguage(language, updateUrl = true) {
   currentLanguage = language;
   const copy = translations[language];
   const meta = languageMeta[language];
+  const related = {
+    he: ['נציג מכירות AI', 'תוכנה למוקד'], en: ['AI salesperson', 'Call-centre software'],
+    ru: ['AI-менеджер по продажам', 'Программное обеспечение колл-центра'], fr: ['Assistant commercial IA', 'Logiciel de centre d’appels']
+  }[language];
+  const suffix = language === 'he' ? '' : language + '/';
+  document.querySelectorAll('[data-related]').forEach(link => {
+    const key=link.dataset.related;
+    link.href='../'+key+'/'+suffix;
+    link.textContent=key==='galany-crm'?'Galany CRM':related[key==='ai-sales-agent'?0:1];
+  });
+  document.querySelector('.site-header .brand').href='../'+suffix;
 
   document.documentElement.lang = language;
   document.documentElement.dir = meta.dir;
