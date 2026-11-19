@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { dentalContent, dentalPlans, dentalRoot, dentalPath } from '../dental-plan.mjs';
@@ -8,6 +9,7 @@ export function renderDentalTeaser(lang) {
   return `<section class="software-intro section dental-teaser" lang="${code}" dir="${code==='he'?'rtl':'ltr'}"><div class="wrap"><p class="eyebrow">${e(t.eyebrow)}</p><h2>${e(t.name)}</h2><p class="software-summary">${e(t.lead)}</p><a class="btn" href="${dentalRoot+dentalPath(code)}">${e(t.cta)} <span aria-hidden="true">↗</span></a></div></section>`;
 }
 function render(lang) {
+ return readFileSync(new URL('../'+dentalPath(lang)+'index.html', import.meta.url),'utf8');
   const t=dentalContent[lang], p=dentalPlans[lang], rel=lang==='he'?'../':'../../', canonical=dentalRoot+dentalPath(lang);
   const home=dentalRoot+(lang==='he'?'':lang+'/');
   const schema={'@context':'https://schema.org','@graph':[

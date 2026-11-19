@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { secretaryOffers, secretaryRoot, secretaryPath, secretaryUrls } from '../secretary-offers.mjs';
@@ -16,6 +17,7 @@ export function renderSecretaryCatalogue(lang){
  return '<section class="section secretary-catalogue" id="secretary-catalog"><div class="wrap"><h2>'+e(l.catalogue)+'</h2><p class="software-summary">'+e(l.intro)+'</p><div class="secretary-offer-grid">'+secretaryOffers.filter(o=>o.lang===lang).map(o=>'<article class="secretary-offer"><h3>'+e(o.title)+'</h3><p>'+e(o.lead)+'</p><ul>'+o.services.map(([title])=>'<li>'+e(title)+'</li>').join('')+'</ul><p><a class="text-link" href="'+pageUrl(o)+'">'+e(l.detail)+'</a></p><p>'+pdfLink(o,l)+'</p></article>').join('')+'</div><p class="product-note">'+e(l.boundary)+'</p></div></section>';
 }
 function render(o){
+ if(o.key==='small_business') return readFileSync(new URL('../'+secretaryPath(o)+'index.html', import.meta.url),'utf8');
  const l=labels[o.lang],rtl=o.lang==='he',rel=rtl?'../':'../../',canonical=pageUrl(o);
  const schema={'@context':'https://schema.org','@graph':[
  {'@type':'Organization','@id':secretaryRoot+'#organization',name:'Eydelstein Digital Lab',url:secretaryRoot,email:'9881988@gmail.com',telephone:'+972-55-507-1400'},

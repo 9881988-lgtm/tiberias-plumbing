@@ -54,10 +54,6 @@ for(const lang of ['ru','he']) { crmPlans[lang].plans.unshift(dentalPlans[lang])
 for(const lang of ['ru','he']) crmPlans[lang].plans.unshift(secretaryPlan('hotel',lang));
 crmPlans.ru.title = 'Одна система. Восемь тарифов.';
 crmPlans.he.title = 'מערכת אחת. שמונה תוכניות שירות.';
-crmPlans.ru.intro += ' Свой секретарь для стоматолога — отдельный пакет с собственным составом услуг и включёнными 100 минутами.';
-crmPlans.ru.intro += ' Свой секретарь для автосервиса — отдельный пакет для обращений и записи на обслуживание, со 100 включёнными минутами.';
-crmPlans.he.intro += ' המזכיר האישי למוסך הוא מסלול נפרד לפניות ותיאום טיפולים, עם 100 דקות כלולות.';
-crmPlans.he.intro += ' המזכיר האישי לרופא השיניים הוא מסלול נפרד עם שירותים משלו ו-100 דקות כלולות.';
 
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 

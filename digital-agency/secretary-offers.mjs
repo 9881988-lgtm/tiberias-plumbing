@@ -1,3 +1,4 @@
+import { secretaryPricing } from './secretary-pricing.mjs';
 export const secretaryRoot = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
 export const secretaryOffers = [
   {
@@ -161,6 +162,7 @@ export const secretaryOffers = [
     ]
   }
 ];
+for (const o of secretaryOffers) if(o.key==='small_business') { o.period=secretaryPricing[o.lang].period+' '+secretaryPricing[o.lang].usage; }
 export const secretaryPath = offer => offer.slug + '/' + (offer.lang === 'he' ? '' : offer.lang + '/');
 export const secretaryUrls = secretaryOffers.map(offer=>secretaryRoot+secretaryPath(offer));
 export function secretaryPlan(key,lang){

@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { autoContent, autoPlans, autoRoot, autoPath } from '../auto-plan.mjs';
@@ -8,6 +9,7 @@ export function renderAutoTeaser(lang) {
   return `<section class="software-intro section auto-teaser" lang="${code}" dir="${code==='he'?'rtl':'ltr'}"><div class="wrap"><p class="eyebrow">${e(t.eyebrow)}</p><h2>${e(t.name)}</h2><p class="software-summary">${e(t.lead)}</p><a class="btn" href="${autoRoot+autoPath(code)}">${e(t.cta)} <span aria-hidden="true">↗</span></a></div></section>`;
 }
 function render(lang) {
+ return readFileSync(new URL('../'+autoPath(lang)+'index.html', import.meta.url),'utf8');
   const t=autoContent[lang], p=autoPlans[lang], rel=lang==='he'?'../':'../../', canonical=autoRoot+autoPath(lang);
   const home=autoRoot+(lang==='he'?'':lang+'/');
   const schema={'@context':'https://schema.org','@graph':[
