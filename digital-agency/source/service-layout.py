@@ -1,5 +1,6 @@
 """Apply shared navigation to the approved static editions without rewriting offer markup."""
 from html.parser import HTMLParser
+from desktop_downloads import COPY as DESKTOP_COPY, render as desktop_downloads
 from pathlib import Path
 from urllib.parse import urljoin
 import sys
@@ -45,6 +46,13 @@ def transform(file,slug,lang):
     patches = []
     rel = '../' if lang=='he' else '../../'
     def inject(pos,s): patches.append((pos,pos,s))
+    if slug=='galany-crm':
+        if not any(a.get('id')=='desktop-downloads' for _,a,_,_ in tags):
+            point=next(p for t,a,p,_ in tags if t=='section' and 'availability' in a.get('class','').split())
+            inject(point,desktop_downloads(lang))
+        if not any(a.get('href')=='#desktop-downloads' for _,a,_,_ in tags):
+            point=next(e for t,a,_,e in tags if t=='div' and a.get('class')=='product-actions')
+            inject(raw.index('</div>',point),f'<a class="text-link" href="#desktop-downloads">{DESKTOP_COPY[lang][0]}</a>')
     if not any(t=='link' and 'service-studio.css' in a.get('href','') for t,a,_,_ in tags):
         inject(raw.index('</head>'), f'<link rel="stylesheet" href="{rel}service-studio.css?v=20261119-services">\n')
     if slug!='ai-call-center':
