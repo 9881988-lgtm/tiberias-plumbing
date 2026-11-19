@@ -4,7 +4,7 @@ import { dirname, resolve, join } from 'node:path';
 import { createRequire } from 'node:module';
 import { content } from './content.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
-import { buildInnovation, innovation, innovationUrls, renderInnovationTeaser } from './innovation.mjs';
+import { buildInnovation, innovation, innovationPath, renderInnovationTeaser } from './innovation.mjs';
 import { buildSoftware, renderSoftwareTeaser, softwarePath, softwareUrls } from './software.mjs';
 import { buildDental, dentalUrls, renderDentalTeaser } from './dental.mjs';
 import { buildAuto, autoUrls, renderAutoTeaser } from './auto.mjs';
@@ -144,6 +144,14 @@ await buildSoftware(target);
 await buildDental(target);
 await buildAuto(target);
 await buildInnovation(target);
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${Object.keys(content).map(lang=>`<url><loc>${rootURL+pathFor(lang)}</loc><lastmod>2026-11-18</lastmod>${Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('')}</url>`).join('')}${[...softwareUrls,...dentalUrls,...autoUrls,...innovationUrls,...hotelUrls].map(url=>`<url><loc>${url}</loc><lastmod>2026-11-18</lastmod></url>`).join('')}</urlset>`;
+const sitemapEntry = (url, lastModified='2026-11-18', alternates='') =>
+  `<url><loc>${url}</loc><lastmod>${lastModified}</lastmod>${alternates}</url>`;
+const localizedHome = Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('');
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${[
+  ...Object.keys(content).map(lang=>sitemapEntry(rootURL+pathFor(lang), innovation[lang].lastModified, localizedHome)),
+  ...[...softwareUrls,...dentalUrls,...autoUrls].map(url=>sitemapEntry(url)),
+  ...Object.keys(innovation).map(lang=>sitemapEntry(rootURL+innovationPath(lang), innovation[lang].lastModified)),
+  ...hotelUrls.map(url=>sitemapEntry(url))
+].join('')}</urlset>`;
 await writeFile(join(target,'sitemap.xml'),sitemap);
 console.log(`Built ${Object.keys(content).length} localised Eydelstein Digital Lab pages in ${target}`);

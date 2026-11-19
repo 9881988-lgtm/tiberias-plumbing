@@ -61,3 +61,30 @@ test('each agency language links to its own innovation service and the official 
     for(const url of innovationUrls) assert.ok(read(path).includes(url));
   }
 });
+
+test('Russian and Hebrew innovation pages expose localized search content in static HTML', () => {
+  const expected = {
+    ru: [/Подготовка заявки в «Тнуфа»/, /Гранты для стартапов в Израиле/, /подача заявки в акселератор/],
+    he: [/הכנת בקשה למסלול תנופה/, /מענקים לסטארטאפים בישראל/, /מועמדות לאקסלרטור/]
+  };
+  const portfolio = read(join(site,'structo-robotics/innovations.html'));
+  for (const [lang, queries] of Object.entries(expected)) {
+    const path = innovationPath(lang);
+    const t = innovation[lang];
+    const page = read(join(agency,path,'index.html'));
+    const url = innovationUrls.find(url=>url.endsWith('/digital-agency/'+path));
+    const htmlLang = lang === 'he' ? 'he-IL' : lang;
+    assert.ok(page.includes(`<link rel="canonical" href="${url}">`));
+    assert.ok(page.includes(`<link rel="alternate" hreflang="${htmlLang}" href="${url}">`));
+    assert.ok(page.includes(`<meta name="description" content="${t.summary}">`));
+    assert.doesNotMatch(page, /noindex/i);
+    assert.match(page.match(/<title>([^<]+)<\/title>/)[1], queries[0]);
+    assert.match(page.match(/<h1>([^<]+)<\/h1>/)[1], queries[0]);
+    assert.match(page, queries[1]);
+    assert.match(page, queries[2]);
+    assert.ok(portfolio.includes(`href="../digital-agency/${path}" hreflang="${htmlLang}"`));
+    for (const map of [join(site,'sitemap.xml'),join(agency,'sitemap.xml')]) {
+      assert.ok(read(map).includes(`<loc>${url}</loc><lastmod>${t.lastModified}</lastmod>`));
+    }
+  }
+});
