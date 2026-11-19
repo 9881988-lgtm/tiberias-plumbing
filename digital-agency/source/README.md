@@ -5,6 +5,7 @@ The existing GitHub Pages site, redesigned on 2026-10-27. No framework or runtim
 ## Content and generated pages
 
 - `content.mjs` contains the HE / EN / RU / FR content.
+- `studio.mjs` contains the headline and catalogue labels for the homepage; `../studio.css` styles only the four homepages. To rebuild those pages without rewriting separately approved product pages, run `SITE_SCOPE=home node digital-agency/source/build.mjs` from the repository root.
 - `build.mjs` creates the four static HTML pages and the local sitemap. Run it with Node.js and the `lucide` package available to Node resolution. Lucide is used at build time only, so there is no runtime icon CDN.
 - `../styles.css` and `../script.js` are the shared, directly editable site assets.
 - Main Hebrew page: `/digital-agency/`. Other languages: `/digital-agency/en/`, `/digital-agency/ru/`, `/digital-agency/fr/`.

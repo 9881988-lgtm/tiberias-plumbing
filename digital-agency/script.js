@@ -77,10 +77,17 @@
   });
   updateBrief();
 
-  const bubble = document.querySelector('.mobile-contact');
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(entries => bubble.classList.toggle('is-hidden', entries[0].isIntersecting), {threshold: 0.05}).observe(document.querySelector('#contact'));
+  function revealFragment() {
+    const target = document.getElementById(window.location.hash.slice(1));
+    if (!target) return;
+    let changed = false;
+    for (let fold = target.closest('details'); fold; fold = fold.parentElement.closest('details')) {
+      if (!fold.open) { fold.open = true; changed = true; }
+    }
+    if (changed) target.scrollIntoView();
   }
+  window.addEventListener('hashchange', revealFragment);
+  revealFragment();
   // Analytics receives event categories, never the visitor's project description.
   function track(action, extra = {}) {
     if (typeof window.gtag === 'function') window.gtag('event', action, {event_category: 'digital_enquiry', language: locale, ...extra});

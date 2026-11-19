@@ -3,18 +3,19 @@ import { fileURLToPath } from 'node:url';
 import { dirname, resolve, join } from 'node:path';
 import { createRequire } from 'node:module';
 import { content } from './content.mjs';
+import { studio } from './studio.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
-import { buildInnovation, innovation, innovationPath, renderInnovationTeaser } from './innovation.mjs';
-import { buildSoftware, renderSoftwareTeaser, softwarePath, softwareUrls } from './software.mjs';
-import { buildDental, dentalUrls, renderDentalTeaser } from './dental.mjs';
-import { buildAuto, autoUrls, renderAutoTeaser } from './auto.mjs';
+import { buildInnovation, innovation, innovationPath } from './innovation.mjs';
+import { buildSoftware, softwarePath, softwareUrls } from './software.mjs';
+import { buildDental, dentalUrls } from './dental.mjs';
+import { buildAuto, autoUrls } from './auto.mjs';
 import { buildSecretaryOffers, secretaryUrls, renderSecretaryCatalogue } from './secretary.mjs';
 const require = createRequire(import.meta.url);
 const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261119-secretary';
+const version = '20261119-studio';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -27,13 +28,6 @@ const pathFor = lang => lang === 'he' ? '' : `${lang}/`;
 const navIDs = ['work', 'services', 'process', 'contact'];
 const serviceValues = ['landing', 'website', 'app', 'ai', 'ads', 'innovation'];
 const hotelUrls = ['hotel-consulting/','hotel-consulting/ru/'].map(path=>rootURL+path);
-const hotelTeasers = {he:['ייעוץ תפעולי למלונות','הזמנות ישירות, ניהול תעריפים וקבלה קולית רב-לשונית במערכת אחת.','מה כלול בחבילה'],ru:['Консалтинг для отелей','Прямые брони, управление тарифами, многоязычный AI-ресепшн и работа команды в одной CRM.','Что входит в пакет']};
-function renderHotelTeaser(lang, rel) {
-  if (!hotelTeasers[lang]) return '';
-  const [title, text, cta] = hotelTeasers[lang];
-  const url = rel + 'hotel-consulting/' + (lang==='ru'?'ru/':'');
-  return '<section class="software-intro section" id="hotel-consulting"><div class="wrap"><h2>'+e(title)+'</h2><p class="software-summary">'+e(text)+'</p><a class="btn" href="'+url+'">'+e(cta)+'</a></div></section>';
-}
 function render(lang, t) {
   const rel = lang === 'he' ? './' : '../';
   const pageVersion = version;
@@ -47,9 +41,13 @@ function render(lang, t) {
     ]
   };
   const productLang = lang === 'fr' ? 'en' : lang;
+  const s = studio[lang];
+  const urls = [softwarePath('crm',productLang), softwarePath('sales',productLang), softwarePath('calls',productLang), 'dental-secretary/'+pathFor(productLang), 'auto-secretary/'+pathFor(productLang), ['he','ru'].includes(lang) ? 'hotel-consulting/'+pathFor(lang) : null, softwarePath('software',productLang), innovationPath(lang)];
+  const symbols = ['PanelsTopLeft','MessagesSquare','PhoneCall','CalendarDays','Wrench','Building2','Layers','Lightbulb'];
+  const directory = urls.map((url,i)=>url ? `<a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}</span>${arrow()}</a>` : '').join('');
   const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>` + (['ru','he'].includes(lang) ? `<a href="#secretary-catalog">${lang==='he'?'קטלוג':'Каталог'}</a>` : '');
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
-  const projectIntro = p => `<div class="project-topline"><span>${e(p.label)}</span><span class="project-status">${e(p.status)}</span></div><h3 class="preline">${e(p.title)}</h3><p>${e(p.text)}</p>${tags(p)}<p class="project-note">${e(p.note)}</p>`;
+  const projectIntro = p => `<div class="project-topline"><span>${e(p.label.replace(/^\d+\s*\/\s*/, ''))}</span><span class="project-status">${e(p.status)}</span></div><h3 class="preline">${e(p.title)}</h3><p>${e(p.text)}</p>${tags(p)}<p class="project-note">${e(p.note)}</p>`;
   return `<!doctype html>
 <html lang="${lang}" dir="${lang==='he'?'rtl':'ltr'}">
 <head>
@@ -71,6 +69,7 @@ function render(lang, t) {
   <link rel="stylesheet" href="${rel}software.css?v=${pageVersion}">
   <link rel="stylesheet" href="${rel}secretary-offers.css?v=${pageVersion}">
   ${crmPlans[lang] ? `<link rel="stylesheet" href="${rel}crm-plans.css?v=20261102-crm">` : ''}
+  <link rel="stylesheet" href="${rel}studio.css?v=${pageVersion}">
   <script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-18222920780');</script>
@@ -80,50 +79,47 @@ function render(lang, t) {
 <header class="site-header"><div class="wrap header-inner">
   <a class="wordmark" href="#top" aria-label="Eydelstein Digital Lab"><img src="${rel}assets/edelstein-lab-digital-mark.svg" alt="" width="37" height="37"><span>Eydelstein<small>Digital Lab</small></span></a>
   <nav class="desktop-nav" aria-label="${e(t.menu)}">${nav}</nav>
-  <div class="header-tools"><select class="language-select" id="language" aria-label="Language / שפה">${[['he','עברית'],['en','EN'],['ru','RU'],['fr','FR']].map(([code,name])=>`<option value="${code==='he'?'./':code+'/'}"${code===lang?' selected':''}>${name}</option>`).join('')}</select><a class="header-link" href="#contact">${e(t.start)}${arrow()}</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="${e(t.menu)}" data-open-label="${e(t.menu)}" data-close-label="${e(t.close)}">${icon('Menu')}</button></div>
+  <div class="header-tools"><select class="language-select" id="language" aria-label="Language / שפה">${[['he','עברית'],['en','EN'],['ru','RU'],['fr','FR']].map(([code,name])=>`<option value="${code==='he'?'./':code+'/'}"${code===lang?' selected':''}>${name}</option>`).join('')}</select><a class="header-link" href="#contact">${e(t.start)}${arrow()}</a><a class="mobile-contact" href="#contact" aria-label="${e(t.start)}" title="${e(t.start)}">${icon('MessageCircle')}</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="${e(t.menu)}" data-open-label="${e(t.menu)}" data-close-label="${e(t.close)}">${icon('Menu')}</button></div>
   <nav class="mobile-nav" id="mobile-nav" aria-label="${e(t.menu)}">${nav}</nav>
 </div></header>
 <main id="main">
   <section class="hero" aria-labelledby="hero-title">
     <img class="hero-art" src="${rel}assets/hero.webp" width="1881" height="836" alt="" fetchpriority="high">
-    <div class="wrap hero-inner"><p class="eyebrow">${e(t.kicker)}</p><h1 id="hero-title"><span>Eydelstein</span> <span class="digital">Digital Lab.</span></h1><p class="hero-lead">${e(t.lead)}</p><div class="hero-actions"><a class="btn" href="#contact">${e(t.heroCta)}${arrow()}</a><a class="text-link" href="#work">${e(t.heroWork)}${icon('ArrowDown')}</a></div><span class="hero-foot">${e(t.scroll)}</span></div>
+    <div class="wrap hero-inner"><p class="eyebrow"><span class="studio-key" aria-hidden="true"></span>${e(s.location)}</p><h1 id="hero-title"><span>Eydelstein</span> <span class="digital">Digital Lab.</span></h1><p class="hero-lead">${e(s.lead)}</p><div class="hero-actions"><a class="btn" href="#contact">${e(t.heroCta)}${arrow()}</a><a class="text-link" href="#work">${e(t.heroWork)}${icon('ArrowDown')}</a></div></div>
   </section>
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
-  ${renderSoftwareTeaser(lang,rel)}
-  ${renderDentalTeaser(lang)}
-  ${renderInnovationTeaser(lang,rel)}
-  ${renderHotelTeaser(lang,rel)}
-  ${renderAutoTeaser(lang)}
-  ${renderSecretaryCatalogue(lang)}
-  <section class="section intro"><div class="wrap intro-layout"><p class="eyebrow">${e(t.introLabel)}</p><div class="intro-main"><h2 class="preline">${e(t.introTitle)}</h2><div class="intro-copy"><p>${e(t.introText)}</p><a class="text-link" href="#services">${e(t.introLink)}${arrow()}</a></div></div></div></section>
-  <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(t.workTitle)}</h2></div><p>${e(t.workIntro)}</p></div>
+  <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(s.work)}</h2></div></div>
+    <div class="project-grid">
+      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a></div></article>
+      <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}</div></article>
+      <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}../ac-cleaning/assets/ac-cleaning-tiberias-hero.jpg" alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}</div></article>
+    </div>
+    <details class="studio-fold studio-platform"><summary>${e(s.next)}${icon("Plus")}</summary>
+    <p class="platform-status">${e(t.workIntro)}</p>
     <div class="platform-preview" id="next-releases" aria-labelledby="platform-title">
       <div class="platform-copy"><p class="eyebrow">${e(t.platformKicker)}</p><h3 id="platform-title" class="preline">${e(t.platformTitle)}</h3><p class="platform-models"><a href="https://www.apple.com/iphone-duo/" target="_blank" rel="noopener"><bdi>iPhone Duo</bdi>${icon('ArrowUpRight')}</a><a href="https://support.apple.com/en-us/100100" target="_blank" rel="noopener"><bdi>iOS 27.2</bdi>${icon('ArrowUpRight')}</a></p><p class="platform-description">${e(t.platformText)}</p><p class="platform-verified">${e(t.platformVerified)}</p></div>
       <figure class="platform-figure"><img src="${rel}assets/iphone-duo-ios-27-2.webp" width="1536" height="1024" alt="${e(t.platformAlt)}" loading="lazy"><figcaption>${e(t.platformCaption)}</figcaption></figure>
     </div>
-    <div class="project-grid">
-      <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}</div></article>
-      <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}../ac-cleaning/assets/ac-cleaning-tiberias-hero.jpg" alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}</div></article>
-      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a></div></article>
-    </div>
+    </details>
   </div></section>
-  <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(t.serviceTitle)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p></div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
-  <section class="ai-section"><div class="wrap ai-layout"><div><p class="eyebrow">${e(t.aiLabel)}</p><h2 class="preline">${e(t.aiTitle)}</h2></div><div><p>${e(t.aiText)}</p><a class="btn btn-light" href="${rel + softwarePath('crm',productLang)}">${e(t.aiLink)}${arrow()}</a><small class="ai-note">${e(t.aiNote)}</small></div></div></section>
-  <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(t.processTitle)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
-  ${renderCrmPlans(lang)}
+  <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(s.services)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p></div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
+  <section class="studio-directory section"><div class="wrap"><div class="directory-heading"><h2>${e(s.directory)}</h2><p>${e(s.directoryLead)}</p></div><div class="studio-routes">${directory}</div></div></section>
+  ${renderSecretaryCatalogue(lang)}
+  <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(s.process)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
+  ${crmPlans[lang] ? `<div class="wrap studio-plans"><details class="studio-fold"><summary>${e(s.pricing)}${icon('Plus')}</summary>${renderCrmPlans(lang)}</details></div>` : ''}
   <section class="section faq"><div class="wrap faq-layout"><div><p class="eyebrow">${e(t.faqLabel)}</p><h2>${e(t.faqTitle)}</h2></div><div class="faq-list">${t.faqs.map(([q,a])=>`<details><summary>${e(q)}${icon('Plus')}</summary><p>${e(a)}</p></details>`).join('')}</div></div></section>
-  <section class="contact" id="contact"><div class="wrap contact-layout"><div><p class="eyebrow">${e(t.contactLabel)}</p><h2 class="preline">${e(t.contactTitle)}</h2><p class="contact-lead">${e(t.contactText)}</p><a class="contact-phone" dir="ltr" href="tel:+972555071400">+972 55 507 1400</a><a class="contact-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a><a class="contact-email contact-whatsapp" href="https://wa.me/972533613100" dir="ltr">WhatsApp: +972 53 361 3100</a><address class="address"><span>${e(t.location)}</span><span>${e(t.hours).replace('09:00–18:00','<bdi dir="ltr">09:00–18:00</bdi>')}</span><span>${e(t.appointment)}</span></address></div>
+  <section class="contact" id="contact"><div class="wrap contact-layout"><div><p class="eyebrow">${e(t.contactLabel)}</p><h2 class="preline">${e(s.contact)}</h2><p class="contact-lead">${e(t.contactText)}</p><a class="contact-phone" dir="ltr" href="tel:+972555071400">+972 55 507 1400</a><a class="contact-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a><a class="contact-email contact-whatsapp" href="https://wa.me/972533613100" dir="ltr">WhatsApp: +972 53 361 3100</a><address class="address"><span>${e(t.location)}</span><span>${e(t.hours).replace('09:00–18:00','<bdi dir="ltr">09:00–18:00</bdi>')}</span><span>${e(t.appointment)}</span></address></div>
     <form class="brief-form" id="project-brief"><div class="form-row"><div class="field"><label for="service">${e(t.service)}</label><select name="service" id="service">${[...t.serviceOptions,innovation[lang].label].map((title,i)=>`<option value="${serviceValues[i]}">${e(title)}</option>`).join('')}</select></div></div><div class="field"><label for="brief">${e(t.brief)}</label><textarea name="brief" id="brief" maxlength="1500" placeholder="${e(t.placeholder)}" required aria-describedby="brief-error form-privacy"></textarea></div><p id="brief-error" role="status" aria-live="polite"></p><a class="btn btn-light" id="continue-whatsapp" href="https://wa.me/972533613100" target="_blank" rel="noopener">${e(t.send)}${arrow()}</a><p class="form-privacy" id="form-privacy">${e(t.privacy)}</p><p class="mail-option">${e(t.mail)} <a id="brief-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a></p></form>
   </div></section>
 </main>
 <footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Eydelstein Digital Lab.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Eydelstein Digital Lab</span><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
-<a class="mobile-contact" href="#contact" aria-label="${e(t.start)}" title="${e(t.start)}">${icon('MessageCircle')}</a>
 <script src="${rel}script.js?v=${pageVersion}" defer></script>
 </body></html>`;
 }
 await mkdir(target, {recursive:true});
 const callCenterPath = join(target, 'ai-call-center', 'index.html');
-try {
+const homeOnly = process.env.SITE_SCOPE === 'home';
+if (!homeOnly) try {
   const callCenter = await readFile(callCenterPath, 'utf8');
   if (callCenter.includes('<!-- CRM PLANS START -->')) {
     let updated = callCenter.replace(/<!-- CRM PLANS START -->[\s\S]*?<!-- CRM PLANS END -->/, `<!-- CRM PLANS START -->${renderCrmPlans('he')}<!-- CRM PLANS END -->`);
@@ -139,10 +135,11 @@ for (const [lang,t] of Object.entries(content)) {
   await mkdir(dir,{recursive:true});
   await writeFile(join(dir,'index.html'),render(lang,t).replace(/[ \t]+$/gm,''));
 }
-for (const name of ['styles.css','script.js']) {
-  const file = join(here,name);
-  try { await copyFile(file,join(target,name)); } catch(error) { if(error.code !== 'ENOENT') throw error; }
+for (const name of ['styles.css','studio.css','script.js']) {
+  const file = join(here,'..',name);
+  if (resolve(file) !== resolve(target,name)) await copyFile(file,join(target,name));
 }
+if (!homeOnly) {
 await buildSoftware(target);
 await buildDental(target);
 await buildAuto(target);
@@ -159,4 +156,5 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www
   ...secretaryUrls.map(url=>sitemapEntry(url,'2026-11-19'))
 ].join('')}</urlset>`;
 await writeFile(join(target,'sitemap.xml'),sitemap);
+}
 console.log(`Built ${Object.keys(content).length} localised Eydelstein Digital Lab pages in ${target}`);
