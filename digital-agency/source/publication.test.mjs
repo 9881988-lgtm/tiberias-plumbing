@@ -8,8 +8,12 @@ import { innovation, innovationPath, innovationUrls } from './innovation.mjs';
 const agency = fileURLToPath(new URL('../', import.meta.url));
 const site = join(agency, '..');
 const read = path => readFileSync(path, 'utf8');
-// The owner explicitly approved publishing these four one-page offers on 19 November.
-const approvedPDFs = new Set(['Hotel_Secretary_A4_RU.pdf','Hotel_Secretary_A4_HE.pdf','Small_Business_Secretary_A4_RU.pdf','Small_Business_Secretary_A4_HE.pdf'].map(name=>join(agency,'secretary-catalog',name)));
+// The owner explicitly approved these four one-page offers and the three
+// four-page hotel consulting proposals on 19 November. Keep the exception exact.
+const approvedPDFs = new Set([
+  ...['Hotel_Secretary_A4_RU.pdf','Hotel_Secretary_A4_HE.pdf','Small_Business_Secretary_A4_RU.pdf','Small_Business_Secretary_A4_HE.pdf'].map(name=>join(agency,'secretary-catalog',name)),
+  ...['hotel-consulting-he.pdf','hotel-consulting-ru.pdf','hotel-consulting-en.pdf'].map(name=>join(agency,'hotel-consulting',name))
+]);
 const amount = /\u20aa|\$\d|\b(?:ILS|NIS)\s*\d|\d\s*(?:ILS|NIS)\b|"(?:priceSpecification|priceCurrency|priceRange|lowPrice|highPrice|price)"\s*:/i;
 
 function* files(dir) {
