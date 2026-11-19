@@ -8,12 +8,13 @@ import { buildInnovation, innovation, innovationPath, renderInnovationTeaser } f
 import { buildSoftware, renderSoftwareTeaser, softwarePath, softwareUrls } from './software.mjs';
 import { buildDental, dentalUrls, renderDentalTeaser } from './dental.mjs';
 import { buildAuto, autoUrls, renderAutoTeaser } from './auto.mjs';
+import { buildSecretaryOffers, secretaryUrls, renderSecretaryCatalogue } from './secretary.mjs';
 const require = createRequire(import.meta.url);
 const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261118-quote';
+const version = '20261119-secretary';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -46,7 +47,7 @@ function render(lang, t) {
     ]
   };
   const productLang = lang === 'fr' ? 'en' : lang;
-  const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>`;
+  const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>` + (['ru','he'].includes(lang) ? `<a href="#secretary-catalog">${lang==='he'?'קטלוג':'Каталог'}</a>` : '');
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
   const projectIntro = p => `<div class="project-topline"><span>${e(p.label)}</span><span class="project-status">${e(p.status)}</span></div><h3 class="preline">${e(p.title)}</h3><p>${e(p.text)}</p>${tags(p)}<p class="project-note">${e(p.note)}</p>`;
   return `<!doctype html>
@@ -68,6 +69,7 @@ function render(lang, t) {
   <link rel="preload" href="${rel}assets/hero.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="${rel}styles.css?v=${pageVersion}">
   <link rel="stylesheet" href="${rel}software.css?v=${pageVersion}">
+  <link rel="stylesheet" href="${rel}secretary-offers.css?v=${pageVersion}">
   ${crmPlans[lang] ? `<link rel="stylesheet" href="${rel}crm-plans.css?v=20261102-crm">` : ''}
   <script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
@@ -92,6 +94,7 @@ function render(lang, t) {
   ${renderInnovationTeaser(lang,rel)}
   ${renderHotelTeaser(lang,rel)}
   ${renderAutoTeaser(lang)}
+  ${renderSecretaryCatalogue(lang)}
   <section class="section intro"><div class="wrap intro-layout"><p class="eyebrow">${e(t.introLabel)}</p><div class="intro-main"><h2 class="preline">${e(t.introTitle)}</h2><div class="intro-copy"><p>${e(t.introText)}</p><a class="text-link" href="#services">${e(t.introLink)}${arrow()}</a></div></div></div></section>
   <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(t.workTitle)}</h2></div><p>${e(t.workIntro)}</p></div>
     <div class="platform-preview" id="next-releases" aria-labelledby="platform-title">
@@ -144,6 +147,7 @@ await buildSoftware(target);
 await buildDental(target);
 await buildAuto(target);
 await buildInnovation(target);
+await buildSecretaryOffers(target);
 const sitemapEntry = (url, lastModified='2026-11-18', alternates='') =>
   `<url><loc>${url}</loc><lastmod>${lastModified}</lastmod>${alternates}</url>`;
 const localizedHome = Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('');
@@ -151,7 +155,8 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www
   ...Object.keys(content).map(lang=>sitemapEntry(rootURL+pathFor(lang), innovation[lang].lastModified, localizedHome)),
   ...[...softwareUrls,...dentalUrls,...autoUrls].map(url=>sitemapEntry(url)),
   ...Object.keys(innovation).map(lang=>sitemapEntry(rootURL+innovationPath(lang), innovation[lang].lastModified)),
-  ...hotelUrls.map(url=>sitemapEntry(url))
+  ...hotelUrls.map(url=>sitemapEntry(url)),
+  ...secretaryUrls.map(url=>sitemapEntry(url,'2026-11-19'))
 ].join('')}</urlset>`;
 await writeFile(join(target,'sitemap.xml'),sitemap);
 console.log(`Built ${Object.keys(content).length} localised Eydelstein Digital Lab pages in ${target}`);

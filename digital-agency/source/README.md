@@ -79,3 +79,9 @@ The workshop team confirms scope, diagnosis and safety. Customer call handling r
 ## Innovation applications
 
 innovation.mjs builds four localized service pages and the home teasers. Consult the linked official Tnufa program page for current requirements. No grant or acceptance is guaranteed.
+
+## Hotel and small-business one-page offers (19 November 2026)
+
+The owner explicitly requested publication of the four previously approved RU/HE A4 PDFs. `../secretary-offers.mjs` keeps the matching service copy, routes and document links. `secretary.mjs` builds `hotel-secretary/`, `hotel-secretary/ru/`, `small-business-secretary/` and `small-business-secretary/ru/`, and renders the catalogue on RU/HE agency and CRM pages. The small-business offer updates the existing generic receptionist entry without adding a duplicate; the hotel receptionist is separate from Booking and hotel consulting. Booking.com/Airbnb integrations require separate agreement.
+
+The only newly public priced documents are the four explicitly approved files in `secretary-catalog/`. The rest of the website continues to omit public amounts, calculators and older priced PDFs. `publication.test.mjs` has an exact four-file exception, and `secretary.test.mjs` covers the new routes, catalogue links, scope and sitemaps. The attached PDFs are byte-identical to the approved one-page documents; existing company branding and contacts on the current website are preserved.

@@ -6,7 +6,7 @@ import { crmPlans } from '../crm-plans.mjs';
 const read=path=>readFileSync(new URL('../'+path,import.meta.url),'utf8');
 test('dental variant supplements rather than replaces the generic receptionist plan',()=>{
   for(const lang of ['ru','he']){
-    assert.equal(crmPlans[lang].plans.length,7);
+    assert.equal(crmPlans[lang].plans.length,8);
     assert.equal(crmPlans[lang].plans.filter(x=>x.id==='dental_secretary').length,1);
   }
 });

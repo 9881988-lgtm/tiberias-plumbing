@@ -8,6 +8,8 @@ import { innovation, innovationPath, innovationUrls } from './innovation.mjs';
 const agency = fileURLToPath(new URL('../', import.meta.url));
 const site = join(agency, '..');
 const read = path => readFileSync(path, 'utf8');
+// The owner explicitly approved publishing these four one-page offers on 19 November.
+const approvedPDFs = new Set(['Hotel_Secretary_A4_RU.pdf','Hotel_Secretary_A4_HE.pdf','Small_Business_Secretary_A4_RU.pdf','Small_Business_Secretary_A4_HE.pdf'].map(name=>join(agency,'secretary-catalog',name)));
 const amount = /\u20aa|\$\d|\b(?:ILS|NIS)\s*\d|\d\s*(?:ILS|NIS)\b|"(?:priceSpecification|priceCurrency|priceRange|lowPrice|highPrice|price)"\s*:/i;
 
 function* files(dir) {
@@ -29,7 +31,8 @@ test('public agency and home-service pages use quotes rather than published pric
     assert.doesNotMatch(read(f), amount, f);
     if (f.endsWith('.html')) assert.doesNotMatch(read(f), />undefined<|id="cost-total"|class="package-price"/, f);
   }
-  for (const f of publicFiles) assert.ok(!/\.pdf$|\/catalog\.json$/.test(f), f);
+  for (const f of publicFiles) assert.ok(approvedPDFs.has(f) || !/\.pdf$|\/catalog\.json$/.test(f), f);
+  for (const f of approvedPDFs) assert.ok(existsSync(f), f);
 });
 
 test('app pages and catalog data do not publish purchase amounts', () => {

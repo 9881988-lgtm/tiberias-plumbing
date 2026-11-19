@@ -6,6 +6,7 @@ import { dentalPlans } from '../dental-plan.mjs';
 import { renderDentalTeaser } from './dental.mjs';
 import { autoPlans } from '../auto-plan.mjs';
 import { renderAutoTeaser } from './auto.mjs';
+import { renderSecretaryCatalogue } from './secretary.mjs';
 
 const root = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
 const version = '20261118-quote';
@@ -63,7 +64,7 @@ ${Object.keys(softwareContent).map(code=>`<link rel="alternate" hreflang="${code
 <link rel="alternate" hreflang="x-default" href="${root+softwarePath(key,'he')}">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Galany CRM · Eydelstein Digital Lab"><meta property="og:title" content="${e(p.title)}"><meta property="og:description" content="${e(p.description)}"><meta property="og:url" content="${canonical}"><meta property="og:locale" content="${{he:'he_IL',ru:'ru_RU',en:'en_US'}[lang]}"><meta property="og:image" content="${root}assets/galany-crm-test-interface.png"><meta property="og:image:width" content="1280"><meta property="og:image:height" content="720"><meta property="og:image:alt" content="${e(t.caption)}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${e(p.title)}"><meta name="twitter:description" content="${e(p.description)}"><meta name="twitter:image" content="${root}assets/galany-crm-test-interface.png"><meta name="twitter:image:alt" content="${e(t.caption)}">
-<link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="${rel}styles.css?v=${version}"><link rel="stylesheet" href="${rel}crm-plans.css?v=20261102-crm"><link rel="stylesheet" href="${rel}software.css?v=${version}">
+<link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="${rel}styles.css?v=${version}"><link rel="stylesheet" href="${rel}crm-plans.css?v=20261102-crm"><link rel="stylesheet" href="${rel}software.css?v=${version}"><link rel="stylesheet" href="${rel}secretary-offers.css?v=20261119-secretary">
 <script type="application/ld+json">${json}</script>
 </head><body data-language="${lang}" data-product="${key}" data-message="${e(t.message)}" data-task-label="${e(t.taskLabel)}" data-plan-label="${e(t.planLabel)}" data-invalid="${e(t.invalid)}" data-prepared="${e(t.prepared)}">
 <a class="skip" href="#main">${lang==='he'?'לתוכן':lang==='ru'?'К содержанию':'Skip to content'}</a>
@@ -76,6 +77,7 @@ ${Object.keys(softwareContent).map(code=>`<link rel="alternate" hreflang="${code
 ${pricing(lang)}
 ${renderDentalTeaser(lang)}
 ${renderAutoTeaser(lang)}
+${renderSecretaryCatalogue(lang)}
 <section class="product-section"><div class="product-wrap"><h2>${e(t.processTitle)}</h2><ol class="onboarding">${t.process.map(([title,text])=>`<li><h3>${e(title)}</h3><p>${e(text)}</p></li>`).join('')}</ol><div class="implementation"><h3>${e(t.limitationsTitle)}</h3><p>${e(t.limitations)}</p></div></div></section>
 <section class="product-section faq-section"><div class="product-wrap section-two"><h2>${e(t.faqTitle)}</h2><div class="product-faq">${p.faqs.map(([q,a])=>`<details><summary>${e(q)}</summary><p>${e(a)}</p></details>`).join('')}</div></div></section>
 <section class="product-section product-contact" id="contact"><div class="product-wrap section-two"><div><p class="eyebrow">Galany CRM</p><h2>${e(t.formTitle)}</h2><p>${e(t.formIntro)}</p><a class="product-phone" href="tel:+972555071400" dir="ltr">+972 55 507 1400</a><a href="mailto:9881988@gmail.com">9881988@gmail.com</a><p class="product-whatsapp"><a href="https://wa.me/972533613100" dir="ltr">WhatsApp: +972 53 361 3100</a></p><address>${e(t.address)}<br>${e(t.hours)}</address></div><form id="crm-demo-form"><label for="demo-product">${e(t.fieldProduct)}</label><select id="demo-product">${['crm','sales','calls'].map(item=>`<option value="${item}"${item===(key==='software'?'crm':key)?' selected':''}>${e(t.pages[item].name)}</option>`).join('')}</select><label for="demo-plan">${e(t.fieldPlan)}</label><select id="demo-plan"><option value="">${e(t.unsure)}</option>${(lang==='en'?englishPlans.map(x=>({name:x[0]})):crmPlans[lang].plans).map(plan=>`<option>${plan.name}</option>`).join('')}</select><label for="demo-need">${e(t.fieldNeed)}</label><textarea id="demo-need" rows="4" required minlength="8" maxlength="1200" placeholder="${e(t.needPlaceholder)}" aria-describedby="demo-privacy demo-status"></textarea><div class="product-actions"><button class="btn btn-light" type="submit">${e(t.send)}</button><button class="email-draft" type="submit" name="channel" value="email">${e(t.email)}</button></div><p id="demo-status" role="status" aria-live="polite"></p><p id="demo-privacy" class="product-note">${e(t.privacy)}</p><noscript><p><a href="https://wa.me/972533613100">WhatsApp</a> · <a href="mailto:9881988@gmail.com">9881988@gmail.com</a></p></noscript></form></div></section>

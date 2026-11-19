@@ -6,8 +6,8 @@ import { crmPlans } from '../crm-plans.mjs';
 const read = path => readFileSync(new URL('../'+path,import.meta.url),'utf8');
 test('auto and dental packages retain separate identities',()=>{
  for(const lang of ['ru','he']){
-  assert.equal(crmPlans[lang].plans.length,7);
-  assert.equal(crmPlans[lang].plans[0].id,'auto_secretary');
+  assert.equal(crmPlans[lang].plans.length,8);
+  assert.equal(crmPlans[lang].plans.filter(x=>x.id==='auto_secretary').length,1);
   assert.equal(crmPlans[lang].plans.filter(x=>x.id==='dental_secretary').length,1);
  }
 });
