@@ -53,7 +53,8 @@
     const hits=Object.keys(terms).filter(k=>terms[k].some(v=>matches(words,v)));
     const exact=faq.find(([title])=>norm(title)===key);
     const contacts=['phone','email','whatsapp','hours','office'].filter(k=>hits.includes(k));
-    const specific=hits.filter(k=>!contacts.includes(k)&&k!=='services'&&k!=='crm');
+    const catalog=hits.filter(k=>data.catalogIds?.includes(k));
+    const specific=catalog.length?[...catalog,...hits.filter(k=>k==='price')]:hits.filter(k=>!contacts.includes(k)&&k!=='services'&&k!=='crm');
     const keys=hits.includes('private')?[]:contacts.length?contacts:specific.length?specific.slice(0,2):hits.slice(0,1);
     const result=exact&&!hits.includes('private')?[[exact[1],exact[2]]]:keys.map(k=>answers[k]).filter(Boolean);
     if(!result.length)result.push([x.unknown,'mailto:'+email+'?body='+encodeURIComponent(question),x.hand]);

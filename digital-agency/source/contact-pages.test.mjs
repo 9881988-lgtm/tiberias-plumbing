@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
 import { contact, copy } from './contact-copy.mjs';
+import { capabilities } from './capabilities.mjs';
 import { products, entry, formUrl, leadCopy } from './lead-copy.mjs';
 const file=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 for(const lang of Object.keys(copy)){
@@ -12,6 +13,13 @@ for(const lang of Object.keys(copy)){
     assert.ok(home.includes('contacts/'+suffix+'"'));assert.ok(form.includes(formUrl+'/formResponse'));
     assert.ok(form.includes('name="'+entry+'"'));assert.ok(contactPage.includes('tel:'+contact.phone));
     assert.ok(contactPage.includes('mailto:'+contact.email));assert.ok(contactPage.includes('href="'+contact.whatsapp+'"'));
+    const advisor=JSON.parse(contactPage.match(/id="page-data">([^<]+)<\/script>/)[1]);
+    for(const c of capabilities){
+      assert.ok(home.includes('id="'+c.id+'"'));assert.ok(home.includes(c[lang][0]));
+      assert.ok(advisor.terms[c.id].length>1);
+      assert.ok(advisor.answers[c.id][1].endsWith('?product='+c.id));
+      assert.ok(form.includes('value="'+c.id+'"'));
+    }
     for(const p of ['galany-crm','dental-secretary','hotel-consulting','innovation-applications']){
       assert.ok(file(p+'/'+suffix+'index.html').includes('request/'+suffix+'?product='+p));
       assert.ok(form.includes('value="'+p+'"'));

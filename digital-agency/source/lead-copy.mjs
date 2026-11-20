@@ -1,3 +1,4 @@
+import { capabilities } from './capabilities.mjs';
 export const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSetNUqXz3oVz8USoO2yOEjXZXVZZEDMWjKQZ8ay0sAFfAWh-A';
 export const entry = 'entry.1598828035';
 export const order = ['ru','he','en','fr'];
@@ -8,6 +9,7 @@ export const leadCopy = {
   fr: ['Faire une demande','Comment vous joindre ?','Un téléphone ou une adresse e-mail suffit. Le reste est facultatif.','Produit ou service','Choisir un service','Votre nom','Téléphone','E-mail','Préciser mon projet','Quel résultat souhaitez-vous obtenir ?','Quels outils utilisez-vous actuellement ?','Pour quelle échéance ?','Envoyer ma demande','Laissez un moyen de contact ou quelques mots sur le projet.','En envoyant ce formulaire, vous transmettez vos informations à Eydelstein Digital Lab via Google Forms afin que nous puissions vous répondre. Ne communiquez ni mots de passe ni données clients.','Ouvrir le formulaire Google','Indiquez un téléphone ou un e-mail si vous souhaitez une réponse.'],
 };
 export const products = {
+  ...Object.fromEntries(capabilities.map(c=>[c.id,order.map(lang=>c[lang][0])])),
   'galany-crm':['Galany CRM','Galany CRM','Galany CRM','Galany CRM'],
   'desktop-crm':['Edelstein CRM Israel','Edelstein CRM Israel','Edelstein CRM Israel','Edelstein CRM Israel'],
   'ai-sales-agent':['AI-продавец','נציג מכירות AI','AI sales agent','Agent commercial IA'],

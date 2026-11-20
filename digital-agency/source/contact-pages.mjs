@@ -5,6 +5,7 @@ import { leadCopy, products, order, promptFor, formUrl, entry } from './lead-cop
 import { content } from './content.mjs';
 import { softwareContent } from './software-content.mjs';
 import { innovation } from './innovation.mjs';
+import { capabilities, intro } from './capabilities.mjs';
 
 const path = l => l === 'he' ? '' : l+'/';
 const json = o => JSON.stringify(o).replaceAll('<','\\u003c');
@@ -23,7 +24,14 @@ export async function buildContactPages(target,root,icon,e) {
       remote:[t.faqs[1][1],home+'#contact'], services:[x.menu,home+'#services'],
     };
     for (const [n,id] of [[0,'website'],[1,'app'],[3,'ads']]) answers[id]=[t.services[n][1]+' '+t.services[n][2]+'.',home+'#services'];
-    const data={x,locale:locales[lang],email:c.email,answers,terms:Object.fromEntries(Object.entries(intents).map(([k,v])=>[k,v[i].split('|')])),
+    const terms=Object.fromEntries(Object.entries(intents).map(([k,v])=>[k,v[i].split('|')]));
+    terms.services.push(...({ru:['что вы можете','что вы умеете','какие задачи','что можете сделать'],he:['מה אתם יכולים לעשות','מה אפשר להזמין'],en:['what can you do','what can you build','what can i hire you for'],fr:['que pouvez vous faire','que faites vous','que puis je vous confier']}[lang]));
+    answers.services=[x.menu+' '+capabilities.map(c=>c[lang][0]).join('; ')+'.',home+'#capabilities'];
+    for(const c of capabilities){
+      terms[c.id]=[...c.tech.split('|'),...c[lang][2].split('|'),c[lang][0]];
+      answers[c.id]=[(c.id==='software-engineering'?intro[lang][1]+' ':'')+c[lang][1],route('request')+'?product='+c.id,l[0]];
+    }
+    const data={x,locale:locales[lang],email:c.email,answers,terms,catalogIds:capabilities.map(c=>c.id),
       faq:[...t.faqs.map(pair=>[...pair,home+'#main']),...['crm','calls','sales'].flatMap((p,n)=>s.pages[p].faqs.map(pair=>[...pair,route(['galany-crm','call-center-software','ai-sales-agent'][n])]))]};
     const idButton=(id,sym,label)=>`<button type="button" id="${id}" title="${e(label)}" aria-label="${e(label)}">${icon(sym)}<span>${e(label)}</span></button>`;
     const method=(sym,label,val,href)=>`<a class="method" href="${href}">${icon(sym)}<span><small>${e(label)}</small><bdi dir="ltr">${e(val)}</bdi></span>${icon('ArrowUpRight')}</a>`;

@@ -6,6 +6,7 @@ import { execFileSync } from 'node:child_process';
 import { buildServiceEditions } from './service-editions.mjs';
 import { content } from './content.mjs';
 import { buildContactPages } from './contact-pages.mjs';
+import { capabilities, intro as capabilityIntro } from './capabilities.mjs';
 import { leadCopy } from './lead-copy.mjs';
 import { studio } from './studio.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
@@ -45,6 +46,7 @@ function render(lang, t) {
     ]
   };
   const productLang = lang;
+  schema['@graph'][0].hasOfferCatalog={'@type':'OfferCatalog',name:capabilityIntro[lang][0],itemListElement:capabilities.map(c=>({'@type':'Offer',itemOffered:{'@type':'Service',name:c[lang][0],description:c[lang][1],url:canonical+'#'+c.id}}))};
   const offlineDownloadTitle = {he:'הורדת Edelstein CRM Israel',ru:'Скачать Edelstein CRM Israel',en:'Download Edelstein CRM Israel',fr:'Télécharger Edelstein CRM Israel'}[lang];
   const s = studio[lang];
   const inquiry = slug => `<a class="lead-cta" href="${rel}request/${pathFor(lang)}?product=${encodeURIComponent(slug)}">${e(leadCopy[lang][0])}${arrow()}</a>`;
@@ -110,6 +112,7 @@ function render(lang, t) {
   </div></section>
   <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(s.services)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p>${inquiry(id)}</div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
   <section class="studio-directory section"><div class="wrap"><div class="directory-heading"><h2>${e(s.directory)}</h2><p>${e(s.directoryLead)}</p></div><div class="studio-routes">${directory}</div></div></section>
+  <section class="section capabilities" id="capabilities"><div class="wrap"><div class="section-head"><h2>${e(capabilityIntro[lang][0])}</h2><p>${e(capabilityIntro[lang][1])}</p></div><div class="capability-offers">${capabilities.map(c=>`<article id="${c.id}"><h3>${e(c[lang][0])}</h3><p>${e(c[lang][1])}</p>${inquiry(c.id)}</article>`).join('')}</div></div></section>
   ${renderSecretaryCatalogue(lang)}
   <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(s.process)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
   ${crmPlans[lang] ? `<div class="wrap studio-plans"><details class="studio-fold"><summary>${e(s.pricing)}${icon('Plus')}</summary>${renderCrmPlans(lang)}</details></div>` : ''}
