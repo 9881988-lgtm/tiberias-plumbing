@@ -46,10 +46,26 @@ def transform(file,slug,lang):
     patches = []
     rel = '../' if lang=='he' else '../../'
     def inject(pos,s): patches.append((pos,pos,s))
+    labels={'he':('שליחת פנייה','יצירת קשר'),'en':('Make an enquiry','Contact'),'ru':('Сделать заявку','Контакты'),'fr':('Faire une demande','Contact')}
+    def actions(code,product):
+        c,ct=labels[code]
+        return f'<a class="lead-cta" href="{rel}{route("request",code)}?product={product}">{c}</a> <a href="{rel}{route("contacts",code)}">{ct}</a>'
+    hero=next((e for t,a,_,e in tags if t=='div' and 'product-actions' in a.get('class','').split()),None)
+    if hero is not None and 'class="hero-enquiry"' not in raw:
+        inject(hero,f'<a class="hero-enquiry" href="{rel}{route("request",lang)}?product={slug}">{labels[lang][0]}</a>')
+    if not any(a.get('class')=='service-enquiry' for _,a,_,_ in tags):
+        links=actions(lang,slug)
+        if slug=='ai-call-center':
+            links=''.join(f'<span lang="{code}">{actions(code,slug)}</span>' for code in LANG)
+        inject(raw.index('</main>'),f'<div class="service-enquiry">{links}</div>')
+    if slug=='galany-crm' and '?product=desktop-crm' not in raw:
+        pt=next((p for t,a,p,_ in tags if a.get('id')=='desktop-downloads'),None)
+        if pt is not None:
+            inject(raw.index('</section>',pt),f'<p class="desktop-enquiry">{actions(lang,"desktop-crm")}</p>')
     if slug=='galany-crm':
         if not any(a.get('id')=='desktop-downloads' for _,a,_,_ in tags):
             point=next(p for t,a,p,_ in tags if t=='section' and 'availability' in a.get('class','').split())
-            inject(point,desktop_downloads(lang))
+            inject(point,desktop_downloads(lang).replace('</section>',f'<p class="desktop-enquiry">{actions(lang,"desktop-crm")}</p></section>'))
         if not any(a.get('href')=='#desktop-downloads' for _,a,_,_ in tags):
             point=next(e for t,a,_,e in tags if t=='div' and a.get('class')=='product-actions')
             inject(raw.index('</div>',point),f'<a class="text-link" href="#desktop-downloads">{DESKTOP_COPY[lang][0]}</a>')
@@ -82,11 +98,11 @@ def transform(file,slug,lang):
         out=out[:a]+v+out[b:]
     if out!=file.read_text(): file.write_text(out)
 
-def sitemap(file,urls):
+def sitemap(file,urls,date='2026-11-19'):
     if not file.is_file(): return
     raw=file.read_text()
     found={n.text for n in ET.fromstring(raw).findall('{*}url/{*}loc')}
-    extra=''.join('<url><loc>'+u+'</loc><lastmod>2026-11-19</lastmod></url>\n' for u in urls if u not in found)
+    extra=''.join('<url><loc>'+u+'</loc><lastmod>'+date+'</lastmod></url>\n' for u in urls if u not in found)
     if extra: file.write_text(raw.replace('</urlset>',extra+'</urlset>'))
 
 if __name__=='__main__':
@@ -101,3 +117,6 @@ if __name__=='__main__':
     if legacy.exists(): transform(legacy,'ai-call-center','he')
     sitemap(target/'sitemap.xml',urls)
     if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',urls)
+    extra=[BASE+route(slug,lang) for slug in ('contacts','request') for lang in LANG if (target/route(slug,lang)/'index.html').exists()]
+    sitemap(target/'sitemap.xml',extra,'2026-11-20')
+    if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',extra,'2026-11-20')

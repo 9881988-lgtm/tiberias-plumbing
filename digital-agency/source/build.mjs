@@ -5,6 +5,8 @@ import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
 import { buildServiceEditions } from './service-editions.mjs';
 import { content } from './content.mjs';
+import { buildContactPages } from './contact-pages.mjs';
+import { leadCopy } from './lead-copy.mjs';
 import { studio } from './studio.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
 import { buildInnovation, innovation, innovationPath } from './innovation.mjs';
@@ -45,10 +47,11 @@ function render(lang, t) {
   const productLang = lang;
   const offlineDownloadTitle = {he:'הורדת Edelstein CRM Israel',ru:'Скачать Edelstein CRM Israel',en:'Download Edelstein CRM Israel',fr:'Télécharger Edelstein CRM Israel'}[lang];
   const s = studio[lang];
+  const inquiry = slug => `<a class="lead-cta" href="${rel}request/${pathFor(lang)}?product=${encodeURIComponent(slug)}">${e(leadCopy[lang][0])}${arrow()}</a>`;
   const urls = [softwarePath('crm',productLang), softwarePath('sales',productLang), softwarePath('calls',productLang), 'dental-secretary/'+pathFor(productLang), 'auto-secretary/'+pathFor(productLang), 'hotel-consulting/'+pathFor(lang), softwarePath('software',productLang), innovationPath(lang), 'hotel-secretary/'+pathFor(lang), 'small-business-secretary/'+pathFor(lang)];
   const symbols = ['PanelsTopLeft','MessagesSquare','PhoneCall','CalendarDays','Wrench','Building2','Layers','Lightbulb','BedDouble','PhoneForwarded'];
-  const directory = urls.map((url,i)=>url ? `<a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}${i===7?`<small>${e(s.applicationAction)}</small>`:''}</span>${arrow()}</a>` : '').join('');
-  const nav = t.nav.map((item,i)=>`<a href="#${navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>` + (['ru','he'].includes(lang) ? `<a href="#secretary-catalog">${lang==='he'?'קטלוג':'Каталог'}</a>` : '');
+  const directory = urls.map((url,i)=>url ? `<div class="route-offer"><a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}${i===7?`<small>${e(s.applicationAction)}</small>`:''}</span>${arrow()}</a>${inquiry(url.split('/')[0])}</div>` : '').join('');
+  const nav = t.nav.map((item,i)=>`<a href="${i===3?rel+'contacts/'+pathFor(lang):'#'+navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>` + (['ru','he'].includes(lang) ? `<a href="#secretary-catalog">${lang==='he'?'קטלוג':'Каталог'}</a>` : '');
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
   const projectIntro = p => `<div class="project-topline"><span>${e(p.label.replace(/^\d+\s*\/\s*/, ''))}</span><span class="project-status">${e(p.status)}</span></div><h3 class="preline">${e(p.title)}</h3><p>${e(p.text)}</p>${tags(p)}<p class="project-note">${e(p.note)}</p>`;
   return `<!doctype html>
@@ -93,9 +96,9 @@ function render(lang, t) {
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
   <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(s.work)}</h2></div></div>
     <div class="project-grid">
-      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a> <a class="text-link" href="${rel+softwarePath('crm',productLang)}#desktop-downloads">${e(offlineDownloadTitle)}</a></div></article>
-      <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}</div></article>
-      <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}../ac-cleaning/assets/ac-cleaning-tiberias-hero.jpg" alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}</div></article>
+      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a> <a class="text-link" href="${rel+softwarePath('crm',productLang)}#desktop-downloads">${e(offlineDownloadTitle)}</a><p>${inquiry('desktop-crm')}</p></div></article>
+      <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}${inquiry('receiptil')}</div></article>
+      <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}../ac-cleaning/assets/ac-cleaning-tiberias-hero.jpg" alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}${inquiry('ac-cleaning')}</div></article>
     </div>
     <details class="studio-fold studio-platform"><summary>${e(s.next)}${icon("Plus")}</summary>
     <p class="platform-status">${e(t.workIntro)}</p>
@@ -105,7 +108,7 @@ function render(lang, t) {
     </div>
     </details>
   </div></section>
-  <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(s.services)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p></div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
+  <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(s.services)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p>${inquiry(id)}</div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
   <section class="studio-directory section"><div class="wrap"><div class="directory-heading"><h2>${e(s.directory)}</h2><p>${e(s.directoryLead)}</p></div><div class="studio-routes">${directory}</div></div></section>
   ${renderSecretaryCatalogue(lang)}
   <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(s.process)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
@@ -115,7 +118,7 @@ function render(lang, t) {
     <form class="brief-form" id="project-brief"><div class="form-row"><div class="field"><label for="service">${e(t.service)}</label><select name="service" id="service">${[...t.serviceOptions,innovation[lang].label].map((title,i)=>`<option value="${serviceValues[i]}">${e(title)}</option>`).join('')}</select></div></div><div class="field"><label for="brief">${e(t.brief)}</label><textarea name="brief" id="brief" maxlength="1500" placeholder="${e(t.placeholder)}" required aria-describedby="brief-error form-privacy"></textarea></div><p id="brief-error" role="status" aria-live="polite"></p><a class="btn btn-light" id="continue-whatsapp" href="https://wa.me/972533613100" target="_blank" rel="noopener">${e(t.send)}${arrow()}</a><p class="form-privacy" id="form-privacy">${e(t.privacy)}</p><p class="mail-option">${e(t.mail)} <a id="brief-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a></p></form>
   </div></section>
 </main>
-<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Eydelstein Digital Lab.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Eydelstein Digital Lab</span><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Eydelstein Digital Lab.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Eydelstein Digital Lab</span><a href="${rel}contacts/${pathFor(lang)}">${e(t.nav[3])}</a><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
 <script src="${rel}script.js?v=${pageVersion}" defer></script>
 </body></html>`;
 }
@@ -139,7 +142,8 @@ for (const [lang,t] of Object.entries(content)) {
   await mkdir(dir,{recursive:true});
   await writeFile(join(dir,'index.html'),render(lang,t).replace(/[ \t]+$/gm,''));
 }
-for (const name of ['styles.css','studio.css','service-studio.css','script.js']) {
+await buildContactPages(target,rootURL,icon,e);
+for (const name of ['contact-pages.css','contact-pages.js','styles.css','studio.css','service-studio.css','script.js']) {
   const file = join(here,'..',name);
   if (resolve(file) !== resolve(target,name)) await copyFile(file,join(target,name));
 }
@@ -159,6 +163,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www
   ...Object.keys(content).map(lang=>sitemapEntry(rootURL+pathFor(lang), innovation[lang].lastModified, localizedHome)),
   ...[...softwareUrls,...dentalUrls,...autoUrls].map(url=>sitemapEntry(url)),
   ...Object.keys(innovation).map(lang=>sitemapEntry(rootURL+innovationPath(lang), innovation[lang].lastModified)),
+  ...['contacts','request'].flatMap(slug=>Object.keys(content).map(lang=>sitemapEntry(rootURL+slug+'/'+pathFor(lang),'2026-11-20'))),
   ...hotelUrls.map(url=>sitemapEntry(url)),
   ...secretaryUrls.map(url=>sitemapEntry(url,'2026-11-19'))
 ].join('')}</urlset>`;

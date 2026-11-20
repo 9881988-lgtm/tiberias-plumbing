@@ -1,4 +1,6 @@
 /* The agency homepage has its own editorial layout; product pages keep their own styles. */
+.lead-cta{display:inline-flex;align-items:center;gap:8px;background:#d4fa4a;color:#182720!important;padding:9px 14px;border-radius:4px;text-decoration:none;font-weight:650}
+.route-offer{min-width:0;padding-bottom:18px}.route-offer .lead-cta{margin-inline-start:36px}
 .site-header { height:72px; background:#fff; border-color:#dee1dd; backdrop-filter:none }
 .header-inner,.hero-inner,.work .wrap { max-width:1400px }
 .wordmark img { width:34px;height:34px }
