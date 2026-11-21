@@ -1,3 +1,4 @@
+import { siteSales } from './source/lead-copy.mjs';
 import { dentalPlans } from './dental-plan.mjs';
 import { autoPlans } from './auto-plan.mjs';
 import { secretaryPlan } from './secretary-offers.mjs';
@@ -55,11 +56,18 @@ for(const lang of ['ru','he']) crmPlans[lang].plans.unshift(secretaryPlan('hotel
 crmPlans.ru.title = 'Одна система. Восемь тарифов.';
 crmPlans.he.title = 'מערכת אחת. שמונה תוכניות שירות.';
 
+const planSlugs=['hotel-secretary','auto-secretary','dental-secretary','small-business-secretary',
+  'light','booking','business','business-plus'];
+const agency='https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
+
 const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 export function renderCrmPlans(language) {
   const t = crmPlans[language];
   if (!t) return '';
   const e = escape;
-  return `<section class="crm-pricing" id="crm-pricing" aria-labelledby="crm-pricing-title" lang="${language}" dir="${language === 'he' ? 'rtl' : 'ltr'}"><div class="crm-inner"><header class="crm-heading"><p class="crm-kicker">${e(t.kicker)}</p><h2 id="crm-pricing-title">${e(t.title)}</h2><p>${e(t.intro)}</p></header><div class="crm-plan-grid">${t.plans.map(p => `<article class="crm-plan"><h3><bdi>${e(p.name)}</bdi></h3><p class="crm-period">${e(p.period)}</p>${Boolean(p.details)?`<p><a class="text-link" href="${e(p.details)}">${language==='he'?'פרטי החבילה':'Полное предложение'} ↗</a></p>`:''}${p.pdf?`<p><a class="text-link" href="${e(p.pdf)}" download>${language==='he'?'PDF · עמוד A4 אחד':'PDF · 1 лист А4'}</a></p>`:''}<ul>${p.items.map(x => `<li>${e(x)}</li>`).join('')}</ul><a class="crm-contact" href="#contact">${e(t.contact)}<span class="crm-sr-only"> — ${e(p.name)}</span></a></article>`).join('')}</div><div class="crm-included"><h3>${e(t.includedTitle)}</h3><dl>${t.included.map(([title,text]) => `<div><dt>${e(title)}</dt><dd>${e(text)}</dd></div>`).join('')}</dl></div><div class="crm-more"><div><h3>${e(t.bookingTitle)}</h3><ul>${t.booking.map(x => `<li>${e(x)}</li>`).join('')}</ul></div><div><h3>${e(t.termsTitle)}</h3><ul>${t.terms.map(x => `<li>${e(x)}</li>`).join('')}</ul></div></div></div></section>`;
+  const suffix=language==='he'?'':language+'/';
+  const [ask,call,order]=siteSales[language];
+  const actions=(product,name)=>`<p><a class="crm-contact" href="${agency}request/${suffix}?product=${product}&amp;intent=order">${e(order)}<span class="crm-sr-only"> — ${e(name)}</span></a></p><p><a class="text-link" href="${agency}contacts/${suffix}?product=${product}#advisor">${e(ask)}</a> · <a class="text-link" href="tel:+972555071400">${e(call)}</a></p>`;
+  return `<section class="crm-pricing" id="crm-pricing" aria-labelledby="crm-pricing-title" lang="${language}" dir="${language === 'he' ? 'rtl' : 'ltr'}"><div class="crm-inner"><header class="crm-heading"><p class="crm-kicker">${e(t.kicker)}</p><h2 id="crm-pricing-title">${e(t.title)}</h2><p>${e(t.intro)}</p></header><div class="crm-plan-grid">${t.plans.map((p,i) => `<article class="crm-plan"><h3><bdi>${e(p.name)}</bdi></h3><p class="crm-period">${e(p.period)}</p>${Boolean(p.details)?`<p><a class="text-link" href="${e(p.details)}">${language==='he'?'פרטי החבילה':'Полное предложение'} ↗</a></p>`:''}${p.pdf?`<p><a class="text-link" href="${e(p.pdf)}" download>${language==='he'?'PDF · עמוד A4 אחד':'PDF · 1 лист А4'}</a></p>`:''}<ul>${p.items.map(x => `<li>${e(x)}</li>`).join('')}</ul>${actions(planSlugs[i],p.name)}</article>`).join('')}</div><div class="crm-included"><h3>${e(t.includedTitle)}</h3><dl>${t.included.map(([title,text]) => `<div><dt>${e(title)}</dt><dd>${e(text)}</dd></div>`).join('')}</dl></div><div class="crm-more"><div><h3>${e(t.bookingTitle)}</h3><ul>${t.booking.map(x => `<li>${e(x)}</li>`).join('')}</ul></div><div><h3>${e(t.termsTitle)}</h3><ul>${t.terms.map(x => `<li>${e(x)}</li>`).join('')}</ul></div></div></div></section>`;
 }

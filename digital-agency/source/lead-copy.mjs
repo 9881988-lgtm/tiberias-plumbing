@@ -23,11 +23,23 @@ export const products = {
   'hotel-consulting':['Консалтинг для отелей','ייעוץ למלונות','Hotel consulting','Conseil hôtelier'],
   'innovation-applications':['Тнуфа и акселераторы','תנופה ואקסלרטורים','Tnufa and accelerators','Tnufa et accélérateurs'],
   website:['Сайты и лендинги','אתרים ודפי נחיתה','Websites and landing pages','Sites web et landing pages'],
+  landing:['Лендинг','דף נחיתה','Landing page','Landing page'],
   app:['Разработка приложений','פיתוח אפליקציות','App development','Développement d’applications'],
   ai:['AI и автоматизация','AI ואוטומציה','AI and automation','IA et automatisation'],
   ads:['Google и Meta Ads','פרסום בגוגל ובמטא','Google and Meta Ads','Publicité Google et Meta'],
   receiptil:['ReceiptIL','ReceiptIL','ReceiptIL','ReceiptIL'],
   'ac-cleaning':['Сервис кондиционеров','ניקוי מזגנים','AC cleaning','Nettoyage de climatiseurs'],
+  light:Array(4).fill('Galany CRM Light'),
+  booking:Array(4).fill('Galany CRM Booking'),
+  business:Array(4).fill('Galany CRM Business'),
+  'business-plus':Array(4).fill('Galany CRM Business Plus'),
+};
+
+export const siteSales = {
+  ru: ['Спросить Байлу','Позвонить Байле','Запросить заказ','Бюджет, если известен','Разрешаю обработать заявку и связаться со мной.','Заявка в CRM','Укажите продукт, контакт и кратко опишите задачу.','Не удалось подтвердить отправку. Повторите попытку или свяжитесь с нами по телефону.','Задайте вопрос по продукту. Байла поможет уточнить состав предложения.','При отправке данные поступят в CRM Eydelstein Digital Lab для ответа. Не указывайте пароли, карты и данные клиентов.'],
+  he: ['לשאול את ביילה','להתקשר לביילה','בקשה להזמנה','תקציב משוער, אם ידוע','אני מאשר/ת לטפל בפנייה ולחזור אליי.','הפנייה התקבלה במערכת','נא לבחור מוצר, להשאיר פרטי קשר ולתאר בקצרה את הצורך.','לא הצלחנו לאשר שהפנייה נקלטה. נסו שוב או התקשרו אלינו.','אפשר לשאול על המוצר. ביילה תעזור להבין מה כדאי לכלול בהצעה.','בלחיצה על שליחה הפרטים יועברו ל-CRM של Eydelstein Digital Lab כדי לענות לפנייה. אין להזין סיסמאות, כרטיסים או פרטי לקוחות.'],
+  en: ['Ask Bayla','Call Bayla','Request an order','Budget, if known','I agree to have my enquiry processed and to be contacted.','Enquiry received in our CRM','Choose a product, leave a contact detail and briefly describe what you need.','We could not confirm receipt. Retry or call us.','Ask about the product. Bayla can help narrow down the right offer.','Submitting sends these details to Eydelstein Digital Lab’s CRM so we can respond. Leave out passwords, cards and customer data.'],
+  fr: ['Demander à Bayla','Appeler Bayla','Demander une commande','Budget, si connu','J’accepte le traitement de ma demande et d’être recontacté.','Demande reçue dans notre CRM','Choisissez un produit, laissez vos coordonnées et décrivez brièvement votre besoin.','Nous n’avons pas pu confirmer la réception. Réessayez ou appelez-nous.','Posez votre question sur le produit. Bayla vous aide à préciser l’offre.','En envoyant ce formulaire, vous transmettez vos informations au CRM d’Eydelstein Digital Lab. N’indiquez ni mots de passe, ni carte, ni données clients.'],
 };
 const prompts = {
   sales:['На каком этапе теряются обращения и что нужно автоматизировать?','באיזה שלב פניות מתפספסות ומה תרצו להפוך לאוטומטי?','Where do enquiries get lost, and what should be automated?','À quelle étape perdez-vous des demandes et que faut-il automatiser ?'],
@@ -35,5 +47,16 @@ const prompts = {
   grants:['На какой стадии идея и в какую программу хотите подать заявку?','באיזה שלב המיזם ולאיזו תוכנית תרצו להגיש בקשה?','What stage is the idea at, and which programme interests you?','À quel stade en est votre projet et quel programme visez-vous ?'],
   hotel:['Сколько объектов и номеров и какую задачу с бронированиями или продажами нужно решить?','כמה נכסים וחדרים יש ואיזו בעיה בהזמנות או במכירות תרצו לפתור?','How many properties and rooms do you manage, and what booking or sales problem needs solving?','Combien de sites et de chambres gérez-vous, et quel problème de réservation ou de vente souhaitez-vous résoudre ?'],
   web:['Для кого ваш продукт, на каких языках и какое действие должен совершить посетитель?','למי מיועד המוצר, באילו שפות ומה המבקרים אמורים לעשות?','Who is it for, which languages do you need, and what should visitors do?','À qui vous adressez-vous, dans quelles langues, et que doivent faire les visiteurs ?'],
+  app:['Какая платформа и какое главное действие должен выполнять пользователь?','מה הפלטפורמה ומה הפעולה העיקרית שהמשתמש צריך לבצע?','Which platform and what main action should the user perform?','Sur quelle plateforme, et quelle action principale l’utilisateur doit-il effectuer ?'],
+  shop:['Какие товары, витрина, оплата, доставка и учёт уже есть?','אילו מוצרים, תשלומים, משלוחים ומערכות כבר קיימים?','What products, checkout, delivery and stock systems do you already use?','Quels produits, paiements, livraisons et outils de stock utilisez-vous déjà ?'],
+  campaign:['Какой результат, рынок и бюджет кампании вам нужны?','איזה יעד, שוק ותקציב יש לקמפיין?','What result, market and campaign budget do you have in mind?','Quels résultats, marché et budget visez-vous ?'],
 };
-export const promptFor = (slug,lang) => (prompts[({'galany-crm':'sales','desktop-crm':'sales','ai-sales-agent':'sales','software':'sales',ai:'sales','auto-secretary':'calls','dental-secretary':'calls','small-business-secretary':'calls','ai-call-center':'calls','call-center-software':'calls','hotel-secretary':'hotel','hotel-consulting':'hotel','innovation-applications':'grants',website:'web',app:'web',ads:'web'})[slug]]||[])[order.indexOf(lang)] || leadCopy[lang][9];
+const groups = {
+  'galany-crm':'sales','desktop-crm':'sales','ai-sales-agent':'sales',software:'sales',ai:'sales','ai-workflows':'sales',
+  light:'sales',booking:'hotel',business:'calls','business-plus':'calls','auto-secretary':'calls','dental-secretary':'calls',
+  'small-business-secretary':'calls','ai-call-center':'calls','call-center-software':'calls','hotel-secretary':'hotel',
+  'hotel-consulting':'hotel','innovation-applications':'grants',website:'web',landing:'web','cms-care':'web',
+  'store-integrations':'shop',app:'app','mobile-delivery':'app','software-engineering':'app',receiptil:'app',
+  ads:'campaign','campaign-measurement':'campaign','video-content':'campaign','visual-design':'web',
+};
+export const promptFor = (slug,lang) => prompts[groups[slug]]?.[order.indexOf(lang)] || leadCopy[lang][9];

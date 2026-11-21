@@ -3,29 +3,73 @@
   const el=id=>document.getElementById(id);
   const data=JSON.parse(el('page-data').textContent);
   const language=document.documentElement.lang;
+  const query=new URLSearchParams(location.search);
+  const intake=data.intake;
+  const productId=query.get('product');
+  const briefKey='edelstein-sales-question';
   if(el('enquiry')){
     const {l,prompts}=data, product=el('product'), form=el('enquiry');
-    const incoming=new URLSearchParams(location.search).get('product');
-    if(incoming && Object.hasOwn(prompts,incoming)) product.value=incoming;
+    if(productId && Object.hasOwn(prompts,productId)) product.value=productId;
+    const intent=['order','question'].includes(query.get('intent'))?query.get('intent'):'enquiry';
+    if(intent==='order')document.querySelector('.funnel h1').textContent=intake[2];
+    if(intent==='question'){
+      try {
+        const draft=JSON.parse(sessionStorage.getItem(briefKey)||'null');
+        sessionStorage.removeItem(briefKey);
+        if (draft && draft.product===productId) el('need').value=draft.text.slice(0,500);
+      } catch {}
+    }
     function select(){
       el('need-label').textContent=prompts[product.value]||l[9];
       document.querySelectorAll('.top nav a').forEach(a=>{
-        const url=new URL(a.href);url.search=product.value?new URLSearchParams({product:product.value}):'';a.href=url;
+        const url=new URL(a.href);url.search=new URLSearchParams(product.value?{product:product.value,intent}:{intent});a.href=url;
       });
     }
     select();product.addEventListener('change',select);form.hidden=false;
-    form.addEventListener('submit',event=>{
-      // Unnamed visible inputs stay out of the URL and only reach the receiver on submit.
-      const rows=[['email',l[7]],['phone',l[6]],['name',l[5]],['need',el('need-label').textContent],['tools',l[10]],['when',l[11]]]
-        .flatMap(([id,label])=>el(id).value.trim()?[label+': '+el(id).value.trim()]:[]);
-      if(!rows.length){event.preventDefault();el('form-error').textContent=l[13];el('email').focus();return;}
-      const title=product.value?product.selectedOptions[0].text:l[0];
-      el('payload').value=['Eydelstein Digital Lab | '+title+' ('+language+')',...rows].join('\n');
+    let lastRequest='';
+    let requestId='';
+    const submit=form.querySelector('button[type=submit]');
+    form.addEventListener('submit',async event=>{
+      event.preventDefault();
+      if(submit.disabled)return;
+      const payload={product:product.value,language,intent,consent:el('allow-contact').checked};
+      for(const name of ['phone','email','name','need','tools','when','budget'])payload[name]=el(name).value.trim();
+      if(!payload.product||!(payload.email||payload.phone)||!payload.need||!payload.consent){
+        el('form-error').textContent=payload.consent?intake[6]:intake[4];return;
+      }
+      const signature=JSON.stringify(payload);
+      if(signature!==lastRequest){requestId=crypto.randomUUID();lastRequest=signature;}
+      submit.disabled=true;
       el('form-error').textContent='';
+      el('form-result').textContent='';
+      try {
+        const response=await fetch(data.endpoint,{method:'POST',headers:{'Content-Type':'application/json'},
+          credentials:'omit',body:JSON.stringify({...payload,requestId}),signal:AbortSignal.timeout(15000)});
+        const result=await response.json();
+        if(!response.ok||result.accepted!==true||!/^WEB-[0-9A-F]{8}$/.test(result.reference))throw new Error('Unconfirmed enquiry');
+        form.reset();product.value=payload.product;select();lastRequest='';
+        el('form-result').textContent=intake[5]+' · '+result.reference;
+      } catch {el('form-error').textContent=intake[7];}
+      finally {submit.disabled=false;}
     });
     return;
   }
   const {x,terms,answers,faq,locale,email}=data, q=el('question'),mic=el('mic'),read=el('read'),status=el('speech-status');
+  const chosen=Object.hasOwn(data.scripts,productId)?data.scripts[productId]:null;
+  const advisorRequest=intent=>{
+    const params=new URLSearchParams({intent});
+    if(chosen)params.set('product',productId);
+    return data.request+'?'+params;
+  };
+  if(chosen){
+    el('advisor-topic').textContent=chosen[0];
+    el('advisor-context').textContent=[chosen[2],chosen[1]].filter(Boolean).join(' ');
+  }
+  el('advisor-write').href=advisorRequest('question');
+  el('advisor-order').href=advisorRequest('order');
+  el('advisor-write').addEventListener('click',()=>{
+    try {sessionStorage.setItem(briefKey,JSON.stringify({product:chosen?productId:null,text:q.value.trim()}));} catch {}
+  });
   const norm=s=>s.toLowerCase().replaceAll('ё','е').normalize('NFD').replace(/\p{M}/gu,'').replace(/[^\p{L}\p{N}*]+/gu,' ').trim().replace(/\s+/g,' ');
   const matches=(words,term)=>{
     const tokens=norm(term).split(' ');
@@ -57,6 +101,7 @@
     const specific=catalog.length?[...catalog,...hits.filter(k=>k==='price')]:hits.filter(k=>!contacts.includes(k)&&k!=='services'&&k!=='crm');
     const keys=hits.includes('private')?[]:contacts.length?contacts:specific.length?specific.slice(0,2):hits.slice(0,1);
     const result=exact&&!hits.includes('private')?[[exact[1],exact[2]]]:keys.map(k=>answers[k]).filter(Boolean);
+    if(!result.length && chosen && !hits.includes('private'))result.push([[chosen[2]||intake[8],chosen[1]].join(' '),advisorRequest('order'),intake[2]]);
     if(!result.length)result.push([x.unknown,'mailto:'+email+'?body='+encodeURIComponent(question),x.hand]);
     const panel=el('answer');panel.replaceChildren();
     for(const [text,url,label] of result){const p=document.createElement('p');p.textContent=text;panel.append(p);

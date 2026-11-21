@@ -7,7 +7,7 @@ import { buildServiceEditions } from './service-editions.mjs';
 import { content } from './content.mjs';
 import { buildContactPages } from './contact-pages.mjs';
 import { capabilities, intro as capabilityIntro } from './capabilities.mjs';
-import { leadCopy } from './lead-copy.mjs';
+import { siteSales } from './lead-copy.mjs';
 import { studio } from './studio.mjs';
 import { crmPlans, renderCrmPlans } from '../crm-plans.mjs';
 import { buildInnovation, innovation, innovationPath } from './innovation.mjs';
@@ -49,7 +49,11 @@ function render(lang, t) {
   schema['@graph'][0].hasOfferCatalog={'@type':'OfferCatalog',name:capabilityIntro[lang][0],itemListElement:capabilities.map(c=>({'@type':'Offer',itemOffered:{'@type':'Service',name:c[lang][0],description:c[lang][1],url:canonical+'#'+c.id}}))};
   const offlineDownloadTitle = {he:'הורדת Edelstein CRM Israel',ru:'Скачать Edelstein CRM Israel',en:'Download Edelstein CRM Israel',fr:'Télécharger Edelstein CRM Israel'}[lang];
   const s = studio[lang];
-  const inquiry = slug => `<a class="lead-cta" href="${rel}request/${pathFor(lang)}?product=${encodeURIComponent(slug)}">${e(leadCopy[lang][0])}${arrow()}</a>`;
+  const inquiry = slug => {
+    const product=encodeURIComponent(slug);
+    const [ask,call,order]=siteSales[lang];
+    return `<span class="studio-sales-actions"><a class="lead-cta" href="${rel}request/${pathFor(lang)}?product=${product}&amp;intent=order">${e(order)}${arrow()}</a><a href="${rel}contacts/${pathFor(lang)}?product=${product}#advisor">${e(ask)}</a><a href="tel:+972555071400">${e(call)}</a></span>`;
+  };
   const urls = [softwarePath('crm',productLang), softwarePath('sales',productLang), softwarePath('calls',productLang), 'dental-secretary/'+pathFor(productLang), 'auto-secretary/'+pathFor(productLang), 'hotel-consulting/'+pathFor(lang), softwarePath('software',productLang), innovationPath(lang), 'hotel-secretary/'+pathFor(lang), 'small-business-secretary/'+pathFor(lang)];
   const symbols = ['PanelsTopLeft','MessagesSquare','PhoneCall','CalendarDays','Wrench','Building2','Layers','Lightbulb','BedDouble','PhoneForwarded'];
   const directory = urls.map((url,i)=>url ? `<div class="route-offer"><a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}${i===7?`<small>${e(s.applicationAction)}</small>`:''}</span>${arrow()}</a>${inquiry(url.split('/')[0])}</div>` : '').join('');
@@ -98,7 +102,7 @@ function render(lang, t) {
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
   <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(s.work)}</h2></div></div>
     <div class="project-grid">
-      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a> <a class="text-link" href="${rel+softwarePath('crm',productLang)}#desktop-downloads">${e(offlineDownloadTitle)}</a><p>${inquiry('desktop-crm')}</p></div></article>
+      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a> <a class="text-link" href="${rel+softwarePath('crm',productLang)}#desktop-downloads">${e(offlineDownloadTitle)}</a>${inquiry('galany-crm')}</div></article>
       <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}${inquiry('receiptil')}</div></article>
       <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}../ac-cleaning/assets/ac-cleaning-tiberias-hero.jpg" alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}${inquiry('ac-cleaning')}</div></article>
     </div>

@@ -4,6 +4,7 @@ from desktop_downloads import COPY as DESKTOP_COPY, render as desktop_downloads
 from pathlib import Path
 from urllib.parse import urljoin
 import sys
+import re
 import xml.etree.ElementTree as ET
 
 BASE = "https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/"
@@ -46,18 +47,31 @@ def transform(file,slug,lang):
     patches = []
     rel = '../' if lang=='he' else '../../'
     def inject(pos,s): patches.append((pos,pos,s))
-    labels={'he':('שליחת פנייה','יצירת קשר'),'en':('Make an enquiry','Contact'),'ru':('Сделать заявку','Контакты'),'fr':('Faire une demande','Contact')}
+    labels={'he':('בקשה להזמנה','לשאול את ביילה','להתקשר לביילה'),
+            'en':('Request an order','Ask Bayla','Call Bayla'),
+            'ru':('Запросить заказ','Спросить Байлу','Позвонить Байле'),
+            'fr':('Demander une commande','Demander à Bayla','Appeler Bayla')}
     def actions(code,product):
-        c,ct=labels[code]
-        return f'<a class="lead-cta" href="{rel}{route("request",code)}?product={product}">{c}</a> <a href="{rel}{route("contacts",code)}">{ct}</a>'
+        order,ask,call=labels[code]
+        return (f'<a class="lead-cta" href="{rel}{route("request",code)}?product={product}&amp;intent=order">{order}</a> '
+                f'<a href="{rel}{route("contacts",code)}?product={product}#advisor">{ask}</a> '
+                f'<a href="tel:+972555071400">{call}</a>')
     hero=next((e for t,a,_,e in tags if t=='div' and 'product-actions' in a.get('class','').split()),None)
     if hero is not None and 'class="hero-enquiry"' not in raw:
         inject(hero,f'<a class="hero-enquiry" href="{rel}{route("request",lang)}?product={slug}">{labels[lang][0]}</a>')
-    if not any(a.get('class')=='service-enquiry' for _,a,_,_ in tags):
-        links=actions(lang,slug)
-        if slug=='ai-call-center':
-            links=''.join(f'<span lang="{code}">{actions(code,slug)}</span>' for code in LANG)
-        inject(raw.index('</main>'),f'<div class="service-enquiry">{links}</div>')
+    links=actions(lang,slug)
+    if slug=='ai-call-center':
+        links=''.join(f'<span lang="{code}">{actions(code,slug)}</span>' for code in LANG)
+    block=f'<div class="service-enquiry">{links}</div>'
+    existing=re.search(r'<div class="service-enquiry">.*?</div>',raw,re.S)
+    if existing:
+        patches.append((existing.start(),existing.end(),block))
+    else:
+        inject(raw.index('</main>'),block)
+    if slug=='galany-crm':
+        existing=re.search(r'<p class="desktop-enquiry">.*?</p>',raw,re.S)
+        if existing:
+            patches.append((existing.start(),existing.end(),f'<p class="desktop-enquiry">{actions(lang,"desktop-crm")}</p>'))
     if slug=='galany-crm' and '?product=desktop-crm' not in raw:
         pt=next((p for t,a,p,_ in tags if a.get('id')=='desktop-downloads'),None)
         if pt is not None:

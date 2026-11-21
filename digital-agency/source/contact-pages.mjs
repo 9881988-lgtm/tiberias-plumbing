@@ -1,11 +1,12 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { contact as c, copy, locales, intents } from './contact-copy.mjs';
-import { leadCopy, products, order, promptFor, formUrl, entry } from './lead-copy.mjs';
+import { leadCopy, products, order, promptFor, formUrl, entry, siteSales } from './lead-copy.mjs';
 import { content } from './content.mjs';
 import { softwareContent } from './software-content.mjs';
 import { innovation } from './innovation.mjs';
 import { capabilities, intro } from './capabilities.mjs';
+import { crmPlans } from '../crm-plans.mjs';
 
 const path = l => l === 'he' ? '' : l+'/';
 const json = o => JSON.stringify(o).replaceAll('<','\\u003c');
@@ -31,6 +32,19 @@ export async function buildContactPages(target,root,icon,e) {
       terms[c.id]=[...c.tech.split('|'),...c[lang][2].split('|'),c[lang][0]];
       answers[c.id]=[(c.id==='software-engineering'?intro[lang][1]+' ':'')+c[lang][1],route('request')+'?product='+c.id,l[0]];
     }
+    const summary={
+      'galany-crm':s.available, software:s.available, 'desktop-crm':s.available,
+      'ai-sales-agent':s.pages.sales.lead, 'call-center-software':s.pages.calls.lead, 'ai-call-center':s.pages.calls.lead,
+      'innovation-applications':innovation[lang].lead,
+      landing:t.services[0][2], website:t.services[0][2], app:t.services[1][2],
+      ai:t.services[2][2], ads:t.services[3][2], receiptil:t.projects[0].text, 'ac-cleaning':t.projects[1].text,
+      ...Object.fromEntries(capabilities.map(c=>[c.id,c[lang][1]])),
+    };
+    for(const [index,id] of ['hotel-secretary','auto-secretary','dental-secretary','small-business-secretary','light','booking','business','business-plus'].entries()){
+      const plan=crmPlans[lang]?.plans[index];
+      summary[id]=plan ? plan.items.join(' · ') : s.available;
+    }
+    const scripts=Object.fromEntries(Object.entries(products).map(([id,name])=>[id,[name[i],promptFor(id,lang),summary[id]||'']]));
     const data={x,locale:locales[lang],email:c.email,answers,terms,catalogIds:capabilities.map(c=>c.id),
       faq:[...t.faqs.map(pair=>[...pair,home+'#main']),...['crm','calls','sales'].flatMap((p,n)=>s.pages[p].faqs.map(pair=>[...pair,route(['galany-crm','call-center-software','ai-sales-agent'][n])]))]};
     const idButton=(id,sym,label)=>`<button type="button" id="${id}" title="${e(label)}" aria-label="${e(label)}">${icon(sym)}<span>${e(label)}</span></button>`;
@@ -40,7 +54,9 @@ export async function buildContactPages(target,root,icon,e) {
       const desc=lead?l[2]:x.lead;
       const languages=Object.keys(copy).map(k=>`<a hreflang="${k}" lang="${k}" href="${rel+slug+'/'+path(k)}"${k===lang?' aria-current="page"':''}>${labels[k]}</a>`).join('');
       const field=(id,label,auto,type='text')=>`<label>${e(label)}<input id="${id}" type="${type}" autocomplete="${auto}" maxlength="160" dir="auto"></label>`;
-      const payload=lead?{prompts:Object.fromEntries(Object.keys(products).map(k=>[k,promptFor(k,lang)])),l}:data;
+      const payload={...(lead?{prompts:Object.fromEntries(Object.keys(products).map(k=>[k,promptFor(k,lang)])),l}:data),
+        scripts,intake:siteSales[lang],request:route('request'),
+        endpoint:'https://91.107.216.53/api/site-sales/enquiry'};
       const body=lead?`<h1>${e(l[0])}</h1><p class="lead">${e(l[2])}</p>
       <form id="enquiry" action="${formUrl}/formResponse" method="post" novalidate hidden>
         <label>${e(l[3])}<select id="product"><option value="">${e(l[4])}</option>${Object.entries(products).map(([k,v])=>`<option value="${k}">${e(v[i])}</option>`).join('')}</select></label>
@@ -48,8 +64,11 @@ export async function buildContactPages(target,root,icon,e) {
         <label><span id="need-label">${e(l[9])}</span><textarea id="need" maxlength="1200" rows="2" dir="auto"></textarea></label>
         <details id="details"><summary>${e(l[8])} ${icon('Plus')}</summary>
         ${field('name',l[5],'name')}
-        <label>${e(l[10])}<input id="tools" maxlength="300" dir="auto"></label><label>${e(l[11])}<input id="when" maxlength="160" dir="auto"></label></details>
-        <input type="hidden" name="${entry}" id="payload"><p class="fine">${e(l[14])}</p><p id="form-error" role="status"></p>
+        <label>${e(l[10])}<input id="tools" maxlength="300" dir="auto"></label><label>${e(l[11])}<input id="when" maxlength="160" dir="auto"></label>
+        <label>${e(siteSales[lang][3])}<input id="budget" maxlength="160" dir="auto"></label></details>
+        <input type="hidden" name="${entry}" id="payload"><p class="fine">${e(siteSales[lang][9])}</p>
+        <label class="permission"><input id="allow-contact" type="checkbox"> ${e(siteSales[lang][4])}</label>
+        <p id="form-error" role="status"></p><p id="form-result" role="status"></p>
         <button class="primary" type="submit">${e(l[12])} ${icon('Send')}</button>
       </form><noscript><a href="${formUrl}/viewform">${e(l[15])}</a></noscript>`:
       `<h1>${e(x.title)}</h1><p class="lead">${e(x.lead)}</p><div class="split"><div class="direct">
@@ -57,11 +76,13 @@ export async function buildContactPages(target,root,icon,e) {
         <section class="office"><h2>${e(x.office)}</h2><address>${e(t.location)}<br>${e(t.hours)}<br>${e(t.appointment)}</address></section>
         <a class="primary" href="${route('request')}">${e(l[0])} ${icon('ArrowUpRight')}</a></div>
         <section id="advisor" class="advisor" hidden><header>${icon('AudioLines')}<h2>${e(x.advisor)}</h2></header>
-          <h3>${e(x.intro)}</h3><div class="suggestions">${x.topics.map(q=>`<button type="button" data-question>${e(q)}</button>`).join('')}</div>
+          <h3 id="advisor-topic">${e(x.intro)}</h3><p id="advisor-context"></p><div class="suggestions">${x.topics.map(q=>`<button type="button" data-question>${e(q)}</button>`).join('')}</div>
           <form id="ask"><label for="question" class="sr">${e(x.ask)}</label><div class="compose"><input id="question" maxlength="500" placeholder="${e(x.placeholder)}" required dir="auto"><button type="submit" aria-label="${e(x.ask)}" title="${e(x.ask)}">${icon('Send')}</button></div></form>
           <div class="voice-tools">${idButton('mic','Mic',x.mic)}${idButton('read','Volume2',x.listen)}</div>
           <p class="fine" id="privacy">${e(x.privacy)}</p><p id="speech-status" role="status"></p>
           <div id="answer" aria-live="polite"></div>
+          <nav class="advisor-actions"><a id="advisor-write" href="${route('request')}">${e(siteSales[lang][0])}</a>
+            <a id="advisor-order" class="primary" href="${route('request')}?intent=order">${e(siteSales[lang][2])}</a></nav>
         </section></div>`;
       const schema={'@context':'https://schema.org','@type':lead?'WebPage':'ContactPage',url,name:title,inLanguage:lang,about:{'@type':'Organization','@id':root+'#organization',name:'Eydelstein Digital Lab',url:root,telephone:c.phone,email:c.email}};
       const html=`<!doctype html><html lang="${lang}" dir="${lang==='he'?'rtl':'ltr'}"><head>
@@ -69,10 +90,10 @@ export async function buildContactPages(target,root,icon,e) {
       <meta name="description" content="${e(desc)}"><link rel="canonical" href="${url}">
       ${Object.keys(copy).map(k=>`<link rel="alternate" hreflang="${k==='he'?'he-IL':k}" href="${root+slug+'/'+path(k)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${root+slug}/">
       <meta property="og:title" content="${e(title)} | Eydelstein Digital Lab"><meta property="og:url" content="${url}"><meta property="og:description" content="${e(desc)}">
-      <link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg"><link rel="stylesheet" href="${rel}contact-pages.css"><script type="application/ld+json">${json(schema)}</script></head>
+      <link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg"><link rel="stylesheet" href="${rel}contact-pages.css?v=20261121-sales"><script type="application/ld+json">${json(schema)}</script></head>
       <body><header class="top"><a class="brand" dir="ltr" href="${home}"><img width="36" height="36" alt="" src="${rel}assets/edelstein-lab-digital-mark.svg">Eydelstein Digital Lab</a><nav aria-label="${e(x.language)}">${languages}</nav></header>
       <main class="${lead?'funnel':'contacts'}">${body}</main><footer><a href="${home}">Eydelstein Digital Lab</a><a href="${route('contacts')}">${e(x.title)}</a></footer>
-      <script type="application/json" id="page-data">${json(payload)}</script><script defer src="${rel}contact-pages.js"></script></body></html>`;
+      <script type="application/json" id="page-data">${json(payload)}</script><script defer src="${rel}contact-pages.js?v=20261121-sales"></script></body></html>`;
       const dir=join(target,slug,path(lang));await mkdir(dir,{recursive:true});await writeFile(join(dir,'index.html'),html);
     }
   }
