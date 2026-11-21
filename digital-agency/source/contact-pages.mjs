@@ -11,6 +11,34 @@ import { crmPlans } from '../crm-plans.mjs';
 const path = l => l === 'he' ? '' : l+'/';
 const json = o => JSON.stringify(o).replaceAll('<','\\u003c');
 const labels = {ru:'RU',he:'עברית',en:'EN',fr:'FR'};
+const productSummaries = {
+  'hotel-consulting': [
+    'Начинаем с аудита площадок, загрузки и работы ресепшена. По итогам согласуем, что внедрять первым: бронирования и цены, работу с гостями, управление персоналом или IT.',
+    'מתחילים בבדיקת ערוצי ההזמנות, התפוסה והקבלה. אחר כך בוחרים מה להטמיע תחילה: הזמנות ומחירים, שירות לאורחים, ניהול עובדים או IT.',
+    'We start by reviewing booking channels, occupancy and reception. Then we prioritise reservations and pricing, guest service, staffing or IT.',
+    'Nous commençons par examiner les canaux de réservation, le taux d’occupation et la réception. Nous fixons ensuite la priorité entre réservations et tarifs, accueil, personnel et informatique.'],
+  'hotel-secretary': [
+    'Голосовой секретарь отвечает на типовые вопросы об отеле и передаёт сложные обращения на стойку. Доступ к бронированиям проверяем отдельно.',
+    'המזכיר הקולי עונה על שאלות על המלון ומעביר פניות מורכבות לקבלה. חיבור להזמנות נבדק בנפרד.',
+    'The voice receptionist answers hotel questions and hands off complex calls. We check booking access separately.',
+    'Le standard vocal répond aux questions courantes et transmet les demandes complexes. L’accès aux réservations est vérifié séparément.'],
+  'small-business-secretary': [
+    'Секретарь отвечает на входящие, записывает задачу и передаёт клиентский запрос сотруднику.',
+    'המזכיר עונה לשיחות נכנסות, מתעד את הצורך ומעביר את הפנייה לאיש צוות.',
+    'The receptionist handles inbound calls, captures the request and hands it to your team.',
+    'Le secrétariat accueille les appels, note la demande et la transmet à votre équipe.'],
+  'auto-secretary': [
+    'Секретарь уточняет автомобиль, задачу и удобное время. Диагноз, смету и сроки подтверждает мастер.',
+    'המזכיר מברר פרטי רכב, צורך וזמן מתאים. המוסך מאשר אבחון, מחיר ומועד.',
+    'The receptionist captures the vehicle, problem and preferred time. Your workshop confirms the diagnosis, quote and schedule.',
+    'Le secrétariat relève le véhicule, le besoin et le créneau. L’atelier confirme le diagnostic, le devis et le délai.'],
+  'dental-secretary': [
+    'Секретарь помогает с административными вопросами и записью. Медицинские вопросы передаются сотруднику.',
+    'המזכיר מסייע בתיאום ובשאלות מנהליות. שאלות רפואיות מועברות לצוות.',
+    'The receptionist handles scheduling and administrative questions. Medical questions go to your team.',
+    'Le secrétariat gère les demandes administratives et les rendez-vous. Les questions médicales sont transmises à l’équipe.'],
+};
+const writeToBayla={ru:'Передать вопрос Байле',he:'להעביר שאלה לביילה',en:'Send a question to Bayla',fr:'Envoyer une question à Bayla'};
 
 export async function buildContactPages(target,root,icon,e) {
   for (const [lang,x] of Object.entries(copy)) {
@@ -44,6 +72,7 @@ export async function buildContactPages(target,root,icon,e) {
       const plan=crmPlans[lang]?.plans[index];
       summary[id]=plan ? plan.items.join(' · ') : s.available;
     }
+    for(const [id,values] of Object.entries(productSummaries))summary[id]=values[i];
     const scripts=Object.fromEntries(Object.entries(products).map(([id,name])=>[id,[name[i],promptFor(id,lang),summary[id]||'']]));
     const data={x,locale:locales[lang],email:c.email,answers,terms,catalogIds:capabilities.map(c=>c.id),
       faq:[...t.faqs.map(pair=>[...pair,home+'#main']),...['crm','calls','sales'].flatMap((p,n)=>s.pages[p].faqs.map(pair=>[...pair,route(['galany-crm','call-center-software','ai-sales-agent'][n])]))]};
@@ -55,7 +84,7 @@ export async function buildContactPages(target,root,icon,e) {
       const languages=Object.keys(copy).map(k=>`<a hreflang="${k}" lang="${k}" href="${rel+slug+'/'+path(k)}"${k===lang?' aria-current="page"':''}>${labels[k]}</a>`).join('');
       const field=(id,label,auto,type='text')=>`<label>${e(label)}<input id="${id}" type="${type}" autocomplete="${auto}" maxlength="160" dir="auto"></label>`;
       const payload={...(lead?{prompts:Object.fromEntries(Object.keys(products).map(k=>[k,promptFor(k,lang)])),l}:data),
-        scripts,intake:siteSales[lang],request:route('request'),
+        scripts,intake:siteSales[lang],request:route('request'),write:writeToBayla[lang],
         endpoint:'https://91.107.216.53/api/site-sales/enquiry'};
       const body=lead?`<h1>${e(l[0])}</h1><p class="lead">${e(l[2])}</p>
       <form id="enquiry" action="${formUrl}/formResponse" method="post" novalidate hidden>
@@ -81,7 +110,7 @@ export async function buildContactPages(target,root,icon,e) {
           <div class="voice-tools">${idButton('mic','Mic',x.mic)}${idButton('read','Volume2',x.listen)}</div>
           <p class="fine" id="privacy">${e(x.privacy)}</p><p id="speech-status" role="status"></p>
           <div id="answer" aria-live="polite"></div>
-          <nav class="advisor-actions"><a id="advisor-write" href="${route('request')}">${e(siteSales[lang][0])}</a>
+          <nav class="advisor-actions"><a id="advisor-write" href="${route('request')}">${e(writeToBayla[lang])}</a>
             <a id="advisor-order" class="primary" href="${route('request')}?intent=order">${e(siteSales[lang][2])}</a></nav>
         </section></div>`;
       const schema={'@context':'https://schema.org','@type':lead?'WebPage':'ContactPage',url,name:title,inLanguage:lang,about:{'@type':'Organization','@id':root+'#organization',name:'Eydelstein Digital Lab',url:root,telephone:c.phone,email:c.email}};

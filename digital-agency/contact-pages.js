@@ -13,6 +13,7 @@
     const intent=['order','question'].includes(query.get('intent'))?query.get('intent'):'enquiry';
     if(intent==='order')document.querySelector('.funnel h1').textContent=intake[2];
     if(intent==='question'){
+      document.querySelector('.funnel h1').textContent=data.write;
       try {
         const draft=JSON.parse(sessionStorage.getItem(briefKey)||'null');
         sessionStorage.removeItem(briefKey);
@@ -64,6 +65,9 @@
   if(chosen){
     el('advisor-topic').textContent=chosen[0];
     el('advisor-context').textContent=[chosen[2],chosen[1]].filter(Boolean).join(' ');
+    document.querySelectorAll('.top nav a').forEach(a=>{
+      const url=new URL(a.href);url.searchParams.set('product',productId);url.hash='advisor';a.href=url;
+    });
   }
   el('advisor-write').href=advisorRequest('question');
   el('advisor-order').href=advisorRequest('order');
