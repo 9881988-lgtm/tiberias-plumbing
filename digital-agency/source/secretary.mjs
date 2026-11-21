@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
-import { leadCopy } from './lead-copy.mjs';
+import { siteSales } from './lead-copy.mjs';
 import { join } from 'node:path';
 import { secretaryOffers, secretaryRoot, secretaryPath, secretaryUrls } from '../secretary-offers.mjs';
 export {secretaryUrls};
@@ -15,7 +15,10 @@ const pdfLink=(o,l)=>'<a class="text-link" href="'+secretaryRoot+o.pdf+'" downlo
 export function renderSecretaryCatalogue(lang){
  if(!labels[lang])return '';
  const l=labels[lang];
- return '<section class="section secretary-catalogue" id="secretary-catalog"><div class="wrap"><h2>'+e(l.catalogue)+'</h2><p class="software-summary">'+e(l.intro)+'</p><div class="secretary-offer-grid">'+secretaryOffers.filter(o=>o.lang===lang).map(o=>'<article class="secretary-offer"><h3>'+e(o.title)+'</h3><p>'+e(o.lead)+'</p><ul>'+o.services.map(([title])=>'<li>'+e(title)+'</li>').join('')+'</ul><p><a class="text-link" href="'+pageUrl(o)+'">'+e(l.detail)+'</a></p><p>'+pdfLink(o,l)+'</p><a class="lead-cta" href="'+secretaryRoot+'request/'+(lang==='he'?'':lang+'/')+'?product='+o.slug+'">'+e(leadCopy[lang][0])+'</a></article>').join('')+'</div><p class="product-note">'+e(l.boundary)+'</p></div></section>';
+ const suffix=lang==='he'?'':lang+'/';
+ const [ask,call,order]=siteSales[lang];
+ const actions=slug=>`<span class="studio-sales-actions"><a class="lead-cta" href="${secretaryRoot}request/${suffix}?product=${slug}&amp;intent=order">${e(order)}</a><a href="${secretaryRoot}contacts/${suffix}?product=${slug}#advisor">${e(ask)}</a><a href="tel:+972555071400">${e(call)}</a></span>`;
+ return '<section class="section secretary-catalogue" id="secretary-catalog"><div class="wrap"><h2>'+e(l.catalogue)+'</h2><p class="software-summary">'+e(l.intro)+'</p><div class="secretary-offer-grid">'+secretaryOffers.filter(o=>o.lang===lang).map(o=>'<article class="secretary-offer"><h3>'+e(o.title)+'</h3><p>'+e(o.lead)+'</p><ul>'+o.services.map(([title])=>'<li>'+e(title)+'</li>').join('')+'</ul><p><a class="text-link" href="'+pageUrl(o)+'">'+e(l.detail)+'</a></p><p>'+pdfLink(o,l)+'</p>'+actions(o.slug)+'</article>').join('')+'</div><p class="product-note">'+e(l.boundary)+'</p></div></section>';
 }
 function render(o){
  if(o.key==='small_business') return readFileSync(new URL('../'+secretaryPath(o)+'index.html', import.meta.url),'utf8');
