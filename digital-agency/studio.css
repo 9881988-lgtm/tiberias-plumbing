@@ -9,7 +9,8 @@
 .site-header { height:72px; background:#fff; border-color:#dee1dd; backdrop-filter:none }
 .header-inner,.hero-inner,.work .wrap { max-width:1400px }
 .wordmark img { width:34px;height:34px }
-.desktop-nav a { padding-block:12px }
+.desktop-nav { gap:clamp(12px,1.65vw,26px);font-size:clamp(16px,1.5vw,19px);font-weight:750 }
+.desktop-nav a { padding-block:12px;white-space:nowrap }
 .header-link { border-bottom:1px solid #1d2622;padding:5px 0 }
 .header-tools { gap:24px }
 .site-header .language-select { min-height:44px;padding-inline:6px;font-size:14px }
@@ -27,7 +28,7 @@
 .hero-actions .btn:hover { background:#265c47 }
 .hero-actions .text-link { padding-block:10px }
 .capability-strip { color:#f7f8f3;background:#1b2421;border:0 }
-.strip-inner { min-height:46px;gap:12px }
+.strip-inner { min-height:60px;gap:14px;font-size:clamp(17px,1.55vw,21px);font-weight:750;line-height:1.25 }
 .strip-inner .icon { color:#cef44a;width:13px }
 .section { padding-block:70px }
 .work { border:0;background:white }
@@ -87,7 +88,7 @@
   .mobile-contact { position:static;display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;box-shadow:none;background:#e8f5c9;border:0 }
   .mobile-contact .icon { width:20px }
   .mobile-nav.is-open { top:63px;gap:0;padding:12px 22px;box-shadow:0 14px 22px #14201b12 }
-  .mobile-nav a { padding:9px 0;border-bottom:1px solid var(--line);font-size:17px }
+  .mobile-nav a { min-height:44px;padding:11px 0;border-bottom:1px solid var(--line);font-size:20px;font-weight:750;line-height:1.25 }
   .mobile-nav a:last-child { border:0 }
   .hero { min-height:390px;height:min(520px,calc(100svh - 166px)) }
   .hero h1 { font-size:72px }
@@ -111,7 +112,7 @@
   .hero-lead { margin-top:14px;max-width:390px;font-size:16px;line-height:1.45 }
   .hero-actions { margin-top:16px;gap:14px;flex-wrap:wrap }
   .hero-actions .btn,.hero-actions .text-link { font-size:13px }
-  .strip-inner { min-height:42px;display:flex;flex-wrap:wrap;gap:4px 9px;justify-content:space-between;padding-block:8px;font-size:11px }
+  .strip-inner { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 14px;padding-block:13px;font-size:16px }
   .strip-inner .icon { display:none }
   .section-head,.directory-heading { display:block;margin-bottom:24px }
   .directory-heading p,.section-head>p { margin-top:12px;font-size:15px }

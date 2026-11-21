@@ -81,7 +81,7 @@ function render(lang, t) {
   <link rel="stylesheet" href="${rel}software.css?v=${pageVersion}">
   <link rel="stylesheet" href="${rel}secretary-offers.css?v=${pageVersion}">
   ${crmPlans[lang] ? `<link rel="stylesheet" href="${rel}crm-plans.css?v=20261102-crm">` : ''}
-  <link rel="stylesheet" href="${rel}studio.css?v=${pageVersion}">
+  <link rel="stylesheet" href="${rel}studio.css?v=20261121-readable">
   <script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222920780"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-18222920780');</script>

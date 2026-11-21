@@ -39,6 +39,12 @@ const productSummaries = {
     'Le secrétariat gère les demandes administratives et les rendez-vous. Les questions médicales sont transmises à l’équipe.'],
 };
 const writeToBayla={ru:'Передать вопрос Байле',he:'להעביר שאלה לביילה',en:'Send a question to Bayla',fr:'Envoyer une question à Bayla'};
+const receipt = {
+  ru:['Спасибо за заявку!','Мы с вами обязательно свяжемся.','Номер заявки'],
+  he:['תודה על פנייתך!','נחזור אליך בהקדם.','מספר פנייה'],
+  en:['Thank you for your enquiry!','We’ll be in touch.','Enquiry reference'],
+  fr:['Merci pour votre demande !','Nous vous recontacterons.','Référence de la demande'],
+};
 
 export async function buildContactPages(target,root,icon,e) {
   for (const [lang,x] of Object.entries(copy)) {
@@ -84,11 +90,11 @@ export async function buildContactPages(target,root,icon,e) {
       const languages=Object.keys(copy).map(k=>`<a hreflang="${k}" lang="${k}" href="${rel+slug+'/'+path(k)}"${k===lang?' aria-current="page"':''}>${labels[k]}</a>`).join('');
       const field=(id,label,auto,type='text')=>`<label>${e(label)}<input id="${id}" type="${type}" autocomplete="${auto}" maxlength="160" dir="auto"></label>`;
       const payload={...(lead?{prompts:Object.fromEntries(Object.keys(products).map(k=>[k,promptFor(k,lang)])),l}:data),
-        scripts,intake:siteSales[lang],request:route('request'),write:writeToBayla[lang],
+        scripts,intake:siteSales[lang],request:route('request'),write:writeToBayla[lang],receipt:receipt[lang],
         endpoint:'https://91.107.216.53/api/site-sales/enquiry'};
-      const body=lead?`<h1>${e(l[0])}</h1><p class="lead">${e(l[2])}</p>
+      const body=lead?`<h1 id="enquiry-title">${e(l[0])}</h1><p class="lead" id="enquiry-lead">${e(l[2])}</p>
       <form id="enquiry" action="${formUrl}/formResponse" method="post" novalidate hidden>
-        <label>${e(l[3])}<select id="product"><option value="">${e(l[4])}</option>${Object.entries(products).map(([k,v])=>`<option value="${k}">${e(v[i])}</option>`).join('')}</select></label>
+        <label>${e(l[3])}<span class="product-select"><select id="product"><option value="">${e(l[4])}</option>${Object.entries(products).map(([k,v])=>`<option value="${k}">${e(v[i])}</option>`).join('')}</select></span></label>
         <fieldset><legend>${e(l[1])}</legend><div class="two">${field('email',l[7],'email','email')}${field('phone',l[6],'tel','tel')}</div></fieldset>
         <label><span id="need-label">${e(l[9])}</span><textarea id="need" maxlength="1200" rows="2" dir="auto"></textarea></label>
         <details id="details"><summary>${e(l[8])} ${icon('Plus')}</summary>
@@ -97,9 +103,16 @@ export async function buildContactPages(target,root,icon,e) {
         <label>${e(siteSales[lang][3])}<input id="budget" maxlength="160" dir="auto"></label></details>
         <input type="hidden" name="${entry}" id="payload"><p class="fine">${e(siteSales[lang][9])}</p>
         <label class="permission"><input id="allow-contact" type="checkbox"> ${e(siteSales[lang][4])}</label>
-        <p id="form-error" role="status"></p><p id="form-result" role="status"></p>
+        <p id="form-error" role="status"></p>
         <button class="primary" type="submit">${e(l[12])} ${icon('Send')}</button>
-      </form><noscript><a href="${formUrl}/viewform">${e(l[15])}</a></noscript>`:
+      </form>
+      <section class="enquiry-receipt" id="enquiry-receipt" aria-labelledby="receipt-title" tabindex="-1" hidden>
+        <span class="receipt-mark" aria-hidden="true">${icon('Check')}</span>
+        <h1 id="receipt-title">${e(receipt[lang][0])}</h1>
+        <p class="receipt-message">${e(receipt[lang][1])}</p>
+        <p id="form-result" class="receipt-reference"></p>
+      </section>
+      <noscript><a href="${formUrl}/viewform">${e(l[15])}</a></noscript>`:
       `<h1>${e(x.title)}</h1><p class="lead">${e(x.lead)}</p><div class="split"><div class="direct">
         ${method('Phone',x.phone,c.display,'tel:'+c.phone)}${method('Mail',x.email,c.email,'mailto:'+c.email)}${method('MessageCircle','WhatsApp',c.waDisplay,c.whatsapp)}
         <section class="office"><h2>${e(x.office)}</h2><address>${e(t.location)}<br>${e(t.hours)}<br>${e(t.appointment)}</address></section>
@@ -119,10 +132,10 @@ export async function buildContactPages(target,root,icon,e) {
       <meta name="description" content="${e(desc)}"><link rel="canonical" href="${url}">
       ${Object.keys(copy).map(k=>`<link rel="alternate" hreflang="${k==='he'?'he-IL':k}" href="${root+slug+'/'+path(k)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${root+slug}/">
       <meta property="og:title" content="${e(title)} | Eydelstein Digital Lab"><meta property="og:url" content="${url}"><meta property="og:description" content="${e(desc)}">
-      <link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg"><link rel="stylesheet" href="${rel}contact-pages.css?v=20261121-bayla2"><script type="application/ld+json">${json(schema)}</script></head>
+      <link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg"><link rel="stylesheet" href="${rel}contact-pages.css?v=20261121-readable"><script type="application/ld+json">${json(schema)}</script></head>
       <body><header class="top"><a class="brand" dir="ltr" href="${home}"><img width="36" height="36" alt="" src="${rel}assets/edelstein-lab-digital-mark.svg">Eydelstein Digital Lab</a><nav aria-label="${e(x.language)}">${languages}</nav></header>
       <main class="${lead?'funnel':'contacts'}">${body}</main><footer><a href="${home}">Eydelstein Digital Lab</a><a href="${route('contacts')}">${e(x.title)}</a></footer>
-      <script type="application/json" id="page-data">${json(payload)}</script><script defer src="${rel}contact-pages.js?v=20261121-bayla2"></script></body></html>`;
+      <script type="application/json" id="page-data">${json(payload)}</script><script defer src="${rel}contact-pages.js?v=20261121-readable"></script></body></html>`;
       const dir=join(target,slug,path(lang));await mkdir(dir,{recursive:true});await writeFile(join(dir,'index.html'),html);
     }
   }

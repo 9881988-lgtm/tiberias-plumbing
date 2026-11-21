@@ -9,11 +9,12 @@
   const briefKey='edelstein-sales-question';
   if(el('enquiry')){
     const {l,prompts}=data, product=el('product'), form=el('enquiry');
+    const title=el('enquiry-title'), receipt=el('enquiry-receipt');
     if(productId && Object.hasOwn(prompts,productId)) product.value=productId;
     const intent=['order','question'].includes(query.get('intent'))?query.get('intent'):'enquiry';
-    if(intent==='order')document.querySelector('.funnel h1').textContent=intake[2];
+    if(intent==='order')title.textContent=intake[2];
     if(intent==='question'){
-      document.querySelector('.funnel h1').textContent=data.write;
+      title.textContent=data.write;
       try {
         const draft=JSON.parse(sessionStorage.getItem(briefKey)||'null');
         sessionStorage.removeItem(briefKey);
@@ -32,7 +33,7 @@
     const submit=form.querySelector('button[type=submit]');
     form.addEventListener('submit',async event=>{
       event.preventDefault();
-      if(submit.disabled)return;
+      if(form.hidden||submit.disabled)return;
       const payload={product:product.value,language,intent,consent:el('allow-contact').checked};
       for(const name of ['phone','email','name','need','tools','when','budget'])payload[name]=el(name).value.trim();
       if(!payload.product||!(payload.email||payload.phone)||!payload.need||!payload.consent){
@@ -42,14 +43,18 @@
       if(signature!==lastRequest){requestId=crypto.randomUUID();lastRequest=signature;}
       submit.disabled=true;
       el('form-error').textContent='';
-      el('form-result').textContent='';
       try {
         const response=await fetch(data.endpoint,{method:'POST',headers:{'Content-Type':'application/json'},
           credentials:'omit',body:JSON.stringify({...payload,requestId}),signal:AbortSignal.timeout(15000)});
         const result=await response.json();
         if(!response.ok||result.accepted!==true||!/^WEB-[0-9A-F]{8}$/.test(result.reference))throw new Error('Unconfirmed enquiry');
-        form.reset();product.value=payload.product;select();lastRequest='';
-        el('form-result').textContent=intake[5]+' · '+result.reference;
+        form.reset();
+        el('form-result').textContent=data.receipt[2]+' · '+result.reference;
+        form.hidden=true;
+        title.hidden=true;
+        el('enquiry-lead').hidden=true;
+        receipt.hidden=false;
+        receipt.focus();
       } catch {el('form-error').textContent=intake[7];}
       finally {submit.disabled=false;}
     });

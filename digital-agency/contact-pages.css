@@ -8,4 +8,17 @@ input,textarea,select{width:100%;min-width:0;background:white;border:1px solid #
 .advisor-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:16px}
 .funnel .permission{display:flex;align-items:baseline;gap:9px;font-weight:400}
 .permission input{width:auto}
-#form-result:not(:empty){font-weight:650;color:#24573a}
+.product-select{position:relative;display:block}
+.product-select select{appearance:none;min-height:52px;padding-inline-end:52px;font-size:17px}
+.product-select::after{content:"";position:absolute;inset-inline-end:21px;top:50%;width:13px;height:13px;border:solid #23523b;border-width:0 3px 3px 0;transform:translateY(-68%) rotate(45deg);pointer-events:none}
+@media(forced-colors:active){
+  .product-select select{appearance:auto;padding-inline-end:12px}
+  .product-select::after{display:none}
+}
+.enquiry-receipt{padding:clamp(25px,6vw,49px);background:#edf4e5;border:1px solid #a6bea3;border-block-start:5px solid #316248;border-radius:7px}
+.enquiry-receipt:focus-visible{outline:3px solid #316248;outline-offset:4px}
+.receipt-mark{display:grid;place-items:center;width:52px;height:52px;margin-bottom:22px;border-radius:50%;background:var(--lime);color:#233b28}
+.receipt-mark .icon{width:30px;height:30px;stroke-width:2.2}
+.enquiry-receipt h1{font-size:clamp(29px,4.8vw,46px);line-height:1.13;margin-bottom:12px}
+.receipt-message{font-size:clamp(18px,2.5vw,22px);line-height:1.4;color:#324d3a}
+.receipt-reference{margin:21px 0 0;padding-top:15px;border-top:1px solid #b9cbb1;font-weight:650;color:#24573a}
