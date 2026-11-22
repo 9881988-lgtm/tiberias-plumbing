@@ -150,7 +150,7 @@ for (const [lang,t] of Object.entries(content)) {
   await writeFile(join(dir,'index.html'),render(lang,t).replace(/[ \t]+$/gm,''));
 }
 await buildContactPages(target,rootURL,icon,e);
-for (const name of ['contact-pages.css','contact-pages.js','styles.css','studio.css','service-studio.css','script.js']) {
+for (const name of ['contact-pages.css','contact-pages.js','styles.css','studio.css','service-studio.css','script.js','analytics.css','analytics.js']) {
   const file = join(here,'..',name);
   if (resolve(file) !== resolve(target,name)) await copyFile(file,join(target,name));
 }
@@ -177,4 +177,5 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www
 if (!designOnly) await writeFile(join(target,'sitemap.xml'),sitemap);
 execFileSync('python3',[join(here,'service-layout.py'),target]);
 }
+execFileSync('python3',[join(here,'analytics-layout.py'),target]);
 console.log(`Built ${Object.keys(content).length} localised Eydelstein Digital Lab pages in ${target}`);

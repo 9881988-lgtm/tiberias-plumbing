@@ -102,3 +102,11 @@ The reviewed tracked HTML under `dental-secretary/`, `auto-secretary/` and `smal
 ## Dental and workshop download buttons (22 November 2026)
 
 Only the approved 149/590 ILS RU and HE editions are published for dental and workshop services. Each service directory contains its two PDFs; both localized pages link to both files next to pricing. The byte hashes and relative links are checked by `secretary-documents.test.mjs`.
+
+## Google Analytics 4
+
+- `analytics.js` runs only on the public agency directory, with a verified web measurement ID and after analytics opt-in. Visitors can withdraw consent from the footer. The separate existing Ads tag remains unchanged.
+- In the GA4 web stream, turn Enhanced Measurement off to avoid duplicate page and file events and automatic form interactions. Leave Google Signals, advertising personalization, user-provided data collection, and optional sharing off. The Analytics destination does not receive Ads draft events.
+- The integration measures `page_view` once per page, `file_download` for a click on an in-scope PDF link, and `generate_lead` only after the enquiry API reports a confirmed enquiry. Mark `generate_lead` as a key event in the GA4 property; do not use `form_submit` for this. Invalid attempts and email or WhatsApp drafts are not leads. Direct requests to PDF URLs do not run the page tag.
+- URL query strings, fragments, form contents, and enquiry references are not sent. Allowed UTM source, medium, and campaign values are limited to short slugs; use labels, never personal data. Referrers are reduced to their origin. Do not add contact details to URLs, PDF filenames or campaign labels. The lead event contains only the selected product and intent.
+- Reporting: use Traffic acquisition for incoming sources, Pages and screens for viewed pages, and Explore with event name `file_download` and File name for PDFs. Use `generate_lead` under Events/Key events for confirmed opted-in enquiries. Check CRM totals separately; behavior before consent, content served outside this directory, and past visits are not measured by this integration.

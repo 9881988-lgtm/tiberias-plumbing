@@ -55,6 +55,7 @@
         el('enquiry-lead').hidden=true;
         receipt.hidden=false;
         receipt.focus();
+        try { window.edlAnalytics?.enquiryAccepted(payload.product, intent); } catch {}
       } catch {el('form-error').textContent=intake[7];}
       finally {submit.disabled=false;}
     });

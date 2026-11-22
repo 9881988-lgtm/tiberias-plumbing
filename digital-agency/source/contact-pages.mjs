@@ -151,7 +151,7 @@ export async function buildContactPages(target,root,icon,e) {
       <link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg"><link rel="stylesheet" href="${rel}contact-pages.css?v=20261121-readable"><script type="application/ld+json">${json(schema)}</script></head>
       <body><header class="top"><a class="brand" dir="ltr" href="${home}"><img width="36" height="36" alt="" src="${rel}assets/edelstein-lab-digital-mark.svg">Eydelstein Digital Lab</a><nav aria-label="${e(x.language)}">${languages}</nav></header>
       <main class="${lead?'funnel':'contacts'}">${body}</main><footer><a href="${home}">Eydelstein Digital Lab</a><a href="${route('contacts')}">${e(x.title)}</a></footer>
-      <script type="application/json" id="page-data">${json(payload)}</script><script defer src="${rel}contact-pages.js?v=20261121-readable"></script></body></html>`;
+      <script type="application/json" id="page-data">${json(payload)}</script><script defer src="${rel}contact-pages.js?v=20261122-analytics"></script></body></html>`;
       const dir=join(target,slug,path(lang));await mkdir(dir,{recursive:true});await writeFile(join(dir,'index.html'),html);
     }
   }

@@ -40,8 +40,9 @@ test('a product enquiry reaches the CRM only on explicit submission with a callb
   fields.enquiry.reset=()=>{};
   fields.product.selectedOptions=[{text:'Galany CRM'}];
   const sent=[];
+  const measured=[];
   let accepted=false;
-  runInNewContext(file('contact-pages.js'),{document:{getElementById:k=>fields[k],documentElement:{lang:'en'},querySelectorAll:()=>[],querySelector:()=>({})},location:{search:'?product=galany-crm&intent=order'},URLSearchParams,
+  runInNewContext(file('contact-pages.js'),{window:{edlAnalytics:{enquiryAccepted:(...args)=>measured.push(args)}},document:{getElementById:k=>fields[k],documentElement:{lang:'en'},querySelectorAll:()=>[],querySelector:()=>({})},location:{search:'?product=galany-crm&intent=order'},URLSearchParams,
     crypto:{randomUUID:()=> '4dd6c5a3-c253-403a-8d18-756b60b09e12'}, AbortSignal,
     fetch:async(url,options)=>{sent.push([url,JSON.parse(options.body)]);return {ok:accepted,json:async()=>({accepted,reference:'WEB-4DD6C5A3'})};}});
   const event={preventDefault(){}};
@@ -50,6 +51,7 @@ test('a product enquiry reaches the CRM only on explicit submission with a callb
   await submit(event);assert.equal(sent.length,0);
   fields['allow-contact'].checked=true;
   await submit(event);assert.equal(sent.length,1);
+  assert.deepEqual(measured,[]);
   assert.equal(fields.enquiry.hidden,false);assert.equal(fields['enquiry-receipt'].hidden,true);
   accepted=true;
   await submit(event);assert.equal(sent.length,2);
@@ -60,4 +62,5 @@ test('a product enquiry reaches the CRM only on explicit submission with a callb
   assert.equal(fields.enquiry.hidden,true);assert.equal(fields['enquiry-title'].hidden,true);
   assert.equal(fields['enquiry-receipt'].hidden,false);assert.equal(fields['enquiry-receipt'].focused,true);
   await submit(event);assert.equal(sent.length,2);
+  assert.deepEqual(measured,[['galany-crm','order']]);
 });

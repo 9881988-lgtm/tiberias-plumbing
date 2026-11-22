@@ -1,0 +1,11 @@
+.edl-analytics-controls{padding:10px 16px;text-align:center;background:#f2f5f3;color:#172c23}
+.edl-analytics-controls button{appearance:none;background:none;border:0;color:inherit;padding:8px;text-decoration:underline;text-underline-offset:3px}
+.edl-analytics-panel[hidden]{display:none}
+.edl-analytics-panel{position:fixed;z-index:1000;inset-inline:12px;inset-block-end:12px;margin-inline:auto;max-width:620px;max-height:45vh;overflow:auto;padding:14px 16px;background:#fff;color:#172c23;border:1px solid #aebfb4;border-radius:8px;box-shadow:0 8px 26px #13251e24;font:14px/1.45 system-ui,sans-serif}
+.edl-analytics-panel p{margin-block:4px 10px}
+.edl-analytics-panel p:last-child{margin-block:10px 0;color:#3a5147;font-size:12px}
+.edl-analytics-panel a{text-decoration:underline;text-underline-offset:2px}
+.edl-analytics-actions{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+.edl-analytics-actions button{font:inherit;font-weight:650;color:#172c23;background:#f2f5f3;border:1px solid #aebfb4;border-radius:5px;min-height:38px;padding:5px 10px;cursor:pointer}
+.edl-analytics-actions button:last-child{background:#d4fa4a;border-color:#527025}
+.edl-analytics-panel button:focus-visible,.edl-analytics-controls button:focus-visible{outline:2px solid #2c7045;outline-offset:2px}
