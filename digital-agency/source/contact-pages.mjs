@@ -11,6 +11,18 @@ import { crmPlans } from '../crm-plans.mjs';
 const path = l => l === 'he' ? '' : l+'/';
 const json = o => JSON.stringify(o).replaceAll('<','\\u003c');
 const labels = {ru:'RU',he:'עברית',en:'EN',fr:'FR'};
+const contactGuide = {
+  ru: ['С чем обратиться в студию', 'Чтобы обсудить CRM, расскажите, откуда приходят заявки и кто сейчас ведёт клиента до сделки. Для голосового ассистента достаточно примера обычного звонка: что хочет узнать клиент и в какой момент разговор должен перейти к сотруднику.', 'Демонстрация Galany CRM', 'Автоматизация звонков', 'Подготовка заявки в акселератор', 'Для проекта в «Тнуфа» или другой акселератор укажите стадию разработки и ближайший срок подачи. Отправлять документы или финансовые данные при первом обращении не нужно.'],
+  he: ['במה נוכל לעזור?', 'כדי לדבר על מערכת CRM, ספרו לנו איך מתקבלות פניות בעסק ומי מלווה את הלקוח עד לסגירת העסקה. אם אתם שוקלים מענה קולי, תנו דוגמה לשיחה טיפוסית: מה הלקוח מבקש ומתי תרצו להעביר את השיחה לאיש צוות.', 'הדגמה של Galany CRM', 'אוטומציה של שיחות', 'הכנת בקשה לאקסלרטור', 'לפנייה בנושא מסלול תנופה או אקסלרטור אחר, ציינו באיזה שלב נמצא המיזם ומהו מועד ההגשה הקרוב. אין צורך לשלוח מסמכים או פרטים פיננסיים בפנייה הראשונה.'],
+  en: ['What would you like to discuss?', 'For a CRM demonstration, tell us where enquiries come from and who follows up before a sale. For a voice assistant, describe one typical call: what the caller needs to know and when a member of your team should take over.', 'Galany CRM demonstration', 'Call automation', 'Accelerator applications', 'For Tnufa or another accelerator, tell us the stage of your project and your next deadline. You do not need to share documents or financial details to start the conversation.'],
+  fr: ['Quel projet souhaitez-vous aborder ?', 'Pour une démonstration du CRM, indiquez comment les demandes arrivent et qui accompagne le client jusqu’à la vente. Pour un assistant vocal, décrivez un appel courant : que souhaite savoir la personne et à quel moment votre équipe doit-elle prendre le relais ?', 'Démonstration de Galany CRM', 'Automatisation des appels', 'Candidatures aux accélérateurs', 'Pour le programme Tnufa ou un autre accélérateur, précisez où en est le projet et la date limite de dépôt. Aucun document ni renseignement financier n’est nécessaire pour ce premier échange.'],
+};
+const briefHelp = {
+  ru: 'Можно оставить только телефон или электронную почту. Если задача уже ясна, опишите один пример: откуда пришёл клиент, что ему нужно и какой результат вы хотите получить. Для первого разговора этого достаточно; пароли и данные ваших клиентов не нужны.',
+  he: 'אפשר להשאיר רק טלפון או דוא״ל. אם כבר ברור מה נדרש, תנו דוגמה אחת: איך הלקוח הגיע אליכם, מה הוא ביקש ומה הייתם רוצים שיקרה בהמשך. זה מספיק לשיחה ראשונה. אין צורך לשלוח סיסמאות או פרטים של לקוחות.',
+  en: 'An email address or phone number is enough. If you already have a task in mind, describe one example: how the enquiry arrived, what the customer needed and the outcome you wanted. Please leave out passwords and customer records.',
+  fr: 'Une adresse e-mail ou un numéro de téléphone suffit. Si votre besoin est déjà défini, donnez un exemple : comment la demande est arrivée, ce que le client cherchait et le résultat souhaité. Ne communiquez ni mots de passe ni données de vos clients.',
+};
 const productSummaries = {
   'hotel-consulting': [
     'Начинаем с аудита площадок, загрузки и работы ресепшена. По итогам согласуем, что внедрять первым: бронирования и цены, работу с гостями, управление персоналом или IT.',
@@ -92,7 +104,8 @@ export async function buildContactPages(target,root,icon,e) {
       const payload={...(lead?{prompts:Object.fromEntries(Object.keys(products).map(k=>[k,promptFor(k,lang)])),l}:data),
         scripts,intake:siteSales[lang],request:route('request'),write:writeToBayla[lang],receipt:receipt[lang],
         endpoint:'https://91.107.216.53/api/site-sales/enquiry'};
-      const body=lead?`<h1 id="enquiry-title">${e(l[0])}</h1><p class="lead" id="enquiry-lead">${e(l[2])}</p>
+      const guide=contactGuide[lang];
+      const body=lead?`<h1 id="enquiry-title">${e(l[0])}</h1><div id="enquiry-lead"><p class="lead">${e(l[2])}</p><p>${e(briefHelp[lang])}</p></div>
       <form id="enquiry" action="${formUrl}/formResponse" method="post" novalidate hidden>
         <label>${e(l[3])}<span class="product-select"><select id="product"><option value="">${e(l[4])}</option>${Object.entries(products).map(([k,v])=>`<option value="${k}">${e(v[i])}</option>`).join('')}</select></span></label>
         <fieldset><legend>${e(l[1])}</legend><div class="two">${field('email',l[7],'email','email')}${field('phone',l[6],'tel','tel')}</div></fieldset>
@@ -125,7 +138,9 @@ export async function buildContactPages(target,root,icon,e) {
           <div id="answer" aria-live="polite"></div>
           <nav class="advisor-actions"><a id="advisor-write" href="${route('request')}">${e(writeToBayla[lang])}</a>
             <a id="advisor-order" class="primary" href="${route('request')}?intent=order">${e(siteSales[lang][2])}</a></nav>
-        </section></div>`;
+        </section></div>
+        <section class="contact-guide"><h2>${e(guide[0])}</h2><p>${e(guide[1])}</p>
+        <ul>${['galany-crm','call-center-software','innovation-applications'].map((key,n)=>`<li><a href="${route(key)}">${e(guide[n+2])}</a></li>`).join('')}</ul><p>${e(guide[5])}</p></section>`;
       const schema={'@context':'https://schema.org','@type':lead?'WebPage':'ContactPage',url,name:title,inLanguage:lang,about:{'@type':'Organization','@id':root+'#organization',name:'Eydelstein Digital Lab',url:root,telephone:c.phone,email:c.email}};
       const html=`<!doctype html><html lang="${lang}" dir="${lang==='he'?'rtl':'ltr'}"><head>
       <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><title>${e(title)} | Eydelstein Digital Lab</title>

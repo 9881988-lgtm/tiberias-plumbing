@@ -43,7 +43,7 @@ export const content = {
     footer: 'Digital products. Real-world purpose.', parent: 'Part of Structor Robotics', toTop: 'Back to top', sentPrefix: 'Hello Eydelstein Digital Lab, I would like to discuss a project.', messageService: 'Service', messageBudget: 'Budget', messageBrief: 'Project', invalid: 'Please add a short project description.',
   },
   ru: {
-    title: 'Eydelstein Digital Lab | Galany CRM, сайты и AI-автоматизация', description: 'CRM для бизнеса в Израиле, голосовые ассистенты и сайты на нескольких языках. Обсудите ваш проект с Eydelstein Digital Lab в Тверии.',
+    title: 'Eydelstein Digital Lab | Galany CRM, сайты и AI-автоматизация', description: 'CRM для бизнеса в Израиле, голосовые ассистенты и сайты на нескольких языках. Обсудите проект с Eydelstein Digital Lab в Тверии.',
     nav: ['Проекты', 'Услуги', 'Процесс', 'Контакты'], start: 'Обсудить проект', menu: 'Открыть меню', close: 'Закрыть меню', skip: 'К содержанию',
     kicker: 'Независимая digital-студия · Израиль / Весь мир', lead: 'Продуманный дизайн. Надёжная разработка. Понятный путь от вашей идеи к продукту, которым пользуются.',
     heroCta: 'Обсудить проект', heroWork: 'Смотреть работы', heroNote: 'Сайты / Приложения / AI / Продвижение', scroll: 'Цифровые решения для реальных задач бизнеса',
