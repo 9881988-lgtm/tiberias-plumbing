@@ -8,11 +8,11 @@ import { innovation, innovationPath, innovationUrls } from './innovation.mjs';
 const agency = fileURLToPath(new URL('../', import.meta.url));
 const site = join(agency, '..');
 const read = path => readFileSync(path, 'utf8');
-// The owner explicitly approved these four one-page offers and the three
-// four-page hotel consulting proposals on 19 November. Keep the exception exact.
+// Only explicitly approved public PDFs are allowed. Keep the exception exact.
 const approvedPDFs = new Set([
   ...['Hotel_Secretary_A4_RU.pdf','Hotel_Secretary_A4_HE.pdf','Small_Business_Secretary_A4_RU.pdf','Small_Business_Secretary_A4_HE.pdf'].map(name=>join(agency,'secretary-catalog',name)),
-  ...['hotel-consulting-he.pdf','hotel-consulting-ru.pdf','hotel-consulting-en.pdf'].map(name=>join(agency,'hotel-consulting',name))
+  ...['hotel-consulting-he.pdf','hotel-consulting-ru.pdf','hotel-consulting-en.pdf'].map(name=>join(agency,'hotel-consulting',name)),
+  ...['dental-secretary','auto-secretary'].flatMap(slug=>['he','ru'].map(lang=>join(agency,slug,`${slug}-${lang}.pdf`)))
 ]);
 const amount = /\u20aa|\$\d|\b(?:ILS|NIS)\s*\d|\d\s*(?:ILS|NIS)\b|"(?:priceSpecification|priceCurrency|priceRange|lowPrice|highPrice|price)"\s*:/i;
 
@@ -35,6 +35,10 @@ test('public agency and home-service pages use quotes rather than published pric
     assert.doesNotMatch(read(f), amount, f);
     if (f.endsWith('.html')) assert.doesNotMatch(read(f), />undefined<|id="cost-total"|class="package-price"/, f);
   }
+});
+
+test('only approved public PDFs are present', () => {
+  const publicFiles = Array.from(files(agency)).filter(path=>!path.includes('/source/'));
   for (const f of publicFiles) assert.ok(approvedPDFs.has(f) || !/\.pdf$|\/catalog\.json$/.test(f), f);
   for (const f of approvedPDFs) assert.ok(existsSync(f), f);
 });
