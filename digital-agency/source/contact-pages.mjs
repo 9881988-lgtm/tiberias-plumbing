@@ -108,7 +108,7 @@ export async function buildContactPages(target,root,icon,e) {
       </form>
       <section class="enquiry-receipt" id="enquiry-receipt" aria-labelledby="receipt-title" tabindex="-1" hidden>
         <span class="receipt-mark" aria-hidden="true">${icon('Check')}</span>
-        <h1 id="receipt-title">${e(receipt[lang][0])}</h1>
+        <h2 id="receipt-title">${e(receipt[lang][0])}</h2>
         <p class="receipt-message">${e(receipt[lang][1])}</p>
         <p id="form-result" class="receipt-reference"></p>
       </section>
@@ -131,6 +131,7 @@ export async function buildContactPages(target,root,icon,e) {
       <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><title>${e(title)} | Eydelstein Digital Lab</title>
       <meta name="description" content="${e(desc)}"><link rel="canonical" href="${url}">
       ${Object.keys(copy).map(k=>`<link rel="alternate" hreflang="${k==='he'?'he-IL':k}" href="${root+slug+'/'+path(k)}">`).join('')}<link rel="alternate" hreflang="x-default" href="${root+slug}/">
+      <meta property="og:type" content="website"><meta property="og:site_name" content="Eydelstein Digital Lab"><meta property="og:image" content="${root}assets/hero.webp"><meta name="twitter:card" content="summary_large_image">
       <meta property="og:title" content="${e(title)} | Eydelstein Digital Lab"><meta property="og:url" content="${url}"><meta property="og:description" content="${e(desc)}">
       <link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg"><link rel="stylesheet" href="${rel}contact-pages.css?v=20261121-readable"><script type="application/ld+json">${json(schema)}</script></head>
       <body><header class="top"><a class="brand" dir="ltr" href="${home}"><img width="36" height="36" alt="" src="${rel}assets/edelstein-lab-digital-mark.svg">Eydelstein Digital Lab</a><nav aria-label="${e(x.language)}">${languages}</nav></header>

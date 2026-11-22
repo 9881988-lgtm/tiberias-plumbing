@@ -20,7 +20,7 @@ const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261119-studio';
+const version = '20261122-search';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -47,6 +47,7 @@ function render(lang, t) {
   };
   const productLang = lang;
   schema['@graph'][0].hasOfferCatalog={'@type':'OfferCatalog',name:capabilityIntro[lang][0],itemListElement:capabilities.map(c=>({'@type':'Offer',itemOffered:{'@type':'Service',name:c[lang][0],description:c[lang][1],url:canonical+'#'+c.id}}))};
+  const preview = (name, widths, sizes) => `src="${rel}assets/${name}-${widths[0]}.webp" srcset="${widths.map(w => rel+'assets/'+name+'-'+w+'.webp '+w+'w').join(', ')}" sizes="${sizes}"`;
   const offlineDownloadTitle = {he:'הורדת Edelstein CRM Israel',ru:'Скачать Edelstein CRM Israel',en:'Download Edelstein CRM Israel',fr:'Télécharger Edelstein CRM Israel'}[lang];
   const s = studio[lang];
   const inquiry = slug => {
@@ -75,7 +76,6 @@ function render(lang, t) {
   <meta property="og:locale" content="${({he:'he_IL',en:'en_US',ru:'ru_RU',fr:'fr_FR'})[lang]}">
   <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${e(t.title)}"><meta name="twitter:description" content="${e(t.description)}"><meta name="twitter:image" content="${rootURL}assets/hero.webp">
   <link rel="icon" href="${rel}assets/edelstein-lab-digital-mark.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="${rel}assets/hero.webp" as="image" fetchpriority="high">
   <link rel="stylesheet" href="${rel}styles.css?v=${pageVersion}">
   <link rel="stylesheet" href="${rel}software.css?v=${pageVersion}">
@@ -102,9 +102,9 @@ function render(lang, t) {
   <div class="capability-strip"><div class="wrap strip-inner">${t.heroNote.split(' / ').map(item=>`<span>${e(item)}</span>`).join(icon('Asterisk'))}</div></div>
   <section class="section work" id="work"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.workLabel)}</p><h2 class="preline">${e(s.work)}</h2></div></div>
     <div class="project-grid">
-      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img src="${rel}assets/galany-crm-test-interface.png" width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a> <a class="text-link" href="${rel+softwarePath('crm',productLang)}#desktop-downloads">${e(offlineDownloadTitle)}</a>${inquiry('galany-crm')}</div></article>
-      <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img src="${parent}receiptil/assets/dashboard.png" alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}${inquiry('receiptil')}</div></article>
-      <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img src="${rel}../ac-cleaning/assets/ac-cleaning-tiberias-hero.jpg" alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}${inquiry('ac-cleaning')}</div></article>
+      <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img ${preview('crm-preview', [480,800,1280], '(max-width: 760px) 94vw, 760px')} width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a> <a class="text-link" href="${rel+softwarePath('crm',productLang)}#desktop-downloads">${e(offlineDownloadTitle)}</a>${inquiry('galany-crm')}</div></article>
+      <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img ${preview('receipt-preview', [320,480], '190px')} alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}${inquiry('receiptil')}</div></article>
+      <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img ${preview('ac-preview', [480,800,1200], '(max-width: 760px) 92vw, 520px')} alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}${inquiry('ac-cleaning')}</div></article>
     </div>
     <details class="studio-fold studio-platform"><summary>${e(s.next)}${icon("Plus")}</summary>
     <p class="platform-status">${e(t.workIntro)}</p>
@@ -125,7 +125,7 @@ function render(lang, t) {
     <form class="brief-form" id="project-brief"><div class="form-row"><div class="field"><label for="service">${e(t.service)}</label><select name="service" id="service">${[...t.serviceOptions,innovation[lang].label].map((title,i)=>`<option value="${serviceValues[i]}">${e(title)}</option>`).join('')}</select></div></div><div class="field"><label for="brief">${e(t.brief)}</label><textarea name="brief" id="brief" maxlength="1500" placeholder="${e(t.placeholder)}" required aria-describedby="brief-error form-privacy"></textarea></div><p id="brief-error" role="status" aria-live="polite"></p><a class="btn btn-light" id="continue-whatsapp" href="https://wa.me/972533613100" target="_blank" rel="noopener">${e(t.send)}${arrow()}</a><p class="form-privacy" id="form-privacy">${e(t.privacy)}</p><p class="mail-option">${e(t.mail)} <a id="brief-email" dir="ltr" href="mailto:9881988@gmail.com">9881988@gmail.com</a></p></form>
   </div></section>
 </main>
-<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Eydelstein Digital Lab.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Eydelstein Digital Lab</span><a href="${rel}contacts/${pathFor(lang)}">${e(t.nav[3])}</a><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="footer-brand" href="#top">Eydelstein Digital Lab.</a><p class="footer-line">${e(t.footer)}</p></div><div class="footer-bottom"><span>© 2026 Eydelstein Digital Lab</span><a href="${rel}contacts/${pathFor(lang)}">${e(t.nav[3])}</a><nav class="footer-locales" aria-label="${{he:'שפות',en:'Languages',ru:'Языки',fr:'Langues'}[lang]}">${Object.entries({he:'עברית',ru:'Русский',en:'English',fr:'Français'}).map(([code,label])=>`<a lang="${code}" hreflang="${code}" href="${rel+pathFor(code)}"${code===lang?' aria-current="page"':''}>${label}</a>`).join(' ')}</nav><a href="${rel}sitemap.xml">${{he:'מפת האתר',ru:'Карта сайта',en:'Sitemap',fr:'Plan du site'}[lang]}</a><a class="footer-parent" href="${parent}structo-robotics/">${e(t.parent)}</a><a class="backtop" href="#top">${e(t.toTop)}${icon('ArrowUp')}</a></div></div></footer>
 <script src="${rel}script.js?v=${pageVersion}" defer></script>
 </body></html>`;
 }

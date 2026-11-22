@@ -85,6 +85,8 @@ def transform(file,slug,lang):
             inject(raw.index('</div>',point),f'<a class="text-link" href="#desktop-downloads">{DESKTOP_COPY[lang][0]}</a>')
     if not any(t=='link' and 'service-studio.css' in a.get('href','') for t,a,_,_ in tags):
         inject(raw.index('</head>'), f'<link rel="stylesheet" href="{rel}service-studio.css?v=20261119-services">\n')
+    if not any(t=='meta' and a.get('name')=='twitter:card' for t,a,_,_ in tags):
+        inject(raw.index('</head>'), '<meta name="twitter:card" content="summary_large_image">\n')
     if slug!='ai-call-center':
         alts={a.get('hreflang') for t,a,_,_ in tags if t=='link' and a.get('rel')=='alternate'}
         for code in ['he','ru','en','fr','x-default']:
@@ -112,6 +114,30 @@ def transform(file,slug,lang):
         out=out[:a]+v+out[b:]
     if out!=file.read_text(): file.write_text(out)
 
+def agency_sitemap(target):
+    # Only served, self-canonical pages belong here. Do not invent modification dates.
+    ns = 'http://www.sitemaps.org/schemas/sitemap/0.9'
+    xhtml = 'http://www.w3.org/1999/xhtml'
+    ET.register_namespace('',ns)
+    ET.register_namespace('xhtml',xhtml)
+    root = ET.Element(f'{{{ns}}}urlset')
+    for file in sorted(target.rglob('index.html')):
+        tags = Tags(file.read_text()).tags
+        if any(t=='meta' and a.get('name')=='robots' and 'noindex' in a.get('content','').lower() for t,a,_,_ in tags):
+            continue
+        path = file.relative_to(target).as_posix().removesuffix('index.html')
+        url = urljoin(BASE,path)
+        if not any(t=='link' and a.get('rel')=='canonical' and a.get('href')==url for t,a,_,_ in tags):
+            continue
+        entry = ET.SubElement(root,f'{{{ns}}}url')
+        ET.SubElement(entry,f'{{{ns}}}loc').text = url
+        for t,a,_,_ in tags:
+            if t=='link' and a.get('rel')=='alternate' and 'hreflang' in a and '?' not in a['href']:
+                ET.SubElement(entry,f'{{{xhtml}}}link',rel='alternate',hreflang=a['hreflang'],href=a['href'])
+    tree = ET.ElementTree(root)
+    ET.indent(tree,space='  ')
+    tree.write(target/'sitemap.xml',encoding='utf-8',xml_declaration=True)
+
 def sitemap(file,urls,date='2026-11-19'):
     if not file.is_file(): return
     raw=file.read_text()
@@ -128,9 +154,10 @@ if __name__=='__main__':
             if file.exists():
                 transform(file,slug,lang);urls.append(urljoin(BASE,r))
     legacy=target/'ai-call-center/index.html'
-    if legacy.exists(): transform(legacy,'ai-call-center','he')
-    sitemap(target/'sitemap.xml',urls)
+    if legacy.exists():
+        transform(legacy,'ai-call-center','he')
+        urls.append(BASE+'ai-call-center/')
+    agency_sitemap(target)
     if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',urls)
     extra=[BASE+route(slug,lang) for slug in ('contacts','request') for lang in LANG if (target/route(slug,lang)/'index.html').exists()]
-    sitemap(target/'sitemap.xml',extra,'2026-11-20')
     if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',extra,'2026-11-20')

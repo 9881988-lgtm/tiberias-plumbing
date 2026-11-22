@@ -1,7 +1,7 @@
 export const content = {
   en: {
     title: 'Eydelstein Digital Lab | Galany CRM, Websites & AI Automation',
-    description: 'Galany CRM for Israel, AI sales and voice modules, multilingual websites, Apple apps and digital marketing. Eydelstein Digital Lab in Tiberias. Remote projects worldwide.',
+    description: 'Galany CRM, voice assistants and multilingual websites for businesses in Israel. Discuss your sales workflow with Eydelstein Digital Lab in Tiberias.',
     nav: ['Work', 'Services', 'Process', 'Contact'], start: 'Let’s talk', menu: 'Open navigation', close: 'Close navigation', skip: 'Skip to content',
     kicker: 'Independent digital studio · Israel / Worldwide',
     lead: 'Thoughtful design. Solid engineering. A clear path from your next idea to a product people use.',
@@ -43,7 +43,7 @@ export const content = {
     footer: 'Digital products. Real-world purpose.', parent: 'Part of Structor Robotics', toTop: 'Back to top', sentPrefix: 'Hello Eydelstein Digital Lab, I would like to discuss a project.', messageService: 'Service', messageBudget: 'Budget', messageBrief: 'Project', invalid: 'Please add a short project description.',
   },
   ru: {
-    title: 'Eydelstein Digital Lab | Galany CRM, сайты и AI-автоматизация', description: 'Galany CRM для Израиля, AI-продавец и голосовой модуль, многоязычные сайты, приложения и digital-маркетинг. Eydelstein Digital Lab, Тверия. Работаем удалённо по всему миру.',
+    title: 'Eydelstein Digital Lab | Galany CRM, сайты и AI-автоматизация', description: 'CRM для бизнеса в Израиле, голосовые ассистенты и сайты на нескольких языках. Обсудите ваш проект с Eydelstein Digital Lab в Тверии.',
     nav: ['Проекты', 'Услуги', 'Процесс', 'Контакты'], start: 'Обсудить проект', menu: 'Открыть меню', close: 'Закрыть меню', skip: 'К содержанию',
     kicker: 'Независимая digital-студия · Израиль / Весь мир', lead: 'Продуманный дизайн. Надёжная разработка. Понятный путь от вашей идеи к продукту, которым пользуются.',
     heroCta: 'Обсудить проект', heroWork: 'Смотреть работы', heroNote: 'Сайты / Приложения / AI / Продвижение', scroll: 'Цифровые решения для реальных задач бизнеса',
@@ -65,7 +65,7 @@ export const content = {
     footer: 'Цифровые продукты. Настоящие задачи.', parent: 'Направление Structor Robotics', toTop: 'Наверх', sentPrefix: 'Здравствуйте, Eydelstein Digital Lab! Хочу обсудить проект.', messageService: 'Услуга', messageBudget: 'Бюджет', messageBrief: 'Проект', invalid: 'Добавьте краткое описание проекта.',
   },
   he: {
-    title: 'Eydelstein Digital Lab | Galany CRM, אתרים ואוטומציית AI', description: 'Galany CRM לעסקים בישראל, נציג מכירות AI ומודול קולי, אתרים רב-לשוניים, אפליקציות ושיווק דיגיטלי. Eydelstein Digital Lab בטבריה. פרויקטים מרחוק בישראל ובעולם.',
+    title: 'Eydelstein Digital Lab | Galany CRM, אתרים ואוטומציית AI', description: 'מערכות CRM לעסקים בישראל, נציגי מכירות קוליים ואתרים רב־לשוניים. דברו עם צוות Eydelstein Digital Lab בטבריה על תהליך המכירות שלכם.',
     nav: ['פרויקטים', 'שירותים', 'התהליך', 'יצירת קשר'], start: 'נדבר על הפרויקט', menu: 'פתיחת תפריט', close: 'סגירת תפריט', skip: 'דילוג לתוכן',
     kicker: 'סטודיו דיגיטלי עצמאי · ישראל / העולם', lead: 'עיצוב עם מחשבה. פיתוח יציב. דרך ברורה מהרעיון הבא שלכם למוצר שאנשים משתמשים בו.', heroCta: 'נדבר על הפרויקט', heroWork: 'לפרויקטים שלנו', heroNote: 'אתרים / אפליקציות / AI / שיווק', scroll: 'פתרונות דיגיטליים לצרכים אמיתיים של העסק',
     introLabel: 'שותף אחד, מהרעיון להשקה', introTitle: 'עיצוב מושך תשומת לב.\nמוצר טוב שומר עליה.', introText: 'אנחנו מחברים אסטרטגיה, עיצוב ופיתוח לצרכים היומיומיים של העסק. אתר ברור יותר. אפליקציה שימושית. פחות עבודה שחוזרת על עצמה. מתחילים מהבעיה הנכונה, ובונים את מה שבאמת חשוב.', introLink: 'היכולות שלנו',
@@ -86,7 +86,7 @@ export const content = {
     footer: 'מוצרים דיגיטליים. מטרה אמיתית.', parent: 'חלק מ-Structor Robotics', toTop: 'לראש העמוד', sentPrefix: 'שלום Eydelstein Digital Lab, אשמח לדבר על פרויקט.', messageService: 'שירות', messageBudget: 'תקציב', messageBrief: 'פרויקט', invalid: 'נא להוסיף תיאור קצר של הפרויקט.',
   },
   fr: {
-    title: 'Eydelstein Digital Lab | Sites web, applications et automatisation IA', description: 'Eydelstein Digital Lab conçoit des sites multilingues, des applications iOS et macOS, des automatisations IA et CRM, ainsi que des campagnes Google et Meta. Israël et à distance.',
+    title: 'Eydelstein Digital Lab | Sites web, applications et automatisation IA', description: 'CRM pour les entreprises en Israël, assistants vocaux et sites multilingues. Présentez votre projet à Eydelstein Digital Lab, à Tibériade.',
     nav: ['Projets', 'Expertises', 'Méthode', 'Contact'], start: 'Parlons de votre projet', menu: 'Ouvrir le menu', close: 'Fermer le menu', skip: 'Aller au contenu',
     kicker: 'Studio digital indépendant · Israël / International', lead: 'Un design réfléchi. Une réalisation solide. Un chemin clair de votre prochaine idée à un produit utile.', heroCta: 'Parlons de votre projet', heroWork: 'Voir nos projets', heroNote: 'Sites web / Applications / IA / Marketing', scroll: 'Des solutions digitales pour les besoins réels de votre activité',
     introLabel: 'UN PARTENAIRE, DE L’IDÉE AU LANCEMENT', introTitle: 'Le design attire.\nLe produit fidélise.', introText: 'Nous relions stratégie, design et développement aux besoins quotidiens de votre entreprise. Un site plus clair. Une application utile. Moins de tâches répétitives. D’abord le bon problème, puis la bonne solution.', introLink: 'Nos expertises',

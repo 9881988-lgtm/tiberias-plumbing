@@ -19,6 +19,6 @@ input,textarea,select{width:100%;min-width:0;background:white;border:1px solid #
 .enquiry-receipt:focus-visible{outline:3px solid #316248;outline-offset:4px}
 .receipt-mark{display:grid;place-items:center;width:52px;height:52px;margin-bottom:22px;border-radius:50%;background:var(--lime);color:#233b28}
 .receipt-mark .icon{width:30px;height:30px;stroke-width:2.2}
-.enquiry-receipt h1{font-size:clamp(29px,4.8vw,46px);line-height:1.13;margin-bottom:12px}
+.enquiry-receipt h2{font-size:clamp(29px,4.8vw,46px);line-height:1.13;margin-bottom:12px}
 .receipt-message{font-size:clamp(18px,2.5vw,22px);line-height:1.4;color:#324d3a}
 .receipt-reference{margin:21px 0 0;padding-top:15px;border-top:1px solid #b9cbb1;font-weight:650;color:#24573a}

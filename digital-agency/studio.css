@@ -143,3 +143,5 @@
 }
 .studio-sales-actions{display:flex;gap:6px 14px;align-items:baseline;flex-wrap:wrap}
 .studio-sales-actions>a{font-size:.875rem;white-space:normal}
+.footer-locales{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px}
+.footer-locales [aria-current="page"]{text-decoration:underline;text-underline-offset:3px}
