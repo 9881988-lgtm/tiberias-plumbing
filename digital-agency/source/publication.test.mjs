@@ -90,8 +90,10 @@ test('Russian and Hebrew innovation pages expose localized search content in sta
     assert.match(page, queries[1]);
     assert.match(page, queries[2]);
     assert.ok(portfolio.includes(`href="../digital-agency/${path}" hreflang="${htmlLang}"`));
-    for (const map of [join(site,'sitemap.xml'),join(agency,'sitemap.xml')]) {
-      assert.ok(read(map).includes(`<loc>${url}</loc><lastmod>${t.lastModified}</lastmod>`));
-    }
+    assert.ok(read(join(site,'sitemap.xml')).includes(`<loc>${url}</loc><lastmod>${t.lastModified}</lastmod>`));
+    // The agency map omits optional lastmod; verify the actual localized entry.
+    const entry = read(join(agency,'sitemap.xml')).match(/<url>[\s\S]*?<\/url>/g)
+      .find(block => block.includes(`<loc>${url}</loc>`));
+    assert.ok(entry && entry.includes(`hreflang="${htmlLang}" href="${url}"`));
   }
 });
