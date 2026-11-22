@@ -68,6 +68,9 @@
         const value = query.get('utm_' + utm);
         if (shortSlug(value)) config['campaign_' + field] = value;
       }
+      // Google Tag Manager can initialise the destination before the ID-specific config.
+      // Seed the same settings on this separate data layer before the tag is loaded.
+      tag('set', config);
       tag('js', new Date());
       tag('config', measurementId, config);
       // Keep this GA4 stream separate from the existing Google Ads tag and draft events.

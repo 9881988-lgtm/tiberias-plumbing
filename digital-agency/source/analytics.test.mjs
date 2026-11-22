@@ -60,6 +60,8 @@ test('page, PDF and accepted-lead events exclude form or arbitrary URL data', ()
   const commands = f.clicks();
   assert.deepEqual(commands.filter(x => x[0] === 'event').map(x => x[1]), ['page_view','file_download','generate_lead']);
   const config = commands.find(x => x[0] === 'config')[2];
+  assert.equal(commands[0][0], 'set');
+  assert.equal(commands[0][1], config);
   assert.equal(config.send_page_view, false);
   assert.equal(config.allow_google_signals, false);
   assert.equal(config.campaign_source, 'linkedin');
