@@ -7,6 +7,7 @@ import { buildServiceEditions } from './service-editions.mjs';
 import { buildHotelCyprus } from './hotel-cyprus.mjs';
 import { buildWorkflows } from './ai-workflows.mjs';
 import { workflows } from './ai-workflows-copy.mjs';
+import { buildSchool, school } from './pearl-valley.mjs';
 import { content } from './content.mjs';
 import { buildContactPages } from './contact-pages.mjs';
 import { capabilities, intro as capabilityIntro } from './capabilities.mjs';
@@ -23,7 +24,7 @@ const lucide = require('lucide');
 const here = dirname(fileURLToPath(import.meta.url));
 const target = resolve(process.argv[2] || join(here, '..'));
 const rootURL = 'https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/';
-const version = '20261122-search';
+const version = '20261123-projects';
 const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const e = escape;
 function icon(name, extra = '') {
@@ -53,6 +54,13 @@ function render(lang, t) {
   const preview = (name, widths, sizes) => `src="${rel}assets/${name}-${widths[0]}.webp" srcset="${widths.map(w => rel+'assets/'+name+'-'+w+'.webp '+w+'w').join(', ')}" sizes="${sizes}"`;
   const offlineDownloadTitle = {he:'הורדת Edelstein CRM Israel',ru:'Скачать Edelstein CRM Israel',en:'Download Edelstein CRM Israel',fr:'Télécharger Edelstein CRM Israel'}[lang];
   const s = studio[lang];
+  const solar = {
+    he:['דודי שמש של כרומגן ואידיאל','מים ושמש מתקינה דודי שמש החל מ־4,500 ₪, מחדרה ועד טבריה והגליל. המחיר הסופי תלוי בנפח הדוד, במצב הקולטים והצנרת ובגישה לגג.','לפרטי ההתקנה'],
+    ru:['Солнечные бойлеры Chromagen и Ideal','Маим ве-Шемеш устанавливает солнечные бойлеры от 4 500 ₪. Работаем от Хадеры до Тверии и Галилеи. Итоговая цена зависит от объёма бака, состояния коллекторов и труб и доступа на крышу.','Посмотреть условия установки'],
+    en:['Chromagen and Ideal solar water heaters','Mayim VeShemesh installs solar water heaters from ₪4,500, from Hadera to Tiberias and the Galilee. The final quote depends on tank capacity, collectors, pipes and roof access.','View installation details'],
+    fr:['Chauffe-eau solaires Chromagen et Ideal','Mayim VeShemesh installe des chauffe-eau solaires à partir de 4 500 ₪, de Hadera à Tibériade et en Galilée. Le devis dépend du ballon, des capteurs, des tuyaux et de l’accès au toit.','Voir les conditions d’installation']
+  }[lang];
+  const solarURL = parent+'solar-boilers/'+(lang==='he'?'':'?lang='+lang);
   const inquiry = slug => {
     const product=encodeURIComponent(slug);
     const [ask,call,order]=siteSales[lang];
@@ -61,6 +69,7 @@ function render(lang, t) {
   const urls = [softwarePath('crm',productLang), softwarePath('sales',productLang), softwarePath('calls',productLang), 'dental-secretary/'+pathFor(productLang), 'auto-secretary/'+pathFor(productLang), 'hotel-consulting/'+pathFor(lang), softwarePath('software',productLang), innovationPath(lang), 'hotel-secretary/'+pathFor(lang), 'small-business-secretary/'+pathFor(lang)];
   const symbols = ['PanelsTopLeft','MessagesSquare','PhoneCall','CalendarDays','Wrench','Building2','Layers','Lightbulb','BedDouble','PhoneForwarded'];
   const workflowLink = `<div class="route-offer"><a class="studio-route" href="${rel}ai-workflows/${pathFor(lang)}">${icon('Workflow')}<span>${e(workflows[lang].title)}</span>${arrow()}</a>${inquiry('ai-workflows')}</div>`;
+  const schoolLink = `<div class="route-offer"><a class="studio-route" href="${rel}pearl-valley/${pathFor(lang)}">${icon('BookOpen')}<span><bdi>Pearl Valley</bdi><small>${e(school[lang].kind)}</small></span>${arrow()}</a></div>`;
   const directory = workflowLink + urls.map((url,i)=>url ? `<div class="route-offer"><a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}${i===7?`<small>${e(s.applicationAction)}</small>`:''}</span>${arrow()}</a>${inquiry(url.split('/')[0])}</div>` : '').join('');
   const nav = t.nav.map((item,i)=>`<a href="${i===3?rel+'contacts/'+pathFor(lang):'#'+navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>` + (['ru','he'].includes(lang) ? `<a href="#secretary-catalog">${lang==='he'?'קטלוג':'Каталог'}</a>` : '');
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
@@ -109,6 +118,7 @@ function render(lang, t) {
       <article class="project project-wide"><a class="project-media" href="${rel + softwarePath('crm',productLang)}" aria-label="${e(t.projects[2].action)}"><img ${preview('crm-preview', [480,800,1280], '(max-width: 760px) 94vw, 760px')} width="1280" height="720" alt="Galany CRM · test interface" loading="lazy"></a><div class="project-info">${projectIntro(t.projects[2])}<a class="text-link" href="${rel + softwarePath('crm',productLang)}">${e(t.projects[2].action)}${arrow()}</a> <a class="text-link" href="${rel+softwarePath('crm',productLang)}#desktop-downloads">${e(offlineDownloadTitle)}</a>${inquiry('galany-crm')}</div></article>
       <article class="project project-receipt"><a class="project-media" href="${parent}receiptil/" aria-label="${e(t.projects[0].action)}"><div class="receipt-device"><img ${preview('receipt-preview', [320,480], '190px')} alt="ReceiptIL" width="1242" height="2688" loading="lazy"></div><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[0])}${inquiry('receiptil')}</div></article>
       <article class="project project-service"><a class="project-media" href="${parent}ac-cleaning/" aria-label="${e(t.projects[1].action)}"><img ${preview('ac-preview', [480,800,1200], '(max-width: 760px) 92vw, 520px')} alt="${e(t.projects[1].title)}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info">${projectIntro(t.projects[1])}${inquiry('ac-cleaning')}</div></article>
+      <article class="project project-solar" id="solar-installation"><a class="project-media" href="${solarURL}" aria-label="${e(solar[2])}"><img src="${parent}assets/solar-boiler-tiberias-hero.jpg" alt="${e(solar[0])}" width="1672" height="941" loading="lazy"><span class="arrow media-arrow">${arrow()}</span></a><div class="project-info"><div class="project-topline"><span>Mayim VeShemesh</span><span class="project-status">${e(t.projects[1].status)}</span></div><h3>${e(solar[0])}</h3><p>${e(solar[1])}</p><a class="text-link" href="${solarURL}">${e(solar[2])}${arrow()}</a></div></article>
     </div>
     <details class="studio-fold studio-platform"><summary>${e(s.next)}${icon("Plus")}</summary>
     <p class="platform-status">${e(t.workIntro)}</p>
@@ -119,7 +129,7 @@ function render(lang, t) {
     </details>
   </div></section>
   <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(s.services)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p>${inquiry(id)}</div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
-  <section class="studio-directory section"><div class="wrap"><div class="directory-heading"><h2>${e(s.directory)}</h2><p>${e(s.directoryLead)}</p></div><div class="studio-routes">${directory}</div></div></section>
+  <section class="studio-directory section"><div class="wrap"><div class="directory-heading"><h2>${e(s.directory)}</h2><p>${e(s.directoryLead)}</p></div><div class="studio-routes">${directory}${schoolLink}</div></div></section>
   <section class="section capabilities" id="capabilities"><div class="wrap"><div class="section-head"><h2>${e(capabilityIntro[lang][0])}</h2><p>${e(capabilityIntro[lang][1])}</p></div><div class="capability-offers">${capabilities.map(c=>`<article id="${c.id}"><h3>${e(c[lang][0])}</h3><p>${e(c[lang][1])}</p>${inquiry(c.id)}</article>`).join('')}</div></div></section>
   ${renderSecretaryCatalogue(lang)}
   <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(s.process)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
@@ -155,6 +165,8 @@ for (const [lang,t] of Object.entries(content)) {
 }
 await buildContactPages(target,rootURL,icon,e);
 await buildWorkflows(target,rootURL,e);
+await buildSchool(target,rootURL,e);
+if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../pearl-valley/school.css'),join(target,'pearl-valley/school.css'));
 if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../ai-workflows/workflows.css'),join(target,'ai-workflows/workflows.css'));
 for (const name of ['contact-pages.css','contact-pages.js','styles.css','studio.css','service-studio.css','script.js','analytics.css','analytics.js']) {
   const file = join(here,'..',name);

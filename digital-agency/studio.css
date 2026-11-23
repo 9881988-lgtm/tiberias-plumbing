@@ -41,6 +41,8 @@
 .project .project-media { border-radius:3px;aspect-ratio:auto;height:230px }
 .project-wide .project-media { display:flex;align-items:center;justify-content:center;background:#e4e9ee;padding:18px }
 .project-wide .project-media img { height:auto;max-height:100%;width:100%;object-fit:contain }
+.project-solar .project-media img{width:100%;height:100%;object-fit:cover}
+@media(min-width:651px){.project-solar{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}}
 .project-wide .project-info,.project-info { padding:19px 0 0 }
 .project-topline { align-items:start;flex-wrap:wrap;gap:4px 12px;font-size:11px;margin-bottom:10px }
 .project-status,.project-wide .project-status { color:#305b47;text-transform:none }

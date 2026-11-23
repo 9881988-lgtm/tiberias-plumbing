@@ -1,0 +1,8 @@
+.school-langs{display:flex;flex-wrap:wrap;gap:16px;font-size:14px}.school-langs a{padding-block:7px}.school-langs [aria-current]{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.school-hero{background:#e7f2ed;border-bottom:1px solid #83a59a;padding:65px 0;color:#173e38}
+.school-hero h1{font:normal 100px/1.03 Georgia,serif;color:#193c37;letter-spacing:0}
+.school-format{font-size:25px;margin:10px 0 24px}.school-hero .eyebrow{color:#476455}
+.school-hero .btn{background:#173e38}.school-price{padding:24px 0;background:#183c37;color:#fff}
+.school-price .product-wrap{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 22px}.school-price h2{font-size:36px;color:#f0d491}
+.product-section .text-link{margin-top:18px}.product-section .eyebrow{margin-bottom:8px}
+@media(max-width:680px){.product-header-inner{flex-wrap:wrap;gap:0 18px;padding-block:8px}.school-hero{padding:38px 0}.school-hero h1{font-size:55px}.school-format{font-size:21px}.school-price h2{font-size:30px}}

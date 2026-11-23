@@ -10,7 +10,12 @@ for (const lang of Object.keys(studio)) {
     const work = html.indexOf('id="work"');
     assert.ok(work > html.indexOf('id="hero-title"') && work < html.indexOf('id="services"'));
     assert.ok(html.includes(studio[lang].lead));
-    assert.equal([...html.matchAll(/class="project-media"/g)].length, 3);
+    assert.equal([...html.matchAll(/class="project-media"/g)].length, 4);
+    const solar = html.match(/<article class="project project-solar"[\s\S]*?<\/article>/)?.[0];
+    assert.ok(solar?.includes('solar-boilers/'+(lang==='he'?'':'?lang='+lang)));
+    assert.match(solar,/4[,\u202f]500/);
+    assert.match(solar,lang==='he'?/כרומגן ואידיאל/:/Chromagen (?:и|and|et) Ideal/);
+    assert.ok(html.includes('pearl-valley/'+(lang==='he'?'':lang+'/')));
     assert.match(html, /studio\.css\?v=/);
     assert.match(html, /class="mobile-contact"[^>]+href="#contact"/);
     assert.match(html, /class="studio-route" id="innovation"/);

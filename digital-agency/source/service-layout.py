@@ -171,3 +171,5 @@ if __name__=='__main__':
     if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',cyprus,'2026-11-23')
     workflows=[BASE+route('ai-workflows',lang) for lang in LANG if (target/route('ai-workflows',lang)/'index.html').exists()]
     if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',workflows,'2026-11-23')
+    school=[BASE+route('pearl-valley',lang) for lang in LANG if (target/route('pearl-valley',lang)/'index.html').exists()]
+    if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',school,'2026-11-23')
