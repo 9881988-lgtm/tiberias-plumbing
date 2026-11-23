@@ -5,6 +5,8 @@ import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
 import { buildServiceEditions } from './service-editions.mjs';
 import { buildHotelCyprus } from './hotel-cyprus.mjs';
+import { buildWorkflows } from './ai-workflows.mjs';
+import { workflows } from './ai-workflows-copy.mjs';
 import { content } from './content.mjs';
 import { buildContactPages } from './contact-pages.mjs';
 import { capabilities, intro as capabilityIntro } from './capabilities.mjs';
@@ -58,7 +60,8 @@ function render(lang, t) {
   };
   const urls = [softwarePath('crm',productLang), softwarePath('sales',productLang), softwarePath('calls',productLang), 'dental-secretary/'+pathFor(productLang), 'auto-secretary/'+pathFor(productLang), 'hotel-consulting/'+pathFor(lang), softwarePath('software',productLang), innovationPath(lang), 'hotel-secretary/'+pathFor(lang), 'small-business-secretary/'+pathFor(lang)];
   const symbols = ['PanelsTopLeft','MessagesSquare','PhoneCall','CalendarDays','Wrench','Building2','Layers','Lightbulb','BedDouble','PhoneForwarded'];
-  const directory = urls.map((url,i)=>url ? `<div class="route-offer"><a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}${i===7?`<small>${e(s.applicationAction)}</small>`:''}</span>${arrow()}</a>${inquiry(url.split('/')[0])}</div>` : '').join('');
+  const workflowLink = `<div class="route-offer"><a class="studio-route" href="${rel}ai-workflows/${pathFor(lang)}">${icon('Workflow')}<span>${e(workflows[lang].title)}</span>${arrow()}</a>${inquiry('ai-workflows')}</div>`;
+  const directory = workflowLink + urls.map((url,i)=>url ? `<div class="route-offer"><a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}${i===7?`<small>${e(s.applicationAction)}</small>`:''}</span>${arrow()}</a>${inquiry(url.split('/')[0])}</div>` : '').join('');
   const nav = t.nav.map((item,i)=>`<a href="${i===3?rel+'contacts/'+pathFor(lang):'#'+navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>` + (['ru','he'].includes(lang) ? `<a href="#secretary-catalog">${lang==='he'?'קטלוג':'Каталог'}</a>` : '');
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
   const projectIntro = p => `<div class="project-topline"><span>${e(p.label.replace(/^\d+\s*\/\s*/, ''))}</span><span class="project-status">${e(p.status)}</span></div><h3 class="preline">${e(p.title)}</h3><p>${e(p.text)}</p>${tags(p)}<p class="project-note">${e(p.note)}</p>`;
@@ -151,6 +154,8 @@ for (const [lang,t] of Object.entries(content)) {
   await writeFile(join(dir,'index.html'),render(lang,t).replace(/[ \t]+$/gm,''));
 }
 await buildContactPages(target,rootURL,icon,e);
+await buildWorkflows(target,rootURL,e);
+if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../ai-workflows/workflows.css'),join(target,'ai-workflows/workflows.css'));
 for (const name of ['contact-pages.css','contact-pages.js','styles.css','studio.css','service-studio.css','script.js','analytics.css','analytics.js']) {
   const file = join(here,'..',name);
   if (resolve(file) !== resolve(target,name)) await copyFile(file,join(target,name));

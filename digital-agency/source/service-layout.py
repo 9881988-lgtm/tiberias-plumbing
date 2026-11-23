@@ -169,3 +169,5 @@ if __name__=='__main__':
     cyprus=[BASE+p.relative_to(target).as_posix().removesuffix('index.html')
             for p in sorted((target/'hotel-consulting/cyprus').rglob('index.html'))]
     if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',cyprus,'2026-11-23')
+    workflows=[BASE+route('ai-workflows',lang) for lang in LANG if (target/route('ai-workflows',lang)/'index.html').exists()]
+    if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',workflows,'2026-11-23')

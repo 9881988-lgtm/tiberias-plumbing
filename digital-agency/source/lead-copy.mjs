@@ -42,6 +42,7 @@ export const siteSales = {
   fr: ['Demander à Bayla','Appeler Bayla','Demander une commande','Budget, si connu','J’accepte le traitement de ma demande et d’être recontacté.','Demande reçue dans notre CRM','Choisissez un produit, laissez vos coordonnées et décrivez brièvement votre besoin.','Nous n’avons pas pu confirmer la réception. Réessayez ou appelez-nous.','Posez votre question sur le produit. Bayla vous aide à préciser l’offre.','En envoyant ce formulaire, vous transmettez vos informations au CRM d’Eydelstein Digital Lab. N’indiquez ni mots de passe, ni carte, ni données clients.'],
 };
 const prompts = {
+  workflow:['Какую задачу вы повторяете вручную, в каких программах и сколько раз в месяц?','איזו משימה אתם מבצעים ידנית, באילו מערכות וכמה פעמים בחודש?','Which task do you repeat by hand, in which tools, and how often each month?','Quelle tâche répétez-vous à la main, dans quels outils et combien de fois par mois ?'],
   sales:['На каком этапе теряются обращения и что нужно автоматизировать?','באיזה שלב פניות מתפספסות ומה תרצו להפוך לאוטומטי?','Where do enquiries get lost, and what should be automated?','À quelle étape perdez-vous des demandes et que faut-il automatiser ?'],
   calls:['Какие звонки поступают, на каких языках и что должно происходить после разговора?','אילו שיחות נכנסות, באילו שפות ומה צריך לקרות אחרי השיחה?','What calls come in, in which languages, and what should happen after a call?','Quels appels recevez-vous, dans quelles langues, et quelle suite faut-il leur donner ?'],
   grants:['На какой стадии идея и в какую программу хотите подать заявку?','באיזה שלב המיזם ולאיזו תוכנית תרצו להגיש בקשה?','What stage is the idea at, and which programme interests you?','À quel stade en est votre projet et quel programme visez-vous ?'],
@@ -52,7 +53,7 @@ const prompts = {
   campaign:['Какой результат, рынок и бюджет кампании вам нужны?','איזה יעד, שוק ותקציב יש לקמפיין?','What result, market and campaign budget do you have in mind?','Quels résultats, marché et budget visez-vous ?'],
 };
 const groups = {
-  'galany-crm':'sales','desktop-crm':'sales','ai-sales-agent':'sales',software:'sales',ai:'sales','ai-workflows':'sales',
+  'galany-crm':'sales','desktop-crm':'sales','ai-sales-agent':'sales',software:'sales',ai:'sales','ai-workflows':'workflow',
   light:'sales',booking:'hotel',business:'calls','business-plus':'calls','auto-secretary':'calls','dental-secretary':'calls',
   'small-business-secretary':'calls','ai-call-center':'calls','call-center-software':'calls','hotel-secretary':'hotel',
   'hotel-consulting':'hotel','innovation-applications':'grants',website:'web',landing:'web','cms-care':'web',
