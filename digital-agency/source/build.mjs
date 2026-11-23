@@ -167,6 +167,7 @@ await buildContactPages(target,rootURL,icon,e);
 await buildWorkflows(target,rootURL,e);
 await buildSchool(target,rootURL,e);
 if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../pearl-valley/school.css'),join(target,'pearl-valley/school.css'));
+if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../pearl-valley/pearl-linkedin.jpg'),join(target,'pearl-valley/pearl-linkedin.jpg'));
 if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../ai-workflows/workflows.css'),join(target,'ai-workflows/workflows.css'));
 for (const name of ['contact-pages.css','contact-pages.js','styles.css','studio.css','service-studio.css','script.js','analytics.css','analytics.js']) {
   const file = join(here,'..',name);

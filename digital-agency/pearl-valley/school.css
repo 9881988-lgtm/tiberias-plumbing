@@ -5,4 +5,5 @@
 .school-hero .btn{background:#173e38}.school-price{padding:24px 0;background:#183c37;color:#fff}
 .school-price .product-wrap{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 22px}.school-price h2{font-size:36px;color:#f0d491}
 .product-section .text-link{margin-top:18px}.product-section .eyebrow{margin-bottom:8px}
+.school-teacher{display:flex;align-items:center;gap:16px}.school-teacher img{width:68px;height:68px;flex:none;border-radius:50%}.school-teacher h2{overflow-wrap:anywhere}
 @media(max-width:680px){.product-header-inner{flex-wrap:wrap;gap:0 18px;padding-block:8px}.school-hero{padding:38px 0}.school-hero h1{font-size:55px}.school-format{font-size:21px}.school-price h2{font-size:30px}}
