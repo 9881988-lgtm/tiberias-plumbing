@@ -51,7 +51,8 @@ mapped = [n.text for n in ET.parse(ROOT/"sitemap.xml").findall("{*}url/{*}loc")]
 assert len(mapped) == len(set(mapped)) and set(mapped) == set(pages)
 for url,tags in pages.items():
     alts = {a["hreflang"]:a["href"] for t,a in tags if t=="link" and "hreflang" in a}
-    assert {"he-IL","ru","en","fr","x-default"} == set(alts), url
+    regional = "el" if url.startswith(BASE+"hotel-consulting/cyprus/") else "fr"
+    assert {"he-IL","ru","en",regional,"x-default"} == set(alts), url
     for target in alts.values():
         if "?" not in target:
             assert any(a.get("href")==url for t,a in pages[target] if t=="link" and "hreflang" in a), (url,target)

@@ -1,0 +1,10 @@
+.hotel-cyprus .product-header-inner{gap:12px;flex-wrap:wrap;padding-block:12px}
+.cyprus-languages{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;font-size:14px}
+.cyprus-languages a{padding-block:4px}
+.cyprus-languages [aria-current="page"]{font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.hotel-cyprus .hotel-hero h1{overflow-wrap:anywhere}
+.hotel-cyprus .cyprus-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px;margin-block:20px 6px;color:#fff}
+.hotel-cyprus .cyprus-price strong{font-size:32px;color:#dbff72;line-height:1.15}
+.hotel-cyprus .hotel-terms{margin-top:0}
+.hotel-cyprus .cyprus-pdfs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(185px,100%),1fr))}
+.hotel-cyprus .cyprus-terms{background:#f0f3ee}

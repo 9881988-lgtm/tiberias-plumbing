@@ -15,6 +15,7 @@
     he: ['מדידת שימוש באתר', 'בהסכמתכם, Google Analytics מודד צפיות בדפים, הורדות PDF ופניות שאושרו. פרטי הטופס אינם נשלחים לשירות המדידה.', 'אישור מדידה', 'דחייה', 'הגדרות מדידה'],
     en: ['Website analytics', 'With your permission, Google Analytics measures page views, PDF downloads and confirmed enquiries. Your form details are not sent to analytics.', 'Allow analytics', 'Decline', 'Analytics settings'],
     fr: ['Mesure d’audience', 'Avec votre accord, Google Analytics mesure les vues de pages, les téléchargements PDF et les demandes confirmées. Les données du formulaire ne sont pas envoyées à cet outil.', 'Autoriser la mesure', 'Refuser', 'Préférences de mesure'],
+    el: ['Στατιστικά ιστοτόπου', 'Με τη συγκατάθεσή σας, το Google Analytics μετρά προβολές σελίδων, λήψεις PDF και επιβεβαιωμένα αιτήματα. Τα στοιχεία της φόρμας δεν αποστέλλονται στο εργαλείο ανάλυσης.', 'Αποδοχή στατιστικών', 'Απόρριψη', 'Ρυθμίσεις στατιστικών'],
   };
   const [heading, description, allow, decline, preferences] = strings[language] || strings.en;
   const disclosures = {
@@ -22,6 +23,7 @@
     he: ['Google Analytics משתמש בקובצי Cookie למדידת ביקורים ומקורות הגעה. אפשר לשנות את הבחירה בתחתית כל דף.', 'איך Google מעבדת נתונים'],
     en: ['Google Analytics uses cookies to measure visits and traffic sources. You can change your choice at the bottom of any page.', 'How Google processes data'],
     fr: ['Google Analytics utilise des cookies pour mesurer les visites et leurs sources. Vous pouvez modifier votre choix en bas de chaque page.', 'Comment Google traite les données'],
+    el: ['Το Google Analytics χρησιμοποιεί cookies για να μετρά τις επισκέψεις και τις πηγές τους. Αλλάξτε την επιλογή σας στο κάτω μέρος κάθε σελίδας.', 'Πώς χρησιμοποιεί η Google τα δεδομένα'],
   };
   const [notice, policyLabel] = disclosures[language] || disclosures.en;
   let choice;

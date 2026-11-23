@@ -12,7 +12,8 @@ const read = path => readFileSync(path, 'utf8');
 const approvedPDFs = new Set([
   ...['Hotel_Secretary_A4_RU.pdf','Hotel_Secretary_A4_HE.pdf','Small_Business_Secretary_A4_RU.pdf','Small_Business_Secretary_A4_HE.pdf'].map(name=>join(agency,'secretary-catalog',name)),
   ...['hotel-consulting-he.pdf','hotel-consulting-ru.pdf','hotel-consulting-en.pdf'].map(name=>join(agency,'hotel-consulting',name)),
-  ...['dental-secretary','auto-secretary'].flatMap(slug=>['he','ru'].map(lang=>join(agency,slug,`${slug}-${lang}.pdf`)))
+  ...['dental-secretary','auto-secretary'].flatMap(slug=>['he','ru'].map(lang=>join(agency,slug,`${slug}-${lang}.pdf`))),
+  ...['en','he','ru','el'].map(lang=>join(agency,'hotel-consulting','cyprus',`hotel-consulting-cyprus-${lang}.pdf`))
 ]);
 const amount = /\u20aa|\$\d|\b(?:ILS|NIS)\s*\d|\d\s*(?:ILS|NIS)\b|"(?:priceSpecification|priceCurrency|priceRange|lowPrice|highPrice|price)"\s*:/i;
 

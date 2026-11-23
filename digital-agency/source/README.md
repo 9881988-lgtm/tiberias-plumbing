@@ -103,6 +103,10 @@ The reviewed tracked HTML under `dental-secretary/`, `auto-secretary/` and `smal
 
 Only the approved 149/590 ILS RU and HE editions are published for dental and workshop services. Each service directory contains its two PDFs; both localized pages link to both files next to pricing. The byte hashes and relative links are checked by `secretary-documents.test.mjs`.
 
+## Hotel consulting for Cyprus
+
+The four Cyprus pages and four downloadable proposals are separate from the original Israel editions. The approved Cyprus base fee is EUR 5,500/month excluding VAT. `hotel-cyprus-copy.mjs` is shared by the web and print templates. To regenerate the approved four-page PDFs, run `node digital-agency/source/hotel-cyprus-pdf.mjs` with playwright-core and Chrome available. The site build preserves the PDFs and adds language links, canonical sitemap URLs and entry points from the existing hotel pages.
+
 ## Google Analytics 4
 
 - `analytics.js` runs only on the public agency directory, with a verified web measurement ID and after analytics opt-in. Visitors can withdraw consent from the footer. The separate existing Ads tag remains unchanged.

@@ -4,6 +4,7 @@ import { dirname, resolve, join } from 'node:path';
 import { createRequire } from 'node:module';
 import { execFileSync } from 'node:child_process';
 import { buildServiceEditions } from './service-editions.mjs';
+import { buildHotelCyprus } from './hotel-cyprus.mjs';
 import { content } from './content.mjs';
 import { buildContactPages } from './contact-pages.mjs';
 import { capabilities, intro as capabilityIntro } from './capabilities.mjs';
@@ -163,6 +164,7 @@ if (!designOnly) {
 }
 await buildInnovation(target);
 await buildServiceEditions(target);
+await buildHotelCyprus(target);
 const sitemapEntry = (url, lastModified='2026-11-18', alternates='') =>
   `<url><loc>${url}</loc><lastmod>${lastModified}</lastmod>${alternates}</url>`;
 const localizedHome = Object.keys(content).map(code=>`<xhtml:link rel="alternate" hreflang="${code==='he'?'he-IL':code}" href="${rootURL+pathFor(code)}"/>`).join('');

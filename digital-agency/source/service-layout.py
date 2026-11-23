@@ -57,6 +57,11 @@ def transform(file,slug,lang):
                 f'<a href="{rel}{route("contacts",code)}?product={product}#advisor">{ask}</a> '
                 f'<a href="tel:+972555071400">{call}</a>')
     hero=next((e for t,a,_,e in tags if t=='div' and 'product-actions' in a.get('class','').split()),None)
+    if slug=='hotel-consulting' and hero is not None and 'id="cyprus-offer"' not in raw:
+        title={'he':'הצעה למלונות בקפריסין','ru':'Отели Кипра','en':'Cyprus hotel consulting','fr':'Hôtels à Chypre'}[lang]
+        dest=route('hotel-consulting/cyprus',lang) if lang in ('he','ru') else 'hotel-consulting/cyprus/'
+        if lang=='he': dest+='he/'
+        inject(raw.index('</div>',hero),f'<a id="cyprus-offer" class="text-link" href="{rel}{dest}">{title}</a>')
     if hero is not None and 'class="hero-enquiry"' not in raw:
         inject(hero,f'<a class="hero-enquiry" href="{rel}{route("request",lang)}?product={slug}">{labels[lang][0]}</a>')
     links=actions(lang,slug)
@@ -161,3 +166,6 @@ if __name__=='__main__':
     if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',urls)
     extra=[BASE+route(slug,lang) for slug in ('contacts','request') for lang in LANG if (target/route(slug,lang)/'index.html').exists()]
     if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',extra,'2026-11-20')
+    cyprus=[BASE+p.relative_to(target).as_posix().removesuffix('index.html')
+            for p in sorted((target/'hotel-consulting/cyprus').rglob('index.html'))]
+    if target==Path(__file__).resolve().parents[1]: sitemap(target.parent/'sitemap.xml',cyprus,'2026-11-23')
