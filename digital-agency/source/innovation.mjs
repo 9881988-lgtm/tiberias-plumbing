@@ -108,6 +108,12 @@ const applicationTerms = {
     'Décrivez l’idée, sa nouveauté technique, l’équipe, les droits de propriété intellectuelle, les essais réalisés et le budget. Signalez toute demande antérieure : un même projet ne peut être déposé en parallèle dans un autre dispositif de l’Autorité. Un compte sur le portail, le formulaire complet, le budget et les annexes correspondant au demandeur sont nécessaires.']
 };
 export const innovationUrls = Object.keys(innovation).map(lang => root + innovationPath(lang));
+const nofo={
+  ru:['Подаётесь по отдельному международному конкурсу (NOFO)?','Для предварительной проверки пришлите ссылку или номер конкурса, страну регистрации, правовую форму заявителя и страну реализации проекта. Если организация зарегистрирована в Эквадоре, укажите её официальное название и регистрационный номер. По конкретному объявлению проверим, кто вправе подать заявку, нужны ли местный партнёр, регистрация на портале и подтверждающие документы. Это отдельная проверка, не условие программы «Тнуфа».','Как проверить право на участие'],
+  he:['מגישים למסלול בינלאומי נפרד (NOFO)?','לבדיקה ראשונית שלחו קישור או מספר קול קורא, מדינת רישום, סוג הישות ומדינת ביצוע המיזם. לארגון הרשום באקוודור ציינו את השם הרשמי ומספר הרישום. לפי הקול הקורא נבדוק זכאות, צורך בשותף מקומי, רישום בפורטל ומסמכים. זו בדיקה נפרדת מתנאי תנופה.','בדיקת זכאות להגשה'],
+  en:['Applying under a separate international funding notice (NOFO)?','Send the opportunity link or number, country of registration, legal form and country where work will take place. If your organisation is registered in Ecuador, give its legal name and registration number. We check the specific notice for eligible applicants, local partners, portal registration and supporting documents. These are not Tnufa conditions.','How to check grant eligibility'],
+  fr:['Vous répondez à un appel international distinct (NOFO) ?','Envoyez le lien ou numéro de l’appel, le pays d’immatriculation, la forme juridique et le pays de réalisation. Pour une organisation enregistrée en Équateur, indiquez sa raison sociale et son numéro d’immatriculation. Nous vérifierons les candidats admissibles, les partenaires locaux, les inscriptions et les pièces selon cet appel. Il ne s’agit pas des conditions de Tnufa.','Vérifier les critères d’admissibilité']
+};
 
 export function renderInnovationTeaser(lang, rel) {
   const t = innovation[lang];
@@ -157,6 +163,7 @@ export async function buildInnovation(target) {
       <h3>${e(applicationTerms[lang][2])}</h3><p>${e(applicationTerms[lang][3])}</p>
       <h3>${e(applicationTerms[lang][4])}</h3><p>${e(applicationTerms[lang][5])}</p><p>${e(applicationTerms[lang][6])}</p></section>
       <a class="text-link" href="${e(lang==='he'?officialHE:officialEN)}">${e(t.program)} <span aria-hidden="true">↗</span></a>
+      <div class="implementation" id="nofo"><h3>${e(nofo[lang][0])}</h3><p>${e(nofo[lang][1])}</p><a class="text-link" href="https://grants.gov/learn-grants/grant-eligibility.html">${e(nofo[lang][2])} · Grants.gov</a></div>
     </div></section>${t.questions ? `
     <section class="product-section faq-section" id="application-guide"><div class="product-wrap section-two">
       <h2>${e(t.guideTitle)}</h2><div class="product-faq">${t.questions.map(([question, answer])=>`<details><summary>${e(question)}</summary><p>${e(answer)}</p></details>`).join('')}</div>
