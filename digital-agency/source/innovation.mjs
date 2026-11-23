@@ -89,6 +89,24 @@ export const innovation = {
 };
 
 export const innovationPath = lang => branch + (lang === 'he' ? '' : `${lang}/`);
+const applicationTerms = {
+  ru:['От идеи до подачи','Разработаем проект по вашей идее: вместе с командой проработаем техническое решение, проверку осуществимости, этапы, бюджет и полный комплект заявки. После вашего утверждения подадим его в порядке, предусмотренном программой.',
+    'Оплата только после получения гранта','Наш гонорар за эту услугу по «Тнуфа» составляет 10% денег, фактически полученных вами по гранту, а не запрошенной или одобренной суммы. Не получили грант — гонорара нет. Это отдельная оплата услуг студии, а не сбор Управления инноваций; мы не обещаем возмещения этих расходов.',
+    'Что нужно от заявителя','Сообщите, кто подаёт заявку: частный предприниматель или группа резидентов Израиля либо подходящая израильская компания. Частному заявителю не обязательно учреждать компанию. Для компании проверяем выручку за последний календарный год (до 200 000 ₪), привлечённое с основания финансирование (до 500 000 ₪) и состав владельцев.',
+    'Подготовьте краткое описание идеи, её новизны, команды, прав на разработку, уже проведённых испытаний и необходимого бюджета. Укажите предыдущие заявки: одну и ту же программу нельзя параллельно подавать на финансирование по другой линии Управления. Для подачи нужен личный кабинет, заполненная форма, бюджет и приложения по типу заявителя.'],
+  he:['מהרעיון שלכם ועד להגשה','נגבש עם הצוות שלכם את המיזם לפי דרישות תנופה: פתרון טכנולוגי, בדיקת היתכנות, אבני דרך, תקציב ותיק בקשה מלא. לאחר אישורכם נגיש בהתאם לנהלי המסלול.',
+    'שכר טרחה רק לאחר קבלת המענק','שכר הטרחה עבור שירות זה במסלול תנופה הוא 10% מסכום המענק שקיבלתם בפועל, ולא מהסכום שביקשתם או שאושר. לא התקבל מענק, לא משולם שכר טרחה. זהו תשלום פרטי לסטודיו, לא אגרת רשות החדשנות; אין התחייבות להכרה בהוצאה.',
+    'מה נדרש מכם','ציינו אם אתם יזם יחיד או קבוצת יזמים תושבי ישראל, או חברה ישראלית מתאימה. יזם פרטי אינו נדרש להקים חברה. לחברה נבדוק מחזור הכנסות בשנה הקלנדרית האחרונה (עד 200,000 ₪), מימון שגויס מאז הקמתה (עד 500,000 ₪) והרכב בעלי המניות.',
+    'שלחו תיאור של הרעיון והחידוש הטכנולוגי, הצוות, הזכויות בידע, בדיקות שכבר נערכו והתקציב הדרוש. פרטו בקשות מימון קודמות: אין להגיש אותה תוכנית במקביל למסלול נוסף של הרשות. נדרשים רישום לאזור האישי, טופס מלא, תקציב ונספחים בהתאם לסוג המבקש.'],
+  en:['From your idea to submission','We develop your project with your team: the technical concept, feasibility tests, milestones, budget and complete Tnufa application. Once you approve the package, we submit it as the programme permits.',
+    'A fee only after you receive funding','Our fee for this Tnufa service is 10% of grant funds you actually receive, not the amount requested or approved. No grant received means no fee. This is a private service fee, not an Innovation Authority charge; reimbursement is not guaranteed.',
+    'What we need from you','Tell us whether you are applying as an individual or team resident in Israel, or as an eligible Israeli company. Individuals need not incorporate. For companies we check last calendar year’s revenue (up to ₪200,000), funding raised since incorporation (up to ₪500,000) and ownership.',
+    'Send a short description of your idea, its technical novelty, team, intellectual property, tests so far and budget. Disclose prior applications: the same project cannot be submitted concurrently to another Authority track. Submission requires a portal account, a completed form, budget and applicant-specific attachments.'],
+  fr:['De votre idée au dépôt du dossier','Nous développons votre projet avec votre équipe : solution technique, essais de faisabilité, étapes, budget et dossier Tnufa complet. Après votre validation, nous déposons la demande selon les règles du programme.',
+    'Des honoraires après versement uniquement','Pour cet accompagnement Tnufa, nos honoraires sont de 10 % du montant de la subvention effectivement perçu, et non du montant demandé ou approuvé. Sans versement, aucun honoraire. Il s’agit de nos honoraires privés et non de frais de l’Autorité de l’innovation ; leur remboursement n’est pas garanti.',
+    'Éléments à nous fournir','Précisez si vous candidatez en tant que porteur de projet ou équipe résidant en Israël, ou société israélienne admissible. Un particulier n’a pas à créer de société. Pour une société, nous vérifions le chiffre d’affaires de la dernière année civile (jusqu’à 200 000 ₪), les financements levés depuis la création (jusqu’à 500 000 ₪) et l’actionnariat.',
+    'Décrivez l’idée, sa nouveauté technique, l’équipe, les droits de propriété intellectuelle, les essais réalisés et le budget. Signalez toute demande antérieure : un même projet ne peut être déposé en parallèle dans un autre dispositif de l’Autorité. Un compte sur le portail, le formulaire complet, le budget et les annexes correspondant au demandeur sont nécessaires.']
+};
 export const innovationUrls = Object.keys(innovation).map(lang => root + innovationPath(lang));
 
 export function renderInnovationTeaser(lang, rel) {
@@ -135,6 +153,9 @@ export async function buildInnovation(target) {
       <h2>${e(t.stages)}</h2>
       <div class="capability-list">${t.steps.map(([name,detail],i)=>`<article><span class="feature-index" aria-hidden="true">0${i+1}</span><h3>${e(name)}</h3><p>${e(detail)}</p></article>`).join('')}</div>
       <div class="implementation"><p>${e(t.note)}</p></div>
+      <section id="tnufa-terms"><h2>${e(applicationTerms[lang][0])}</h2><p>${e(applicationTerms[lang][1])}</p>
+      <h3>${e(applicationTerms[lang][2])}</h3><p>${e(applicationTerms[lang][3])}</p>
+      <h3>${e(applicationTerms[lang][4])}</h3><p>${e(applicationTerms[lang][5])}</p><p>${e(applicationTerms[lang][6])}</p></section>
       <a class="text-link" href="${e(lang==='he'?officialHE:officialEN)}">${e(t.program)} <span aria-hidden="true">↗</span></a>
     </div></section>${t.questions ? `
     <section class="product-section faq-section" id="application-guide"><div class="product-wrap section-two">

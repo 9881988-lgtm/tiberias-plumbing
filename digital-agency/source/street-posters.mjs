@@ -1,5 +1,6 @@
 import {mkdir, writeFile} from 'node:fs/promises';
 import {join} from 'node:path';
+import {orderForm} from './poster-order.mjs';
 
 export const posterSlug = 'street-posters-tiberias';
 export const posters = {
@@ -36,15 +37,16 @@ const langs={he:'עברית',ru:'Русский',en:'English',fr:'Français'};
 const suffix=lang=>lang==='he'?'':lang+'/';
 const path=lang=>posterSlug+'/'+suffix(lang);
 const langTag=lang=>lang==='he'?'he-IL':lang;
+const minimum={ru:'От 100 объявлений · Цены без НДС',he:'מינימום 100 מודעות · המחירים לפני מע״מ',en:'Minimum 100 posters · Prices exclude VAT',fr:'Minimum 100 affiches · Prix hors TVA'};
 
 export async function buildPosters(target,site,e){
   for(const [lang,t] of Object.entries(posters)){
     const base=lang==='he'?'../':'../../',home=base+suffix(lang),url=site+path(lang);
-    const desc=t.price+'. '+t.lead, photo='assets/tiberias-posters.jpg', brand='Eydelstein Digital Lab';
+    const desc=t.price+'. '+minimum[lang]+'. '+t.lead, photo='assets/tiberias-posters.jpg', brand='Eydelstein Digital Lab';
     const schema={'@context':'https://schema.org','@type':'Service',name:t.title,url,description:desc,image:site+photo,
       areaServed:{'@type':'City',name:'Tiberias',containedInPlace:{'@type':'Country',name:'Israel'}},
       provider:{'@type':'Organization',name:brand,url:site},
-      offers:{'@type':'Offer',description:t.price,priceSpecification:{'@type':'UnitPriceSpecification',minPrice:10,priceCurrency:'ILS',referenceQuantity:{'@type':'QuantitativeValue',value:1,unitCode:'C62'}}}};
+      offers:{'@type':'Offer',description:t.price,eligibleQuantity:{'@type':'QuantitativeValue',minValue:100,unitCode:'C62'},priceSpecification:{'@type':'UnitPriceSpecification',minPrice:10,maxPrice:30,priceCurrency:'ILS',valueAddedTaxIncluded:false,referenceQuantity:{'@type':'QuantitativeValue',value:1,unitCode:'C62'}}}};
     const folder=join(target,path(lang));
     await mkdir(folder,{recursive:true});
     await writeFile(join(folder,'index.html'),`<!doctype html>
@@ -63,11 +65,9 @@ ${Object.keys(langs).map(l=>`<link rel="alternate" hreflang="${langTag(l)}" href
 <a class="product-brand" href="${home}"><img src="${base}assets/edelstein-lab-digital-mark.svg" width="32" height="32" alt="">${brand}</a>
 <nav class="poster-locales" aria-label="Languages / שפות">${Object.entries(langs).map(([l,name])=>`<a href="${base+path(l)}" lang="${l}" hreflang="${langTag(l)}"${l===lang?' aria-current="page"':''}>${name}</a>`).join('')}</nav></div></header>
 <main id="main"><section class="poster-hero"><div class="product-wrap"><div class="poster-copy">
-<h1>${e(t.title)}</h1><p class="poster-price">${e(t.price)}</p><p class="poster-lead">${e(t.lead)}</p><a class="btn" href="#brief">${e(t.action)}</a>
+<h1>${e(t.title)}</h1><p class="poster-price">${e(t.price)}</p><p>${e(minimum[lang])}</p><p class="poster-lead">${e(t.lead)}</p><a class="btn" href="#brief">${e(t.action)}</a>
 </div></div></section>
 <section class="product-section"><div class="product-wrap"><h2>${e(t.process)}</h2><ol class="poster-steps">${t.steps.map(([title,detail])=>`<li><h3>${e(title)}</h3><p>${e(detail)}</p></li>`).join('')}</ol></div></section>
-<section class="product-section poster-brief" id="brief"><div class="product-wrap section-two"><div><h2>${e(t.brief)}</h2><p>${e(t.note)}</p></div>
-<form action="https://wa.me/972533613100" method="get"><label for="poster-message">${e(t.label)}</label><textarea name="text" id="poster-message" rows="5">${e(t.draft.replace(/[ \t]+$/gm,''))}</textarea><button class="btn" type="submit">${e(t.send)}</button></form>
-</div></section></main><footer class="product-footer"><div class="product-wrap"><strong>${brand}</strong><a href="${home}#services">${e(t.back)}</a></div></footer></body></html>\n`);
+${orderForm(lang,t.send,e)}</main><footer class="product-footer"><div class="product-wrap"><strong>${brand}</strong><a href="${home}#services">${e(t.back)}</a></div></footer><script defer src="${base+posterSlug}/order.js"></script></body></html>\n`);
   }
 }

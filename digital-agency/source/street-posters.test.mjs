@@ -20,8 +20,10 @@ for(const [lang,t] of Object.entries(posters)){
     assert.ok(page.includes('<h1>'+t.title+'</h1>'));
     assert.ok(page.includes(t.price));
     for(const [step] of t.steps) assert.ok(page.includes('<h3>'+step+'</h3>'));
-    assert.ok(page.includes('action="https://wa.me/972533613100"'));
-    assert.match(page,/<textarea name="text"[^>]+>[^<]+\n[^<]+\n[^<]+\n[^<]+<\/textarea>/);
+    assert.ok(page.includes('href="https://wa.me/972533613100"'));
+    for(const field of ['service','design','layout','email','phone','format','quantity','consent']) assert.ok(page.includes('name="'+field+'"'));
+    assert.ok(page.includes('min="100"'));
+    assert.deepEqual([...page.matchAll(/<option value="(\d+)"/g)].map(m=>Number(m[1])),[10,20,30]);
     const href=home.match(/href="([^"]*street-posters-tiberias[^"]*)"/)[1];
     assert.equal(new URL(href,new URL(locale,root)).href,new URL(route,root).href);
     for(const map of ['sitemap.xml','../sitemap.xml']) assert.ok((await read(map)).includes('<loc>'+canonical+'</loc>'));

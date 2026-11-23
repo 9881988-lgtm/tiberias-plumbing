@@ -171,7 +171,7 @@ await buildSchool(target,rootURL,e);
 await buildPosters(target,rootURL,e);
 if (resolve(target) !== resolve(here,'..')) {
   await mkdir(join(target,'assets'),{recursive:true});
-  for (const asset of [posterSlug+'/posters.css','assets/tiberias-posters.jpg'])
+  for (const asset of [posterSlug+'/posters.css',posterSlug+'/order.js','assets/tiberias-posters.jpg'])
     await copyFile(join(here,'..',asset),join(target,asset));
 }
 if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../pearl-valley/school.css'),join(target,'pearl-valley/school.css'));
