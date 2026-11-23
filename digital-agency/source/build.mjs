@@ -8,6 +8,7 @@ import { buildHotelCyprus } from './hotel-cyprus.mjs';
 import { buildWorkflows } from './ai-workflows.mjs';
 import { workflows } from './ai-workflows-copy.mjs';
 import { buildSchool, school, schoolName } from './pearl-valley.mjs';
+import { buildPosters, posterSlug, posters } from './street-posters.mjs';
 import { content } from './content.mjs';
 import { buildContactPages } from './contact-pages.mjs';
 import { capabilities, intro as capabilityIntro } from './capabilities.mjs';
@@ -70,6 +71,7 @@ function render(lang, t) {
   const symbols = ['PanelsTopLeft','MessagesSquare','PhoneCall','CalendarDays','Wrench','Building2','Layers','Lightbulb','BedDouble','PhoneForwarded'];
   const workflowLink = `<div class="route-offer"><a class="studio-route" href="${rel}ai-workflows/${pathFor(lang)}">${icon('Workflow')}<span>${e(workflows[lang].title)}</span>${arrow()}</a>${inquiry('ai-workflows')}</div>`;
   const schoolLink = `<div class="route-offer"><a class="studio-route" href="${rel}pearl-valley/${pathFor(lang)}">${icon('BookOpen')}<span><bdi>${e(schoolName)}</bdi><small>${e(school[lang].kind)}</small></span>${arrow()}</a></div>`;
+  const postersLink = `<div class="route-offer"><a class="studio-route" href="${rel}${posterSlug}/${pathFor(lang)}">${icon('Printer')}<span>${e(posters[lang].title)}<small>${e(posters[lang].price)}</small></span>${arrow()}</a></div>`;
   const directory = workflowLink + urls.map((url,i)=>url ? `<div class="route-offer"><a class="studio-route"${i===0?' id="software"':i===5?' id="hotel-consulting"':i===7?' id="innovation"':''} href="${rel+url}">${icon(symbols[i])}<span>${e(i===7?innovation[lang].title:s.links[i])}${i===7?`<small>${e(s.applicationAction)}</small>`:''}</span>${arrow()}</a>${inquiry(url.split('/')[0])}</div>` : '').join('');
   const nav = t.nav.map((item,i)=>`<a href="${i===3?rel+'contacts/'+pathFor(lang):'#'+navIDs[i]}">${e(item)}</a>`).join('') + `<a href="${rel + softwarePath('crm',productLang)}">Galany CRM</a>` + (['ru','he'].includes(lang) ? `<a href="#secretary-catalog">${lang==='he'?'קטלוג':'Каталог'}</a>` : '');
   const tags = p => `<div class="project-tags">${p.tags.map(tag=>`<span>${e(tag)}</span>`).join('')}</div>`;
@@ -129,7 +131,7 @@ function render(lang, t) {
     </details>
   </div></section>
   <section class="section services" id="services"><div class="wrap"><div class="section-head"><div><p class="eyebrow">${e(t.serviceLabel)}</p><h2 class="preline">${e(s.services)}</h2></div><p>${e(t.serviceIntro)}</p></div><div class="service-list">${t.services.map(([title,text,items,id],index)=>`<article class="service-row"><span class="service-index">0${index+1}</span><details${index===0?' open':''}><summary><h3>${e(title)}</h3><span class="plus">${icon('Plus')}</span></summary><div class="service-body"><p>${e(text)}</p><p class="deliverables">${e(items)}</p>${inquiry(id)}</div></details><button class="service-request" type="button" data-service-choice="${id}" aria-label="${e(t.start)} · ${e(title)}" title="${e(t.start)}"><span class="arrow">${arrow()}</span></button></article>`).join('')}</div></div></section>
-  <section class="studio-directory section"><div class="wrap"><div class="directory-heading"><h2>${e(s.directory)}</h2><p>${e(s.directoryLead)}</p></div><div class="studio-routes">${directory}${schoolLink}</div></div></section>
+  <section class="studio-directory section"><div class="wrap"><div class="directory-heading"><h2>${e(s.directory)}</h2><p>${e(s.directoryLead)}</p></div><div class="studio-routes">${directory}${postersLink}${schoolLink}</div></div></section>
   <section class="section capabilities" id="capabilities"><div class="wrap"><div class="section-head"><h2>${e(capabilityIntro[lang][0])}</h2><p>${e(capabilityIntro[lang][1])}</p></div><div class="capability-offers">${capabilities.map(c=>`<article id="${c.id}"><h3>${e(c[lang][0])}</h3><p>${e(c[lang][1])}</p>${inquiry(c.id)}</article>`).join('')}</div></div></section>
   ${renderSecretaryCatalogue(lang)}
   <section class="section" id="process"><div class="wrap"><div class="process-head"><p class="eyebrow">${e(t.processLabel)}</p><h2>${e(s.process)}</h2></div><div class="process-grid">${t.steps.map(([title,text],i)=>`<article class="step"><span>0${i+1}</span><h3>${e(title)}</h3><p>${e(text)}</p></article>`).join('')}</div></div></section>
@@ -166,6 +168,12 @@ for (const [lang,t] of Object.entries(content)) {
 await buildContactPages(target,rootURL,icon,e);
 await buildWorkflows(target,rootURL,e);
 await buildSchool(target,rootURL,e);
+await buildPosters(target,rootURL,e);
+if (resolve(target) !== resolve(here,'..')) {
+  await mkdir(join(target,'assets'),{recursive:true});
+  for (const asset of [posterSlug+'/posters.css','assets/tiberias-posters.jpg'])
+    await copyFile(join(here,'..',asset),join(target,asset));
+}
 if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../pearl-valley/school.css'),join(target,'pearl-valley/school.css'));
 if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../pearl-valley/pearl-linkedin.jpg'),join(target,'pearl-valley/pearl-linkedin.jpg'));
 if (resolve(target) !== resolve(here,'..')) await copyFile(join(here,'../ai-workflows/workflows.css'),join(target,'ai-workflows/workflows.css'));

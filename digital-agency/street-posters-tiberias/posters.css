@@ -1,0 +1,12 @@
+.poster-locales{display:flex;align-items:center;flex-wrap:wrap;gap:0 16px}.poster-locales a{font-size:14px;line-height:44px}.poster-locales [aria-current]{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.poster-hero{background:#ede8e2 url(../assets/tiberias-posters.jpg) center/cover no-repeat;padding:48px 0}
+.poster-copy{width:47%;margin-left:0;margin-right:auto}
+.poster-copy h1{font-size:60px;font-weight:800;line-height:1.06;text-wrap:balance;overflow-wrap:break-word}
+.poster-price{font-weight:800;font-size:26px;color:#143f88;margin-top:16px}.poster-lead{font-size:19px;max-width:40ch;line-height:1.5;margin:10px 0 22px}
+.poster-copy .btn,.poster-brief .btn{background:#154398;border-color:#154398}.poster-copy .btn:hover,.poster-brief .btn:hover{background:#0f3376}
+.poster-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin:28px 0 0;padding:0;list-style:none}
+.poster-steps li{border-top:3px solid #16489d;padding-top:15px}.poster-steps li:nth-child(2){border-color:#da482e}.poster-steps li:nth-child(3){border-color:#ddb42f}
+.poster-steps p,.poster-brief p{margin-top:8px}.poster-brief{background:#edf2f6}.poster-brief label{display:block;font-weight:700;margin-bottom:8px}
+.poster-brief textarea{font:inherit;width:100%;resize:vertical;min-height:128px;padding:12px;border:1px solid #7a8a96;border-radius:3px;background:white;color:#172632}.poster-brief button{margin-top:10px}
+@media(max-width:900px){.poster-copy h1{font-size:45px}.poster-price{font-size:22px}.poster-lead{font-size:17px}.poster-hero{padding-block:32px}}
+@media(max-width:680px){.product-header-inner{flex-wrap:wrap;gap:0 20px;padding-block:6px}.poster-hero{padding:24px 0 0;background:#f6f3ef}.poster-hero::after{content:'';display:block;height:130px;margin-top:20px;background:url(../assets/tiberias-posters.jpg) right 55%/auto 220px no-repeat;background-color:#e6e1db}.poster-copy{width:100%}.poster-copy h1{font-size:38px}.poster-steps,.poster-brief .section-two{grid-template-columns:minmax(0,1fr);gap:24px}.product-section{padding-block:38px}}
