@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://9881988-lgtm.github.io/tiberias-plumbing/</loc>
@@ -302,10 +303,46 @@
 <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/street-posters-tiberias/ru/</loc><lastmod>2026-11-23</lastmod></url>
 <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/street-posters-tiberias/en/</loc><lastmod>2026-11-23</lastmod></url>
 <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/digital-agency/street-posters-tiberias/fr/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/ru/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/en/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/ru/</loc><lastmod>2026-11-25</lastmod></url>
-  <url><loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/en/</loc><lastmod>2026-11-25</lastmod></url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="he" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/"/>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/ru/</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="he" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/"/>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/en/</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="he" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/ventilation-maintenance/"/>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="he" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/"/>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/ru/</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="he" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/"/>
+  </url>
+  <url>
+    <loc>https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/en/</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="he" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://9881988-lgtm.github.io/tiberias-plumbing/home-services/solar-panel-cleaning/"/>
+  </url>
 </urlset>
