@@ -35,6 +35,8 @@ const translations = {
     solarPrice2: "אינסטלציה ונקודות מים לפי תמונה",
     solarPrice3: "אזור שירות: טבריה, ישראל",
     openSolarLanding: "פתחו את אתר דודי השמש",
+    ventService: "ניקוי ותחזוקת מערכות אוורור",
+    pvService: "שטיפת פאנלים לתחנות כוח סולאריות",
     proof1Title: "מקומי בטבריה",
     proof1Text: "שירות ממוקד לתושבי העיר והסביבה הקרובה, עם תיאום ישיר מול בעל המקצוע.",
     proof2Title: "WhatsApp מהיר",
@@ -102,6 +104,8 @@ const translations = {
     solarPrice2: "Plumbing and water points quoted from a photo",
     solarPrice3: "Service area: Tiberias, Israel",
     openSolarLanding: "Open the solar boiler website",
+    ventService: "Ventilation cleaning and maintenance",
+    pvService: "Solar panel washing for power plants",
     proof1Title: "Local in Tiberias",
     proof1Text: "Focused service for the city and nearby area, with direct coordination with the professional.",
     proof2Title: "Fast WhatsApp",
@@ -169,6 +173,8 @@ const translations = {
     solarPrice2: "Сантехника и точки воды — оценка по фото",
     solarPrice3: "Зона обслуживания: Тверия, Израиль",
     openSolarLanding: "Открыть сайт солнечных бойлеров",
+    ventService: "Чистка и обслуживание вентиляции",
+    pvService: "Мойка панелей солнечных электростанций",
     proof1Title: "Работаем в Тверии",
     proof1Text: "Услуги для жителей города и ближайших районов, прямое согласование с мастером.",
     proof2Title: "Быстрый WhatsApp",
@@ -221,6 +227,9 @@ const applyLanguage = (language, updateAddress = true) => {
   const meta = languageMeta[selected];
 
   document.documentElement.lang = selected;
+  document.querySelectorAll("[data-local-service]").forEach(link => {
+    link.href = link.dataset.localService + (selected === "he" ? "" : selected + "/");
+  });
   document.documentElement.dir = meta.dir;
   document.title = dictionary.pageTitle;
   setMeta('meta[name="description"]', dictionary.pageDescription);
